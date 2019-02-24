@@ -1,5 +1,6 @@
-| Legion | [http://legion.stanford.edu](http://legion.stanford.edu/) |
+| Product | Home Page |
 | --- | --- |
+| Legion | [http://legion.stanford.edu](http://legion.stanford.edu/) |
 | ROSE | [https://github.com/rose-compiler](https://github.com/rose-compiler) |
 | Kokkos | [https://github.com/kokkos](https://github.com/kokkos) |
 | DARMA | [https://github.com/darma-tasking](https://github.com/darma-tasking) |
