@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>E4S - Download</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Roboto:300,400,500">
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/style_perso.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Favicon and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.png">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+    </head>
+
+    <body>
+
+    	<!-- Top content -->
+        <div class="top-content">
+
+        	<!-- Top menu -->
+			<nav class="navbar navbar-inverse" role="navigation">
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-navbar-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html">E4S</a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="top-navbar-1">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a class="btn btn-link-3" href="download.html">Download</a></li>
+					</ul>
+				</div>
+				</div>
+			</nav>
+        </div>
+
+         <!-- Features -->
+        <div class="features-container section-container">
+	        <div class="container">
+
+	            <div class="row">
+	                <div class="col-sm-12 features section-description">
+	                    <h1>Extreme-Scale Scientific Software Stack (E4S)</h1>
+                      <h2>Release 0.2</h2>
+	                    <div class="divider-1"><div class="line"></div></div>
+	                    <p> The second release of Exascale Computing Project (ECP) Software Technologies (ST) software, Extreme-Scale Scientific Software Stack (E4S) Release 0.2, includes a subset of ECP ST software products, and demonstrates the target approach for future delivery of the full ECP ST software stack. Also available are a number of ECP ST software products that support a Spack package, but are not yet fully interoperable. As the primary purpose of the 0.2 release is demonstrating the ST software stack release approach, not all ECP ST software products were targeted for this release. Software products were targeted primarily based on existing Spack package maturity, location within the scientific software stack, and ECP SDK developer experience with the software. Each release will include additional software products, with the ultimate goal of including all ECP ST software products.
+</p>
+	                    <p><a href="https://e4s-project.github.io/Release-Notes-0.2.html">E4S 0.2 Release Notes</a>.</p>
+                      <p><a href="https://e4s-project.github.io/installation.html">E4S 0.2 Container Installation Instructions</a>.</p>
+
+	                    <div class="divider-1"><div class="line"></div></div>
+	                </div>
+	            </div>
+
+	            <div class="row">
+	                <div class="col-sm-6 features-box">
+	                	<div class="row">
+	                		<div class="col-sm-3 features-box-icon">
+	                			<i class="fa fa-download"></i>
+	                		</div>
+	                		<div class="col-sm-9">
+	                			<h3>Container Releases</h3>
+	                			<p>
+		                    		<a href="http://tau.uoregon.edu/ecp.xz" class="btn btn-warning btn-lg" download="E4S">
+							        	<span class="glyphicon glyphicon-download"></span> Docker Download
+							        </a>
+		                    	</p>
+                          <p>
+  		                    		<a href="http://tau.uoregon.edu/ecp.sing" class="btn btn-warning btn-lg" download="E4S">
+  							        	<span class="glyphicon glyphicon-download"></span> Singularity Download
+  							        </a>
+  		                    	</p>
+                            <p>
+    		                    		<a href="http://tau.uoregon.edu/ecp-cc.tgz" class="btn btn-warning btn-lg" download="E4S">
+    							        	<span class="glyphicon glyphicon-download"></span> CharlieCloud Download
+    							        </a>
+    		                    	</p>
+                              <p>
+      		                    		<a href="http://tau.uoregon.edu/ecp.ova" class="btn btn-warning btn-lg" download="E4S">
+      							        	<span class="glyphicon glyphicon-download"></span> OVA Download
+      							        </a>
+      		                    	</p>
+                          The container releases contains binary versions of the Full Release packages listed above. A clone of Spack is also available in the container which can be used to compile the Full Release and Partial Release packages. Example Spack "recipes" (lists of configuration commands) are available in the container. See the README.txt file for more details. This release also includes an OVA file that has Docker, Charliecloud, Shifter, and Singularity preinstalled in it. The Docker container image is also available from Dockerhub:</p>
+                          <p> <code># docker pull exascaleproject/sdk:AHM19</code></p>
+
+	                		</div>
+	                	</div>
+	                </div>
+	                <div class="col-sm-6 features-box">
+	                	<div class="row">
+	                		<div class="col-sm-3 features-box-icon">
+	                			<i class="fa fa-code"></i>
+	                		</div>
+	                		<div class="col-sm-9">
+	                			<h3>From source with Spack</h3>
+	                			<p>
+		                    		<a href="https://spack.readthedocs.io/en/latest/" class="btn btn-warning btn-lg" target="_blank">
+							        	<span class="fa fa-external-link"></span> Visit the Spack Project
+							        </a>
+		                    	</p>
+	                			<p>
+                          Spack contains packages for all of the products listed in the E4S 0.2 Full Release category (see above 0.2 Release Notes). General instructions for building software with Spack can be found at the Spack website. The Full Release packages can be built via Spack concurrently. For more information, see /usr/local/packages/ecp in the container referenced here. Additionally, all of the packages in the Partial Release category above support a Spack package. Questions concerning building those packages are deferred to the associated package development team.
+
+	                			</p>
+
+	                		</div>
+	                	</div>
+	                </div>
+	            </div>
+
+	        </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+	        <div class="container site-footer">
+	        	<div class="row">
+	        		<div class="col-sm-12 footer-copyright">
+                Created for <a href="https://e4s-project.github.io">The Extreme-scale Scientific Software Stack (E4S) Project</a> by <a href="https://maherou.github.io/">Michael A. Heroux</a>
+              </div>
+              <div class="col-sm-12 footer-copyright">
+                  <a href="credit.html">Attribution</a> - Derived from a design by Quentin Petit
+                    </div>
+                </div>
+	        </div>
+        </footer>
+
+
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/retina-1.1.0.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+
+        <!--[if lt IE 10]>
+            <script src="assets/js/placeholder.js"></script>
+        <![endif]-->
+
+    </body>
+
+</html>
