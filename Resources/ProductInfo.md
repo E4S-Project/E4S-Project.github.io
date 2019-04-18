@@ -11,6 +11,7 @@
 | MPICH | [http://www.mpich.org](http://www.mpich.org/) |
 | PaRSEC | [http://icl.utk.edu/parsec/](http://icl.utk.edu/parsec/) |
 | Open MPI | [https://www.open-mpi.org/](https://www.open-mpi.org/) |
+| PMIx | [https://pmix.org/](https://pmix.org/) |
 | Intel GEOPM | [https://geopm.github.io/](https://geopm.github.io/) |
 | LLVM OpenMP compiler | [https://github.com/SOLLVE](https://github.com/SOLLVE) |
 | OpenMP V \& V Suite | [https://bitbucket.org/crpl\_cisc/sollve\_vv/src](https://bitbucket.org/crpl_cisc/sollve_vv/src) |
