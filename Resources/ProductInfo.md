@@ -67,7 +67,7 @@
 | VTK-m | [http://m.vtk.org](http://m.vtk.org/) |
 | FAODEL | [https://github.com/faodel/faodel](https://github.com/faodel/faodel) |
 | IOSS | [https://github.com/gsjaardema/seacas](https://github.com/gsjaardema/seacas) |
-| VeloC | [https://xgitlab.cels.anl.gov/ecp-veloc](https://xgitlab.cels.anl.gov/ecp-veloc) |
+| VeloC | [https://github.com/ECP-VeloC/VELOC](https://github.com/ECP-VeloC/VELOC) |
 | SZ | [https://github.com/disheng222/SZ](https://github.com/disheng222/SZ) |
 | UnifyCR | [https://github.com/LLNL/UnifyCR](https://github.com/LLNL/UnifyCR) |
 | HDF5 | [https://www.hdfgroup.org/downloads/](https://www.hdfgroup.org/downloads/) |
