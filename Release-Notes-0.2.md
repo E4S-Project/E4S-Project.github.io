@@ -16,7 +16,6 @@ ST software products in this category are available via Spack, and can be built 
 - Bolt
 - Caliper
 - Darshan
-- Gasnet
 - GEOPM
 - GlobalArrays
 - Gotcha
@@ -26,6 +25,7 @@ ST software products in this category are available via Spack, and can be built 
 - Jupyter
 - Kokkos
 - Legion
+- Legion-gasnet
 - Libquo
 - Magma
 - MFEM
