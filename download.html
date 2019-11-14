@@ -64,6 +64,7 @@
 			</nav>
         </div>
 
+
          <!-- Features -->
         <div class="features-container section-container">
 	        <div class="container">
@@ -71,16 +72,45 @@
 	            <div class="row">
 	                <div class="col-sm-12 features section-description">
 	                    <h1>Extreme-Scale Scientific Software Stack (E4S)</h1>
-                      <h2>Release 0.2</h2>
+                      <h2>version 1.0</h2>
 	                    <div class="divider-1"><div class="line"></div></div>
-	                    <p> The second release of Exascale Computing Project (ECP) Software Technologies (ST) software, Extreme-Scale Scientific Software Stack (E4S) Release 0.2, includes a subset of ECP ST software products, and demonstrates the target approach for future delivery of the full ECP ST software stack. Also available are a number of ECP ST software products that support a Spack package, but are not yet fully interoperable. As the primary purpose of the 0.2 release is demonstrating the ST software stack release approach, not all ECP ST software products were targeted for this release. Software products were targeted primarily based on existing Spack package maturity, location within the scientific software stack, and ECP SDK developer experience with the software. Each release will include additional software products, with the ultimate goal of including all ECP ST software products.
+	                    <p>Exascale Computing 
+Project (ECP) Software Technologies (ST) software, Extreme-Scale 
+Scientific Software Stack (E4S) v1.0, includes a subset of ECP ST
+ software products, and demonstrates the target approach for future 
+delivery of the full ECP ST software stack. Also available are a number 
+of ECP ST software products that support a Spack package, but are not 
+yet fully interoperable. As the primary purpose of the v1.0 is 
+demonstrating the ST software stack release approach, not all ECP ST 
+software products were targeted for this release. Software products were
+ targeted primarily based on existing Spack package maturity, location 
+within the scientific software stack, and ECP SDK developer experience 
+with the software. Each release will include additional software 
+products, with the ultimate goal of including all ECP ST software 
+products.
 </p>
-	                    <p><a href="https://e4s-project.github.io/Release-Notes-0.2.html">E4S 0.2 Release Notes</a>.</p>
-                      <p><a href="https://e4s-project.github.io/installation.html">E4S 0.2 Container Installation Instructions</a>.</p>
+	                    <p><a href="https://e4s-project.github.io/Release-Notes-1.0.html">E4S v1.0 Notes</a>.</p>
+                      <p><a href="https://e4s-project.github.io/installation.html">E4S Container Installation Instructions</a>.</p>
 
 	                    <div class="divider-1"><div class="line"></div></div>
 	                </div>
 	            </div>
+
+<div class="row">
+<div class="col-sm-12">
+<h2>Using E4S Containers</h2>
+<p>The current E4S container offerings include Docker images for Red Hat UBI 7, Ubuntu 18.04 (Bionic), and CentOS 7 which can run on X86_64, PPC64LE, and AARCH64. The base images provide a minimal set of development software (GCC 7.3.0, CMake, MPICH 3.2.1) installed via Spack (v0.13.1) and serve as the foundation for building fuller, more tailored images. In addition to our base images, we offer a full E4S image containing a comprehensive selection of E4S software built atop our UBI 7 and Ubuntu 18.04 X86_64 base images.</p>
+<p>Docker images are available on the <a href="https://hub.docker.com/u/ecpe4s">E4S Docker Hub</a> and in compressed XZ format on <a href="https://oaciss.uoregon.edu/e4s/images/">E4S servers</a>.</p>
+<p>Recipes for building images from scratch are available on the <a href="https://github.com/UO-OACISS/e4s">E4S GitHub repository</a>.</p>
+<p>Our recipes make use of Spack packages available as pre-built binaries in the <a href="https://oaciss.uoregon.edu/e4s/e4s_buildcache_inventory.html">E4S build cache</a>.</p> 
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+<div class="divider-1"><div class="line"></div></div>
+</div>
+</div>
 
 	            <div class="row">
 	                <div class="col-sm-6 features-box">
@@ -110,15 +140,8 @@
       							        	<span class="glyphicon glyphicon-download"></span> OVA Download
       							        </a>
 					</p>
-			     <p>
-      		                    		<a href="http://tau.uoregon.edu/ecp_lite.ova" class="btn btn-warning btn-lg" download="E4S">
-      							        	<span class="glyphicon glyphicon-download"></span> OVA Download (lite)
-      							        </a>
-      		                    	</p>
-      		                    	</p>
-			  The E4S release is also available on <a HREF="http://aws.amazon.com">AWS</A> as an AMI with an id: ami-063e830287b86155c in the US-West-2 (Oregon) region. <br>	
-                          The container releases contains binary versions of the Full Release packages listed above. A clone of Spack is also available in the container which can be used to compile the Full Release and Partial Release packages. Example Spack "recipes" (lists of configuration commands) are available in the container. See the README.txt file for more details. This release also includes an OVA file that has Docker, Charliecloud, Shifter, and Singularity preinstalled in it. The Docker container image is also available from Dockerhub:</p>
-                          <p> <code># docker pull exascaleproject/sdk:AHM19</code></p>
+      		                    	<p></p>
+			  <p></p>
 
 	                		</div>
 	                	</div>
@@ -136,7 +159,12 @@
 							        </a>
 		                    	</p>
 	                			<p>
-                          Spack contains packages for all of the products listed in the E4S 0.2 Full Release category (see above 0.2 Release Notes). General instructions for building software with Spack can be found at the Spack website. The Full Release packages can be built via Spack concurrently. For more information, see /usr/local/packages/ecp in the container referenced here. Additionally, all of the packages in the Partial Release category above support a Spack package. Questions concerning building those packages are deferred to the associated package development team.
+                          Spack contains packages for all of the 
+products listed in the E4S 1.0 Full Release category (see above 1.0 
+Release Notes). General instructions for building software with Spack 
+can be found at the Spack website. For more information, see 
+/usr/local/packages/ecp in the container referenced here. Questions concerning building those packages are deferred
+ to the associated package development team.
 
 	                			</p>
 
@@ -145,18 +173,101 @@
 	                </div>
 	            </div>
 
-	        </div>
-        </div>
+
+<div class="row">
+<div class="col-sm-12">
+<div class="divider-1"><div class="line"></div></div>
+</div>
+</div>
+
+<div class="row" style="padding-bottom: 50px;">
+<div class="col-sm-12">
+<h3>AWS</h3>
+<p>The E4S release is also available on <a href="http://aws.amazon.com/">AWS</a> as AMIs with an ids: ami-063e830287b86155c (with Singularity) and ami-0fe12765123c6a840 (for Supercontainers tutorial) in the US-West-2 (Oregon) region. <br>
+	
+                          The container releases contains binary 
+versions of the Full Release packages listed above. A clone of Spack is 
+also available in the container which can be used to compile the Full 
+Release and Partial Release packages. Example Spack "recipes" (lists of 
+configuration commands) are available in the container. See the 
+README.txt file for more details. This release also includes an OVA file
+ that has Docker, Charliecloud, Shifter, and Singularity preinstalled in
+ it. The Docker container image is also available from Dockerhub:</p>
+<p> <code># docker pull exascaleproject/e4s_x86_64:1.0</code></p>
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+<div class="divider-1"><div class="line"></div></div>
+</div>
+</div>
+
+<div style="font-size: 0.9em;" class="row">
+<div class="col-sm-4">
+<h3>UBI 7</h3>
+<h5 style="margin-top:25px;">BASE IMAGES</h5>
+<ul style="list-style-type: none; padding: 0;">
+<li>ecpe4s/ubi7_x86_64_base <a href="https://hub.docker.com/r/ecpe4s/ubi7_x86_64_base"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/ubi7/x86_64/base"><img height="15" src="GitHub_Logo.png" /></a> <a href="https://oaciss.uoregon.edu/e4s/images/ecpe4s-ubi7-x86_64-base-1.3.tar.xz"><img height="15" src="open-iconic/svg/data-transfer-download.svg" /></a></li>
+<li>ecpe4s/ubi7_ppc64le_base <a href="https://hub.docker.com/r/ecpe4s/ubi7_ppc64le_base"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/ubi7/ppc64le/base"><img height="15" src="GitHub_Logo.png" /></a>  <a href="https://oaciss.uoregon.edu/e4s/images/ecpe4s-ubi7-ppc64le-base-1.3.tar.xz"><img height="15" src="open-iconic/svg/data-transfer-download.svg" /></a></li>
+</ul>
+<h5 style="margin-top:25px;">E4S COMPREHENSIVE IMAGE</h5>
+<ul style="list-style-type: none; padding: 0;">
+<li>ecpe4s/ubi7_x86_64_e4s <a href="https://hub.docker.com/r/ecpe4s/ubi7_x86_64_e4s"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/ubi7/x86_64/e4s"><img height="15" src="GitHub_Logo.png" /></a>  <a href="https://oaciss.uoregon.edu/e4s/images/ecpe4s-ubi7-x86_64-e4s-1.3.tar.xz"><img height="15" src="open-iconic/svg/data-transfer-download.svg" /></a></li>
+</ul>
+<h5 style="margin-top:25px;">CUSTOM IMAGES</h5>
+<ul style="list-style-type: none; padding: 0;">
+<li>ecpe4s/superlu_sc <a href="https://hub.docker.com/r/ecpe4s/superlu_sc"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/ubi7/x86_64/superlu_sc"><img height="15" src="GitHub_Logo.png" /></a>  <a href="https://oaciss.uoregon.edu/e4s/images/ecpe4s-superlu-sc-1.3.tar.xz"><img height="15" src="open-iconic/svg/data-transfer-download.svg" /></a></li>
+</ul>
+</div>
+
+<div class="col-sm-4">
+<h3>Ubuntu 18.04</h3>
+<h5 style="margin-top:25px;">BASE IMAGES</h5>
+<ul style="list-style-type: none; padding: 0;">
+<li>ecpe4s/ubuntu1804_x86_64_base <a href="https://hub.docker.com/r/ecpe4s/ubuntu1804_x86_64_base"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/ubuntu18.04/x86_64/base"><img height="15" src="GitHub_Logo.png" /></a>  <a href="https://oaciss.uoregon.edu/e4s/images/ecpe4s-ubuntu1804-x86_64-base-1.3.tar.xz"><img height="15" src="open-iconic/svg/data-transfer-download.svg" /></a></li>
+<li>ecpe4s/ubuntu1804_ppc64le_base <a href="https://hub.docker.com/r/ecpe4s/ubuntu1804_ppc64le_base"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/ubuntu18.04/ppc64le/base"><img height="15" src="GitHub_Logo.png" /></a>  <a href="https://oaciss.uoregon.edu/e4s/images/ecpe4s-ubuntu1804-ppc64le-base-1.3.tar.xz"><img height="15" src="open-iconic/svg/data-transfer-download.svg" /></a></li>
+</ul>
+<h5 style="margin-top:25px;">E4S COMPREHENSIVE IMAGE</h5>
+<ul style="list-style-type: none; padding: 0;">
+<li>ecpe4s/ubuntu1804_x86_64_e4s <a href="https://hub.docker.com/r/ecpe4s/ubuntu1804_x86_64_e4s"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/ubuntu18.04/x86_64/e4s"><img height="15" src="GitHub_Logo.png" /></a>  <a href="https://oaciss.uoregon.edu/e4s/images/ecpe4s-ubuntu1804-x86_64-e4s-1.3.tar.xz"><img height="15" src="open-iconic/svg/data-transfer-download.svg" /></a></li>
+</ul>
+<h5 style="margin-top:25px;">CUSTOM IMAGES</h5>
+<ul style="list-style-type: none; padding: 0;">
+<li>ecpe4s/ubuntu1804_aarch64_waggle <a href="https://hub.docker.com/r/ecpe4s/ubuntu1804_aarch64_waggle"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/ubuntu18.04/aarch64/xavier"><img height="15" src="GitHub_Logo.png" /></a>  <a href="https://oaciss.uoregon.edu/e4s/images/ecpe4s-ubuntu1804-aarch64-waggle-1.0.tar.xz"><img height="15" src="open-iconic/svg/data-transfer-download.svg" /></a></li>
+</ul>
+
+</div>
+
+<div class="col-sm-4">
+<h3>CentOS 7</h3>
+<h5 style="margin-top:25px;">BASE IMAGES</h5>
+<ul style="list-style-type: none; padding: 0;">
+<li>ecpe4s/centos7_x86_64_base <a href="https://hub.docker.com/r/ecpe4s/centos7_x86_64_base"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/centos7/x86_64/base"><img height="15" src="GitHub_Logo.png" /></a>  <a href="https://oaciss.uoregon.edu/e4s/images/ecpe4s-centos7-x86_64-base-1.3.tar.xz"><img height="15" src="open-iconic/svg/data-transfer-download.svg" /></a></li>
+<li>ecpe4s/centos7_ppc64le_base <a href="https://hub.docker.com/r/ecpe4s/centos7_ppc64le_base"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/centos7/ppc64le/base"><img height="15" src="GitHub_Logo.png" /></a>  <a href="https://oaciss.uoregon.edu/e4s/images/ecpe4s-centos7-ppc64le-base-1.3.tar.xz"><img height="15" src="open-iconic/svg/data-transfer-download.svg" /></a></li>
+</ul>
+<h5 style="margin-top:25px;">E4S COMPREHENSIVE IMAGE</h5>
+<ul style="list-style-type: none; padding: 0;">
+<li>- - - -</li>
+</ul>
+<h5 style="margin-top:25px;">CUSTOM IMAGES</h5>
+<ul style="list-style-type: none; padding: 0;">
+<li>- - - -</li>
+</ul>
+</div>
+</div>
+</div>
+
 
         <!-- Footer -->
-        <footer class="footer">
+        <footer style="margin-top: 80px;" class="footer">
 	        <div class="container site-footer">
 	        	<div class="row">
 	        		<div class="col-sm-12 footer-copyright">
-                Created for <a href="https://e4s-project.github.io">The Extreme-scale Scientific Software Stack (E4S) Project</a> by <a href="https://maherou.github.io/">Michael A. Heroux</a>
+                Created for <a href="https://e4s-project.github.io/">The Extreme-scale Scientific Software Stack (E4S) Project</a> by <a href="https://maherou.github.io/">Michael A. Heroux</a>
               </div>
               <div class="col-sm-12 footer-copyright">
-                  <a href="credit.html">Attribution</a> - Derived from a design by Quentin Petit
+                  <a href="https://e4s-project.github.io/credit.html">Attribution</a> - Derived from a design by Quentin Petit
                     </div>
                 </div>
 	        </div>
