@@ -99,10 +99,10 @@ products.
 <div class="row">
 <div class="col-sm-12">
 <h2>Using E4S Containers</h2>
-<p>The current E4S container offerings include Docker images for Red Hat UBI 7, Ubuntu 18.04 (Bionic), and CentOS 7 which can run on X86_64, PPC64LE, and AARCH64. The base images provide a minimal set of development software (GCC 7.3.0, CMake, MPICH 3.2.1) installed via Spack (v0.13.1) and serve as the foundation for building fuller, more tailored images. In addition to our base images, we offer a full E4S image containing a comprehensive selection of E4S software built atop our UBI 7 and Ubuntu 18.04 X86_64 base images.</p>
-<p>Docker images are available on the <a href="https://hub.docker.com/u/ecpe4s">E4S Docker Hub</a> and in compressed XZ format on <a href="https://oaciss.uoregon.edu/e4s/images/">E4S servers</a>.</p>
-<p>Recipes for building images from scratch are available on the <a href="https://github.com/UO-OACISS/e4s">E4S GitHub repository</a>.</p>
-<p>Our recipes make use of Spack packages available as pre-built binaries in the <a href="https://oaciss.uoregon.edu/e4s/e4s_buildcache_inventory.html">E4S build cache</a>.</p> 
+<p>The current E4S container offerings include Docker images for Red Hat RHEL 7, Ubuntu 18.04 (Bionic), and CentOS 7 which can run on X86_64, PPC64LE, and AARCH64. Our minimal Spack images provide a ready-to-use clone of Spack, checked out at a particular version as dictated by the tag (i.e. 0.14.2 tag means Spack v0.14.2), along Spack-installed GCC 7.3.0. The minimal Spack images serve as a foundation for our fuller, more tailored images. In addition minimal Spack images, we offer a full E4S image containing a comprehensive selection of E4S software. The E4S images are available in RHEL 7, Ubuntu 18.04, and CentOS 7 variants.</p>
+<p>Docker images are available on the <a href="https://hub.docker.com/u/ecpe4s">E4S Docker Hub</a>.</p>
+<p>Recipes for building images from scratch are available on the <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes">E4S GitHub repository</a>.</p>
+<p>Our recipes make use of Spack packages available as pre-built binaries in the <a href="https://oaciss.uoregon.edu/e4s/inventory.html">E4S Build Cache</a>.</p> 
 </div>
 </div>
 
@@ -209,56 +209,53 @@ README.txt file for more details. This release also includes an OVA file
 
 <div style="font-size: 0.9em;" class="row">
 <div class="col-sm-4">
-<h3>UBI 7</h3>
-<h5 style="margin-top:25px;">BASE IMAGES</h5>
+<h3>RHEL 7</h3>
+<h5 style="margin-top:25px;">SPACK MINIMAL</h5>
 <ul style="list-style-type: none; padding: 0;">
-<li>ecpe4s/ubi7_x86_64_base <a href="https://hub.docker.com/r/ecpe4s/ubi7_x86_64_base"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/ubi7/x86_64/base"><img height="15" src="GitHub_Logo.png" /></a> <a href="https://oaciss.uoregon.edu/e4s/images/ecpe4s-ubi7-x86_64-base-1.3.tar.xz"><img height="15" src="data-transfer-download.svg" /></a></li>
-<li>ecpe4s/ubi7_ppc64le_base <a href="https://hub.docker.com/r/ecpe4s/ubi7_ppc64le_base"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/ubi7/ppc64le/base"><img height="15" src="GitHub_Logo.png" /></a>  <a href="https://oaciss.uoregon.edu/e4s/images/ecpe4s-ubi7-ppc64le-base-1.3.tar.xz"><img height="15" src="data-transfer-download.svg" /></a></li>
+<li>ecpe4s/rhel7-spack <a href="https://hub.docker.com/r/ecpe4s/rhel7-spack/tags"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes"><img height="15" src="GitHub_Logo.png" /></a> </li>
 </ul>
-<h5 style="margin-top:25px;">E4S COMPREHENSIVE IMAGE</h5>
+<h5 style="margin-top:25px;">E4S COMPREHENSIVE</h5>
 <ul style="list-style-type: none; padding: 0;">
-<li>ecpe4s/ubi7_x86_64_e4s <a href="https://hub.docker.com/r/ecpe4s/ubi7_x86_64_e4s"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/ubi7/x86_64/e4s"><img height="15" src="GitHub_Logo.png" /></a>  <a href="https://oaciss.uoregon.edu/e4s/images/ecpe4s-ubi7-x86_64-e4s-1.3.tar.xz"><img height="15" src="data-transfer-download.svg" /></a></li>
+<li>ecpe4s/rhel7-e4s <a href="https://hub.docker.com/r/ecpe4s/rhel7-e4s/tags"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes"><img height="15" src="GitHub_Logo.png" /></a> </li>
 </ul>
-<h5 style="margin-top:25px;">CUSTOM IMAGES</h5>
+<h5 style="margin-top:25px;">CUSTOM</h5>
 <ul style="list-style-type: none; padding: 0;">
-<li>ecpe4s/superlu_sc <a href="https://hub.docker.com/r/ecpe4s/superlu_sc"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/ubi7/x86_64/superlu-sc"><img height="15" src="GitHub_Logo.png" /></a>  <a href="https://oaciss.uoregon.edu/e4s/images/ecpe4s-superlu-sc-1.3.tar.xz"><img height="15" src="data-transfer-download.svg" /></a></li>
+<li>ecpe4s/superlu_sc <a href="https://hub.docker.com/r/ecpe4s/superlu_sc"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/superlu-sc"><img height="15" src="GitHub_Logo.png" /></a></li>
 </ul>
 </div>
 
 <div class="col-sm-4">
 <h3>Ubuntu 18.04</h3>
-<h5 style="margin-top:25px;">E4S v1.1 GPU IMAGE</h5>
-<li>ecpe4s/ubuntu1804-e4s-gpu (x86_64 with ROCm and CUDA)<a href="https://hub.docker.com/r/ecpe4s/ubuntu18.04-e4s-gpu"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/ubuntu18.04/x86_64/e4s"><img height="15" src="GitHub_Logo.png" /></a>  <a href="https://oaciss.uoregon.edu/e4s/images/ecpe4s-ubuntu1804-x86_64-e4s-gpu-1.1.tar.xz"><img height="15" src="data-transfer-download.svg" /></a></li>
-<li>ecpe4s/ubuntu1804-e4s-gpu (ppc64le with CUDA) <a href="https://hub.docker.com/r/ecpe4s/ubuntu18.04-e4s-gpu"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/ubuntu18.04/ppc64le/base"><img height="15" src="GitHub_Logo.png" /></a>  <a href="https://oaciss.uoregon.edu/e4s/images/ecpe4s-ubuntu18.04-ppc64le-gpu-1.1.tar.xz"><img height="15" src="data-transfer-download.svg" /></a></li>
-<h5 style="margin-top:25px;">BASE IMAGES</h5>
+<h5 style="margin-top:25px;">E4S GPU IMAGE</h5>
+<li>ecpe4s/ubuntu18.04-e4s-gpu <a href="https://hub.docker.com/r/ecpe4s/ubuntu18.04-e4s-gpu/tags"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes"><img height="15" src="GitHub_Logo.png" /></a></li>
+<li style="list-style-type: none">x86_64 version: CUDA and ROCM</li>
+<li style="list-style-type: none">ppc64le version: CUDA</li>
+<h5 style="margin-top:25px;">SPACK MINIMAL</h5>
 <ul style="list-style-type: none; padding: 0;">
-<li>ecpe4s/ubuntu1804_x86_64_base <a href="https://hub.docker.com/r/ecpe4s/ubuntu1804_x86_64_base"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/ubuntu18.04/x86_64/base"><img height="15" src="GitHub_Logo.png" /></a>  <a href="https://oaciss.uoregon.edu/e4s/images/ecpe4s-ubuntu1804-x86_64-base-1.3.tar.xz"><img height="15" src="data-transfer-download.svg" /></a></li>
-<li>ecpe4s/ubuntu1804_ppc64le_base <a href="https://hub.docker.com/r/ecpe4s/ubuntu1804_ppc64le_base"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/ubuntu18.04/ppc64le/base"><img height="15" src="GitHub_Logo.png" /></a>  <a href="https://oaciss.uoregon.edu/e4s/images/ecpe4s-ubuntu1804-ppc64le-base-1.3.tar.xz"><img height="15" src="data-transfer-download.svg" /></a></li>
-<li>ecpe4s/ubuntu1804_aarch64_base <a href="https://hub.docker.com/r/ecpe4s/ubuntu1804_aarch64_base"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/ubuntu18.04/aarch64/xavier"><img height="15" src="GitHub_Logo.png" /></a>  <a href="https://oaciss.uoregon.edu/e4s/images/ecpe4s-ubuntu1804-aarch64-base-1.1.tar.xz"><img height="15" src="data-transfer-download.svg" /></a></li>
+<li>ecpe4s/ubuntu18.04-spack <a href="https://hub.docker.com/r/ecpe4s/ubuntu18.04-spack/tags"> <img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes"><img height="15" src="GitHub_Logo.png" /></a></li>
 </ul>
-<h5 style="margin-top:25px;">E4S COMPREHENSIVE IMAGE</h5>
+<h5 style="margin-top:25px;">E4S COMPREHENSIVE</h5>
 <ul style="list-style-type: none; padding: 0;">
-<li>ecpe4s/ubuntu1804_x86_64_e4s <a href="https://hub.docker.com/r/ecpe4s/ubuntu1804_x86_64_e4s"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/ubuntu18.04/x86_64/e4s"><img height="15" src="GitHub_Logo.png" /></a>  <a href="https://oaciss.uoregon.edu/e4s/images/ecpe4s-ubuntu1804-x86_64-e4s-1.3.tar.xz"><img height="15" src="data-transfer-download.svg" /></a></li>
+<li>ecpe4s/ubuntu18.04-e4s <a href="https://hub.docker.com/r/ecpe4s/ubuntu18.04-e4s/tags"> <img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes"><img height="15" src="GitHub_Logo.png" /></a></li>
 </ul>
-<h5 style="margin-top:25px;">CUSTOM IMAGES</h5>
+<h5 style="margin-top:25px;">CUSTOM</h5>
 <ul style="list-style-type: none; padding: 0;">
-<li>ecpe4s/ubuntu1804_aarch64_waggle <a href="https://hub.docker.com/r/ecpe4s/ubuntu1804_aarch64_waggle"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/ubuntu18.04/aarch64/xavier"><img height="15" src="GitHub_Logo.png" /></a>  <a href="https://oaciss.uoregon.edu/e4s/images/ecpe4s-ubuntu1804-aarch64-waggle-1.0.tar.xz"><img height="15" src="data-transfer-download.svg" /></a></li>
+<li>ecpe4s/ubuntu1804_aarch64_waggle <a href="https://hub.docker.com/r/ecpe4s/ubuntu1804_aarch64_waggle/tags"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/ubuntu18.04-xavier-aarch64"><img height="15" src="GitHub_Logo.png" /></a> </li>
 </ul>
 
 </div>
 
 <div class="col-sm-4">
 <h3>CentOS 7</h3>
-<h5 style="margin-top:25px;">BASE IMAGES</h5>
+<h5 style="margin-top:25px;">SPACK MINIMAL</h5>
 <ul style="list-style-type: none; padding: 0;">
-<li>ecpe4s/centos7_x86_64_base <a href="https://hub.docker.com/r/ecpe4s/centos7_x86_64_base"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/centos7/x86_64/base"><img height="15" src="GitHub_Logo.png" /></a>  <a href="https://oaciss.uoregon.edu/e4s/images/ecpe4s-centos7-x86_64-base-1.3.tar.xz"><img height="15" src="data-transfer-download.svg" /></a></li>
-<li>ecpe4s/centos7_ppc64le_base <a href="https://hub.docker.com/r/ecpe4s/centos7_ppc64le_base"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/centos7/ppc64le/base"><img height="15" src="GitHub_Logo.png" /></a>  <a href="https://oaciss.uoregon.edu/e4s/images/ecpe4s-centos7-ppc64le-base-1.3.tar.xz"><img height="15" src="data-transfer-download.svg" /></a></li>
+<li>ecpe4s/centos7-spack <a href="https://hub.docker.com/r/ecpe4s/centos7-spack/tags"> <img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes"><img height="15" src="GitHub_Logo.png" /></a></li>
 </ul>
-<h5 style="margin-top:25px;">E4S COMPREHENSIVE IMAGE</h5>
+<h5 style="margin-top:25px;">E4S COMPREHENSIVE</h5>
 <ul style="list-style-type: none; padding: 0;">
-<li>exascaleproject/e4s_x86_64<a href="https://hub.docker.com/r/exascaleproject/e4s_x86_64"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes/centos7/x86_64"><img height="15" src="GitHub_Logo.png" /></a>  <a href="https://oaciss.uoregon.edu/e4s/images/e4s_x86_64.xz"><img height="15" src="data-transfer-download.svg" /></a></li>
+<li>ecpe4s/centos7-e4s<a href="https://hub.docker.com/r/exascaleproject/e4s_x86_64"> <img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes"><img height="15" src="GitHub_Logo.png" /></a> </li>
 </ul>
-<h5 style="margin-top:25px;">CUSTOM IMAGES</h5>
+<h5 style="margin-top:25px;">CUSTOM</h5>
 <ul style="list-style-type: none; padding: 0;">
 <li>- - - -</li>
 </ul>
