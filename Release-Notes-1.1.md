@@ -1,6 +1,6 @@
 ## ST Product Release Participation
 
-At the time of the E4S 1.0 release, all ECP ST software products fall into one of three categories of release preparation.
+At the time of the E4S 1.1 release, all ECP ST software products fall into one of three categories of release preparation.
 
 - Full Release
 - Partial Release
@@ -8,7 +8,7 @@ At the time of the E4S 1.0 release, all ECP ST software products fall into one o
 
 ### Full Release
 
-ST software products in this category are available via Spack, and can be built in a common environment with the other products in this category. A specific, Spack-registered version for each product in this category is part of the 1.0 release.
+ST software products in this category are available via Spack, and can be built in a common environment with the other products in this category. A specific, Spack-registered version for each product in this category is part of the 1.1 release.
 
 #### List of Full Release Products (50)
 
@@ -78,4 +78,4 @@ ST software products in this category are available via Spack and may or may not
 
 ### Future Release
 
-The Spack package for ST software products in this category is either under development or in the planning stages. These products may or may not be available currently via other delivery mechanisms, but are not available via Spack at the time of the 1.0 release.
+The Spack package for ST software products in this category is either under development or in the planning stages. These products may or may not be available currently via other delivery mechanisms, but are not available via Spack at the time of the 1.1 release.
