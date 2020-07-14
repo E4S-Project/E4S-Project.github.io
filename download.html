@@ -73,15 +73,15 @@
 	            <div class="row">
 	                <div class="col-sm-12 features section-description">
 	                    <h1>Extreme-Scale Scientific Software Stack (E4S)</h1>
-                      <h2>version 1.0</h2>
+                      <h2>version 1.1</h2>
 	                    <div class="divider-1"><div class="line"></div></div>
 	                    <p>Exascale Computing 
 Project (ECP) Software Technologies (ST) software, Extreme-Scale 
-Scientific Software Stack (E4S) v1.0, includes a subset of ECP ST
+Scientific Software Stack (E4S) v1.1, includes a subset of ECP ST
  software products, and demonstrates the target approach for future 
 delivery of the full ECP ST software stack. Also available are a number 
 of ECP ST software products that support a Spack package, but are not 
-yet fully interoperable. As the primary purpose of the v1.0 is 
+yet fully interoperable. As the primary purpose of the v1.1 is 
 demonstrating the ST software stack release approach, not all ECP ST 
 software products were targeted for this release. Software products were
  targeted primarily based on existing Spack package maturity, location 
@@ -90,7 +90,7 @@ with the software. Each release will include additional software
 products, with the ultimate goal of including all ECP ST software 
 products.
 </p>
-	                    <p><a href="https://e4s-project.github.io/Release-Notes-1.0.html">E4S v1.0 Notes</a>.</p>
+	                    <p><a href="https://e4s-project.github.io/Release-Notes-1.1.html">E4S v1.1 Notes</a>.</p>
                       <p><a href="https://e4s-project.github.io/installation.html">E4S Container Installation Instructions</a>.</p>
 
 	                    <div class="divider-1"><div class="line"></div></div>
@@ -165,7 +165,7 @@ products.
 		                    	</p>
 	                			<p>
                           Spack contains packages for all of the 
-products listed in the E4S 1.0 Full Release category (see above 1.0 
+products listed in the E4S 1.1 Full Release category (see above 1.1 
 Release Notes). General instructions for building software with Spack 
 can be found at the Spack website. For more information, see 
 /usr/local/packages/ecp in the container referenced here. Questions concerning building those packages are deferred
@@ -198,7 +198,7 @@ configuration commands) are available in the container. See the
 README.txt file for more details. This release also includes an OVA file
  that has Docker, Charliecloud, Shifter, and Singularity preinstalled in
  it. The Docker container image is also available from Dockerhub:</p>
-<p> <code># docker pull exascaleproject/e4s_x86_64:1.0</code></p>
+<p> <code># docker pull ecpe4s/ubuntu18.04-e4s-gpu</code></p>
 </div>
 </div>
 
@@ -261,11 +261,6 @@ README.txt file for more details. This release also includes an OVA file
 <li>- - - -</li>
 </ul>
 </div>
-</div>
-<div class="row">
-If you manually download the xz file from our website, you may install the package from the xz file using the following commands: 
-<p> <code># unxz -c e4s_x86_64.xz | docker load </code> </p>
-<p> <code># docker run --rm -it exascaleproject/e4s_x86_64:1.0  </code> </p>
 </div>
 </div>
 
