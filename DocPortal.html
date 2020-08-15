@@ -745,7 +745,7 @@ STRUMPACK -- STRUctured Matrix PACKage - provides linear solvers for
 <div class="docsum">
 <pre>
 <h1>STRUMPACK</h1>
-<p>STRUMPACK -- STRUctured Matrices PACKage, Copyright (c) 2014-2019, The
+<p>STRUMPACK -- STRUctured Matrix PACKage, Copyright (c) 2014-2020, The
 Regents of the University of California, through Lawrence Berkeley
 National Laboratory (subject to receipt of any required approvals from
 the U.S. Dept. of Energy).  All rights reserved.</p>
@@ -1963,12 +1963,13 @@ API for dynamic binary instrumentation. Modify programs while they are
 <div class="docsum">
 <pre>
 <h1>Change Log</h1>
-<h2><a href="https://github.com/dyninst/dyninst/tree/10.1.0">10.1.0</a> (2019-05-15)</h2>
-<p><a href="https://github.com/dyninst/dyninst/compare/v10.0.0...10.1.0">Full Changelog</a></p>
+<h2><a href="https://github.com/dyninst/dyninst/tree/10.1.0">10.1.0</a> (2019-07-30)</h2>
+<p><a href="https://github.com/dyninst/dyninst/compare/v10.1.0...v10.2.0">Full Changelog</a></p>
 <p><strong>Implemented enhancements:</strong></p>
 <ul>
-<li>Unset library variables when building elfutils from source <a href="https://github.com/dyninst/dyninst/issues/561">#561</a></li>
-<li>Update LibIberty to new build system <a href="https://github.com/dyninst/dyninst/pull/601">#601</a> (<a href="https://github.com/hainest">hainest</a>)</li>
+<li>Fix Variable location parsing (<a href="https://github.com/dyninst/dyninst/issue/781">781</a>)</li>
+<li>Fix proccontrol hangs in test_thread_X (<a href="https://github.com/dyninst/dyninst/issue/780">780</a>)</li>
+<li>proccontrol: Handle &quot;ghost&quot; threads (<a href="https://github.com/dyninst/dyninst/issue/742">742</a>)</li>
 </ul>
 </pre>
 </div>
@@ -3820,7 +3821,7 @@ why we use this approach.</p>
 </td></tr>
 <!-- ...to here (product entry end) -->
 </table>
-Last Generated: 2020-08-13 11:18:46<br>
+Last Generated: 2020-08-14 20:00:04<br>
 <script>
 function sortTable(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
