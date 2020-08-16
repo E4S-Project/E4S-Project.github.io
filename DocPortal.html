@@ -763,13 +763,13 @@ the U.S. Dept. of Energy).  All rights reserved.</p>
 <pre>
 Version 3.xx In Progress
 ======================================
+ - Improved HODLR, with butterfly, preconditioning. Now relying on
+   Butterflypack 1.2.0.
+ - Much improved CUDA support in the sparse direct solver. CUDA
+   acceleration is not working yet for the rank-structured solvers
+ - Added matrix equilibration to the sparse solver. This slightly
+   improves numerical accuracy in many cases.
  - Added Lossy compression: --sp_compression lossy, using ZFP.
-   Make sure to configure with ZFP support!
- - Removed some options: --sp_enable HSS, --sp_HSS_min_sep_size,
-   etc..  Now one should use: --sp_compression HSS,
-   --sp_compression_min_sep_size ...
- - Fix for compilation without MPI
- - Several bug fixes and performance improvements
 </pre>
 </div>
 
@@ -3821,7 +3821,7 @@ why we use this approach.</p>
 </td></tr>
 <!-- ...to here (product entry end) -->
 </table>
-Last Generated: 2020-08-14 20:00:04<br>
+Last Generated: 2020-08-15 20:00:03<br>
 <script>
 function sortTable(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
