@@ -316,14 +316,13 @@ programming model.  &quot;Local&quot; means not using MPI, or running within a</
 <div class="docsum">
 <pre>
 <h1>Change Log</h1>
-<h2><a href="https://github.com/kokkos/kokkos-kernels/tree/3.1.1">3.1.1</a> (2020-05-04)</h2>
-<p><a href="https://github.com/kokkos/kokkos-kernels/compare/3.1.00...3.1.1">Full Changelog</a></p>
-<p><strong> Fixed bugs:</strong> </p>
+<h2><a href="https://github.com/kokkos/kokkos-kernels/tree/3.2.00">3.2.00</a> (2020-08-19)</h2>
+<p><a href="https://github.com/kokkos/kokkos-kernels/compare/3.1.01...3.2.00">Full Changelog</a></p>
+<p><strong>Implemented enhancements:</strong></p>
 <ul>
-<li>KokkosBatched QR PR breaking nightly tests <a href="https://github.com/kokkos/kokkos-kernels/issues/691">#691</a></li>
+<li>Add CudaUVMSpace specializations for cuBLAS IAMAX and SCAL <a href="https://github.com/kokkos/kokkos-kernels/issues/758">#758</a></li>
+<li>Add wiki examples <a href="https://github.com/kokkos/kokkos-kernels/issues/735">#735</a></li>
 </ul>
-<h2><a href="https://github.com/kokkos/kokkos-kernels/tree/3.1.00">3.1.00</a> (2020-04-14)</h2>
-<p><a href="https://github.com/kokkos/kokkos-kernels/compare/3.0.00...3.1.00">Full Changelog</a></p>
 </pre>
 </div>
 
@@ -2325,12 +2324,13 @@ Kokkos is designed to target complex node architectures with N-level memory</p>
 <div class="docsum">
 <pre>
 <h1>Change Log</h1>
-<h2><a href="https://github.com/kokkos/kokkos/tree/3.1.1">3.1.1</a> (2020-04-14)</h2>
-<p><a href="https://github.com/kokkos/kokkos/compare/3.1.00...3.1.1">Full Changelog</a></p>
-<p><strong>Fixed bugs:</strong></p>
+<h2><a href="https://github.com/kokkos/kokkos/tree/3.2.00">3.2.00</a> (2020-08-19)</h2>
+<p><a href="https://github.com/kokkos/kokkos/compare/3.1.01...3.2.00">Full Changelog</a></p>
+<p><strong>Implemented enhancements:</strong></p>
 <ul>
-<li>Fix complex_double misalignment in reduce, clang+CUDA <a href="https://github.com/kokkos/kokkos/issues/2989">#2989</a></li>
-<li>Fix compilation fails when profiling disabled and CUDA enabled <a href="https://github.com/kokkos/kokkos/issues/3001">#3001</a></li>
+<li>HIP:Enable stream in HIP <a href="https://github.com/kokkos/kokkos/issues/3163">#3163</a></li>
+<li>HIP:Add support for shuffle reduction for the HIP backend <a href="https://github.com/kokkos/kokkos/issues/3154">#3154</a></li>
+<li>HIP:Add implementations of missing HIPHostPinnedSpace methods for LAMMPS <a href="https://github.com/kokkos/kokkos/issues/3137">#3137</a></li>
 </ul>
 </pre>
 </div>
@@ -3673,7 +3673,7 @@ why we use this approach.</p>
 </td></tr>
 <!-- ...to here (product entry end) -->
 </table>
-Last Generated: 2020-08-24 20:00:03<br>
+Last Generated: 2020-08-25 20:00:04<br>
 <script>
 function sortTable(n) {
   var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
