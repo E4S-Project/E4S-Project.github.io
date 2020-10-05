@@ -75,7 +75,7 @@
 | STRUMPACK | [https://portal.nersc.gov/project/sparse/strumpack/](https://portal.nersc.gov/project/sparse/strumpack/) |
 | SUNDIALS | [https://computation.llnl.gov/projects/sundials](https://computation.llnl.gov/projects/sundials) |
 | SuperLU | [https://portal.nersc.gov/project/sparse/superlu/](https://portal.nersc.gov/project/sparse/superlu/) |
-| SZ | [https://github.com/disheng222/SZ](https://github.com/disheng222/SZ) |
+| SZ | [http://szcompressor.org](http://szcompressor.org) |
 | Tasmanian | [https://tasmanian.ornl.gov/](https://tasmanian.ornl.gov/) |
 | Tau | [https://www.cs.uoregon.edu/research/tau](https://www.cs.uoregon.edu/research/tau) |
 | The Dyninst Binary Tools Suite | [http://www.paradyn.org](http://www.paradyn.org/) |
