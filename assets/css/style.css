@@ -10,7 +10,9 @@ body {
     text-align: center;
 }
 
-
+code {
+  white-space : pre-wrap !important;
+}
 
 strong { font-weight: 500; }
 
