@@ -79,7 +79,7 @@
                     </div>
                 <div class="row">
                     <div class="col-sm-12 features section-description ">
-			
+<div align=left>			
 <p>The <a href="https://e4s-project.github.io/"><em>Extreme-scale Scientific Software Stack</em></a> (E4S) and its related Software Development Kits (SDKs) are light-weight organizational elements intended to enhance collaboration and coordination across independently-developed products to provide an enhanced high-performance software stack.</p>
 
 <p>E4S Community Policies are membership criteria for a product to become an E4S member package. This version of the policies was arrived at by the ECP SDK team, including representation from Programming Models and Runtimes, Development Tools, Math Libraries, Data and Vis, and Software Ecosystem and Delivery, and after considering multiple rounds of feedback from across ECP ST. The starting point for the majority of the policies was taken from the existing <a href="http://xsdk.info/policies/"><em>xSDK Community Policies</em></a>.</p>
@@ -139,7 +139,7 @@
 <p><strong>FLP3</strong> <em>Symbols and Namespacing</em> Each E4S member package will use a limited and well-defined symbol, macro, library, and include file name space. For example, there should be no publicly visible include files such as utils.h, or packages named libutil.a or macros named YES or TRUE. Namespacing of include files can be handled either by prepending each include file with a package name, for example &lt;XXXmat.h&gt;, or by placing and referencing all include files in a subdirectory with a package name, for example &lt;XXX/mat.h&gt;. Note that using a -I/XXX/ and referencing via &lt;mat.h&gt; would not be acceptable namespacing.</p>
 
 <p><strong>FLP4</strong> <em>Memory Leaks</em> Each E4S member package will free all system resources it has acquired as soon as they are no longer needed, including closing open files, freeing memory, freeing MPI communicators, and freeing MPI data types created by the package. In particular, it is important that E4S compatible code not have any growing memory leaks (such as leaking memory during every timestep). Any resources created by the package that should be freed by the user, rather than by the package, must be fully documented. <strong>Note: Exceptions are permitted for situations where other software quality considerations are more important. </strong> </p>
-
+</div>
 			
                     </div>
                 </div>
