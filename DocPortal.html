@@ -99,6 +99,7 @@ tr.shown td.details-control {
                 <th>Name</th>
                 <th>Area</th>
                 <th>Description</th>
+		<th>Latest Doc Update</th>
             </tr>
         </thead>
         <tfoot>
@@ -107,6 +108,7 @@ tr.shown td.details-control {
                 <th>Name</th>
                 <th>Area</th>
                 <th>Description</th>
+		<th>Latest Doc Update</th>
             </tr>
         </tfoot>
     </table>
@@ -173,7 +175,8 @@ $(document).ready(function() {
             { "data": "name" },
             { "data": "area" },
             //{ "data": "member" },
-            { "data": "description" }
+            { "data": "description" },
+	    { "data": "last_updated" }
         ],
         "order": [[1, 'asc']]
     } );
