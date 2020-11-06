@@ -33,6 +33,7 @@ E4S software products in this category are available via Spack, and can be built
 - Gotcha
 - HDF5
 - HPCToolkit
+- HPX 
 - Hypre
 - Kokkos
 - KokkosKernels
