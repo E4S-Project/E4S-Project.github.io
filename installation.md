@@ -16,11 +16,12 @@ OR
 
 ```
 # docker images
-# docker run -i -t exascaleproject/sdk:AHM19 /bin/bash
+# docker pull ecpe4s/ubuntu18.04-e4s-gpu
+# docker run --gpus all -v $HOME:$HOME --rm -it ecpe4s/ubuntu18.04-e4s-gpu 
 Inside the Docker container:
 # which spack
-# cd /usr/local/packages/ecp/apps/demo; cat README
-# cd demo/trilinos/Zoltan; ./compile.sh; ls -l Zoltan
+# cd /opt/demo/python_tests; ./run.sh
+# cd /opt/demo/trilinos/Zoltan; ./compile.sh; ls -l Zoltan
 # ./run.sh
 ```
 
@@ -29,7 +30,7 @@ Inside the Docker container:
 ```
 # which singularity
 # wget http://tau.uoregon.edu/ecp.simg
-# singularity exec /home/livetau/ecp.simg /bin/bash --rcfile /etc/bashrc
+# singularity exec ./ecp.simg /bin/bash --rcfile /etc/bashrc
 # which spack
 ```
 Replacing MPI On Theta at ALCF: Allocate two nodes:
@@ -40,21 +41,21 @@ Replacing MPI On Theta at ALCF: Allocate two nodes:
 module swap PrgEnv-intel PrgEnv-gnu
 module swap cray-mpich cray-mpich-abi
 export SINGULARITYENV_LIBWLM_DETECT=/opt/cray/wlm_detect/1.3.2-6.0.6.0_3.8__g388ccd5.ari/lib64
-aprun -n 16 -N 8 singularity exec -H $HOME    -B /projects/ECP_SDK:/projects/ECP_SDK:ro -B /opt:/opt:ro -B /var/opt:/var/opt:ro /projects/ECP_SDK/containers/singularity/ecp.simg bash -c 'unset CRAYPE_VERSION; source /usr/local/packages/ecp/misc/bashrc; spack load   trilinos hypre parmetis hdf5 metis openblas superlu zlib netcdf matio boost@1.66.0 scalapack suite-sparse tau ;spack unload openmpi mpich ;  export LD_LIBRARY_PATH=$LIBWLM_DETECT:$CRAY_LD_LIBRARY_PATH:$CRAYPAT_LD_LIBRARY_PATH:$LD_LIBRARY_PATH   ; /projects/ECP_SDK/tutorial/demo/trilinos/Zoltan/Zoltan; '
+aprun -n 16 -N 8 singularity exec -H $HOME    -B /projects/ECP_SDK:/projects/ECP_SDK:ro -B /opt:/opt:ro -B /var/opt:/var/opt:ro /projects/ECP_SDK/containers/singularity/ecp.simg bash -c 'unset CRAYPE_VERSION; source /usr/local/packages/ecp/misc/bashrc; spack load -r trilinos tau ;spack unload openmpi mpich ;  export LD_LIBRARY_PATH=$LIBWLM_DETECT:$CRAY_LD_LIBRARY_PATH:$CRAYPAT_LD_LIBRARY_PATH:$LD_LIBRARY_PATH   ; /projects/ECP_SDK/tutorial/demo/trilinos/Zoltan/Zoltan; '
 ```
 
 ### Shifter
 
 Replacing MPI with system MPI on Cori at NERSC:
 ```
-# shifterimg -v pull docker:exascaleproject/sdk:SC18
-# shifter -E --image=exascaleproject/sdk:SC18 -- /bin/bash --rcfile /etc/bashrc
+# shifterimg -v pull docker:ecpe4s/ubuntu18.04-e4s-gpu
+# shifter -E --image=ecpe4s/ubuntu18.04-e4s-gpu -- /bin/bash --rcfile /etc/bashrc
 # which spack
 
 # shifterimg images | grep exascaleproject
 
-# salloc -N 2 -q interactive -t 00:30:00 --image=exascaleproject/sdk:AHM19 -C haswell -L SCRATCH
-# srun -n 32 shifter  -- /bin/bash  -c 'unset CRAYPE_VERSION;  . /etc/bashrc ; spack load   trilinos hypre parmetis hdf5 metis openblas superlu zlib netcdf matio boost@1.66.0 scalapack suite-sparse tau; spack unload openmpi mpich; ./Zoltan'
+# salloc -N 2 -q interactive -t 00:30:00 --image=ecpe4s/ubuntu18.04-e4s-gpu -C haswell -L SCRATCH
+# srun -n 32 shifter  -- /bin/bash  -c 'unset CRAYPE_VERSION;  . /etc/bashrc ; spack load -r trilinos; spack unload openmpi mpich; ./Zoltan'
 ```
 ### Charliecloud
 
