@@ -1,7 +1,8 @@
-## Container installation recipes
  <style type="text/css" rel="stylesheet">
- code { text-align: left; }
- </style> 
+ pre { text-align: left important!; }
+ </style>
+
+## Container installation recipes
 
 ### Docker
 
