@@ -6,17 +6,7 @@
 
 ### Docker
 
-To use the Docker image, please install docker and download the ecp.xz (or .tgz) file from the [download page](https://e4s-project.github.io/download.html):
-
-```
-# wget http://tau.uoregon.edu/ecp.xz
-# unxz -c ecp.xz | docker load
-```
-OR 
-```
-# wget http://tau.uoregon.edu/ecp.tgz
-# gunzip -c ecp.tgz | docker load
-```
+To use the Docker image, please install docker and pull the appropraite image from Docker Hub.
 
 ```
 # docker images
