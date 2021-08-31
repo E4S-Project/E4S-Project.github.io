@@ -51,16 +51,5 @@ Replacing MPI with system MPI on Cori at NERSC:
 # salloc -N 2 -q interactive -t 00:30:00 --image=ecpe4s/ubuntu18.04-e4s-gpu -C haswell -L SCRATCH
 # srun -n 32 shifter  -- /bin/bash  -c 'unset CRAYPE_VERSION;  . /etc/bashrc ; spack load -r trilinos; spack unload openmpi mpich; ./Zoltan'
 ```
-### Charliecloud
-
-```
-# wget http://tau.uoregon.edu/ecp-cc.tgz
-# tar xf ecp-cc.tgz
-# ch-run --bind=$HOME:$HOME ./ecp-cc -- /bin/bash --rcfile /etc/bashrc
-# which spack
-# cat /usr/local/packages/ecp/Acknowledgment.txt
-```
-If you wish to use the OVA file, please contact below for login information. The OVA file has Docker, Singularity, Shifter, and Charliecloud preinstalled. 
-
 
 Please contact Sameer Shende at sameer [at] cs.uoregon.edu if you have any questions.
