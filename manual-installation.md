@@ -50,12 +50,12 @@ Tweak the model environment so that it suits your needs: remove packages you are
 $> time spack -e . concretize -f | tee concretize.log
 ```
 
-6. Start the install, specifying `-j<N>` where N reflects an appropriate degree of parallelism to use for the builds.
+Start the install, specifying `-j<N>` where N reflects an appropriate degree of parallelism to use for the builds.
 ```
 $> spack -e . install -j<N>
 ```
 
-7. Build times can be quite a long time depending on the modifications you make to the environment and the capabilities of the machine you use for building. If you are using an E4S release branch of Spack, and using a minimally modified E4S release environment where the same compilers, operating system, and target architecture are retained, that will maximize your ability to pull pre-built packages from the build cache.
+Build times can be quite a long time depending on the modifications you make to the environment and the capabilities of the machine you use for building. If you are using an E4S release branch of Spack, and using a minimally modified E4S release environment where the same compilers, operating system, and target architecture are retained, that will maximize your ability to pull pre-built packages from the build cache.
 
 Please contact Sameer Shende at sameer [at] cs.uoregon.edu if you have any questions.
 
