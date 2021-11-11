@@ -76,16 +76,16 @@
 
 	            <div class="row">
 	                <div class="col-sm-12 features section-description">
-	                    <h1>Extreme-Scale Scientific Software Stack (E4S)</h1>
-                      <h2>version 21.08</h2>
+	                    <h1>Extreme-scale Scientific Software Stack (E4S)</h1>
+                      <h2>version 21.11</h2>
 	                    <div class="divider-1"><div class="line"></div></div>
 	                    <p>Exascale Computing 
-Project (ECP) Software Technologies (ST) software, Extreme-Scale 
-Scientific Software Stack (E4S) <A HREF="https://github.com/E4S-Project/e4s/tree/master/environments/21.08">v21.08</A>, includes a subset of ECP ST
+Project (ECP) Software Technologies (ST) software, Extreme-scale 
+Scientific Software Stack (E4S) <A HREF="https://github.com/E4S-Project/e4s/tree/master/environments/21.11">v21.11</A>, includes a subset of ECP ST
  software products, and demonstrates the target approach for future 
 delivery of the full ECP ST software stack. Also available are a number 
 of ECP ST software products that support a Spack package, but are not 
-yet fully interoperable. As the primary purpose of the v21.08 is 
+yet fully interoperable. As the primary purpose of the v21.11 is 
 demonstrating the ST software stack release approach, not all ECP ST 
 software products were targeted for this release. Software products were
  targeted primarily based on existing Spack package maturity, location 
@@ -94,7 +94,7 @@ with the software. Each release will include additional software
 products, with the ultimate goal of including all ECP ST software 
 products.
 </p>
-	                    <p><a href="https://github.com/E4S-Project/e4s/tree/master/environments/21.08">E4S v21.08 Notes</a>.</p>
+	                    <p><a href="https://github.com/E4S-Project/e4s/tree/master/environments/21.11">E4S v21.11 Notes</a>.</p>
                       <p><a href="https://e4s-project.github.io/installation.html">E4S Container Installation Instructions</a>.</p>
 
 	                    <div class="divider-1"><div class="line"></div></div>
@@ -104,9 +104,9 @@ products.
 <div class="row">
 <div class="col-sm-12">
 <h2>Using E4S Containers</h2>
-<p>The current E4S container offerings include Docker images for Red Hat Enterprise Linux 7, Red Hat Enterprise Linux 8, Ubuntu 18.04 (Bionic), and Ubuntu 20.04 (Focal Fossa). Our images can run on X86_64, PPC64LE, and AARCH64 depending on the particular image. In addition to offering a full E4S image containing a comprehensive selection of E4S software released on a quarterly cycle, we also offer a set of minimal base images suitable for use in Continuous Integration (CI) pipelines.</p>
+<p>The current E4S container offerings include Docker images for Red Hat Enterprise Linux 7, Red Hat Enterprise Linux 8, Ubuntu 18.04 (Bionic), and Ubuntu 20.04 (Focal Fossa). Our images can run on X86_64, PPC64LE, and AARCH64 depending on the particular image. In addition to offering a full E4S image containing a comprehensive selection of E4S software released on a quarterly cycle, we also offer a set of minimal base images suitable for use in Continuous Integration (CI) pipelines where Spack is used to build packages.</p>
 <p>Docker images are available on the <a href="https://hub.docker.com/u/ecpe4s">E4S Docker Hub</a>.</p>
-<p>Recipes for building images from scratch are available on the <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes">E4S GitHub repository</a>.</p>
+<p>Recipes which can be used to build some of our images from scratch are available on the <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes">E4S GitHub repository</a>.</p>
 <p>Our recipes make use of Spack packages available as pre-built binaries in the <a href="https://oaciss.uoregon.edu/e4s/inventory.html">E4S Build Cache</a>.</p> 
 </div>
 </div>
@@ -126,16 +126,16 @@ products.
 	                		<div class="col-sm-9">
 	                			<h3>Container Releases</h3>
 	                			<p>
-		                    		<a href="https://hub.docker.com/r/ecpe4s/ubuntu18.04-e4s-gpu" class="btn btn-warning btn-lg" download="E4S">
+		                    		<a href="https://hub.docker.com/repository/docker/ecpe4s/e4s-gpu" class="btn btn-warning btn-lg" download="E4S">
 							        	<span class="glyphicon glyphicon-download"></span> Docker Downloads
 							        </a>
 		                    	</p>
                           <p>
-  		                    		<a href="http://tau.uoregon.edu/ecp.simg" class="btn btn-warning btn-lg" download="E4S">
+  		                    		<a href="https://cache.e4s.io/images/21.11/e4s-gpu-x86_64.sif" class="btn btn-warning btn-lg" download="E4S">
   							        	<span class="glyphicon glyphicon-download"></span> Singularity x86_64 Download
   							        </a>
 		                    	</p>
-  		                    		<a href="http://oaciss.uoregon.edu/e4s/images/ubuntu18.04-e4s-gpu-ppc64le-21.08.simg" class="btn btn-warning btn-lg" download="E4S">
+  		                    		<a href="https://cache.e4s.io/images/21.11/e4s-gpu-ppc64le.sif" class="btn btn-warning btn-lg" download="E4S">
   							        	<span class="glyphicon glyphicon-download"></span> Singularity ppc64le Download
   							        </a>
   		                    	</p>
@@ -164,7 +164,7 @@ products.
 		                    	</p>
 	                			<p>
                           Spack contains packages for all of the 
-products listed in the E4S 2021.08 Full Release category (see above 2021.02 
+products listed in the E4S 21.11 Full Release category (see above 
 Release Notes). General instructions for building software with Spack 
 can be found at the Spack website. For more information, see 
 /usr/local/packages/ecp in the container referenced here. Questions concerning building those packages are deferred
@@ -186,30 +186,10 @@ can be found at the Spack website. For more information, see
 
 <div class="row" style="padding-bottom: 50px;">
 <div class="col-sm-12">
-<h3>AWS EC2 Image</h3>
-<p>The E4S 21.05 release is also available on <a href="http://aws.amazon.com/">AWS</a> as an EC2 AMI with ID ami-057d49e585d0c6c7d
-in the US-West-2 (Oregon) region.
-</div>
-</div>
-
-<div class="row">
-<div class="col-sm-12">
-<div class="divider-1"><div class="line"></div></div>
-</div>
-</div>
-
-<div class="row" style="padding-bottom: 50px;">
-<div class="col-sm-12">
 <h3>Note on Container Images</h3>
 					<p>Container images contain binary 
-versions of the Full Release packages listed above. A clone of Spack is 
-also available in the container which can be used to compile the Full 
-Release and Partial Release packages. Example Spack "recipes" (lists of 
-configuration commands) are available in the container. See the 
-README.txt file for more details. This release also includes an OVA file
- that has Docker, Charliecloud, Shifter, and Singularity preinstalled in
- it. The Docker container image is also available from Dockerhub:</p>
-<p> <code># docker pull ecpe4s/ubuntu18.04-e4s-gpu</code></p>
+versions of the Full Release packages listed above. The full-featured GPU-enabled container image is available from Dockerhub:</p>
+<p> <code># docker pull ecpe4s/e4s-gpu</code></p>
 </div>
 </div>
 
@@ -217,9 +197,12 @@ README.txt file for more details. This release also includes an OVA file
 <div class="col-sm-12">
 <h3>E4S GPU Images</h3>
 <h5 style="margin-top:25px;">Multi-Arch Image (X86_64 and PPC64LE)</h5>
-	<p>This is a multi-arch image, meaning that the same image name can be used to pull the appropriate image for your architecture. </p>
+	<p>This is a full-featured multi-arch image.</p>
+<p>It contains all relevant GPU stacks, the full set of E4S release packages installed w/ Spack, Python machine learning packages optimized for GPU, and TAU. </p>
 <ul style="list-style-type: none; padding: 0;">
-	<li>ecpe4s/ubuntu18.04-e4s-gpu <a href="https://hub.docker.com/r/ecpe4s/ubuntu18.04-e4s-gpu/tags"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes"><img height="15" src="GitHub_Logo.png" /></a></li>
+	<li>ecpe4s/e4s-gpu <a href="https://hub.docker.com/repository/docker/ecpe4s/e4s-gpu/tags"><img height="15" src="docker.png" /></a></li>
+	<li>e4s-gpu-x86_64.sif <a href="https://oaciss.uoregon.edu/e4s/images/21.11/e4s-gpu-x86_64.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a><a href="https://cache.e4s.io/images/21.11/e4s-gpu-x86_64.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 2</a></li>
+	<li>e4s-gpu-ppc64le.sif <a href="https://oaciss.uoregon.edu/e4s/images/21.11/e4s-gpu-ppc64le.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a><a href="https://cache.e4s.io/images/21.11/e4s-gpu-ppc64le.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 2</a></li>
 </ul>
 </div>
 </div>
@@ -227,7 +210,44 @@ README.txt file for more details. This release also includes an OVA file
 <br />
 
 <div style="font-size: 0.9em;" class="row">
+	<h3>GPU Base Images</h3>
+	<p>These images come with MPICH, CMake, and the relevant GPU SDK -- either ROCM, NVIDIA CUDA Toolkit and NVHPC, or Intel OneAPI -- available as LMOD modules</p>
+
+<div class="col-sm-4">
+<h5 style="margin-top:25px;">NVIDIA Multi-Arch (X86_64, PPC64LE, AARCH64)</h5>
+<ul style="list-style-type: none; padding: 0;">
+<li>ecpe4s/e4s-base-cuda <a href="https://hub.docker.com/r/ecpe4s/e4s-base-cuda/tags"><img height="15" src="docker.png" /></a></li>
+<li>e4s-x86_64-cuda.sif  <a href="https://oaciss.uoregon.edu/e4s/images/21.11/e4s-x86_64-cuda.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a><a href="https://cache.e4s.io/images/21.11/e4s-x86_64-cuda.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 2</a></li>
+<li>e4s-aarch64-cuda.sif <a href="https://oaciss.uoregon.edu/e4s/images/21.11/e4s-aarch64-cuda.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a><a href="https://cache.e4s.io/images/21.11/e4s-aarch64-cuda.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 2</a></li>
+<li>e4s-ppc64le-cuda.sif <a href="https://oaciss.uoregon.edu/e4s/images/21.11/e4s-ppc64le-cuda.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a><a href="https://cache.e4s.io/images/21.11/e4s-ppc64le-cuda.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 2</a></li>
+</ul>
+</div>
+
+<div class="col-sm-4">
+<h5 style="margin-top:25px;">ROCM X86_64</h5>
+<ul style="list-style-type: none; padding: 0;">
+<li>ecpe4s/e4s-base-rocm <a href="https://hub.docker.com/r/ecpe4s/e4s-base-rocm/tags"><img height="15" src="docker.png" /></a></li>
+<li>e4s-x86_64-rocm.sif <a href="https://oaciss.uoregon.edu/e4s/images/21.11/e4s-x86_64-rocm.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a><a href="https://cache.e4s.io/images/21.11/e4s-x86_64-rocm.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 2</a></li>
+</ul>
+</div>
+
+<div class="col-sm-4">
+<h5 style="margin-top:25px;">Intel OneAPI X86_64</h5>
+<ul style="list-style-type: none; padding: 0;">
+<li>ecpe4s/e4s-base-intel <a href="https://hub.docker.com/r/ecpe4s/e4s-base-oneapi/tags"><img height="15" src="docker.png" /></a></li>
+<li>e4s-x86_64-oneapi.sif <a href="https://oaciss.uoregon.edu/e4s/images/21.11/e4s-x86_64-oneapi.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a><a href="https://cache.e4s.io/images/21.11/e4s-x86_64-oneapi.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 2</a></li>
+</ul>
+</div>
+
+</div>
+
+<br />
+
+
+<div style="font-size: 0.9em;" class="row">
 	<h3>Continuous Integration Images</h3>
+	<p>These are barebones operating system images which contain only essential build tools and python packages needed by Spack.</p>
+<p>These images are intended to be used in continuous integration workflows where Spack is first cloned and then used to build and test software.</p>
 <div class="col-sm-6">
 <h5 style="margin-top:25px;">X86_64</h5>
 <ul style="list-style-type: none; padding: 0;">
@@ -271,6 +291,20 @@ README.txt file for more details. This release also includes an OVA file
 	<li><a href="https://docs.olcf.ornl.gov/software/e4s.html">OLCF</a></li>
 </ul>
 
+</div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+<div class="divider-1"><div class="line"></div></div>
+</div>
+</div>
+
+<div class="row" style="padding-bottom: 50px;">
+<div class="col-sm-12">
+<h3>AWS EC2 Image</h3>
+<p>The E4S 21.05 release is also available on <a href="http://aws.amazon.com/">AWS</a> as an EC2 AMI with ID ami-057d49e585d0c6c7d
+in the US-West-2 (Oregon) region.
 </div>
 </div>
 
