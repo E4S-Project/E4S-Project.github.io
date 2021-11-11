@@ -6,12 +6,12 @@
 
 ### References
 
-[Spack General Documentation](https://spack.readthedocs.io/en/latest/)
-[Spack Environments Documentation](https://spack.readthedocs.io/en/latest/environments.html)
-[Spack Build Cache Documentation](https://spack.readthedocs.io/en/latest/binary_caches.html)
-[E4S Model Environment Repository](https://github.com/E4S-Project/e4s)
-[E4S 21.11 Model Environments](https://github.com/E4S-Project/e4s/tree/master/environments/21.11)
-[E4S Homepage](https://e4s.io)
+* [Spack General Documentation](https://spack.readthedocs.io/en/latest/)
+* [Spack Environments Documentation](https://spack.readthedocs.io/en/latest/environments.html)
+* [Spack Build Cache Documentation](https://spack.readthedocs.io/en/latest/binary_caches.html)
+* [E4S Model Environment Repository](https://github.com/E4S-Project/e4s)
+* [E4S 21.11 Model Environments](https://github.com/E4S-Project/e4s/tree/master/environments/21.11)
+* [E4S Homepage](https://e4s.io)
 
 ### Instructions
 
