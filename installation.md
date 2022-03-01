@@ -10,12 +10,15 @@ To use the Docker image, please install docker and pull the appropraite image fr
 
 ```
 # docker images
-# docker pull ecpe4s/ubuntu18.04-e4s-gpu
-# docker run --gpus all -v $HOME:$HOME --rm -it ecpe4s/ubuntu18.04-e4s-gpu 
+# docker pull ecpe4s/e4s-gpu:22.02
+# docker run --gpus all -v $HOME:$HOME --rm -it ecpe4s/e4s-gpu:22.02
 Inside the Docker container:
 # which spack
-# cd /opt/demo/python_tests; ./run.sh
-# cd /opt/demo/trilinos/Zoltan; ./compile.sh; ls -l Zoltan
+# cd /opt/demo/python_tests
+# conda activate cuda
+# ./run.sh
+# cd /opt/demo/testsuite/validation_tests/trilinos
+# ./compile.sh
 # ./run.sh
 ```
 
@@ -24,7 +27,7 @@ Inside the Docker container:
 ```
 # which singularity
 # wget http://tau.uoregon.edu/ecp.simg
-# singularity exec ./ecp.simg /bin/bash --rcfile /etc/bashrc
+# singularity exec ./ecp.simg /bin/bash --rcfile /etc/bash.bashrc
 # which spack
 ```
 Replacing MPI On Theta at ALCF: Allocate two nodes:
@@ -42,14 +45,14 @@ aprun -n 16 -N 8 singularity exec -H $HOME    -B /projects/ECP_SDK:/projects/ECP
 
 Replacing MPI with system MPI on Cori at NERSC:
 ```
-# shifterimg -v pull docker:ecpe4s/ubuntu18.04-e4s-gpu
-# shifter -E --image=ecpe4s/ubuntu18.04-e4s-gpu -- /bin/bash --rcfile /etc/bashrc
+# shifterimg -v pull docker:ecpe4s/e4s-gpu:22.02
+# shifter -E --image=ecpe4s/e4s-gpu:22.02 -- /bin/bash --rcfile /etc/bash.bashrc
 # which spack
 
 # shifterimg images | grep exascaleproject
 
-# salloc -N 2 -q interactive -t 00:30:00 --image=ecpe4s/ubuntu18.04-e4s-gpu -C haswell -L SCRATCH
-# srun -n 32 shifter  -- /bin/bash  -c 'unset CRAYPE_VERSION;  . /etc/bashrc ; spack load -r trilinos; spack unload openmpi mpich; ./Zoltan'
+# salloc -N 2 -q interactive -t 00:30:00 --image=ecpe4s/e4s-gpu:22.02 -C haswell -L SCRATCH
+# srun -n 32 shifter  -- /bin/bash  -c 'unset CRAYPE_VERSION;  . /etc/bash.bashrc ; spack load trilinos; spack unload openmpi mpich; ./Zoltan'
 ```
 
 Please contact Sameer Shende at sameer [at] cs.uoregon.edu if you have any questions.
