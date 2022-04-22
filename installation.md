@@ -32,7 +32,7 @@ Inside the Docker container:
 ```
 Replacing MPI On Theta at ALCF: Allocate two nodes:
 ```
-% qsub -A  -t 30 -n 2  -q debug-cache-quad  -I
+% qsub -A <PROJECT_ID> -t 30 -n 2  -q debug-cache-quad  -I
 % /projects/ECP_SDK/tutorial/run_job.sh
 % cat /projects/ECP_SDK/tutorial/run_job.sh
 module swap PrgEnv-intel PrgEnv-gnu
