@@ -229,6 +229,40 @@ versions of the Full Release packages listed above. Full-featured GPU-enabled co
 
 <br />
 
+<div style="font-size: 0.9em;" class="row">
+	<h3>GPU Base Images</h3>
+	<p>These images come with MPICH, CMake, and the relevant GPU SDK -- either AMD ROCm, NVIDIA CUDA Toolkit and NVHPC, or Intel OneAPI.</p>
+
+<div class="col-sm-4">
+<h5 style="margin-top:25px;">NVIDIA Multi-Arch (X86_64, PPC64LE, AARCH64)</h5>
+<ul style="list-style-type: none; padding: 0;">
+<li>ecpe4s/e4s-base-cuda:22.08 <a href="https://hub.docker.com/r/ecpe4s/e4s-base-cuda/tags"><img height="15" src="docker.png" /></a></li>
+<li>e4s-base-cuda-x86_64-22.08.sif  <a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-base-cuda-x86_64-22.08.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
+<li>e4s-base-cuda-aarch64-22.08.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-base-cuda-aarch64-22.08.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
+<li>e4s-base-cuda-ppc64le-22.08.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-base-cuda-ppc64le-22.08.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
+</ul>
+</div>
+
+<div class="col-sm-4">
+<h5 style="margin-top:25px;">ROCM X86_64</h5>
+<ul style="list-style-type: none; padding: 0;">
+<li>ecpe4s/e4s-base-rocm:22.08 <a href="https://hub.docker.com/r/ecpe4s/e4s-base-rocm/tags"><img height="15" src="docker.png" /></a></li>
+<li>e4s-base-rocm-22.08.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-base-rocm-22.08.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
+</ul>
+</div>
+
+<div class="col-sm-4">
+<h5 style="margin-top:25px;">Intel OneAPI X86_64</h5>
+<ul style="list-style-type: none; padding: 0;">
+<li>ecpe4s/e4s-base-oneapi:22.08 <a href="https://hub.docker.com/r/ecpe4s/e4s-base-oneapi/tags"><img height="15" src="docker.png" /></a></li>
+<li>e4s-base-oneapi-22.08.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-base-oneapi-22.08.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
+</ul>
+</div>
+
+</div>
+
+<br />
+
 
 <div style="font-size: 0.9em;" class="row">
 	<div class="col-sm-12">
@@ -258,39 +292,6 @@ versions of the Full Release packages listed above. Full-featured GPU-enabled co
 	</div>
 
 <br />
-
-
-<div style="font-size: 0.9em;" class="row">
-	<h3>GPU Base Images</h3>
-	<p>These images come with MPICH, CMake, and the relevant GPU SDK -- either AMD ROCm, NVIDIA CUDA Toolkit and NVHPC, or Intel OneAPI.</p>
-
-<div class="col-sm-4">
-<h5 style="margin-top:25px;">NVIDIA Multi-Arch (X86_64, PPC64LE, AARCH64)</h5>
-<ul style="list-style-type: none; padding: 0;">
-<li>ecpe4s/e4s-base-cuda:22.05 <a href="https://hub.docker.com/r/ecpe4s/e4s-base-cuda/tags"><img height="15" src="docker.png" /></a></li>
-<li>e4s-base-cuda-x86_64-22.05.sif  <a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-base-cuda-x86_64-22.05.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
-<li>e4s-base-cuda-aarch64-22.05.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-base-cuda-aarch64-22.05.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
-<li>e4s-base-cuda-ppc64le-22.05.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-base-cuda-ppc64le-22.05.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
-</ul>
-</div>
-
-<div class="col-sm-4">
-<h5 style="margin-top:25px;">ROCM X86_64</h5>
-<ul style="list-style-type: none; padding: 0;">
-<li>ecpe4s/e4s-base-rocm:22.05 <a href="https://hub.docker.com/r/ecpe4s/e4s-base-rocm/tags"><img height="15" src="docker.png" /></a></li>
-<li>e4s-base-rocm-22.05.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-base-rocm-22.05.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
-</ul>
-</div>
-
-<div class="col-sm-4">
-<h5 style="margin-top:25px;">Intel OneAPI X86_64</h5>
-<ul style="list-style-type: none; padding: 0;">
-<li>ecpe4s/e4s-base-oneapi:22.05 <a href="https://hub.docker.com/r/ecpe4s/e4s-base-oneapi/tags"><img height="15" src="docker.png" /></a></li>
-<li>e4s-base-oneapi-22.05.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-base-oneapi-22.05.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
-</ul>
-</div>
-
-</div>
 
 <br />
 
