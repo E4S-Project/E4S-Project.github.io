@@ -121,21 +121,21 @@
 							        </a>
 		                    	</p>
                           <p>
-  		                    		<a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-cuda-x86_64-22.05.sif" class="btn btn-warning btn-lg" download="E4S">
+  		                    		<a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-cuda-x86_64-22.08.sif" class="btn btn-warning btn-lg" download="E4S">
   							        	<span class="glyphicon glyphicon-download"></span> Singularity x86_64 Download - CUDA
   							        </a>
 		                    	</p>
-  		                    		<a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-cuda-ppc64le-22.05.sif" class="btn btn-warning btn-lg" download="E4S">
+  		                    		<a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-cuda-ppc64le-22.08.sif" class="btn btn-warning btn-lg" download="E4S">
   							        	<span class="glyphicon glyphicon-download"></span> Singularity ppc64le Download - CUDA
   							        </a>
   		                    	</p>
 							</p>
-							<a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-rocm-22.05.sif" class="btn btn-warning btn-lg" download="E4S">
+							<a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-rocm-22.08.sif" class="btn btn-warning btn-lg" download="E4S">
 								<span class="glyphicon glyphicon-download"></span> Singularity x86_64 Download - ROCm
 							</a>
 						</p>
 					</p>
-					<a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-oneapi-22.05.sif" class="btn btn-warning btn-lg" download="E4S">
+					<a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-oneapi-22.08.sif" class="btn btn-warning btn-lg" download="E4S">
 						<span class="glyphicon glyphicon-download"></span> Singularity x86_64 Download - OneAPI
 					</a>
 				</p>
@@ -164,7 +164,7 @@
 		                    	</p>
 	                			<p>
                           Spack contains packages for all of the 
-products listed in the E4S 22.05 Full Release category (see above 
+products listed in the E4S 22.08 Full Release category (see above 
 Release Notes). General instructions for building software with Spack 
 can be found at the Spack website. Questions concerning building those packages are deferred
  to the associated package development team.
@@ -188,9 +188,9 @@ can be found at the Spack website. Questions concerning building those packages 
 <h3>Note on Container Images</h3>
 					<p>Container images contain binary 
 versions of the Full Release packages listed above. Full-featured GPU-enabled container images are available from Dockerhub:</p>
-<p> <code># docker pull ecpe4s/e4s-cuda:22.05</code></p>
-<p> <code># docker pull ecpe4s/e4s-rocm:22.05</code></p>
-<p> <code># docker pull ecpe4s/e4s-oneapi:22.05</code></p>
+<p> <code># docker pull ecpe4s/e4s-cuda:22.08</code></p>
+<p> <code># docker pull ecpe4s/e4s-rocm:22.08</code></p>
+<p> <code># docker pull ecpe4s/e4s-oneapi:22.08</code></p>
 </div>
 </div>
 
@@ -202,25 +202,26 @@ versions of the Full Release packages listed above. Full-featured GPU-enabled co
 <div class="col-sm-4">
 	<h5 style="margin-top:25px;">AMD ROCm (x86_64)</h5>
 	<ul style="list-style-type: none; padding: 0;">
-	<li>ecpe4s/e4s-rocm:22.05 <a href="https://hub.docker.com/r/ecpe4s/e4s-rocm/tags"><img height="15" src="docker.png" /></a></li>
-	<li>e4s-rocm-22.05.sif  <a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-rocm-22.05.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
+	<li>ecpe4s/e4s-rocm:22.08 <a href="https://hub.docker.com/r/ecpe4s/e4s-rocm/tags"><img height="15" src="docker.png" /></a></li>
+	<li>e4s-rocm-22.08.sif  <a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-rocm-22.08.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
 	</ul>
 </div>
 
 <div class="col-sm-4">
-	<h5 style="margin-top:25px;">NVIDIA CUDA (x86_64, ppc64le)</h5>
+	<h5 style="margin-top:25px;">NVIDIA CUDA (x86_64, ppc64le, aarch64)</h5>
 	<ul style="list-style-type: none; padding: 0;">
-	<li>ecpe4s/e4s-cuda:22.05 <a href="https://hub.docker.com/r/ecpe4s/e4s-cuda/tags"><img height="15" src="docker.png" /></a></li>
-	<li>e4s-cuda-x86_64-22.05.sif  <a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-cuda-x86_64-22.05.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
-	<li>e4s-cuda-ppc64le-22.05.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-cuda-ppc64le-22.05.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
+	<li>ecpe4s/e4s-cuda:22.08 <a href="https://hub.docker.com/r/ecpe4s/e4s-cuda/tags"><img height="15" src="docker.png" /></a></li>
+	<li>e4s-cuda-x86_64-22.08.sif  <a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-cuda-x86_64-22.08.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
+	<li>e4s-cuda-ppc64le-22.08.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-cuda-ppc64le-22.08.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
+	<li>e4s-cuda-aarch64-22.08.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-cuda-aarch64-22.08.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
 	</ul>
 </div>
 
 <div class="col-sm-4">
 	<h5 style="margin-top:25px;">Intel OneAPI (x86_64)</h5>
 	<ul style="list-style-type: none; padding: 0;">
-	<li>ecpe4s/e4s-oneapi:22.05 <a href="https://hub.docker.com/r/ecpe4s/e4s-oneapi/tags"><img height="15" src="docker.png" /></a></li>
-	<li>e4s-oneapi-22.05.sif  <a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-oneapi-22.05.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
+	<li>ecpe4s/e4s-oneapi:22.08 <a href="https://hub.docker.com/r/ecpe4s/e4s-oneapi/tags"><img height="15" src="docker.png" /></a></li>
+	<li>e4s-oneapi-22.08.sif  <a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-oneapi-22.08.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
 	</ul>
 </div>
 
