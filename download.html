@@ -121,21 +121,26 @@
 							        </a>
 		                    	</p>
                           <p>
-  		                    		<a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-cuda-x86_64-22.05.sif" class="btn btn-warning btn-lg" download="E4S">
+  		                    		<a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-cuda-x86_64-22.08.sif" class="btn btn-warning btn-lg" download="E4S">
   							        	<span class="glyphicon glyphicon-download"></span> Singularity x86_64 Download - CUDA
   							        </a>
 		                    	</p>
-  		                    		<a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-cuda-ppc64le-22.05.sif" class="btn btn-warning btn-lg" download="E4S">
+  		                    		<a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-cuda-ppc64le-22.08.sif" class="btn btn-warning btn-lg" download="E4S">
   							        	<span class="glyphicon glyphicon-download"></span> Singularity ppc64le Download - CUDA
   							        </a>
   		                    	</p>
+								  <p>
+									<a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-cuda-aarch64-22.08.sif" class="btn btn-warning btn-lg" download="E4S">
+										<span class="glyphicon glyphicon-download"></span> Singularity aarch64 Download - CUDA
+									</a>
+							  </p>
 							</p>
-							<a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-rocm-22.05.sif" class="btn btn-warning btn-lg" download="E4S">
+							<a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-rocm-22.08.sif" class="btn btn-warning btn-lg" download="E4S">
 								<span class="glyphicon glyphicon-download"></span> Singularity x86_64 Download - ROCm
 							</a>
 						</p>
 					</p>
-					<a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-oneapi-22.05.sif" class="btn btn-warning btn-lg" download="E4S">
+					<a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-oneapi-22.08.sif" class="btn btn-warning btn-lg" download="E4S">
 						<span class="glyphicon glyphicon-download"></span> Singularity x86_64 Download - OneAPI
 					</a>
 				</p>
@@ -164,7 +169,7 @@
 		                    	</p>
 	                			<p>
                           Spack contains packages for all of the 
-products listed in the E4S 22.05 Full Release category (see above 
+products listed in the E4S 22.08 Full Release category (see above 
 Release Notes). General instructions for building software with Spack 
 can be found at the Spack website. Questions concerning building those packages are deferred
  to the associated package development team.
@@ -188,9 +193,9 @@ can be found at the Spack website. Questions concerning building those packages 
 <h3>Note on Container Images</h3>
 					<p>Container images contain binary 
 versions of the Full Release packages listed above. Full-featured GPU-enabled container images are available from Dockerhub:</p>
-<p> <code># docker pull ecpe4s/e4s-cuda:22.05</code></p>
-<p> <code># docker pull ecpe4s/e4s-rocm:22.05</code></p>
-<p> <code># docker pull ecpe4s/e4s-oneapi:22.05</code></p>
+<p> <code># docker pull ecpe4s/e4s-cuda:22.08</code></p>
+<p> <code># docker pull ecpe4s/e4s-rocm:22.08</code></p>
+<p> <code># docker pull ecpe4s/e4s-oneapi:22.08</code></p>
 </div>
 </div>
 
@@ -202,26 +207,62 @@ versions of the Full Release packages listed above. Full-featured GPU-enabled co
 <div class="col-sm-4">
 	<h5 style="margin-top:25px;">AMD ROCm (x86_64)</h5>
 	<ul style="list-style-type: none; padding: 0;">
-	<li>ecpe4s/e4s-rocm:22.05 <a href="https://hub.docker.com/r/ecpe4s/e4s-rocm/tags"><img height="15" src="docker.png" /></a></li>
-	<li>e4s-rocm-22.05.sif  <a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-rocm-22.05.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
+	<li>ecpe4s/e4s-rocm:22.08 <a href="https://hub.docker.com/r/ecpe4s/e4s-rocm/tags"><img height="15" src="docker.png" /></a></li>
+	<li>e4s-rocm-22.08.sif  <a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-rocm-22.08.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
 	</ul>
 </div>
 
 <div class="col-sm-4">
-	<h5 style="margin-top:25px;">NVIDIA CUDA (x86_64, ppc64le)</h5>
+	<h5 style="margin-top:25px;">NVIDIA CUDA (X86_64, PPC64LE, AARCH64)</h5>
 	<ul style="list-style-type: none; padding: 0;">
-	<li>ecpe4s/e4s-cuda:22.05 <a href="https://hub.docker.com/r/ecpe4s/e4s-cuda/tags"><img height="15" src="docker.png" /></a></li>
-	<li>e4s-cuda-x86_64-22.05.sif  <a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-cuda-x86_64-22.05.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
-	<li>e4s-cuda-ppc64le-22.05.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-cuda-ppc64le-22.05.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
+	<li>ecpe4s/e4s-cuda:22.08 <a href="https://hub.docker.com/r/ecpe4s/e4s-cuda/tags"><img height="15" src="docker.png" /></a></li>
+	<li>e4s-cuda-x86_64-22.08.sif  <a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-cuda-x86_64-22.08.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
+	<li>e4s-cuda-ppc64le-22.08.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-cuda-ppc64le-22.08.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
+	<li>e4s-cuda-aarch64-22.08.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-cuda-aarch64-22.08.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
 	</ul>
 </div>
 
 <div class="col-sm-4">
 	<h5 style="margin-top:25px;">Intel OneAPI (x86_64)</h5>
 	<ul style="list-style-type: none; padding: 0;">
-	<li>ecpe4s/e4s-oneapi:22.05 <a href="https://hub.docker.com/r/ecpe4s/e4s-oneapi/tags"><img height="15" src="docker.png" /></a></li>
-	<li>e4s-oneapi-22.05.sif  <a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-oneapi-22.05.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
+	<li>ecpe4s/e4s-oneapi:22.08 <a href="https://hub.docker.com/r/ecpe4s/e4s-oneapi/tags"><img height="15" src="docker.png" /></a></li>
+	<li>e4s-oneapi-22.08.sif  <a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-oneapi-22.08.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
 	</ul>
+</div>
+
+</div>
+
+<br />
+
+<div style="font-size: 0.9em;" class="row">
+	<h3>GPU Base Images</h3>
+	<p>These images come with MPICH, CMake, and the relevant GPU SDK -- either AMD ROCm, NVIDIA CUDA Toolkit and NVHPC, or Intel OneAPI.</p>
+
+
+<div class="col-sm-4">
+<h5 style="margin-top:25px;">AMD ROCM (X86_64)</h5>
+<ul style="list-style-type: none; padding: 0;">
+<li>ecpe4s/e4s-base-rocm:22.08 <a href="https://hub.docker.com/r/ecpe4s/e4s-base-rocm/tags"><img height="15" src="docker.png" /></a></li>
+<li>e4s-base-rocm-22.08.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-base-rocm-22.08.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
+</ul>
+</div>
+
+<div class="col-sm-4">
+	<h5 style="margin-top:25px;">NVIDIA Multi-Arch (X86_64, PPC64LE, AARCH64)</h5>
+	<ul style="list-style-type: none; padding: 0;">
+	<li>ecpe4s/e4s-base-cuda:22.08 <a href="https://hub.docker.com/r/ecpe4s/e4s-base-cuda/tags"><img height="15" src="docker.png" /></a></li>
+	<li>e4s-base-cuda-x86_64-22.08.sif  <a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-base-cuda-x86_64-22.08.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
+	<li>e4s-base-cuda-aarch64-22.08.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-base-cuda-aarch64-22.08.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
+	<li>e4s-base-cuda-ppc64le-22.08.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-base-cuda-ppc64le-22.08.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
+	</ul>
+	</div>
+
+<div class="col-sm-4">
+<h5 style="margin-top:25px;">Intel OneAPI (X86_64)</h5>
+<ul style="list-style-type: none; padding: 0;">
+<li>ecpe4s/e4s-base-oneapi:22.08 <a href="https://hub.docker.com/r/ecpe4s/e4s-base-oneapi/tags"><img height="15" src="docker.png" /></a></li>
+<li>e4s-base-oneapi-22.08.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.08/e4s-base-oneapi-22.08.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
+</ul>
 </div>
 
 </div>
@@ -246,50 +287,18 @@ versions of the Full Release packages listed above. Full-featured GPU-enabled co
 <div style="font-size: 0.9em;" class="row">
 	<div class="col-sm-12">
 	<h3>Minimal Spack</h3>
-	<h5 style="margin-top:25px;">X86_64 and PPC64LE</h5>
 	<p>This image contains a minimal setup for using Spack 0.18.0 w/ GNU compilers</p>
+	<h5 style="margin-top:25px;">X86_64, PPC64LE, AARCH64</h5>
 	<ul style="list-style-type: none; padding: 0;">
-		<li>ecpe4s/ubuntu18.04-spack <a href="https://hub.docker.com/r/ecpe4s/ubuntu18.04-spack/tags"><img height="15" src="docker.png" /></a></li>
-		<li>e4s-ubuntu18.04-spack-x86_64.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-ubuntu18.04-spack-x86_64.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
-		<li>e4s-ubuntu18.04-spack-ppc64le.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-ubuntu18.04-spack-ppc64le.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
+		<li>ecpe4s/ubuntu20.04 <a href="https://hub.docker.com/r/ecpe4s/ubuntu20.04/tags"><img height="15" src="docker.png" /></a></li>
+		<li>ecpe4s-ubuntu20.04-x86_64-22.08.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.08/ecpe4s-ubuntu20.04-x86_64-22.08.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
+		<li>ecpe4s-ubuntu20.04-ppc64le-22.08.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.08/ecpe4s-ubuntu20.04-ppc64le-22.08.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
+		<li>ecpe4s-ubuntu20.04-aarch64-22.08.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.08/ecpe4s-ubuntu20.04-aarch64-22.08.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
 	</ul>
 	</div>
 	</div>
 
 <br />
-
-
-<div style="font-size: 0.9em;" class="row">
-	<h3>GPU Base Images</h3>
-	<p>These images come with MPICH, CMake, and the relevant GPU SDK -- either AMD ROCm, NVIDIA CUDA Toolkit and NVHPC, or Intel OneAPI.</p>
-
-<div class="col-sm-4">
-<h5 style="margin-top:25px;">NVIDIA Multi-Arch (X86_64, PPC64LE, AARCH64)</h5>
-<ul style="list-style-type: none; padding: 0;">
-<li>ecpe4s/e4s-base-cuda:22.05 <a href="https://hub.docker.com/r/ecpe4s/e4s-base-cuda/tags"><img height="15" src="docker.png" /></a></li>
-<li>e4s-base-cuda-x86_64-22.05.sif  <a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-base-cuda-x86_64-22.05.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
-<li>e4s-base-cuda-aarch64-22.05.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-base-cuda-aarch64-22.05.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
-<li>e4s-base-cuda-ppc64le-22.05.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-base-cuda-ppc64le-22.05.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
-</ul>
-</div>
-
-<div class="col-sm-4">
-<h5 style="margin-top:25px;">ROCM X86_64</h5>
-<ul style="list-style-type: none; padding: 0;">
-<li>ecpe4s/e4s-base-rocm:22.05 <a href="https://hub.docker.com/r/ecpe4s/e4s-base-rocm/tags"><img height="15" src="docker.png" /></a></li>
-<li>e4s-base-rocm-22.05.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-base-rocm-22.05.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
-</ul>
-</div>
-
-<div class="col-sm-4">
-<h5 style="margin-top:25px;">Intel OneAPI X86_64</h5>
-<ul style="list-style-type: none; padding: 0;">
-<li>ecpe4s/e4s-base-oneapi:22.05 <a href="https://hub.docker.com/r/ecpe4s/e4s-base-oneapi/tags"><img height="15" src="docker.png" /></a></li>
-<li>e4s-base-oneapi-22.05.sif <a href="https://oaciss.uoregon.edu/e4s/images/22.05/e4s-base-oneapi-22.05.sif"><img height="25" width="25" src="singularity-logo.svg" /> mirror 1</a></li>
-</ul>
-</div>
-
-</div>
 
 <br />
 
@@ -298,9 +307,10 @@ versions of the Full Release packages listed above. Full-featured GPU-enabled co
 	<h3>Continuous Integration Images</h3>
 	<p>These are barebones operating system images which contain only essential build tools and python packages needed by Spack.</p>
 <p>These images are intended to be used in continuous integration workflows where Spack is first cloned and then used to build and test software.</p>
-<div class="col-sm-6">
+<div class="col-sm-4">
 <h5 style="margin-top:25px;">X86_64</h5>
 <ul style="list-style-type: none; padding: 0;">
+<li>ecpe4s/ubuntu22.04-runner-x86_64 <a href="https://hub.docker.com/r/ecpe4s/ubuntu22.04-runner-x86_64/tags"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes"><img height="15" src="GitHub_Logo.png" /></a></li>
 <li>ecpe4s/ubuntu20.04-runner-x86_64 <a href="https://hub.docker.com/r/ecpe4s/ubuntu20.04-runner-x86_64/tags"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes"><img height="15" src="GitHub_Logo.png" /></a></li>
 <li>ecpe4s/ubuntu18.04-runner-x86_64 <a href="https://hub.docker.com/r/ecpe4s/ubuntu18.04-runner-x86_64/tags"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes"><img height="15" src="GitHub_Logo.png" /></a></li>
 <li>ecpe4s/rhel8-runner-x86_64 <a href="https://hub.docker.com/r/ecpe4s/rhel8-runner-x86_64/tags"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes"><img height="15" src="GitHub_Logo.png" /></a></li>
@@ -308,15 +318,25 @@ versions of the Full Release packages listed above. Full-featured GPU-enabled co
 </ul>
 </div>
 
-<div class="col-sm-6">
+<div class="col-sm-4">
 <h5 style="margin-top:25px;">PPC64LE</h5>
 <ul style="list-style-type: none; padding: 0;">
+	<li>ecpe4s/ubuntu22.04-runner-ppc64le <a href="https://hub.docker.com/r/ecpe4s/ubuntu22.04-runner-ppc64le/tags"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes"><img height="15" src="GitHub_Logo.png" /></a></li>
 	<li>ecpe4s/ubuntu20.04-runner-ppc64le <a href="https://hub.docker.com/r/ecpe4s/ubuntu20.04-runner-ppc64le/tags"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes"><img height="15" src="GitHub_Logo.png" /></a></li>
 	<li>ecpe4s/ubuntu18.04-runner-ppc64le <a href="https://hub.docker.com/r/ecpe4s/ubuntu18.04-runner-ppc64le/tags"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes"><img height="15" src="GitHub_Logo.png" /></a></li>
 <li>ecpe4s/rhel8-runner-ppc64le <a href="https://hub.docker.com/r/ecpe4s/rhel8-runner-ppc64le/tags"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes"><img height="15" src="GitHub_Logo.png" /></a></li>
 <li>ecpe4s/rhel7-runner-ppc64le <a href="https://hub.docker.com/r/ecpe4s/rhel7-runner-ppc64le/tags"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes"><img height="15" src="GitHub_Logo.png" /></a></li>
 </ul>
 </div>
+
+<div class="col-sm-4">
+	<h5 style="margin-top:25px;">AARCH64</h5>
+	<ul style="list-style-type: none; padding: 0;">
+		<li>ecpe4s/ubuntu22.04-runner-aarch64 <a href="https://hub.docker.com/r/ecpe4s/ubuntu22.04-runner-aarch64/tags"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes"><img height="15" src="GitHub_Logo.png" /></a></li>
+		<li>ecpe4s/ubuntu20.04-runner-aarch64 <a href="https://hub.docker.com/r/ecpe4s/ubuntu20.04-runner-aarch64/tags"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes"><img height="15" src="GitHub_Logo.png" /></a></li>
+		<li>ecpe4s/rhel8-runner-aarch64 <a href="https://hub.docker.com/r/ecpe4s/rhel8-runner-aarch64/tags"><img height="15" src="docker.png" /></a> <a href="https://github.com/UO-OACISS/e4s/tree/master/docker-recipes"><img height="15" src="GitHub_Logo.png" /></a></li>
+	</ul>
+	</div>
 </div>
 
 <br />
