@@ -15,16 +15,16 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>E4S - FAQ</title>
+        <title>E4S - Deployments</title>
 
-        <!-- CSS -->
+	<!-- CSS --> 
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Roboto:300,400,500">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/animate.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/style_perso.css">
-
+	
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
         <!--[if lt IE 9]>
@@ -38,6 +38,20 @@
         <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
         <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
         <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+
+		 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+<style>	td.details-control {
+    background: url('./Resources/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('./Resources/details_close.png') no-repeat center center;
+}
+td {
+    white-space: pre-wrap !important;
+    word-wrap:break-word;
+}
+</style>	
 
     </head>
 
@@ -60,7 +74,7 @@
 					</div>
 					<!-- Collect the nav links, forms, and other content for toggling -->
 					<div class="collapse navbar-collapse" id="top-navbar-1">
-            <ul class="nav navbar-nav">
+						<ul class="nav navbar-nav">
 <!--MENU START-->
               <li><a href="index.html">Home</a></li>
               <li><a href="events.html">Events</a></li>
@@ -80,34 +94,37 @@
 			</nav>
         </div>
 
-        <!-- Features -->
+        <!-- Features 
         <div class="features-container section-container">
 	        <div class="container">
 
-	            <div class="row">
-	                <div class="col-sm-12 features section-description wow fadeIn">
-	                    <h2>FAQ</h2>
-	                    <div class="divider-1"><div class="line"></div></div>
-	                </div>
-	            </div>
-                <div class="row">
-                    <div class="col-sm-12 features section-description ">
-                        <h3>What is the primary value proposition of E4S?</h3>
-                        <p>E4S exists to reduce barriers for testing, distributing and using open source software capabilities needed for advancing computational science and engineering.<p>
-                    </div>
-                </div>
-	        </div>
-        </div>
+	        
+	                <div class="col-sm-12 features section-description wow fadeIn">-->
 
+                    
+                       
+				<H2>E4S Deployments</h2>
+
+
+<hr>
+<style>
+iframe {
+  height:calc(100vh - 4px);
+  width:calc(100vw - 20px);
+  box-sizing: border-box;
+}</style>
+<iframe src="e4s_deployment.html" frameborder="0" allowfullscreen>
+</iframe>
+       <!--</div></div></div>-->
         <!-- Footer -->
-        <footer class="footer">
-	        <div class="container site-footer">
+        <footer>
+	        <div class="container">
 	        	<div class="row">
 	        		<div class="col-sm-12 footer-copyright">
-                Created for <a href="https://e4s-project.github.io">The Extreme-scale Scientific Software Stack (E4S) Project</a> by <a href="https://maherou.github.io/">Michael A. Heroux</a>
-              </div>
-              <div class="col-sm-12 footer-copyright">
-                  <a href="credit.html">Attribution</a> - Derived from a design by Quentin Petit
+                    	Created for <a href="https://e4s-project.github.io">The Extreme-scale Scientific Software Stack (E4S) Project</a> by <a href="https://maherou.github.io/">Michael A. Heroux</a>
+                    </div>
+                    <div class="col-sm-12 footer-copyright">
+                        <a href="credit.html">Attribution</a> - Derived from a design by Quentin Petit
                     </div>
                 </div>
 	        </div>
@@ -122,10 +139,36 @@
         <script src="assets/js/retina-1.1.0.min.js"></script>
         <script src="assets/js/scripts.js"></script>
 
-        <!--[if lt IE 10]>
-            <script src="assets/js/placeholder.js"></script>
-        <![endif]-->
 
+
+		<script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+
+<script>
+
+$(document).ready(function() {
+    var table = $('#example').DataTable( {
+        "ajax": "./E4S-Deployments.yml",
+        "autoWidth": false,
+        "columns": [
+            /*{
+                "className":      'details-control',
+                "orderable":      false,
+                "data":           null,
+                "defaultContent": ''
+            },*/
+            { "data": "Institution" },
+            { "data": "E4S Deployment" },
+            { "data": "Product" },
+            { "data": "Version" },
+            { "data": "Compiler"},
+	    { "data": "Architecture" },
+            { "data": "Variants", "width": "5%" }
+            /*{ "data": "Architecture" }*/
+        ],
+        "order": [[2, 'asc']],
+        "pageLength": 7000 
+    } );
+} );
+</script>
     </body>
-
 </html>
