@@ -1,0 +1,68 @@
+<html><body>
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+		<table id="example" class="display" style="width:100%">
+        <thead>
+            <tr>
+
+                <th>Institution</th>
+                <th>E4S Deployment</th>
+                <th>Product</th>
+                <th>Version</th>
+                <th>Compiler</th>
+                <th>Architecture</th>
+                <th>Variants</th>
+
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+
+                <th>Institution</th>
+                <th>E4S Deployment</th>
+                <th>Product</th>
+                <th>Version</th>
+                <th>Compiler</th>
+                <th>Architecture</th>
+                <th>Variants</th>
+            </tr>
+        </tfoot>
+    </table>
+        <!-- Javascript -->
+        <script src="assets/js/jquery-1.11.1.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/wow.min.js"></script>
+        <script src="assets/js/retina-1.1.0.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+
+
+                <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+
+<script>
+
+$(document).ready(function() {
+    var table = $('#example').DataTable( {
+        "ajax": "./E4S-Deployments.yml",
+        "autoWidth": false,
+        "columns": [
+            /*{
+                "className":      'details-control',
+                "orderable":      false,
+                "data":           null,
+                "defaultContent": ''
+            },*/
+            { "data": "Institution" },
+            { "data": "E4S Deployment" },
+            { "data": "Product" },
+            { "data": "Version" },
+            { "data": "Compiler"},
+            { "data": "Architecture" },
+            { "data": "Variants", "width": "5%" }
+            /*{ "data": "Architecture" }*/
+        ],
+        "order": [[2, 'asc']],
+        "pageLength": 7000 
+    } );
+} );
+</script>
+	</body></html>
