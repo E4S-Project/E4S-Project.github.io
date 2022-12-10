@@ -109,6 +109,15 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "adios2",
+"Version": "2.8.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " +blosc +bzip2 ~cuda ~dataman ~dataspaces +fortran ~hdf5 ~ipo +mpi +pic +png ~python +shared +ssc +sst +sz +zfp build_type=Release",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "adios2",
@@ -694,7 +703,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "adios2",
 "Version": "2.7.1",
@@ -703,7 +712,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "adios2",
 "Version": "2.7.1",
@@ -712,7 +721,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "adios2",
 "Version": "2.7.1",
@@ -750,7 +759,16 @@
 }
 ,
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "archer",
+"Version": "2.0.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "archer",
 "Version": "2.0.0",
@@ -832,6 +850,33 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "flit",
+"Version": "2.1.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": "",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "flit",
+"Version": "2.1.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": "",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "flit",
+"Version": "2.1.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": "",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "flit",
@@ -1309,7 +1354,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "flit",
 "Version": "2.1.0",
@@ -1318,7 +1363,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "flit",
 "Version": "2.1.0",
@@ -1327,7 +1372,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "flit",
 "Version": "2.1.0",
@@ -1607,7 +1652,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "rempi",
 "Version": "1.1.0",
@@ -1616,7 +1661,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "rempi",
 "Version": "1.1.0",
@@ -1625,7 +1670,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "rempi",
 "Version": "1.1.0",
@@ -1699,6 +1744,42 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "aml",
+"Version": "0.1.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": "",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "aml",
+"Version": "0.1.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": "",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "aml",
+"Version": "0.2.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda ~hip ~hwloc ~opencl ~ze hip-platform=none",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "aml",
+"Version": "0.2.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda ~hip ~hwloc ~opencl +ze hip-platform=none",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "aml",
@@ -2176,7 +2257,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "aml",
 "Version": "0.1.0",
@@ -2185,7 +2266,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "aml",
 "Version": "0.1.0",
@@ -2194,7 +2275,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "aml",
 "Version": "0.1.0",
@@ -2564,7 +2645,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "ascent",
 "Version": "0.7.1",
@@ -2573,7 +2654,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "ascent",
 "Version": "0.7.1",
@@ -2582,7 +2663,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "ascent",
 "Version": "0.7.1",
@@ -2692,6 +2773,42 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "amrex",
+"Version": "22.02",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~amrdata ~cuda ~eb ~fortran ~hdf5 ~hypre ~ipo +linear_solvers +mpi ~openmp ~particles ~petsc ~pic ~plotfile_tools ~rocm ~shared ~sundials ~tiny_profile build_type=RelWithDebInfo dimensions=3 precision=double",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "amrex",
+"Version": "22.05",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~amrdata ~cuda ~eb ~fortran ~hdf5 ~hypre ~ipo +linear_solvers +mpi ~openmp ~particles ~petsc ~pic ~plotfile_tools ~rocm ~shared ~sundials ~tiny_profile build_type=RelWithDebInfo dimensions=3 precision=double",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "amrex",
+"Version": "22.08",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~amrdata ~cuda ~eb ~fortran ~hdf5 ~hypre ~ipo +linear_solvers +mpi ~openmp ~particles ~petsc ~pic ~plotfile_tools ~rocm ~shared ~sundials ~sycl ~tiny_profile build_type=RelWithDebInfo dimensions=3 precision=double",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "amrex",
+"Version": "22.08",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~amrdata ~cuda ~eb ~fortran ~hdf5 ~hypre ~ipo +linear_solvers +mpi ~openmp ~particles ~petsc ~pic ~plotfile_tools ~rocm ~shared ~sundials +sycl ~tiny_profile build_type=RelWithDebInfo dimensions=3 precision=double",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "amrex",
@@ -4312,7 +4429,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "amrex",
 "Version": "21.05",
@@ -4321,7 +4438,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "amrex",
 "Version": "21.05",
@@ -4330,7 +4447,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "amrex",
 "Version": "21.05",
@@ -4339,7 +4456,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "amrex",
 "Version": "21.05",
@@ -4348,7 +4465,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "amrex",
 "Version": "21.05",
@@ -4439,6 +4556,33 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "arborx",
+"Version": "1.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda ~ipo +mpi ~openmp ~rocm +serial ~sycl ~trilinos build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "arborx",
+"Version": "1.2",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda ~ipo +mpi ~openmp ~rocm +serial ~sycl ~trilinos build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "arborx",
+"Version": "1.2",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda ~ipo +mpi ~openmp ~rocm +serial ~sycl ~trilinos build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "arborx",
@@ -5015,7 +5159,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "arborx",
 "Version": "1.0",
@@ -5024,7 +5168,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "arborx",
 "Version": "1.0",
@@ -5033,7 +5177,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "arborx",
 "Version": "1.0",
@@ -5124,6 +5268,15 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "caliper",
+"Version": "2.7.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " +adiak ~cuda ~fortran +gotcha ~ipo +libdw ~libpfm +libunwind +mpi +papi +sampler +shared ~sosflow build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "caliper",
@@ -5772,7 +5925,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "caliper",
 "Version": "2.5.0",
@@ -5781,7 +5934,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "caliper",
 "Version": "2.5.0",
@@ -5790,7 +5943,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "caliper",
 "Version": "2.5.0",
@@ -5799,7 +5952,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "caliper",
 "Version": "2.5.0",
@@ -5808,7 +5961,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "caliper",
 "Version": "2.5.0",
@@ -5899,6 +6052,33 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "chai",
+"Version": "2.4.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~benchmarks ~cuda ~enable_pick +examples ~ipo ~openmp ~raja ~rocm +shared ~tests build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "chai",
+"Version": "2.4.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~benchmarks ~cuda ~enable_pick +examples ~ipo ~openmp ~raja ~rocm +shared ~tests build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "chai",
+"Version": "2022.03.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~benchmarks ~cuda ~enable_pick +examples ~ipo ~openmp ~raja ~rocm +shared ~tests build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "chai",
@@ -6898,7 +7078,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "chai",
 "Version": "2.3.0",
@@ -6907,7 +7087,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "chai",
 "Version": "2.3.0",
@@ -6916,7 +7096,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "chai",
 "Version": "2.3.0",
@@ -6925,7 +7105,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "chai",
 "Version": "2.3.0",
@@ -6934,7 +7114,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "chai",
 "Version": "2.3.0",
@@ -6951,6 +7131,24 @@
 "Compiler": "gcc@9.3.0",
 "Variants": " +mpi",
 "Architecture": "linux-opensuse_leap15-x86_64"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "py-cinemasci",
+"Version": "1.3",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " +mpi",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "py-cinemasci",
+"Version": "1.7.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " +mpi",
+"Architecture": "linux-opensuse_leap15-icelake"
 }
 ,
 {
@@ -7033,6 +7231,33 @@
 "Compiler": "oneapi@2021.4.0",
 "Variants": " ~apmpi ~apmpi_sync ~apxc ~hdf5 +mpi scheduler=NONE",
 "Architecture": "linux-opensuse_leap15-x86_64"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "darshan-runtime",
+"Version": "3.3.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~apmpi ~apmpi_sync ~apxc ~hdf5 +mpi scheduler=NONE",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "darshan-runtime",
+"Version": "3.3.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~apmpi ~apmpi_sync ~apxc ~hdf5 +mpi scheduler=NONE",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "darshan-runtime",
+"Version": "3.4.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~apmpi ~apmpi_sync ~apxc ~hdf5 +mpi scheduler=NONE",
+"Architecture": "linux-opensuse_leap15-icelake"
 },
 {
 "Institution": "OLCF",
@@ -7278,7 +7503,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "darshan-runtime",
 "Version": "3.3.0",
@@ -7287,7 +7512,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "darshan-runtime",
 "Version": "3.3.0",
@@ -7296,7 +7521,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "darshan-runtime",
 "Version": "3.3.0",
@@ -7322,6 +7547,24 @@
 "Compiler": "gcc@9.3.0",
 "Variants": " ~external-arborx ~ipo ~openmp +serial +shared build_type=RelWithDebInfo",
 "Architecture": "linux-opensuse_leap15-x86_64"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "datatransferkit",
+"Version": "3.1-rc3",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~external-arborx ~ipo ~openmp +serial +shared build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "datatransferkit",
+"Version": "3.1-rc3",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~external-arborx ~ipo ~openmp +serial +shared build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
 },
 {
 "Institution": "OLCF",
@@ -8765,7 +9008,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "dyninst",
 "Version": "11.0.0",
@@ -8774,7 +9017,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "dyninst",
 "Version": "11.0.0",
@@ -8783,7 +9026,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "dyninst",
 "Version": "11.0.0",
@@ -8792,7 +9035,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "dyninst",
 "Version": "11.0.0",
@@ -8801,7 +9044,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "dyninst",
 "Version": "11.0.0",
@@ -8810,7 +9053,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "dyninst",
 "Version": "11.0.0",
@@ -8892,6 +9135,33 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "heffte",
+"Version": "2.2.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda +fftw ~fortran ~ipo ~magma ~mkl ~python ~rocm +shared build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "heffte",
+"Version": "2.2.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda +fftw ~fortran ~ipo ~magma ~mkl ~python ~rocm +shared build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "heffte",
+"Version": "2.2.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda +fftw ~fortran ~ipo ~magma ~mkl ~python ~rocm +shared build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "heffte",
@@ -9756,7 +10026,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "heffte",
 "Version": "2.0.0",
@@ -9765,7 +10035,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "heffte",
 "Version": "2.0.0",
@@ -9774,7 +10044,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "heffte",
 "Version": "2.0.0",
@@ -10342,7 +10612,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "flecsi",
 "Version": "1.4",
@@ -10351,7 +10621,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "flecsi",
 "Version": "1.4",
@@ -10360,7 +10630,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "flecsi",
 "Version": "1.4",
@@ -11172,6 +11442,24 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "fortrilinos",
+"Version": "2.0.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " +hl ~ipo +shared build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "fortrilinos",
+"Version": "2.0.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " +hl ~ipo +shared build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "fortrilinos",
@@ -11568,7 +11856,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "fortrilinos",
 "Version": "2.0.0",
@@ -11577,7 +11865,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "fortrilinos",
 "Version": "2.0.0",
@@ -11586,7 +11874,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "fortrilinos",
 "Version": "2.0.0",
@@ -11695,6 +11983,33 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "gasnet",
+"Version": "2021.9.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~debug conduits=smp",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "gasnet",
+"Version": "2022.3.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda ~debug ~rocm conduits=smp",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "gasnet",
+"Version": "2022.3.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda ~debug ~rocm conduits=smp",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "gasnet",
@@ -12253,7 +12568,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "gasnet",
 "Version": "2021.3.0",
@@ -12262,7 +12577,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "gasnet",
 "Version": "2021.3.0",
@@ -12271,7 +12586,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "gasnet",
 "Version": "2021.3.0",
@@ -12362,6 +12677,33 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "ginkgo",
+"Version": "1.4.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda ~develtools ~full_optimizations ~hwloc ~ipo ~oneapi +openmp ~rocm +shared build_type=Release patches=43e571a49ea774793d89d145571c95ae7cdf991f5220d8fe84db217a3c613a32",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "ginkgo",
+"Version": "1.4.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda ~develtools ~full_optimizations ~hwloc ~ipo ~oneapi +openmp ~rocm +shared build_type=Release patches=43e571a",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "ginkgo",
+"Version": "1.4.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda ~develtools ~full_optimizations ~hwloc ~ipo ~oneapi +openmp ~rocm +shared build_type=Release patches=43e571a",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "ginkgo",
@@ -13253,7 +13595,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "ginkgo",
 "Version": "1.3.0",
@@ -13262,7 +13604,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "ginkgo",
 "Version": "1.3.0",
@@ -13271,7 +13613,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "ginkgo",
 "Version": "1.3.0",
@@ -13280,7 +13622,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "ginkgo",
 "Version": "1.3.0",
@@ -13289,7 +13631,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "ginkgo",
 "Version": "1.3.0",
@@ -13729,6 +14071,78 @@
 "Compiler": "oneapi@2021.4.0",
 "Variants": " ~cxx +fortran +hl ~ipo ~java +mpi +shared ~szip ~threadsafe +tools api=v18 build_type=RelWithDebInfo",
 "Architecture": "linux-opensuse_leap15-x86_64"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "hdf5",
+"Version": "1.8.22",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cxx +fortran +hl ~ipo ~java +mpi +shared ~szip ~threadsafe +tools api=default build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "hdf5",
+"Version": "1.10.7",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cxx +fortran +hl ~ipo ~java +mpi +shared ~szip ~threadsafe +tools api=default build_type=RelWithDebInfo patches=2a1e3118d7d3d7411820e567b03530de96a46385304017f8e548408aa1cfbfc0",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "hdf5",
+"Version": "1.8.22",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cxx +fortran +hl ~ipo ~java +mpi +shared ~szip ~threadsafe +tools api=default build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "hdf5",
+"Version": "1.10.7",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cxx +fortran +hl ~ipo ~java +mpi +shared ~szip ~threadsafe +tools api=default build_type=RelWithDebInfo patches=2a1e311",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "hdf5",
+"Version": "1.12.2",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cxx +fortran +hl ~ipo ~java +mpi +shared ~szip ~threadsafe +tools api=default build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "hdf5",
+"Version": "1.8.21",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cxx +fortran +hl ~ipo +mpi +shared ~szip ~threadsafe +tools api=default build_type=RelWithDebInfo patches=0e20187 ,b61e2f0",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "hdf5",
+"Version": "1.12.2",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cxx +fortran +hl ~ipo ~java +mpi +shared ~szip ~threadsafe +tools api=default build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "hdf5",
+"Version": "1.13.2",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cxx +fortran +hl ~ipo ~java +mpi +shared ~szip +threadsafe +tools api=default build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
 },
 {
 "Institution": "OLCF",
@@ -16053,7 +16467,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "hdf5",
 "Version": "1.8.22",
@@ -16062,7 +16476,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "hdf5",
 "Version": "1.8.22",
@@ -16071,7 +16485,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "hdf5",
 "Version": "1.8.22",
@@ -16080,7 +16494,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "hdf5",
 "Version": "1.8.22",
@@ -16089,7 +16503,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "hdf5",
 "Version": "1.10.7",
@@ -16098,7 +16512,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "hdf5",
 "Version": "1.10.7",
@@ -16107,7 +16521,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "hdf5",
 "Version": "1.8.22",
@@ -16116,7 +16530,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "hdf5",
 "Version": "1.8.22",
@@ -16125,7 +16539,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "hdf5",
 "Version": "1.10.7",
@@ -16666,7 +17080,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "hpctoolkit",
 "Version": "2021.03.01",
@@ -16675,7 +17089,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "hpctoolkit",
 "Version": "2021.03.01",
@@ -16684,7 +17098,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "hpctoolkit",
 "Version": "2021.03.01",
@@ -16755,6 +17169,15 @@
 "Compiler": "gcc@9.3.0",
 "Variants": " ~async_cuda ~async_mpi ~cuda ~examples ~generic_coroutines ~ipo ~rocm ~tools amdgpu_target=none build_type=RelWithDebInfo cuda_arch=none cxxstd=17 instrumentation=none malloc=tcmalloc max_cpu_count=64 networking=tcp",
 "Architecture": "linux-opensuse_leap15-x86_64"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "hpx",
+"Version": "1.7.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~async_cuda ~async_mpi ~cuda ~examples ~generic_coroutines ~ipo ~rocm ~tools build_type=RelWithDebInfo cxxstd=17 instrumentation=none malloc=tcmalloc max_cpu_count=64 networking=mpi",
+"Architecture": "linux-opensuse_leap15-icelake"
 },
 {
 "Institution": "OLCF",
@@ -17432,7 +17855,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "hpx",
 "Version": "1.6.0",
@@ -17441,7 +17864,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "hpx",
 "Version": "1.6.0",
@@ -17450,7 +17873,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "hpx",
 "Version": "1.6.0",
@@ -17593,6 +18016,33 @@
 "Compiler": "gcc@9.3.0",
 "Variants": " ~complex ~cuda ~debug +fortran ~int64 ~internal-superlu ~mixedint +mpi ~openmp +shared ~superlu-dist ~unified-memory cuda_arch=none",
 "Architecture": "linux-opensuse_leap15-x86_64"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "hypre",
+"Version": "2.24.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~complex ~cuda ~debug +fortran ~gptune ~int64 ~internal-superlu ~mixedint +mpi ~openmp +shared ~superlu-dist ~unified-memory",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "hypre",
+"Version": "2.24.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~complex ~cuda ~debug +fortran ~gptune ~int64 ~internal-superlu ~mixedint +mpi ~openmp ~rocm +shared ~superlu-dist ~unified-memory",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "hypre",
+"Version": "2.25.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~complex ~cuda ~debug +fortran ~gptune ~int64 ~internal-superlu ~mixedint +mpi ~openmp ~rocm +shared ~superlu-dist ~unified-memory",
+"Architecture": "linux-opensuse_leap15-icelake"
 },
 {
 "Institution": "OLCF",
@@ -19098,7 +19548,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "hypre",
 "Version": "2.20.0",
@@ -19107,7 +19557,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "hypre",
 "Version": "2.20.0",
@@ -19116,7 +19566,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "hypre",
 "Version": "2.20.0",
@@ -19351,6 +19801,96 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "kokkos",
+"Version": "3.5.00",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~aggressive_vectorization ~compiler_warnings ~cuda ~cuda_constexpr ~cuda_lambda ~cuda_ldg_intrinsic ~cuda_relocatable_device_code ~cuda_uvm ~debug ~debug_bounds_check ~debug_dualview_modify_check ~deprecated_code ~examples ~explicit_instantiation ~hpx ~hpx_async_dispatch ~hwloc ~ipo ~memkind ~numactl ~openmp ~pic +profiling ~profiling_load_print ~pthread ~qthread ~rocm +serial +shared ~sycl ~tests ~tuning ~wrapper build_type=RelWithDebInfo std=14",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "kokkos",
+"Version": "3.5.00",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~aggressive_vectorization ~compiler_warnings ~cuda ~cuda_constexpr ~cuda_lambda ~cuda_ldg_intrinsic ~cuda_relocatable_device_code ~cuda_uvm ~debug ~debug_bounds_check ~debug_dualview_modify_check ~deprecated_code ~examples ~explicit_instantiation ~hpx ~hpx_async_dispatch ~hwloc ~ipo ~memkind ~numactl +openmp ~pic +profiling ~profiling_load_print ~pthread ~qthread ~rocm +serial +shared ~sycl ~tests ~tuning ~wrapper build_type=RelWithDebInfo std=14",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "kokkos",
+"Version": "develop",
+"Compiler": "dpcpp@&lt;version&gt;",
+"Variants": " ~aggressive_vectorization ~compiler_warnings ~cuda ~cuda_constexpr ~cuda_lambda ~cuda_ldg_intrinsic ~cuda_relocatable_device_code ~cuda_uvm ~debug ~debug_bounds_check ~debug_dualview_modify_check ~deprecated_code ~examples ~explicit_instantiation ~hpx ~hpx_async_dispatch ~hwloc ~ipo ~memkind ~numactl ~openmp ~pic +profiling ~profiling_load_print ~pthread ~qthread ~rocm +serial +shared +sycl ~tests ~tuning ~wrapper build_type=RelWithDebInfo std=17",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "kokkos",
+"Version": "3.6.00",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~aggressive_vectorization ~compiler_warnings ~cuda ~cuda_constexpr ~cuda_lambda ~cuda_ldg_intrinsic ~cuda_relocatable_device_code ~cuda_uvm ~debug ~debug_bounds_check ~debug_dualview_modify_check ~deprecated_code ~examples ~explicit_instantiation ~hpx ~hpx_async_dispatch ~hwloc ~ipo ~memkind ~numactl ~openmp ~pic +profiling ~profiling_load_print ~pthread ~qthread ~rocm +serial +shared ~sycl ~tests ~tuning ~wrapper build_type=RelWithDebInfo std=14",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "kokkos",
+"Version": "3.6.00",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~aggressive_vectorization ~compiler_warnings ~cuda ~cuda_constexpr ~cuda_lambda ~cuda_ldg_intrinsic ~cuda_relocatable_device_code ~cuda_uvm ~debug ~debug_bounds_check ~debug_dualview_modify_check ~deprecated_code ~examples ~explicit_instantiation ~hpx ~hpx_async_dispatch ~hwloc ~ipo ~memkind ~numactl +openmp ~pic +profiling ~profiling_load_print ~pthread ~qthread ~rocm +serial +shared ~sycl ~tests ~tuning ~wrapper build_type=RelWithDebInfo std=14",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "kokkos",
+"Version": "3.6.00",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~aggressive_vectorization ~compiler_warnings ~cuda ~cuda_constexpr ~cuda_lambda ~cuda_ldg_intrinsic ~cuda_relocatable_device_code ~cuda_uvm ~debug ~debug_bounds_check ~debug_dualview_modify_check ~deprecated_code +examples ~explicit_instantiation ~hpx ~hpx_async_dispatch ~hwloc ~ipo ~memkind ~numactl +openmp ~pic +profiling ~profiling_load_print ~pthread ~qthread ~rocm +serial +shared +sycl +tests ~tuning ~wrapper build_type=RelWithDebInfo std=17",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "kokkos",
+"Version": "3.6.00",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~aggressive_vectorization ~compiler_warnings ~cuda ~cuda_constexpr ~cuda_lambda ~cuda_ldg_intrinsic ~cuda_relocatable_device_code ~cuda_uvm ~debug ~debug_bounds_check ~debug_dualview_modify_check ~deprecated_code ~examples ~explicit_instantiation ~hpx ~hpx_async_dispatch ~hwloc ~ipo ~memkind ~numactl +openmp ~openmptarget ~pic +profiling ~profiling_load_print ~pthread ~qthread ~rocm +serial +shared ~sycl ~tests ~tuning ~wrapper build_type=RelWithDebInfo intel_gpu_arch=none std=14",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "kokkos",
+"Version": "3.6.00",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~aggressive_vectorization ~compiler_warnings ~cuda ~cuda_constexpr ~cuda_lambda ~cuda_ldg_intrinsic ~cuda_relocatable_device_code ~cuda_uvm ~debug ~debug_bounds_check ~debug_dualview_modify_check ~deprecated_code +examples ~explicit_instantiation ~hpx ~hpx_async_dispatch ~hwloc ~ipo ~memkind ~numactl +openmp ~openmptarget ~pic +profiling ~profiling_load_print ~pthread ~qthread ~rocm +serial +shared +sycl +tests ~tuning ~wrapper build_type=RelWithDebInfo intel_gpu_arch=none std=17",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "kokkos",
+"Version": "3.6.01",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~aggressive_vectorization ~compiler_warnings ~cuda ~cuda_constexpr ~cuda_lambda ~cuda_ldg_intrinsic ~cuda_relocatable_device_code ~cuda_uvm ~debug ~debug_bounds_check ~debug_dualview_modify_check ~deprecated_code ~examples ~explicit_instantiation ~hpx ~hpx_async_dispatch ~hwloc ~ipo ~memkind ~numactl ~openmp ~openmptarget ~pic +profiling ~profiling_load_print ~pthread ~qthread ~rocm +serial +shared ~sycl ~tests ~tuning ~wrapper build_type=RelWithDebInfo intel_gpu_arch=none std=14",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "kokkos",
+"Version": "3.6.01",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~aggressive_vectorization ~compiler_warnings ~cuda ~cuda_constexpr ~cuda_lambda ~cuda_ldg_intrinsic ~cuda_relocatable_device_code ~cuda_uvm ~debug ~debug_bounds_check ~debug_dualview_modify_check ~deprecated_code ~examples ~explicit_instantiation ~hpx ~hpx_async_dispatch ~hwloc ~ipo ~memkind ~numactl +openmp ~openmptarget ~pic +profiling ~profiling_load_print ~pthread ~qthread ~rocm +serial +shared ~sycl ~tests ~tuning ~wrapper build_type=RelWithDebInfo intel_gpu_arch=none std=14",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "kokkos",
@@ -21700,7 +22240,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "kokkos",
 "Version": "3.4.00",
@@ -21709,7 +22249,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "kokkos",
 "Version": "3.4.00",
@@ -21718,7 +22258,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "kokkos",
 "Version": "3.4.00",
@@ -21727,7 +22267,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "kokkos",
 "Version": "3.4.00",
@@ -21736,7 +22276,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "kokkos",
 "Version": "3.4.00",
@@ -21745,7 +22285,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "kokkos",
 "Version": "3.4.00",
@@ -21754,7 +22294,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "kokkos",
 "Version": "3.4.00",
@@ -21763,7 +22303,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "kokkos",
 "Version": "3.4.00",
@@ -21772,7 +22312,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "kokkos",
 "Version": "3.4.00",
@@ -21890,6 +22430,42 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "kokkos-kernels",
+"Version": "3.6.00",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~blas ~cblas ~cublas ~cuda ~cusparse ~ipo ~lapack ~lapacke ~mkl +openmp ~pthread ~serial +shared ~superlu build_type=RelWithDebInfo execspace_cuda=auto execspace_openmp=auto execspace_serial=auto execspace_threads=auto layouts=left memspace_cudaspace=auto memspace_cudauvmspace=auto offsets=int ,size_t ordinals=int scalars=double",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "kokkos-kernels",
+"Version": "3.6.00",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~blas ~cblas ~cublas ~cuda ~cusparse ~ipo ~lapack ~lapacke ~mkl ~openmp ~pthread ~serial +shared ~superlu build_type=Release execspace_cuda=auto execspace_openmp=auto execspace_serial=auto execspace_threads=auto layouts=left memspace_cudaspace=auto memspace_cudauvmspace=auto offsets=int ,size_t ordinals=int scalars=double",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "kokkos-kernels",
+"Version": "3.6.00",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~blas ~cblas ~cublas ~cuda ~cusparse ~ipo ~lapack ~lapacke ~mkl +openmp ~pthread ~serial +shared ~superlu build_type=RelWithDebInfo execspace_cuda=auto execspace_openmp=auto execspace_serial=auto execspace_threads=auto layouts=left memspace_cudaspace=auto memspace_cudauvmspace=auto offsets=int ,size_t ordinals=int scalars=double",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "kokkos-kernels",
+"Version": "3.6.00",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~blas ~cblas ~cublas ~cuda ~cusparse ~ipo ~lapack ~lapacke ~mkl ~openmp ~pthread ~serial +shared ~superlu build_type=Release execspace_cuda=auto execspace_openmp=auto execspace_serial=auto execspace_threads=auto layouts=left memspace_cudaspace=auto memspace_cudauvmspace=auto offsets=int ,size_t ordinals=int scalars=double",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "kokkos-kernels",
@@ -22880,7 +23456,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "kokkos-kernels",
 "Version": "3.2.00",
@@ -22889,7 +23465,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "kokkos-kernels",
 "Version": "3.2.00",
@@ -22898,7 +23474,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "kokkos-kernels",
 "Version": "3.2.00",
@@ -22907,7 +23483,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "kokkos-kernels",
 "Version": "3.2.00",
@@ -22916,7 +23492,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "kokkos-kernels",
 "Version": "3.2.00",
@@ -23358,7 +23934,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "magma",
 "Version": "2.5.4",
@@ -23367,7 +23943,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "magma",
 "Version": "2.5.4",
@@ -23447,6 +24023,33 @@
 "Compiler": "gcc@9.3.0",
 "Variants": " ~bindings ~bounds_checks ~cuda ~cuda_hijack ~cuda_unsupported_compiler ~enable_tls ~fortran ~gasnet_debug ~hdf5 ~hwloc ~ipo ~kokkos +libdl ~native ~openmp ~papi ~privilege_checks ~python ~redop_complex ~shared ~spy +zlib build_type=RelWithDebInfo conduit=none cuda_arch=70 gasnet_root=none max_dims=3 max_fields=512 network=none output_level=warning",
 "Architecture": "linux-opensuse_leap15-x86_64"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "legion",
+"Version": "21.03.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~bindings ~bounds_checks ~cuda ~cuda_hijack ~cuda_unsupported_compiler ~enable_tls ~fortran ~gasnet_debug ~hdf5 ~hwloc ~ipo ~kokkos +libdl ~openmp ~papi ~privilege_checks ~python ~redop_complex ~shared ~spy +zlib build_type=RelWithDebInfo conduit=none cuda_arch=70 cxxstd=11 gasnet_root=none max_dims=3 max_fields=512 network=none output_level=warning",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "legion",
+"Version": "21.03.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~bindings ~bounds_checks ~cuda ~cuda_hijack ~cuda_unsupported_compiler ~enable_tls ~fortran ~gasnet_debug ~hdf5 ~hwloc ~ipo ~kokkos +libdl ~openmp ~papi ~privilege_checks ~python ~redop_complex ~shared ~spy +zlib build_type=RelWithDebInfo conduit=none cuda_arch=70 cxxstd=11 gasnet_root=none max_dims=3 max_fields=512 network=none output_level=warning",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "legion",
+"Version": "21.03.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~bindings ~bounds_checks ~cuda ~cuda_hijack ~cuda_unsupported_compiler ~enable_tls ~fortran ~gasnet_debug ~hdf5 ~hwloc ~ipo ~kokkos +libdl ~openmp ~papi ~privilege_checks ~python ~redop_complex ~rocm ~shared ~spy +zlib build_type=RelWithDebInfo conduit=none cuda_arch=70 cxxstd=11 gasnet_root=none max_dims=3 max_fields=512 network=none output_level=warning",
+"Architecture": "linux-opensuse_leap15-icelake"
 },
 {
 "Institution": "OLCF",
@@ -24043,7 +24646,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "legion",
 "Version": "21.03.0",
@@ -24052,7 +24655,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "legion",
 "Version": "21.03.0",
@@ -24061,7 +24664,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "legion",
 "Version": "21.03.0",
@@ -24098,7 +24701,25 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "py-libensemble",
+"Version": "0.8.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~deap +mpi ~mpmath ~nlopt ~petsc4py ~pyyaml ~scipy ~tasmanian",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "py-libensemble",
+"Version": "0.9.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~deap +mpi ~mpmath ~nlopt ~petsc4py ~pyyaml ~scipy ~tasmanian",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "py-libensemble",
 "Version": "0.7.2",
@@ -24107,7 +24728,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "py-libensemble",
 "Version": "0.7.2",
@@ -24116,7 +24737,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "py-libensemble",
 "Version": "0.7.2",
@@ -24189,6 +24810,24 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "mfem",
+"Version": "4.4.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~amgx ~conduit ~cuda ~debug ~examples ~fms ~gnutls ~gslib ~lapack ~libceed ~libunwind +metis ~miniapps ~mpfr +mpi ~netcdf ~occa ~openmp ~petsc ~pumi ~raja ~rocm ~shared ~slepc +static ~strumpack ~suite-sparse ~sundials ~superlu-dist ~threadsafe ~umpire +zlib timer=auto",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "mfem",
+"Version": "4.4.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~amgx ~conduit ~cuda ~debug ~examples ~exceptions ~fms ~gnutls ~gslib ~lapack ~libceed ~libunwind +metis ~miniapps ~mpfr +mpi ~netcdf ~occa ~openmp ~petsc ~pumi ~raja ~rocm ~shared ~slepc +static ~strumpack ~suite-sparse ~sundials ~superlu-dist ~threadsafe ~umpire +zlib timer=auto",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "mfem",
@@ -24810,7 +25449,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "mfem",
 "Version": "4.2.0",
@@ -24819,7 +25458,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "mfem",
 "Version": "4.2.0",
@@ -24828,7 +25467,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "mfem",
 "Version": "4.2.0",
@@ -24892,7 +25531,34 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "mpich",
+"Version": "4.0a2",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~argobots +fortran +hwloc ~hydra +libxml2 +pci +romio ~slurm ~two_level_namespace ~verbs +wrapperrpath device=ch4 netmod=ofi pmi=pmi",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "mpich",
+"Version": "4.0a2",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~argobots ~cuda +fortran +hwloc ~hydra +libxml2 +pci ~rocm +romio ~slurm ~two_level_namespace ~vci ~verbs +wrapperrpath datatype-engine=auto device=ch4 netmod=ofi pmi=pmi",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "mpich",
+"Version": "4.0a2",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~argobots ~cuda +fortran +hwloc ~hydra +libxml2 +pci ~rocm +romio ~slurm ~two_level_namespace ~vci ~verbs +wrapperrpath datatype-engine=auto device=ch4 netmod=ofi patches=d4c0e99 pmi=pmi",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "mpich",
 "Version": "3.4.1",
@@ -24901,7 +25567,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "mpich",
 "Version": "3.4.1",
@@ -24910,7 +25576,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "mpich",
 "Version": "3.4.1",
@@ -24947,7 +25613,7 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "openmpi",
 "Version": "4.0.5",
@@ -24956,7 +25622,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "openmpi",
 "Version": "4.0.5",
@@ -24965,7 +25631,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "openmpi",
 "Version": "4.0.5",
@@ -25065,6 +25731,33 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "qthreads",
+"Version": "1.16",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " +hwloc ~spawn_cache +static scheduler=distrib stack_size=4096",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "qthreads",
+"Version": "1.16",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " +hwloc ~spawn_cache +static scheduler=distrib stack_size=4096",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "qthreads",
+"Version": "1.16",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " +hwloc ~spawn_cache +static scheduler=distrib stack_size=4096",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "qthreads",
@@ -25686,7 +26379,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "qthreads",
 "Version": "1.16",
@@ -25695,7 +26388,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "qthreads",
 "Version": "1.16",
@@ -25704,7 +26397,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "qthreads",
 "Version": "1.16",
@@ -25768,6 +26461,33 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "bolt",
+"Version": "2.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "bolt",
+"Version": "2.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "bolt",
+"Version": "2.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "bolt",
@@ -26317,7 +27037,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "bolt",
 "Version": "2.0",
@@ -26326,7 +27046,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "bolt",
 "Version": "2.0",
@@ -26335,7 +27055,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "bolt",
 "Version": "2.0",
@@ -26460,6 +27180,33 @@
 "Compiler": "oneapi@2021.4.0",
 "Variants": " ~cuda +example ~infiniband ~lmsensors ~nvml ~powercap ~rapl ~rocm ~rocm_smi ~sde +shared ~static_tools amdgpu_target=none",
 "Architecture": "linux-opensuse_leap15-x86_64"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "papi",
+"Version": "6.0.0.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda +example ~infiniband ~lmsensors ~nvml ~powercap ~rapl ~rocm ~rocm_smi ~sde +shared ~static_tools",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "papi",
+"Version": "6.0.0.1",
+"Compiler": "gcc@11.1.0",
+"Variants": " ~cuda +example ~infiniband ~lmsensors ~nvml ~powercap ~rapl ~rocm ~rocm_smi ~sde +shared ~static_tools",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "papi",
+"Version": "6.0.0.1",
+"Compiler": "gcc@11.1.0",
+"Variants": " ~cuda +example ~infiniband ~lmsensors ~nvml ~powercap ~rapl ~rocm ~rocm_smi ~sde +shared ~static_tools",
+"Architecture": "linux-opensuse_leap15-icelake"
 },
 {
 "Institution": "OLCF",
@@ -27254,7 +28001,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "papi",
 "Version": "6.0.0.1",
@@ -27263,7 +28010,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "papi",
 "Version": "6.0.0.1",
@@ -27272,7 +28019,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "papi",
 "Version": "6.0.0.1",
@@ -27361,6 +28108,33 @@
 "Compiler": "gcc@9.3.0",
 "Variants": " ~ipo build_type=RelWithDebInfo",
 "Architecture": "linux-opensuse_leap15-x86_64"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "papyrus",
+"Version": "1.0.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "papyrus",
+"Version": "1.0.2",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "papyrus",
+"Version": "1.0.2",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
 },
 {
 "Institution": "OLCF",
@@ -27912,7 +28686,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "papyrus",
 "Version": "1.0.1",
@@ -27921,7 +28695,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "papyrus",
 "Version": "1.0.1",
@@ -27930,7 +28704,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "papyrus",
 "Version": "1.0.1",
@@ -28010,6 +28784,33 @@
 "Compiler": "oneapi@2021.4.0",
 "Variants": " ~cuda ~debug_verbose ~ipo ~profile +shared build_type=RelWithDebInfo cuda_arch=none",
 "Architecture": "linux-opensuse_leap15-x86_64"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "parsec",
+"Version": "3.0.2012",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda ~debug_verbose ~ipo ~profile +shared build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "parsec",
+"Version": "3.0.2012",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda ~debug_verbose ~ipo ~profile +shared build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "parsec",
+"Version": "3.0.2012",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda ~debug_verbose ~ipo ~profile +shared build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
 },
 {
 "Institution": "OLCF",
@@ -28418,6 +29219,24 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "petsc",
+"Version": "3.17.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~X ~batch ~cgns ~complex ~cuda ~debug +double ~exodusii ~fftw +fortran ~giflib +hdf5 ~hpddm ~hwloc +hypre ~int64 ~jpeg ~knl ~kokkos ~libpng ~libyaml ~memkind +metis ~mkl-pardiso ~mmg ~moab ~mpfr +mpi ~mumps ~openmp ~p4est ~parmmg ~ptscotch ~random123 ~rocm ~saws ~scalapack +shared ~strumpack ~suite-sparse +superlu-dist ~tetgen ~trilinos ~valgrind clanguage=C",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "petsc",
+"Version": "3.17.4",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~X ~batch ~cgns ~complex ~cuda ~debug +double ~exodusii ~fftw +fortran ~giflib +hdf5 ~hpddm ~hwloc +hypre ~int64 ~jpeg ~knl ~kokkos ~libpng ~libyaml ~memkind +metis ~mkl-pardiso ~mmg ~moab ~mpfr +mpi ~mumps ~openmp ~p4est ~parmmg ~ptscotch ~random123 ~rocm ~saws ~scalapack +shared ~strumpack ~suite-sparse +superlu-dist ~tetgen ~trilinos ~valgrind clanguage=C",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "petsc",
@@ -29876,7 +30695,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "petsc",
 "Version": "3.15.0",
@@ -29885,7 +30704,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "petsc",
 "Version": "3.15.0",
@@ -29894,7 +30713,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "petsc",
 "Version": "3.15.0",
@@ -30010,6 +30829,24 @@
 "Compiler": "oneapi@2021.4.0",
 "Variants": " ~burstbuffer +cxx +fortran +pic +shared",
 "Architecture": "linux-opensuse_leap15-x86_64"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "parallel-netcdf",
+"Version": "1.12.2",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~burstbuffer +cxx +fortran +pic +shared",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "parallel-netcdf",
+"Version": "1.12.2",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~burstbuffer +cxx +fortran +pic +shared",
+"Architecture": "linux-opensuse_leap15-icelake"
 },
 {
 "Institution": "OLCF",
@@ -30804,7 +31641,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "parallel-netcdf",
 "Version": "1.12.2",
@@ -30813,7 +31650,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "parallel-netcdf",
 "Version": "1.12.2",
@@ -30822,7 +31659,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "parallel-netcdf",
 "Version": "1.12.2",
@@ -30987,6 +31824,24 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "raja",
+"Version": "0.14.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda +examples +exercises ~ipo +openmp ~rocm +shared ~tests build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "raja",
+"Version": "0.14.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda +examples +exercises ~ipo +openmp ~rocm +shared ~tests build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "raja",
@@ -32319,7 +33174,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "raja",
 "Version": "0.13.0",
@@ -32328,7 +33183,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "raja",
 "Version": "0.13.0",
@@ -32337,7 +33192,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "raja",
 "Version": "0.13.0",
@@ -32346,7 +33201,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "raja",
 "Version": "0.13.0",
@@ -32435,6 +33290,33 @@
 "Compiler": "gcc@9.3.0",
 "Variants": " ~ipo ~pic +shared build_type=Release patches=1c9ce5fee1451a08c2de3cc87f446aeda0b818ebbce4ad0d980ddf2f2a0b2dc4 ,f2baedde688ffe4c20943c334f580eb298e04d6f35c86b90a1f4e8cb7ae344a2",
 "Architecture": "linux-opensuse_leap15-x86_64"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "netlib-scalapack",
+"Version": "2.1.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo ~pic +shared build_type=Release patches=1c9ce5fee1451a08c2de3cc87f446aeda0b818ebbce4ad0d980ddf2f2a0b2dc4 ,f2baedde688ffe4c20943c334f580eb298e04d6f35c86b90a1f4e8cb7ae344a2",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "netlib-scalapack",
+"Version": "2.2.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo ~pic +shared build_type=Release patches=072b006 ,1c9ce5f",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "netlib-scalapack",
+"Version": "2.2.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo ~pic +shared build_type=Release patches=072b006 ,1c9ce5f",
+"Architecture": "linux-opensuse_leap15-icelake"
 },
 {
 "Institution": "OLCF",
@@ -33292,7 +34174,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "netlib-scalapack",
 "Version": "2.1.0",
@@ -33301,7 +34183,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "netlib-scalapack",
 "Version": "2.1.0",
@@ -33310,7 +34192,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "netlib-scalapack",
 "Version": "2.1.0",
@@ -33356,7 +34238,16 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "scr",
+"Version": "3.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " +bbapi ~bbapi_fallback ~dw +examples +fortran ~ipo +libyogrt +pdsh +shared +tests build_type=RelWithDebInfo cache_base=/dev/shm cntl_base=/dev/shm copy_config=none file_lock=FLOCK resource_manager=SLURM scr_config=scr.conf",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "scr",
 "Version": "3.0rc1",
@@ -33365,7 +34256,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "scr",
 "Version": "3.0rc1",
@@ -33374,7 +34265,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "scr",
 "Version": "3.0rc1",
@@ -33420,6 +34311,15 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "slate",
+"Version": "2021.05.02",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda ~ipo +mpi +openmp ~rocm +shared build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "slate",
@@ -34005,7 +34905,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "slate",
 "Version": "2021.05.02",
@@ -34014,7 +34914,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "slate",
 "Version": "2021.05.02",
@@ -34023,7 +34923,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "slate",
 "Version": "2021.05.02",
@@ -34032,7 +34932,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "slate",
 "Version": "2021.05.02",
@@ -34041,7 +34941,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "slate",
 "Version": "2021.05.02",
@@ -34087,6 +34987,15 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "butterflypack",
+"Version": "2.1.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo +shared build_type=RelWithDebInfo patches=2670535",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "butterflypack",
@@ -34357,7 +35266,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "butterflypack",
 "Version": "1.2.1",
@@ -34366,7 +35275,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "butterflypack",
 "Version": "1.2.1",
@@ -34375,7 +35284,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "butterflypack",
 "Version": "1.2.1",
@@ -34475,6 +35384,15 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "strumpack",
+"Version": "6.3.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " +butterflypack +c_interface ~count_flops ~cuda ~ipo +mpi +openmp +parmetis ~rocm ~scotch +shared ~slate ~task_timers +zfp build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "strumpack",
@@ -35042,7 +35960,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "strumpack",
 "Version": "5.1.1",
@@ -35051,7 +35969,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "strumpack",
 "Version": "5.1.1",
@@ -35060,7 +35978,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "strumpack",
 "Version": "5.1.1",
@@ -35069,7 +35987,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "strumpack",
 "Version": "5.1.1",
@@ -35078,7 +35996,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "strumpack",
 "Version": "5.1.1",
@@ -35087,7 +36005,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "strumpack",
 "Version": "5.1.1",
@@ -35214,6 +36132,33 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "sundials",
+"Version": "6.1.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " +ARKODE +CVODE +CVODES +IDA +IDAS +KINSOL ~caliper ~cuda +examples +examples-install ~f2003 ~fcmix +generic-math ~hypre ~int64 ~ipo ~klu ~lapack ~monitoring +mpi ~openmp ~petsc ~profiling ~pthread ~raja ~rocm +shared +static ~superlu-dist ~superlu-mt ~sycl ~trilinos build_type=RelWithDebInfo cstd=99 cxxstd=14 precision=double",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "sundials",
+"Version": "6.2.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " +ARKODE +CVODE +CVODES +IDA +IDAS +KINSOL ~cuda +examples +examples-install ~f2003 ~fcmix +generic-math ~hypre ~int64 ~ipo ~klu ~lapack ~magma ~monitoring +mpi ~openmp ~petsc ~profiling ~pthread ~raja ~rocm +shared +static ~superlu-dist ~superlu-mt ~sycl ~trilinos build_type=RelWithDebInfo cstd=99 cxxstd=14 logging-level=0 precision=double",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "sundials",
+"Version": "6.2.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " +ARKODE +CVODE +CVODES +IDA +IDAS +KINSOL ~cuda +examples +examples-install ~f2003 ~fcmix +generic-math ~hypre ~int64 ~ipo ~klu ~lapack ~magma ~monitoring +mpi ~openmp ~petsc ~profiling ~pthread ~raja ~rocm +shared +static ~superlu-dist ~superlu-mt ~sycl ~trilinos build_type=RelWithDebInfo cstd=99 cxxstd=14 logging-level=0 precision=double",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "sundials",
@@ -36780,7 +37725,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "sundials",
 "Version": "5.7.0",
@@ -36789,7 +37734,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "sundials",
 "Version": "5.7.0",
@@ -36798,7 +37743,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "sundials",
 "Version": "5.7.0",
@@ -36807,7 +37752,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "sundials",
 "Version": "5.7.0",
@@ -36816,7 +37761,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "sundials",
 "Version": "5.7.0",
@@ -36916,6 +37861,33 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "superlu",
+"Version": "5.3.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo +pic build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "superlu",
+"Version": "5.3.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo +pic build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "superlu",
+"Version": "5.3.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo +pic build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "superlu",
@@ -37474,7 +38446,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "superlu",
 "Version": "5.2.1",
@@ -37483,7 +38455,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "superlu",
 "Version": "5.2.1",
@@ -37492,7 +38464,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "superlu",
 "Version": "5.2.1",
@@ -37619,6 +38591,60 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "swig",
+"Version": "4.0.2",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": "",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "swig",
+"Version": "4.0.2-fortran",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": "",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "swig",
+"Version": "4.0.2",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": "",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "swig",
+"Version": "4.0.2-fortran",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": "",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "swig",
+"Version": "4.0.2",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": "",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "swig",
+"Version": "4.0.2-fortran",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": "",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "swig",
@@ -38609,7 +39635,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "swig",
 "Version": "4.0.2",
@@ -38618,7 +39644,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "swig",
 "Version": "4.0.2",
@@ -38627,7 +39653,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "swig",
 "Version": "4.0.2-fortran",
@@ -38636,7 +39662,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "swig",
 "Version": "4.0.2-fortran",
@@ -38645,7 +39671,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "swig",
 "Version": "4.0.2",
@@ -38654,7 +39680,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "swig",
 "Version": "4.0.2-fortran",
@@ -38797,6 +39823,60 @@
 "Compiler": "gcc@9.3.0",
 "Variants": " ~fortran ~hdf5 ~ipo ~netcdf ~pastri ~python ~random_access +shared ~stats ~time_compression build_type=RelWithDebInfo",
 "Architecture": "linux-opensuse_leap15-x86_64"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "sz",
+"Version": "1.4.12.3",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~fortran ~hdf5 ~ipo ~netcdf ~pastri ~python ~random_access +shared ~stats ~time_compression build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "sz",
+"Version": "2.1.12",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~fortran ~hdf5 ~ipo ~netcdf ~pastri ~python ~random_access +shared ~stats ~time_compression build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "sz",
+"Version": "1.4.12.3",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~fortran ~hdf5 ~ipo ~netcdf ~pastri ~python ~random_access +shared ~stats ~time_compression build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "sz",
+"Version": "2.1.12",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~fortran ~hdf5 ~ipo ~netcdf ~pastri ~python ~random_access +shared ~stats ~time_compression build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "sz",
+"Version": "1.4.12.3",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~fortran ~hdf5 ~ipo ~netcdf ~pastri ~python ~random_access +shared ~stats ~time_compression build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "sz",
+"Version": "2.1.12.2",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~fortran ~hdf5 ~ipo ~netcdf ~pastri ~python ~random_access +shared ~stats ~time_compression build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
 },
 {
 "Institution": "OLCF",
@@ -39519,7 +40599,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "sz",
 "Version": "1.4.12.3",
@@ -39528,7 +40608,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "sz",
 "Version": "1.4.12.3",
@@ -39537,7 +40617,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "sz",
 "Version": "2.1.11.1",
@@ -39546,7 +40626,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "sz",
 "Version": "2.1.11.1",
@@ -39555,7 +40635,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "sz",
 "Version": "1.4.12.3",
@@ -39564,7 +40644,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "sz",
 "Version": "2.1.11.1",
@@ -39664,6 +40744,33 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "tasmanian",
+"Version": "7.7",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~blas ~cuda ~fortran ~ipo ~magma +mpi +openmp ~python ~rocm ~xsdkflags build_type=Release",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "tasmanian",
+"Version": "7.7",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~blas ~cuda ~fortran ~ipo ~magma +mpi +openmp ~python ~rocm ~xsdkflags build_type=Release",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "tasmanian",
+"Version": "7.7",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~blas ~cuda ~fortran ~ipo ~magma +mpi +openmp ~python ~rocm ~xsdkflags build_type=Release",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "tasmanian",
@@ -40690,7 +41797,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "tasmanian",
 "Version": "7.5",
@@ -40699,7 +41806,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "tasmanian",
 "Version": "7.5",
@@ -40708,7 +41815,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "tasmanian",
 "Version": "7.5",
@@ -40717,7 +41824,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "tasmanian",
 "Version": "7.5",
@@ -40726,7 +41833,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "tasmanian",
 "Version": "7.5",
@@ -40808,6 +41915,42 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "tau",
+"Version": "2.31.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~adios2 +binutils ~comm ~craycnl ~cuda +elf +fortran ~gasnet +io ~level_zero +libdwarf +libunwind ~likwid +mpi ~ompt ~opari ~opencl ~openmp +otf2 +papi ~pdt ~phase ~ppc64le ~profileparam +pthreads +python ~rocm ~rocprofiler ~roctracer ~scorep ~shmem ~sqlite ~x86_64",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "tau",
+"Version": "2.31.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~adios2 +binutils ~comm ~craycnl ~cuda +elf +fortran ~gasnet +io +level_zero +libdwarf +libunwind ~likwid +mpi ~ompt ~opari +opencl ~openmp +otf2 +papi ~pdt ~phase ~ppc64le ~profileparam +pthreads ~python ~rocm ~rocprofiler ~roctracer ~scorep ~shmem ~sqlite ~x86_64",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "tau",
+"Version": "2.31.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~adios2 +binutils ~comm ~craycnl ~cuda +elf +fortran ~gasnet +io ~level_zero +libdwarf +libunwind ~likwid +mpi ~ompt ~opari ~opencl ~openmp +otf2 +papi ~pdt ~phase ~ppc64le ~profileparam +pthreads +python ~rocm ~rocprofiler ~roctracer ~scorep ~shmem ~sqlite ~x86_64",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "tau",
+"Version": "2.31.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~adios2 +binutils ~comm ~craycnl ~cuda +elf +fortran ~gasnet +io +level_zero +libdwarf +libunwind ~likwid +mpi ~ompt ~opari +opencl ~openmp +otf2 +papi ~pdt ~phase ~ppc64le ~profileparam +pthreads ~python ~rocm ~rocprofiler ~roctracer ~scorep ~shmem ~sqlite ~x86_64",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-21.05",
 "Product": "tau",
@@ -41402,7 +42545,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "tau",
 "Version": "2.30.1",
@@ -41411,7 +42554,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "tau",
 "Version": "2.30.1",
@@ -41420,7 +42563,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "tau",
 "Version": "2.30.1",
@@ -41466,6 +42609,24 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "trilinos",
+"Version": "13.0.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~adios2 +amesos +amesos2 +anasazi +aztec ~basker +belos +boost ~chaco ~complex ~cuda ~cuda_rdc ~debug ~dtk +epetra +epetraext ~epetraextbtf ~epetraextexperimental ~epetraextgraphreorderings ~exodus +explicit_template_instantiation ~float +fortran ~gtest ~hdf5 ~hypre +ifpack +ifpack2 +intrepid +intrepid2 ~ipo +isorropia +kokkos ~mesquite +minitensor +ml +mpi +muelu ~mumps +nox ~openmp ~panzer +phalanx +piro ~python ~rocm ~rocm_rdc +rol +rythmos +sacado ~scorec +shards +shared +shylu +stk +stokhos +stratimikos ~strumpack ~suite-sparse ~superlu +superlu-dist +teko +tempus +thyra +tpetra +trilinoscouplings ~wrapper ~x11 +zoltan +zoltan2 build_type=RelWithDebInfo cxxstd=14 gotype=long_long",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "trilinos",
+"Version": "13.0.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~adelus ~adios2 +amesos +amesos2 +anasazi +aztec ~basker +belos +boost ~chaco ~complex ~cuda ~cuda_rdc ~debug ~dtk +epetra +epetraext ~epetraextbtf ~epetraextexperimental ~epetraextgraphreorderings ~exodus +explicit_template_instantiation ~float +fortran ~gtest ~hdf5 ~hypre +ifpack +ifpack2 +intrepid +intrepid2 ~ipo +isorropia +kokkos ~mesquite +minitensor +ml +mpi +muelu ~mumps +nox ~openmp ~panzer +phalanx +piro ~python ~rocm ~rocm_rdc +rol +rythmos +sacado ~scorec +shards +shared +shylu +stk +stokhos +stratimikos ~strumpack ~suite-sparse ~superlu +superlu-dist +teko +tempus +thyra +tpetra +trilinoscouplings ~wrapper ~x11 +zoltan +zoltan2 build_type=RelWithDebInfo cxxstd=14 gotype=long_long",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "trilinos",
@@ -42915,7 +44076,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "trilinos",
 "Version": "13.0.1",
@@ -42924,7 +44085,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "trilinos",
 "Version": "13.0.1",
@@ -42933,7 +44094,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "trilinos",
 "Version": "13.0.1",
@@ -42942,7 +44103,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "trilinos",
 "Version": "13.0.1",
@@ -42951,7 +44112,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "trilinos",
 "Version": "13.0.1",
@@ -42960,7 +44121,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "trilinos",
 "Version": "13.0.1",
@@ -42969,7 +44130,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "trilinos",
 "Version": "13.0.1",
@@ -42978,7 +44139,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "trilinos",
 "Version": "13.0.1",
@@ -42987,7 +44148,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "trilinos",
 "Version": "13.0.1",
@@ -43078,6 +44239,33 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "umap",
+"Version": "2.1.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo ~logging ~tests build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "umap",
+"Version": "2.1.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo ~logging ~tests build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "umap",
+"Version": "2.1.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo ~logging ~tests build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "umap",
@@ -43555,7 +44743,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "umap",
 "Version": "2.1.0",
@@ -43564,7 +44752,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "umap",
 "Version": "2.1.0",
@@ -43573,7 +44761,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "umap",
 "Version": "2.1.0",
@@ -43736,6 +44924,33 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "umpire",
+"Version": "6.0.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " +c ~cuda ~deviceconst +examples ~fortran ~ipo ~numa ~openmp ~rocm +shared build_type=RelWithDebInfo tests=none",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "umpire",
+"Version": "6.0.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " +c ~cuda ~deviceconst +examples ~fortran ~ipo ~numa ~openmp ~rocm +shared build_type=RelWithDebInfo tests=none",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "umpire",
+"Version": "2022.03.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " +c ~cuda +device_alloc ~deviceconst +examples ~fortran ~ipo ~numa ~openmp ~rocm +shared build_type=RelWithDebInfo tests=none",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "umpire",
@@ -45032,7 +46247,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "umpire",
 "Version": "4.1.2",
@@ -45041,7 +46256,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "umpire",
 "Version": "4.1.2",
@@ -45050,7 +46265,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "umpire",
 "Version": "4.1.2",
@@ -45059,7 +46274,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "umpire",
 "Version": "4.1.2",
@@ -45068,7 +46283,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "umpire",
 "Version": "4.1.2",
@@ -45077,7 +46292,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "umpire",
 "Version": "4.1.2",
@@ -45086,7 +46301,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "umpire",
 "Version": "4.1.2",
@@ -45095,7 +46310,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "umpire",
 "Version": "4.1.2",
@@ -45104,7 +46319,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "umpire",
 "Version": "4.1.2",
@@ -45113,7 +46328,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "umpire",
 "Version": "4.1.2",
@@ -45122,7 +46337,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "umpire",
 "Version": "4.1.2",
@@ -45366,7 +46581,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "unifyfs",
 "Version": "0.9.1",
@@ -45375,7 +46590,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "unifyfs",
 "Version": "0.9.1",
@@ -45384,7 +46599,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "unifyfs",
 "Version": "0.9.1",
@@ -45482,6 +46697,33 @@
 "Compiler": "gcc@9.3.0",
 "Variants": " ~cuda ~gasnet +mpi cross=none",
 "Architecture": "linux-opensuse_leap15-x86_64"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "upcxx",
+"Version": "2021.9.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda ~gasnet +mpi cross=none",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "upcxx",
+"Version": "2022.3.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda ~gasnet +mpi ~rocm cross=none",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "upcxx",
+"Version": "2022.3.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda ~gasnet +mpi ~rocm cross=none",
+"Architecture": "linux-opensuse_leap15-icelake"
 },
 {
 "Institution": "OLCF",
@@ -46078,7 +47320,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "upcxx",
 "Version": "2021.3.0",
@@ -46087,7 +47329,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "upcxx",
 "Version": "2021.3.0",
@@ -46096,7 +47338,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "upcxx",
 "Version": "2021.3.0",
@@ -46158,6 +47400,24 @@
 "Compiler": "gcc@9.3.0",
 "Variants": " ~ipo build_type=RelWithDebInfo",
 "Architecture": "linux-opensuse_leap15-x86_64"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "veloc",
+"Version": "1.5",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "veloc",
+"Version": "1.5",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
 },
 {
 "Institution": "OLCF",
@@ -46501,6 +47761,15 @@
 "Compiler": "gcc@9.3.0",
 "Variants": " ~64bitids +ascent_types ~cuda +doubleprecision ~hip ~ipo ~logging +mpi +openmp +rendering ~shared ~tbb ~virtuals amdgpu_target=none build_type=Release cuda_arch=none",
 "Architecture": "linux-opensuse_leap15-x86_64"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "vtk-m",
+"Version": "1.8.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~64bitids +ascent_types ~cuda +doubleprecision +examples ~fpic ~ipo ~kokkos ~logging +mpi ~openmp +rendering ~rocm ~shared ~tbb ~testlib ~virtuals build_type=Release",
+"Architecture": "linux-opensuse_leap15-icelake"
 },
 {
 "Institution": "OLCF",
@@ -47331,7 +48600,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "vtk-m",
 "Version": "1.5.5",
@@ -47340,7 +48609,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "vtk-m",
 "Version": "1.5.5",
@@ -47349,7 +48618,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "vtk-m",
 "Version": "1.5.5",
@@ -47474,6 +48743,33 @@
 "Compiler": "gcc@9.3.0",
 "Variants": " ~aligned ~c ~cuda ~fasthash ~fortran ~ipo ~openmp ~profile ~python +shared ~strided ~twoway bsws=64 build_type=RelWithDebInfo cuda_arch=none",
 "Architecture": "linux-opensuse_leap15-x86_64"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "zfp",
+"Version": "0.5.5",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~aligned ~c ~cuda ~fasthash ~fortran ~ipo ~openmp ~profile ~python +shared ~strided ~twoway bsws=64 build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "zfp",
+"Version": "0.5.5",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~aligned ~c ~cuda ~fasthash ~fortran ~ipo ~openmp ~profile ~python +shared ~strided ~twoway bsws=64 build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "zfp",
+"Version": "0.5.5",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~aligned ~c ~cuda ~fasthash ~fortran ~ipo ~openmp ~profile ~python +shared ~strided ~twoway bsws=64 build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
 },
 {
 "Institution": "OLCF",
@@ -48214,7 +49510,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "zfp",
 "Version": "0.5.5",
@@ -48223,7 +49519,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "zfp",
 "Version": "0.5.5",
@@ -48232,7 +49528,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "zfp",
 "Version": "0.5.5",
@@ -48241,7 +49537,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "zfp",
 "Version": "0.5.5",
@@ -48250,7 +49546,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "zfp",
 "Version": "0.5.5",
@@ -48395,6 +49691,33 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "conduit",
+"Version": "0.8.2",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~adios +blt_find_mpi ~doc ~doxygen +fortran +hdf5 +hdf5_compat ~ipo +mpi +parmetis ~python +shared ~silo +test ~zfp build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "conduit",
+"Version": "0.8.3",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~adios +blt_find_mpi ~doc ~doxygen +fortran +hdf5 +hdf5_compat ~ipo +mpi +parmetis ~python +shared ~silo +test ~zfp build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "conduit",
+"Version": "0.8.3",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~adios +blt_find_mpi ~doc ~doxygen +fortran +hdf5 +hdf5_compat ~ipo +mpi +parmetis ~python +shared ~silo +test ~zfp build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "conduit",
@@ -49187,7 +50510,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "conduit",
 "Version": "0.7.2",
@@ -49196,7 +50519,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "conduit",
 "Version": "0.7.2",
@@ -49205,7 +50528,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "conduit",
 "Version": "0.7.2",
@@ -49214,7 +50537,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "conduit",
 "Version": "0.7.2",
@@ -49223,7 +50546,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "conduit",
 "Version": "0.7.2",
@@ -49232,7 +50555,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "conduit",
 "Version": "0.7.2",
@@ -49323,6 +50646,33 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "libquo",
+"Version": "1.3.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": "",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "libquo",
+"Version": "1.3.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": "",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "libquo",
+"Version": "1.3.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": "",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "libquo",
@@ -49800,7 +51150,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "libquo",
 "Version": "1.3.1",
@@ -49809,7 +51159,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "libquo",
 "Version": "1.3.1",
@@ -49818,7 +51168,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "libquo",
 "Version": "1.3.1",
@@ -49900,6 +51250,33 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "gotcha",
+"Version": "1.0.3",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo ~test build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "gotcha",
+"Version": "1.0.3",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo ~test build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "gotcha",
+"Version": "1.0.3",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo ~test build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "gotcha",
@@ -50431,7 +51808,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "gotcha",
 "Version": "1.0.3",
@@ -50440,7 +51817,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "gotcha",
 "Version": "1.0.3",
@@ -50449,7 +51826,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "gotcha",
 "Version": "1.0.3",
@@ -50531,6 +51908,33 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "faodel",
+"Version": "1.2108.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~hdf5 ~ipo +mpi +shared +tcmalloc build_type=RelWithDebInfo logging=stdout network=nnti serializer=xdr",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "faodel",
+"Version": "1.2108.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~hdf5 ~ipo +mpi +shared +tcmalloc build_type=RelWithDebInfo logging=stdout network=nnti serializer=xdr",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "faodel",
+"Version": "1.2108.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~hdf5 ~ipo +mpi +shared +tcmalloc build_type=RelWithDebInfo logging=stdout network=nnti serializer=xdr",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "faodel",
@@ -50990,7 +52394,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "faodel",
 "Version": "1.1906.1",
@@ -50999,7 +52403,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "faodel",
 "Version": "1.1906.1",
@@ -51008,7 +52412,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "faodel",
 "Version": "1.1906.1",
@@ -51126,6 +52530,24 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "mercury",
+"Version": "2.1.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~bmi +boostsys +checksum ~debug ~ipo +mpi +ofi +shared +sm ~ucx ~udreg build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "mercury",
+"Version": "2.1.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~bmi +boostsys +checksum ~debug ~ipo +mpi +ofi +shared +sm ~ucx ~udreg build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "mercury",
@@ -52044,7 +53466,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "mercury",
 "Version": "1.0.1",
@@ -52053,7 +53475,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "mercury",
 "Version": "1.0.1",
@@ -52062,7 +53484,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "mercury",
 "Version": "2.0.1",
@@ -52071,7 +53493,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "mercury",
 "Version": "2.0.1",
@@ -52080,7 +53502,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "mercury",
 "Version": "1.0.1",
@@ -52089,7 +53511,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "mercury",
 "Version": "2.0.1",
@@ -52126,7 +53548,25 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "py-jupyterhub",
+"Version": "1.4.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": "",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "py-jupyterhub",
+"Version": "1.4.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": "",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "py-jupyterhub",
 "Version": "1.0.0",
@@ -52135,7 +53575,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "py-jupyterhub",
 "Version": "1.0.0",
@@ -52144,7 +53584,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "py-jupyterhub",
 "Version": "1.0.0",
@@ -52179,6 +53619,33 @@
 "Compiler": "gcc@9.3.0",
 "Variants": " ~experimental ~gpfs ~lustre ~xattr",
 "Architecture": "linux-opensuse_leap15-x86_64"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "mpifileutils",
+"Version": "0.11.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~experimental ~gpfs ~lustre ~xattr",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "mpifileutils",
+"Version": "0.11.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~experimental ~gpfs ~lustre ~xattr",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "mpifileutils",
+"Version": "0.11.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~experimental ~gpfs ~lustre ~xattr",
+"Architecture": "linux-opensuse_leap15-icelake"
 },
 {
 "Institution": "OLCF",
@@ -52955,7 +54422,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "mpifileutils",
 "Version": "0.11",
@@ -52964,7 +54431,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "mpifileutils",
 "Version": "0.11",
@@ -52973,7 +54440,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "mpifileutils",
 "Version": "0.11",
@@ -53053,6 +54520,33 @@
 "Compiler": "gcc@9.3.0",
 "Variants": " ~scalapack armci=mpi-ts",
 "Architecture": "linux-opensuse_leap15-x86_64"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "globalarrays",
+"Version": "5.8",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~scalapack armci=mpi-ts",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "globalarrays",
+"Version": "5.8",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~scalapack armci=mpi-ts",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "globalarrays",
+"Version": "5.8",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~scalapack armci=mpi-ts",
+"Architecture": "linux-opensuse_leap15-icelake"
 },
 {
 "Institution": "OLCF",
@@ -53586,7 +55080,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "globalarrays",
 "Version": "5.8",
@@ -53595,7 +55089,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "globalarrays",
 "Version": "5.8",
@@ -53604,7 +55098,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "globalarrays",
 "Version": "5.8",
@@ -53704,6 +55198,33 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "mpark-variant",
+"Version": "1.4.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo build_type=RelWithDebInfo patches=21a4f8de3525204ee6db2e53758a3e3fd9c13817df29d2926d24376858a369e7 ,4e173fe8c853eb92956a40371688b4a19498189fe65b7ceac30f6b9d6663a985 ,b3501f726fd40129b4aaa11453a5891c8953a34af8ac84f5ab10a22afa5e7b9b",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "mpark-variant",
+"Version": "1.4.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo build_type=RelWithDebInfo patches=21a4f8d ,4e173fe ,b3501f7",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "mpark-variant",
+"Version": "1.4.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo build_type=RelWithDebInfo patches=21a4f8d ,4e173fe ,b3501f7",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "mpark-variant",
@@ -54181,7 +55702,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "mpark-variant",
 "Version": "1.4.0",
@@ -54190,7 +55711,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "mpark-variant",
 "Version": "1.4.0",
@@ -54199,7 +55720,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "mpark-variant",
 "Version": "1.4.0",
@@ -54245,7 +55766,34 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "libnrm",
+"Version": "0.1.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": "",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "libnrm",
+"Version": "0.1.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": "",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "libnrm",
+"Version": "0.1.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": "",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "libnrm",
 "Version": "0.1.0",
@@ -54254,7 +55802,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "libnrm",
 "Version": "0.1.0",
@@ -54263,7 +55811,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "libnrm",
 "Version": "0.1.0",
@@ -54291,6 +55839,24 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "omega-h",
+"Version": "9.34.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda ~examples ~ipo +mpi +optimize +shared +symbols ~throw +trilinos ~warnings +zlib build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "omega-h",
+"Version": "9.34.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~cuda ~examples ~ipo +mpi +optimize +shared +symbols ~throw +trilinos ~warnings +zlib build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "omega-h",
@@ -54678,7 +56244,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "omega-h",
 "Version": "9.32.5",
@@ -54687,7 +56253,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "omega-h",
 "Version": "9.32.5",
@@ -54696,7 +56262,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "omega-h",
 "Version": "9.32.5",
@@ -55561,7 +57127,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "openpmd-api",
 "Version": "0.13.4",
@@ -55570,7 +57136,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "openpmd-api",
 "Version": "0.13.4",
@@ -55579,7 +57145,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "openpmd-api",
 "Version": "0.13.4",
@@ -55635,6 +57201,24 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "plasma",
+"Version": "21.8.29",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo ~lua +shared build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "plasma",
+"Version": "21.8.29",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo ~lua +shared build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "plasma",
@@ -55779,7 +57363,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "plasma",
 "Version": "20.9.20",
@@ -55788,7 +57372,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "plasma",
 "Version": "20.9.20",
@@ -55797,7 +57381,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "plasma",
 "Version": "20.9.20",
@@ -55852,6 +57436,24 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "precice",
+"Version": "2.4.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo +mpi +petsc ~python +shared build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "precice",
+"Version": "2.5.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo +mpi +petsc ~python +shared build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "precice",
@@ -56554,7 +58156,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "precice",
 "Version": "2.2.1",
@@ -56563,7 +58165,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "precice",
 "Version": "2.2.1",
@@ -56572,7 +58174,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "precice",
 "Version": "2.2.1",
@@ -56654,6 +58256,33 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "pumi",
+"Version": "2.2.6",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~fortran ~int64 ~ipo ~shared +simmodsuite_version_check ~testing ~zoltan build_type=RelWithDebInfo simmodsuite=none",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "pumi",
+"Version": "2.2.7",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~fortran ~int64 ~ipo ~shared +simmodsuite_version_check ~testing ~zoltan build_type=RelWithDebInfo simmodsuite=none",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "pumi",
+"Version": "2.2.7",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~fortran ~int64 ~ipo ~shared +simmodsuite_version_check ~testing ~zoltan build_type=RelWithDebInfo simmodsuite=none",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "pumi",
@@ -57284,7 +58913,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "pumi",
 "Version": "2.2.5",
@@ -57293,7 +58922,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "pumi",
 "Version": "2.2.5",
@@ -57302,7 +58931,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "pumi",
 "Version": "2.2.5",
@@ -57384,6 +59013,24 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "slepc",
+"Version": "3.17.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " +arpack ~blopex ~cuda ~rocm",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "slepc",
+"Version": "3.17.2",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " +arpack ~blopex ~cuda ~rocm",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "slepc",
@@ -58068,7 +59715,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "slepc",
 "Version": "3.15.0",
@@ -58077,7 +59724,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "slepc",
 "Version": "3.15.0",
@@ -58086,7 +59733,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "slepc",
 "Version": "3.15.0",
@@ -58148,6 +59795,33 @@
 "Compiler": "gcc@9.3.0",
 "Variants": "",
 "Architecture": "linux-opensuse_leap15-x86_64"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "stc",
+"Version": "0.9.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": "",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "stc",
+"Version": "0.9.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": "",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "stc",
+"Version": "0.9.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": "",
+"Architecture": "linux-opensuse_leap15-icelake"
 },
 {
 "Institution": "OLCF",
@@ -58366,7 +60040,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "stc",
 "Version": "0.9.0",
@@ -58375,7 +60049,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "stc",
 "Version": "0.9.0",
@@ -58384,7 +60058,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "stc",
 "Version": "0.9.0",
@@ -58556,7 +60230,7 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "warpx",
 "Version": "21.05",
@@ -58565,7 +60239,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "warpx",
 "Version": "21.05",
@@ -58574,7 +60248,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "warpx",
 "Version": "21.05",
@@ -58583,7 +60257,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "warpx",
 "Version": "21.05",
@@ -58592,7 +60266,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "warpx",
 "Version": "21.05",
@@ -58601,7 +60275,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "warpx",
 "Version": "21.05",
@@ -58610,7 +60284,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "warpx",
 "Version": "21.05",
@@ -58619,7 +60293,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "warpx",
 "Version": "21.05",
@@ -58628,7 +60302,7 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "warpx",
 "Version": "21.05",
@@ -58908,7 +60582,7 @@
 "Architecture": "cray-sles15-zen3"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "axom",
 "Version": "0.5.0",
@@ -58917,7 +60591,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "axom",
 "Version": "0.5.0",
@@ -58926,7 +60600,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "axom",
 "Version": "0.5.0",
@@ -58935,7 +60609,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "axom",
 "Version": "0.5.0",
@@ -58954,6 +60628,24 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "alquimia",
+"Version": "1.0.9",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo +shared build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "alquimia",
+"Version": "1.0.9",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo +shared build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "alquimia",
@@ -59079,6 +60771,42 @@
 "Compiler": "gcc@9.3.0",
 "Variants": " ~affinity ~debug +perf ~stackunwind ~tool ~valgrind stackguard=none",
 "Architecture": "linux-opensuse_leap15-x86_64"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "argobots",
+"Version": "1.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~affinity ~debug +perf ~stackunwind ~tool ~valgrind stackguard=none",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "argobots",
+"Version": "1.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~affinity ~debug +perf ~stackunwind ~tool ~valgrind stackguard=none",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "argobots",
+"Version": "1.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~affinity ~debug +perf ~stackunwind ~tool ~valgrind stackguard=none",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "argobots",
+"Version": "main",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~affinity ~debug +perf ~stackunwind ~tool ~valgrind stackguard=none",
+"Architecture": "linux-opensuse_leap15-icelake"
 },
 {
 "Institution": "OLCF",
@@ -59558,7 +61286,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "argobots",
 "Version": "1.1",
@@ -59567,7 +61295,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "argobots",
 "Version": "1.1",
@@ -59576,7 +61304,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "argobots",
 "Version": "1.1",
@@ -59622,6 +61350,42 @@
 "Architecture": "linux-opensuse_leap15-x86_64"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "cabana",
+"Version": "0.4.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~arborx ~cuda ~heffte ~hypre ~ipo +mpi ~openmp ~pthread ~rocm +serial +shared ~sycl build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "cabana",
+"Version": "0.4.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~arborx ~cuda ~heffte ~hypre ~ipo +mpi ~openmp ~pthread ~rocm +serial +shared ~sycl build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "cabana",
+"Version": "0.5.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~arborx ~cajita ~cuda ~examples ~heffte ~hypre ~ipo +mpi ~openmp ~openmptarget ~performance_testing ~pthread ~rocm +serial +shared ~sycl ~testing build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "cabana",
+"Version": "0.5.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~arborx ~cajita ~cuda ~examples ~heffte ~hypre ~ipo +mpi ~openmp ~openmptarget ~performance_testing ~pthread ~rocm +serial +shared +sycl ~testing build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "cabana",
@@ -60054,7 +61818,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "cabana",
 "Version": "0.3.0",
@@ -60063,7 +61827,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "cabana",
 "Version": "0.3.0",
@@ -60072,7 +61836,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "cabana",
 "Version": "0.3.0",
@@ -60098,6 +61862,43 @@
 "Compiler": "gcc@9.3.0",
 "Variants": " ~docs",
 "Architecture": "linux-opensuse_leap15-x86_64"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "charliecloud",
+"Version": "0.26",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~docs",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "charliecloud",
+"Version": "0.26",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~docs",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "charliecloud",
+"Version": "0.27",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~docs",
+"Architecture": "linux-opensuse_leap15-icelake"
+}
+,
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "hdf5-vol-async",
+"Version": "1.2",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
 }
 ,
 {
@@ -60108,6 +61909,33 @@
 "Compiler": "gcc@11.2.0",
 "Variants": " ~asphere ~body ~class2 ~colloid ~compress ~coreshell ~cuda ~cuda_mps ~dipole ~exceptions +ffmpeg ~granular ~ipo +jpeg +kim ~kokkos ~kspace ~latte +lib ~manybody ~mc ~meam ~misc ~mliap ~molecule +mpi ~mpiio ~opencl +openmp ~opt ~peri +png ~poems ~python ~qeq ~replica ~rigid ~shock ~snap ~spin ~srd ~user-adios ~user-atc ~user-awpmd ~user-bocs ~user-cgsdk ~user-colvars ~user-diffraction ~user-dpd ~user-drude ~user-eff ~user-fep ~user-h5md ~user-lb ~user-manifold ~user-meamc ~user-mesodpd ~user-mesont ~user-mgpt ~user-misc ~user-mofff ~user-netcdf ~user-omp ~user-phonon ~user-plumed ~user-ptm ~user-qtb ~user-reaction ~user-reaxc ~user-sdpd ~user-smd ~user-smtbq ~user-sph ~user-tally ~user-uef ~user-yaff ~voronoi build_type=RelWithDebInfo",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "lammps",
+"Version": "20220107",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~asphere ~body ~class2 ~colloid ~compress ~coreshell ~cuda ~cuda_mps ~dipole ~exceptions +ffmpeg ~granular ~ipo +jpeg +kim ~kokkos ~kspace ~latte +lib ~manybody ~mc ~meam ~misc ~mliap ~molecule +mpi ~mpiio ~opencl +openmp ~opt ~peri +png ~poems ~python ~qeq ~replica ~rigid ~shock ~snap ~spin ~srd ~user-adios ~user-atc ~user-awpmd ~user-bocs ~user-cgsdk ~user-colvars ~user-diffraction ~user-dpd ~user-drude ~user-eff ~user-fep ~user-h5md ~user-lb ~user-manifold ~user-meamc ~user-mesodpd ~user-mesont ~user-mgpt ~user-misc ~user-mofff ~user-netcdf ~user-omp ~user-phonon ~user-plumed ~user-ptm ~user-qtb ~user-reaction ~user-reaxc ~user-sdpd ~user-smd ~user-smtbq ~user-sph ~user-tally ~user-uef ~user-yaff ~voronoi build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "lammps",
+"Version": "20220107",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~asphere ~body ~class2 ~colloid ~compress ~coreshell ~cuda ~cuda_mps ~dipole ~exceptions +ffmpeg ~granular ~ipo +jpeg +kim ~kokkos ~kspace ~latte +lib ~manybody ~mc ~meam ~misc ~mliap ~molecule +mpi ~mpiio ~opencl +openmp ~opt ~peri +png ~poems ~python ~qeq ~replica ~rigid ~shock ~snap ~spin ~srd ~user-adios ~user-atc ~user-awpmd ~user-bocs ~user-cgsdk ~user-colvars ~user-diffraction ~user-dpd ~user-drude ~user-eff ~user-fep ~user-h5md ~user-lb ~user-manifold ~user-meamc ~user-mesodpd ~user-mesont ~user-mgpt ~user-misc ~user-mofff ~user-netcdf ~user-omp ~user-phonon ~user-plumed ~user-ptm ~user-qtb ~user-reaction ~user-reaxc ~user-sdpd ~user-smd ~user-smtbq ~user-sph ~user-tally ~user-uef ~user-yaff ~voronoi build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "lammps",
+"Version": "20220623",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~adios ~asphere ~atc ~awpmd ~bocs ~body ~bpm ~brownian ~cg-sdk ~class2 ~colloid ~colvars ~compress ~coreshell ~cuda ~cuda_mps ~dielectric ~diffraction ~dipole ~dpd-basic ~dpd-meso ~dpd-react ~dpd-smooth ~drude ~eff ~electrode ~exceptions ~extra-compute ~extra-dump ~extra-fix ~extra-molecule ~extra-pair ~fep +ffmpeg ~granular ~h5md ~interlayer ~ipo +jpeg +kim ~kokkos ~kspace ~latboltz ~latte +lib ~machdyn ~manifold ~manybody ~mc ~meam ~mesont ~mgpt ~misc ~ml-iap ~ml-snap ~mliap ~mofff ~molecule ~molfile +mpi ~mpiio ~netcdf ~opencl +openmp ~openmp-package ~opt ~orient ~peri ~phonon ~plugin ~plumed +png ~poems ~ptm ~python ~qeq ~qtb ~reaction ~reaxff ~replica ~rigid ~shock ~smtbq ~snap ~sph ~spin ~srd ~tally ~uef ~user-adios ~user-atc ~user-awpmd ~user-bocs ~user-brownian ~user-cgsdk ~user-colvars ~user-diffraction ~user-dpd ~user-drude ~user-eff ~user-fep ~user-h5md ~user-lb ~user-manifold ~user-meamc ~user-mesodpd ~user-mesont ~user-mgpt ~user-misc ~user-mofff ~user-molfile ~user-netcdf ~user-omp ~user-phonon ~user-plumed ~user-ptm ~user-qtb ~user-reaction ~user-reaxc ~user-sdpd ~user-smd ~user-smtbq ~user-sph ~user-tally ~user-uef ~user-yaff ~voronoi ~yaff build_type=RelWithDebInfo lammps_sizes=smallbig",
+"Architecture": "linux-opensuse_leap15-icelake"
 },
 {
 "Institution": "OLCF",
@@ -60370,6 +62198,33 @@
 "Compiler": "gcc@9.3.0",
 "Variants": " ~block_signals ~conservative_checks ~cxx_exceptions ~debug ~debug_frame +docs +pic +tests +weak_backtrace +xz ~zlib components=none libs=shared ,static",
 "Architecture": "linux-opensuse_leap15-x86_64"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "libunwind",
+"Version": "1.5.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~block_signals ~conservative_checks ~cxx_exceptions ~debug ~debug_frame +docs +pic +tests +weak_backtrace +xz ~zlib components=none libs=shared ,static",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "libunwind",
+"Version": "1.6.2",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~block_signals ~conservative_checks ~cxx_exceptions ~debug ~debug_frame +docs +pic +tests +weak_backtrace +xz ~zlib components=none libs=shared ,static",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "libunwind",
+"Version": "1.6.2",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~block_signals ~conservative_checks ~cxx_exceptions ~debug ~debug_frame +docs +pic +tests +weak_backtrace +xz ~zlib components=none libs=shared ,static",
+"Architecture": "linux-opensuse_leap15-icelake"
 },
 {
 "Institution": "OLCF",
@@ -61101,7 +62956,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "libunwind",
 "Version": "1.5.0",
@@ -61110,7 +62965,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "libunwind",
 "Version": "1.5.0",
@@ -61119,7 +62974,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "libunwind",
 "Version": "1.5.0",
@@ -61183,6 +63038,33 @@
 "Architecture": "cray-sles15-zen3"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "nccmp",
+"Version": "1.9.0.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "nccmp",
+"Version": "1.9.0.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "nccmp",
+"Version": "1.9.0.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "nccmp",
@@ -61481,6 +63363,33 @@
 "Architecture": "cray-sles15-zen3"
 },
 {
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "nco",
+"Version": "5.0.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~doc",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "nco",
+"Version": "5.0.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~doc",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "nco",
+"Version": "5.0.1",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~doc",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
 "Product": "nco",
@@ -61832,6 +63741,24 @@
 "Architecture": "linux-rhel8-ppc64le"
 }
 ,
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "plumed",
+"Version": "2.6.3",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " +gsl +mpi +shared arrayfire=none optional_modules=all",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "plumed",
+"Version": "2.8.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " +gsl +mpi +shared arrayfire=none optional_modules=all",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
 {
 "Institution": "OLCF",
 "E4S Deployment": "summit-22.02",
@@ -62183,6 +64110,33 @@
 "Compiler": "gcc@9.3.0",
 "Variants": " ~ipo build_type=RelWithDebInfo",
 "Architecture": "linux-opensuse_leap15-x86_64"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "metall",
+"Version": "0.17",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "metall",
+"Version": "0.20",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "metall",
+"Version": "0.21",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " ~ipo build_type=RelWithDebInfo",
+"Architecture": "linux-opensuse_leap15-icelake"
 },
 {
 "Institution": "OLCF",
@@ -62581,7 +64535,7 @@
 "Architecture": "linux-rhel8-ppc64le"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "metall",
 "Version": "0.13",
@@ -62590,7 +64544,7 @@
 "Architecture": "linux-centos8-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "x86_64",
 "Product": "metall",
 "Version": "0.13",
@@ -62599,7 +64553,7 @@
 "Architecture": "linux-ubuntu20.04-x86_64"
 },
 {
-"Institution": "University of Oregon's Frank",
+"Institution": "Frank@UO",
 "E4S Deployment": "pp64",
 "Product": "metall",
 "Version": "0.13",
@@ -62625,6 +64579,33 @@
 "Compiler": "intel@19.1.2.254",
 "Variants": " +shared",
 "Architecture": "cray-cnl7-haswell"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.02",
+"Product": "wannier90",
+"Version": "3.1.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " +shared",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.05",
+"Product": "wannier90",
+"Version": "3.1.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " +shared",
+"Architecture": "linux-opensuse_leap15-icelake"
+},
+{
+"Institution": "JLSE",
+"E4S Deployment": "arcticus-22.08",
+"Product": "wannier90",
+"Version": "3.1.0",
+"Compiler": "oneapi@&lt;version&gt;",
+"Variants": " +shared",
+"Architecture": "linux-opensuse_leap15-icelake"
 }
   ]
 }
