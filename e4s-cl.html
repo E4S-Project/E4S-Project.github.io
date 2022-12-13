@@ -15,7 +15,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>E4S - About</title>
+        <title>E4S - E4S-CL</title>
 
         <!-- CSS -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Roboto:300,400,500">
@@ -87,33 +87,42 @@
 
 	            <div class="row">
 	                <div class="col-sm-12 features section-description wow fadeIn">
+                        <object type="image/svg" data="./assets/img/e4sclStackedArrow.svg">
+                            <img src="./assets/img/e4sclStackedArrowFontEmbedded.svg"width="600">
+                        </object>
 
+	                        <h3>E4S's container management tool: E4S-CL</h3>
+
+                            <p>E4S Container Launch is an effort to facilitate the use of MPI applications developed using E4S containers on supercomputers without having to compile a new binary on the host.</p> 
+			    <p>Given a combination of an MPI library, a container and a MPI binary, E4S Container Launch will run the MPI binary in the target container using the MPI library.
+                This is useful when the binary has been compiled using a different library than the one passed as an argument: as long as the two libraries are <a href="https://www.mpich.org/abi/">ABI compatible </a>, the binary will run under the new environment.</p>
+                            <p>E4S Container Launch includes tools to automatically detect the MPI binary's necessary files, making it seamless to set up and use.</p>
+                            <p>The source code is available at the <a href="https://github.com/E4S-Project/e4s-cl">E4S-CL GitHub repository</a>. The documentation is also available <a href="https://e4s-cl.readthedocs.io/en/latest/">here</a>.</p>
                     <div class="row">
                         <div class="col-sm-12 section-description">
-                            <p>The Extreme-scale Scientific Software Stack (E4S) Project is supported by the <a href=www.exascaleproject.org>US Department of Energy Exascale Computing Project (ECP)</a>.  The packages distributed with E4S contain contributions from hundreds of open source community developers.  The top-level packages are listed on the <a href="https://e4s-project.github.io/Resources/ProductInfo.html">E4S Product Information page</a></p> 
-			    <p>Up to date package version and release information is avalable in the E4S project <a href="https://github.com/E4S-Project/e4s/blob/master/README.md">README</a></p>
-                            <p>E4S packages are available as pre-built Spack binaries in the <a href="https://oaciss.uoregon.edu/e4s/inventory.html">E4S Build Cache</a>. Binaries for the major operating systems and architectures are added to the build cache as updates become available in Spack.</p>
-                            <p>For a look at some of the container recipes used in the E4S project, see the <a href="https://github.com/UO-OACISS/e4s">E4S GitHub repository</a>. For more details on E4S container availability and usage, see the <a href="/download.html">Downloads page</a>.</p>
+
+                <h3>E4S-CL demo video:</h3>
+                <div class="demo-video">
+                    <iframe width="747" height="420" src="https://www.youtube.com/embed/6eZflZpHldk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
                         </div>
+
                     </div>
 
 	                </div>
 	            </div>
-
 	        </div>
         </div>
+
 
         <!-- Footer -->
         <footer>
 	        <div class="container">
-	        	<div class="row">
 	        		<div class="col-sm-12 footer-copyright">
                     	Created for <a href="https://e4s-project.github.io">The Extreme-scale Scientific Software Stack (E4S) Project</a> by <a href="https://maherou.github.io/">Michael A. Heroux</a>
                     </div>
                     <div class="col-sm-12 footer-copyright">
                         <a href="credit.html">Attribution</a> - Derived from a design by Quentin Petit
                     </div>
-                </div>
 	        </div>
         </footer>
 
