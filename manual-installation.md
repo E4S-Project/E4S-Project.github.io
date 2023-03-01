@@ -14,7 +14,7 @@
 
 [E4S Model Environment Repository](https://github.com/E4S-Project/e4s)
 
-[E4S 22.02 Model Environments](https://github.com/E4S-Project/e4s/tree/master/environments/23.02)
+[E4S 23.02 Model Environments](https://github.com/E4S-Project/e4s/tree/master/environments/23.02)
 
 [E4S Homepage](https://e4s.io)
 
