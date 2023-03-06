@@ -14,7 +14,7 @@
 
 [E4S Model Environment Repository](https://github.com/E4S-Project/e4s)
 
-[E4S 22.02 Model Environments](https://github.com/E4S-Project/e4s/tree/master/environments/22.02)
+[E4S 23.02 Model Environments](https://github.com/E4S-Project/e4s/tree/master/environments/23.02)
 
 [E4S Homepage](https://e4s.io)
 
@@ -30,15 +30,15 @@ $> pip install --user clingo
 Clone Spack, checkout the appropriate release branch, if desired, and source the Spack `setup-env.sh` script.
 ```
 $> git clone https://github.com/spack/spack
-$> (cd spack && git checkout e4s-22.02)
+$> (cd spack && git checkout e4s-23.02)
 $> . spack/share/spack/setup-env.sh
 ```
 
 Configure Spack to know where the E4S Build Cache is located. You can use either a release specific build cache, or the mixed build cache. The release specific build cache contains only binaries from the particular release, whereas the mixed build cache contains binaries from all releases and from in between releases.
 
-Release-specific
+Release-specific (we recommend using this if you can)
 ```
-$> spack mirror add E4S https://cache.e4s.io/22.02
+$> spack mirror add E4S https://cache.e4s.io/23.02
 $> spack buildcache keys -it
 ```
 
@@ -48,7 +48,7 @@ $> spack mirror add E4S https://cache.e4s.io
 $> spack buildcache keys -it
 ```
 
-Obtain a copy of the E4S Model Environment for the E4S release you are interested in, and rename it to `spack.yaml`, if needed. These are found in the [E4S Environment Repository](https://github.com/E4S-Project/e4s). For this example, we will use the [E4S 21.11 Model Environment](https://github.com/E4S-Project/e4s/blob/master/environments/22.02/spack-x86_64.yaml).
+Obtain a copy of the E4S Model Environment for the E4S release you are interested in, and rename it to `spack.yaml`, if needed. These are found in the [E4S Environment Repository](https://github.com/E4S-Project/e4s/tree/master/environments). For this example, we will use the [E4S 23.02 Model Environment for X86_64 Systems with NVIDIA GPUs](https://github.com/E4S-Project/e4s/blob/master/environments/23.02/cuda-x86_64/spack.yaml).
 
 Tweak the model environment so that it suits your needs: remove packages you aren't interested in, select the correct GPU variants, specify the microarchitecture target and compiler selections, as needed. Once modified, you can concretize the environment, which you should do from the same directory that contains your environment.
 ```
