@@ -2,15 +2,6 @@
   "data": [
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "adios2",
-"Version": "2.7.1",
-"Compiler": "intel@19.1.3.304",
-"Variants": " +blosc +bzip2 ~dataman ~dataspaces ~endian_reverse +fortran ~hdf5 ~ipo +mpi +pic +png ~python +shared +ssc +sst +sz +zfp build_type=Release",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "adios2",
 "Version": "2.7.1",
@@ -56,16 +47,7 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
-"Product": "adios2",
-"Version": "2.8.0",
-"Compiler": "cce@13.0.2",
-"Variants": " +blosc +bzip2 ~cuda ~dataman ~dataspaces +fortran ~hdf5 ~ipo +mpi +pic +png ~python +shared +ssc +sst +sz +zfp build_type=Release",
-"Architecture": "cray-sles15-zen3"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "adios2",
 "Version": "2.8.0",
 "Compiler": "gcc@11.2.0",
@@ -74,12 +56,39 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-cce",
+"Product": "adios2",
+"Version": "2.8.0",
+"Compiler": "cce@15.0.0",
+"Variants": " +blosc +bzip2 ~cuda ~dataman ~dataspaces +fortran ~hdf5 ~ipo +mpi +pic +png ~python +shared +ssc +sst +sz +zfp build_type=Release",
+"Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.05-cuda",
 "Product": "adios2",
 "Version": "2.8.0",
 "Compiler": "gcc@11.2.0",
 "Variants": " +blosc +bzip2 +cuda ~dataman ~dataspaces +fortran ~hdf5 ~ipo +mpi +pic +png ~python +shared +ssc +sst +sz +zfp build_type=Release cuda_arch=80",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "adios2",
+"Version": "2.8.3",
+"Compiler": "gcc@11.2.0",
+"Variants": " +blosc +bzip2 ~cuda ~dataman ~dataspaces +fortran ~hdf5 ~ipo ~libpressio +mpi +pic +png ~python +shared +ssc +sst +sz +zfp build_system=cmake build_type=Release",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cuda",
+"Product": "adios2",
+"Version": "2.8.3",
+"Compiler": "gcc@11.2.0",
+"Variants": " +blosc +bzip2 +cuda ~dataman ~dataspaces +fortran ~hdf5 ~ipo ~libpressio +mpi +pic +png ~python +shared +ssc +sst +sz +zfp build_system=cmake build_type=Release cuda_arch=80",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -779,15 +788,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "flit",
-"Version": "2.1.0",
-"Compiler": "intel@19.1.3.304",
-"Variants": "",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "flit",
 "Version": "2.1.0",
@@ -821,6 +821,15 @@
 "Compiler": "intel@19.1.2.254",
 "Variants": "",
 "Architecture": "cray-cnl7-haswell"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "flit",
+"Version": "2.1.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " build_system=makefile",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -1691,15 +1700,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "aml",
-"Version": "0.1.0",
-"Compiler": "intel@19.1.3.304",
-"Variants": "",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "aml",
 "Version": "0.1.0",
@@ -1715,6 +1715,15 @@
 "Compiler": "gcc@11.2.0",
 "Variants": "",
 "Architecture": "cray-cnl7-haswell"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "aml",
+"Version": "0.2.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~cuda ~hip ~hwloc ~opencl ~ze build_system=autotools hip-platform=none",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -2285,15 +2294,6 @@
 }
 ,
 {
-"Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "ascent",
-"Version": "0.7.1",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~adios ~babelflow ~cuda ~doc ~dray ~fortran ~mfem +mpi +openmp ~python +serial +shared +test +vtkh cuda_arch=none",
-"Architecture": "cray-cnl7-haswell"
-},
-{
 "Institution": "JLSE",
 "E4S Deployment": "arcticus-21.05",
 "Product": "ascent",
@@ -2693,15 +2693,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "amrex",
-"Version": "21.05",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~amrdata ~cuda ~eb ~fortran ~hdf5 ~hypre ~ipo +linear_solvers +mpi ~openmp ~particles ~petsc ~pic ~rocm ~shared ~sundials amdgpu_target=none build_type=RelWithDebInfo cuda_arch=none dimensions=3 precision=double",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "amrex",
 "Version": "22.02",
@@ -2729,12 +2720,30 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "amrex",
 "Version": "22.05",
 "Compiler": "gcc@11.2.0",
 "Variants": " ~amrdata ~cuda ~eb ~fortran ~hdf5 ~hypre ~ipo +linear_solvers +mpi ~openmp ~particles ~petsc ~pic ~plotfile_tools ~rocm ~shared ~sundials ~tiny_profile build_type=RelWithDebInfo dimensions=3 precision=double",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "amrex",
+"Version": "22.11",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~amrdata ~cuda ~eb ~fortran ~hdf5 ~hypre ~ipo +linear_solvers +mpi ~openmp ~particles ~petsc ~pic ~plotfile_tools ~rocm ~shared ~sundials ~sycl ~tiny_profile build_system=cmake build_type=RelWithDebInfo dimensions=3 precision=double",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cuda",
+"Product": "amrex",
+"Version": "22.11",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~amrdata +cuda ~eb ~fortran ~hdf5 ~hypre ~ipo +linear_solvers +mpi ~openmp ~particles ~petsc ~pic ~plotfile_tools ~rocm ~shared ~sundials ~sycl ~tiny_profile build_system=cmake build_type=RelWithDebInfo cuda_arch=80 dimensions=3 precision=double",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -4476,15 +4485,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "arborx",
-"Version": "1.0",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~cuda ~ipo +mpi ~openmp ~rocm +serial ~trilinos build_type=RelWithDebInfo",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "arborx",
 "Version": "1.1",
@@ -4518,6 +4518,24 @@
 "Compiler": "intel@19.1.2.254",
 "Variants": " ~cuda ~ipo +mpi ~openmp ~rocm +serial ~sycl ~trilinos build_type=RelWithDebInfo",
 "Architecture": "cray-cnl7-haswell"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "arborx",
+"Version": "1.3",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~cuda ~ipo +mpi ~openmp ~rocm +serial ~sycl ~trilinos build_system=cmake build_type=RelWithDebInfo cxxstd=17",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cuda",
+"Product": "arborx",
+"Version": "1.3",
+"Compiler": "gcc@11.2.0",
+"Variants": " +cuda ~ipo +mpi ~openmp ~rocm +serial ~sycl ~trilinos build_system=cmake build_type=RelWithDebInfo cuda_arch=80 cxxstd=17",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -5188,15 +5206,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "caliper",
-"Version": "2.5.0",
-"Compiler": "intel@19.1.3.304",
-"Variants": " +adiak ~cuda ~fortran +gotcha ~ipo +libdw ~libpfm +libunwind +mpi +papi +sampler +shared ~sosflow build_type=RelWithDebInfo cuda_arch=none",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "caliper",
 "Version": "2.7.0",
@@ -5230,6 +5239,24 @@
 "Compiler": "intel@19.1.2.254",
 "Variants": " +adiak ~cuda ~fortran +gotcha ~ipo +libdw ~libpfm +libunwind +mpi +papi +sampler +shared ~sosflow build_type=RelWithDebInfo",
 "Architecture": "cray-cnl7-haswell"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "caliper",
+"Version": "2.8.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " +adiak ~cuda ~fortran +gotcha ~ipo +libdw ~libpfm +libunwind +mpi +papi ~rocm +sampler +shared ~sosflow build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cuda",
+"Product": "caliper",
+"Version": "2.8.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " +adiak +cuda ~fortran +gotcha ~ipo +libdw ~libpfm +libunwind +mpi +papi ~rocm +sampler +shared ~sosflow build_system=cmake build_type=RelWithDebInfo cuda_arch=80",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -5972,15 +5999,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "chai",
-"Version": "2.3.0",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~benchmarks ~cuda ~enable_pick +examples ~ipo ~raja ~rocm +shared ~tests amdgpu_target=none build_type=RelWithDebInfo cuda_arch=none",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "chai",
 "Version": "2.4.0",
@@ -6014,6 +6032,24 @@
 "Compiler": "intel@19.1.2.254",
 "Variants": " ~benchmarks ~cuda ~enable_pick +examples ~ipo ~openmp ~raja ~rocm +shared ~tests build_type=RelWithDebInfo",
 "Architecture": "cray-cnl7-haswell"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "chai",
+"Version": "2022.03.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~benchmarks ~cuda ~enable_pick +examples ~ipo ~openmp ~raja ~rocm +shared ~tests build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cuda",
+"Product": "chai",
+"Version": "2022.03.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~benchmarks +cuda ~enable_pick +examples ~ipo ~openmp ~raja ~rocm +shared ~tests build_system=cmake build_type=RelWithDebInfo cuda_arch=80",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -7153,15 +7189,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "darshan-runtime",
-"Version": "3.3.0",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~apmpi ~apmpi_sync ~apxc ~cobalt ~hdf5 +mpi ~pbs ~slurm",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "darshan-runtime",
 "Version": "3.3.1",
@@ -7530,6 +7557,15 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 }
 ,
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "datatransferkit",
+"Version": "3.1-rc3",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~external-arborx ~ipo ~openmp +serial +shared build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
+},
 {
 "Institution": "JLSE",
 "E4S Deployment": "arcticus-21.08",
@@ -8199,7 +8235,7 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "dyninst",
 "Version": "12.1.0",
 "Compiler": "gcc@11.2.0",
@@ -8208,12 +8244,12 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.11-gcc",
 "Product": "dyninst",
-"Version": "12.1.0",
+"Version": "12.2.0",
 "Compiler": "gcc@11.2.0",
-"Variants": " ~ipo +openmp ~stat_dysect ~static build_type=RelWithDebInfo",
-"Architecture": "cray-sles15-zen3"
+"Variants": " ~ipo +openmp ~stat_dysect ~static build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -9100,12 +9136,30 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "heffte",
 "Version": "2.2.0",
 "Compiler": "gcc@11.2.0",
 "Variants": " ~cuda +fftw ~fortran ~ipo ~magma ~mkl ~python ~rocm +shared build_type=RelWithDebInfo",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "heffte",
+"Version": "2.3.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~cuda +fftw ~fortran ~ipo ~magma ~mkl ~python ~rocm +shared build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cuda",
+"Product": "heffte",
+"Version": "2.3.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " +cuda ~fftw ~fortran ~ipo ~magma ~mkl ~python ~rocm +shared build_system=cmake build_type=RelWithDebInfo cuda_arch=80",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -10055,15 +10109,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "flecsi",
-"Version": "1.4",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~caliper +cinch ~coverage ~debug_backend ~doc ~doxygen ~flecstan ~flog ~graphviz +hdf5 ~ipo ~minimal +shared ~tutorial backend=mpi build_type=Release",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "flecsi",
 "Version": "1.4.2",
@@ -10097,6 +10142,24 @@
 "Compiler": "intel@19.1.2.254",
 "Variants": " ~coverage ~cuda ~debug_backend ~disable_metis ~doc ~doxygen +external_cinch ~flecstan ~flog ~graphviz +hdf5 ~ipo ~kokkos ~openmp +shared ~tutorial ~unit_tests backend=mpi build_type=RelWithDebInfo caliper_detail=none",
 "Architecture": "cray-cnl7-haswell"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "flecsi",
+"Version": "1.4.2",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~coverage ~cuda ~debug_backend ~disable_metis ~doc ~doxygen +external_cinch ~flecstan ~flog ~graphviz +hdf5 ~ipo ~kokkos ~openmp +shared ~tutorial ~unit_tests backend=mpi build_system=cmake build_type=RelWithDebInfo caliper_detail=none",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cuda",
+"Product": "flecsi",
+"Version": "2.1.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~coverage +cuda ~debug_backend ~disable_metis ~doc ~doxygen ~external_cinch ~flecstan ~flog ~graphviz +hdf5 ~ipo ~kokkos ~openmp +shared ~tutorial ~unit_tests backend=mpi build_system=cmake build_type=RelWithDebInfo caliper_detail=none cuda_arch=80",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -10639,6 +10702,15 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 }
 ,
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "flux-core",
+"Version": "0.44.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~cuda ~docs build_system=autotools",
+"Architecture": "linux-sles15-zen3"
+},
 {
 "Institution": "JLSE",
 "E4S Deployment": "arcticus-21.11",
@@ -11416,12 +11488,21 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "fortrilinos",
 "Version": "2.0.0",
 "Compiler": "gcc@11.2.0",
 "Variants": " +hl ~ipo +shared build_type=RelWithDebInfo",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "fortrilinos",
+"Version": "2.1.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " +hl ~ipo +shared build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -11883,15 +11964,6 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 }
 ,
-{
-"Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "gasnet",
-"Version": "2021.3.0",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~debug conduits=smp",
-"Architecture": "cray-cnl7-haswell"
-},
 {
 "Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
@@ -11948,12 +12020,21 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "gasnet",
 "Version": "2022.3.0",
 "Compiler": "gcc@11.2.0",
 "Variants": " ~cuda ~debug ~rocm conduits=smp",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "gasnet",
+"Version": "2022.9.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~cuda ~debug ~rocm build_system=generic conduits=smp",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -12597,15 +12678,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "ginkgo",
-"Version": "1.3.0",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~cuda ~develtools ~full_optimizations ~hwloc ~ipo +openmp ~rocm +shared amdgpu_target=none build_type=Release cuda_arch=none",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "ginkgo",
 "Version": "1.4.0",
@@ -12639,6 +12711,24 @@
 "Compiler": "intel@19.1.2.254",
 "Variants": " ~cuda ~develtools ~full_optimizations ~hwloc ~ipo ~oneapi +openmp ~rocm +shared build_type=Release patches=43e571a49ea774793d89d145571c95ae7cdf991f5220d8fe84db217a3c613a32",
 "Architecture": "cray-cnl7-haswell"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "ginkgo",
+"Version": "1.4.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~cuda ~develtools ~full_optimizations ~hwloc ~ipo ~oneapi +openmp ~rocm +shared build_system=cmake build_type=Release patches=43e571a",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cuda",
+"Product": "ginkgo",
+"Version": "1.4.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " +cuda ~develtools ~full_optimizations ~hwloc ~ipo ~oneapi +openmp ~rocm +shared build_system=cmake build_type=Release cuda_arch=80 patches=43e571a",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -13642,24 +13732,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "hdf5",
-"Version": "1.8.22",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~cxx ~debug +fortran +hl ~java +mpi +pic +shared ~szip ~threadsafe api=none",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "hdf5",
-"Version": "1.10.7",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~cxx ~debug +fortran +hl ~java +mpi +pic +shared ~szip ~threadsafe api=none",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "hdf5",
 "Version": "1.8.22",
@@ -13887,6 +13959,15 @@
 "Institution": "NERSC",
 "E4S Deployment": "perlmutter-21.11",
 "Product": "hdf5",
+"Version": "1.10.7",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~cxx +fortran +hl ~ipo ~java +mpi +shared ~szip ~threadsafe +tools api=v18 build_type=RelWithDebInfo",
+"Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-21.11",
+"Product": "hdf5",
 "Version": "1.12.1",
 "Compiler": "gcc@11.2.0",
 "Variants": " ~cxx +fortran +hl ~ipo ~java +mpi +shared ~szip ~threadsafe +tools api=v18 build_type=RelWithDebInfo",
@@ -13894,25 +13975,7 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
-"Product": "hdf5",
-"Version": "1.8.22",
-"Compiler": "gcc@11.2.0",
-"Variants": " ~cxx +fortran +hl ~ipo ~java +mpi +shared ~szip ~threadsafe +tools api=v18 build_type=RelWithDebInfo",
-"Architecture": "cray-sles15-zen3"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
-"Product": "hdf5",
-"Version": "1.10.7",
-"Compiler": "cce@13.0.2",
-"Variants": " ~cxx +fortran +hl ~ipo ~java +mpi +shared ~szip ~threadsafe +tools api=v18 build_type=RelWithDebInfo patches=2a1e311",
-"Architecture": "cray-sles15-zen3"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "hdf5",
 "Version": "1.10.7",
 "Compiler": "gcc@11.2.0",
@@ -13921,39 +13984,39 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-cce",
 "Product": "hdf5",
-"Version": "1.10.8",
-"Compiler": "gcc@11.2.0",
-"Variants": " ~cxx +fortran +hl ~ipo ~java +mpi +shared +szip ~threadsafe +tools api=v18 build_type=RelWithDebInfo patches=ee351eb",
+"Version": "1.10.7",
+"Compiler": "cce@15.0.0",
+"Variants": " ~cxx +fortran +hl ~ipo ~java +mpi +shared ~szip ~threadsafe +tools api=v18 build_type=RelWithDebInfo patches=2a1e311",
 "Architecture": "cray-sles15-zen3"
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-nvhpc",
 "Product": "hdf5",
-"Version": "1.12.1",
-"Compiler": "cce@13.0.2",
-"Variants": " ~cxx +fortran +hl ~ipo ~java +mpi +shared ~szip ~threadsafe +tools api=v18 build_type=RelWithDebInfo patches=ee351eb",
+"Version": "1.10.7",
+"Compiler": "nvhpc@22.5",
+"Variants": " ~cxx +fortran +hl ~ipo ~java +mpi +shared ~szip ~threadsafe +tools api=v18 build_type=RelWithDebInfo patches=2a1e311",
 "Architecture": "cray-sles15-zen3"
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.11-cce",
 "Product": "hdf5",
-"Version": "1.12.1",
-"Compiler": "gcc@11.2.0",
-"Variants": " ~cxx +fortran +hl ~ipo ~java +mpi +shared ~szip ~threadsafe +tools api=v18 build_type=RelWithDebInfo patches=ee351eb",
-"Architecture": "cray-sles15-zen3"
+"Version": "1.12.2",
+"Compiler": "cce@15.0.0",
+"Variants": " ~cxx +fortran +hl ~ipo ~java +mpi +shared ~szip ~threadsafe +tools api=v18 build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.11-nvhpc",
 "Product": "hdf5",
-"Version": "1.12.1",
-"Compiler": "gcc@11.2.0",
-"Variants": " ~cxx +fortran +hl ~ipo ~java +mpi +shared ~szip +threadsafe +tools api=v18 build_type=RelWithDebInfo patches=ee351eb",
-"Architecture": "cray-sles15-zen3"
+"Version": "1.12.2",
+"Compiler": "nvhpc@22.5",
+"Variants": " ~cxx +fortran +hl ~ipo ~java +mpi +shared ~szip ~threadsafe +tools api=v18 build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -16550,12 +16613,30 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "hpctoolkit",
 "Version": "2022.04.15",
 "Compiler": "gcc@11.2.0",
 "Variants": " ~all-static ~cray ~cuda ~debug ~level_zero ~mpi +papi ~rocm +viewer",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.05-cuda",
+"Product": "hpctoolkit",
+"Version": "2022.04.15",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~all-static ~cray +cuda ~debug ~level_zero +mpi ~papi ~rocm +viewer",
+"Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "hpctoolkit",
+"Version": "2022.10.01",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~cray ~cuda ~debug ~level_zero ~mpi ~opencl +papi ~rocm +viewer build_system=autotools",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -17127,12 +17208,30 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "hpx",
 "Version": "1.7.1",
 "Compiler": "gcc@11.2.0",
 "Variants": " ~async_cuda ~async_mpi ~cuda ~examples ~generic_coroutines ~ipo ~rocm ~tools build_type=RelWithDebInfo cxxstd=17 instrumentation=none malloc=tcmalloc max_cpu_count=64 networking=mpi",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "hpx",
+"Version": "1.8.1",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~async_cuda ~async_mpi ~cuda ~examples ~generic_coroutines ~ipo ~rocm ~tools build_system=cmake build_type=RelWithDebInfo cxxstd=17 instrumentation=none malloc=tcmalloc max_cpu_count=64 networking=mpi",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cuda",
+"Product": "hpx",
+"Version": "1.8.1",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~async_cuda ~async_mpi +cuda ~examples ~generic_coroutines ~ipo ~rocm ~tools build_system=cmake build_type=RelWithDebInfo cuda_arch=80 cxxstd=17 instrumentation=none malloc=tcmalloc max_cpu_count=64 networking=tcp",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -17884,15 +17983,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "hypre",
-"Version": "2.20.0",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~complex ~cuda ~debug ~int64 ~internal-superlu ~mixedint +mpi ~openmp +shared ~superlu-dist ~unified-memory cuda_arch=none patches=6e3336b1d62155f6350dfe42b0f9ea25d4fa0af60c7e540959139deb93a26059",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "hypre",
 "Version": "2.23.0",
@@ -17965,16 +18055,7 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
-"Product": "hypre",
-"Version": "2.24.0",
-"Compiler": "cce@13.0.2",
-"Variants": " ~complex ~cuda ~debug +fortran ~gptune ~int64 ~internal-superlu ~mixedint +mpi +openmp ~rocm +shared +superlu-dist ~unified-memory",
-"Architecture": "cray-sles15-zen3"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "hypre",
 "Version": "2.24.0",
 "Compiler": "gcc@11.2.0",
@@ -17983,21 +18064,39 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-cce",
 "Product": "hypre",
 "Version": "2.24.0",
-"Compiler": "gcc@11.2.0",
+"Compiler": "cce@15.0.0",
 "Variants": " ~complex ~cuda ~debug +fortran ~gptune ~int64 ~internal-superlu ~mixedint +mpi +openmp ~rocm +shared +superlu-dist ~unified-memory",
 "Architecture": "cray-sles15-zen3"
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-cuda",
 "Product": "hypre",
 "Version": "2.24.0",
 "Compiler": "gcc@11.2.0",
 "Variants": " ~complex +cuda ~debug +fortran ~gptune ~int64 ~internal-superlu ~mixedint +mpi +openmp ~rocm +shared +superlu-dist ~unified-memory cuda_arch=80",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cce",
+"Product": "hypre",
+"Version": "2.26.0",
+"Compiler": "cce@15.0.0",
+"Variants": " ~complex ~cuda ~debug +fortran ~gptune ~int64 ~internal-superlu ~mixedint +mpi +openmp ~rocm +shared +superlu-dist ~umpire ~unified-memory build_system=autotools",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cuda",
+"Product": "hypre",
+"Version": "2.26.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~complex +cuda ~debug +fortran ~gptune ~int64 ~internal-superlu ~mixedint +mpi +openmp ~rocm +shared +superlu-dist ~umpire ~unified-memory build_system=autotools cuda_arch=80",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -19577,24 +19676,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "kokkos",
-"Version": "3.4.00",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~aggressive_vectorization ~compiler_warnings ~cuda ~cuda_lambda ~cuda_ldg_intrinsic ~cuda_relocatable_device_code ~cuda_uvm ~debug ~debug_bounds_check ~debug_dualview_modify_check ~deprecated_code ~examples ~explicit_instantiation ~hpx ~hpx_async_dispatch ~hwloc ~ipo ~memkind ~numactl ~openmp ~pic +profiling ~profiling_load_print ~pthread ~qthread ~rocm +serial +shared ~sycl ~tests ~tuning ~wrapper amdgpu_target=none build_type=RelWithDebInfo cuda_arch=none std=14",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "kokkos",
-"Version": "3.4.00",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~aggressive_vectorization ~compiler_warnings ~cuda ~cuda_lambda ~cuda_ldg_intrinsic ~cuda_relocatable_device_code ~cuda_uvm ~debug ~debug_bounds_check ~debug_dualview_modify_check ~deprecated_code ~examples ~explicit_instantiation ~hpx ~hpx_async_dispatch ~hwloc ~ipo ~memkind ~numactl +openmp ~pic +profiling ~profiling_load_print ~pthread ~qthread ~rocm +serial +shared ~sycl ~tests ~tuning ~wrapper amdgpu_target=none build_type=RelWithDebInfo cuda_arch=none std=14",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "kokkos",
 "Version": "3.5.00",
@@ -19685,16 +19766,7 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
-"Product": "kokkos",
-"Version": "3.6.00",
-"Compiler": "cce@13.0.2",
-"Variants": " ~aggressive_vectorization ~compiler_warnings ~cuda ~cuda_constexpr ~cuda_lambda ~cuda_ldg_intrinsic ~cuda_relocatable_device_code ~cuda_uvm ~debug ~debug_bounds_check ~debug_dualview_modify_check ~deprecated_code ~examples ~explicit_instantiation ~hpx ~hpx_async_dispatch ~hwloc ~ipo ~memkind ~numactl +openmp ~pic +profiling ~profiling_load_print ~pthread ~qthread ~rocm +serial +shared ~sycl ~tests ~tuning ~wrapper build_type=RelWithDebInfo std=14",
-"Architecture": "cray-sles15-zen3"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "kokkos",
 "Version": "3.6.00",
 "Compiler": "gcc@11.2.0",
@@ -19703,12 +19775,48 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-cuda",
 "Product": "kokkos",
 "Version": "3.6.00",
 "Compiler": "gcc@11.2.0",
 "Variants": " ~aggressive_vectorization ~compiler_warnings +cuda ~cuda_constexpr ~cuda_lambda ~cuda_ldg_intrinsic ~cuda_relocatable_device_code ~cuda_uvm ~debug ~debug_bounds_check ~debug_dualview_modify_check ~deprecated_code ~examples ~explicit_instantiation ~hpx ~hpx_async_dispatch ~hwloc ~ipo ~memkind ~numactl ~openmp ~pic +profiling ~profiling_load_print ~pthread ~qthread ~rocm +serial +shared ~sycl ~tests ~tuning +wrapper build_type=RelWithDebInfo cuda_arch=80 std=14",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.05-nvhpc",
+"Product": "kokkos",
+"Version": "3.6.00",
+"Compiler": "nvhpc@22.5",
+"Variants": " ~aggressive_vectorization ~compiler_warnings ~cuda ~cuda_constexpr ~cuda_lambda ~cuda_ldg_intrinsic ~cuda_relocatable_device_code ~cuda_uvm ~debug ~debug_bounds_check ~debug_dualview_modify_check ~deprecated_code ~examples ~explicit_instantiation ~hpx ~hpx_async_dispatch ~hwloc ~ipo ~memkind ~numactl +openmp ~pic +profiling ~profiling_load_print ~pthread ~qthread ~rocm +serial +shared ~sycl ~tests ~tuning ~wrapper build_type=RelWithDebInfo std=14",
+"Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "kokkos",
+"Version": "3.7.00",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~aggressive_vectorization ~compiler_warnings ~cuda ~cuda_constexpr ~cuda_lambda ~cuda_ldg_intrinsic ~cuda_relocatable_device_code ~cuda_uvm ~debug ~debug_bounds_check ~debug_dualview_modify_check ~deprecated_code ~examples ~explicit_instantiation ~hpx ~hpx_async_dispatch ~hwloc ~ipo ~memkind ~numactl +openmp ~openmptarget ~pic +profiling ~profiling_load_print ~pthread ~qthread ~rocm +serial +shared ~sycl ~tests ~tuning ~wrapper build_system=cmake build_type=RelWithDebInfo intel_gpu_arch=none std=14",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cce",
+"Product": "kokkos",
+"Version": "3.7.00",
+"Compiler": "cce@15.0.0",
+"Variants": " ~aggressive_vectorization ~compiler_warnings ~cuda ~cuda_constexpr ~cuda_lambda ~cuda_ldg_intrinsic ~cuda_relocatable_device_code ~cuda_uvm ~debug ~debug_bounds_check ~debug_dualview_modify_check ~deprecated_code ~examples ~explicit_instantiation ~hpx ~hpx_async_dispatch ~hwloc ~ipo ~memkind ~numactl +openmp ~openmptarget ~pic +profiling ~profiling_load_print ~pthread ~qthread ~rocm +serial +shared ~sycl ~tests ~tuning ~wrapper build_system=cmake build_type=RelWithDebInfo intel_gpu_arch=none std=14",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-nvhpc",
+"Product": "kokkos",
+"Version": "3.7.00",
+"Compiler": "nvhpc@22.5",
+"Variants": " ~aggressive_vectorization ~compiler_warnings ~cuda ~cuda_constexpr ~cuda_lambda ~cuda_ldg_intrinsic ~cuda_relocatable_device_code ~cuda_uvm ~debug ~debug_bounds_check ~debug_dualview_modify_check ~deprecated_code ~examples ~explicit_instantiation ~hpx ~hpx_async_dispatch ~hwloc ~ipo ~memkind ~numactl +openmp ~openmptarget ~pic +profiling ~profiling_load_print ~pthread ~qthread ~rocm +serial +shared ~sycl ~tests ~tuning ~wrapper build_system=cmake build_type=RelWithDebInfo intel_gpu_arch=none std=14",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -22323,15 +22431,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "kokkos-kernels",
-"Version": "3.2.00",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~blas ~cblas ~cublas ~cuda ~cusparse ~ipo ~lapack ~lapacke ~mkl +openmp ~pthread ~serial ~superlu build_type=RelWithDebInfo cuda_arch=none execspace_cuda=auto execspace_openmp=auto execspace_serial=auto execspace_threads=auto layouts=left memspace_cudaspace=auto memspace_cudauvmspace=auto offsets=int ,size_t ordinals=int scalars=double",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "kokkos-kernels",
 "Version": "3.5.00",
@@ -22368,16 +22467,7 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
-"Product": "kokkos-kernels",
-"Version": "3.6.00",
-"Compiler": "cce@13.0.2",
-"Variants": " ~blas ~cblas ~cublas ~cuda ~cusparse ~ipo ~lapack ~lapacke ~mkl +openmp ~pthread ~serial +shared ~superlu build_type=RelWithDebInfo execspace_cuda=auto execspace_openmp=auto execspace_serial=auto execspace_threads=auto layouts=left memspace_cudaspace=auto memspace_cudauvmspace=auto offsets=int ,size_t ordinals=int scalars=double",
-"Architecture": "cray-sles15-zen3"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "kokkos-kernels",
 "Version": "3.6.00",
 "Compiler": "gcc@11.2.0",
@@ -22386,12 +22476,66 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-cce",
+"Product": "kokkos-kernels",
+"Version": "3.6.00",
+"Compiler": "cce@15.0.0",
+"Variants": " ~blas ~cblas ~cublas ~cuda ~cusparse ~ipo ~lapack ~lapacke ~mkl +openmp ~pthread ~serial +shared ~superlu build_type=RelWithDebInfo execspace_cuda=auto execspace_openmp=auto execspace_serial=auto execspace_threads=auto layouts=left memspace_cudaspace=auto memspace_cudauvmspace=auto offsets=int ,size_t ordinals=int scalars=double",
+"Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.05-cuda",
 "Product": "kokkos-kernels",
 "Version": "3.6.00",
 "Compiler": "gcc@11.2.0",
 "Variants": " ~blas ~cblas ~cublas +cuda ~cusparse ~ipo ~lapack ~lapacke ~mkl ~openmp ~pthread ~serial +shared ~superlu build_type=RelWithDebInfo cuda_arch=80 execspace_cuda=auto execspace_openmp=auto execspace_serial=auto execspace_threads=auto layouts=left memspace_cudaspace=auto memspace_cudauvmspace=auto offsets=int ,size_t ordinals=int scalars=double",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.05-nvhpc",
+"Product": "kokkos-kernels",
+"Version": "3.6.00",
+"Compiler": "nvhpc@22.5",
+"Variants": " ~blas ~cblas ~cublas ~cuda ~cusparse ~ipo ~lapack ~lapacke ~mkl +openmp ~pthread ~serial +shared ~superlu build_type=RelWithDebInfo execspace_cuda=auto execspace_openmp=auto execspace_serial=auto execspace_threads=auto layouts=left memspace_cudaspace=auto memspace_cudauvmspace=auto offsets=int ,size_t ordinals=int scalars=double",
+"Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "kokkos-kernels",
+"Version": "3.7.00",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~blas ~cblas ~cublas ~cuda ~cusparse ~ipo ~lapack ~lapacke ~mkl +openmp ~pthread ~serial +shared ~superlu build_system=cmake build_type=RelWithDebInfo execspace_cuda=auto execspace_openmp=auto execspace_serial=auto execspace_threads=auto layouts=left memspace_cudaspace=auto memspace_cudauvmspace=auto offsets=int ,size_t ordinals=int scalars=double",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cce",
+"Product": "kokkos-kernels",
+"Version": "3.7.00",
+"Compiler": "cce@15.0.0",
+"Variants": " ~blas ~cblas ~cublas ~cuda ~cusparse ~ipo ~lapack ~lapacke ~mkl +openmp ~pthread ~serial +shared ~superlu build_system=cmake build_type=RelWithDebInfo execspace_cuda=auto execspace_openmp=auto execspace_serial=auto execspace_threads=auto layouts=left memspace_cudaspace=auto memspace_cudauvmspace=auto offsets=int ,size_t ordinals=int scalars=double",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cuda",
+"Product": "kokkos-kernels",
+"Version": "3.7.00",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~blas ~cblas ~cublas +cuda ~cusparse ~ipo ~lapack ~lapacke ~mkl ~openmp ~pthread ~serial +shared ~superlu build_system=cmake build_type=RelWithDebInfo cuda_arch=80 execspace_cuda=auto execspace_openmp=auto execspace_serial=auto execspace_threads=auto layouts=left memspace_cudaspace=auto memspace_cudauvmspace=auto offsets=int ,size_t ordinals=int scalars=double",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-nvhpc",
+"Product": "kokkos-kernels",
+"Version": "3.7.00",
+"Compiler": "nvhpc@22.5",
+"Variants": " ~blas ~cblas ~cublas ~cuda ~cusparse ~ipo ~lapack ~lapacke ~mkl +openmp ~pthread ~serial +shared ~superlu build_system=cmake build_type=RelWithDebInfo execspace_cuda=auto execspace_openmp=auto execspace_serial=auto execspace_threads=auto layouts=left memspace_cudaspace=auto memspace_cudauvmspace=auto offsets=int ,size_t ordinals=int scalars=double",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -23954,15 +24098,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "legion",
-"Version": "21.03.0",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~bindings ~bounds_checks ~cuda ~cuda_hijack ~cuda_unsupported_compiler ~enable_tls ~fortran ~gasnet_debug ~hdf5 ~hwloc ~ipo ~kokkos +libdl ~native ~openmp ~papi ~privilege_checks ~python ~redop_complex ~shared ~spy +zlib build_type=RelWithDebInfo conduit=none cuda_arch=70 gasnet_root=none max_dims=3 max_fields=512 network=none output_level=warning",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "legion",
 "Version": "21.03.0",
@@ -23996,6 +24131,15 @@
 "Compiler": "intel@19.1.2.254",
 "Variants": " ~bindings ~bounds_checks ~cuda ~cuda_hijack ~cuda_unsupported_compiler ~enable_tls ~fortran ~gasnet_debug ~hdf5 ~hwloc ~ipo ~kokkos +libdl ~openmp ~papi ~privilege_checks ~python ~redop_complex ~shared ~spy +zlib build_type=RelWithDebInfo conduit=none cuda_arch=70 cxxstd=11 gasnet_root=none max_dims=3 max_fields=512 network=none output_level=warning",
 "Architecture": "cray-cnl7-haswell"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "legion",
+"Version": "21.03.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~bindings ~bounds_checks ~cuda ~cuda_hijack ~cuda_unsupported_compiler ~enable_tls ~fortran ~gasnet_debug ~hdf5 ~hwloc ~ipo ~kokkos +libdl ~openmp ~papi ~privilege_checks ~python ~redop_complex ~rocm ~shared ~spy +zlib build_system=cmake build_type=RelWithDebInfo conduit=none cuda_arch=70 cxxstd=11 gasnet_root=none max_dims=3 max_fields=512 network=none output_level=warning",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -24675,12 +24819,21 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "py-libensemble",
-"Version": "0.7.2",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~deap +mpi ~mpmath ~nlopt ~petsc4py ~scipy",
-"Architecture": "cray-cnl7-haswell"
+"Version": "0.9.1",
+"Compiler": "gcc@10.3.0",
+"Variants": " ~deap ~mpi ~mpmath ~nlopt ~petsc4py ~pyyaml ~scipy ~tasmanian",
+"Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "py-libensemble",
+"Version": "0.9.3",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~deap ~mpi ~mpmath ~nlopt ~petsc4py ~pyyaml ~scipy ~tasmanian build_system=python_pip",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -24748,15 +24901,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "mfem",
-"Version": "4.2.0",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~amgx ~conduit ~cuda ~debug ~examples ~gnutls ~gslib ~lapack ~libceed ~libunwind +metis ~miniapps ~mpfr +mpi ~netcdf ~occa ~openmp ~petsc ~pumi ~raja ~shared +static ~strumpack ~suite-sparse ~sundials ~superlu-dist ~threadsafe ~umpire +zlib cuda_arch=sm_60 timer=auto",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "mfem",
 "Version": "4.3.0",
@@ -24790,6 +24934,24 @@
 "Compiler": "intel@19.1.2.254",
 "Variants": " ~amgx ~conduit ~cuda ~debug ~examples ~gnutls ~gslib ~lapack ~libceed ~libunwind +metis ~miniapps ~mpfr +mpi ~netcdf ~occa ~openmp ~petsc ~pumi ~raja ~rocm ~shared ~slepc +static ~strumpack ~suite-sparse ~sundials ~superlu-dist ~threadsafe ~umpire +zlib patches=ccc98d6d874a760218c9f6e4bcf3a97ea79746b0f28997f4312fcf02a0beae6e timer=auto",
 "Architecture": "cray-cnl7-haswell"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "mfem",
+"Version": "4.5.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~amgx ~conduit ~cuda ~debug ~examples ~exceptions ~fms ~ginkgo ~gnutls ~gslib ~hiop ~lapack ~libceed ~libunwind +metis ~miniapps ~mpfr +mpi ~netcdf ~occa ~openmp ~petsc ~pumi ~raja ~rocm ~shared ~slepc +static ~strumpack ~suite-sparse ~sundials ~superlu-dist ~threadsafe ~umpire +zlib build_system=generic timer=auto",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cuda",
+"Product": "mfem",
+"Version": "4.5.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~amgx ~conduit +cuda ~debug ~examples ~exceptions ~fms ~ginkgo ~gnutls ~gslib ~hiop ~lapack ~libceed ~libunwind +metis ~miniapps ~mpfr +mpi ~netcdf ~occa ~openmp ~petsc ~pumi ~raja ~rocm ~shared ~slepc +static ~strumpack ~suite-sparse ~sundials ~superlu-dist ~threadsafe ~umpire +zlib build_system=generic cuda_arch=80 timer=auto",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -25477,15 +25639,6 @@
 }
 ,
 {
-"Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "mpich",
-"Version": "3.1",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~argobots +fortran +hwloc +hydra +libxml2 +pci +romio ~slurm ~verbs +wrapperrpath device=ch4 netmod=ofi pmi=pmi",
-"Architecture": "cray-cnl7-haswell"
-},
-{
 "Institution": "JLSE",
 "E4S Deployment": "arcticus-21.05",
 "Product": "mpich",
@@ -25642,15 +25795,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "qthreads",
-"Version": "1.16",
-"Compiler": "intel@19.1.3.304",
-"Variants": " +hwloc ~spawn_cache +static scheduler=distrib stack_size=4096",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "qthreads",
 "Version": "1.16",
@@ -25696,12 +25840,21 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "qthreads",
 "Version": "1.16",
 "Compiler": "gcc@11.2.0",
 "Variants": " +hwloc ~spawn_cache +static scheduler=distrib stack_size=4096",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "qthreads",
+"Version": "1.16",
+"Compiler": "gcc@11.2.0",
+"Variants": " +hwloc ~spawn_cache +static build_system=autotools scheduler=distrib stack_size=4096",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -26408,15 +26561,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "bolt",
-"Version": "2.0",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~ipo build_type=RelWithDebInfo",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "bolt",
 "Version": "2.0",
@@ -26432,6 +26576,15 @@
 "Compiler": "gcc@11.2.0",
 "Variants": " ~ipo build_type=RelWithDebInfo",
 "Architecture": "cray-cnl7-haswell"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "bolt",
+"Version": "2.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~ipo build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -27064,15 +27217,6 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 }
 ,
-{
-"Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "papi",
-"Version": "6.0.0.1",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~cuda +example ~infiniband ~lmsensors ~nvml ~powercap ~rapl ~sde +shared ~static_tools",
-"Architecture": "cray-cnl7-haswell"
-},
 {
 "Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
@@ -27120,16 +27264,7 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
-"Product": "papi",
-"Version": "6.0.0.1",
-"Compiler": "gcc@11.2.0",
-"Variants": " ~cuda +example ~infiniband ~lmsensors ~nvml ~powercap ~rapl ~rocm ~rocm_smi ~sde +shared ~static_tools",
-"Architecture": "cray-sles15-zen3"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-cuda",
 "Product": "papi",
 "Version": "6.0.0.1",
 "Compiler": "gcc@11.2.0",
@@ -28030,15 +28165,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "papyrus",
-"Version": "1.0.1",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~ipo build_type=RelWithDebInfo",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "papyrus",
 "Version": "1.0.1",
@@ -28081,6 +28207,15 @@
 "Compiler": "gcc@11.2.0",
 "Variants": " ~ipo build_type=RelWithDebInfo",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "papyrus",
+"Version": "1.0.2",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~ipo build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -28750,6 +28885,15 @@
 "Architecture": "cray-cnl7-haswell"
 },
 {
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "parsec",
+"Version": "3.0.2209",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~cuda ~debug_verbose ~ipo ~profile +shared build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
+},
+{
 "Institution": "JLSE",
 "E4S Deployment": "arcticus-21.08",
 "Product": "parsec",
@@ -29121,15 +29265,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "petsc",
-"Version": "3.15.0",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~X ~batch ~cgns ~complex ~cuda ~debug +double ~exodusii ~fftw ~giflib +hdf5 +hypre ~int64 ~jpeg ~knl ~libpng ~libyaml ~memkind +metis ~mkl-pardiso ~moab ~mpfr +mpi ~mumps ~p4est ~ptscotch ~random123 ~saws +shared ~suite-sparse +superlu-dist ~trilinos ~valgrind clanguage=C",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "petsc",
 "Version": "3.16.4",
@@ -29166,16 +29301,7 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
-"Product": "petsc",
-"Version": "3.17.1",
-"Compiler": "cce@13.0.2",
-"Variants": " ~X ~batch ~cgns ~complex ~cuda ~debug +double ~exodusii ~fftw +fortran ~giflib +hdf5 ~hpddm ~hwloc +hypre ~int64 ~jpeg ~knl ~kokkos ~libpng ~libyaml ~memkind +metis ~mkl-pardiso ~mmg ~moab ~mpfr +mpi ~mumps +openmp ~p4est ~parmmg ~ptscotch ~random123 ~rocm ~saws ~scalapack +shared ~strumpack ~suite-sparse +superlu-dist ~tetgen ~trilinos ~valgrind clanguage=C",
-"Architecture": "cray-sles15-zen3"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "petsc",
 "Version": "3.17.1",
 "Compiler": "gcc@11.2.0",
@@ -29184,7 +29310,16 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-cce",
+"Product": "petsc",
+"Version": "3.17.1",
+"Compiler": "cce@15.0.0",
+"Variants": " ~X ~batch ~cgns ~complex ~cuda ~debug +double ~exodusii ~fftw +fortran ~giflib +hdf5 ~hpddm ~hwloc +hypre ~int64 ~jpeg ~knl ~kokkos ~libpng ~libyaml ~memkind +metis ~mkl-pardiso ~mmg ~moab ~mpfr +mpi ~mumps +openmp ~p4est ~parmmg ~ptscotch ~random123 ~rocm ~saws ~scalapack +shared ~strumpack ~suite-sparse +superlu-dist ~tetgen ~trilinos ~valgrind clanguage=C",
+"Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.05-cuda",
 "Product": "petsc",
 "Version": "3.17.1",
 "Compiler": "gcc@11.2.0",
@@ -29193,12 +29328,12 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.11-cuda",
 "Product": "petsc",
-"Version": "3.17.1",
+"Version": "3.18.1",
 "Compiler": "gcc@11.2.0",
-"Variants": " ~X ~batch ~cgns ~complex +cuda ~debug +double ~exodusii ~fftw +fortran ~giflib +hdf5 ~hpddm ~hwloc +hypre ~int64 ~jpeg ~knl ~kokkos ~libpng ~libyaml ~memkind +metis ~mkl-pardiso ~mmg ~moab ~mpfr +mpi ~mumps +openmp ~p4est ~parmmg ~ptscotch ~random123 ~rocm ~saws ~scalapack +shared +strumpack ~suite-sparse +superlu-dist ~tetgen ~trilinos ~valgrind clanguage=C cuda_arch=none",
-"Architecture": "cray-sles15-zen3"
+"Variants": " ~X ~batch ~cgns ~complex +cuda ~debug +double ~exodusii ~fftw +fortran ~giflib +hdf5 ~hpddm ~hwloc +hypre ~int64 ~jpeg ~knl ~kokkos ~libpng ~libyaml ~memkind +metis ~mkl-pardiso ~mmg ~moab ~mpfr +mpi ~mumps +openmp ~p4est ~parmmg ~ptscotch ~random123 ~rocm ~saws ~scalapack +shared +strumpack ~suite-sparse +superlu-dist ~tetgen ~trilinos ~valgrind build_system=generic clanguage=C cuda_arch=80",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -30724,15 +30859,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "parallel-netcdf",
-"Version": "1.12.2",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~burstbuffer +cxx +fortran +pic +shared",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "parallel-netcdf",
 "Version": "1.12.2",
@@ -30778,12 +30904,12 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.11-gcc",
 "Product": "parallel-netcdf",
-"Version": "1.12.2",
+"Version": "1.12.3",
 "Compiler": "gcc@11.2.0",
-"Variants": " ~burstbuffer +cxx +fortran +pic +shared",
-"Architecture": "cray-sles15-zen3"
+"Variants": " ~burstbuffer +cxx +fortran +pic +shared build_system=autotools",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -31699,15 +31825,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "raja",
-"Version": "0.13.0",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~cuda +examples +exercises ~ipo +openmp ~rocm +shared ~tests amdgpu_target=none build_type=RelWithDebInfo cuda_arch=none",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "raja",
 "Version": "0.14.0",
@@ -31762,7 +31879,7 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "raja",
 "Version": "0.14.0",
 "Compiler": "gcc@11.2.0",
@@ -31771,7 +31888,7 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-cuda",
 "Product": "raja",
 "Version": "0.14.0",
 "Compiler": "gcc@11.2.0",
@@ -33212,15 +33329,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "netlib-scalapack",
-"Version": "2.1.0",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~ipo ~pic +shared build_type=Release patches=1c9ce5fee1451a08c2de3cc87f446aeda0b818ebbce4ad0d980ddf2f2a0b2dc4 ,f2baedde688ffe4c20943c334f580eb298e04d6f35c86b90a1f4e8cb7ae344a2",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "netlib-scalapack",
 "Version": "2.1.0",
@@ -33254,24 +33362,6 @@
 "Compiler": "intel@19.1.2.254",
 "Variants": " ~ipo ~pic +shared build_type=Release patches=1c9ce5fee1451a08c2de3cc87f446aeda0b818ebbce4ad0d980ddf2f2a0b2dc4 ,f2baedde688ffe4c20943c334f580eb298e04d6f35c86b90a1f4e8cb7ae344a2",
 "Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
-"Product": "netlib-scalapack",
-"Version": "2.2.0",
-"Compiler": "gcc@11.2.0",
-"Variants": " ~ipo ~pic +shared build_type=Release patches=072b006 ,1c9ce5f",
-"Architecture": "cray-sles15-zen3"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
-"Product": "netlib-scalapack",
-"Version": "2.2.0",
-"Compiler": "gcc@11.2.0",
-"Variants": " ~ipo ~pic +shared build_type=Release patches=072b006 ,1c9ce5f",
-"Architecture": "cray-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -34202,15 +34292,6 @@
 }
 ,
 {
-"Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "scr",
-"Version": "3.0rc1",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~bbapi_fallback +dtcmp +fortran ~ipo +libyogrt async_api=NONE build_type=RelWithDebInfo cache_base=/dev/shm cntl_base=/dev/shm copy_config=none file_lock=FLOCK resource_manager=SLURM scr_config=scr.conf",
-"Architecture": "cray-cnl7-haswell"
-},
-{
 "Institution": "JLSE",
 "E4S Deployment": "arcticus-21.05",
 "Product": "scr",
@@ -34276,7 +34357,7 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "slate",
 "Version": "2021.05.02",
 "Compiler": "gcc@11.2.0",
@@ -34285,12 +34366,30 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-cuda",
 "Product": "slate",
 "Version": "2021.05.02",
 "Compiler": "gcc@11.2.0",
 "Variants": " +cuda ~ipo +mpi +openmp ~rocm +shared build_type=RelWithDebInfo cuda_arch=80",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "slate",
+"Version": "2022.07.00",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~cuda ~ipo +mpi +openmp ~rocm +shared build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cuda",
+"Product": "slate",
+"Version": "2022.07.00",
+"Compiler": "gcc@11.2.0",
+"Variants": " +cuda ~ipo +mpi +openmp ~rocm +shared build_system=cmake build_type=RelWithDebInfo cuda_arch=80",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -34952,21 +35051,21 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "butterflypack",
-"Version": "1.2.1",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~ipo +shared build_type=RelWithDebInfo",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "butterflypack",
 "Version": "2.1.1",
 "Compiler": "gcc@11.2.0",
 "Variants": " ~ipo +shared build_type=RelWithDebInfo",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "butterflypack",
+"Version": "2.2.2",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~ipo +openmp +shared build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -35295,15 +35394,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "strumpack",
-"Version": "5.1.1",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~build_dev_tests ~build_tests +butterflypack +c_interface ~count_flops ~cuda ~ipo +mpi +openmp +parmetis ~rocm ~scotch ~shared ~slate ~task_timers +zfp amdgpu_target=none build_type=RelWithDebInfo cuda_arch=none",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "strumpack",
 "Version": "6.3.0",
@@ -35349,21 +35439,21 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
-"Product": "strumpack",
-"Version": "6.3.1",
-"Compiler": "gcc@11.2.0",
-"Variants": " ~butterflypack +c_interface ~count_flops ~cuda ~ipo +mpi +openmp +parmetis ~rocm ~scotch +shared ~slate ~task_timers +zfp build_type=RelWithDebInfo",
-"Architecture": "cray-sles15-zen3"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-cuda",
 "Product": "strumpack",
 "Version": "6.3.1",
 "Compiler": "gcc@11.2.0",
 "Variants": " ~butterflypack +c_interface ~count_flops +cuda ~ipo +mpi +openmp +parmetis ~rocm ~scotch +shared ~slate ~task_timers +zfp build_type=RelWithDebInfo cuda_arch=80",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cuda",
+"Product": "strumpack",
+"Version": "7.0.1",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~butterflypack +c_interface ~count_flops +cuda ~ipo +mpi +openmp +parmetis ~rocm ~scotch +shared ~slate ~task_timers +zfp build_system=cmake build_type=RelWithDebInfo cuda_arch=80",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -36016,15 +36106,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "sundials",
-"Version": "5.7.0",
-"Compiler": "intel@19.1.3.304",
-"Variants": " +ARKODE +CVODE +CVODES +IDA +IDAS +KINSOL ~cuda +examples +examples-install ~f2003 ~fcmix +generic-math ~hypre ~int64 ~ipo ~klu ~lapack ~monitoring +mpi ~openmp ~petsc ~pthread ~raja ~rocm +shared +static ~superlu-dist ~superlu-mt ~trilinos amdgpu_target=none build_type=RelWithDebInfo cuda_arch=none patches=8b29a47fac55346cdadfa133c51aa9314ae8c53ffdff5a8ecdc3dcea3ac26403 precision=double",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "sundials",
 "Version": "6.1.1",
@@ -36070,21 +36151,66 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
-"Product": "sundials",
-"Version": "6.2.0",
-"Compiler": "cce@13.0.2",
-"Variants": " +ARKODE +CVODE +CVODES +IDA +IDAS +KINSOL ~cuda +examples +examples-install ~f2003 ~fcmix +generic-math ~hypre ~int64 ~ipo ~klu ~lapack ~magma ~monitoring +mpi ~openmp ~petsc ~profiling ~pthread ~raja ~rocm +shared +static ~superlu-dist ~superlu-mt ~sycl ~trilinos build_type=RelWithDebInfo cstd=99 cxxstd=14 logging-level=0 precision=double",
-"Architecture": "cray-sles15-zen3"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "sundials",
 "Version": "6.2.0",
 "Compiler": "gcc@11.2.0",
 "Variants": " +ARKODE +CVODE +CVODES +IDA +IDAS +KINSOL ~cuda +examples +examples-install ~f2003 ~fcmix +generic-math ~hypre ~int64 ~ipo ~klu ~lapack ~magma ~monitoring +mpi ~openmp ~petsc ~profiling ~pthread ~raja ~rocm +shared +static ~superlu-dist ~superlu-mt ~sycl ~trilinos build_type=RelWithDebInfo cstd=99 cxxstd=14 logging-level=0 precision=double",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.05-cce",
+"Product": "sundials",
+"Version": "6.2.0",
+"Compiler": "cce@15.0.0",
+"Variants": " +ARKODE +CVODE +CVODES +IDA +IDAS +KINSOL ~cuda +examples +examples-install ~f2003 ~fcmix +generic-math ~hypre ~int64 ~ipo ~klu ~lapack ~magma ~monitoring +mpi ~openmp ~petsc ~profiling ~pthread ~raja ~rocm +shared +static ~superlu-dist ~superlu-mt ~sycl ~trilinos build_type=RelWithDebInfo cstd=99 cxxstd=14 logging-level=0 precision=double",
+"Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.05-nvhpc",
+"Product": "sundials",
+"Version": "6.2.0",
+"Compiler": "nvhpc@22.5",
+"Variants": " +ARKODE +CVODE +CVODES +IDA +IDAS +KINSOL ~cuda +examples +examples-install ~f2003 ~fcmix +generic-math ~hypre ~int64 ~ipo ~klu ~lapack ~magma ~monitoring +mpi ~openmp ~petsc ~profiling ~pthread ~raja ~rocm +shared +static ~superlu-dist ~superlu-mt ~sycl ~trilinos build_type=RelWithDebInfo cstd=99 cxxstd=14 logging-level=0 precision=double",
+"Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "sundials",
+"Version": "6.4.1",
+"Compiler": "gcc@11.2.0",
+"Variants": " +ARKODE +CVODE +CVODES +IDA +IDAS +KINSOL ~cuda +examples +examples-install ~f2003 ~fcmix +generic-math ~ginkgo ~hypre ~int64 ~ipo ~klu ~kokkos ~kokkos-kernels ~lapack ~magma ~monitoring +mpi ~openmp ~petsc ~profiling ~pthread ~raja ~rocm +shared +static ~superlu-dist ~superlu-mt ~sycl ~trilinos build_system=cmake build_type=RelWithDebInfo cstd=99 cxxstd=14 logging-level=0 logging-mpi=OFF precision=double",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cce",
+"Product": "sundials",
+"Version": "6.4.1",
+"Compiler": "cce@15.0.0",
+"Variants": " +ARKODE +CVODE +CVODES +IDA +IDAS +KINSOL ~cuda +examples +examples-install ~f2003 ~fcmix +generic-math ~ginkgo ~hypre ~int64 ~ipo ~klu ~kokkos ~kokkos-kernels ~lapack ~magma ~monitoring +mpi ~openmp ~petsc ~profiling ~pthread ~raja ~rocm +shared +static ~superlu-dist ~superlu-mt ~sycl ~trilinos build_system=cmake build_type=RelWithDebInfo cstd=99 cxxstd=14 logging-level=0 logging-mpi=OFF precision=double",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cuda",
+"Product": "sundials",
+"Version": "6.4.1",
+"Compiler": "gcc@11.2.0",
+"Variants": " +ARKODE +CVODE +CVODES +IDA +IDAS +KINSOL +cuda +examples +examples-install ~f2003 ~fcmix +generic-math ~ginkgo ~hypre ~int64 ~ipo ~klu ~kokkos ~kokkos-kernels ~lapack ~magma ~monitoring +mpi ~openmp ~petsc ~profiling ~pthread ~raja ~rocm +shared +static ~superlu-dist ~superlu-mt ~sycl ~trilinos build_system=cmake build_type=RelWithDebInfo cstd=99 cuda_arch=80 cxxstd=14 logging-level=0 logging-mpi=OFF precision=double",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-nvhpc",
+"Product": "sundials",
+"Version": "6.4.1",
+"Compiler": "nvhpc@22.5",
+"Variants": " +ARKODE +CVODE +CVODES +IDA +IDAS +KINSOL ~cuda +examples +examples-install ~f2003 ~fcmix +generic-math ~ginkgo ~hypre ~int64 ~ipo ~klu ~kokkos ~kokkos-kernels ~lapack ~magma ~monitoring +mpi ~openmp ~petsc ~profiling ~pthread ~raja ~rocm +shared +static ~superlu-dist ~superlu-mt ~sycl ~trilinos build_system=cmake build_type=RelWithDebInfo cstd=99 cxxstd=14 logging-level=0 logging-mpi=OFF precision=double",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -37772,15 +37898,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "superlu",
-"Version": "5.2.1",
-"Compiler": "intel@19.1.3.304",
-"Variants": " +pic",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "superlu",
 "Version": "5.3.0",
@@ -37826,21 +37943,57 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
-"Product": "superlu",
-"Version": "5.3.0",
-"Compiler": "cce@13.0.2",
-"Variants": " ~ipo +pic build_type=RelWithDebInfo",
-"Architecture": "cray-sles15-zen3"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "superlu",
 "Version": "5.3.0",
 "Compiler": "gcc@11.2.0",
 "Variants": " ~ipo +pic build_type=RelWithDebInfo",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.05-cce",
+"Product": "superlu",
+"Version": "5.3.0",
+"Compiler": "cce@15.0.0",
+"Variants": " ~ipo +pic build_type=RelWithDebInfo",
+"Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.05-nvhpc",
+"Product": "superlu",
+"Version": "5.3.0",
+"Compiler": "nvhpc@22.5",
+"Variants": " ~ipo +pic build_type=RelWithDebInfo",
+"Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "superlu",
+"Version": "5.3.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~ipo +pic build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cce",
+"Product": "superlu",
+"Version": "5.3.0",
+"Compiler": "cce@15.0.0",
+"Variants": " ~ipo +pic build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-nvhpc",
+"Product": "superlu",
+"Version": "5.3.0",
+"Compiler": "nvhpc@22.5",
+"Variants": " ~ipo +pic build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -38473,24 +38626,6 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 }
 ,
-{
-"Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "swig",
-"Version": "4.0.2",
-"Compiler": "intel@19.1.3.304",
-"Variants": "",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "swig",
-"Version": "4.0.2-fortran",
-"Compiler": "intel@19.1.3.304",
-"Variants": "",
-"Architecture": "cray-cnl7-haswell"
-},
 {
 "Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
@@ -39691,24 +39826,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "sz",
-"Version": "1.4.12.3",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~fortran ~hdf5 ~ipo ~netcdf ~pastri ~python ~random_access +shared ~stats ~time_compression build_type=RelWithDebInfo",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "sz",
-"Version": "2.1.11.1",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~fortran ~hdf5 ~ipo ~netcdf ~pastri ~python ~random_access +shared ~stats ~time_compression build_type=RelWithDebInfo",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "sz",
 "Version": "2.1.12",
@@ -39746,24 +39863,6 @@
 {
 "Institution": "NERSC",
 "E4S Deployment": "perlmutter-21.11",
-"Product": "sz",
-"Version": "2.1.12",
-"Compiler": "gcc@11.2.0",
-"Variants": " ~fortran ~hdf5 ~ipo ~netcdf ~pastri ~python ~random_access +shared ~stats ~time_compression build_type=RelWithDebInfo",
-"Architecture": "cray-sles15-zen3"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
-"Product": "sz",
-"Version": "2.1.12",
-"Compiler": "cce@13.0.2",
-"Variants": " ~fortran ~hdf5 ~ipo ~netcdf ~pastri ~python ~random_access +shared ~stats ~time_compression build_type=RelWithDebInfo",
-"Architecture": "cray-sles15-zen3"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
 "Product": "sz",
 "Version": "2.1.12",
 "Compiler": "gcc@11.2.0",
@@ -40655,15 +40754,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "tasmanian",
-"Version": "7.5",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~blas ~cuda ~fortran ~ipo ~magma +mpi +openmp ~python ~rocm ~xsdkflags amdgpu_target=none build_type=Release cuda_arch=none",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "tasmanian",
 "Version": "7.7",
@@ -40700,12 +40790,30 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "tasmanian",
 "Version": "7.7",
 "Compiler": "gcc@11.2.0",
 "Variants": " ~blas ~cuda ~fortran ~ipo ~magma ~mpi +openmp ~python ~rocm ~xsdkflags build_type=Release",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "tasmanian",
+"Version": "7.9",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~blas ~cuda ~fortran ~ipo ~magma ~mpi ~openmp ~python ~rocm ~xsdkflags build_system=cmake build_type=Release",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cuda",
+"Product": "tasmanian",
+"Version": "7.9",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~blas +cuda ~fortran ~ipo ~magma ~mpi ~openmp ~python ~rocm ~xsdkflags build_system=cmake build_type=Release cuda_arch=80",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -41844,15 +41952,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "tau",
-"Version": "2.30.1",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~adios2 +binutils ~comm ~craycnl ~cuda +elf +fortran ~gasnet +io ~level_zero +libdwarf +libunwind ~likwid +mpi ~ompt ~opari ~opencl ~openmp +otf2 +papi +pdt ~phase ~ppc64le ~profileparam +pthreads ~python ~rocm ~rocprofiler ~scorep ~shmem ~sqlite ~x86_64",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "tau",
 "Version": "2.31",
@@ -41880,12 +41979,21 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-cuda",
 "Product": "tau",
 "Version": "2.31.1",
 "Compiler": "gcc@11.2.0",
 "Variants": " ~adios2 +binutils ~comm ~craycnl +cuda +elf +fortran ~gasnet +io ~level_zero +libdwarf +libunwind ~likwid +mpi ~ompt ~opari ~opencl ~openmp +otf2 +papi +pdt ~phase ~ppc64le ~profileparam +pthreads ~python ~rocm ~rocprofiler ~roctracer ~scorep ~shmem ~sqlite ~x86_64",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "tau",
+"Version": "2.32",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~adios2 +binutils ~comm ~craycnl ~cuda +elf +fortran ~gasnet +io ~level_zero +libdwarf +libunwind ~likwid +mpi ~ompt ~opari ~opencl ~openmp +otf2 +papi +pdt ~phase ~ppc64le ~profileparam +pthreads +python ~rocm ~rocprofiler ~roctracer ~scorep ~shmem ~sqlite ~x86_64 build_system=generic",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -42579,15 +42687,6 @@
 "Version": "13.0.1",
 "Compiler": "gcc@11.2.0",
 "Variants": " ~adios2 +amesos +amesos2 +anasazi +aztec ~basker +belos +boost ~chaco ~complex ~cuda ~cuda_rdc ~debug ~dtk +epetra +epetraext ~epetraextbtf ~epetraextexperimental ~epetraextgraphreorderings ~exodus +explicit_template_instantiation ~float +fortran ~gtest ~hdf5 ~hypre +ifpack +ifpack2 +intrepid +intrepid2 ~ipo +isorropia +kokkos ~mesquite +minitensor +ml +mpi +muelu ~mumps +nox ~openmp +phalanx +piro ~python +rol +rythmos +sacado ~scorec +shards +shared +shylu +stk +stokhos +stratimikos ~strumpack ~suite-sparse ~superlu +superlu-dist +teko +tempus +tpetra +trilinoscouplings ~wrapper ~x11 +zoltan +zoltan2 build_type=RelWithDebInfo cuda_arch=none cxxstd=14 gotype=long_long",
-"Architecture": "cray-sles15-zen3"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
-"Product": "trilinos",
-"Version": "13.0.1",
-"Compiler": "gcc@11.2.0",
-"Variants": " ~adios2 +amesos +amesos2 +anasazi +aztec ~basker +belos +boost ~chaco ~complex ~cuda ~cuda_rdc ~debug ~dtk +epetra +epetraext ~epetraextbtf ~epetraextexperimental ~epetraextgraphreorderings ~exodus +explicit_template_instantiation ~float +fortran ~gtest ~hdf5 ~hypre +ifpack +ifpack2 +intrepid +intrepid2 ~ipo +isorropia +kokkos ~mesquite +minitensor +ml +mpi +muelu ~mumps +nox ~openmp ~panzer +phalanx +piro ~python ~rocm ~rocm_rdc +rol +rythmos +sacado ~scorec +shards +shared +shylu +stk +stokhos +stratimikos ~strumpack ~suite-sparse ~superlu +superlu-dist +teko +tempus +thyra +tpetra +trilinoscouplings ~wrapper ~x11 +zoltan +zoltan2 build_type=RelWithDebInfo cxxstd=14 gotype=long_long",
 "Architecture": "cray-sles15-zen3"
 },
 {
@@ -44159,15 +44258,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "umap",
-"Version": "2.1.0",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~ipo ~logging ~tests build_type=RelWithDebInfo",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "umap",
 "Version": "2.1.0",
@@ -44210,6 +44300,15 @@
 "Compiler": "gcc@11.2.0",
 "Variants": " ~ipo ~logging ~tests build_type=RelWithDebInfo",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "umap",
+"Version": "2.1.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~ipo ~logging ~tests build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -44770,15 +44869,6 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 }
 ,
-{
-"Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "umpire",
-"Version": "4.1.2",
-"Compiler": "intel@19.1.3.304",
-"Variants": " +c ~cuda ~deviceconst +examples ~fortran ~ipo ~numa ~openmp ~rocm +shared amdgpu_target=none build_type=RelWithDebInfo cuda_arch=none patches=7d912d31cd293df005ba74cb96c6f3e32dc3d84afff49b14509714283693db08 tests=none",
-"Architecture": "cray-cnl7-haswell"
-},
 {
 "Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
@@ -46610,15 +46700,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "upcxx",
-"Version": "2021.3.0",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~cuda ~gasnet +mpi cross=cray-aries-slurm",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "upcxx",
 "Version": "2021.9.0",
@@ -46670,6 +46751,24 @@
 "Compiler": "gcc@11.2.0",
 "Variants": " +cuda ~gasnet ~mpi cross=none",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.05-gcc",
+"Product": "upcxx",
+"Version": "2022.3.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~cuda ~gasnet ~mpi ~rocm cross=none",
+"Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "upcxx",
+"Version": "2022.9.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~cuda ~gasnet ~mpi ~rocm build_system=generic cross=none",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -47683,15 +47782,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "vtk-m",
-"Version": "1.5.5",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~64bitids +ascent_types ~cuda +doubleprecision ~hip ~ipo ~logging +mpi +openmp +rendering ~shared ~tbb ~virtuals amdgpu_target=none build_type=Release cuda_arch=none",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "vtk-m",
 "Version": "1.7.1",
@@ -47728,12 +47818,30 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "vtk-m",
 "Version": "1.7.1",
 "Compiler": "gcc@11.2.0",
 "Variants": " ~64bitids +ascent_types ~cuda +doubleprecision ~ipo ~kokkos ~logging ~mpi +openmp +rendering ~rocm ~shared ~tbb ~testlib ~virtuals build_type=Release",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "vtk-m",
+"Version": "1.9.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~64bitids +ascent_types ~cuda +doubleprecision +examples ~fpic ~ipo ~kokkos ~logging ~mpi +openmp +rendering ~rocm ~shared ~tbb ~testlib ~virtuals build_system=cmake build_type=Release",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cuda",
+"Product": "vtk-m",
+"Version": "1.9.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~64bitids +ascent_types +cuda +cuda_native +doubleprecision +examples ~fpic ~ipo ~kokkos ~logging ~mpi +openmp +rendering ~rocm ~shared ~tbb ~testlib ~virtuals build_system=cmake build_type=Release cuda_arch=80",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -48629,15 +48737,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "zfp",
-"Version": "0.5.5",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~aligned ~c ~cuda ~fasthash ~fortran ~ipo ~openmp ~profile ~python +shared ~strided ~twoway bsws=64 build_type=RelWithDebInfo cuda_arch=none",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "zfp",
 "Version": "0.5.5",
@@ -48692,21 +48791,30 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-cuda",
 "Product": "zfp",
 "Version": "0.5.5",
-"Compiler": "cce@13.0.2",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~aligned ~c +cuda ~fasthash ~fortran ~ipo ~openmp ~profile ~python +shared ~strided ~twoway bsws=64 build_type=RelWithDebInfo cuda_arch=80",
+"Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.05-nvhpc",
+"Product": "zfp",
+"Version": "0.5.5",
+"Compiler": "nvhpc@22.5",
 "Variants": " ~aligned ~c ~cuda ~fasthash ~fortran ~ipo ~openmp ~profile ~python +shared ~strided ~twoway bsws=64 build_type=RelWithDebInfo",
 "Architecture": "cray-sles15-zen3"
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.11-cuda",
 "Product": "zfp",
 "Version": "0.5.5",
 "Compiler": "gcc@11.2.0",
-"Variants": " ~aligned ~c ~cuda ~fasthash ~fortran ~ipo ~openmp ~profile ~python +shared ~strided ~twoway bsws=64 build_type=RelWithDebInfo",
-"Architecture": "cray-sles15-zen3"
+"Variants": " ~aligned ~c +cuda ~fasthash ~fortran ~ipo ~openmp ~profile ~python +shared ~strided ~twoway bsws=64 build_system=cmake build_type=RelWithDebInfo cuda_arch=80",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -49557,15 +49665,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "conduit",
-"Version": "0.7.2",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~adios ~doc ~doxygen +fortran +hdf5 +hdf5_compat ~ipo +mpi ~python +shared ~silo +test ~zfp build_type=RelWithDebInfo",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "conduit",
 "Version": "0.8.2",
@@ -49629,7 +49728,7 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "conduit",
 "Version": "0.8.3",
 "Compiler": "gcc@11.2.0",
@@ -50566,15 +50665,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "libquo",
-"Version": "1.3.1",
-"Compiler": "intel@19.1.3.304",
-"Variants": "",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "libquo",
 "Version": "1.3.1",
@@ -50611,12 +50701,21 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "libquo",
 "Version": "1.3.1",
 "Compiler": "gcc@11.2.0",
 "Variants": "",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "libquo",
+"Version": "1.3.1",
+"Compiler": "gcc@11.2.0",
+"Variants": " build_system=autotools",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -51179,15 +51278,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "gotcha",
-"Version": "1.0.3",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~ipo ~test build_type=RelWithDebInfo",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "gotcha",
 "Version": "1.0.3",
@@ -51221,6 +51311,15 @@
 "Compiler": "intel@19.1.2.254",
 "Variants": " ~ipo ~test build_type=RelWithDebInfo",
 "Architecture": "cray-cnl7-haswell"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "gotcha",
+"Version": "1.0.4",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~ipo ~test build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -51835,15 +51934,6 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 }
 ,
-{
-"Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "faodel",
-"Version": "1.1906.1",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~cereal ~hdf5 ~ipo +mpi +shared +tcmalloc build_type=RelWithDebInfo logging=stdout network=nnti patches=0d8604c48c421da1a28e5c23493a55c367fc39ebdf054f2978b4b6f2108bef91 ,823eff7668eb4ac2bac4b2b337d9edbeb486d60fc5a98177e9c9b1883159ef68",
-"Architecture": "cray-cnl7-haswell"
-},
 {
 "Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
@@ -52421,15 +52511,6 @@
 "Architecture": "linux-ubuntu20.04-ppc64le"
 }
 ,
-{
-"Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "mercury",
-"Version": "2.0.1",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~bmi +boostsys ~cci +checksum ~debug ~ipo +mpi +ofi +shared +sm ~udreg build_type=RelWithDebInfo",
-"Architecture": "cray-cnl7-haswell"
-},
 {
 "Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
@@ -52474,6 +52555,15 @@
 "Compiler": "gcc@11.2.0",
 "Variants": " ~bmi +boostsys ~cci +checksum ~debug ~ipo ~mpi +ofi +shared +sm ~udreg build_type=RelWithDebInfo",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "mercury",
+"Version": "2.1.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~bmi +boostsys +checksum ~debug ~ipo ~mpi +ofi +shared +sm ~ucx ~udreg build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -54451,15 +54541,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "globalarrays",
-"Version": "5.8",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~scalapack armci=mpi-ts",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "globalarrays",
 "Version": "5.8",
@@ -54502,6 +54583,15 @@
 "Compiler": "gcc@11.2.0",
 "Variants": " ~scalapack armci=mpi-ts",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "globalarrays",
+"Version": "5.8",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~scalapack armci=mpi-ts build_system=autotools",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -55109,15 +55199,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "mpark-variant",
-"Version": "1.4.0",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~ipo build_type=RelWithDebInfo patches=21a4f8de3525204ee6db2e53758a3e3fd9c13817df29d2926d24376858a369e7 ,4e173fe8c853eb92956a40371688b4a19498189fe65b7ceac30f6b9d6663a985 ,b3501f726fd40129b4aaa11453a5891c8953a34af8ac84f5ab10a22afa5e7b9b",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "mpark-variant",
 "Version": "1.4.0",
@@ -55163,12 +55244,12 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.11-gcc",
 "Product": "mpark-variant",
 "Version": "1.4.0",
 "Compiler": "gcc@11.2.0",
-"Variants": " ~ipo build_type=RelWithDebInfo patches=21a4f8d ,4e173fe ,b3501f7",
-"Architecture": "cray-sles15-zen3"
+"Variants": " ~ipo build_system=cmake build_type=RelWithDebInfo patches=21a4f8d ,4e173fe ,b3501f7",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -55730,15 +55811,6 @@
 }
 ,
 {
-"Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "libnrm",
-"Version": "0.1.0",
-"Compiler": "intel@19.1.3.304",
-"Variants": "",
-"Architecture": "cray-cnl7-haswell"
-},
-{
 "Institution": "JLSE",
 "E4S Deployment": "arcticus-21.05",
 "Product": "libnrm",
@@ -55821,6 +55893,24 @@
 }
 ,
 {
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "omega-h",
+"Version": "9.34.13",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~cuda ~examples ~ipo +mpi +optimize +shared +symbols ~throw +trilinos ~warnings +zlib build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cuda",
+"Product": "omega-h",
+"Version": "9.34.13",
+"Compiler": "gcc@11.2.0",
+"Variants": " +cuda ~examples ~ipo +mpi +optimize +shared +symbols ~throw +trilinos ~warnings +zlib build_system=cmake build_type=RelWithDebInfo cuda_arch=80",
+"Architecture": "linux-sles15-zen3"
+},
+{
 "Institution": "JLSE",
 "E4S Deployment": "arcticus-21.08",
 "Product": "omega-h",
@@ -56273,15 +56363,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "openpmd-api",
-"Version": "0.13.4",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~adios1 +adios2 +hdf5 ~ipo +mpi ~python +shared build_type=RelWithDebInfo",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "openpmd-api",
 "Version": "0.14.4",
@@ -56327,12 +56408,21 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "openpmd-api",
 "Version": "0.14.4",
 "Compiler": "gcc@11.2.0",
 "Variants": " ~adios1 +adios2 +hdf5 ~ipo +mpi ~python +shared build_type=RelWithDebInfo",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "openpmd-api",
+"Version": "0.14.5",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~adios1 ~adios2 +hdf5 ~ipo +mpi ~python +shared build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -57175,7 +57265,7 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "plasma",
 "Version": "21.8.29",
 "Compiler": "gcc@11.2.0",
@@ -57392,15 +57482,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "precice",
-"Version": "2.2.1",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~ipo +mpi +petsc ~python +shared build_type=RelWithDebInfo",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "precice",
 "Version": "2.3.0",
@@ -57416,6 +57497,15 @@
 "Compiler": "intel@19.1.2.254",
 "Variants": " ~ipo +mpi +petsc ~python +shared build_type=RelWithDebInfo",
 "Architecture": "cray-cnl7-haswell"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "precice",
+"Version": "2.5.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~ipo +mpi +petsc ~python +shared build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -58185,15 +58275,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "pumi",
-"Version": "2.2.5",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~fortran ~int64 ~ipo ~shared +simmodsuite_version_check ~zoltan build_type=RelWithDebInfo simmodsuite=none",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "pumi",
 "Version": "2.2.6",
@@ -58227,6 +58308,15 @@
 "Compiler": "intel@19.1.2.254",
 "Variants": " ~fortran ~int64 ~ipo ~shared +simmodsuite_version_check ~testing ~zoltan build_type=RelWithDebInfo simmodsuite=none",
 "Architecture": "cray-cnl7-haswell"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "pumi",
+"Version": "2.2.7",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~fortran ~int64 ~ipo ~shared +simmodsuite_version_check ~testing ~zoltan build_system=cmake build_type=RelWithDebInfo simmodsuite=none",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -58942,15 +59032,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "slepc",
-"Version": "3.15.0",
-"Compiler": "intel@19.1.3.304",
-"Variants": " +arpack ~blopex",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "slepc",
 "Version": "3.16.2",
@@ -58969,16 +59050,7 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
-"Product": "slepc",
-"Version": "3.17.1",
-"Compiler": "cce@13.0.2",
-"Variants": " +arpack ~blopex ~cuda ~rocm",
-"Architecture": "cray-sles15-zen3"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "slepc",
 "Version": "3.17.1",
 "Compiler": "gcc@11.2.0",
@@ -58987,12 +59059,30 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-cuda",
 "Product": "slepc",
 "Version": "3.17.1",
 "Compiler": "gcc@11.2.0",
 "Variants": " +arpack ~blopex +cuda ~rocm cuda_arch=80",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "slepc",
+"Version": "3.18.1",
+"Compiler": "gcc@11.2.0",
+"Variants": " +arpack ~blopex ~cuda ~rocm build_system=generic",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cuda",
+"Product": "slepc",
+"Version": "3.18.1",
+"Compiler": "gcc@11.2.0",
+"Variants": " +arpack ~blopex +cuda ~rocm build_system=generic cuda_arch=80",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -59744,15 +59834,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "stc",
-"Version": "0.9.0",
-"Compiler": "intel@19.1.3.304",
-"Variants": "",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "stc",
 "Version": "0.9.0",
@@ -60069,33 +60150,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "warpx",
-"Version": "21.05",
-"Compiler": "intel@19.1.3.304",
-"Variants": " +app ~ascent ~eb ~ipo +lib +mpi +mpithreadmultiple +openpmd +psatd +qed ~qedtablegen +shared +tprof build_type=RelWithDebInfo compute=omp dims=2 precision=double",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "warpx",
-"Version": "21.05",
-"Compiler": "intel@19.1.3.304",
-"Variants": " +app ~ascent ~eb ~ipo +lib +mpi +mpithreadmultiple +openpmd +psatd +qed ~qedtablegen +shared +tprof build_type=RelWithDebInfo compute=omp dims=3 precision=double",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "warpx",
-"Version": "21.05",
-"Compiler": "intel@19.1.3.304",
-"Variants": " +app ~ascent ~eb ~ipo +lib +mpi +mpithreadmultiple +openpmd +psatd +qed ~qedtablegen +shared +tprof build_type=RelWithDebInfo compute=omp dims=rz precision=double",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "warpx",
 "Version": "22.02",
@@ -60147,33 +60201,6 @@
 "Compiler": "intel@19.1.2.254",
 "Variants": " +app ~ascent ~eb ~ipo +lib +mpi +mpithreadmultiple +openpmd +psatd +qed ~qedtablegen +shared +tprof build_type=RelWithDebInfo compute=omp dims=3 precision=double",
 "Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
-"Product": "warpx",
-"Version": "22.05",
-"Compiler": "gcc@11.2.0",
-"Variants": " +app ~ascent ~eb ~ipo +lib +mpi +mpithreadmultiple +openpmd +psatd +qed ~qedtablegen +shared +tprof build_type=RelWithDebInfo compute=omp dims=2 precision=double",
-"Architecture": "cray-sles15-zen3"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
-"Product": "warpx",
-"Version": "22.05",
-"Compiler": "gcc@11.2.0",
-"Variants": " +app ~ascent ~eb ~ipo +lib +mpi +mpithreadmultiple +openpmd +psatd +qed ~qedtablegen +shared +tprof build_type=RelWithDebInfo compute=omp dims=3 precision=double",
-"Architecture": "cray-sles15-zen3"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
-"Product": "warpx",
-"Version": "22.05",
-"Compiler": "gcc@11.2.0",
-"Variants": " +app ~ascent ~eb ~ipo +lib +mpi +mpithreadmultiple +openpmd +psatd +qed ~qedtablegen +shared +tprof build_type=RelWithDebInfo compute=omp dims=rz precision=double",
-"Architecture": "cray-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -60313,6 +60340,26 @@
 ,
 {
 "Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "gptune",
+"Version": "3.0.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~hypre ~ipo ~mpispawn ~superlu build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
+}
+,
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "h5bench",
+"Version": "1.3",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~all ~amrex ~async ~e3sm ~exerciser ~ipo ~metadata ~openpmd build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
+}
+,
+{
+"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "axom",
 "Version": "0.6.1",
@@ -60328,6 +60375,15 @@
 "Compiler": "gcc@11.2.0",
 "Variants": " +cpp14 ~cuda ~debug ~devtools +examples +fortran +hdf5 ~ipo +lua ~mfem +mpi +openmp ~python +raja ~scr +shared +tools +umpire build_type=RelWithDebInfo patches=68a3ae808ca4c527766bcf0fea4043efdaccde81b819472f8d738fe6e23a6a6a",
 "Architecture": "cray-cnl7-haswell"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "axom",
+"Version": "0.7.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " +cpp14 ~cuda ~devtools +examples +fortran +hdf5 ~ipo +lua ~mfem +mpi +openmp ~python +raja ~rocm ~scr +shared +tools +umpire build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -60619,6 +60675,15 @@
 }
 ,
 {
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "alquimia",
+"Version": "1.0.10",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~ipo +shared build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
+},
+{
 "Institution": "JLSE",
 "E4S Deployment": "arcticus-21.11",
 "Product": "alquimia",
@@ -60702,15 +60767,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "argobots",
-"Version": "1.1",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~affinity ~debug +perf ~stackunwind ~tool ~valgrind stackguard=none",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "argobots",
 "Version": "1.1",
@@ -60744,6 +60800,15 @@
 "Compiler": "intel@19.1.2.254",
 "Variants": " ~affinity ~debug +perf ~stackunwind ~tool ~valgrind stackguard=none",
 "Architecture": "cray-cnl7-haswell"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "argobots",
+"Version": "1.1",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~affinity ~debug +perf ~stackunwind ~tool ~valgrind build_system=autotools stackguard=none",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -61315,12 +61380,21 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
+"E4S Deployment": "perlmutter-22.11-gcc",
 "Product": "cabana",
-"Version": "0.3.0",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~cuda ~ipo +mpi ~openmp +serial +shared build_type=RelWithDebInfo",
-"Architecture": "cray-cnl7-haswell"
+"Version": "0.5.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~arborx ~cajita ~cuda ~examples ~heffte ~hypre ~ipo +mpi ~openmp ~openmptarget ~performance_testing ~pthread ~rocm +serial +shared ~sycl ~testing build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-cuda",
+"Product": "cabana",
+"Version": "0.5.0",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~arborx ~cajita +cuda ~examples ~heffte ~hypre ~ipo +mpi ~openmp ~openmptarget ~performance_testing ~pthread ~rocm +serial +shared ~sycl ~testing build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -61892,6 +61966,15 @@
 }
 ,
 {
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "hdf5-vol-async",
+"Version": "1.3",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~ipo build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
+},
+{
 "Institution": "JLSE",
 "E4S Deployment": "arcticus-22.08",
 "Product": "hdf5-vol-async",
@@ -61903,12 +61986,30 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "lammps",
 "Version": "20220107",
 "Compiler": "gcc@11.2.0",
 "Variants": " ~asphere ~body ~class2 ~colloid ~compress ~coreshell ~cuda ~cuda_mps ~dipole ~exceptions +ffmpeg ~granular ~ipo +jpeg +kim ~kokkos ~kspace ~latte +lib ~manybody ~mc ~meam ~misc ~mliap ~molecule +mpi ~mpiio ~opencl +openmp ~opt ~peri +png ~poems ~python ~qeq ~replica ~rigid ~shock ~snap ~spin ~srd ~user-adios ~user-atc ~user-awpmd ~user-bocs ~user-cgsdk ~user-colvars ~user-diffraction ~user-dpd ~user-drude ~user-eff ~user-fep ~user-h5md ~user-lb ~user-manifold ~user-meamc ~user-mesodpd ~user-mesont ~user-mgpt ~user-misc ~user-mofff ~user-netcdf ~user-omp ~user-phonon ~user-plumed ~user-ptm ~user-qtb ~user-reaction ~user-reaxc ~user-sdpd ~user-smd ~user-smtbq ~user-sph ~user-tally ~user-uef ~user-yaff ~voronoi build_type=RelWithDebInfo",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.05-cuda",
+"Product": "lammps",
+"Version": "20220107",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~asphere ~body ~class2 ~colloid ~compress ~coreshell +cuda +cuda_mps ~dipole ~exceptions +ffmpeg ~granular ~ipo +jpeg +kim ~kokkos ~kspace ~latte +lib ~manybody ~mc ~meam ~misc ~mliap ~molecule +mpi ~mpiio ~opencl +openmp ~opt ~peri +png ~poems ~python ~qeq ~replica ~rigid ~shock ~snap ~spin ~srd ~user-adios ~user-atc ~user-awpmd ~user-bocs ~user-cgsdk ~user-colvars ~user-diffraction ~user-dpd ~user-drude ~user-eff ~user-fep ~user-h5md ~user-lb ~user-manifold ~user-meamc ~user-mesodpd ~user-mesont ~user-mgpt ~user-misc ~user-mofff ~user-netcdf ~user-omp ~user-phonon ~user-plumed ~user-ptm ~user-qtb ~user-reaction ~user-reaxc ~user-sdpd ~user-smd ~user-smtbq ~user-sph ~user-tally ~user-uef ~user-yaff ~voronoi build_type=RelWithDebInfo cuda_arch=80",
+"Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "lammps",
+"Version": "20220623",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~adios ~asphere ~atc ~awpmd ~bocs ~body ~bpm ~brownian ~cg-sdk ~class2 ~colloid ~colvars ~compress ~coreshell ~cuda ~cuda_mps ~dielectric ~diffraction ~dipole ~dpd-basic ~dpd-meso ~dpd-react ~dpd-smooth ~drude ~eff ~electrode ~exceptions ~extra-compute ~extra-dump ~extra-fix ~extra-molecule ~extra-pair ~fep +ffmpeg ~granular ~h5md ~intel ~interlayer ~ipo +jpeg +kim ~kokkos ~kspace ~latboltz ~latte +lib ~machdyn ~manifold ~manybody ~mc ~meam ~mesont ~mgpt ~misc ~ml-iap ~ml-snap ~mliap ~mofff ~molecule ~molfile +mpi ~mpiio ~netcdf ~opencl +openmp ~openmp-package ~opt ~orient ~peri ~phonon ~plugin ~plumed +png ~poems ~ptm ~python ~qeq ~qtb ~reaction ~reaxff ~replica ~rigid ~shock ~smtbq ~snap ~sph ~spin ~srd ~tally ~uef ~user-adios ~user-atc ~user-awpmd ~user-bocs ~user-brownian ~user-cgsdk ~user-colvars ~user-diffraction ~user-dpd ~user-drude ~user-eff ~user-fep ~user-h5md ~user-intel ~user-lb ~user-manifold ~user-meamc ~user-mesodpd ~user-mesont ~user-mgpt ~user-misc ~user-mofff ~user-molfile ~user-netcdf ~user-omp ~user-phonon ~user-plumed ~user-ptm ~user-qtb ~user-reaction ~user-reaxc ~user-sdpd ~user-smd ~user-smtbq ~user-sph ~user-tally ~user-uef ~user-yaff ~voronoi ~yaff build_system=cmake build_type=RelWithDebInfo lammps_sizes=smallbig",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -62102,15 +62203,6 @@
 ,
 {
 "Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "libunwind",
-"Version": "1.5.0",
-"Compiler": "intel@19.1.3.304",
-"Variants": " +pic +xz ~zlib",
-"Architecture": "cray-cnl7-haswell"
-},
-{
-"Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
 "Product": "libunwind",
 "Version": "1.5.0",
@@ -62150,24 +62242,6 @@
 "E4S Deployment": "perlmutter-21.11",
 "Product": "libunwind",
 "Version": "1.5.0",
-"Compiler": "gcc@11.2.0",
-"Variants": " ~block_signals ~conservative_checks ~cxx_exceptions ~debug ~debug_frame +docs +pic +tests +weak_backtrace +xz ~zlib components=none libs=shared ,static",
-"Architecture": "cray-sles15-zen3"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
-"Product": "libunwind",
-"Version": "1.6.2",
-"Compiler": "gcc@11.2.0",
-"Variants": " ~block_signals ~conservative_checks ~cxx_exceptions ~debug ~debug_frame +docs +pic +tests +weak_backtrace +xz ~zlib components=none libs=shared ,static",
-"Architecture": "cray-sles15-zen3"
-},
-{
-"Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
-"Product": "libunwind",
-"Version": "1.6.2",
 "Compiler": "gcc@11.2.0",
 "Variants": " ~block_signals ~conservative_checks ~cxx_exceptions ~debug ~debug_frame +docs +pic +tests +weak_backtrace +xz ~zlib components=none libs=shared ,static",
 "Architecture": "cray-sles15-zen3"
@@ -63030,12 +63104,21 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "nccmp",
 "Version": "1.9.0.1",
 "Compiler": "gcc@11.2.0",
 "Variants": " ~ipo build_type=RelWithDebInfo",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "nccmp",
+"Version": "1.9.0.1",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~ipo build_system=cmake build_type=RelWithDebInfo",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -63355,12 +63438,21 @@
 },
 {
 "Institution": "NERSC",
-"E4S Deployment": "perlmutter-22.05",
+"E4S Deployment": "perlmutter-22.05-gcc",
 "Product": "nco",
 "Version": "5.0.1",
 "Compiler": "gcc@11.2.0",
 "Variants": " ~doc",
 "Architecture": "cray-sles15-zen3"
+},
+{
+"Institution": "NERSC",
+"E4S Deployment": "perlmutter-22.11-gcc",
+"Product": "nco",
+"Version": "5.0.1",
+"Compiler": "gcc@11.2.0",
+"Variants": " ~doc build_system=autotools",
+"Architecture": "linux-sles15-zen3"
 },
 {
 "Institution": "JLSE",
@@ -64039,15 +64131,6 @@
 "Architecture": "linux-rhel8-ppc64le"
 }
 ,
-{
-"Institution": "NERSC",
-"E4S Deployment": "cori-21.05",
-"Product": "metall",
-"Version": "0.13",
-"Compiler": "intel@19.1.3.304",
-"Variants": " ~ipo build_type=RelWithDebInfo",
-"Architecture": "cray-cnl7-haswell"
-},
 {
 "Institution": "NERSC",
 "E4S Deployment": "cori-22.02",
