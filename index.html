@@ -109,7 +109,9 @@
                         <div class="divider-1"><div class="line"></div></div>
 	                    <h3>What is E4S?</h3>
 	                    <div class="divider-1"><div class="line"></div></div>
-	                    <p align="justify">The Extreme-scale Scientific Software Stack (E4S) is a community effort to provide open source software packages for developing, deploying and running scientific applications on high-performance computing (HPC) and AI platforms.  E4S provides from-source builds, containers, and pre-installed versions of a <a href="DocPortal.html"> broad collection of HPC and AI software packages</a>. </p>
+	                    <p align="justify">The Extreme-scale Scientific Software Stack (E4S) is a community effort to provide open source software packages for developing, deploying and running scientific applications on high-performance computing (HPC) and AI platforms.  E4S provides from-source builds, containers, and pre-installed versions of a <a href="DocPortal.html"> broad collection of HPC and AI software packages</a>. E4S includes contributions from many organizations, including national laboratories, universities, and industry.  E4S is one of the key legacies of the <a href="https://www.exascaleproject.org">US Exascale Computing Project</a> (ECP), a collaborative effort of the US Department of Energy Office of Advanced Scientific Computing Research and the National Nuclear Security Administration.
+
+                        </p>
 	                </div>
 	            </div>
 
@@ -122,7 +124,7 @@
 	                		<div class="col-sm-9">
 	                			<h3>Purpose</h3>
 		                    	<p align="justify">
-		                    		E4S exists to accelerate the development, deployment and use of HPC-AI software, lowering the barriers for HPC-AI users. E4S provides containers and turn-key, from-source builds of more than 120 popular HPC-AI products.  E4S products include programming models, such as MPI and Kokkos; development tools such as HPCToolkit, TAU and PAPI; math libraries such as PETSc and Trilinos; Data and Viz tools such as HDF5 and Paraview; and AI products such as JAX, PyTorch, TensorFlow, and Horovod.  The entire portfolio is tested and validated on a variety of platforms, from laptops to supercomputers, providing confidence for users to upgrade with each E4S release.
+		                    		E4S exists to accelerate the development, deployment and use of HPC-AI software, lowering the barriers for HPC-AI users. E4S represents one of the largest collections of performance-portable GPU-enabled libraries and tools, supporting users of NVIDIA, AMD, and Intel GPUs in addition to mainstream Intel/AMD and Arm CPUs.  E4S provides containers and turn-key, from-source builds of more than 120 popular HPC-AI products.  E4S products include programming models, such as MPI and Kokkos; development tools such as HPCToolkit, TAU and PAPI; math libraries such as PETSc and Trilinos; Data and Viz tools such as HDF5 and Paraview; and AI products such as JAX, PyTorch, TensorFlow, and Horovod.  The entire portfolio is tested and validated on a variety of platforms, from laptops to supercomputers, providing confidence for users to upgrade with each E4S release.
 		                    	</p>
 	                		</div>
 	                	</div>
@@ -135,8 +137,7 @@
 	                		<div class="col-sm-9">
 	                			<h3>Approach</h3>
 		                    	<p align="justify">
-		                    		E4S relies on <a href="https://spack.io">Spack</a>, a powerful package management platform widely used in the HPC-AI community. By using Spack as the package manager and providing containers of pre-built binaries for Docker, Singularity, Shifter and CharlieCloud, E4S enables the flexible use and testing of a <a href="DocPortal.html"> large collection of reusable HPC-AI software packages</a>.
-
+		                    		E4S relies on <a href="https://spack.io">Spack</a>, a powerful package management platform widely used in the HPC-AI community. By using Spack as the package manager and providing containers of pre-built binaries for Docker, Singularity, Shifter and CharlieCloud, E4S enables the flexible use and testing of a <a href="DocPortal.html"> large collection of reusable HPC-AI software packages</a>.  E4S also provides a set of Software Development Kits (SDKs) to promote interoperability between products.  Finally, E4S products provide performance portability across a wide range of CPU and GPU architectures, including Intel, AMD, and Arm CPUs, and NVIDIA, AMD, and Intel GPUs using the Kokkos programming model and similar approaches, the MPI programming model via multiple MPI implementations, and new emerging language parallel programming support in the LLVM ecosystem.
 		                    	</p>
 	                		</div>
 	                	</div>
@@ -165,7 +166,7 @@
 	                		<div class="col-sm-9">
 	                			<h3>Testing</h3>
 		                    	<p align="justify">
-		                    		The E4S software distribution is tested regularly on a variety of platforms, from Linux clusters to leadership platforms. E4S is tested on all major leadership platforms at the US Department of Energy facilities, including the Exascale systems, Frontier at Oak Ridge National Lab, and Aurora, at Argonne National Lab. E4S is also tested on cloud platforms, such as AWS, Azure, and Google Cloud.
+		                    		The E4S software distribution is tested regularly on a variety of platforms, from Linux clusters to leadership platforms. E4S is tested on all major leadership platforms at the US Department of Energy facilities, including the Exascale systems, Frontier at Oak Ridge National Lab, and Aurora, at Argonne National Lab. E4S is also tested on cloud platforms, such as AWS, Azure, and Google Cloud.  Finally, E4S is ported and tested on the <a href="https://systems.nic.uoregon.edu/internal-wiki/index.php?title=Category:Servers" >Frank system</a> at the University of Oregon.
 		                    	</p>
 	                		</div>
 	                	</div>
@@ -188,22 +189,6 @@
 	        </div>
 	    </div>
 
-<div class="features-container section-container">
-	        <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 features section-description" style = " padding-left: 20%; padding-right: 20%">
-                        <h3>Capabilities</h3>
-                    </div>
-                    <div class="col-sm-12 features section-description" style = " padding-left: 20%; padding-right: 20%">
-                      <ul style="text-align: left; list-style-type:disc">
-               <li align="justify">From-source builds using Spack.</li>
-               <li align="justify">Pre-built containers for Docker, Singularity, Shifter and CharlieCloud. </li>
-           </ul>
-                    </div>
-                </div>
-	        </div>
-        </div>
-
         <div class="features-container section-container">
         	        <div class="container">
                         <div class="row">
@@ -214,9 +199,9 @@
                             	<p class="" align="left">While porting of individual scientific software products is challenging, achieving interoperability between packages is even more difficult. E4S uses a dual-pronged approach for achieving software interoperability: Spack and SDKs.</p>
                             </div>
                             <ul style="text-align:left; list-style-type:disc">
-                     <li align="justify"><strong>Spack:</strong> E4S uses the <a href="https://spack.readthedocs.io/en/latest/">Spack packages manager</a> for software delivery. Spack provides the ability to specify versions of software packages that are and are not interoperable. It is also a common build layer to not only E4S software, but also an enormous number of software packages outside of ECP ST. These features support achieving and maintaining interoperability between ST software packages.
+                     <li align="justify"><strong>Spack:</strong> E4S uses the <a href="https://spack.readthedocs.io/en/latest/">Spack packages manager</a> for software delivery. Spack provides the ability to specify versions of software packages that are and are not interoperable. It is also a common build layer to not only E4S software, but also an enormous number of software packages that satisfy dependencies for the primary E4S products.
 </li>
-                     <li align="justify"><strong>Software Development Kits (SDKs):</strong> An ECP ST Software Development Kit is a collection of related ECP ST software products (called packages) where coordination across package teams will improve usability and practices, and foster community growth among teams that develop similar and complementary capabilities. An SDK is more of a project than a product, although it involves several products. It can also be considered as an association of products and product teams. The activities that take place inside an SDK promote interoperability (where appropriate and logical) between products. The initial version 0.2 release of E4S contains member packages of one SDK - the <a href="https://xsdk.info/"> Extreme-Scale Scientific Software Development Kit (xSDK)</a>. Future releases will incorporate additional SDKs that will be defined in the coming months.</li>
+                     <li align="justify"><strong>Software Development Kits (SDKs):</strong> A Software Development Kit is a collection of related software products where coordination across package teams will improve usability and practices, and foster community growth among teams that develop similar and complementary capabilities. An SDK is more of a project than a product, although it involves several products. It can also be considered as an association of products and product teams. The activities that take place inside an SDK promote interoperability (where appropriate and logical) between products. One key SDK is the <a href="https://xsdk.info/"> Extreme-Scale Scientific Software Development Kit (xSDK)</a>, a collection of GPU-enabled scientific libraries for HPC-AI applications.</li>
                  </ul>
 
                         </div>
