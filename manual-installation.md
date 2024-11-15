@@ -20,13 +20,6 @@
 
 ### Instructions
 
-If you want to use Spack's Clingo-based concretizer, you can either let Spack bootstrap Clingo for you, or you can install it manually via pip, in which case Spack will not need to bootstrap it. To install it via `pip`:
-
-```
-$> pip install --user --upgrade pip
-$> pip install --user clingo
-```
-
 Clone Spack, checkout the appropriate release branch, if desired, and source the Spack `setup-env.sh` script.
 ```
 $> git clone https://github.com/spack/spack
@@ -36,7 +29,7 @@ $> . spack/share/spack/setup-env.sh
 
 Configure Spack to know where the E4S Build Cache is located. You can use either a release specific build cache, or the mixed build cache. The release specific build cache contains only binaries from the particular release, whereas the mixed build cache contains binaries from all releases and from in between releases.
 
-Release-specific (we recommend using this if you can)
+Release-specific:
 ```
 $> spack mirror add E4S https://cache.e4s.io/24.11
 $> spack buildcache keys -it
