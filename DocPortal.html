@@ -196,7 +196,10 @@ $(document).ready(function() {
             { "data": "description" },
 	    { "data": "last_updated" }
         ],
-        "order": [[1, 'asc']]
+        "order": [[1, 'asc']],
+         "language": {
+            "emptyTable": "Loading..." // Customize the 'no data available' message
+        }
     } );
 
     // Add event listener for opening and closing details
@@ -215,6 +218,47 @@ $(document).ready(function() {
             tr.addClass('shown');
         }
     } );
+
+     // Function to extract query parameters
+    function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
+
+    // Apply the 'search' parameter from the URL
+    const searchParam = getQueryParam('search');
+
+    if (searchParam) {
+        // Apply search programmatically
+        table.search(searchParam).draw();
+
+        // Wait for the table to filter and render
+        table.one('draw', function () {
+            const rowIndexes = table.rows({ search: 'applied' }).indexes().toArray();
+            const targetRowIndex = rowIndexes.find(index => {
+                const rowData = table.row(index).data();
+                return rowData && rowData.name === searchParam;
+            });
+
+            if (targetRowIndex !== undefined) {
+                const tr = $(table.row(targetRowIndex).node());
+
+                // Expand the row
+                table.row(targetRowIndex).child(format(table.row(targetRowIndex).data())).show();
+                tr.addClass('shown');
+
+                // Scroll to the row with an offset
+                const offset = 100; // Adjust as needed
+                $('html, body').animate({
+                    scrollTop: tr.offset().top - offset
+                }, 1000);
+            } else {
+                console.error("Target row not found after applying search.");
+            }
+        });
+    
+    }
+
 } );
 </script>
 
