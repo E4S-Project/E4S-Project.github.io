@@ -1,7 +1,7 @@
 jQuery(document).ready(function() {
 
     /*
-        Background slideshow
+        Background slideshow FIXME: change the images and the path
     */
     $('.top-content').backstretch("assets/img/backgrounds/E4S-dark-green.png");
 
