@@ -1,9 +1,9 @@
 jQuery(document).ready(function() {
 
     /*
-        Background slideshow
+        Background slideshow FIXME: change the images and the path
     */
-    $('.top-content').backstretch("assets/img/backgrounds/E4S-dark-green.png");
+    $('.top-content').backstretch("assets/img/backgrounds/wave-pattern-7.png");
 
     $('#top-navbar-1').on('shown.bs.collapse', function(){
     	$('.top-content').backstretch("resize");
