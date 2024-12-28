@@ -20,7 +20,7 @@
         <!-- CSS -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Roboto:300,400,500">
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/font-awesome/css/all.min.css">
         <link rel="stylesheet" href="assets/css/animate.css">
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/style_perso.css">
@@ -61,17 +61,20 @@
 					<div class="collapse navbar-collapse" id="top-navbar-1">
             <ul class="nav navbar-nav">
 <!--MENU START-->
-              <li><a href="index.html">Home</a></li>
-              <li><a href="events.html">Events</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="e4s-cl.html">E4S-CL</a></li>
-              <li><a href="DocPortal.html">Products</a></li>
-	      <li><a href="Deployments.html">Deployments</a></li>
-              <li><a href="policies.html">Policies</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="join.html">Join</a></li>
-	      <li><a href="documentation.html">Documentation</a></li>
-              <li><a class="btn btn-link-3" href="download.html">Download</a></li>
+<!--DO NOT UPDATE THIS BLOCK MANUALLY! Update MenuBlob.html and run updateMenus.sh-->
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="e4s-cl.html">E4S-CL</a></li>
+                            <li><a href="DocPortal.html">Products</a></li>
+                            <li><a href="Deployments.html">Deployments</a></li>
+                            <li><a href="policies.html">Policies</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="join.html">Join</a></li>
+                            <li><a href="documentation.html">Documentation</a></li>
+                            <li><a class="btn btn-link-3" href="download.html">Download</a></li>
+
+
 <!--MENU END-->
 					</ul>
 				</div>
@@ -108,71 +111,71 @@
 	                			<h3>Container Releases</h3>
 	                			<p>
 		                    		<a href="https://hub.docker.com/r/ecpe4s/e4s-cuda/tags" class="btn btn-warning btn-lg" download="E4S">
-							        	<span class="glyphicon glyphicon-download"></span> Docker Downloads - CUDA
+							        	<i class="fas fa-download"></i> Docker Downloads - CUDA
 							        </a>
 		                    	</p>
 	                			<p>
 		                    		<a href="https://hub.docker.com/r/ecpe4s/e4s-rocm/tags" class="btn btn-warning btn-lg" download="E4S">
-							        	<span class="glyphicon glyphicon-download"></span> Docker Downloads - ROCm
+							        	<i class="fas fa-download"></i> Docker Downloads - ROCm
 							        </a>
 		                    	</p>
 	                			<p>
 		                    		<a href="https://hub.docker.com/r/ecpe4s/e4s-oneapi/tags" class="btn btn-warning btn-lg" download="E4S">
-							        	<span class="glyphicon glyphicon-download"></span> Docker Downloads - OneAPI
+							        	<i class="fas fa-download"></i> Docker Downloads - OneAPI
 							        </a>
 		                    	</p>
                           <p>
   		                    		<a href="https://oaciss.nic.uoregon.edu/e4s/images/24.11/e4s-cuda80-x86_64-24.11.sif" class="btn btn-warning btn-lg" download="E4S">
-  							        	<span class="glyphicon glyphicon-download"></span> Singularity x86_64 Download - CUDA 80
+  							        	<i class="fas fa-download"></i> Singularity x86_64 Download - CUDA 80
   							        </a>
 		                    	</p>
                           <p>
   		                    		<a href="https://oaciss.nic.uoregon.edu/e4s/images/24.11/e4s-cuda90-x86_64-24.11.sif" class="btn btn-warning btn-lg" download="E4S">
-  							        	<span class="glyphicon glyphicon-download"></span> Singularity x86_64 Download - CUDA 90
+  							        	<i class="fas fa-download"></i> Singularity x86_64 Download - CUDA 90
   							        </a>
 		                    	</p>
   		                    		<a href="https://oaciss.nic.uoregon.edu/e4s/images/24.11/e4s-cuda70-ppc64le-24.11.sif" class="btn btn-warning btn-lg" download="E4S">
-  							        	<span class="glyphicon glyphicon-download"></span> Singularity ppc64le Download - CUDA 70
+  							        	<i class="fas fa-download"></i> Singularity ppc64le Download - CUDA 70
   							        </a>
   		                    	</p>
 								  <p>
 									<a href="https://oaciss.nic.uoregon.edu/e4s/images/24.11/e4s-cuda75-aarch64-24.11.sif" class="btn btn-warning btn-lg" download="E4S">
-										<span class="glyphicon glyphicon-download"></span> Singularity aarch64 Download - CUDA 75
+										<i class="fas fa-download"></i> Singularity aarch64 Download - CUDA 75
 									</a>
 							  </p>
 							  <p>
 								<a href="https://oaciss.nic.uoregon.edu/e4s/images/24.11/e4s-cuda80-aarch64-24.11.sif" class="btn btn-warning btn-lg" download="E4S">
-									<span class="glyphicon glyphicon-download"></span> Singularity aarch64 Download - CUDA 80
+									<i class="fas fa-download"></i> Singularity aarch64 Download - CUDA 80
 								</a>
 						  </p>
 								  <p>
 									<a href="https://oaciss.nic.uoregon.edu/e4s/images/24.11/e4s-cuda90-aarch64-24.11.sif" class="btn btn-warning btn-lg" download="E4S">
-										<span class="glyphicon glyphicon-download"></span> Singularity aarch64 Download - CUDA 90
+										<i class="fas fa-download"></i> Singularity aarch64 Download - CUDA 90
 									</a>
 							  </p>
 							  <p>
 								<a href="https://oaciss.nic.uoregon.edu/e4s/images/24.11/e4s-rocm942-x86_64-24.11.sif" class="btn btn-warning btn-lg" download="E4S">
-									<span class="glyphicon glyphicon-download"></span> Singularity x86_64 Download - ROCm gfx942
+									<i class="fas fa-download"></i> Singularity x86_64 Download - ROCm gfx942
 								</a>
 							</p>
 							<p>
 							<a href="https://oaciss.nic.uoregon.edu/e4s/images/24.11/e4s-rocm90a-x86_64-24.11.sif" class="btn btn-warning btn-lg" download="E4S">
-								<span class="glyphicon glyphicon-download"></span> Singularity x86_64 Download - ROCm gfx90a
+								<i class="fas fa-download"></i> Singularity x86_64 Download - ROCm gfx90a
 							</a>
 						</p>
 							</p>
 							<a href="https://oaciss.nic.uoregon.edu/e4s/images/24.11/e4s-rocm908-x86_64-24.11.sif" class="btn btn-warning btn-lg" download="E4S">
-								<span class="glyphicon glyphicon-download"></span> Singularity x86_64 Download - ROCm gfx908
+								<i class="fas fa-download"></i> Singularity x86_64 Download - ROCm gfx908
 							</a>
 						</p>
 					</p>
 					<a href="https://oaciss.nic.uoregon.edu/e4s/images/24.11/e4s-oneapi-x86_64-24.11.sif" class="btn btn-warning btn-lg" download="E4S">
-						<span class="glyphicon glyphicon-download"></span> Singularity x86_64 Download - OneAPI
+						<i class="fas fa-download"></i> Singularity x86_64 Download - OneAPI
 					</a>
 				</p>
                               <p>
       		                    		<a href="http://tau.uoregon.edu/ecp.ova" class="btn btn-warning btn-lg" download="E4S">
-      							        	<span class="glyphicon glyphicon-download"></span> OVA Download
+      							        	<i class="fas fa-download"></i> OVA Download
       							        </a>
 					</p>
       		                    	<p></p>
@@ -438,11 +441,11 @@ For web site terms of use, trademark policy and other project policies please se
 
 
         <!-- Javascript -->
-        <script src="assets/js/jquery-3.7.1.min.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
         <script src="assets/js/jquery.backstretch.min.js"></script>
         <script src="assets/js/wow.min.js"></script>
-        <script src="assets/js/retina-1.1.0.min.js"></script>
+        <script src="assets/js/retina.min.js"></script>
         <script src="assets/js/scripts.js"></script>
 
         <!--[if lt IE 10]>
