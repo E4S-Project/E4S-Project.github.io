@@ -28,7 +28,7 @@ img { max-width: 100%; }
 
 .medium-paragraph { font-size: 18px; line-height: 34px; }
 
-.colored { color: #503dcb; }
+.colored { color: #cb9f3d; }
 
 ::-moz-selection { background: #cb9f3d; color: #fff; text-shadow: none; }
 ::selection { background: #cb9f3d; color: #fff; text-shadow: none; }
