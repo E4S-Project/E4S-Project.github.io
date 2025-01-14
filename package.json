@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
-    "bootstrap": "^3.4.1",
+    "bootstrap": "^5.3.3",
     "jquery": "^3.7.1",
     "jquery-backstretch": "^2.1.18",
     "retinajs": "^2.1.3",
