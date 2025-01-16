@@ -15,7 +15,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>E4S - Join</title>
+        <title>Using E4S</title>
 
         <!-- CSS -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400|Roboto:300,400,500">
@@ -61,17 +61,11 @@
 					<div class="collapse navbar-collapse" id="top-navbar-1">
 						<ul class="nav navbar-nav">
 <!--MENU START-->
-              <li><a href="index.html">Home</a></li>
-              <li><a href="events.html">Events</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="e4s-cl.html">E4S-CL</a></li>
-              <li><a href="DocPortal.html">Products</a></li>
-	      <li><a href="Deployments.html">Deployments</a></li>
-              <li><a href="policies.html">Policies</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="join.html">Join</a></li>
-	      <li><a href="documentation.html">Documentation</a></li>
-              <li><a class="btn btn-link-3" href="download.html">Download</a></li>
+                            <li><a href="index.html" style="font-size: 18px;">Home</a></li>
+                            <li><a href="use.html" style="font-size: 18px;">Using E4S</a></li>
+                            <li><a href="join.html" style="font-size: 18px;">Joining E4S</a></li>
+                            <li><a href="about.html" style="font-size: 18px;">About</a></li>
+                            <li><a href="contact.html" style="font-size: 18px;">Contact</a></li>
 <!--MENU END-->
 					</ul>
 					</div>
@@ -88,15 +82,39 @@
 
                     <div class="row">
                         <div class="col-sm-12 section-description" align=left>
-				E4S represents a growing community of HPC software products. Please <a href="contact.html">contact us</a> if you would like your product to be a part of E4S.
-				<br><br>
-				<b>Pre-requisite:</b> Justification for being included. The product must have some value or strong potential value to the HPC community. In other words, it must make sense for the product to belong to E4S.
-				<br>
-				<b>Level 0:</b> Be listed in the E4S Spack installation script and be buildable in all E4S target environments. The list of Spack recipes for E4S is <a href="https://github.com/E4S-Project/e4s/tree/master/environments">here</a>.
-<br>
-<b>Level 1:</b> Be present in the <a href="DocPortal.html">DocPortal</a>. To achieve this, we need a URL to your main repo to add to <a href="https://github.com/E4S-Project/E4S-Documenter/blob/master/data/e4s_products.yaml">this list</a>.
-<br>
-<b>Level 2:</b> Satisfy all E4S <a href="https://e4s-project.github.io/policies.html">community policies</a>. Full satisfaction is not required at this time. We are still establishing a process. Note that derived requirements from E4S member packages are not required to satisfy community policies as long as they do not destabilize E4S builds or portability.
+                                <p>The Extreme-scale Scientific Software Stack (E4S) offers multiple methods for deploying its comprehensive collection of HPC and AI software packages. Below is an overview of these deployment options:</p>
+                                <ul>
+                                    <li><strong>From-Source Builds:</strong>
+                                        <ul>
+                                            <li>E4S utilizes <a href="https://spack.io">Spack</a>, a flexible package manager, to facilitate building software directly from source. This approach allows users to customize builds according to their specific system architectures and requirements. Detailed instructions for manual installation are available in the <a href="https://e4s-project.github.io/manual-installation.html">E4S Manual Installation Guide</a>.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Spack Build Caches:</strong>
+                                        <ul>
+                                            <li>To expedite the installation process, E4S provides pre-built binaries through Spack build caches. These caches contain binaries for major operating systems and architectures, enabling users to install software without the need for local compilation. More information can be found on the <a href="https://e4s-project.github.io/about.html">E4S About Page</a>.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Containers:</strong>
+                                        <ul>
+                                            <li>E4S offers containerized versions of its software stack, compatible with platforms such as Docker, Singularity, Shifter, and CharlieCloud. These containers provide a consistent and portable environment for running HPC and AI applications across diverse systems. The <a href="https://e4s-project.github.io/download.html">E4S Download Page</a> provides access to these container images.</li>
+                                        </ul>
+                                    </li>
+                                    <li><strong>Cloud Options:</strong>
+                                        <ul>
+                                            <li><strong>Amazon Web Services (AWS):</strong>
+                                                <ul>
+                                                    <li>E4S is available on AWS, allowing users to deploy the software stack on cloud-based infrastructure. This facilitates scalable and flexible computing resources for various workloads. Details about E4S on AWS can be found on the <a href="https://e4s-project.github.io">E4S Home Page</a>.</li>
+                                                </ul>
+                                            </li>
+                                            <li><strong>Google Cloud Platform (GCP):</strong>
+                                                <ul>
+                                                    <li>Users can also deploy E4S on GCP, leveraging Google's cloud services to run HPC and AI applications. This option provides access to high-performance virtual machines and storage solutions. Information regarding E4S on GCP is available on the <a href="https://e4s-project.github.io">E4S Home Page</a>.</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p>By offering these diverse deployment methods, E4S ensures flexibility and ease of use for researchers and developers working across various computing environments.</p>
                         </div>
                     </div>
 
