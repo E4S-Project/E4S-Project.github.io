@@ -332,9 +332,21 @@ versions of the Full Release packages listed above. Full-featured GPU-enabled co
 
 
 <div style="font-size: 0.9em;" class="row">
-	<h3>Continuous Integration Images</h3>
-	<p>These are barebones operating system images which contain only essential build tools and python packages needed by Spack.</p>
-<p>These images are intended to be used in continuous integration workflows where Spack is first cloned and then used to build and test software.</p>
+	<h3>Application-Specific Continuous Integration Images</h3>
+	<div class="col-sm-12">
+	<ul style="list-style-type: none; padding: 0;">
+		<li>ecpe4s/sollve-rocm6.3.0 <a href="https://hub.docker.com/r/ecpe4s/sollve-rocm6.3.0/tags"><img height="15" src="docker.png" /></a> </li>
+		<li>ecpe4s/sollve-cuda12.6.3-arm64 <a href="https://hub.docker.com/r/ecpe4s/sollve-cuda12.6.3-arm64/tags"><img height="15" src="docker.png" /></a></li>
+		<li>ecpe4s/sollve-cuda12.6.3-amd64 <a href="https://hub.docker.com/r/ecpe4s/sollve-cuda12.6.3-amd64/tags"><img height="15" src="docker.png" /></a> </li>
+		<li>ecpe4s/trilinos-sycl <a href="https://hub.docker.com/r/ecpe4s/trilinos-sycl/tags"><img height="15" src="docker.png" /></a></li>
+		<li>ecpe4s/trilinos-ci-rocm6.2.1 <a href="https://hub.docker.com/r/ecpe4s/trilinos-ci-rocm6.2.1/tags"><img height="15" src="docker.png" /></a> </li>
+		<li>ecpe4s/trilinos-ci-cuda12.2.2 <a href="https://hub.docker.com/r/ecpe4s/trilinos-ci-cuda12.2.2/tags"><img height="15" src="docker.png" /></a></li>
+		<li>ecpe4s/trilinos-ci-arm64-cuda12 <a href="https://hub.docker.com/r/ecpe4s/trilinos-ci-arm64-cuda12/tags"><img height="15" src="docker.png" /></a></li>
+		</ul>
+		<br /><br />
+
+	</div>
+	<h3>Minimal Continuous Integration Images</h3>
 <div class="col-sm-4">
 <h5 style="margin-top:25px;">X86_64</h5>
 <ul style="list-style-type: none; padding: 0;">
