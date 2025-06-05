@@ -1,5 +1,5 @@
 #!/bin/bash
-htmlWithMenus="Deployments.html DocPortal.html about.html contact.html documentation.html  download.html events.html faq.html index.html join.html policies.html e4s-cl.html"
+htmlWithMenus="Deployments.html DocPortal.html about.html contact.html documentation.html  download.html events.html faq.html index.html join.html policies.html e4s-cl.html use.html"
 
 lead='^<!--MENU START-->$'
 tail='^<!--MENU END-->$'
