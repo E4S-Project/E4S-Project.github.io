@@ -14,7 +14,7 @@
 
 [E4S Model Environment Repository](https://github.com/E4S-Project/e4s)
 
-[E4S 24.11 Model Environments](https://github.com/E4S-Project/e4s/tree/master/environments/24.11)
+[E4S 25.06 Model Environments](https://github.com/E4S-Project/e4s/tree/master/environments/25.06)
 
 [E4S Homepage](https://e4s.io)
 
@@ -23,7 +23,7 @@
 Clone Spack, checkout the appropriate release branch, if desired, and source the Spack `setup-env.sh` script.
 ```
 $> git clone https://github.com/spack/spack
-$> (cd spack && git checkout e4s-24.11)
+$> (cd spack && git checkout e4s-25.06)
 $> . spack/share/spack/setup-env.sh
 ```
 
@@ -31,11 +31,11 @@ Configure Spack to know where the E4S Build Cache is located. You can use either
 
 Release-specific:
 ```
-$> spack mirror add E4S https://cache.e4s.io/24.11
+$> spack mirror add E4S https://cache.e4s.io/25.06
 $> spack buildcache keys -it
 ```
 
-Obtain a copy of the E4S Model Environment for the E4S release you are interested in, and rename it to `spack.yaml`, if needed. These are found in the [E4S Environment Repository](https://github.com/E4S-Project/e4s/tree/master/environments). For this example, we will use the [E4S 24.11 Model Environment for X86_64 Systems with NVIDIA GPUs](https://github.com/E4S-Project/e4s/tree/master/environments/24.11/amd64-gcc-cuda-ubuntu22.04).
+Obtain a copy of the E4S Model Environment for the E4S release you are interested in, and rename it to `spack.yaml`, if needed. These are found in the [E4S Environment Repository](https://github.com/E4S-Project/e4s/tree/master/environments). For this example, we will use the [E4S 25.06 Model Environment for X86_64 Systems with NVIDIA GPUs](https://github.com/E4S-Project/e4s/tree/master/environments/25.06/amd64-gcc-cuda-ubuntu22.04).
 
 Tweak the model environment so that it suits your needs: remove packages you aren't interested in, select the correct GPU variants, specify the microarchitecture target and compiler selections, as needed. Once modified, you can concretize the environment, which you should do from the same directory that contains your environment.
 ```
