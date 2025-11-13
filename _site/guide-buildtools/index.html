@@ -1,0 +1,554 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>E4S Build Tools Guide - E4S - An HPC-AI Software Ecosystem for Science</title>
+<meta name="description" content="Curated HPC-AI scientific libraries and tools for advanced scientific computing applications.">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="E4S - An HPC-AI Software Ecosystem for Science">
+<meta property="og:title" content="E4S Build Tools Guide">
+<meta property="og:url" content="http://localhost:4000/guide-buildtools/">
+
+
+  <meta property="og:description" content="Curated HPC-AI scientific libraries and tools for advanced scientific computing applications.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/E4S-no-background.png">
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/guide-buildtools/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3DB1WP6Q3G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3DB1WP6Q3G');
+</script>
+
+<style>
+td.details-control {
+  background: url('/Resources/details_open.png') no-repeat center center;
+  cursor: pointer;
+}
+tr.shown td.details-control {
+  background: url('/Resources/details_close.png') no-repeat center center;
+}
+</style>
+
+  </head>
+
+  <body class="layout--single wide" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/E4S-no-background.png" alt="E4S - An HPC-AI Software Ecosystem for Science"></a>
+        
+        <a class="site-title" href="/">
+          E4S - An HPC-AI Software Ecosystem for Science
+          <span class="site-subtitle">Advancing Science through Trusted Software</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/use/"
+                
+                
+              >Use E4S</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/join/"
+                
+                
+              >Join E4S</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >About E4S</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/contact/"
+                
+                
+              >Contact Us</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <span class="nav__sub-title">E4S Guides</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/guide-e4s-bot/">E4S Guide Bot</a></li>
+            
+              <li><a href="/guide-buildtools/" class="active">Build Tools Guide</a></li>
+            
+              <li><a href="/guide-programmingsystems/">Programming Systems Guide</a></li>
+            
+              <li><a href="/guide-perftools/">Performance Tools Guide</a></li>
+            
+              <li><a href="/guide-mathlibs/">Math Libraries Guide</a></li>
+            
+              <li><a href="/guide-dav/">Data & Visualization Guide</a></li>
+            
+              <li><a href="/guide-aiml/">AI & Machine Learning Guide</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="E4S Build Tools Guide">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4000/guide-buildtools/" itemprop="url">E4S Build Tools Guide
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p style="text-align:center;">
+    Construct your prompt from the instructions below then use the E4S Guide Bot
+</p>
+<style>
+/* E4S theme-adaptive pill button with white text */
+.btn--e4s {
+  background-color: var(--e4s-blue);
+  color: #ffffff !important;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.6em 1.6em;
+  font-weight: 600;
+  display: inline-block;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  text-decoration: none;
+}
+.btn--e4s:hover,
+.btn--e4s:focus {
+  background-color: var(--e4s-blue-hover);
+  color: #ffffff !important;
+  text-decoration: none;
+}
+:root {
+  --e4s-blue: #0092ca;
+  --e4s-blue-hover: #006b99;
+}
+[data-theme="dark"] {
+  --e4s-blue: #33b8f2;
+  --e4s-blue-hover: #66ccff;
+}
+</style>
+
+<p style="text-align:center;">
+  <a href="https://chatgpt.com/g/g-69010fb294b0819195727cf1a7ccc792-software-ecosystem-for-science-guide" class="btn btn--e4s">Chat with the E4S Guide Bot</a>
+</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>E4S includes a variety of build tools that simplify the process of configuring, compiling, and installing scientific software across diverse high-performance computing (HPC) environments. Build tools are a critical part of the software lifecycle, ensuring reproducible builds, compatibility with system architectures, and integration with package managers such as Spack.</p>
+
+<p>Selecting the right build tool depends on factors such as portability needs, dependency complexity, supported platforms, and project maturity. Some tools focus on package-level builds (like CMake or Autotools), while others manage complex dependency graphs (like Spack or EasyBuild). E4S supports and tests a wide range of build tools across architectures including x86, ARM, POWER, and GPUs from NVIDIA, AMD, and Intel.</p>
+
+<blockquote>
+  <p><strong>Example:</strong>
+I am building a scientific simulation code that will run on both local workstations and leadership-class HPC systems using AMD and NVIDIA GPUs.<br />
+I need reproducible builds that integrate with Spack and support cross-compilation for GPU targets.<br />
+Ease of use and automated dependency management are important, but I also need fine control over compiler flags for performance tuning.<br />
+My code uses CMake for configuration, but I want to explore whether another tool might simplify dependency management and multi-architecture builds.<br />
+Please recommend a build tool or toolchain configuration based on these attributes:</p>
+  <ul>
+    <li>Portability: High</li>
+    <li>Dependency Management: Automated</li>
+    <li>Integration with Package Managers: Required</li>
+    <li>Reproducibility: High</li>
+    <li>Hardware Tuning: Required for GPU optimization</li>
+    <li>Parallel Build Support: Yes</li>
+    <li>Debugging Support: Helpful for research prototyping</li>
+  </ul>
+</blockquote>
+
+<p>The tables below provide attributes that can help a newcomer or an automated assistant select an appropriate build tool for a given environment or development scenario.</p>
+
+<hr />
+
+<h2 id="broadly-meaningful-attributes">Broadly Meaningful Attributes</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Portability</td>
+      <td>The ability of the build tool to operate across multiple architectures and operating systems.</td>
+    </tr>
+    <tr>
+      <td>Ease of Use</td>
+      <td>How straightforward it is to configure, build, and install software with minimal manual intervention.</td>
+    </tr>
+    <tr>
+      <td>Dependency Management</td>
+      <td>How well the tool manages software dependencies and ensures version compatibility.</td>
+    </tr>
+    <tr>
+      <td>Integration with Package Managers</td>
+      <td>The degree to which the build tool integrates with higher-level systems such as Spack or system package managers.</td>
+    </tr>
+    <tr>
+      <td>Reproducibility</td>
+      <td>The ability to recreate the same build environment and outputs consistently.</td>
+    </tr>
+    <tr>
+      <td>Build Customization</td>
+      <td>The flexibility in specifying build options, compiler flags, and target architectures.</td>
+    </tr>
+    <tr>
+      <td>Parallel Build Support</td>
+      <td>The extent to which the tool supports multi-threaded or distributed builds.</td>
+    </tr>
+    <tr>
+      <td>Documentation and Community</td>
+      <td>Availability of documentation, tutorials, and an active community or ecosystem.</td>
+    </tr>
+    <tr>
+      <td>Licensing and Openness</td>
+      <td>Whether the tool is open source and compliant with E4S’s open-science principles.</td>
+    </tr>
+    <tr>
+      <td>Interoperability</td>
+      <td>Compatibility with multiple compilers (GNU, LLVM, Intel, Cray, etc.) and runtime environments.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="situation-specific-attributes">Situation-Specific Attributes</h2>
+
+<h3 id="for-portable-software-development">For Portable Software Development</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cross-Compilation Support</td>
+      <td>Ability to build for different target architectures from a single development environment.</td>
+    </tr>
+    <tr>
+      <td>Toolchain Integration</td>
+      <td>Compatibility with major compiler toolchains (e.g., GCC, LLVM, oneAPI, ROCm).</td>
+    </tr>
+    <tr>
+      <td>Environment Modules Support</td>
+      <td>Ease of integration with environment modules used on HPC systems.</td>
+    </tr>
+    <tr>
+      <td>Platform Autodetection</td>
+      <td>Ability to detect available hardware and adjust build configuration automatically.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="for-multi-package-or-ecosystem-builds">For Multi-Package or Ecosystem Builds</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dependency Graph Handling</td>
+      <td>Ability to manage complex dependency trees automatically.</td>
+    </tr>
+    <tr>
+      <td>Version Control Integration</td>
+      <td>Support for Git, GitHub, or GitLab workflows in building and testing multiple packages.</td>
+    </tr>
+    <tr>
+      <td>Continuous Integration Compatibility</td>
+      <td>Integration with CI systems such as GitHub Actions, GitLab CI, or Frank CI.</td>
+    </tr>
+    <tr>
+      <td>Binary Cache Management</td>
+      <td>Ability to store and reuse build artifacts to reduce rebuild times.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="for-performance-optimization-and-hardware-specific-builds">For Performance Optimization and Hardware-Specific Builds</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hardware Tuning</td>
+      <td>Support for architecture-specific optimizations (e.g., vectorization, GPU acceleration).</td>
+    </tr>
+    <tr>
+      <td>Compiler-Specific Optimization</td>
+      <td>Ability to leverage vendor compilers for improved performance.</td>
+    </tr>
+    <tr>
+      <td>Benchmark Integration</td>
+      <td>Capability to build with or for performance benchmarking frameworks (e.g., HPCG, ReFrame).</td>
+    </tr>
+    <tr>
+      <td>SDK Awareness</td>
+      <td>Integration with vendor SDKs (e.g., CUDA, ROCm, oneAPI).</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="for-development-and-research-prototyping">For Development and Research Prototyping</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Incremental Build Support</td>
+      <td>Ability to rebuild only changed components during development.</td>
+    </tr>
+    <tr>
+      <td>Debugging Support</td>
+      <td>Integration with debuggers and profilers.</td>
+    </tr>
+    <tr>
+      <td>Build Logging and Diagnostics</td>
+      <td>Quality of output logs and error reporting to aid troubleshooting.</td>
+    </tr>
+    <tr>
+      <td>Scriptability</td>
+      <td>Ability to automate builds via Python or shell scripting interfaces.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="for-large-scale-or-production-deployment">For Large-Scale or Production Deployment</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Scalability</td>
+      <td>Ability to handle large-scale builds on distributed systems.</td>
+    </tr>
+    <tr>
+      <td>Security and Verification</td>
+      <td>Availability of checksums, cryptographic signing, or provenance metadata.</td>
+    </tr>
+    <tr>
+      <td>Policy Compliance</td>
+      <td>Support for site-specific build policies and reproducibility requirements.</td>
+    </tr>
+    <tr>
+      <td>Lifecycle Management</td>
+      <td>Tools or hooks for maintaining, upgrading, and deprecating software builds.</td>
+    </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <footer class="site-footer" style="text-align:center; font-size:0.85em; margin-top:2em;">
+  © 2025 E4S Project, a Series of LF Projects, LLC.  For website terms of use, trademark policy and other project policies please see
+  <a href="https://lfprojects.org" target="_blank" rel="noopener">lfprojects.org</a>. Supported by the U.S. Department of Energy Office of Advanced Scientific Computing Research.
+</footer>
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

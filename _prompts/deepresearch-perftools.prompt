@@ -1,0 +1,5 @@
+Use the detailed information from the 25.06 release of E4S as described in these slides: https://oaciss.uoregon.edu/e4s/talks/E4S_25.06.pdf
+
+Produce a report that collects the experiences of scientific software users of the performance analysis libraries and tools that are part of E4S. Pay special attention to content that helps the reader understand when to use one library or tool instead of another, and characterize in broad terms when one library or tool might be preferred over another. Take into account programming language, target problem class, problem size, availability on GPUs, and portability across GPU platforms.
+
+Example products are TAU, HPCToolkit, and PAPI but include all related products that are part of E4S

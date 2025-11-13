@@ -1,0 +1,443 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>E4S Build Tools - E4S - An HPC-AI Software Ecosystem for Science</title>
+<meta name="description" content="Curated HPC-AI scientific libraries and tools for advanced scientific computing applications.">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="E4S - An HPC-AI Software Ecosystem for Science">
+<meta property="og:title" content="E4S Build Tools">
+<meta property="og:url" content="http://localhost:4000/e4s-buildtools/">
+
+
+  <meta property="og:description" content="Curated HPC-AI scientific libraries and tools for advanced scientific computing applications.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/E4S-no-background.png">
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/e4s-buildtools/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3DB1WP6Q3G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3DB1WP6Q3G');
+</script>
+
+<style>
+td.details-control {
+  background: url('/Resources/details_open.png') no-repeat center center;
+  cursor: pointer;
+}
+tr.shown td.details-control {
+  background: url('/Resources/details_close.png') no-repeat center center;
+}
+</style>
+
+  </head>
+
+  <body class="layout--single wide" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/E4S-no-background.png" alt="E4S - An HPC-AI Software Ecosystem for Science"></a>
+        
+        <a class="site-title" href="/">
+          E4S - An HPC-AI Software Ecosystem for Science
+          <span class="site-subtitle">Advancing Science through Trusted Software</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/use/"
+                
+                
+              >Use E4S</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/join/"
+                
+                
+              >Join E4S</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >About E4S</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/contact/"
+                
+                
+              >Contact Us</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <span class="nav__sub-title">E4S Product Families</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/about-product-families/">Overview</a></li>
+            
+              <li><a href="/e4s-buildtools/" class="active">Build Tools</a></li>
+            
+              <li><a href="/e4s-programmingsystems/">Programming Systems</a></li>
+            
+              <li><a href="/e4s-perftools/">Performance Tools</a></li>
+            
+              <li><a href="/e4s-mathlibs/">Math Libraries</a></li>
+            
+              <li><a href="/e4s-dav/">Data & Visualization</a></li>
+            
+              <li><a href="/e4s-aiml/">AI & Machine Learning</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="E4S Build Tools">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4000/e4s-buildtools/" itemprop="url">E4S Build Tools
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h2 id="introduction">Introduction</h2>
+
+<p>E4S provides a curated collection of high-performance software tools, libraries, and frameworks that enable reproducible and portable scientific computing across diverse architectures. To support its extensive ecosystem of interoperable software, E4S relies on a set of sophisticated build tools that automate, manage, and verify software installation and integration across systems ranging from laptops to leadership-class supercomputers.</p>
+
+<p>Build tools are essential to the E4S mission because they enable consistent deployment of complex software stacks, ensure dependency correctness, and streamline the path from development to production. They allow developers and facility operators to reproduce builds, manage multiple configurations, and provide scalable and maintainable environments for scientific applications.</p>
+
+<h2 id="value-of-e4s-build-tools">Value of E4S Build Tools</h2>
+
+<p>The build tools provided and used by E4S represent years of refinement in automating and standardizing software deployment for scientific computing. Their value includes:</p>
+
+<ul>
+  <li><strong>Reproducibility:</strong> Build tools such as Spack capture dependency graphs, compiler options, and version constraints, ensuring that a software environment can be rebuilt identically on another system.</li>
+  <li><strong>Portability:</strong> E4S build tools abstract away platform-specific details, enabling applications to be easily built across HPC centers, clouds, and workstations.</li>
+  <li><strong>Integration:</strong> By leveraging tools like BuildCache, Spack environments, and Spack recipes, E4S achieves consistent integration across its 100+ supported packages.</li>
+  <li><strong>Productivity:</strong> Developers can focus on improving scientific software rather than struggling with manual build processes.</li>
+  <li><strong>Verification:</strong> Build and test tools within E4S ensure that software builds are validated for correctness and performance through continuous integration pipelines and facility-specific tests.</li>
+</ul>
+
+<p>These capabilities are key to maintaining the reliability and scalability expected from DOE-supported scientific software ecosystems.</p>
+
+<hr />
+
+<h2 id="package-level-build-tools">Package-level Build Tools</h2>
+
+<p>These tools manage the compilation and configuration of individual packages, focusing on reproducible and portable builds within E4S.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>Description</th>
+      <th>Role in E4S</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CMake</td>
+      <td>Cross-platform build system generator that defines software builds using platform-independent configuration files.</td>
+      <td>Widely used across E4S projects to define build rules and dependency logic.</td>
+    </tr>
+    <tr>
+      <td>Autotools</td>
+      <td>Classic GNU build system that provides configuration scripts (<code class="language-plaintext highlighter-rouge">configure</code>, <code class="language-plaintext highlighter-rouge">make</code>, <code class="language-plaintext highlighter-rouge">make install</code>).</td>
+      <td>Used by legacy and some core HPC libraries for standardized build automation.</td>
+    </tr>
+    <tr>
+      <td>Ninja</td>
+      <td>Lightweight build system focused on speed and incremental builds.</td>
+      <td>Often used under CMake for high-performance parallel compilation.</td>
+    </tr>
+    <tr>
+      <td>Meson</td>
+      <td>Modern build system emphasizing speed and user-friendliness.</td>
+      <td>Supported in select E4S packages for flexible and modular build definitions.</td>
+    </tr>
+    <tr>
+      <td>Make</td>
+      <td>Traditional build automation tool using Makefiles.</td>
+      <td>Continues to serve many HPC libraries and utilities within E4S.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="package-management-tools">Package Management Tools</h2>
+
+<p>These tools provide higher-level orchestration for dependency resolution, environment management, and reproducible builds across the full E4S software stack.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>Description</th>
+      <th>Role in E4S</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Spack</td>
+      <td>Flexible package manager for HPC that builds and manages multiple versions and configurations of software.</td>
+      <td>Central to E4S; drives the build, packaging, and dependency management for all supported E4S products.</td>
+    </tr>
+    <tr>
+      <td>BuildCache</td>
+      <td>Spack subsystem that stores and distributes pre-built binaries.</td>
+      <td>Enables fast installation of E4S software stacks at HPC facilities.</td>
+    </tr>
+    <tr>
+      <td>Spack Environments</td>
+      <td>Configuration mechanism for building consistent sets of packages.</td>
+      <td>Used by E4S to define entire software stack builds.</td>
+    </tr>
+    <tr>
+      <td>Spack Test and CI Framework</td>
+      <td>Automated build and test pipeline integrated with GitHub and facility CI systems.</td>
+      <td>Ensures quality and correctness across builds of the E4S portfolio.</td>
+    </tr>
+    <tr>
+      <td>EasyBuild</td>
+      <td>Alternative build and installation framework for scientific software.</td>
+      <td>Supported experimentally and occasionally compared with Spack for community collaboration.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="related-tools">Related Tools</h2>
+
+<p>These tools complement the build and package management workflow by providing integration, validation, or visualization features that enhance the E4S ecosystem.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool</th>
+      <th>Description</th>
+      <th>Role in E4S</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ReFrame</td>
+      <td>Framework for regression testing and continuous integration in HPC environments.</td>
+      <td>Used by facilities and E4S teams for automated validation of installed software stacks.</td>
+    </tr>
+    <tr>
+      <td>GitLab CI / GitHub Actions</td>
+      <td>Continuous integration systems that automate builds and testing workflows.</td>
+      <td>Integrated into the E4S build and release process.</td>
+    </tr>
+    <tr>
+      <td>Docker / Podman</td>
+      <td>Containerization tools for building portable software environments.</td>
+      <td>Used for E4S container images and build reproducibility.</td>
+    </tr>
+    <tr>
+      <td>Singularity / Apptainer</td>
+      <td>HPC-optimized container runtime supporting portable execution.</td>
+      <td>Used to deploy E4S software stacks in controlled environments.</td>
+    </tr>
+    <tr>
+      <td>Lmod</td>
+      <td>Lua-based environment module system for managing user environments.</td>
+      <td>Works with Spack-generated modules to provide dynamic software environments.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="summary">Summary</h2>
+
+<p>The E4S build ecosystem provides an integrated set of tools that automate the construction, management, and distribution of complex scientific software stacks. At its core, Spack drives reproducible builds across diverse architectures, while auxiliary tools such as CMake, BuildCache, ReFrame, and containerization technologies ensure that the resulting software is portable, tested, and ready for use at scale. Together, these tools form the backbone of a sustainable, interoperable, and high-performance software ecosystem that supports the scientific computing community.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <footer class="site-footer" style="text-align:center; font-size:0.85em; margin-top:2em;">
+  © 2025 E4S Project, a Series of LF Projects, LLC.  For website terms of use, trademark policy and other project policies please see
+  <a href="https://lfprojects.org" target="_blank" rel="noopener">lfprojects.org</a>. Supported by the U.S. Department of Energy Office of Advanced Scientific Computing Research.
+</footer>
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

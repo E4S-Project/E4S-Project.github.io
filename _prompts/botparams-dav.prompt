@@ -1,0 +1,28 @@
+Use the detailed information from the 25.06 release of E4S as described in these slides: https://oaciss.uoregon.edu/e4s/talks/E4S_25.06.pdf
+
+Provide a newcomer a brief introduction to attributes that would help with selecting a suitable data and visualization library or tool.
+
+Provide one concrete example of a good prompt that defines some of these attributes.  Indent using the > symbol.
+
+After the introduction and example, produce a set of tables that list attributes along with their descriptions that would allow a user to define their attributes for their problem and their environment, and then allow a chatbot to help them select an appropriate product.
+
+Produce separate tables for:
+- Attributes that are broadly meaningful for data libraries and tools
+- Attributes that are appropriate for specific situations for data libraries and tools, organized by situation.
+ - Attributes that are broadly meaningful for visualization libraries and tools
+- Attributes that are appropriate for specific situations for visualization libraries and tools, organized by situation.   
+
+Generate this content as a markdown file with appropriate headings and subheadings. 
+
+- Ensure that there is an empty line between headings and the start of each table. 
+- Do not use bold text markup in the tables
+- Include the following metadata block at the top of the generated file:
+
+---
+layout: single
+title: "E4S Data & Visualization Libraries and Tools Guide"
+permalink: /guide-dav/
+classes: wide
+sidebar:
+  nav: "botmenu"
+---

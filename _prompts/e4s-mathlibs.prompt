@@ -1,0 +1,29 @@
+Use the detailed information from the 25.06 release of E4S as described in these slides: https://oaciss.uoregon.edu/e4s/talks/E4S_25.06.pdf
+
+Provide a newcomer an introduction to the math libraries supported by e4s, found at https:/e4s.io
+
+In addition to basic concepts, provide paragraphs on the following:
+- The value of using optimized libraries
+- Tables that briefly summarizes the main math libraries that are part of E4S.  Provide separate tables for
+    - meshing, discretizations, AMR
+    - Linear solvers
+    - eigensolvers
+    - Nonlinear solvers
+    - DAE/ODE solvers
+    - Mathematical optimization solvers
+    - Stochastic and other advanced capabilities
+
+Generate this content as a markdown file with appropriate headings and subheadings. 
+
+- Ensure that there is an empty line between headings and the start of each table. 
+- Do not use bold text markup in the tables
+Include the following metadata block at the top of the generated file:
+
+---
+layout: single
+title: "Math Libraries"
+permalink: /e4s-mathlibs/
+classes: wide
+sidebar:
+  nav: "productfamiliesmenu"
+---

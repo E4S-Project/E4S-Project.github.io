@@ -1,0 +1,574 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Finding and installing products using Spack - E4S - An HPC-AI Software Ecosystem for Science</title>
+<meta name="description" content="Curated HPC-AI scientific libraries and tools for advanced scientific computing applications.">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="E4S - An HPC-AI Software Ecosystem for Science">
+<meta property="og:title" content="Finding and installing products using Spack">
+<meta property="og:url" content="http://localhost:4000/spack-installation/">
+
+
+  <meta property="og:description" content="Curated HPC-AI scientific libraries and tools for advanced scientific computing applications.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/E4S-no-background.png">
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/spack-installation/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3DB1WP6Q3G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3DB1WP6Q3G');
+</script>
+
+<style>
+td.details-control {
+  background: url('/Resources/details_open.png') no-repeat center center;
+  cursor: pointer;
+}
+tr.shown td.details-control {
+  background: url('/Resources/details_close.png') no-repeat center center;
+}
+</style>
+
+  </head>
+
+  <body class="layout--single wide" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/E4S-no-background.png" alt="E4S - An HPC-AI Software Ecosystem for Science"></a>
+        
+        <a class="site-title" href="/">
+          E4S - An HPC-AI Software Ecosystem for Science
+          <span class="site-subtitle">Advancing Science through Trusted Software</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/use/"
+                
+                
+              >Use E4S</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/join/"
+                
+                
+              >Join E4S</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >About E4S</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/contact/"
+                
+                
+              >Contact Us</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <span class="nav__sub-title">Use E4S</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/use/">Overview</a></li>
+            
+              <li><a href="/guide-e4s-bot/">E4S Guide Bot</a></li>
+            
+              <li><a href="/documentation/">E4S Documentation</a></li>
+            
+              <li><a href="/product-catalog/">E4S Product Catalog</a></li>
+            
+              <li><a href="/spack-installation/" class="active">Finding and Installing with Spack</a></li>
+            
+              <li><a href="/spack-e4s-installation/">E4S-Specific Spack Installation</a></li>
+            
+              <li><a href="/container-download/">E4S Container Download</a></li>
+            
+              <li><a href="/container-installation/">E4S Container Installation</a></li>
+            
+              <li><a href="/container-launch/">E4S Container Launch</a></li>
+            
+              <li><a href="/test-with-e4s/">Test with E4S</a></li>
+            
+              <li><a href="https://www.paratoolspro.com">ParaTools Pro for E4S™</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Finding and installing products using Spack">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4000/spack-installation/" itemprop="url">Finding and installing products using Spack
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h1 id="introduction">Introduction</h1>
+
+<p>Spack is a flexible package manager designed for scientific software. It supports multiple compiler versions, dependency resolution, build variants, and installation into isolated environments. This guide provides step-by-step instructions on how to <strong>search for</strong>, <strong>inspect</strong>, and <strong>install</strong> libraries and tools using Spack.</p>
+
+<h3 id="from-source-with-spack">From source with Spack</h3>
+
+<p><a href="https://spack.readthedocs.io/en/latest/">Visit the Spack Project</a></p>
+
+<p>Spack contains packages for all of the products listed in the E4S 25.06 Full Release category. General instructions for building software with Spack can be found at the Spack website. Questions concerning building those packages are deferred to the associated package development team.</p>
+
+<p>Some quickstart instructions are below.</p>
+
+<hr />
+
+<h2 id="1-set-up-spack">1. Set Up Spack</h2>
+
+<h3 id="11-clone-spack">1.1 Clone Spack</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git clone https://github.com/spack/spack.git
+<span class="nb">cd </span>spack
+</code></pre></div></div>
+
+<h3 id="12-add-spack-to-your-shell">1.2 Add Spack to your shell</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">.</span> share/spack/setup-env.sh
+</code></pre></div></div>
+
+<p>To load Spack automatically on startup, add the above line to your shell profile (e.g., <code class="language-plaintext highlighter-rouge">~/.bashrc</code>, <code class="language-plaintext highlighter-rouge">~/.zshrc</code>).</p>
+
+<hr />
+
+<h2 id="2-update-spack-recommended">2. Update Spack (Recommended)</h2>
+
+<p>Keeping Spack up to date ensures access to the latest package recipes:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack update
+spack <span class="nb">install</span> <span class="nt">--refresh</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="3-finding-libraries-and-tools">3. Finding Libraries and Tools</h2>
+
+<h3 id="31-basic-search">3.1 Basic search</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack search &lt;name_or_keyword&gt;
+</code></pre></div></div>
+<p>Example:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack search mpi
+</code></pre></div></div>
+
+<h3 id="32-fuzzy-search">3.2 Fuzzy search</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack search kokkos
+</code></pre></div></div>
+
+<h3 id="33-list-all-packages">3.3 List all packages</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack list
+</code></pre></div></div>
+<h3 id="33-list-all-packages-in-e4s">3.3 List all packages in E4S</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack list <span class="nt">--tag</span> e4s
+</code></pre></div></div>
+
+<h2 id="4-inspecting-package-details">4. Inspecting Package Details</h2>
+
+<h3 id="41-show-detailed-information">4.1 Show detailed information</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack info &lt;package&gt;
+</code></pre></div></div>
+<p>This displays:</p>
+<ul>
+  <li>Description</li>
+  <li>Available versions</li>
+  <li>Variants (options)</li>
+  <li>Dependencies</li>
+  <li>Maintainers</li>
+</ul>
+
+<p>Example:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack info hdf5
+</code></pre></div></div>
+
+<h3 id="42-view-available-versions">4.2 View available versions</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack versions &lt;package&gt;
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="5-customizing-builds-with-variants">5. Customizing Builds with Variants</h2>
+
+<p>Most scientific software has optional features. Use <code class="language-plaintext highlighter-rouge">+</code> to enable and <code class="language-plaintext highlighter-rouge">~</code> to disable features.</p>
+
+<p>Example: Enable MPI and threading in HDF5</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack <span class="nb">install </span>hdf5 +mpi +threadsafe
+</code></pre></div></div>
+
+<p>Example: Disable shared libraries</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack <span class="nb">install </span>trilinos ~shared
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="6-selecting-compilers">6. Selecting Compilers</h2>
+
+<h3 id="61-list-available-compilers">6.1 List available compilers</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack compilers
+</code></pre></div></div>
+
+<h3 id="62-add-a-new-compiler">6.2 Add a new compiler</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack compiler find
+</code></pre></div></div>
+
+<h3 id="63-install-with-a-specific-compiler">6.3 Install with a specific compiler</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack <span class="nb">install </span>kokkos %gcc@12.2.0
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="7-managing-dependencies">7. Managing Dependencies</h2>
+
+<p>Spack resolves dependencies automatically. To view the dependency tree:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack spec &lt;package&gt;
+</code></pre></div></div>
+<p>Example:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack spec kokkos +cuda
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="8-installing-packages">8. Installing Packages</h2>
+
+<h3 id="81-basic-installation">8.1 Basic installation</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack <span class="nb">install</span> &lt;package&gt;
+</code></pre></div></div>
+
+<p>#E# 8.2 Install a specific version</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack <span class="nb">install </span>fftw@3.3.10
+</code></pre></div></div>
+
+<h3 id="83-install-with-variants-and-compiler">8.3 Install with variants and compiler</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack <span class="nb">install </span>petsc +mpi +debug %gcc@11.3.0
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="9-using-installed-packages">9. Using Installed Packages</h2>
+
+<h3 id="91-view-installed-packages">9.1 View installed packages</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack find
+spack find <span class="nt">-d</span>   <span class="c"># include dependencies</span>
+</code></pre></div></div>
+
+<h3 id="92-load-a-package-into-your-environment">9.2 Load a package into your environment</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack load &lt;package&gt;
+</code></pre></div></div>
+
+<h3 id="93-unload-a-package">9.3 Unload a package</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack unload &lt;package&gt;
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="10-using-environments-recommended">10. Using Environments (Recommended)</h2>
+
+<p>Spack environments let you manage sets of packages together.</p>
+
+<h3 id="101-create-an-environment">10.1 Create an environment</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack <span class="nb">env </span>create myenv
+spack <span class="nb">env </span>activate myenv
+</code></pre></div></div>
+
+<h3 id="102-add-and-install-packages">10.2 Add and install packages</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack add trilinos +mpi
+spack add kokkos +cuda
+spack <span class="nb">install</span>
+</code></pre></div></div>
+
+<h3 id="103-view-environment-packages">10.3 View environment packages</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack find
+</code></pre></div></div>
+
+<h3 id="104-deactivate-environment">10.4 Deactivate environment</h3>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack <span class="nb">env </span>deactivate
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="11-using-binary-caches-faster-installs">11. Using Binary Caches (Faster Installs)</h2>
+
+<p>To see available prebuilt binaries:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack buildcache list
+</code></pre></div></div>
+
+<p>Spack will use binaries automatically if available.</p>
+
+<hr />
+
+<h2 id="12-troubleshooting">12. Troubleshooting</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Issue</th>
+      <th>Solution</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Build failed</td>
+      <td><code class="language-plaintext highlighter-rouge">spack -d install &lt;pkg&gt;</code> for debug output</td>
+    </tr>
+    <tr>
+      <td>Wrong compiler used</td>
+      <td>Specify <code class="language-plaintext highlighter-rouge">%compiler</code> explicitly</td>
+    </tr>
+    <tr>
+      <td>Dependency mismatch</td>
+      <td>Check with <code class="language-plaintext highlighter-rouge">spack spec &lt;pkg&gt;</code></td>
+    </tr>
+    <tr>
+      <td>Clean build</td>
+      <td><code class="language-plaintext highlighter-rouge">spack clean --all</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="13-advanced-tips">13. Advanced Tips</h2>
+
+<ul>
+  <li><strong>Search by tags</strong>:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack list <span class="nt">--tags</span><span class="o">=</span>math
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Find reverse dependencies</strong>:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack dependents &lt;package&gt;
+</code></pre></div>    </div>
+  </li>
+  <li><strong>Get help</strong>:
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>spack <span class="nb">help
+</span>spack <span class="nb">help install</span>
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="14-summary-workflow">14. Summary Workflow</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Find a package</span>
+spack search &lt;name&gt;
+
+<span class="c"># Inspect it</span>
+spack info &lt;name&gt;
+
+<span class="c"># Customize &amp; verify</span>
+spack spec &lt;name +options %compiler@version&gt;
+
+<span class="c"># Install</span>
+spack <span class="nb">install</span> &lt;name +options %compiler@version&gt;
+
+<span class="c"># Load for use</span>
+spack load &lt;name&gt;
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="15-additional-resources">15. Additional Resources</h2>
+
+<ul>
+  <li>Official documentation: https://spack.readthedocs.io</li>
+  <li>Package index: https://packages.spack.io</li>
+  <li>Tutorials: https://spack.io/tutorials</li>
+  <li>GitHub: https://github.com/spack/spack</li>
+</ul>
+
+<hr />
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Spack makes it easy to discover, configure, and install complex scientific software stacks. By understanding how to search for packages, inspect build options, control compilers and dependencies, and manage environments, you can consistently build powerful and reproducible software configurations.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <footer class="site-footer" style="text-align:center; font-size:0.85em; margin-top:2em;">
+  © 2025 E4S Project, a Series of LF Projects, LLC.  For website terms of use, trademark policy and other project policies please see
+  <a href="https://lfprojects.org" target="_blank" rel="noopener">lfprojects.org</a>. Supported by the U.S. Department of Energy Office of Advanced Scientific Computing Research.
+</footer>
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

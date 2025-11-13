@@ -1,0 +1,32 @@
+<style>
+/* E4S theme-adaptive pill button with white text */
+.btn--e4s {
+  background-color: var(--e4s-blue);
+  color: #ffffff !important;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.6em 1.6em;
+  font-weight: 600;
+  display: inline-block;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  text-decoration: none;
+}
+.btn--e4s:hover,
+.btn--e4s:focus {
+  background-color: var(--e4s-blue-hover);
+  color: #ffffff !important;
+  text-decoration: none;
+}
+:root {
+  --e4s-blue: #0092ca;
+  --e4s-blue-hover: #006b99;
+}
+[data-theme="dark"] {
+  --e4s-blue: #33b8f2;
+  --e4s-blue-hover: #66ccff;
+}
+</style>
+
+<p style="text-align:center;">
+  <a href="/product-catalog/" class="btn btn--e4s">Browse the E4S Product Catalog</a>
+</p>

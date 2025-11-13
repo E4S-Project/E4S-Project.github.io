@@ -1,3 +1,10 @@
+---
+layout: single
+title: "E4S Product Information"
+permalink: /ProductInfo/
+classes: wide
+---
+
 | Product | Home Page |
 | --- | --- |
 | ADIOS | [https://github.com/ornladios/ADIOS2](https://github.com/ornladios/ADIOS2) |
@@ -11,13 +18,13 @@
 | Caliper | [https://github.com/llnl/caliper](https://github.com/llnl/caliper) |
 | Catalyst | [https://www.paraview.org/in-situ/](https://www.paraview.org/in-situ/) |
 | CHAI | [https://github.com/LLNL/CHAI](https://github.com/LLNL/CHAI) |
-| CHiLL Autotuning Compiler |
+| CHiLL Autotuning Compiler | |
 | Cinema | [https://datascience.lanl.gov/Cinema.html](https://datascience.lanl.gov/Cinema.html) |
 | COOLR | [https://github.com/coolr-hpc](https://github.com/coolr-hpc) |
 | DARMA | [https://github.com/darma-tasking](https://github.com/darma-tasking) |
 | Darshan | [https://www.mcs.anl.gov/research/projects/darshan/](https://www.mcs.anl.gov/research/projects/darshan/) |
 | DTK | [https://github.com/ORNL-CEES/DataTransferKit](https://github.com/ORNL-CEES/DataTransferKit) |
-| Exascale Code Geneneration Toolkit |
+| Exascale Code Geneneration Toolkit | |
 | FAODEL | [https://github.com/faodel/faodel](https://github.com/faodel/faodel) |
 | Flang/LLVM Fortran compiler | [http://www.flang-compiler.org](http://www.flang-compiler.org/) |
 | FleCSI | [http://www.flecsi.org](http://www.flecsi.org/) |

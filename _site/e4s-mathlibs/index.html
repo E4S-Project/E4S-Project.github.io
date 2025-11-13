@@ -1,0 +1,592 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Math Libraries - E4S - An HPC-AI Software Ecosystem for Science</title>
+<meta name="description" content="Curated HPC-AI scientific libraries and tools for advanced scientific computing applications.">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="E4S - An HPC-AI Software Ecosystem for Science">
+<meta property="og:title" content="Math Libraries">
+<meta property="og:url" content="http://localhost:4000/e4s-mathlibs/">
+
+
+  <meta property="og:description" content="Curated HPC-AI scientific libraries and tools for advanced scientific computing applications.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/E4S-no-background.png">
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/e4s-mathlibs/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3DB1WP6Q3G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3DB1WP6Q3G');
+</script>
+
+<style>
+td.details-control {
+  background: url('/Resources/details_open.png') no-repeat center center;
+  cursor: pointer;
+}
+tr.shown td.details-control {
+  background: url('/Resources/details_close.png') no-repeat center center;
+}
+</style>
+
+  </head>
+
+  <body class="layout--single wide" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/E4S-no-background.png" alt="E4S - An HPC-AI Software Ecosystem for Science"></a>
+        
+        <a class="site-title" href="/">
+          E4S - An HPC-AI Software Ecosystem for Science
+          <span class="site-subtitle">Advancing Science through Trusted Software</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/use/"
+                
+                
+              >Use E4S</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/join/"
+                
+                
+              >Join E4S</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >About E4S</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/contact/"
+                
+                
+              >Contact Us</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <span class="nav__sub-title">E4S Product Families</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/about-product-families/">Overview</a></li>
+            
+              <li><a href="/e4s-buildtools/">Build Tools</a></li>
+            
+              <li><a href="/e4s-programmingsystems/">Programming Systems</a></li>
+            
+              <li><a href="/e4s-perftools/">Performance Tools</a></li>
+            
+              <li><a href="/e4s-mathlibs/" class="active">Math Libraries</a></li>
+            
+              <li><a href="/e4s-dav/">Data & Visualization</a></li>
+            
+              <li><a href="/e4s-aiml/">AI & Machine Learning</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Math Libraries">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4000/e4s-mathlibs/" itemprop="url">Math Libraries
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>E4S provides a curated collection of open-source, high-performance scientific software packages, including a robust set of mathematical libraries covering linear algebra, eigensolvers, nonlinear systems, ODE/DAE integrators, optimization, stochastic methods and other advanced capabilities.</p>
+
+<p>For newcomers, here’s a primer on how these math libraries fit into computational science workflows:</p>
+<ul>
+  <li>Mathematical libraries are the reusable building-blocks that provide capabilities such as solving large systems of algebraic equations, computing eigenvalues, integrating time-dependent differential equations, performing optimization, and handling stochastic or uncertainty-quantified models.</li>
+  <li>In an HPC or scientific-simulation context, these libraries are designed for parallel execution (distributed / shared memory, MPI, accelerators such as GPUs) and are often “performance portable” across architectures. E4S emphasizes this cross-platform support (Intel, AMD, Arm, NVIDIA, etc.).</li>
+  <li>From a user’s perspective, leveraging these libraries means you can build your application at a higher level (your physical model, discretisation, solver workflow) while relying on tested, optimized components for the “heavy lifting” of numerics.</li>
+</ul>
+
+<h2 id="the-value-of-using-optimized-libraries">The value of using optimized libraries</h2>
+<p>Why invest effort in using these optimized, community-supported math libraries rather than writing one’s own routines or using naïve implementations? A few key reasons:</p>
+
+<ol>
+  <li>
+    <p><strong>Performance and scalability</strong><br />
+Optimized libraries exploit architecture-specific optimisations (cache hierarchies, vectorisation, multi-threading, GPU acceleration, efficient MPI communication). In large-scale simulations the solver cost often dominates — using a tuned library can reduce runtime significantly and make problems feasible.</p>
+
+    <p>For example, high-performance linear algebra packages like PETSc or Trilinos provide scalable solvers and preconditioners that application developers would incur large effort to re-implement and tune.</p>
+  </li>
+  <li>
+    <p><strong>Robustness and correctness</strong><br />
+Mature libraries have been used, tested and debugged in many contexts (leading-edge HPC systems, real scientific applications, exascale projects). They include sophisticated features: adaptive error control, checkpoint/restart, sensitivity and adjoint support, GPU porting, etc. By using them you reduce your risk of subtle numerical bugs, memory leaks, performance bottlenecks, or poor parallel scaling.</p>
+  </li>
+  <li>
+    <p><strong>Productivity and maintainability</strong><br />
+Instead of investing time in re-writing numerical solvers, you focus on the domain model, discretisation, coupling, or scientific questions. When libraries evolve (new hardware, new algorithms, bug-fixes) you benefit via upstream updates. With E4S you get from-source builds, containers and pre-built binaries of these libraries, easing deployment and reproducibility.</p>
+  </li>
+  <li>
+    <p><strong>Portability across architectures</strong><br />
+Many optimized libraries within E4S are designed for performance portability: same high-level API but underlying backends support CPUs, GPUs, many-core accelerators, different memory hierarchies. This becomes critical when targeting leadership-class machines or pre-exascale/exascale systems. Applications that rely on hand‐rolled single‐threaded code may struggle to scale or migrate.</p>
+  </li>
+  <li>
+    <p><strong>Ecosystem interoperability and community support</strong><br />
+Using well-supported libraries links you to broader ecosystems (libraries for preconditioners, mesh tools, discretisation frameworks). The E4S stack intentionally fosters interoperability via packaging (Spack) and SDKs (e.g., the xSDK).</p>
+  </li>
+</ol>
+
+<p>In summary: for scientifically credible, performant, maintainable and portable computation, leveraging optimized math libraries is highly recommended.</p>
+
+<hr />
+
+<h1 id="overview-of-main-math-library-categories-in-e4s">Overview of Main Math Library Categories in E4S</h1>
+<p>Below are summary tables categorised by solver type. These are representative of key libraries in release 25.06 (as of June 2025) and reflect what you might expect to find in the “Math libraries” family of E4S. They are not exhaustive but provide a useful map for a newcomer.</p>
+
+<h3 id="meshing-discretization-and-adaptive-mesh-refinement"><strong>Meshing, Discretization, and Adaptive Mesh Refinement</strong></h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Library</th>
+      <th>Key Capabilities</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>MFEM</strong></td>
+      <td>Finite element discretization, adaptive mesh refinement (AMR), GPU support</td>
+      <td>Widely used for multiphysics codes; part of xSDK and E4S</td>
+    </tr>
+    <tr>
+      <td><strong>libMesh</strong></td>
+      <td>Finite element framework supporting adaptive mesh refinement and parallel I/O</td>
+      <td>C++ based; good for large-scale multiphysics applications</td>
+    </tr>
+    <tr>
+      <td><strong>PUMI (Parallel Unstructured Mesh Infrastructure)</strong></td>
+      <td>Mesh generation, partitioning, and adaptation for unstructured meshes</td>
+      <td>Integrates with Albany and other Trilinos-based codes</td>
+    </tr>
+    <tr>
+      <td><strong>Omega_h</strong></td>
+      <td>Parallel mesh adaptation and redistribution on GPUs</td>
+      <td>Lightweight, performant C++/Kokkos design</td>
+    </tr>
+    <tr>
+      <td><strong>MOAB</strong></td>
+      <td>Mesh-Oriented data management and topology library</td>
+      <td>Foundation for geometry-mesh coupling and I/O</td>
+    </tr>
+    <tr>
+      <td><strong>AMReX</strong></td>
+      <td>Structured mesh AMR framework for block-structured PDE solvers</td>
+      <td>Core to several DOE exascale applications</td>
+    </tr>
+    <tr>
+      <td><strong>ParMETIS / Zoltan</strong></td>
+      <td>Graph partitioning and dynamic load balancing</td>
+      <td>Supports scalable adaptive refinement workflows</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="linear-solvers">Linear Solvers</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Library</th>
+      <th>Key capabilities</th>
+      <th>Notes / remarks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PETSc (Portable Extensible Toolkit for Scientific Computation)</td>
+      <td>Sparse/dense linear systems, iterative and direct solvers, preconditioning, GPU support</td>
+      <td>Widely used in PDE-based applications; part of E4S.</td>
+    </tr>
+    <tr>
+      <td>Trilinos (via sub-packages e.g., Tpetra, Belos, Ifpack, MueLu)</td>
+      <td>Distributed linear algebra, preconditioners, block solvers, multigrid support</td>
+      <td>Broad toolkit; integrates into many domain codes.</td>
+    </tr>
+    <tr>
+      <td>SLATE (Software for Linear Algebra Targeting Exascale)</td>
+      <td>Dense linear algebra (e.g., factorisations, BLAS/LAPACK style) for many-core/accelerators</td>
+      <td>Focused on exascale dense problems.</td>
+    </tr>
+    <tr>
+      <td>Ginkgo</td>
+      <td>High-performance linear algebra on many-core and accelerator processors</td>
+      <td>Good for GPU sparse/dense linear algebra.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="eigensolvers">Eigensolvers</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Library</th>
+      <th>Key capabilities</th>
+      <th>Notes / remarks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anasazi / Belos (in Trilinos)</td>
+      <td>Krylov methods (Arnoldi, Lanczos) for eigenvalue problems</td>
+      <td>Suitable for large sparse eigen-systems within Trilinos.</td>
+    </tr>
+    <tr>
+      <td>SLEPc (Scalable Library for Eigenvalue Problem Computations)</td>
+      <td>Scalable eigenvalue solvers, time-dependent eigenvalue problems</td>
+      <td>Often used in research codes; supports PETSc integration.</td>
+    </tr>
+    <tr>
+      <td>Spectra, ARPACK/ARPACK-NG</td>
+      <td>Sparse eigenvalue solvers (smaller scale)</td>
+      <td>Useful fallback for moderate-size eigenproblems.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="nonlinear-solvers">Nonlinear Solvers</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Library</th>
+      <th>Key capabilities</th>
+      <th>Notes / remarks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PETSc SNES (Scalable Nonlinear Equations Solvers)</td>
+      <td>Newton and quasi-Newton methods, line-search/trust-region, coupling to KSP for linear sub-solve</td>
+      <td>Well integrated in PETSc’s workflow.</td>
+    </tr>
+    <tr>
+      <td>Trilinos NOX</td>
+      <td>Nonlinear solver toolkit (Newton–Krylov)</td>
+      <td>Similar role in the Trilinos ecosystem.</td>
+    </tr>
+    <tr>
+      <td>TAO (Toolkit for Advanced Optimization)</td>
+      <td>Although more for optimisation, often handles nonlinear systems too (via KKT systems)</td>
+      <td>Included in E4S math libraries.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="daeode-solvers">DAE/ODE Solvers</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Library</th>
+      <th>Key capabilities</th>
+      <th>Notes / remarks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PETSc/TS (time-stepping)</td>
+      <td>ODE and DAE solver suite (explicit, implicit, IMEX), sensitivity/adjoint support</td>
+      <td>Scalable time integration library.</td>
+    </tr>
+    <tr>
+      <td>SUNDIALS (Suite of Nonlinear and Differential/Algebraic Equation Solvers)</td>
+      <td>CVODE, IDA/IDA00 etc: stiff/non-stiff ODE/DAE, sensitivity, parallel support</td>
+      <td>Often used in multiphysics/chemistry codes.</td>
+    </tr>
+    <tr>
+      <td>ODEPACK, DASSL</td>
+      <td>Classic integrator libraries (smaller scale)</td>
+      <td>Good for legacy codes or small-scale problems.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="mathematical-optimization-solvers">Mathematical Optimization Solvers</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Library</th>
+      <th>Key capabilities</th>
+      <th>Notes / remarks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TAO (Toolkit for Advanced Optimization)</td>
+      <td>Large-scale nonlinear optimisation (unconstrained, bound-constrained, general constraints), adjoint support</td>
+      <td>Integrated with PETSc solvers.</td>
+    </tr>
+    <tr>
+      <td>Ipopt (Interior-point Optimisation)</td>
+      <td>Nonlinear programming (large-scale)</td>
+      <td>Widely used in engineering/operations research applications.</td>
+    </tr>
+    <tr>
+      <td>Gurobi / CPLEX (when available)</td>
+      <td>Commercial solvers for integer and continuous optimisation</td>
+      <td>Sometimes wrapped or interfaced in HPC settings; check licence.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="stochastic-and-other-advanced-capabilities">Stochastic and Other Advanced Capabilities</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Library</th>
+      <th>Key capabilities</th>
+      <th>Notes / remarks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>libEnsemble</td>
+      <td>Ensemble‐based computing, dynamic task scheduling for uncertainty quantification, optimisation, machine learning workflows</td>
+      <td>Enables high‐throughput simulations under UQ or optimisation loops.</td>
+    </tr>
+    <tr>
+      <td>UQTK (Uncertainty Quantification Toolkit)</td>
+      <td>Polynomial chaos, stochastic Galerkin, UQ workflows</td>
+      <td>Useful when embedding stochastic modelling in HPC simulation.</td>
+    </tr>
+    <tr>
+      <td>MOAB, Tasmanian, SNES stochastic modules</td>
+      <td>Mesh management, sparse grids, stochastic solvers</td>
+      <td>Advanced use cases often in multiphysics + UQ frameworks.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="getting-started-how-to-pick-and-use-a-library-in-e4s">Getting Started: How to Pick and Use a Library in E4S</h2>
+
+<p>Here are recommended steps for a newcomer:</p>
+
+<ol>
+  <li>
+    <p><strong>Clarify your problem type</strong> – Are you solving large sparse linear systems (e.g., from discretised PDEs)? Do you need eigenvalues? Are you integrating time-dependent ODEs/DAEs? Is the core problem an optimization? Is stochastic/UQ involved? The category helps determine the solver family.</p>
+  </li>
+  <li>
+    <p><strong>Check interoperability and dependencies</strong> – Ensure the library you pick is included and supported in E4S 25.06, and works with your platform (CPU type, GPU type, MPI version). E4S provides containers and build recipes for many architectures.</p>
+  </li>
+  <li>
+    <p><strong>Start with a simple example</strong> – Each library typically provides tutorial codes (e.g., PETSc tutorials, SUNDIALS examples, TAO examples). Run a small problem to verify your build and environment.</p>
+  </li>
+  <li>
+    <p><strong>Scale up and tune</strong> – Once the example works, apply it to your real problem. Pay attention to solver settings (tolerances, preconditioners, GPU offload flags). Optimized libraries often expose knobs to adjust performance (block size, reuse of factorisation, asynchronous communication).</p>
+  </li>
+  <li>
+    <p><strong>Leverage upstream support and community</strong> – Because you’re using a mature library, you can ask community forums, look at mailing lists, and refer to documentation for advanced features (adjoint sensitivities, multi‐physics coupling, hybrid CPU/GPU execution).</p>
+  </li>
+  <li>
+    <p><strong>Maintain reproducibility and portability</strong> – Because E4S provides pre-built binaries, containers (Docker, Singularity) and Spack recipes, you can capture your software stack (version, build options) for future replication or sharing with collaborators.</p>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="conclusion">Conclusion</h2>
+<p>The math libraries supported in E4S offer a powerful foundation for high-performance scientific computing. By leveraging these optimized, community-supported libraries you gain performance, reliability, portability and productivity. As you embark on your project, identify the solver domain(s) you need, select the appropriate library from the tables above, run examples, and scale your application through the E4S-supported stack.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <footer class="site-footer" style="text-align:center; font-size:0.85em; margin-top:2em;">
+  © 2025 E4S Project, a Series of LF Projects, LLC.  For website terms of use, trademark policy and other project policies please see
+  <a href="https://lfprojects.org" target="_blank" rel="noopener">lfprojects.org</a>. Supported by the U.S. Department of Energy Office of Advanced Scientific Computing Research.
+</footer>
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

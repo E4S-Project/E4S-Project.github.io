@@ -1,0 +1,14 @@
+Give me instructions for finding and installing libraries and tools using Spack.  
+
+Include instructions for determining if a package is part of E4s.
+
+Generate the complete output as a single markdown file with this header prefix:
+
+---
+layout: single
+title: "Finding and installing products using Spack"
+permalink: /spack-install/
+classes: wide
+---
+
+Download this content to a single markdown file called spack-install.md 

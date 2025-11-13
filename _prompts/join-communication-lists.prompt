@@ -1,0 +1,23 @@
+Use the detailed information from the 25.06 release of E4S as described in these slides: https://oaciss.uoregon.edu/e4s/talks/E4S_25.06.pdf
+
+Develop a description of ways to contact and interact with the E4S team to include on a page for the website at https:/e4s.io
+
+Address the following topics:
+- How to join the E4S Slack workspace and GitHub Discussion group
+- How to submit issues to the E4S repository and the E4S GitHub Pages repository
+    
+Generate this content as a markdown file with appropriate headings and subheadings. 
+
+- Ensure that there is an empty line between headings and the start of each table. 
+- Do not use bold text markup in the tables
+- Include the following metadata block at the top of the generated file:
+
+---
+layout: single
+title: "E4S Communcation Lists"
+permalink: /join-communication-lists/
+classes: wide
+sidebar:
+  nav: "joinmenu"
+---
+

@@ -1,0 +1,7 @@
+Provide a newcomer an introduction to linear equation solvers as provided by libraries supported by e4s, found at https:/e4s.io
+
+In addition to basic concepts, provide paragraphs on the following:
+1. The value of using optimized libraries for dense linear algebra for performance
+2. Basic concepts in sparse linear algebra.
+3. The difference between direct and iterative solution methods.
+4. A table that briefly shows what each E4S library provides for dense vs sparse and direct vs iterative capabilities

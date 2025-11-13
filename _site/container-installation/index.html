@@ -1,0 +1,354 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>E4S Container Installation - E4S - An HPC-AI Software Ecosystem for Science</title>
+<meta name="description" content="Curated HPC-AI scientific libraries and tools for advanced scientific computing applications.">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="E4S - An HPC-AI Software Ecosystem for Science">
+<meta property="og:title" content="E4S Container Installation">
+<meta property="og:url" content="http://localhost:4000/container-installation/">
+
+
+  <meta property="og:description" content="Curated HPC-AI scientific libraries and tools for advanced scientific computing applications.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/E4S-no-background.png">
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/container-installation/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3DB1WP6Q3G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3DB1WP6Q3G');
+</script>
+
+<style>
+td.details-control {
+  background: url('/Resources/details_open.png') no-repeat center center;
+  cursor: pointer;
+}
+tr.shown td.details-control {
+  background: url('/Resources/details_close.png') no-repeat center center;
+}
+</style>
+
+  </head>
+
+  <body class="layout--single wide" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/E4S-no-background.png" alt="E4S - An HPC-AI Software Ecosystem for Science"></a>
+        
+        <a class="site-title" href="/">
+          E4S - An HPC-AI Software Ecosystem for Science
+          <span class="site-subtitle">Advancing Science through Trusted Software</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/use/"
+                
+                
+              >Use E4S</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/join/"
+                
+                
+              >Join E4S</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >About E4S</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/contact/"
+                
+                
+              >Contact Us</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <span class="nav__sub-title">Use E4S</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/use/">Overview</a></li>
+            
+              <li><a href="/guide-e4s-bot/">E4S Guide Bot</a></li>
+            
+              <li><a href="/documentation/">E4S Documentation</a></li>
+            
+              <li><a href="/product-catalog/">E4S Product Catalog</a></li>
+            
+              <li><a href="/spack-installation/">Finding and Installing with Spack</a></li>
+            
+              <li><a href="/spack-e4s-installation/">E4S-Specific Spack Installation</a></li>
+            
+              <li><a href="/container-download/">E4S Container Download</a></li>
+            
+              <li><a href="/container-installation/" class="active">E4S Container Installation</a></li>
+            
+              <li><a href="/container-launch/">E4S Container Launch</a></li>
+            
+              <li><a href="/test-with-e4s/">Test with E4S</a></li>
+            
+              <li><a href="https://www.paratoolspro.com">ParaTools Pro for E4S™</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="E4S Container Installation">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4000/container-installation/" itemprop="url">E4S Container Installation
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h1 id="container-installation-recipes">Container installation recipes</h1>
+
+<h2 id="docker">Docker</h2>
+
+<p>To use the Docker image, please install Docker and pull the appropriate image from Docker Hub.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash
+# docker images
+# docker pull ecpe4s/e4s-gpu:22.02
+# docker run --gpus all -v $HOME:$HOME --rm -it ecpe4s/e4s-gpu:22.02
+# Inside the Docker container:
+# which spack
+# cd /opt/demo/python_tests
+# conda activate cuda
+# ./run.sh
+# cd /opt/demo/testsuite/validation_tests/trilinos
+# ./compile.sh
+# ./run.sh
+</code></pre></div></div>
+
+<h2 id="singularity">Singularity</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash
+# which singularity
+# wget http://tau.uoregon.edu/ecp.simg
+# singularity exec ./ecp.simg /bin/bash --rcfile /etc/bash.bashrc
+# which spack
+</code></pre></div></div>
+
+<p><strong>Replacing MPI on Theta at ALCF: allocate two nodes</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash
+% qsub -A &lt;PROJECT_ID&gt; -t 30 -n 2 -q debug-cache-quad -I
+% /projects/ECP_SDK/tutorial/run_job.sh
+% cat /projects/ECP_SDK/tutorial/run_job.sh
+module swap PrgEnv-intel PrgEnv-gnu
+module swap cray-mpich cray-mpich-abi
+export SINGULARITYENV_LIBWLM_DETECT=/opt/cray/wlm_detect/1.3.2-6.0.6.0_3.8__g388ccd5.ari/lib64
+aprun -n 16 -N 8 singularity exec -H $HOME   -B /projects/ECP_SDK:/projects/ECP_SDK:ro   -B /opt:/opt:ro -B /var/opt:/var/opt:ro   /projects/ECP_SDK/containers/singularity/ecp.simg bash -c 'unset CRAYPE_VERSION; source /usr/local/packages/ecp/misc/bashrc;  spack load -r trilinos tau; spack unload openmpi mpich;  export LD_LIBRARY_PATH=$LIBWLM_DETECT:$CRAY_LD_LIBRARY_PATH:$CRAYPAT_LD_LIBRARY_PATH:$LD_LIBRARY_PATH;  /projects/ECP_SDK/tutorial/demo/trilinos/Zoltan/Zoltan;'
+</code></pre></div></div>
+
+<h2 id="shifter">Shifter</h2>
+
+<p><strong>Replacing MPI with system MPI on Cori at NERSC</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>bash
+# shifterimg -v pull docker:ecpe4s/e4s-gpu:22.02
+# shifter -E --image=ecpe4s/e4s-gpu:22.02 -- /bin/bash --rcfile /etc/bash.bashrc
+# which spack
+
+# shifterimg images | grep exascaleproject
+
+# salloc -N 2 -q interactive -t 00:30:00 --image=ecpe4s/e4s-gpu:22.02 -C haswell -L SCRATCH
+# srun -n 32 shifter -- /bin/bash -c 'unset CRAYPE_VERSION; . /etc/bash.bashrc;   spack load trilinos; spack unload openmpi mpich; ./Zoltan'
+</code></pre></div></div>
+
+<p>Please contact Sameer Shende at sameer [at] cs.uoregon.edu if you have any questions.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <footer class="site-footer" style="text-align:center; font-size:0.85em; margin-top:2em;">
+  © 2025 E4S Project, a Series of LF Projects, LLC.  For website terms of use, trademark policy and other project policies please see
+  <a href="https://lfprojects.org" target="_blank" rel="noopener">lfprojects.org</a>. Supported by the U.S. Department of Energy Office of Advanced Scientific Computing Research.
+</footer>
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

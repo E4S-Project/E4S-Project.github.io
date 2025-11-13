@@ -1,0 +1,540 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>E4S Programming Systems Guide - E4S - An HPC-AI Software Ecosystem for Science</title>
+<meta name="description" content="Curated HPC-AI scientific libraries and tools for advanced scientific computing applications.">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="E4S - An HPC-AI Software Ecosystem for Science">
+<meta property="og:title" content="E4S Programming Systems Guide">
+<meta property="og:url" content="http://localhost:4000/guide-programmingsystems/">
+
+
+  <meta property="og:description" content="Curated HPC-AI scientific libraries and tools for advanced scientific computing applications.">
+
+
+
+  <meta property="og:image" content="http://localhost:4000/assets/images/E4S-no-background.png">
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/guide-programmingsystems/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3DB1WP6Q3G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-3DB1WP6Q3G');
+</script>
+
+<style>
+td.details-control {
+  background: url('/Resources/details_open.png') no-repeat center center;
+  cursor: pointer;
+}
+tr.shown td.details-control {
+  background: url('/Resources/details_close.png') no-repeat center center;
+}
+</style>
+
+  </head>
+
+  <body class="layout--single wide" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/E4S-no-background.png" alt="E4S - An HPC-AI Software Ecosystem for Science"></a>
+        
+        <a class="site-title" href="/">
+          E4S - An HPC-AI Software Ecosystem for Science
+          <span class="site-subtitle">Advancing Science through Trusted Software</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/use/"
+                
+                
+              >Use E4S</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/join/"
+                
+                
+              >Join E4S</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/about/"
+                
+                
+              >About E4S</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/contact/"
+                
+                
+              >Contact Us</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+      
+    
+    
+      <nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+    
+      
+      
+        <li>
+          
+            <span class="nav__sub-title">E4S Guides</span>
+          
+
+          
+          <ul>
+            
+              <li><a href="/guide-e4s-bot/">E4S Guide Bot</a></li>
+            
+              <li><a href="/guide-buildtools/">Build Tools Guide</a></li>
+            
+              <li><a href="/guide-programmingsystems/" class="active">Programming Systems Guide</a></li>
+            
+              <li><a href="/guide-perftools/">Performance Tools Guide</a></li>
+            
+              <li><a href="/guide-mathlibs/">Math Libraries Guide</a></li>
+            
+              <li><a href="/guide-dav/">Data & Visualization Guide</a></li>
+            
+              <li><a href="/guide-aiml/">AI & Machine Learning Guide</a></li>
+            
+          </ul>
+          
+        </li>
+      
+    
+  </ul>
+</nav>
+
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="E4S Programming Systems Guide">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4000/guide-programmingsystems/" itemprop="url">E4S Programming Systems Guide
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p style="text-align:center;">
+    Construct your prompt from the instructions below then use the E4S Guide Bot
+</p>
+<style>
+/* E4S theme-adaptive pill button with white text */
+.btn--e4s {
+  background-color: var(--e4s-blue);
+  color: #ffffff !important;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.6em 1.6em;
+  font-weight: 600;
+  display: inline-block;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  text-decoration: none;
+}
+.btn--e4s:hover,
+.btn--e4s:focus {
+  background-color: var(--e4s-blue-hover);
+  color: #ffffff !important;
+  text-decoration: none;
+}
+:root {
+  --e4s-blue: #0092ca;
+  --e4s-blue-hover: #006b99;
+}
+[data-theme="dark"] {
+  --e4s-blue: #33b8f2;
+  --e4s-blue-hover: #66ccff;
+}
+</style>
+
+<p style="text-align:center;">
+  <a href="https://chatgpt.com/g/g-69010fb294b0819195727cf1a7ccc792-software-ecosystem-for-science-guide" class="btn btn--e4s">Chat with the E4S Guide Bot</a>
+</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>Selecting an appropriate parallel programming system is a key step in developing efficient, portable, and maintainable scientific applications. The E4S ecosystem provides a curated collection of programming models, frameworks, and libraries designed to help developers achieve high performance across diverse architectures including multicore CPUs, manycore GPUs, and emerging accelerators.</p>
+
+<p>When choosing a programming system, it is important to consider factors such as portability, interoperability, runtime overhead, and developer productivity. For instance, a user running on a large GPU-based system might prioritize asynchronous execution and memory management models, while another working with mixed Fortran and C++ codebases might focus on compiler support and interoperability layers.</p>
+
+<p>To help newcomers navigate these choices, the following sections define attributes that describe both general and specialized considerations for selecting a parallel programming system or library. These attributes can be used to formulate a detailed prompt for a chatbot or recommender tool to suggest suitable E4S products.</p>
+
+<h2 id="example-prompt">Example Prompt</h2>
+
+<blockquote>
+  <p>I am developing a simulation code in C++ that needs to run efficiently on both NVIDIA and AMD GPUs. I prefer to use a performance-portable library that integrates with MPI for distributed memory and supports OpenMP on CPUs. I would like to minimize the need for vendor-specific code changes and ensure good support for asynchronous execution and profiling tools.</p>
+</blockquote>
+
+<hr />
+
+<h2 id="broadly-meaningful-attributes-for-programming-systems">Broadly Meaningful Attributes for Programming Systems</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Target architectures</td>
+      <td>The types of architectures supported, such as CPUs, GPUs, or multi-accelerator systems.</td>
+    </tr>
+    <tr>
+      <td>Programming languages</td>
+      <td>The primary languages supported (C, C++, Fortran, Python).</td>
+    </tr>
+    <tr>
+      <td>Portability model</td>
+      <td>The extent to which the programming system allows running on multiple vendors’ hardware with minimal changes.</td>
+    </tr>
+    <tr>
+      <td>Performance portability</td>
+      <td>How effectively the framework can deliver performance across architectures without rewriting kernels.</td>
+    </tr>
+    <tr>
+      <td>Abstraction level</td>
+      <td>The level of abstraction provided, from low-level APIs to high-level frameworks.</td>
+    </tr>
+    <tr>
+      <td>Integration with MPI</td>
+      <td>Whether the system supports or interoperates with MPI for inter-node communication.</td>
+    </tr>
+    <tr>
+      <td>Memory model</td>
+      <td>How data movement and memory management are handled between host and device.</td>
+    </tr>
+    <tr>
+      <td>Asynchronous execution</td>
+      <td>Support for task-based or asynchronous parallelism.</td>
+    </tr>
+    <tr>
+      <td>Debugging and profiling support</td>
+      <td>Availability of integrated tools or external support for performance analysis.</td>
+    </tr>
+    <tr>
+      <td>Community and documentation</td>
+      <td>The strength of community support, user guides, and active development.</td>
+    </tr>
+    <tr>
+      <td>Licensing and openness</td>
+      <td>Availability under open-source licenses and alignment with E4S standards.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="attributes-for-specific-situations">Attributes for Specific Situations</h2>
+
+<h3 id="intra-node-systems">Intra-Node Systems</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Shared memory model</td>
+      <td>Whether the system supports shared memory parallelism (e.g., OpenMP, CUDA threads).</td>
+    </tr>
+    <tr>
+      <td>Task scheduling</td>
+      <td>Support for dynamic task scheduling or work-stealing mechanisms.</td>
+    </tr>
+    <tr>
+      <td>Thread affinity and control</td>
+      <td>Ability to control thread placement and binding for NUMA systems.</td>
+    </tr>
+    <tr>
+      <td>Vectorization support</td>
+      <td>Level of compiler or library-assisted vectorization.</td>
+    </tr>
+    <tr>
+      <td>GPU kernel execution model</td>
+      <td>Control and flexibility in defining and launching GPU kernels.</td>
+    </tr>
+    <tr>
+      <td>Device memory hierarchy awareness</td>
+      <td>Capability to utilize L1/L2 caches and shared memory efficiently.</td>
+    </tr>
+    <tr>
+      <td>Compiler dependencies</td>
+      <td>Required or preferred compiler infrastructure (LLVM, GCC, NVHPC, etc.).</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h3 id="inter-node-systems">Inter-Node Systems</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Communication model</td>
+      <td>Message passing or PGAS-based communication model.</td>
+    </tr>
+    <tr>
+      <td>Latency and bandwidth optimization</td>
+      <td>Support for minimizing communication overhead and optimizing collective operations.</td>
+    </tr>
+    <tr>
+      <td>Fault tolerance</td>
+      <td>Capabilities for checkpoint/restart or resilience in distributed environments.</td>
+    </tr>
+    <tr>
+      <td>Overlap of communication and computation</td>
+      <td>Ability to perform asynchronous communications with concurrent computation.</td>
+    </tr>
+    <tr>
+      <td>Network portability</td>
+      <td>Compatibility with InfiniBand, Slingshot, Ethernet, and other HPC interconnects.</td>
+    </tr>
+    <tr>
+      <td>Integration with resource managers</td>
+      <td>Interoperability with job schedulers such as SLURM or Flux.</td>
+    </tr>
+    <tr>
+      <td>Hybrid parallelism</td>
+      <td>Support for combining distributed and shared-memory parallel models (MPI + threads).</td>
+    </tr>
+    <tr>
+      <td>Performance analysis hooks</td>
+      <td>Interfaces to collect inter-node communication traces and performance metrics.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h3 id="language-supported-systems-modern-fortran-and-c-via-llvm-compilers">Language-Supported Systems (Modern Fortran and C++ via LLVM Compilers)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Attribute</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Standard support level</td>
+      <td>Compliance with Fortran 2008+, C++17+, or newer standards.</td>
+    </tr>
+    <tr>
+      <td>Compiler-based directives</td>
+      <td>Availability of OpenMP, OpenACC, or SYCL support in the compiler.</td>
+    </tr>
+    <tr>
+      <td>Unified memory model</td>
+      <td>Simplified access to device and host memory through unified memory.</td>
+    </tr>
+    <tr>
+      <td>Template and metaprogramming features</td>
+      <td>Ability to define portable kernels using C++ templates or Fortran coarrays.</td>
+    </tr>
+    <tr>
+      <td>Integration with performance libraries</td>
+      <td>Direct compatibility with BLAS, LAPACK, KokkosKernels, or other math libraries.</td>
+    </tr>
+    <tr>
+      <td>Compiler optimization maturity</td>
+      <td>Level of maturity and stability of compiler optimizations for each architecture.</td>
+    </tr>
+    <tr>
+      <td>Language interoperability</td>
+      <td>Ease of calling C/C++ libraries from Fortran or vice versa.</td>
+    </tr>
+    <tr>
+      <td>Toolchain integration</td>
+      <td>Integration with LLVM-based analysis, debugging, and profiling tools.</td>
+    </tr>
+    <tr>
+      <td>Vendor backend support</td>
+      <td>Availability of target backends (NVIDIA, AMD, Intel, ARM) through the compiler toolchain.</td>
+    </tr>
+  </tbody>
+</table>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <footer class="site-footer" style="text-align:center; font-size:0.85em; margin-top:2em;">
+  © 2025 E4S Project, a Series of LF Projects, LLC.  For website terms of use, trademark policy and other project policies please see
+  <a href="https://lfprojects.org" target="_blank" rel="noopener">lfprojects.org</a>. Supported by the U.S. Department of Energy Office of Advanced Scientific Computing Research.
+</footer>
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

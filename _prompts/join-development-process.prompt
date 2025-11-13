@@ -1,0 +1,30 @@
+Use the detailed information from the 25.06 release of E4S as described in these slides: https://oaciss.uoregon.edu/e4s/talks/E4S_25.06.pdf
+
+Develop a description of the E4S development process to include on a page for the website at https:/e4s.io
+
+Address the following topics:
+- How E4S incorporates and updates member products
+- How E4S is available as a bundle through two major releases for the US Supercomputing Conference and the International Supercomputing Conference using the release label E4S XX.YY where XX is the two-digit year and YY is the two-digit month
+- How new packages are integrated and tested for these releases and in between releases for newly-available products
+- How E4S testing processes and infrastucture support continuous integration testing on the Frank system, providing access to dozens of devices including the latest CPUs and GPUs and their related SDKs
+- Mention that the E4S teams provide support for helping product teams develop Spack packages and otherwise integrate their product into E4S releases and processes
+- Present the topics and explanations in a set of tables. Provide separate tables for
+    - Initial integration efforts and support
+    - Ongoing support and testing
+    - Testing resources
+    
+Generate this content as a markdown file with appropriate headings and subheadings. 
+
+- Ensure that there is an empty line between headings and the start of each table. 
+- Do not use bold text markup in the tables
+- Include the following metadata block at the top of the generated file:
+
+---
+layout: single
+title: "E4S Development Process"
+permalink: /join-development-process/
+classes: wide
+sidebar:
+  nav: "joinmenu"
+---
+

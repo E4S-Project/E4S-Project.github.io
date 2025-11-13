@@ -1,0 +1,30 @@
+Use the detailed information from the 25.06 release of E4S as described in these slides: https://oaciss.uoregon.edu/e4s/talks/E4S_25.06.pdf
+
+Develop a contributor guide to include on a page for the website at https:/e4s.io
+
+Address the following topics:
+- Why you might want to contribute your product to E4S
+- Why you might not want to contribute your product to E4S
+- What are the pre-requisites to contributing your product to E4S
+- What are the steps to joining
+- What are the ongoing expectations of contributors
+- Address skepticism about contributing to E4S vs just remaining an individual product team
+- Present the topics and explanations in a set of tables. Provide separate tables for
+    - Should you contribute?
+    - What are the steps?
+    - What are your ongoing responsibilities?
+    
+Generate this content as a markdown file with appropriate headings and subheadings. 
+
+- Ensure that there is an empty line between headings and the start of each table. 
+- Do not use bold text markup in the tables
+- Include the following metadata block at the top of the generated file:
+
+---
+layout: single
+title: "E4S Contribution Guide"
+permalink: /join-contribution-guide/
+classes: wide
+sidebar:
+  nav: "joinmenu"
+---

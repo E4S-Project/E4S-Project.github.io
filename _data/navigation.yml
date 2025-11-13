@@ -1,0 +1,132 @@
+# db: Home is present by default and shouldn't be listed here.
+main: 
+ - title: Use E4S
+   url: /use/
+ - title: Join E4S
+   url: /join/
+ - title: About E4S
+   url: /about/
+ - title: Contact Us
+   url: /contact/
+  
+# -------------------------
+# Sidebar: Use E4S Section
+# -------------------------
+usemenu:
+  - title: "Use E4S"
+    children:
+      - title: "Overview"
+        url: /use/
+      - title: "E4S Guide Bot"
+        url: /guide-e4s-bot/
+      - title: "E4S Documentation"
+        url: /documentation/
+      - title: "E4S Product Catalog"
+        url: /product-catalog/
+      - title: "Finding and Installing with Spack"
+        url: /spack-installation/
+      - title: "E4S-Specific Spack Installation"
+        url: /spack-e4s-installation/
+      - title: "E4S Container Download"
+        url: /container-download/
+      - title: "E4S Container Installation"
+        url: /container-installation/
+      - title: "E4S Container Launch"
+        url: /container-launch/
+      - title: "Test with E4S"
+        url: /test-with-e4s/
+      - title: "ParaTools Pro for E4S™"
+        url: https://www.paratoolspro.com
+
+# -------------------------
+# Sidebar: Use E4S Section
+# -------------------------
+getmenu:
+  - title: "Get E4S"
+    children:
+      - title: "Overview"
+        url: /get/
+      - title: "E4S Spack Caches"
+        url: /e4s-buildcache/
+      - title: "E4S Container Download"
+        url: /container-download/
+      - title: "ParaTools Pro for E4S™"
+        url: https://www.paratoolspro.com
+
+# -------------------------
+# Sidebar: Join E4S Section
+# -------------------------
+joinmenu:
+  - title: "Join the E4S Community"
+    children:
+      - title: "Overview"
+        url: /join/
+      - title: "E4S Contribution Guide"
+        url: /contribution-guide/
+      - title: "E4S Community Policies"
+        url: /policies/
+      - title: "E4S Development Process"
+        url: /development-process/
+      - title: "E4S Communication Lists"
+        url: /communication-lists/
+
+# -------------------------
+# Sidebar: About E4S Section
+# -------------------------
+aboutmenu:
+  - title: "About E4S"
+    children:
+      - title: "Overview"
+        url: /about/
+      - title: "E4S Introduction"
+        url: /about-e4s-intro/
+      - title: "First-Time Users"
+        url: /about-first-time-users/
+      - title: "E4S Product Families"
+        url: /about-product-families/
+      - title: "E4S FAQs"
+        url: /about-faqs/
+      - title: "News & Events"
+        url: /news/
+
+# -------------------------
+# Sidebar: Product Families Section
+# -------------------------
+productfamiliesmenu:
+  - title: "E4S Product Families"
+    children:
+      - title: "Overview"
+        url: /about-product-families/
+      - title: "Build Tools"
+        url: /e4s-buildtools/
+      - title: "Programming Systems"
+        url: /e4s-programmingsystems/
+      - title: "Performance Tools"
+        url: /e4s-perftools/
+      - title: "Math Libraries"
+        url: /e4s-mathlibs/
+      - title: "Data & Visualization"
+        url: /e4s-dav/
+      - title: "AI & Machine Learning"
+        url: /e4s-aiml/
+
+# -------------------------
+# Sidebar: Bot / Guides Section
+# -------------------------
+botmenu:
+  - title: "E4S Guides"
+    children:
+      - title: "E4S Guide Bot"
+        url: /guide-e4s-bot/
+      - title: "Build Tools Guide"
+        url: /guide-buildtools/
+      - title: "Programming Systems Guide"
+        url: /guide-programmingsystems/
+      - title: "Performance Tools Guide"
+        url: /guide-perftools/
+      - title: "Math Libraries Guide"
+        url: /guide-mathlibs/
+      - title: "Data & Visualization Guide"
+        url: /guide-dav/
+      - title: "AI & Machine Learning Guide"
+        url: /guide-aiml/

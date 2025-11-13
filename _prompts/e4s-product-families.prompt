@@ -1,0 +1,26 @@
+Provide an introduction to the product families supported by E4S libraries and tools.  Use https:/e4s.io as a resource for obtaining details.
+
+The primary product families are:
+1. Build tools that support scientific software products and also containers and binaries.
+2. Programming systems and tools that include compilers (the LLVM stack) and open source portability layers.
+3. Performance tools that identify and improve application performance, especially on large systems.
+4. Math libraries that provide reusable building blocks for computational simulation and modeling: meshing, descretizations, adaptive mesh refinement implementations, linear and nonlinear solvers, time integrators, preconditioners, eigensolvers, optimization, and related tools..
+5. Data and visualization libraries that support effecient storing and retrieval of data, pre/post and in situ analysis and display.
+6. AI libraries and tools that include mainstream products but also products that target scientific discovery.
+
+First produce an introductory paragraph that describes how product families are meaningful for supporting teams that use each other's libraries and tools in a cohesive way and learn about algorithmic and software advances together. Also note that, while E4S is the software distribution platform, product families have traditionally existed to facilitate effective and efficient development of compatible software components.
+
+After the introduction, for each domain, provide a brief overview of the domain, the kinds of libraries and tools that are in the domain, and the kinds of application needs each domain addresses.
+
+Finally, summarize how E4S curates all of these libraries and tools by providing a variety of testing environments including the latest CPU and GPU environments and testing for version compatibility, greatly reducing incidents due to inter-product changes that would otherwise impede smooth integration into applications and make upgrading to new versions of software harder to accomplish.
+
+Generate this content as a markdown file with appropriate headings and subheadings. Including the following metadata block at the top of the generated file:
+
+---
+layout: single
+title: "Overview of E4S product families"
+permalink: /about-product-families/
+classes: wide
+sidebar:
+  nav: "productfamiliesmenu"
+---
