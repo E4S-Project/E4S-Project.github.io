@@ -1,61 +1,30 @@
-
 url: "https://E4S-Project.github.io"
 title: "E4S - An HPC-AI Software Ecosystem for Science"
 subtitle: "Advancing Science through Trusted Software"
 description: "Curated HPC-AI scientific libraries and tools for advanced scientific computing applications."
 baseurl: ""
-# db: I had problems getting your remote theme reference to work properly
-# db: I've had similar problems with other remote themes in the past
-# db: I've never root caused them.  I just switched to the non-remote version
-# db: and that works for me.
-# remote_theme: chrisrhymes/bulma-clean-theme
-# theme: minimal-mistakes-jekyll
-remote_theme: mmistakes/minimal-mistakes
 
-# db: I don't think the bulma-clean theme actually uses this
-# logo: "/assets/images/e4s-logo.jpg"
-# db: I believe this is the default, so let's not specify it
-# markdown: kramdown
+# Use Minimal Mistakes as a remote theme
+remote_theme: "mmistakes/minimal-mistakes"
+
+# Required plugins for Minimal Mistakes on GitHub Pages
 plugins:
   - jekyll-remote-theme
+  - jekyll-include-cache
   - jekyll-feed
   - jekyll-sitemap
-  - jekyll-include-cache
-  # - jekyll-seo-tag  # Let's keep things simple
-  # - jekyll-archives # Let's keep things simple
+  - jekyll-redirect-from
+
 repository: "E4S-Project/E4S-Project.github.io"
 repo_host: https://github.com
-
 github_username: "maherou"
 
-
-# email:
-
-# Many configuration items for Minimal Mistakes.
-# See https://mmistakes.github.io/minimal-mistakes/docs/configuration/ for details.
-
-#minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 minimal_mistakes_skin: "air"
 
-
-
-
-# We need to create our own customized feed.  For now, we disable it.
 atom_feed:
   hide: true
 
-# This is needed to generate output for future events
 future: true
-
-# Set the logo image
-#
 
 logo: /assets/images/E4S-no-background.png
 og_image: /assets/images/E4S-no-background.png
-
-# Generate a sitemap.xml
-plugins:
- - jekyll-sitemap
-
-plugins:
-  - jekyll-redirect-from
