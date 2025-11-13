@@ -7,7 +7,7 @@ sidebar:
   nav: "getmenu"
 ---
 
-E4S offers multiple methods for deploying its collection of HPC and AI software packages. Below is an overview of these deployment options. Additional documentation is available from the side menu.
+E4S offers multiple methods for obtaining its collection of HPC and AI software packages. Below is an overview of these deployment options. Additional documentation is available from the side menu.
 
 |Get Option | Description |
 |-----------|-------------|

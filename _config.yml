@@ -1,6 +1,5 @@
-# db: I assume you're planning to host this on github.io rather th
-# db: getting a custom domain just to experiment with a new site.
-url: "https://e4s-project-exp.github.io"
+
+url: "https://E4S-Project.github.io"
 title: "E4S - An HPC-AI Software Ecosystem for Science"
 subtitle: "Advancing Science through Trusted Software"
 description: "Curated HPC-AI scientific libraries and tools for advanced scientific computing applications."
@@ -11,6 +10,7 @@ baseurl: ""
 # db: and that works for me.
 # remote_theme: chrisrhymes/bulma-clean-theme
 theme: minimal-mistakes-jekyll
+# remote_theme: mmistakes/minimal-mistakes
 
 # db: I don't think the bulma-clean theme actually uses this
 # logo: "/assets/images/e4s-logo.jpg"
@@ -22,7 +22,7 @@ plugins:
   - jekyll-include-cache
   # - jekyll-seo-tag  # Let's keep things simple
   # - jekyll-archives # Let's keep things simple
-repository: "e4s-project-exp/e4s-project-exp.github.io"
+repository: "E4S-Project/E4S-Project.github.io"
 repo_host: https://github.com
 
 github_username: "maherou"
