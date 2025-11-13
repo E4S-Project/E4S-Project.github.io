@@ -4,7 +4,7 @@ title: "Use the E4S Spack Build Cache"
 permalink: /e4s-buildcache/
 classes: wide
 sidebar:
-  nav: "usemenu"
+  nav: "getmenu"
 description: "Step-by-step instructions for installing E4S packages from prebuilt binaries using Spack’s build cache."
 ---
 

@@ -39,7 +39,7 @@ usemenu:
         url: https://www.paratoolspro.com
 
 # -------------------------
-# Sidebar: Use E4S Section
+# Sidebar: Get E4S Section
 # -------------------------
 getmenu:
   - title: "Get E4S"
