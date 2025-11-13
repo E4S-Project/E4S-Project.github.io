@@ -9,14 +9,15 @@ baseurl: ""
 # db: I've never root caused them.  I just switched to the non-remote version
 # db: and that works for me.
 # remote_theme: chrisrhymes/bulma-clean-theme
-theme: minimal-mistakes-jekyll
-# remote_theme: mmistakes/minimal-mistakes
+# theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes
 
 # db: I don't think the bulma-clean theme actually uses this
 # logo: "/assets/images/e4s-logo.jpg"
 # db: I believe this is the default, so let's not specify it
 # markdown: kramdown
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-include-cache
