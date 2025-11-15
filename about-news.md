@@ -12,7 +12,7 @@ sidebar:
 | Announcement | Description | 
 |--------------|-------------|
 | New E4S website | The new E4S website aims to provide significant enhancements for all community members. See the [New Site Features page](/new-features) |
-| E4S 25.11 Release | Details TBD |
+| E4S 25.11 Release | [Release Notes](/news/NEWS_RELEASE_E4S_25.11.pdf), [Release Presentation](/talks/E4S_25.11.pdf)|
 | Michael Heroux HPCWire Legend | Michael Heroux was selected for the 2025 class of HPCWire 35 Legends as ["Open Source HPC Software Pioneer"](https://www.hpcwire.com/35-hpc-legends-michael-heroux/) |
 
 ### Events
