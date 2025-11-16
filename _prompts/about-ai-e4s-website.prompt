@@ -1,0 +1,31 @@
+Use the detailed information from the 25.11 release of E4S as described in these slides: https://e4s.io/talks/E4S_25.11.pdf
+
+Provide a description of how AI has made the design, implementation, and interaction model of the E4S website possible. 
+
+
+- Present the topics in table format with two colums: Topic and Discussion
+- Here are the topics:
+  - AI makes this site possible: Mention the use of Gemini Deep Research mode to synthesize content from multiple sources to create a collective body of source content for the site, especially for E4S itself and the product families.
+  - Source code is primarilty prompts: Most of E4S website content is generated in draft form by creating English prompts with guidance to use E4S and member product content, provided to the E4S Guide Bot.  Generated content needs modest human editing only.
+  - Prompts are specific but brief: Many pages are primarily prompt generated with modest manual editing.
+  - Many types of site users supported: We can generate tailored content for many needs such as new users, sponsors, industry, those seeking advice for how to use libraries and tools, and more.
+  - Use a Domain-Specialized Retrieval-Augmented Generation (RAG) Assistant: The E4S Guide Bot uses the Gemini-generated product family reports, content from the citations in those reports, and the many websites that contain information about E4S and it member products to provide a new form of user support that become possible only with the advent of generative AI tools.
+  - Leverage key user knowledge: Rather than trying to produce large volumes of direct user documentation, the chat provides provides table of attributes such that, if the user can provide information about what their situation (problem type, platforms they want to use, etc.), we can give them the information they want in a customized and interactive dialogue that addresses their specific situation.
+  - Use commercial AI platforms: By using commercial AI tools such as Google Gemini and ChatGPT, we avoid many concerns related to information usage and rely on policies established by industry.
+  - E4S Guide Bot uses OpenAI: We use ChatGPT as the foundation for the E4S Guide Bot but will explore other platforms in the future.
+    
+Generate this content as a markdown file with appropriate headings and subheadings. 
+
+- Generate as a single table
+- Ensure that there is an empty line between headings and the start of the table. 
+- Do not use bold text markup in the tables
+- Include the following metadata block at the top of the generated file:
+
+---
+layout: single
+title: "AI and the E4S Website"
+permalink: /about-ai-e4s/
+classes: wide
+sidebar:
+  nav: "aboutmenu"
+---

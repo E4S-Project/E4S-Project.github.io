@@ -88,6 +88,8 @@ aboutmenu:
         url: /about-product-families/
       - title: "E4S FAQs"
         url: /about-faqs/
+      - title: "AI and the E4S Website"
+        url: /about-ai-e4s/
       - title: "News & Events"
         url: /news/
 
