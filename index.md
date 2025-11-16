@@ -207,9 +207,10 @@ Supported by the **U.S. Department of Energy (DOE)** and its partners, E4S accel
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/></svg>
       <h3>Performance Portability</h3>
       <p>Run anywhere—from laptops to exascale supercomputers using modern GPU and CPU architectures.</p>
+      <p style="text-align: center; font-size: 0.7em;">Flip for details</p>
     </div>
     <div class="card-back">
-      <h3>More Details</h3>
+    <h3>More Details</h3>
       <p>E4S supports programming models like Kokkos and MPI to enable single-source performance across CPUS and GPUs, and scalable clusters to leadership systems.</p>
     </div>
   </div>
@@ -222,9 +223,10 @@ Supported by the **U.S. Department of Energy (DOE)** and its partners, E4S accel
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="6" rx="1"/><rect x="3" y="9" width="18" height="6" rx="1"/><rect x="3" y="15" width="18" height="6" rx="1"/></svg>
       <h3>Curated Ecosystem</h3>
       <p>Over 120 interoperable libraries and tools for HPC and AI workflows, validated for research and production use.</p>
+      <p style="text-align: center; font-size: 0.7em;">Flip for details</p>
     </div>
     <div class="card-back">
-      <h3>More Details</h3>
+    <h3>More Details</h3>
       <p>E4S organizes products into product families such as math libraries, I/O, AI/ML, and performance tools—curated for compatibility and tested integration.</p>
     </div>
   </div>
@@ -237,9 +239,10 @@ Supported by the **U.S. Department of Energy (DOE)** and its partners, E4S accel
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5V3m0 18v-2m9-7h2M3 12H1m16.95 5.95l1.414 1.414M5.636 5.636 4.222 4.222M18.364 5.636l1.414-1.414M5.636 18.364 4.222 19.778"/><circle cx="12" cy="12" r="5"/></svg>
       <h3>Reproducible Environments</h3>
       <p>Deploy via Spack, pre-built containers for Docker, Singularity, and commercial cloud environments.</p>
+      <p style="text-align: center; font-size: 0.7em;">Flip for details</p>
     </div>
     <div class="card-back">
-      <h3>More Details</h3>
+    <h3>More Details</h3>
       <p>Binary caches, container images, and continuous builds ensure consistent environments across facilities, enabling reproducible experiments and fair benchmarking.</p>
     </div>
   </div>
@@ -252,6 +255,7 @@ Supported by the **U.S. Department of Energy (DOE)** and its partners, E4S accel
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 7h16M4 12h8M4 17h4M15 16l2 2 3-3"/></svg>
       <h3>Continuous Validation</h3>
       <p>E4S packages are tested across DOE leadership and cloud platforms for quality and reproducibility.</p>
+      <p style="text-align: center; font-size: 0.7em;">Flip for details</p>
     </div>
     <div class="card-back">
       <h3>More Details</h3>
