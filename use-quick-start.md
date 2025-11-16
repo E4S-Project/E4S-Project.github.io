@@ -1,30 +1,15 @@
 ---
-layout: home
-title: "E4S: HPC-AI Software Ecosystem for Science"
-excerpt: "Performance-portable libraries & tools for advanced computing"
-layout: splash # Default: home, but that includes a list of posts
+layout: single
+title: "E4S Quick Start"
+permalink: /quick-start/
 classes: wide
-header:
-#   overlay_color: "#000"
-#  overlay_filter: "0.60"
-  overlay_filter: rgba(0, 146, 202, 0.75) # Same color as "air" skin footer
-  overlay_image: /assets/images/e4s-logo.jpg
-  actions:
-    - label: "News & Events"
-      url: "/news/"
-      class: "btn--oval-blue"
-    - label: "Get E4S"
-      url: "/get/"
-      class: "btn--oval-blue"
-    - label: "Quick Start"
-      url: "/quick-start/"
-      class: "btn--oval-blue"
-permalink: "/"
+sidebar:
+  nav: "usemenu"
 ---
 
-Welcome to **E4S**, the *HPC-AI Software Ecosystem for Science* — an open-source, community-driven collection of high-quality HPC and AI libraries and tools. E4S is an **Extreme-scale Scientific Software Stack** that enables scientists, developers, and institutions to develop, deploy, and run performance-portable applications across CPUs and GPUs from NVIDIA, AMD, Intel, and Arm. Ready to adapt to new architectures as they emerge.
 
-Supported by the **U.S. Department of Energy (DOE)** and its partners, E4S accelerates scientific innovation on systems ranging from laptops to exascale supercomputers.
+The instructions on this page show how to build and run a simple MPI program using an **E4S base container** available from [DockerHub](https://hub.docker.com).
+
 
 <style>
 .btn--oval-blue {
@@ -204,13 +189,11 @@ Supported by the **U.S. Department of Energy (DOE)** and its partners, E4S accel
 <div class="feature-item">
   <div class="card-inner">
     <div class="card-front">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/></svg>
-      <h3>Performance Portability</h3>
-      <p>Run anywhere—from laptops to exascale supercomputers using modern GPU and CPU architectures.</p>
+      <h3>Step 1: Docker Image</h3>
+      <p>Download E4S base image ecpe4s/ubuntu20.04</p>
     </div>
     <div class="card-back">
-      <h3>More Details</h3>
-      <p>E4S supports programming models like Kokkos and MPI to enable single-source performance across CPUS and GPUs, and scalable clusters to leadership systems.</p>
+      <p>This Ubuntu 20.04 image has Spack, MPI, and a few other package pre-installed, useful for quick start</p>
     </div>
   </div>
 </div>
@@ -219,28 +202,27 @@ Supported by the **U.S. Department of Energy (DOE)** and its partners, E4S accel
 <div class="feature-item">
   <div class="card-inner">
     <div class="card-front">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="6" rx="1"/><rect x="3" y="9" width="18" height="6" rx="1"/><rect x="3" y="15" width="18" height="6" rx="1"/></svg>
-      <h3>Curated Ecosystem</h3>
-      <p>Over 120 interoperable libraries and tools for HPC and AI workflows, validated for research and production use.</p>
+      <h3>Step 2: MPI Code</h3>
+      <p>Produce an MPI example code, your code or the example below </p>
     </div>
     <div class="card-back">
-      <h3>More Details</h3>
-      <p>E4S organizes products into product families such as math libraries, I/O, AI/ML, and performance tools—curated for compatibility and tested integration.</p>
+      <p>The code below performs a simple ping-pong test on two MPI processes, or you can provide your own example code</p>
     </div>
   </div>
 </div>
+</div>
+
+<div class="feature-grid">
 
 <!-- 3 -->
 <div class="feature-item">
   <div class="card-inner">
     <div class="card-front">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5V3m0 18v-2m9-7h2M3 12H1m16.95 5.95l1.414 1.414M5.636 5.636 4.222 4.222M18.364 5.636l1.414-1.414M5.636 18.364 4.222 19.778"/><circle cx="12" cy="12" r="5"/></svg>
-      <h3>Reproducible Environments</h3>
-      <p>Deploy via Spack, pre-built containers for Docker, Singularity, and commercial cloud environments.</p>
+      <h3>Step 3: Run container</h3>
+      <p>Run the container in interactive mode, obtaining a command prompt</p>
     </div>
     <div class="card-back">
-      <h3>More Details</h3>
-      <p>Binary caches, container images, and continuous builds ensure consistent environments across facilities, enabling reproducible experiments and fair benchmarking.</p>
+      <p>Interactive mode provides you with command line access to an E4S-enabled Linux machine</p>
     </div>
   </div>
 </div>
@@ -249,45 +231,14 @@ Supported by the **U.S. Department of Energy (DOE)** and its partners, E4S accel
 <div class="feature-item">
   <div class="card-inner">
     <div class="card-front">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 7h16M4 12h8M4 17h4M15 16l2 2 3-3"/></svg>
-      <h3>Continuous Validation</h3>
-      <p>E4S packages are tested across DOE leadership and cloud platforms for quality and reproducibility.</p>
+      <h3>Step 4: Compile and run code</h3>
+      <p>Load MPI using Spack, compile your code and run it!</p>
     </div>
     <div class="card-back">
-      <h3>More Details</h3>
-      <p>Automated pipelines validate builds nightly across dozens of devices on the Frank testbed, tracking API/ABI changes and ensuring cross-platform reproducibility.</p>
+      <p>The E4S container has Spack and MPI pre-installed, all other E4S products readily available</p>
     </div>
   </div>
 </div>
-
-</div>
-
-<!-- SECOND FEATURE ROW: Bot and Buttons -->
-<div class="feature-grid feature-row-botcatalog">
-
-  <!-- Left: E4S Bot -->
-  <div class="feature-item static-card">
-    <div class="card-front">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H7l-4 4v-4H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>
-      <h3>Chat with the E4S Bot</h3>
-      <p>Ask questions, explore tools, or get recommendations from the E4S Guide Bot.</p>
-      <div style="margin-top: 1rem;">
-        {% include e4s-bot-button.html %}
-      </div>
-    </div>
-  </div>
-
-  <!-- Right: E4S Doc catalog -->
-  <div class="feature-item static-card">
-    <div class="card-front">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 4h14a2 2 0 0 1 2 2v14l-4-2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>
-      <h3>Visit the E4S Product Catalog</h3>
-      <p>Browse member products, product families, with extensive links, via the E4S Product Catalog</p>
-      <div style="margin-top: 1rem;">
-        {% include e4s-product-catalog-button.html %}
-      </div>
-    </div>
-  </div>
 
 </div>
 
@@ -356,7 +307,135 @@ setTimeout(sizeCards, 300);
 </script>
 
 ---
-<p style="text-align:center;">
-    <strong style="font-size: 1.5em;">Trusted by the HPC-AI Community</strong>
-</p>
-E4S is developed and supported by contributors from U.S. national laboratories, universities, and industry partners. It is available as both open-source and commercial distributions such as [ParaTools Pro for E4S™](https://paratoolspro.com) for commercial cloud platforms such as AWS, Azure, GCP, OCI, and IBM Cloud.
+
+# Getting Started with MPI Using the E4S Base Container  
+### (Docker Desktop on macOS or Linux)
+
+This short guide walks you through four simple conceptual steps to run an MPI program inside an E4S container using the **ecpe4s/ubuntu20.04** base image.  
+The process is portable, reproducible, and works on any system running Docker Desktop.
+
+---
+
+## **1. Download the E4S Base Image**
+
+Pull the E4S base container:
+
+```bash
+docker pull ecpe4s/ubuntu20.04:latest
+```
+
+Verify the image exists locally:
+
+```bash
+docker images ecpe4s/ubuntu20.04
+```
+
+---
+
+## **2. Create a Simple MPI Example**
+
+Create a working directory:
+
+```bash
+mkdir ~/mpi-test
+cd ~/mpi-test
+```
+
+Create an MPI source file named `pingpong.c`:
+
+```c
+#include <mpi.h>
+#include <stdio.h>
+
+int main(int argc, char **argv) {
+    int rank, tag = 0;
+    char msg = 'x';
+    MPI_Status status;
+
+    MPI_Init(&argc, &argv);
+    MPI_Comm_rank(MPI_COMM_WORLD, &rank);
+
+    for (int i = 0; i < 10; i++) {
+        if (rank == 0) {
+            MPI_Send(&msg, 1, MPI_CHAR, 1, tag, MPI_COMM_COMM_WORLD);
+            MPI_Recv(&msg, 1, MPI_CHAR, 1, tag, MPI_COMM_WORLD, &status);
+            printf("Iteration %d: Rank 0 received pong\n", i);
+        } else if (rank == 1) {
+            MPI_Recv(&msg, 1, MPI_CHAR, 0, tag, MPI_COMM_WORLD, &status);
+            MPI_Send(&msg, 1, MPI_CHAR, 0, tag, MPI_COMM_WORLD);
+            printf("Iteration %d: Rank 1 sent pong\n", i);
+        }
+    }
+
+    MPI_Finalize();
+    return 0;
+}
+```
+
+---
+
+## **3. Run the Container in Interactive Mode**
+
+Use Docker Desktop to start an interactive shell inside the E4S container:
+
+```bash
+docker run -it --rm \
+    -v $PWD:/work \
+    -w /work \
+    ecpe4s/ubuntu20.04:latest /bin/bash
+```
+
+Verify your source file is visible:
+
+```bash
+ls
+```
+
+Expected output:
+
+```
+pingpong.c
+```
+
+---
+
+## **4. Load MPI Using Spack, Compile, and Run!**
+
+Inside the container:
+
+### Load an MPI implementation:
+
+```bash
+spack load mpich
+```
+
+Verify the MPI compiler is available:
+
+```bash
+mpicc --version
+```
+
+### Compile your MPI program:
+
+```bash
+mpicc -O2 -o pingpong pingpong.c
+```
+
+### Run the MPI application:
+
+```bash
+mpirun -n 2 ./pingpong
+```
+
+You should see output showing message exchange between rank 0 and rank 1.
+
+---
+
+# 🎉 Congratulations!
+
+You now have a complete MPI workflow running inside an E4S container:
+
+- E4S base image downloaded  
+- MPI program created  
+- Interactive container session started  
+- MPI loaded via Spack, compiled, and executed  

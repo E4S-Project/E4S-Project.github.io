@@ -19,6 +19,8 @@ usemenu:
         url: /use/
       - title: "E4S Guide Bot"
         url: /guide-e4s-bot/
+      - title: "E4S Quick Start"
+        url: /quick-start/
       - title: "E4S Documentation"
         url: /documentation/
       - title: "E4S Product Catalog"
