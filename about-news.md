@@ -13,6 +13,8 @@ sidebar:
 |--------------|-------------|
 | New E4S website | The new E4S website aims to provide significant enhancements for all community members. See the [New Site Features page](/new-features) |
 | E4S 25.11 Release | [Release Notes](/news/NEWS_RELEASE_E4S_25.11.pdf), [Release Presentation](/talks/E4S_25.11.pdf)|
+| E4S-focused Tutorial at SC'25 | [Using Containers To Accelerate HPC](https://sc25.conference-program.com/presentation/?id=tut109&sess=sess250) |
+| E4S Booth Talks at SC'25 | Tuesday 2:30pm @OSU booth; 4:30pm @Intel booth, Wed 11am@DOE booth; 2pm@LinkOregon |
 | Michael Heroux HPCWire Legend | Michael Heroux was selected for the 2025 class of HPCWire 35 Legends as ["Open Source HPC Software Pioneer"](https://www.hpcwire.com/35-hpc-legends-michael-heroux/) |
 
 ### Events
