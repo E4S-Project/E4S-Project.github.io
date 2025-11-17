@@ -13,14 +13,13 @@ sidebar:
 |--------------|-------------|
 | New E4S website | The new E4S website aims to provide significant enhancements for all community members. See the [New Site Features page](/new-features) |
 | E4S 25.11 Release | [Release Notes](/news/NEWS_RELEASE_E4S_25.11.pdf), [Release Presentation](/talks/E4S_25.11.pdf)|
-| E4S-focused Tutorial at SC'25 | [Using Containers To Accelerate HPC](https://sc25.conference-program.com/presentation/?id=tut109&sess=sess250) |
-| E4S Booth Talks at SC'25 | Tuesday 2:30pm @OSU booth; 4:30pm @Intel booth, Wed 11am@DOE booth; 2pm@LinkOregon |
-| Michael Heroux HPCWire Legend | Michael Heroux was selected for the 2025 class of HPCWire 35 Legends as ["Open Source HPC Software Pioneer"](https://www.hpcwire.com/35-hpc-legends-michael-heroux/) |
+| Michael Heroux "HPCWire Legend" Award | Michael Heroux was selected for the 2025 class of HPCWire 35 Legends as ["Open Source HPC Software Pioneer"](https://www.hpcwire.com/35-hpc-legends-michael-heroux/) |
 
 ### Events
 
 | Date | Event | Location |
 |------|--------|-----------|
+| November 16, 2025 - 8:30 am - 5:00 pm | [Using Containers To Accelerate HPC](https://sc25.conference-program.com/presentation/?id=tut109&sess=sess250) |
 | November 18, 2025 — 2:30 pm – 3:00 pm | [ParaTools Pro for E4S(TM) – an HPC-AI ecosystem for science (tutorial, OSU booth #414)](https://mvapich.cse.ohio-state.edu/conference/997/talks/) | Exhibit Hall, SC25 |
 | November 18, 2025 — 4:30 pm – 4:50 pm | [E4S: An HPC-AI Software Ecosystem for Science (theater talk, Intel booth #2227)](https://www.intel.com/content/www/us/en/events/supercomputing.html) | Exhibit Hall, SC25 |
 | November 19, 2025 — 11:00 am – 12:00 pm | [E4S: An HPC-AI Software Ecosystem for Science (demo, DOE booth #3802)](https://scdoe.info/demonstrations/) | Exhibit Hall, SC25 |
