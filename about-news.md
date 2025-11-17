@@ -24,6 +24,7 @@ sidebar:
 | November 18, 2025 — 4:30 pm – 4:50 pm | [E4S: An HPC-AI Software Ecosystem for Science (theater talk, Intel booth #2227)](https://www.intel.com/content/www/us/en/events/supercomputing.html) | Exhibit Hall, SC25 |
 | November 19, 2025 — 11:00 am – 12:00 pm | [E4S: An HPC-AI Software Ecosystem for Science (demo, DOE booth #3802)](https://scdoe.info/demonstrations/) | Exhibit Hall, SC25 |
 | November 19, 2025 — 2:00 pm – 3:00 pm | [E4S and TAU (talk, LinkOregon booth #6313)](https://www.linkoregon.org) | Exhibit Hall, SC25 |
+| November 20, 2025 - 1:30 am - 3:00 pm | [Research Software Engineering in the Age of AI](https://sc25.conference-program.com/presentation/?id=pan109&sess=sess351) |
 
 ### Past Events
 
