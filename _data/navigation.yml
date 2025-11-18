@@ -86,6 +86,8 @@ aboutmenu:
         url: /about-first-time-users/
       - title: "E4S Product Families"
         url: /about-product-families/
+      - title: "E4S Containers"
+        url: /about-e4s-containers/
       - title: "E4S FAQs"
         url: /about-faqs/
       - title: "AI and the E4S Website"

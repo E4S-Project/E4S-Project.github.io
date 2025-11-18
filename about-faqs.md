@@ -97,6 +97,3 @@ Information is based on the E4S 25.06 release materials.
 | Why should vendors support E4S? | Vendor engagement with E4S promotes co-design and reduces friction in deploying new hardware or compilers to the scientific community. |
 | How does E4S help align community and vendor roadmaps? | Through joint testing, feedback loops, and shared infrastructure, E4S aligns evolving open-source capabilities with vendor-supported hardware and software features. |
 
----
-
-*For more information, visit [https://e4s.io](https://e4s.io) or contact the E4S coordination team through the site’s community channels.*
