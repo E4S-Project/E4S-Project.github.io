@@ -28,6 +28,7 @@ When selecting a math library from the E4S ecosystem, users should consider thei
 | Attribute | Description |
 |------------|-------------|
 | Problem type | The mathematical problem addressed, such as linear systems, eigenvalue problems, nonlinear equations, optimization, or PDEs. |
+| Current library use | Listing libraries you already use can influence advice to use compatible libraries. |
 | Data structure support | Types of data layouts and structures supported (dense, sparse, block, hierarchical, etc.). |
 | Precision support | Floating-point and mixed-precision capabilities (e.g., FP64, FP32, BF16, FP16). |
 | Parallelism model | Types of parallel execution supported (MPI, OpenMP, CUDA, HIP, SYCL, Kokkos, etc.). |
