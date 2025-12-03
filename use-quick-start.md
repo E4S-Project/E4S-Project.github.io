@@ -12,8 +12,6 @@ The instructions on this page show how to build and run a simple MPI program usi
 
 {% include e4s-card-style.html %}
 
-{% include e4s-card-script.html %}
-
 {% include e4s-two-card-content.html
    card1_title="Step 1: Docker Image"
    card1_front_text="Download E4S base image ecpe4s/ubuntu20.04"
@@ -32,6 +30,7 @@ The instructions on this page show how to build and run a simple MPI program usi
    card2_back_text="The E4S container has Spack and MPI pre-installed, with all other E4S products readily available."
 %}
 
+{% include e4s-card-script.html %}
 
 ---
 

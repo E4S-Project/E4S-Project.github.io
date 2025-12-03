@@ -1,12 +1,26 @@
 <script>
-// Flip behavior: touch devices tap; desktop hover handled by CSS
+// ---- Flip behavior: touch devices tap; desktop click handled by CSS ----
+
+// ---- DEVICE DETECTION ----
+const isTouchDevice =
+  'ontouchstart' in window ||
+  navigator.maxTouchPoints > 0 ||
+  navigator.msMaxTouchPoints > 0;
+
+// ---- FLIP BEHAVIOR: CLICK/TAP ON ALL DEVICES ----
 document.querySelectorAll('.feature-item').forEach(item => {
   const backButton = item.querySelector('.flip-back');
+
+  // Flip on click/tap everywhere (desktop + touch)
   item.addEventListener('click', e => {
-    if (!window.matchMedia('(hover:hover)').matches) {
-      if (!e.target.classList.contains('flip-back')) item.classList.toggle('flipped');
-    }
+    // Do not flip if user clicked a link or a button
+    if (e.target.closest('a, button')) return;
+
+    // Toggle flip state
+    item.classList.toggle('flipped');
   });
+
+  // Explicit "flip-back" button, if present
   if (backButton) {
     backButton.addEventListener('click', e => {
       e.stopPropagation();

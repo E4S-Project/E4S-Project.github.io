@@ -28,8 +28,6 @@ Supported by the **U.S. Department of Energy (DOE)** and its partners, E4S accel
 
 {% include e4s-card-style.html %}
 
-{% include e4s-card-script.html %}
-
 {% capture icon_perf %}
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 9h6v6H9z"/></svg>
 {% endcapture %}
@@ -120,6 +118,7 @@ The E4S Product catalog is a searchable, sortable table of all primary E4S produ
 
 %}
 
+{% include e4s-card-script.html %}
 
 ---
 <p style="text-align:center;">
