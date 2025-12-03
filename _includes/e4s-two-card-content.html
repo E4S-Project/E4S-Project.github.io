@@ -1,0 +1,89 @@
+<div class="feature-grid">
+
+  <!-- CARD 1 -->
+  <div class="feature-item">
+    <div class="card-inner">
+      <div class="card-front">
+
+        <!-- Icon -->
+        {% if include.card1_icon %}
+          {{ include.card1_icon }}
+        {% endif %}
+
+        <!-- Title -->
+        {% if include.card1_title %}
+          <h3>{{ include.card1_title }}</h3>
+        {% endif %}
+
+        <!-- Front Text -->
+        {% if include.card1_front_text %}
+          <p>{{ include.card1_front_text }}</p>
+        {% endif %}
+
+        <!-- Flip hint -->
+        {% if include.card1_front_text or include.card1_back_text %}
+          <p style="text-align: center; font-size: 0.7em;">Flip for details</p>
+        {% endif %}
+
+      </div>
+
+      <div class="card-back">
+
+        <!-- Back Title (optional, reuse same title if desired) -->
+        {% if include.card1_back_title %}
+          <h3>{{ include.card1_back_title }}</h3>
+        {% endif %}
+
+        <!-- Back Text -->
+        {% if include.card1_back_text %}
+          <p>{{ include.card1_back_text }}</p>
+        {% endif %}
+
+      </div>
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="feature-item">
+    <div class="card-inner">
+      <div class="card-front">
+
+        <!-- Icon -->
+        {% if include.card2_icon %}
+          {{ include.card2_icon }}
+        {% endif %}
+
+        <!-- Title -->
+        {% if include.card2_title %}
+          <h3>{{ include.card2_title }}</h3>
+        {% endif %}
+
+        <!-- Front Text -->
+        {% if include.card2_front_text %}
+          <p>{{ include.card2_front_text }}</p>
+        {% endif %}
+
+        <!-- Flip hint -->
+        {% if include.card2_front_text or include.card2_back_text %}
+          <p style="text-align: center; font-size: 0.7em;">Flip for details</p>
+        {% endif %}
+
+      </div>
+
+      <div class="card-back">
+
+        <!-- Back Title -->
+        {% if include.card2_back_title %}
+          <h3>{{ include.card2_back_title }}</h3>
+        {% endif %}
+
+        <!-- Back Text -->
+        {% if include.card2_back_text %}
+          <p>{{ include.card2_back_text }}</p>
+        {% endif %}
+
+      </div>
+    </div>
+  </div>
+
+</div>

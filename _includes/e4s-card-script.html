@@ -1,0 +1,63 @@
+<script>
+// Flip behavior: touch devices tap; desktop hover handled by CSS
+document.querySelectorAll('.feature-item').forEach(item => {
+  const backButton = item.querySelector('.flip-back');
+  item.addEventListener('click', e => {
+    if (!window.matchMedia('(hover:hover)').matches) {
+      if (!e.target.classList.contains('flip-back')) item.classList.toggle('flipped');
+    }
+  });
+  if (backButton) {
+    backButton.addEventListener('click', e => {
+      e.stopPropagation();
+      item.classList.remove('flipped');
+    });
+  }
+});
+
+/* ---- Auto-size each card to its tallest face ----
+   Measures natural heights (front & back), sets --card-h per card,
+   and re-measures on load/resize/grid reflow.
+*/
+function sizeCards() {
+  const items = document.querySelectorAll('.feature-item');
+  if (!items.length) return;
+
+  items.forEach(item => {
+    // put card in "measuring" mode so faces flow naturally
+    item.classList.add('measuring');
+    // clear previous height so we can measure natural height
+    item.style.setProperty('--card-h', 'auto');
+
+    const front = item.querySelector('.card-front');
+    const back  = item.querySelector('.card-back');
+
+    // read natural heights
+    const hFront = front ? front.scrollHeight : 0;
+    const hBack  = back  ? back.scrollHeight  : 0;
+
+    // choose the tallest + a tiny buffer
+    const h = Math.max(hFront, hBack, 240) + 2;
+
+    // apply height to the card
+    item.style.setProperty('--card-h', h + 'px');
+
+    // leave measuring mode
+    item.classList.remove('measuring');
+  });
+}
+
+// Recompute on load, after fonts, and on resize
+window.addEventListener('load', sizeCards);
+window.addEventListener('resize', () => { sizeCards(); });
+
+// Recompute when the grid layout changes size (e.g., responsive columns)
+const grid = document.querySelector('.feature-grid');
+if (window.ResizeObserver && grid) {
+  const ro = new ResizeObserver(() => sizeCards());
+  ro.observe(grid);
+}
+
+// If content/fonts load late in Minimal-Mistakes, a small post-load nudge helps
+setTimeout(sizeCards, 300);
+</script>

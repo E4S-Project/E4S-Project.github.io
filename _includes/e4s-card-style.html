@@ -1,0 +1,171 @@
+<style>
+.btn--oval-blue {
+  display: inline-block;
+  background-color: #0092CA;
+  color: white !important;
+  padding: 0.6em 1.5em;
+  border-radius: 999px; /* makes it oval */
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn--oval-blue:hover {
+  background-color: #0078a8;
+  transform: translateY(-2px);
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* Card shell */
+.feature-item {
+  --card-h: auto;           /* will be filled by JS per card */
+  background: #f8f9fa;
+  border-radius: 12px;
+  text-align: center;
+  padding: 0;               /* faces hold padding */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: box-shadow 0.2s ease;
+  position: relative;
+  perspective: 1000px;
+  cursor: pointer;
+  height: var(--card-h, auto);
+  min-height: 240px;        /* safety floor, gets overridden once sized */
+}
+
+/* Rotating inner wrapper */
+.feature-item .card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;             /* match computed height */
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+  border-radius: 12px;
+}
+
+/* Faces */
+.feature-item .card-front,
+.feature-item .card-back {
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  backface-visibility: hidden;
+  overflow: auto;           /* scroll if needed */
+}
+
+/* Front preserves original design */
+.feature-item .card-front {
+  background: #f8f9fa;
+}
+
+/* Back */
+.feature-item .card-back {
+  background: #eaf5fb;
+  text-align: left;
+  transform: rotateY(180deg);
+}
+
+/* Desktop hover lift */
+@media (hover: hover) {
+  .feature-item:hover {
+    box-shadow: 0 6px 10px rgba(0,0,0,0.12);
+  }
+}
+
+/* Flip triggers */
+.feature-item.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+@media (hover: hover) {
+  .feature-item:hover .card-inner {
+    transform: rotateY(180deg);
+  }
+}
+
+/* Original icon/typography */
+.feature-item svg {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 10px;
+  stroke: #0092CA;
+  stroke-width: 1.8;
+  fill: none;
+}
+.feature-item h3 {
+  color: #0092CA;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+.feature-item p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* Back button */
+.feature-item .flip-back {
+  margin-top: 1rem;
+  padding: 0.3rem 0.6rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #0092CA;
+  color: white;
+  cursor: pointer;
+}
+.feature-item .flip-back:hover {
+  background-color: #0078a8;
+}
+
+/* Measurement mode (temporarily disables abs positioning to read natural heights) */
+.feature-item.measuring .card-front,
+.feature-item.measuring .card-back {
+  position: static !important;
+  transform: none !important;
+  display: block !important;
+  box-shadow: none !important;
+  backface-visibility: visible !important;
+}
+/* Second feature row styling */
+.feature-row-botcatalog {
+  margin-top: 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.static-card {
+  background: #f8f9fa;
+  border-radius: 12px;
+  text-align: center;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.static-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 10px rgba(0,0,0,0.12);
+}
+
+.static-card svg {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 10px;
+  stroke: #0092CA;
+  stroke-width: 1.8;
+  fill: none;
+}
+
+.static-card h3 {
+  color: #0092CA;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.static-card p {
+  font-size: 0.95rem;
+  color: #444;
+}
+</style>
