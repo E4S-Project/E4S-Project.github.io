@@ -8,6 +8,8 @@ sidebar:
 description: "Step-by-step instructions for installing E4S packages from prebuilt binaries using Spack’s build cache."
 ---
 
+{% include e4s-page-actions.html %}
+
 E4S publishes **prebuilt, cryptographically signed Spack binaries** (a *build cache*) for many supported platforms, compilers, and device SDKs. Using the build cache dramatically reduces install time and ensures consistency with tested E4S releases.
 
 Below is a succinct, **copy-paste friendly** guide. You can follow it in a clean shell or inside a Spack environment.

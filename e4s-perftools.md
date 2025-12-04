@@ -7,6 +7,8 @@ sidebar:
   nav: "productfamiliesmenu"
 ---
 
+{% include e4s-page-actions.html %}
+
 The **Ecosystem for Scientific Software (E4S)** provides a curated collection of scalable, open-source performance analysis and optimization tools designed to help application developers, performance engineers, and system administrators understand and improve the performance of scientific and AI workloads on high-performance computing (HPC) systems. The performance tools supported by E4S enable users to monitor runtime behavior, identify bottlenecks, analyze scalability, and ensure efficient utilization of computing resources across CPUs, GPUs, and hybrid architectures.
 
 These tools support modern programming models such as MPI, OpenMP, CUDA, HIP, SYCL, and Kokkos, and integrate seamlessly with E4S libraries, compilers, and runtime systems. They provide performance insights at both the intra-node (single node or GPU) and inter-node (multi-node, distributed memory) levels.

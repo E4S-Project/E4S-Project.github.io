@@ -7,6 +7,8 @@ sidebar:
   nav: "aboutmenu"
 ---
 
+{% include e4s-page-actions.html %}
+
 # E4S Frequently Asked Questions
 
 The following FAQs are designed to help visitors understand what the **Ecosystem for Science (E4S)** is, why it exists, and how it benefits the broader community of users, developers, maintainers, vendors, and sponsors.  

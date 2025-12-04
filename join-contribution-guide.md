@@ -7,6 +7,8 @@ sidebar:
   nav: "joinmenu"
 ---
 
+{% include e4s-page-actions.html %}
+
 E4S (Ecosystem for Science) is a community-driven, open-source software ecosystem that provides a curated collection of interoperable scientific libraries, tools, and frameworks. Contributing your software to E4S connects your project to a broad network of HPC and AI software stakeholders, improves discoverability and interoperability, and supports long-term sustainability.
 
 This guide helps prospective contributors understand why and how to join E4S, what prerequisites exist, and what ongoing responsibilities are expected once accepted.

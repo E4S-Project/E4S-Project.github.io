@@ -7,6 +7,8 @@ sidebar:
   nav: "productfamiliesmenu"
 ---
 
+{% include e4s-page-actions.html %}
+
 E4S provides a curated collection of open-source, high-performance scientific software packages, including a robust set of mathematical libraries covering linear algebra, eigensolvers, nonlinear systems, ODE/DAE integrators, optimization, stochastic methods and other advanced capabilities. 
   
 For newcomers, here’s a primer on how these math libraries fit into computational science workflows:  

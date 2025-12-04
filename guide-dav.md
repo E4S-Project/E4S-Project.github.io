@@ -7,6 +7,8 @@ sidebar:
   nav: "botmenu"
 ---
 
+{% include e4s-page-actions.html %}
+
 <p style="text-align:center;">
     Construct your prompt from the instructions below then use the E4S Guide Bot
 </p>

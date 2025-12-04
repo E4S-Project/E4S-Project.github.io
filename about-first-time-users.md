@@ -7,6 +7,8 @@ sidebar:
   nav: "aboutmenu"
 ---
 
+{% include e4s-page-actions.html %}
+
 _**E4S is a trusted, ready-made software ecosystem that powers modern scientific discovery.**_
 
 The Ecosystem for Scientific (E4S) is a collection of software packages that scientists, engineers, and researchers use to solve some of the world’s hardest problems—ranging from discovering new materials to improving the design of products we use every day.

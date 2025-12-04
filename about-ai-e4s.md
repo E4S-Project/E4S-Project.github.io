@@ -8,6 +8,8 @@ sidebar:
 ---
 
 
+{% include e4s-page-actions.html %}
+
 ## Overview
 
 The E4S website (as of November 2025) illustrates how modern AI capabilities facilitate efficient and effective website design and implementation, and enable an attractive user-interaction model. The table below summarizes the key ways AI supports content generation, domain-aware guidance, and multi-faceted output for the wide range of E4S website users.  This page itself was primary provided via a chat prompt response.

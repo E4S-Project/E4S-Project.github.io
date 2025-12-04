@@ -7,6 +7,8 @@ sidebar:
   nav: "joinmenu"
 ---
 
+{% include e4s-page-actions.html %}
+
 **Version 1**
 
 [E4S](https://e4s-project.github.io/) and its related [product families](/product-families/) are light-weight organizational elements intended to enhance collaboration and coordination across independently-developed products.

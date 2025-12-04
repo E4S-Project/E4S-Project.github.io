@@ -1,0 +1,90 @@
+{% comment %}
+Include: _includes/e4s-page-actions.html
+
+Renders three E4S-styled pill buttons in a single horizontal row:
+- Ask a question via GitHub Discussions
+- Open a new GitHub issue for this page
+- Open this page in the GitHub editor (which will prompt a fork/PR if needed)
+
+Usage in a page/post:
+{% include e4s-page-actions.html %}
+{% endcomment %}
+
+<style>
+/* E4S theme-adaptive pill button with white text */
+.btn--e4s {
+  background-color: var(--e4s-blue);
+  color: #ffffff !important;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.6em 1.6em;
+  font-weight: 600;
+  display: inline-block;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  text-decoration: none;
+}
+.btn--e4s:hover,
+.btn--e4s:focus {
+  background-color: var(--e4s-blue-hover);
+  color: #ffffff !important;
+  text-decoration: none;
+}
+
+/* Color tokens (light and dark theme) */
+:root {
+  --e4s-blue: #0092ca;
+  --e4s-blue-hover: #006b99;
+}
+[data-theme="dark"] {
+  --e4s-blue: #33b8f2;
+  --e4s-blue-hover: #66ccff;
+}
+
+/* Layout for the three buttons in a row */
+.e4s-page-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+</style>
+
+{% assign repo_url = site.github.repository_url | default: "https://github.com/E4S-Project/E4S-Project.github.io" %}
+{% assign discussion_url = site.github.repository_url | default: "https://github.com/E4S-Project/E4S-Project.github.io" %}
+{% assign page_full_url = site.url | append: page.url %}
+{% assign issue_title = "Issue on E4S page: " | append: page.title | uri_escape %}
+{% capture issue_body %}
+Please describe the problem with this page:
+
+{{ page_full_url }}
+
+{% endcapture %}
+{% assign issue_body_escaped = issue_body | uri_escape %}
+
+---
+
+<div class="e4s-page-actions">
+  <!-- Ask a question in GitHub Discussions -->
+  <a class="btn btn--e4s"
+     href="https://github.com/orgs/E4S-Project/discussions/new"
+     target="_blank" rel="noopener">
+    Ask a question (GitHub Discussions)
+  </a>
+
+  <!-- Open a new issue for this page -->
+  <a class="btn btn--e4s"
+     href="{{ repo_url }}/issues/new?title={{ issue_title }}&body={{ issue_body_escaped }}"
+     target="_blank" rel="noopener">
+    Report an issue for this page
+  </a>
+
+  <!-- Open this page in GitHub editor (will prompt to fork if needed) -->
+  <a class="btn btn--e4s"
+     href="{{ repo_url }}/edit/master/{{ page.path }}"
+     target="_blank" rel="noopener">
+    Propose page edits
+  </a>
+</div>
+
+---

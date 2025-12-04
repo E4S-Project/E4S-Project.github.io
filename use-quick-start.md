@@ -7,6 +7,8 @@ sidebar:
   nav: "usemenu"
 ---
 
+{% include e4s-page-actions.html %}
+
 
 The instructions on this page show how to build and run a simple MPI program using an **E4S base container** available from [DockerHub](https://hub.docker.com).
 

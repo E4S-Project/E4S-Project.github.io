@@ -7,6 +7,8 @@ sidebar:
   nav: "aboutmenu"
 ---
 
+{% include e4s-page-actions.html %}
+
 ### News
 
 | Announcement | Description | 

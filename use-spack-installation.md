@@ -7,6 +7,8 @@ sidebar:
   nav: "usemenu"
 ---
 
+{% include e4s-page-actions.html %}
+
 # Introduction
 
 Spack is a flexible package manager designed for scientific software. It supports multiple compiler versions, dependency resolution, build variants, and installation into isolated environments. This guide provides step-by-step instructions on how to **search for**, **inspect**, and **install** libraries and tools using Spack.

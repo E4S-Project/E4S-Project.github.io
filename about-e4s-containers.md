@@ -7,6 +7,8 @@ sidebar:
   nav: "aboutmenu"
 ---
 
+{% include e4s-page-actions.html %}
+
 
 Scientific computing users find containers attractive for many reasons.  A simple approach is to download a basic container images, install Spack and then further install any other software products you need.  However, you might consider using E4S containers instead.  This page helps you think through that decision by comparing when each option makes sense and highlighting some of the hidden long-term risks.
 

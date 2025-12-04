@@ -7,6 +7,9 @@ sidebar:
   nav: "botmenu"
 ---
 
+
+{% include e4s-page-actions.html %}
+
 <p style="text-align:center;">
     Construct your prompt from the instructions below then use the E4S Guide Bot
 </p>
@@ -31,6 +34,7 @@ Selecting the right AI/ML library or tool depends on understanding both the **ch
 The following tables outline attributes that can help a newcomer — or an automated assistant — reason about which AI/ML tools best fit a given use case. These attributes are divided into broadly meaningful attributes and those specific to certain situations.
 
 ---
+
 
 ## Broadly Meaningful Attributes
 

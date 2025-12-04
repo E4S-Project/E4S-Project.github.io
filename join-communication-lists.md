@@ -7,6 +7,8 @@ sidebar:
   nav: "joinmenu"
 ---
 
+{% include e4s-page-actions.html %}
+
 ## Overview
 
 The E4S community provides multiple ways for developers, users, and contributors to connect, collaborate, and stay informed. The primary communication channels include the E4S Slack workspace, GitHub Discussions, and issue tracking via E4S GitHub repositories. These venues enable open and inclusive participation across the scientific software ecosystem.

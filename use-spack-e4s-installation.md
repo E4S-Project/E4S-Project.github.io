@@ -7,6 +7,8 @@ sidebar:
   nav: "usemenu"
 ---
 
+{% include e4s-page-actions.html %}
+
 ## Manual Installation Instructions
 
 The instructions on this page provide specific guidance for using Spack to install E4S.  See [Finding and installing products using Spack](/use-spack-installation/) for general Spack instruction on how to install individual E4S-related products.

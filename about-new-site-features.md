@@ -7,6 +7,8 @@ sidebar:
   nav: "aboutmenu"
 ---
 
+{% include e4s-page-actions.html %}
+
 ## Overview
 
 The new **E4S Project website** represents a major evolution from the original site.  

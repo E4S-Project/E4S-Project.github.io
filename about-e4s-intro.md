@@ -35,7 +35,7 @@ With E4S, scientific teams avoid building common computing tools from scratch, a
 
 {% capture why_back_raw %}
 - **Scientists work better and faster:** Ready-to-use tools mean less time reinventing the wheel.
-- **Taxpayer supercomputer investments are maximized:** Software investments unlock hardware capabilities.
+- **Taxpayer supercomputer investments maximized:** Software investments unlock hardware capabilities.
 - **The U.S. maintains leadership:** E4S keeps America at the forefront of scientific innovation.
 {% endcapture %}
 

@@ -7,6 +7,8 @@ sidebar:
   nav: "usemenu"
 ---
 
+{% include e4s-page-actions.html %}
+
 # Container installation recipes
 
 ## Docker

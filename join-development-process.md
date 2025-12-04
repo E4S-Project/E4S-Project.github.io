@@ -7,6 +7,8 @@ sidebar:
   nav: "joinmenu"
 ---
 
+{% include e4s-page-actions.html %}
+
 ## Overview
 
 The E4S development process ensures that scientific software products are integrated, tested, and maintained in a consistent, portable, and reproducible manner across diverse high-performance computing environments. E4S releases are built around community collaboration, rigorous testing, and continuous improvement of the curated software ecosystem.

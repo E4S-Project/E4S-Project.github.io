@@ -7,6 +7,8 @@ sidebar:
   nav: "productfamiliesmenu"
 ---
 
+{% include e4s-page-actions.html %}
+
 In an HPC-AI software ecosystem such as E4S, organizing the many constituent libraries and tools into **product families** helps users, developers, and application teams reason about how the pieces fit together, interoperate, and evolve in a coherent way.  These domains reflect logical groupings of capabilities (e.g. compilers, performance analysis, numerical solvers, data infrastructure, AI frameworks, packaging/infrastructure) that are broadly orthogonal but deeply interdependent in practice.  By viewing the software portfolio through product family lenses, teams can more easily understand how their components relate, how to coordinate interfaces and versions, and how innovations in one domain (say, a new profiling tool or memory hierarchy abstraction) can benefit multiple downstream projects.
 
 While E4S serves primarily as a **distribution and integration platform** for HPC-AI software, the notion of product families is older and more fundamental: software ecosystems for scientific computing have long relied on domain decomposition to ensure that independently developed libraries can be composed, reused, and upgraded with minimal friction.  The E4S approach is to curate, build, test, and deliver domain-spanning software in a way that eases integration, helps scientists mix and match components across domains, and accelerates adoption of new algorithmic or system advances.
