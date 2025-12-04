@@ -1,0 +1,45 @@
+name: Update Product Catalog
+
+on:
+  schedule:
+    # Run at 6:00 AM UTC
+    - cron: '0 6 * * *'
+  workflow_dispatch:
+
+jobs:
+  update_data:
+    runs-on: ubuntu-latest
+    
+    # GRANT WRITE PERMISSION
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        
+      - name: Download and Commit
+        run: |
+          # 1. Configure the user for Git
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+
+          # 2. Download the product catalog yml blob
+          TARGET_URL="http://yu.nic.uoregon.edu/~wspear/E4S/E4S-Project.github.io/DocPortal.yml"
+          OUTPUT_FILE="_data/product-catalog.yml"
+          
+          echo "Downloading from $TARGET_URL..."
+          curl -f -s -S -L -o "$OUTPUT_FILE" "$TARGET_URL"
+
+          # 3. Check for changes
+          # 'git status --porcelain' returns empty string if no changes
+          if [ -z "$(git status --porcelain)" ]; then
+            echo "No changes detected. Exiting."
+            exit 0
+          fi
+
+          # 4. Commit and Push
+          echo "Changes detected. Committing..."
+          git add "$OUTPUT_FILE"
+          git commit -m "Auto-update: DocPortal data [skip ci]"
+          git push
