@@ -12,7 +12,6 @@ sidebar:
 # E4S Frequently Asked Questions
 
 The following FAQs are designed to help visitors understand what the **Ecosystem for Science (E4S)** is, why it exists, and how it benefits the broader community of users, developers, maintainers, vendors, and sponsors.  
-Information is based on the E4S 25.06 release materials.
 
 ---
 
