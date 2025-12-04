@@ -44,10 +44,10 @@ Please see the [E4S 25.11 Release Notes](https://oaciss.uoregon.edu/e4s/talks/E4
   * [Singularity ppc64le Download - CUDA 70 - Ubuntu](https://oaciss.nic.uoregon.edu/e4s/images/25.11/e4s-cuda70-ppc64le-25.11.sif)
   * [Singularity aarch64 Download - CPU only - Ubuntu](https://oaciss.nic.uoregon.edu/e4s/images/25.11/e4s-cpu-aarch64-25.11.sif)
   * [Singularity aarch64 Download - CUDA 80 - Ubuntu](https://oaciss.nic.uoregon.edu/e4s/images/25.11/e4s-cuda80-aarch64-25.11.sif)
-  * [Singularity aarch64 Download - CUDA 90 - Ubuntu](https://oaciss.nic.uoregon.edu/e4s/images/25.11/e4s-cuda90-aarch64-25.11.4.sif)
-  * [Singularity aarch64 Download - CUDA 90 - Rocky](https://oaciss.nic.uoregon.edu/e4s/images/25.11/e4s-cuda90-rocky9.6-aarch64-25.11.4.sif)
-  * [Singularity aarch64 Download - CUDA 120 - Ubuntu](https://oaciss.nic.uoregon.edu/e4s/images/25.11/e4s-cuda120-aarch64-25.11.6.sif)
-  * [Singularity aarch64 Download - CUDA 120 - Rocky](https://oaciss.nic.uoregon.edu/e4s/images/25.11/e4s-cuda120-rocky9.6-aarch64-25.11.4.sif)
+  * [Singularity aarch64 Download - CUDA 90 - Ubuntu](https://oaciss.nic.uoregon.edu/e4s/images/25.11/e4s-cuda90-aarch64-25.11.sif)
+  * [Singularity aarch64 Download - CUDA 90 - Rocky](https://oaciss.nic.uoregon.edu/e4s/images/25.11/e4s-cuda90-rocky9.6-aarch64-25.11.sif)
+  * [Singularity aarch64 Download - CUDA 120 - Ubuntu](https://oaciss.nic.uoregon.edu/e4s/images/25.11/e4s-cuda120-aarch64-25.11.sif)
+  * [Singularity aarch64 Download - CUDA 120 - Rocky](https://oaciss.nic.uoregon.edu/e4s/images/25.11/e4s-cuda120-rocky9.6-aarch64-25.11.sif)
   * [OVA Download](http://tau.uoregon.edu/ecp.ova)
 
 -----
