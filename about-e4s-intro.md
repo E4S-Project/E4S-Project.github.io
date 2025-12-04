@@ -9,23 +9,51 @@ sidebar:
 
 _**E4S turns expensive supercomputers into powerful engines for discovery by giving scientists the software ecosystem they need.**_
 
-Scientific discovery today depends on powerful computers—machines that can model climate change, design new medicines, improve energy systems, and simulate the behavior of stars. But just as important as the hardware are the software tools that scientists need to harness this computing power. Developing, maintaining, and making these tools widely available is the mission of the Ecosystem for Scientific Software (E4S).
+Scientific discovery today depends on powerful computers—machines that can build and execute new AI models, design new medicines, improve energy systems, and simulate the behavior of stars. But just as important as the hardware are the software tools that scientists need to harness this computing power. Developing, maintaining, and making these tools widely available is the mission of the Ecosystem for Scientific Software (E4S), a collection of software for compute-intensive modeling, simulation, and AI.
 
-## What is E4S?
+{% include e4s-card-style.html %}
 
-E4S is a curated collection of open-source software that scientists and engineers use to do large-scale computing.
-Think of E4S as an app store for scientific computing—but instead of games and spreadsheets, it provides reliable, tested, and interoperable tools for solving problems in physics, chemistry, biology, energy, and engineering.
-- Ecosystem means that it isn’t just one program, but many, working together.
-- Open-source means anyone can inspect, use, and contribute to the software, ensuring transparency and long-term availability.
-- Curated means the collection is tested, documented, and supported so that scientists don’t waste time hunting for or fixing software—they can focus on their research.
+{% capture what_front_raw %}
+E4S is a **curated ecosystem**  of **open-source** software that scientists and engineers use to do large-scale computing. Think of E4S as an app store of reliable, tested, and interoperable tools for solving scientific problems.
+{% endcapture %}
 
-## Why Does E4S Matter?
+{% assign what_front = what_front_raw | markdownify %}
 
-Without E4S, many scientific teams would need to build their own computing tools from scratch, duplicating effort and delaying discovery. By funding E4S, the U.S. ensures that:
-- Scientists can work faster. Ready-to-use tools mean less time reinventing the wheel.
-- Taxpayer investment in supercomputers is maximized. Hardware without the right software is like a laboratory without instruments.
-- The U.S. maintains leadership. Other countries are investing heavily in scientific software. E4S keeps America at the forefront of innovation.
-- Broad access is guaranteed. Because it’s open-source, universities, labs, small businesses, and even students can all benefit—not just large institutions.
+{% capture what_back_raw %}
+- **Curated:** The collection is tested, documented, and supported so that scientists can focus on research.
+- **Ecosystem:** Many products, working together.
+- **Open-source:** Anyone can inspect, use, and contribute, ensuring transparency and long-term availability.
+{% endcapture %}
+
+{% assign what_back = what_back_raw | markdownify %}
+
+{% capture why_front_raw %}
+With E4S, scientific teams avoid building common computing tools from scratch, avoid duplicating effort and delaying discovery. **E4S ensures U.S. R&D investments have sustained impact.**
+{% endcapture %}
+
+{% assign why_front = why_front_raw | markdownify %}
+
+{% capture why_back_raw %}
+- **Scientists work better and faster:** Ready-to-use tools mean less time reinventing the wheel.
+- **Taxpayer supercomputer investments are maximized:** Software investments unlock hardware capabilities.
+- **The U.S. maintains leadership:** E4S keeps America at the forefront of scientific innovation.
+{% endcapture %}
+
+{% assign why_back = why_back_raw | markdownify %}
+
+{% include e4s-two-card-content.html
+
+   card1_title="What is E4S?"
+   card1_front_text=what_front
+   card1_back_text=what_back
+
+   card2_title="Why Does E4S Matter?"
+   card2_front_text=why_front
+   card2_back_text=why_back
+
+%}
+
+{% include e4s-card-script.html %}
 
 ## A Simple Analogy
 

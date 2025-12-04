@@ -29,14 +29,14 @@ document.querySelectorAll('.feature-item').forEach(item => {
   }
 });
 
-/* ---- Auto-size each card to its tallest face ----
-   Measures natural heights (front & back), sets --card-h per card,
-   and re-measures on load/resize/grid reflow.
-*/
+
 function sizeCards() {
   const items = document.querySelectorAll('.feature-item');
   if (!items.length) return;
 
+  let maxH = 240; // minimum floor, same idea as before
+
+  // First pass: measure each card, find max height
   items.forEach(item => {
     // put card in "measuring" mode so faces flow naturally
     item.classList.add('measuring');
@@ -46,18 +46,21 @@ function sizeCards() {
     const front = item.querySelector('.card-front');
     const back  = item.querySelector('.card-back');
 
-    // read natural heights
     const hFront = front ? front.scrollHeight : 0;
     const hBack  = back  ? back.scrollHeight  : 0;
 
-    // choose the tallest + a tiny buffer
-    const h = Math.max(hFront, hBack, 240) + 2;
+    const h = Math.max(hFront, hBack, 240);
+    if (h > maxH) {
+      maxH = h;
+    }
 
-    // apply height to the card
-    item.style.setProperty('--card-h', h + 'px');
-
-    // leave measuring mode
     item.classList.remove('measuring');
+  });
+
+  // tiny buffer and apply same height to all cards
+  maxH = maxH + 2;
+  items.forEach(item => {
+    item.style.setProperty('--card-h', maxH + 'px');
   });
 }
 
@@ -65,13 +68,11 @@ function sizeCards() {
 window.addEventListener('load', sizeCards);
 window.addEventListener('resize', () => { sizeCards(); });
 
-// Recompute when the grid layout changes size (e.g., responsive columns)
 const grid = document.querySelector('.feature-grid');
 if (window.ResizeObserver && grid) {
   const ro = new ResizeObserver(() => sizeCards());
   ro.observe(grid);
 }
 
-// If content/fonts load late in Minimal-Mistakes, a small post-load nudge helps
 setTimeout(sizeCards, 300);
 </script>
