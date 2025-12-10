@@ -7,6 +7,8 @@ sidebar:
   nav: "usemenu"
 ---
 
+{% include e4s-page-actions.html %}
+
 ## E4S as a Proxy for HPC-AI User codes
 If you produce compilers, libraries, and tools for HPC-AI software development teams, E4S can be a good proxy for a broad set of users.  E4S contains a variety of libraries, tools, and test executables that are:
 - Relatively easy to build using Spack

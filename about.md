@@ -7,6 +7,8 @@ sidebar:
   nav: "aboutmenu"
 ---
 
+{% include e4s-page-actions.html %}
+
 E4S provides a curated collection of scientific libraries and tools supporting scientific discovery through advanced computing technologies. The primary value E4S provides is bringing together a large collection of independently developed libraries and tools and enhancing the overall enterprise of developing and using them in aggregate.  This portion of the E4S website focuses on topics that help understand what E4S is, how to contribute to it, and how it can be used.
 
 | Topic | Description |

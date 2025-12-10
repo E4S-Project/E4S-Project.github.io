@@ -6,6 +6,8 @@ classes: wide
 permalink: /contact/
 ---
 
+{% include e4s-page-actions.html %}
+
 For questions and support, you may contact us in the following ways.
 
 | Resource | Details |

@@ -9,6 +9,8 @@ sidebar:
   nav: "usemenu"
 ---
 
+{% include e4s-page-actions.html %}
+
 The E4S Product Catalog provides a convenient searchable and sortable table that provides per-product information for all primary E4S products.
 
 

@@ -7,6 +7,8 @@ sidebar:
   nav: "aboutmenu"
 ---
 
+{% include e4s-page-actions.html %}
+
 _**E4S turns expensive supercomputers into powerful engines for discovery by giving scientists the software ecosystem they need.**_
 
 Scientific discovery today depends on powerful computers—machines that can build and execute new AI models, design new medicines, improve energy systems, and simulate the behavior of stars. But just as important as the hardware are the software tools that scientists need to harness this computing power. Developing, maintaining, and making these tools widely available is the mission of the Ecosystem for Scientific Software (E4S), a collection of software for compute-intensive modeling, simulation, and AI.

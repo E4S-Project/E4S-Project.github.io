@@ -10,6 +10,8 @@ sidebar:
 ---
 
 
+{% include e4s-page-actions.html %}
+
 ### E4S Products Documentation
 
 The E4S Product Catalog provides a navigable, interactive portal to product documentation.  The portal provides a searchable and sortable table of all primary E4S products.  The table contains information about each product, what [product family](/product-families/) it belongs to, timestamps on documentation updates, a brief summary of each product and a link to the product website.

@@ -7,6 +7,8 @@ sidebar:
   nav: "botmenu"
 ---
 
+{% include e4s-page-actions.html %}
+
 
 <style>
 /* Inline style: E4S theme-adaptive pill button with white text */

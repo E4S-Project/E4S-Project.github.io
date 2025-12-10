@@ -7,6 +7,8 @@ sidebar:
   nav: "joinmenu"
 ---
 
+{% include e4s-page-actions.html %}
+
 
 E4S represents a growing community of HPC software products. Please [contact us](/contact/) if you would like your product to be a part of E4S.
 
