@@ -25,7 +25,7 @@ jobs:
           git config --global user.email "actions@github.com"
 
           # 2. Download the product catalog yml blob
-          TARGET_URL="http://yu.nic.uoregon.edu/~wspear/E4S/E4S-Project.github.io/DocPortal.yml"
+          TARGET_URL="http://yu.nic.uoregon.edu/~wspear/E4S/product-catalog.yml"
           OUTPUT_FILE="_data/product-catalog.yml"
           
           echo "Downloading from $TARGET_URL..."
