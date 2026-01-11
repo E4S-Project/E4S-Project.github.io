@@ -82,6 +82,8 @@ aboutmenu:
         url: /about/
       - title: "E4S Introduction"
         url: /about-e4s-intro/
+      - title: "E4S Learning"
+        url: /learn/
       - title: "First-Time Users"
         url: /about-first-time-users/
       - title: "E4S Product Families"
@@ -136,3 +138,23 @@ botmenu:
         url: /guide-dav/
       - title: "AI & Machine Learning Guide"
         url: /guide-aiml/
+
+# -------------------------
+# Sidebar: Learn Section
+# -------------------------
+learnmenu:
+  - title: "E4S Learning"
+    url: /learn/
+    children:
+      - title: "Orientation"
+        url: /learn/orientation/
+      - title: "Quick Starts"
+        url: /learn/quick-starts/
+      - title: "Core Competencies"
+        url: /learn/core/
+      - title: "Advanced Topics"
+        url: /learn/advanced/
+      - title: "Learning Paths"
+        url: /learn/paths/
+      - title: "Contributing"
+        url: /learn/contributing/
