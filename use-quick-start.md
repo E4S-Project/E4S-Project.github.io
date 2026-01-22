@@ -85,7 +85,7 @@ int main(int argc, char **argv) {
 
     for (int i = 0; i < 10; i++) {
         if (rank == 0) {
-            MPI_Send(&msg, 1, MPI_CHAR, 1, tag, MPI_COMM_COMM_WORLD);
+            MPI_Send(&msg, 1, MPI_CHAR, 1, tag, MPI_COMM_WORLD);
             MPI_Recv(&msg, 1, MPI_CHAR, 1, tag, MPI_COMM_WORLD, &status);
             printf("Iteration %d: Rank 0 received pong\n", i);
         } else if (rank == 1) {
@@ -108,9 +108,10 @@ Use Docker Desktop to start an interactive shell inside the E4S container:
 
 ```bash
 docker run -it --rm \
-    -v $PWD:/work \
-    -w /work \
-    ecpe4s/ubuntu20.04:latest /bin/bash
+  --entrypoint bash \
+  -v "$PWD:/work" \
+  -w /work \
+  ecpe4s/ubuntu20.04:latest
 ```
 
 Verify your source file is visible:
