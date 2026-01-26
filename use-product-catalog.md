@@ -209,13 +209,41 @@ document.querySelectorAll('#docTable th.sortable').forEach(th => {
       sortKey = key;
       sortDir = 'asc';
     }
+    // Optional: reflect sorting in URL too (kept minimal: not encoded by default)
     render();
   });
 });
 
-// 6) Search/filter handlers
-searchInput.addEventListener('input', render);
-areaFilter.addEventListener('change', render);
+// 6) URL state (read on load; write as user changes)
+
+// Read URL params and apply to UI controls.
+// Supports: ?search=... (legacy), ?q=... (alias), ?area=..., ?product=...
+function applyUrlState(){
+  const params = new URLSearchParams(window.location.search);
+
+  const q = (params.get('search') || params.get('q') || '').trim();
+  if (q) searchInput.value = q;
+
+  const a = (params.get('area') || '').trim();
+  if (a) areaFilter.value = a;
+}
+
+// Keep URL in sync with current UI state (bookmarkable deep links).
+function syncUrl(){
+  const params = new URLSearchParams(window.location.search);
+
+  const q = (searchInput.value || '').trim();
+  if (q) params.set('search', q);
+  else { params.delete('search'); params.delete('q'); }
+
+  const a = (areaFilter.value || '').trim();
+  if (a) params.set('area', a);
+  else params.delete('area');
+
+  const query = params.toString();
+  const newUrl = query ? `${window.location.pathname}?${query}` : window.location.pathname;
+  window.history.replaceState({}, '', newUrl);
+}
 
 // 7) Details modal (decode base64 html_blob and inject)
 const modal = document.getElementById('detailsModal');
@@ -250,6 +278,26 @@ function openDetails(row){
   }
 }
 
+// Optional: open product details directly from URL (?product=...)
+function openProductFromUrl(){
+  const params = new URLSearchParams(window.location.search);
+  const p = (params.get('product') || '').trim();
+  if (!p) return;
+
+  const needle = p.toLowerCase();
+  const row =
+    DATA.find(d => (d.name || '').toLowerCase() === needle) ||
+    DATA.find(d => (d.name || '').toLowerCase().includes(needle));
+
+  if (row) openDetails(row);
+}
+
+// 8) Search/filter handlers (now sync URL too)
+searchInput.addEventListener('input', () => { syncUrl(); render(); });
+areaFilter.addEventListener('change', () => { syncUrl(); render(); });
+
 // Initial paint
+applyUrlState();
 render();
+openProductFromUrl();
 </script>
