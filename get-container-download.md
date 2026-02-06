@@ -24,12 +24,14 @@ Please see the [E4S 25.11 Release Notes](https://oaciss.uoregon.edu/e4s/talks/E4
 
 ### Container Releases
 
+  * [Docker Downloads - Minimal](https://hub.docker.com/r/ecpe4s/e4s-minimal-cpu/tags)
   * [Docker Downloads - CPU only - Ubuntu](https://hub.docker.com/r/ecpe4s/e4s-cpu/tags)
   * [Docker Downloads - CPU only - Rocky](https://hub.docker.com/r/ecpe4s/e4s-cpu-rocky9.6/tags)
   * [Docker Downloads - CUDA - Ubuntu](https://hub.docker.com/r/ecpe4s/e4s-cuda/tags)
   * [Docker Downloads - CUDA - Rocky](https://hub.docker.com/r/ecpe4s/e4s-cuda-rocky9.6/tags)
   * [Docker Downloads - ROCm](https://hub.docker.com/r/ecpe4s/e4s-rocm/tags)
   * [Docker Downloads - OneAPI](https://hub.docker.com/r/ecpe4s/e4s-oneapi/tags)
+  * [Singularity x86\_64 Download - Minimal](https://oaciss.nic.uoregon.edu/e4s/images/25.11/e4s-minimal-cpu-x86_64-25.11.sif)
   * [Singularity x86\_64 Download - CPU only - Ubuntu](https://oaciss.nic.uoregon.edu/e4s/images/25.11/e4s-cpu-x86_64-25.11.sif)
   * [Singularity x86\_64 Download - CPU only - Rocky](https://oaciss.nic.uoregon.edu/e4s/images/25.11/e4s-cpu-rocky9.6-x86_64-25.11.sif)
   * [Singularity x86\_64 Download - CUDA 80 - Ubuntu](https://oaciss.nic.uoregon.edu/e4s/images/25.11/e4s-cuda80-x86_64-25.11.sif)
