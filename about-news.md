@@ -22,7 +22,7 @@ sidebar:
 | Date | Event | Location |
 |------|--------|-----------|
 | March 16, 2026 11:55am - 12:10pm CDT | [E4S: A Platform for CI/CD for HPC and AI](https://hpsf2026.sched.com/event/2HAMo/e4s-a-platform-for-cicd-for-hpc-and-ai-sameer-shende-university-of-oregon) | HPSFCon, Chicago |
-| Tuesday March 17, 2026 10:45am - 11:00am CDT | [AI as a First-Class Component of Scientific Software Infrastructure](https://hpsf2026.sched.com/event/2Ei88/ai-as-a-first-class-component-of-scientific-software-infrastructure-michael-heroux-paratools-inc) | HPSFCon, Chicago |
+| March 17, 2026 10:45am - 11:00am CDT | [AI as a First-Class Component of Scientific Software Infrastructure](https://hpsf2026.sched.com/event/2Ei88/ai-as-a-first-class-component-of-scientific-software-infrastructure-michael-heroux-paratools-inc) | HPSFCon, Chicago |
 
 
 ### Past Events
