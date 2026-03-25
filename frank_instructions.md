@@ -114,7 +114,7 @@ installation. The Frank team has provided a variety of modules for your use.
        module avail
     ```
 
-INSERT IMAGE HERE
+![Modules](assets/images/frank_instruction_images/modules_gorgon.png)
 
 **Load a module**
 
@@ -160,11 +160,11 @@ Once you have your GitHub account, you will need to create a GitHub personal acc
 token to make use of the Spack CI Bridge python file used to mirror the GitHub repository
 to Gitlab. Click on your profile icon in the upper right corner and navigate to settings.
 
-IMAGE HERE
+![Modules](assets/images/frank_instruction_images/settings_red_box.png)
 
 Once in settings, you will want to scroll down and click on Developer Settings. 
 
-IMAGE HERE
+![Modules](assets/images/frank_instruction_images/dev_settings_red_box.png)
 
 From there click on Personal access tokens. Click on Generate new token. Feel free to use
 either the classic or fine-grained tokens.
@@ -173,7 +173,7 @@ Fine-grained personal access tokens in GitHub provide more specific permissions 
 limited to particular repositories and actions, while classic personal access tokens offer
 broader access across all repositories and actions associated with the account.
 
-IMAGE HERE
+![Modules](assets/images/frank_instruction_images/fine-grained.png)
 
 On the Generate new token page, fill in your token information, such as name, description,
 expiration date, etc. Once the token is generated, you will only be able to see it one time.
@@ -185,16 +185,16 @@ Next, we will set up this GitHub token in gitlab.spack.io in order to use the Sp
 python script to mirror the GitHub repository to GitLab in the ci/cd job. Navigate to
 gitlab.spack.io and click on a project. Click on settings, then ci/cd. 
 
-IMAGE HERE
+![Modules](assets/images/frank_instruction_images/settings-cicd-redbox.png)
 
 This will open up the CI/CD settings page, find the variables section and expand it. Here is
 where you will add the GitHub token as a ci/cd variable.
 
-IMAGE HERE
+![Modules](assets/images/frank_instruction_images/variables_red_box.png)
 
 Now, under the project variables section, click on add variable.
 
-IMAGE HERE
+![Modules](assets/images/frank_instruction_images/add_var_red_box.png)
 
 This will open up the below interface. For the Spack CI Bridge python script to work you will
 need to enter GITHUB_TOKEN in the Key textbox. Then input the GitHub token you
@@ -202,7 +202,7 @@ generated in the Value section. It is recommended that you set visibility to Mas
 hidden and set the flag to Expand variable reference. Once everything has been entered, hit
 add variable.
 
-IMAGE HERE
+![Modules](assets/images/frank_instruction_images/variable.png)
 
 In addition to the GITHUB_TOKEN, you will need to follow the same process and create
 another CI/CD variable for your Gitlab SSH key. This must be in base64 and the Key must
@@ -266,7 +266,7 @@ already setup for use by the University of Oregon. Feel free to scroll through t
 ones that work for your setup. They are located in Settings -> CI/CD -> Runners ->
 Instance. The tags associated with each runner are in blue, in the image below.
 
-IMAGE HERE
+![Modules](assets/images/frank_instruction_images/instance_runners.png)
 
 ### CI Job Scheduling
 
@@ -327,7 +327,7 @@ IMAGE HERE
 
 Below is an example of how the successful pipeline status may look:
 
-IMAGE HERE
+![Modules](assets/images/frank_instruction_images/jobs_green.png)
 
 ### Investigating Failed Jobs
 
@@ -335,7 +335,7 @@ In the event of a job failure, you will see a red x rather than the green checks
 simply click on the job that failed. For instance, in the image below, click on rocm, this will
 open the console output window so that you can see errors.
 
-IMAGE HERE
+![Modules](assets/images/frank_instruction_images/onefailure.png)
 
 ## Summary
 
