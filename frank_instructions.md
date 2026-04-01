@@ -1,7 +1,7 @@
 ---
 layout: single
-title: "Getting Started with the Frank Cluster"
-permalink: /frank-cluster-getting-started/
+title: "Frank Cluster Instructions"
+permalink: /frank-cluster-instructions/
 classes: wide
 sidebar:
   nav: "usemenu"

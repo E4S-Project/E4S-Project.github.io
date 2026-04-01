@@ -39,6 +39,8 @@ usemenu:
         url: /test-with-e4s/
       - title: "ParaTools Pro for E4S™"
         url: https://www.paratoolspro.com
+      - title: "Frank Cluster Instructions"
+        url: /frank-cluster-instructions/
 
 # -------------------------
 # Sidebar: Get E4S Section
