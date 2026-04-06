@@ -146,6 +146,8 @@ To obtain an account you will need to reach out to someone on the Kitware team, 
 instance, Zach Galbreath (zack.galbreath@kitware.com). They will send you an invitation
 to join. Follow the instructions provided to sign up and get logged in.
 
+Additionally, you may want to create a group for yourself or your team, reach out to the Kitware team and indicate which group(s) you would like to be setup.
+
 Once you are logged in, you will be able to create a repository or fork one. You can also
 mirror a repository if you have one handy (see
 https://docs.gitlab.com/user/project/repository/mirror/)
@@ -176,7 +178,7 @@ broader access across all repositories and actions associated with the account.
 ![Personal Access Token](assets/images/frank_instruction_images/fine-grained.png)
 
 On the Generate new token page, fill in your token information, such as name, description,
-expiration date, etc. Once the token is generated, you will only be able to see it one time.
+expiration date, etc. You will also need to grant the token any needed permissions for your project, for example repo and read:org. Check out the token permissions documentation. Once the token is generated, you will only be able to see it one time.
 So, make sure to copy it somewhere secure because we will use it again shortly.
 
 ### Gitlab.spack.io - CI/CD Variable Setup
