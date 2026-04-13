@@ -16,8 +16,8 @@ The instructions on this page show how to build and run a simple MPI program usi
 
 {% include e4s-two-card-content.html
    card1_title="Step 1: Docker Image"
-   card1_front_text="Download E4S base image ecpe4s/ubuntu20.04"
-   card1_back_text="This Ubuntu 20.04 image has Spack, MPI, and a few other packages pre-installed, useful for a quick start."
+   card1_front_text="Download E4S base image ecpe4s/e4s-spack-cpu"
+   card1_back_text="This Ubuntu image has Spack, MPI, and a few other packages pre-installed, useful for a quick start."
    card2_title="Step 2: MPI Code"
    card2_front_text="Produce an MPI example code, your code or the example below."
    card2_back_text="The code below performs a simple ping-pong test on two MPI processes, or you can provide your own example code."
@@ -49,13 +49,13 @@ The process is portable, reproducible, and works on any system running Docker De
 Pull the E4S base container:
 
 ```bash
-docker pull ecpe4s/ubuntu20.04:latest
+docker pull ecpe4s/e4s-spack-cpu:latest
 ```
 
 Verify the image exists locally:
 
 ```bash
-docker images ecpe4s/ubuntu20.04
+docker images ecpe4s/e4s-spack-cpu
 ```
 
 ---
@@ -67,6 +67,12 @@ Create a working directory:
 ```bash
 mkdir ~/mpi-test
 cd ~/mpi-test
+```
+
+Some hosts may have security measures that interfere with writing to a mounted directory. If necessary, you can open the directory permissions as a workaround:
+
+```bash
+chmod 777 ~/mpi-test
 ```
 
 Create an MPI source file named `pingpong.c`:
@@ -111,7 +117,7 @@ docker run -it --rm \
   --entrypoint bash \
   -v "$PWD:/work" \
   -w /work \
-  ecpe4s/ubuntu20.04:latest
+  ecpe4s/e4s-spack-cpu
 ```
 
 Verify your source file is visible:
