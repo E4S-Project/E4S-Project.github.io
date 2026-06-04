@@ -147,14 +147,14 @@ learnmenu:
     url: /learn/
     children:
       - title: "Orientation"
-        url: /learn/orientation/
+        url: /learn-orientation/
       - title: "Quick Starts"
-        url: /learn/quick-starts/
+        url: /learn-quick-starts/
       - title: "Core Competencies"
-        url: /learn/core/
+        url: /learn-core/
       - title: "Advanced Topics"
-        url: /learn/advanced/
+        url: /learn-advanced/
       - title: "Learning Paths"
-        url: /learn/paths/
+        url: /learn-paths/
       - title: "Contributing"
-        url: /learn/contributing/
+        url: /learn-contributing/

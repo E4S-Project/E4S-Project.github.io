@@ -19,6 +19,9 @@ header:
     - label: "Quick Start"
       url: "/quick-start/"
       class: "btn--oval-blue"
+    - label: "Learn"
+      url: "/learn/"
+      class: "btn--oval-blue"
 permalink: "/"
 ---
 
