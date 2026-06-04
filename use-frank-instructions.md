@@ -166,7 +166,7 @@ to Gitlab. Click on your profile icon in the upper right corner and navigate to 
 
 Once in settings, you will want to scroll down and click on Developer Settings. 
 
-![Developer Settings](/assets/images/frank_instruction_images/dev_settings_red_box.png)
+<img src="/assets/images/frank_instruction_images/dev_settings_red_box.png" alt="Developer Settings" width="400" />
 
 From there click on Personal access tokens. Click on Generate new token. Feel free to use
 either the classic or fine-grained tokens.
