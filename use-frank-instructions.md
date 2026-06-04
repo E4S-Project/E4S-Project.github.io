@@ -162,7 +162,7 @@ Once you have your GitHub account, you will need to create a GitHub personal acc
 token to make use of the Spack CI Bridge python file used to mirror the GitHub repository
 to Gitlab. Click on your profile icon in the upper right corner and navigate to settings.
 
-![Settings](/assets/images/frank_instruction_images/settings_red_box.png)
+<img src="/assets/images/frank_instruction_images/settings_red_box.png" alt="Settings" width="400" />
 
 Once in settings, you will want to scroll down and click on Developer Settings. 
 
