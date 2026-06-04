@@ -187,7 +187,7 @@ Next, we will set up this GitHub token in gitlab.spack.io in order to use the Sp
 python script to mirror the GitHub repository to GitLab in the ci/cd job. Navigate to
 gitlab.spack.io and click on a project. Click on settings, then ci/cd. 
 
-![CI/CD Settings](/assets/images/frank_instruction_images/settings-cicd-redbox.png)
+<img src="/assets/images/frank_instruction_images/settings-cicd-redbox.png" alt="CI/CD Settings" width="400" />
 
 This will open up the CI/CD settings page, find the variables section and expand it. Here is
 where you will add the GitHub token as a ci/cd variable.
@@ -204,7 +204,7 @@ generated in the Value section. It is recommended that you set visibility to Mas
 hidden and set the flag to Expand variable reference. Once everything has been entered, hit
 add variable.
 
-![Variable](/assets/images/frank_instruction_images/variable.png)
+<img src="/assets/images/frank_instruction_images/variable.png" alt="Variable" width="400" />
 
 In addition to the GITHUB_TOKEN, you will need to follow the same process and create
 another CI/CD variable for your Gitlab SSH key. This must be in base64 and the Key must
