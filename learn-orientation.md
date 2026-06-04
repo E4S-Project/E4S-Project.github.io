@@ -1,7 +1,7 @@
 ---
 title: "E4S Learning Orientation"
 layout: single
-permalink: /learn/orientation/
+permalink: /learn-orientation/
 classes: wide
 sidebar:
   nav: "learnmenu"
