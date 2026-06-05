@@ -75,7 +75,15 @@ Some hosts may have security measures that interfere with writing to a mounted d
 chmod 777 ~/mpi-test
 ```
 
-Create an MPI source file named `pingpong.c`:
+Create an MPI source file named `pingpong.c`.
+
+You can do this with an editor, or directly in the terminal using:
+
+```bash
+cat > pingpong.c
+```
+
+Then paste the code below and press Ctrl-D to save:
 
 ```c
 #include <mpi.h>

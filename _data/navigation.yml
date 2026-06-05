@@ -21,6 +21,12 @@ usemenu:
         url: /guide-e4s-bot/
       - title: "E4S Quick Start"
         url: /quick-start/
+      - title: "HYPRE Quick Start"
+        url: /quick-start-hypre/
+      - title: "LAMMPS Quick Start"
+        url: /quick-start-lammps/
+      - title: "ParaView Quick Start"
+        url: /quick-start-paraview/
       - title: "E4S Documentation"
         url: /documentation/
       - title: "E4S Product Catalog"
