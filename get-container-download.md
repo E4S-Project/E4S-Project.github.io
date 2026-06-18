@@ -191,25 +191,20 @@ This multi-architecture image contains E4S products compiled with DOE LLVM 16 an
 
 ##### X86\_64
 
-  * ecpe4s/ubuntu22.04-runner-x86\_64 [[docker]](https://hub.docker.com/r/ecpe4s/ubuntu22.04-runner-x86_64/tags) [[github]](https://github.com/UO-OACISS/e4s/tree/master/docker-recipes)
-  * ecpe4s/ubuntu20.04-runner-x86\_64 [[docker]](https://hub.docker.com/r/ecpe4s/ubuntu20.04-runner-x86_64/tags) [[github]](https://github.com/UO-OACISS/e4s/tree/master/docker-recipes)
-  * ecpe4s/ubuntu18.04-runner-x86\_64 [[docker]](https://hub.docker.com/r/ecpe4s/ubuntu18.04-runner-x86_64/tags) [[github]](https://github.com/UO-OACISS/e4s/tree/master/docker-recipes)
-  * ecpe4s/rhel8-runner-x86\_64 [[docker]](https://hub.docker.com/r/ecpe4s/rhel8-runner-x86_64/tags) [[github]](https://github.com/UO-OACISS/e4s/tree/master/docker-recipes)
-  * ecpe4s/rhel7-runner-x86\_64 [[docker]](https://hub.docker.com/r/ecpe4s/rhel7-runner-x86_64/tags) [[github]](https://github.com/UO-OACISS/e4s/tree/master/docker-recipes)
+  * ecpe4s/ubuntu24.04-runner-x86_64-gcc-13.3 [[docker]](https://hub.docker.com/r/ecpe4s/ubuntu24.04-runner-x86_64-gcc-13.3/tags)
+  * ecpe4s/rocky9-runner-x86_64-gcc-13.3 [[docker]](https://hub.docker.com/r/ecpe4s/rocky9-runner-x86_64-gcc-13.3/tags)
+
 
 ##### PPC64LE
 
-  * ecpe4s/ubuntu22.04-runner-ppc64le [[docker]](https://hub.docker.com/r/ecpe4s/ubuntu22.04-runner-ppc64le/tags) [[github]](https://github.com/UO-OACISS/e4s/tree/master/docker-recipes)
-  * ecpe4s/ubuntu20.04-runner-ppc64le [[docker]](https://hub.docker.com/r/ecpe4s/ubuntu20.04-runner-ppc64le/tags) [[github]](https://github.com/UO-OACISS/e4s/tree/master/docker-recipes)
-  * ecpe4s/ubuntu18.04-runner-ppc64le [[docker]](https://hub.docker.com/r/ecpe4s/ubuntu18.04-runner-ppc64le/tags) [[github]](https://github.com/UO-OACISS/e4s/tree/master/docker-recipes)
-  * ecpe4s/rhel8-runner-ppc64le [[docker]](https://hub.docker.com/r/ecpe4s/rhel8-runner-ppc64le/tags) [[github]](https://github.com/UO-OACISS/e4s/tree/master/docker-recipes)
-  * ecpe4s/rhel7-runner-ppc64le [[docker]](https://hub.docker.com/r/ecpe4s/rhel7-runner-ppc64le/tags) [[github]](https://github.com/UO-OACISS/e4s/tree/master/docker-recipes)
+  * ecpe4s/ubuntu20.04-runner-ppc64le-gcc-11.4 [[docker]](https://hub.docker.com/r/ecpe4s/ubuntu20.04-runner-ppc64le-gcc-11.4/tags)
+
 
 ##### AARCH64
 
-  * ecpe4s/ubuntu22.04-runner-aarch64 [[docker]](https://hub.docker.com/r/ecpe4s/ubuntu22.04-runner-aarch64/tags) [[github]](https://github.com/UO-OACISS/e4s/tree/master/docker-recipes)
-  * ecpe4s/ubuntu20.04-runner-aarch64 [[docker]](https://hub.docker.com/r/ecpe4s/ubuntu20.04-runner-aarch64/tags) [[github]](https://github.com/UO-OACISS/e4s/tree/master/docker-recipes)
-  * ecpe4s/rhel8-runner-aarch64 [[docker]](https://hub.docker.com/r/ecpe4s/rhel8-runner-aarch64/tags) [[github]](https://github.com/UO-OACISS/e4s/tree/master/docker-recipes)
+  * ecpe4s/ubuntu24.04-runner-aarch64-gcc-13.3 [[docker]](https://hub.docker.com/r/ecpe4s/ubuntu24.04-runner-aarch64-gcc-13.3/tags)
+  * ecpe4s/rocky9-runner-aarch64-gcc-13.3 [[docker]](https://hub.docker.com/r/ecpe4s/rocky9-runner-aarch64-gcc-13.3/tags)
+
 
 -----
 
