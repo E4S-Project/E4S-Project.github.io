@@ -24,14 +24,14 @@ Please see the [E4S 26.06 Release Notes](https://oaciss.uoregon.edu/e4s/talks/E4
 
 ### Container Releases
 
-  * [Docker Downloads - Minimal](https://hub.docker.com/r/ecpe4s/e4s-minimal-cpu/tags)
+  * [Docker Downloads - Minimal](https://hub.docker.com/r/ecpe4s/e4s-spack-cpu/tags)
   * [Docker Downloads - CPU only - Ubuntu](https://hub.docker.com/r/ecpe4s/e4s-cpu/tags)
   * [Docker Downloads - CPU only - Rocky](https://hub.docker.com/r/ecpe4s/e4s-cpu-rocky/tags)
   * [Docker Downloads - CUDA - Ubuntu](https://hub.docker.com/r/ecpe4s/e4s-cuda/tags)
   * [Docker Downloads - CUDA - Rocky](https://hub.docker.com/r/ecpe4s/e4s-cuda-rocky/tags)
   * [Docker Downloads - ROCm](https://hub.docker.com/r/ecpe4s/e4s-rocm/tags)
   * [Docker Downloads - OneAPI](https://hub.docker.com/r/ecpe4s/e4s-oneapi/tags)
-  * [Singularity x86\_64 Download - Minimal](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-minimal-cpu-x86_64-26.06.sif)
+  * [Singularity x86\_64 Download - Minimal](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-spack-cpu-x86_64-26-06.sif)
   * [Singularity x86\_64 Download - CPU only - Ubuntu](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-cpu-x86_64-26.06.sif)
   * [Singularity x86\_64 Download - CPU only - Rocky](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-cpu-rocky-x86_64-26.06.sif)
   * [Singularity x86\_64 Download - CUDA 80 - Ubuntu](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-cuda80-x86_64-26.06.sif)
@@ -50,7 +50,7 @@ Please see the [E4S 26.06 Release Notes](https://oaciss.uoregon.edu/e4s/talks/E4
   * [Singularity aarch64 Download - CUDA 90 - Rocky](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-cuda90-rocky-aarch64-26.06.sif)
   * [Singularity aarch64 Download - CUDA 120 - Ubuntu](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-cuda120-aarch64-26.06.sif)
   * [Singularity aarch64 Download - CUDA 120 - Rocky](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-cuda120-rocky-aarch64-26.06.sif)
-  * [OVA Download](http://tau.uoregon.edu/ecp.ova)
+  <!-- * [OVA Download](http://tau.uoregon.edu/ecp.ova) -->
 
 -----
 
@@ -142,7 +142,7 @@ These images come with MPICH, CMake, and the relevant GPU SDK -- either AMD ROCm
 
 ### Minimal Spack
 
-This image contains a minimal setup for using Spack 0.22.0 w/ GNU compilers
+This image contains a minimal setup for using Spack Core v1.1.1 w/ GNU and/or CUDA/ROCm/OneAPI compilers.
 
 ##### X86\_64, PPC64LE, AARCH64
 
