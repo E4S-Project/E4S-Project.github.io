@@ -13,6 +13,7 @@ sidebar:
 
 | Announcement | Description | 
 |--------------|-------------|
+| E4S 26.06 Release | [Release Notes](/news/NEWS_RELEASE_E4S_26.06.pdf), [Release Presentation](/talks/E4S_26.06.pdf)|
 | New E4S website | The new E4S website aims to provide significant enhancements for all community members. See the [New Site Features page](/new-features) |
 | E4S 25.11 Release | [Release Notes](/news/NEWS_RELEASE_E4S_25.11.pdf), [Release Presentation](/talks/E4S_25.11.pdf)|
 | Michael Heroux "HPCWire Legend" Award | Michael Heroux was selected for the 2025 class of HPCWire 35 Legends as ["Open Source HPC Software Pioneer"](https://www.hpcwire.com/35-hpc-legends-michael-heroux/) |
@@ -29,7 +30,7 @@ sidebar:
 
 | Date | Event | Location |
 |------|--------|-----------|
-| June 22, 2026 — 2:00 pm–6:00 pm CEST | [Using Containers to Accelerate HPC](https://isc.app.swapcard.com/widget/event/isc-high-performance-2026/planning/UGxhbm5pbmdfNDM5MDIxNw%3D%3D)⁠￼ [(tutorial materials⁠)](https://sc-tutorial.supercontainers.org/) | ISC26, Hamburg, Germany |
+| June 22, 2026, 2:00 pm–6:00 pm CEST | [Using Containers to Accelerate HPC](https://isc.app.swapcard.com/widget/event/isc-high-performance-2026/planning/UGxhbm5pbmdfNDM5MDIxNw%3D%3D)⁠￼ [(tutorial materials⁠)](https://sc-tutorial.supercontainers.org/) | ISC26, Hamburg, Germany |
 | February 11, 2026 - 3:00 pm - 4:30 pm ET | [Quickstarting Your Way to Robust, Portable HPC-AI Computing](https://cass.community/events/2026-02-e4s) | CASS BOF Days - Online |
 | November 20, 2025 - 1:30 am - 3:00 pm | [Research Software Engineering in the Age of AI](https://sc25.conference-program.com/presentation/?id=pan109&sess=sess351) | SC25 |
 | November 19, 2025 — 2:00 pm – 3:00 pm | [E4S and TAU (talk, LinkOregon booth #6313)](https://www.linkoregon.org) | Exhibit Hall, SC25 |
