@@ -58,6 +58,8 @@ getmenu:
         url: /get/
       - title: "E4S Spack Caches"
         url: /e4s-buildcache/
+      - title: "Create Local E4S Binary Cache"
+        url: /create-local-e4s-binary-cache/
       - title: "E4S Container Download"
         url: /container-download/
       - title: "ParaTools Pro for E4S™"

@@ -14,5 +14,6 @@ E4S offers multiple methods for obtaining its collection of HPC and AI software 
 |Get Option | Description |
 |-----------|-------------|
 | Spack Build Cache | Pre-built binaries provided via Spack build caches enable faster installations without local compilation. More information available on the [E4S Buildcache Page](/e4s-buildcache/). |
+| User-defined Local Binary Cache | Build your own E4S-aligned binaries with Spack and publish them to a local mirror for re-use. Follow the [Local Binary Cache Guide](/create-local-e4s-binary-cache/). |
 | Containers | E4S offers containerized versions of its software stack, compatible with Docker, Singularity, Shifter, and CharlieCloud. See the [Container Download Page](/container-download/) for available containers. See side menu for additional container information. |
 | Commercial Cloud Options |E4S containers are  available via [ParaTools Pro for E4S™](https://paratoolspro.com), including [AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-ozpychswxmldi). E4S can be deployed on Amazon Web Services (AWS) for scalable cloud-based HPC/AI workloads and Google Cloud Platform (GCP) with access to high-performance VMs and storage. |
