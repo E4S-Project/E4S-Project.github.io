@@ -41,6 +41,8 @@ usemenu:
         url: /container-installation/
       - title: "E4S Container Launch"
         url: /container-launch/
+      - title: "Frontier E4S Container Demo"
+        url: /frontier-container-demo/
       - title: "Test with E4S"
         url: /test-with-e4s/
       - title: "ParaTools Pro for E4S™"
