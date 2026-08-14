@@ -21,6 +21,16 @@ usemenu:
         url: /guide-e4s-bot/
       - title: "E4S Quick Start"
         url: /quick-start/
+      - title: "PyTorch Quick Start"
+        url: /quick-start-pytorch/
+      - title: "TensorFlow Quick Start"
+        url: /quick-start-tensorflow/
+      - title: "NeMo Quick Start"
+        url: /quick-start-nemo/
+      - title: "BioNeMo Quick Start"
+        url: /quick-start-bionemo/
+      - title: "vLLM Quick Start"
+        url: /quick-start-vllm/
       - title: "HYPRE Quick Start"
         url: /quick-start-hypre/
       - title: "LAMMPS Quick Start"
