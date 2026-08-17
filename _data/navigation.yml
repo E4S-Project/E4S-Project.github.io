@@ -21,6 +21,8 @@ usemenu:
         url: /guide-e4s-bot/
       - title: "E4S Quick Start"
         url: /quick-start/
+      - title: "Library Composition: Kokkos+HYPRE"
+        url: /kokkos-hypre/
       - title: "PyTorch Quick Start"
         url: /quick-start-pytorch/
       - title: "TensorFlow Quick Start"
