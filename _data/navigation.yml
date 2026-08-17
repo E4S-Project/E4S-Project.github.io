@@ -21,6 +21,18 @@ usemenu:
         url: /guide-e4s-bot/
       - title: "E4S Quick Start"
         url: /quick-start/
+      - title: "Library Composition: Kokkos+HYPRE"
+        url: /kokkos-hypre/
+      - title: "PyTorch Quick Start"
+        url: /quick-start-pytorch/
+      - title: "TensorFlow Quick Start"
+        url: /quick-start-tensorflow/
+      - title: "NeMo Quick Start"
+        url: /quick-start-nemo/
+      - title: "BioNeMo Quick Start"
+        url: /quick-start-bionemo/
+      - title: "vLLM Quick Start"
+        url: /quick-start-vllm/
       - title: "HYPRE Quick Start"
         url: /quick-start-hypre/
       - title: "LAMMPS Quick Start"
@@ -41,6 +53,8 @@ usemenu:
         url: /container-installation/
       - title: "E4S Container Launch"
         url: /container-launch/
+      - title: "Frontier E4S Container Demo"
+        url: /frontier-container-demo/
       - title: "Test with E4S"
         url: /test-with-e4s/
       - title: "ParaTools Pro for E4S™"
