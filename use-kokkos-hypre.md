@@ -21,19 +21,12 @@ This demo uses two libraries that are already built into the `ecpe4s/e4s-cuda:26
 
 ## 1. Run the E4S CUDA Container
 
-Create a working directory to mount into the container so your code persists on the host:
 
-```bash
-mkdir -p ~/e4s-dev-demo
-cd ~/e4s-dev-demo
-```
-
-Start the container in interactive mode with GPU access:
+Start the container in interactive mode with GPU access (Consider mounting a writable directory on the host to save your work):
 
 ```bash
 docker run --gpus all -it --rm \
-  -v "$PWD:/work" \
-  -w /work \
+  -w /tmp/work \
   ecpe4s/e4s-cuda:26.06
 ```
 
@@ -90,7 +83,7 @@ echo "HYPRE_DIR=$HYPRE_DIR"
 
 ## 4. Write a Small App on Top of Both Libraries
 
-You're already in `/work` (the host directory mounted in Step 1). Create a project directory there so your files persist after the container exits:
+Create and enter a project directory:
 
 ```bash
 mkdir -p src
@@ -130,6 +123,7 @@ cat > main.cpp <<'EOF'
 #include <HYPRE_IJ_mv.h>
 #include <HYPRE_parcsr_ls.h>
 #include <cstdio>
+#include <utility> // For std::make_pair
 
 // Problem size -- change this and rebuild to see Step 6 in action.
 static const int n = 1000;
@@ -153,8 +147,7 @@ int main(int argc, char** argv) {
     Kokkos::parallel_for("fill_rhs", local_n, KOKKOS_LAMBDA(const int i) {
       d_rhs(i) = 1.0;
     });
-    auto h_rhs = Kokkos::create_mirror_view(d_rhs);
-    Kokkos::deep_copy(h_rhs, d_rhs);
+    // We'll feed d_rhs directly to HYPRE!
 
     if (rank == 0) {
       printf("Kokkos execution space: %s\n",
@@ -164,20 +157,50 @@ int main(int argc, char** argv) {
     // Hand the system over to Hypre for the actual solve.
     HYPRE_Init();
 
+    // Explicitly instruct HYPRE to use GPU memory and execute on the GPU
+    HYPRE_SetMemoryLocation(HYPRE_MEMORY_DEVICE);
+    HYPRE_SetExecutionPolicy(HYPRE_EXEC_DEVICE);
+
     HYPRE_IJMatrix A;
     HYPRE_IJMatrixCreate(MPI_COMM_WORLD, ilower, iupper, ilower, iupper, &A);
     HYPRE_IJMatrixSetObjectType(A, HYPRE_PARCSR);
     HYPRE_IJMatrixInitialize(A);
 
+    // Pre-calculate non-zeros and allocate Host views
+    int max_nnz = 3 * local_n;
+    Kokkos::View<int*, Kokkos::HostSpace> h_ncols("ncols", local_n);
+    Kokkos::View<int*, Kokkos::HostSpace> h_rows("rows", local_n);
+    Kokkos::View<int*, Kokkos::HostSpace> h_cols("cols", max_nnz);
+    Kokkos::View<double*, Kokkos::HostSpace> h_vals("vals", max_nnz);
+
+    int nnz = 0;
     for (int i = ilower; i <= iupper; i++) {
-      int cols[3]; double vals[3]; int ncols = 0;
-      if (i - 1 >= 0) { cols[ncols] = i - 1; vals[ncols] = -1.0; ncols++; }
-      cols[ncols] = i; vals[ncols] = 2.0; ncols++;
-      if (i + 1 < n) { cols[ncols] = i + 1; vals[ncols] = -1.0; ncols++; }
-      int row = i;
-      HYPRE_IJMatrixSetValues(A, 1, &ncols, &row, cols, vals);
+      h_rows(i - ilower) = i;
+      int cols_count = 0;
+      if (i - 1 >= 0) { h_cols(nnz) = i - 1; h_vals(nnz) = -1.0; nnz++; cols_count++; }
+      h_cols(nnz) = i; h_vals(nnz) = 2.0; nnz++; cols_count++;
+      if (i + 1 < n)  { h_cols(nnz) = i + 1; h_vals(nnz) = -1.0; nnz++; cols_count++; }
+      h_ncols(i - ilower) = cols_count;
     }
+
+    // Mirror arrays to the GPU
+    Kokkos::View<int*> d_ncols("d_ncols", local_n);
+    Kokkos::View<int*> d_rows("d_rows", local_n);
+    Kokkos::View<int*> d_cols("d_cols", nnz);
+    Kokkos::View<double*> d_vals("d_vals", nnz);
+
+    Kokkos::deep_copy(d_ncols, h_ncols);
+    Kokkos::deep_copy(d_rows, h_rows);
+    // Deep copy only the populated subset of the contiguous arrays
+    Kokkos::deep_copy(Kokkos::subview(d_cols, std::make_pair(0, nnz)), 
+                      Kokkos::subview(h_cols, std::make_pair(0, nnz)));
+    Kokkos::deep_copy(Kokkos::subview(d_vals, std::make_pair(0, nnz)), 
+                      Kokkos::subview(h_vals, std::make_pair(0, nnz)));
+
+    // Pass the device pointers to HYPRE (batching everything in a single call)
+    HYPRE_IJMatrixSetValues(A, local_n, d_ncols.data(), d_rows.data(), d_cols.data(), d_vals.data());
     HYPRE_IJMatrixAssemble(A);
+    
     HYPRE_ParCSRMatrix par_A;
     HYPRE_IJMatrixGetObject(A, (void**)&par_A);
 
@@ -190,13 +213,20 @@ int main(int argc, char** argv) {
     HYPRE_IJVectorSetObjectType(x, HYPRE_PARCSR);
     HYPRE_IJVectorInitialize(x);
 
-    for (int i = ilower; i <= iupper; i++) {
-      int idx = i;
-      double bv = h_rhs(i - ilower);
-      double xv = 0.0;
-      HYPRE_IJVectorSetValues(b, 1, &idx, &bv);
-      HYPRE_IJVectorSetValues(x, 1, &idx, &xv);
-    }
+    // Create an array of global indices on the GPU
+    Kokkos::View<int*> d_idx("d_idx", local_n);
+    Kokkos::parallel_for("fill_idx", local_n, KOKKOS_LAMBDA(const int i) {
+      d_idx(i) = ilower + i;
+    });
+
+    // Create a device view of zeros for the initial guess, x
+    Kokkos::View<double*> d_x("d_x", local_n);
+    Kokkos::deep_copy(d_x, 0.0);
+
+    // Feed the device views directly to HYPRE
+    HYPRE_IJVectorSetValues(b, local_n, d_idx.data(), d_rhs.data());
+    HYPRE_IJVectorSetValues(x, local_n, d_idx.data(), d_x.data());
+
     HYPRE_IJVectorAssemble(b);
     HYPRE_IJVectorAssemble(x);
 
@@ -218,14 +248,9 @@ int main(int argc, char** argv) {
       printf("Hypre PCG converged in %d iterations, residual = %e\n", its, resid);
     }
 
-    // Pull the solution back and reduce it on the GPU with Kokkos.
+    // Pull the solution back using device views
     Kokkos::View<double*> d_sol("d_sol", local_n);
-    auto h_sol = Kokkos::create_mirror_view(d_sol);
-    for (int i = ilower; i <= iupper; i++) {
-      int idx = i;
-      HYPRE_IJVectorGetValues(x, 1, &idx, &h_sol(i - ilower));
-    }
-    Kokkos::deep_copy(d_sol, h_sol);
+    HYPRE_IJVectorGetValues(x, local_n, d_idx.data(), d_sol.data());
 
     double sum = 0.0;
     Kokkos::parallel_reduce("checksum", local_n, KOKKOS_LAMBDA(const int i, double& acc) {
