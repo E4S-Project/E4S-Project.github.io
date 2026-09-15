@@ -10,7 +10,7 @@ sitemap: false
 
 
 <div style="border: 2px solid #b08800; background: #fff8e1; color: #6b5300; padding: 1em 1.25em; border-radius: 6px; margin-bottom: 1.5em;">
-<strong>Draft preview — not the live page.</strong> This is a proposed reorganization of the <a href="/container-download/">E4S Container Download</a> page. Revision 3 responds to reviewer feedback: the "Note on Container Images" section (a redundant <code>docker pull</code> list) has been removed since the tables already show the exact tag to pull; and the page now separates <strong>ready-to-use release images</strong> (E4S Full Release Images, Minimal Spack) from <strong>developer &amp; build images</strong> (GPU base images, CI runners, project-specific images) that exist mainly to support E4S development. It is for internal review only, is not linked from site navigation, and the official page at <code>/container-download/</code> is unaffected.
+<strong>Draft preview — not the live page.</strong> This is a proposed reorganization of the <a href="/container-download/">E4S Container Download</a> page. Revision 4 responds to reviewer feedback: "Minimal Spack" is renamed <strong>Cache-backed Images (CBIs)</strong> — the new branding — and its section now just says any E4S product can be installed and loaded straight from the cache these images already point to, with no setup instructions; the main table also now notes that each Docker column entry is a ready-to-pull <code>image:tag</code> reference. The page separates <strong>ready-to-use release images</strong> (E4S Full Release Images, Cache-backed Images) from <strong>developer &amp; build images</strong> (GPU base images, CI runners, project-specific images) that exist mainly to support E4S development. It is for internal review only, is not linked from site navigation, and the official page at <code>/container-download/</code> is unaffected.
 </div>
 
 {% include e4s-page-actions.html %}
@@ -66,40 +66,20 @@ Each entry in the Docker column (e.g. `ecpe4s/e4s-cuda:26.06-cuda80`) is a compl
 
 -----
 
-### Minimal Spack
+### Cache-backed Images (CBIs)
 
-This image contains a minimal setup for using Spack Core v1.1.1 w/ GNU and/or CUDA/ROCm/OneAPI compilers.
-
-<div style="border: 1px solid #a9d1ab; background: #eef7ee; color: #235026; padding: 1em 1.25em; border-radius: 6px; margin: 1em 0 1.5em;">
-<strong>Populating a minimal image: use the E4S build cache instead of building from source.</strong> These images ship Spack itself, not prebuilt E4S packages — after starting the container, <code>spack install &lt;package&gt;</code> is what actually gets you software. Point Spack at the E4S build cache first so that install pulls a prebuilt, signed binary instead of compiling from source:
-
-<pre style="overflow-x: auto; white-space: pre;"><code># confirm your release's actual mirror URL — this is an example
-spack mirror add --scope=user e4s-26.06 https://cache.e4s.io/26.06
-spack buildcache keys --install --trust
-# prefer a cached binary; fall back to a source build if none matches
-spack install -b auto &lt;package&gt;
-</code></pre>
-
-To see what the cache has for your architecture, list the whole cache and filter for your target string — Spack doesn't currently offer a single "list by architecture" flag, so this grep is the closest quick option:
-
-<pre style="overflow-x: auto; white-space: pre;"><code>spack arch
-# -> your target string, e.g. linux-ubuntu24.04-x86_64_v3
-spack buildcache list -L | grep x86_64_v3
-</code></pre>
-
-Full walkthrough — trusting keys, environments, GPU/SDK-aware installs, troubleshooting — is on the <a href="/e4s-buildcache/">Use the E4S Spack Build Cache</a> page.
-</div>
+These images provide a minimal Spack Core v1.1.1 environment (with GNU and/or CUDA/ROCm/OneAPI compilers) that's already pointed at the E4S binary cache. Any E4S product can be installed and loaded directly from the cache — no separate cache setup needed. See [Use the E4S Spack Build Cache](/e4s-buildcache/) for more on the cache itself.
 
 | Compilers | Architecture | Docker | Singularity | Description |
 |---|---|---|---|---|
-| GNU | x86_64 | [`ecpe4s/e4s-spack-cpu`](https://hub.docker.com/r/ecpe4s/e4s-spack-cpu/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-spack-cpu-x86_64-26-06.sif) | Minimal Spack Core v1.1.1 environment with GNU compilers |
-| GNU | aarch64 | [`ecpe4s/e4s-spack-cpu`](https://hub.docker.com/r/ecpe4s/e4s-spack-cpu/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-spack-cpu-aarch64-26-06.sif) | Minimal Spack Core v1.1.1 environment with GNU compilers |
-| GNU | ppc64le | [`ecpe4s/e4s-spack-cpu`](https://hub.docker.com/r/ecpe4s/e4s-spack-cpu/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-spack-cpu-ppc64le-26-06.sif) | Minimal Spack Core v1.1.1 environment with GNU compilers |
-| GNU + NVIDIA CUDA | x86_64 | [`ecpe4s/e4s-spack-cuda`](https://hub.docker.com/r/ecpe4s/e4s-spack-cuda/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-spack-cuda-x86_64-26-06.sif) | Minimal Spack Core v1.1.1 environment with GNU and NVIDIA CUDA compilers |
-| GNU + NVIDIA CUDA | aarch64 | [`ecpe4s/e4s-spack-cuda`](https://hub.docker.com/r/ecpe4s/e4s-spack-cuda/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-spack-cuda-aarch64-26-06.sif) | Minimal Spack Core v1.1.1 environment with GNU and NVIDIA CUDA compilers |
-| GNU + NVIDIA CUDA | ppc64le | [`ecpe4s/e4s-spack-cuda`](https://hub.docker.com/r/ecpe4s/e4s-spack-cuda/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-spack-cuda-ppc64le-26-06.sif) | Minimal Spack Core v1.1.1 environment with GNU and NVIDIA CUDA compilers |
-| GNU + AMD ROCm | x86_64 | [`ecpe4s/e4s-spack-rocm`](https://hub.docker.com/r/ecpe4s/e4s-spack-rocm/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-spack-rocm-x86_64-26-06.sif) | Minimal Spack Core v1.1.1 environment with GNU and AMD ROCm compilers |
-| GNU + Intel OneAPI | x86_64 | [`ecpe4s/e4s-spack-oneapi`](https://hub.docker.com/r/ecpe4s/e4s-spack-oneapi/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-spack-oneapi-x86_64-26-06.sif) | Minimal Spack Core v1.1.1 environment with GNU and Intel OneAPI compilers |
+| GNU | x86_64 | [`ecpe4s/e4s-spack-cpu`](https://hub.docker.com/r/ecpe4s/e4s-spack-cpu/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-spack-cpu-x86_64-26-06.sif) | Cache-backed Spack Core v1.1.1 environment with GNU compilers |
+| GNU | aarch64 | [`ecpe4s/e4s-spack-cpu`](https://hub.docker.com/r/ecpe4s/e4s-spack-cpu/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-spack-cpu-aarch64-26-06.sif) | Cache-backed Spack Core v1.1.1 environment with GNU compilers |
+| GNU | ppc64le | [`ecpe4s/e4s-spack-cpu`](https://hub.docker.com/r/ecpe4s/e4s-spack-cpu/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-spack-cpu-ppc64le-26-06.sif) | Cache-backed Spack Core v1.1.1 environment with GNU compilers |
+| GNU + NVIDIA CUDA | x86_64 | [`ecpe4s/e4s-spack-cuda`](https://hub.docker.com/r/ecpe4s/e4s-spack-cuda/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-spack-cuda-x86_64-26-06.sif) | Cache-backed Spack Core v1.1.1 environment with GNU and NVIDIA CUDA compilers |
+| GNU + NVIDIA CUDA | aarch64 | [`ecpe4s/e4s-spack-cuda`](https://hub.docker.com/r/ecpe4s/e4s-spack-cuda/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-spack-cuda-aarch64-26-06.sif) | Cache-backed Spack Core v1.1.1 environment with GNU and NVIDIA CUDA compilers |
+| GNU + NVIDIA CUDA | ppc64le | [`ecpe4s/e4s-spack-cuda`](https://hub.docker.com/r/ecpe4s/e4s-spack-cuda/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-spack-cuda-ppc64le-26-06.sif) | Cache-backed Spack Core v1.1.1 environment with GNU and NVIDIA CUDA compilers |
+| GNU + AMD ROCm | x86_64 | [`ecpe4s/e4s-spack-rocm`](https://hub.docker.com/r/ecpe4s/e4s-spack-rocm/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-spack-rocm-x86_64-26-06.sif) | Cache-backed Spack Core v1.1.1 environment with GNU and AMD ROCm compilers |
+| GNU + Intel OneAPI | x86_64 | [`ecpe4s/e4s-spack-oneapi`](https://hub.docker.com/r/ecpe4s/e4s-spack-oneapi/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-spack-oneapi-x86_64-26-06.sif) | Cache-backed Spack Core v1.1.1 environment with GNU and Intel OneAPI compilers |
 
 -----
 
