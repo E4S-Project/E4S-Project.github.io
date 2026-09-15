@@ -10,7 +10,7 @@ sitemap: false
 
 
 <div style="border: 2px solid #b08800; background: #fff8e1; color: #6b5300; padding: 1em 1.25em; border-radius: 6px; margin-bottom: 1.5em;">
-<strong>Draft preview — not the live page.</strong> This is a proposed reorganization of the <a href="/container-download/">E4S Container Download</a> page. Revision 6 adds a <strong>Size</strong> column to every table, giving each Docker image's and Singularity <code>.sif</code> file's actual download size (fetched from Docker Hub and the image server on 2026-09-15). While pulling these, we also found the ROCm Docker tags had drifted — the tags are now <code>26.06-gfx908</code>/<code>-gfx90a</code>/<code>-gfx942</code> rather than the <code>-rocm908</code>/<code>-rocm90a</code>/<code>-rocm942</code> naming shown on the current live page — and corrected them here. Earlier revisions renamed "Minimal Spack" to <strong>Cache-backed Images (CBIs)</strong> — the new branding — with its section now just noting that any E4S product can be installed and loaded straight from the cache these images already point to, with no setup instructions; the main table also notes that each Docker column entry is a ready-to-pull <code>image:tag</code> reference. The page separates <strong>ready-to-use release images</strong> (E4S Full Release Images, Cache-backed Images) from <strong>developer &amp; build images</strong> (GPU base images, CI runners, project-specific images) that exist mainly to support E4S development. It is for internal review only, is not linked from site navigation, and the official page at <code>/container-download/</code> is unaffected.
+<strong>Draft preview — not the live page.</strong> This is a proposed reorganization of the <a href="/container-download/">E4S Container Download</a> page. Revision 7 fixes how Docker sizes are labeled: the Docker column is now explicitly <strong>Download Size</strong> (compressed bytes transferred, verified against the registry's own manifest) rather than an unlabeled "Size" that a reader could mistake for on-disk usage — Docker decompresses these onto disk to something larger (we measured one layer expanding ~2.9x; computing an exact page-wide on-disk figure would require streaming several hundred more gigabytes, so we're not claiming a precise number). Singularity's <code>.sif</code> size is unambiguous — it's both the download and the final size. Revision 6 had added the size columns in the first place (fetched from Docker Hub and the image server on 2026-09-15). While pulling these, we also found the ROCm Docker tags had drifted — the tags are now <code>26.06-gfx908</code>/<code>-gfx90a</code>/<code>-gfx942</code> rather than the <code>-rocm908</code>/<code>-rocm90a</code>/<code>-rocm942</code> naming shown on the current live page — and corrected them here. Earlier revisions renamed "Minimal Spack" to <strong>Cache-backed Images (CBIs)</strong> — the new branding — with its section now just noting that any E4S product can be installed and loaded straight from the cache these images already point to, with no setup instructions; the main table also notes that each Docker column entry is a ready-to-pull <code>image:tag</code> reference. The page separates <strong>ready-to-use release images</strong> (E4S Full Release Images, Cache-backed Images) from <strong>developer &amp; build images</strong> (GPU base images, CI runners, project-specific images) that exist mainly to support E4S development. It is for internal review only, is not linked from site navigation, and the official page at <code>/container-download/</code> is unaffected.
 </div>
 
 {% include e4s-page-actions.html %}
@@ -34,7 +34,7 @@ These are E4S's public-facing products: complete, tested deployments you can pul
 
 These images contain a full Spack-based deployment of E4S. The CUDA, ROCm, and OneAPI variants add GPU-enabled packages for NVIDIA, AMD, and Intel GPUs, respectively, and also include NVIDIA NeMo, NVIDIA BioNeMo, VLLM, PyTorch, TensorFlow, and TAU, where appropriate.
 
-| Variant | Architecture | OS | Docker | Size | Singularity | Size | Description |
+| Variant | Architecture | OS | Docker | Download Size | Singularity | Size | Description |
 |---|---|---|---|---|---|---|---|
 | CPU only | x86_64 | Ubuntu | [`ecpe4s/e4s-cpu:26.06`](https://hub.docker.com/r/ecpe4s/e4s-cpu/tags) | 24.0 GB | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-cpu-x86_64-26.06.sif) | 25.5 GB | Full E4S release with CPU-only packages |
 | CPU only | aarch64 | Ubuntu | [`ecpe4s/e4s-cpu:26.06`](https://hub.docker.com/r/ecpe4s/e4s-cpu/tags) | 17.0 GB | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-cpu-aarch64-26.06.sif) | 26.2 GB | Full E4S release with CPU-only packages |
@@ -56,7 +56,7 @@ These images contain a full Spack-based deployment of E4S. The CUDA, ROCm, and O
 | ROCm gfx942 (MI300) | x86_64 | Ubuntu | [`ecpe4s/e4s-rocm:26.06-gfx942`](https://hub.docker.com/r/ecpe4s/e4s-rocm/tags) | 23.3 GB | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-rocm942-x86_64-26.06.sif) | 25.3 GB | AMD ROCm support for MI300-series GPUs |
 | OneAPI | x86_64 | Ubuntu | [`ecpe4s/e4s-oneapi:26.06`](https://hub.docker.com/r/ecpe4s/e4s-oneapi/tags) | 23.6 GB | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-oneapi-x86_64-26.06.sif) | 21.4 GB | Full E4S release with Intel OneAPI GPU support |
 
-Sizes are compressed download sizes as of 2026-09-15 (Docker: per-architecture compressed size from Docker Hub; Singularity: `.sif` file size) and will drift as images are rebuilt.
+**Docker sizes are compressed download sizes, not on-disk usage.** "Download Size" is the compressed number of bytes transferred for that architecture (verified directly against the registry's own manifest, not just Docker Hub's website) — it's what `docker pull` sends over the network. Once Docker decompresses and extracts the image, the actual space it occupies on disk is larger; layers we inspected expanded roughly 2–5x when decompressed, so treat "Download Size" as a lower bound on disk footprint, not the final size. We didn't compute an exact on-disk figure per image — doing that precisely requires fully downloading and decompressing each one, which for these images (many exceed 4 GiB per layer, breaking cheaper size-estimation tricks) would mean streaming several hundred additional gigabytes. Singularity's `.sif` is a single file, so its size is unambiguous — that number is both the download size and the final size on disk. All sizes are as of 2026-09-15 and will drift as images are rebuilt.
 
 Note the ROCm Docker tags: Docker Hub now publishes these as `26.06-gfx908` / `26.06-gfx90a` / `26.06-gfx942` (the `-rocmNNN` naming used elsewhere on the current live page is stale).
 
@@ -70,7 +70,7 @@ Each entry in the Docker column (e.g. `ecpe4s/e4s-cuda:26.06-cuda80`) is a compl
 
 These images provide a minimal Spack Core v1.1.1 environment (with GNU and/or CUDA/ROCm/OneAPI compilers) that's already pointed at the E4S binary cache. Any E4S product can be installed and loaded directly from the cache — no separate cache setup needed. See [Use the E4S Spack Build Cache](/e4s-buildcache/) for more on the cache itself.
 
-| Compilers | Architecture | Docker | Size | Singularity | Size | Description |
+| Compilers | Architecture | Docker | Download Size | Singularity | Size | Description |
 |---|---|---|---|---|---|---|
 | GNU | x86_64 | [`ecpe4s/e4s-spack-cpu`](https://hub.docker.com/r/ecpe4s/e4s-spack-cpu/tags) | 2.0 GB | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-spack-cpu-x86_64-26-06.sif) | 1.5 GB | Cache-backed Spack Core v1.1.1 environment with GNU compilers |
 | GNU | aarch64 | [`ecpe4s/e4s-spack-cpu`](https://hub.docker.com/r/ecpe4s/e4s-spack-cpu/tags) | 2.0 GB | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-spack-cpu-aarch64-26-06.sif) | 1.5 GB | Cache-backed Spack Core v1.1.1 environment with GNU compilers |
@@ -106,7 +106,7 @@ Everything below is published openly as part of E4S's open development process, 
 
 These images come with MPICH, CMake, and the relevant GPU SDK -- either AMD ROCm, NVIDIA CUDA Toolkit and NVHPC, or Intel OneAPI.
 
-| SDK | Architecture | Docker | Size | Singularity | Size | Description |
+| SDK | Architecture | Docker | Download Size | Singularity | Size | Description |
 |---|---|---|---|---|---|---|
 | AMD ROCm | x86_64 | [`ecpe4s/e4s-base-rocm:26.06`](https://hub.docker.com/r/ecpe4s/e4s-base-rocm/tags) | 11.0 GB | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-base-rocm-26-06.sif) | 10.7 GB | Minimal base image with MPICH, CMake, and the AMD ROCm SDK |
 | NVIDIA CUDA | x86_64 | [`ecpe4s/e4s-base-cuda:26.06`](https://hub.docker.com/r/ecpe4s/e4s-base-cuda/tags) | 8.1 GB | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-base-cuda-x86_64-26-06.sif) | 7.8 GB | Minimal base image with MPICH, CMake, and the NVIDIA CUDA Toolkit/NVHPC |
@@ -120,7 +120,7 @@ These images come with MPICH, CMake, and the relevant GPU SDK -- either AMD ROCm
 
 This multi-architecture image contains E4S products compiled with DOE LLVM 16 and Flang using Spack
 
-| Architecture | Docker | Size | Singularity | Size | Description |
+| Architecture | Docker | Download Size | Singularity | Size | Description |
 |---|---|---|---|---|---|
 | x86_64 | [`ecpe4s/e4s-doe-llvm:23.05`](https://hub.docker.com/r/ecpe4s/e4s-doe-llvm/tags) | 3.6 GB | [Download](https://oaciss.nic.uoregon.edu/e4s/images/23.05/e4s-doe-llvm-x86_64-23.05.sif) | 2.7 GB | E4S products compiled with DOE LLVM 16 and Flang |
 | aarch64 | [`ecpe4s/e4s-doe-llvm:23.05`](https://hub.docker.com/r/ecpe4s/e4s-doe-llvm/tags) | 2.7 GB | [Download](https://oaciss.nic.uoregon.edu/e4s/images/23.05/e4s-doe-llvm-aarch64-23.05.sif) | 2.6 GB | E4S products compiled with DOE LLVM 16 and Flang |
@@ -130,7 +130,7 @@ This multi-architecture image contains E4S products compiled with DOE LLVM 16 an
 
 ### Application-Specific Continuous Integration Images
 
-| Image | Size | Description | Download |
+| Image | Download Size | Description | Download |
 |---|---|---|---|
 | ecpe4s/sollve-rocm6.3.0 | 8.7 GB | SOLLVE CI image built with AMD ROCm 6.3.0 | [docker](https://hub.docker.com/r/ecpe4s/sollve-rocm6.3.0/tags) |
 | ecpe4s/sollve-cuda12.6.3-arm64 | 4.9 GB | SOLLVE CI image built with NVIDIA CUDA 12.6.3, arm64 | [docker](https://hub.docker.com/r/ecpe4s/sollve-cuda12.6.3-arm64/tags) |
@@ -147,7 +147,7 @@ This multi-architecture image contains E4S products compiled with DOE LLVM 16 an
 
 ##### X86\_64
 
-| Image | Size | Description | Download |
+| Image | Download Size | Description | Download |
 |---|---|---|---|
 | ecpe4s/ubuntu24.04-runner-x86_64-gcc-13.3 | 0.9 GB | Minimal Ubuntu 24.04 CI runner with GCC 13.3, x86_64 | [docker](https://hub.docker.com/r/ecpe4s/ubuntu24.04-runner-x86_64-gcc-13.3/tags) |
 | ecpe4s/rocky9-runner-x86_64-gcc-13.3 | 1.2 GB | Minimal Rocky Linux 9 CI runner with GCC 13.3, x86_64 | [docker](https://hub.docker.com/r/ecpe4s/rocky9-runner-x86_64-gcc-13.3/tags) |
@@ -155,14 +155,14 @@ This multi-architecture image contains E4S products compiled with DOE LLVM 16 an
 
 ##### PPC64LE
 
-| Image | Size | Description | Download |
+| Image | Download Size | Description | Download |
 |---|---|---|---|
 | ecpe4s/ubuntu20.04-runner-ppc64le-gcc-11.4 | 0.6 GB | Minimal Ubuntu 20.04 CI runner with GCC 11.4, ppc64le | [docker](https://hub.docker.com/r/ecpe4s/ubuntu20.04-runner-ppc64le-gcc-11.4/tags) |
 
 
 ##### AARCH64
 
-| Image | Size | Description | Download |
+| Image | Download Size | Description | Download |
 |---|---|---|---|
 | ecpe4s/ubuntu24.04-runner-aarch64-gcc-13.3 | 0.9 GB | Minimal Ubuntu 24.04 CI runner with GCC 13.3, aarch64 | [docker](https://hub.docker.com/r/ecpe4s/ubuntu24.04-runner-aarch64-gcc-13.3/tags) |
 | ecpe4s/rocky9-runner-aarch64-gcc-13.3 | 1.2 GB | Minimal Rocky Linux 9 CI runner with GCC 13.3, aarch64 | [docker](https://hub.docker.com/r/ecpe4s/rocky9-runner-aarch64-gcc-13.3/tags) |
@@ -172,7 +172,7 @@ This multi-architecture image contains E4S products compiled with DOE LLVM 16 an
 
 ### Custom Images
 
-| Image | Size | Description | Download |
+| Image | Download Size | Description | Download |
 |---|---|---|---|
 | ecpe4s/waggle-ml | 9.8 GB | Custom image for the Waggle edge-computing/machine-learning platform | [docker](https://hub.docker.com/r/ecpe4s/waggle-ml/tags) |
 | ecpe4s/exawind-snapshot | 3.2 GB | Snapshot build of the ExaWind software stack | [docker](https://hub.docker.com/r/ecpe4s/exawind-snapshot/tags) |
