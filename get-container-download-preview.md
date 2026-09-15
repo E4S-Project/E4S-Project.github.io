@@ -10,7 +10,7 @@ sitemap: false
 
 
 <div style="border: 2px solid #b08800; background: #fff8e1; color: #6b5300; padding: 1em 1.25em; border-radius: 6px; margin-bottom: 1.5em;">
-<strong>Draft preview — not the live page.</strong> This is a proposed reorganization of the <a href="/container-download/">E4S Container Download</a> page. Revision 4 responds to reviewer feedback: "Minimal Spack" is renamed <strong>Cache-backed Images (CBIs)</strong> — the new branding — and its section now just says any E4S product can be installed and loaded straight from the cache these images already point to, with no setup instructions; the main table also now notes that each Docker column entry is a ready-to-pull <code>image:tag</code> reference. The page separates <strong>ready-to-use release images</strong> (E4S Full Release Images, Cache-backed Images) from <strong>developer &amp; build images</strong> (GPU base images, CI runners, project-specific images) that exist mainly to support E4S development. It is for internal review only, is not linked from site navigation, and the official page at <code>/container-download/</code> is unaffected.
+<strong>Draft preview — not the live page.</strong> This is a proposed reorganization of the <a href="/container-download/">E4S Container Download</a> page. Revision 5 removes the "Docker vs. Singularity/Apptainer" explainer box. Earlier revisions renamed "Minimal Spack" to <strong>Cache-backed Images (CBIs)</strong> — the new branding — with its section now just noting that any E4S product can be installed and loaded straight from the cache these images already point to, with no setup instructions; the main table also notes that each Docker column entry is a ready-to-pull <code>image:tag</code> reference. The page separates <strong>ready-to-use release images</strong> (E4S Full Release Images, Cache-backed Images) from <strong>developer &amp; build images</strong> (GPU base images, CI runners, project-specific images) that exist mainly to support E4S development. It is for internal review only, is not linked from site navigation, and the official page at <code>/container-download/</code> is unaffected.
 </div>
 
 {% include e4s-page-actions.html %}
@@ -21,10 +21,6 @@ The current E4S container offerings include Docker and Singularity images capabl
 
 Docker images are available on the [E4S Docker Hub](https://hub.docker.com/u/ecpe4s).
 Please see the [E4S 26.06 Release Notes](https://oaciss.uoregon.edu/e4s/talks/E4S_26.06.pdf).
-
-<div style="border: 1px solid #b8c6d9; background: #eef3f9; color: #1c3a5e; padding: 1em 1.25em; border-radius: 6px; margin: 1.5em 0;">
-<strong>Docker vs. Singularity/Apptainer — same coverage, different packaging.</strong> Docker images are published as multi-architecture manifests, so one image tag (e.g. <code>ecpe4s/e4s-cuda:26.06-cuda80</code>) works on every architecture it supports — a single link covers x86_64 and aarch64 (and ppc64le, where offered). Singularity/Apptainer images are distributed as one <code>.sif</code> file per architecture, so each architecture needs its own download link. That's why the tables below show more individual Singularity links than Docker links for what is otherwise the same set of images — it's a packaging difference, not a gap in coverage. Where a Docker tag is multi-arch, the tables reuse the same Docker link across each architecture's row.
-</div>
 
 -----
 
