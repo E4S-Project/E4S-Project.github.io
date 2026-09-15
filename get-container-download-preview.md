@@ -60,7 +60,7 @@ These images contain a full Spack-based deployment of E4S. The CUDA, ROCm, and O
 | ROCm gfx942 (MI300) | x86_64 | Ubuntu | [`ecpe4s/e4s-rocm:26.06-rocm942`](https://hub.docker.com/r/ecpe4s/e4s-rocm/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-rocm942-x86_64-26.06.sif) | AMD ROCm support for MI300-series GPUs |
 | OneAPI | x86_64 | Ubuntu | [`ecpe4s/e4s-oneapi:26.06`](https://hub.docker.com/r/ecpe4s/e4s-oneapi/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-oneapi-x86_64-26.06.sif) | Full E4S release with Intel OneAPI GPU support |
 
-We link to each Docker repository's tag list rather than a single tag's page — Docker Hub doesn't offer a reliable deep link to one tag — so the Docker column shows the exact tag to look for (e.g. `26.06-cuda80`) once you're on that page.
+Each entry in the Docker column (e.g. `ecpe4s/e4s-cuda:26.06-cuda80`) is a complete, ready-to-use image reference — run `docker pull` on it directly, no need to click through first: `docker pull ecpe4s/e4s-cuda:26.06-cuda80`. The link itself goes to that repository's tag list rather than a single tag's page, since Docker Hub doesn't offer a reliable deep link to one tag; it's there for browsing, not required for the pull. The same applies to every Docker column on this page.
 
 <!-- * [OVA Download](http://tau.uoregon.edu/ecp.ova) -->
 
@@ -69,6 +69,26 @@ We link to each Docker repository's tag list rather than a single tag's page —
 ### Minimal Spack
 
 This image contains a minimal setup for using Spack Core v1.1.1 w/ GNU and/or CUDA/ROCm/OneAPI compilers.
+
+<div style="border: 1px solid #a9d1ab; background: #eef7ee; color: #235026; padding: 1em 1.25em; border-radius: 6px; margin: 1em 0 1.5em;">
+<strong>Populating a minimal image: use the E4S build cache instead of building from source.</strong> These images ship Spack itself, not prebuilt E4S packages — after starting the container, <code>spack install &lt;package&gt;</code> is what actually gets you software. Point Spack at the E4S build cache first so that install pulls a prebuilt, signed binary instead of compiling from source:
+
+<pre style="overflow-x: auto; white-space: pre;"><code># confirm your release's actual mirror URL — this is an example
+spack mirror add --scope=user e4s-26.06 https://cache.e4s.io/26.06
+spack buildcache keys --install --trust
+# prefer a cached binary; fall back to a source build if none matches
+spack install -b auto &lt;package&gt;
+</code></pre>
+
+To see what the cache has for your architecture, list the whole cache and filter for your target string — Spack doesn't currently offer a single "list by architecture" flag, so this grep is the closest quick option:
+
+<pre style="overflow-x: auto; white-space: pre;"><code>spack arch
+# -> your target string, e.g. linux-ubuntu24.04-x86_64_v3
+spack buildcache list -L | grep x86_64_v3
+</code></pre>
+
+Full walkthrough — trusting keys, environments, GPU/SDK-aware installs, troubleshooting — is on the <a href="/e4s-buildcache/">Use the E4S Spack Build Cache</a> page.
+</div>
 
 | Compilers | Architecture | Docker | Singularity | Description |
 |---|---|---|---|---|
