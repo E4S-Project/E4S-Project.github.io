@@ -10,7 +10,7 @@ sitemap: false
 
 
 <div style="border: 2px solid #b08800; background: #fff8e1; color: #6b5300; padding: 1em 1.25em; border-radius: 6px; margin-bottom: 1.5em;">
-<strong>Draft preview — not the live page.</strong> This is a proposed reorganization of the <a href="/container-download/">E4S Container Download</a> page. Revision 2 responds to reviewer feedback: the old "Container Releases" summary and the "E4S Full GPU Images" breakdown listed the same images twice, so they're now one table; Docker and Singularity links for the same image are now one row instead of two; and there's a new note explaining why Singularity has more individual links than Docker even though the two offerings have equivalent coverage. It is for internal review only, is not linked from site navigation, and the official page at <code>/container-download/</code> is unaffected.
+<strong>Draft preview — not the live page.</strong> This is a proposed reorganization of the <a href="/container-download/">E4S Container Download</a> page. Revision 3 responds to reviewer feedback: the "Note on Container Images" section (a redundant <code>docker pull</code> list) has been removed since the tables already show the exact tag to pull; and the page now separates <strong>ready-to-use release images</strong> (E4S Full Release Images, Minimal Spack) from <strong>developer &amp; build images</strong> (GPU base images, CI runners, project-specific images) that exist mainly to support E4S development. It is for internal review only, is not linked from site navigation, and the official page at <code>/container-download/</code> is unaffected.
 </div>
 
 {% include e4s-page-actions.html %}
@@ -27,6 +27,12 @@ Please see the [E4S 26.06 Release Notes](https://oaciss.uoregon.edu/e4s/talks/E4
 </div>
 
 -----
+
+## Ready-to-Use Release Images
+
+<div style="border: 1px solid #a9d1ab; background: #eef7ee; color: #235026; padding: 1em 1.25em; border-radius: 6px; margin: 1em 0 1.5em;">
+These are E4S's public-facing products: complete, tested deployments you can pull and use directly. No additional Spack build is required.
+</div>
 
 ### E4S Full Release Images
 
@@ -60,42 +66,6 @@ We link to each Docker repository's tag list rather than a single tag's page —
 
 -----
 
-
-### Note on Container Images
-
-Container images contain binary versions of the Full Release packages listed above. Full-featured GPU-enabled container images are available from Dockerhub:
-
-```bash
-# docker pull ecpe4s/e4s-cuda:26.06-cuda120
-# docker pull ecpe4s/e4s-cuda:26.06-cuda90
-# docker pull ecpe4s/e4s-cuda:26.06-cuda80
-# docker pull ecpe4s/e4s-cuda:26.06-cuda70
-# docker pull ecpe4s/e4s-cuda-rocky:26.06-cuda120
-# docker pull ecpe4s/e4s-cuda-rocky:26.06-cuda90
-# docker pull ecpe4s/e4s-rocm:26.06-rocm942
-# docker pull ecpe4s/e4s-rocm:26.06-rocm90a
-# docker pull ecpe4s/e4s-rocm:26.06-rocm908
-# docker pull ecpe4s/e4s-oneapi:26.06
-# docker pull ecpe4s/e4s-cpu:26.06
-# docker pull ecpe4s/e4s-cpu-rocky:26.06
-```
-
------
-
-### GPU Base Images
-
-These images come with MPICH, CMake, and the relevant GPU SDK -- either AMD ROCm, NVIDIA CUDA Toolkit and NVHPC, or Intel OneAPI.
-
-| SDK | Architecture | Docker | Singularity | Description |
-|---|---|---|---|---|
-| AMD ROCm | x86_64 | [`ecpe4s/e4s-base-rocm:26.06`](https://hub.docker.com/r/ecpe4s/e4s-base-rocm/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-base-rocm-26-06.sif) | Minimal base image with MPICH, CMake, and the AMD ROCm SDK |
-| NVIDIA CUDA | x86_64 | [`ecpe4s/e4s-base-cuda:26.06`](https://hub.docker.com/r/ecpe4s/e4s-base-cuda/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-base-cuda-x86_64-26-06.sif) | Minimal base image with MPICH, CMake, and the NVIDIA CUDA Toolkit/NVHPC |
-| NVIDIA CUDA | aarch64 | [`ecpe4s/e4s-base-cuda:26.06`](https://hub.docker.com/r/ecpe4s/e4s-base-cuda/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-base-cuda-aarch64-26-06.sif) | Minimal base image with MPICH, CMake, and the NVIDIA CUDA Toolkit/NVHPC |
-| NVIDIA CUDA | ppc64le | [`ecpe4s/e4s-base-cuda:26.06`](https://hub.docker.com/r/ecpe4s/e4s-base-cuda/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-base-cuda-ppc64le-26-06.sif) | Minimal base image with MPICH, CMake, and the NVIDIA CUDA Toolkit/NVHPC |
-| Intel OneAPI | x86_64 | [`ecpe4s/e4s-base-oneapi:26.06`](https://hub.docker.com/r/ecpe4s/e4s-base-oneapi/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-base-oneapi-26-06.sif) | Minimal base image with MPICH, CMake, and the Intel OneAPI SDK |
-
------
-
 ### Minimal Spack
 
 This image contains a minimal setup for using Spack Core v1.1.1 w/ GNU and/or CUDA/ROCm/OneAPI compilers.
@@ -110,6 +80,39 @@ This image contains a minimal setup for using Spack Core v1.1.1 w/ GNU and/or CU
 | GNU + NVIDIA CUDA | ppc64le | [`ecpe4s/e4s-spack-cuda`](https://hub.docker.com/r/ecpe4s/e4s-spack-cuda/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-spack-cuda-ppc64le-26-06.sif) | Minimal Spack Core v1.1.1 environment with GNU and NVIDIA CUDA compilers |
 | GNU + AMD ROCm | x86_64 | [`ecpe4s/e4s-spack-rocm`](https://hub.docker.com/r/ecpe4s/e4s-spack-rocm/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-spack-rocm-x86_64-26-06.sif) | Minimal Spack Core v1.1.1 environment with GNU and AMD ROCm compilers |
 | GNU + Intel OneAPI | x86_64 | [`ecpe4s/e4s-spack-oneapi`](https://hub.docker.com/r/ecpe4s/e4s-spack-oneapi/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-spack-oneapi-x86_64-26-06.sif) | Minimal Spack Core v1.1.1 environment with GNU and Intel OneAPI compilers |
+
+-----
+
+### E4S Facility Deployment
+
+  * [NERSC](https://docs.nersc.gov/applications/e4s/)
+  * [OLCF](https://docs.olcf.ornl.gov/software/e4s.html)
+
+-----
+
+### AWS EC2 Image
+
+The E4S 26.06 release is also available on [AWS](http://aws.amazon.com/) as an EC2 AMI with ID ami-0e752117cfa13cb9b in the US-West-2 (Oregon) region.
+
+-----
+
+## Developer & Build Images
+
+<div style="border: 1px solid #cfcfcf; background: #f4f4f4; color: #3a3a3a; padding: 1em 1.25em; border-radius: 6px; margin: 1em 0 1.5em;">
+Everything below is published openly as part of E4S's open development process, but these are <strong>not</strong> ready-to-use science images — they're minimal SDK/toolchain base images, CI runners, and project-specific build environments that E4S developers use to build, test, and package E4S itself. Anyone is welcome to use them, but expect to need your own Spack build or additional setup on top.
+</div>
+
+### GPU Base Images
+
+These images come with MPICH, CMake, and the relevant GPU SDK -- either AMD ROCm, NVIDIA CUDA Toolkit and NVHPC, or Intel OneAPI.
+
+| SDK | Architecture | Docker | Singularity | Description |
+|---|---|---|---|---|
+| AMD ROCm | x86_64 | [`ecpe4s/e4s-base-rocm:26.06`](https://hub.docker.com/r/ecpe4s/e4s-base-rocm/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-base-rocm-26-06.sif) | Minimal base image with MPICH, CMake, and the AMD ROCm SDK |
+| NVIDIA CUDA | x86_64 | [`ecpe4s/e4s-base-cuda:26.06`](https://hub.docker.com/r/ecpe4s/e4s-base-cuda/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-base-cuda-x86_64-26-06.sif) | Minimal base image with MPICH, CMake, and the NVIDIA CUDA Toolkit/NVHPC |
+| NVIDIA CUDA | aarch64 | [`ecpe4s/e4s-base-cuda:26.06`](https://hub.docker.com/r/ecpe4s/e4s-base-cuda/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-base-cuda-aarch64-26-06.sif) | Minimal base image with MPICH, CMake, and the NVIDIA CUDA Toolkit/NVHPC |
+| NVIDIA CUDA | ppc64le | [`ecpe4s/e4s-base-cuda:26.06`](https://hub.docker.com/r/ecpe4s/e4s-base-cuda/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-base-cuda-ppc64le-26-06.sif) | Minimal base image with MPICH, CMake, and the NVIDIA CUDA Toolkit/NVHPC |
+| Intel OneAPI | x86_64 | [`ecpe4s/e4s-base-oneapi:26.06`](https://hub.docker.com/r/ecpe4s/e4s-base-oneapi/tags) | [Download](https://oaciss.nic.uoregon.edu/e4s/images/26.06/e4s-base-oneapi-26-06.sif) | Minimal base image with MPICH, CMake, and the Intel OneAPI SDK |
 
 -----
 
@@ -174,16 +177,3 @@ This multi-architecture image contains E4S products compiled with DOE LLVM 16 an
 | ecpe4s/waggle-ml | Custom image for the Waggle edge-computing/machine-learning platform | [docker](https://hub.docker.com/r/ecpe4s/waggle-ml/tags) |
 | ecpe4s/exawind-snapshot | Snapshot build of the ExaWind software stack | [docker](https://hub.docker.com/r/ecpe4s/exawind-snapshot/tags) |
 | ecpe4s/superlu\_sc | Custom image built for SuperLU Supercomputing (SC) conference demos | [docker](https://hub.docker.com/r/ecpe4s/superlu_sc/tags) |
-
------
-
-### E4S Facility Deployment
-
-  * [NERSC](https://docs.nersc.gov/applications/e4s/)
-  * [OLCF](https://docs.olcf.ornl.gov/software/e4s.html)
-
------
-
-### AWS EC2 Image
-
-The E4S 26.06 release is also available on [AWS](http://aws.amazon.com/) as an EC2 AMI with ID ami-0e752117cfa13cb9b in the US-West-2 (Oregon) region.
