@@ -21,6 +21,11 @@ github_username: "maherou"
 
 minimal_mistakes_skin: "air"
 
+search: false
+search_full_content: true
+lunr:
+  search_within_pages: true
+
 atom_feed:
   hide: true
 

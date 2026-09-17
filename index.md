@@ -13,6 +13,9 @@ header:
     - label: "News & Events"
       url: "/news/"
       class: "btn--oval-blue"
+    - label: "Search the Site"
+      url: "/search/"
+      class: "btn--oval-blue"
 permalink: "/"
 ---
 
