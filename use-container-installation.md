@@ -4,7 +4,7 @@ title: "E4S Container Installation"
 permalink: /container-installation/
 classes: wide
 sidebar:
-  nav: "usemenu"
+  nav: "getmenu"
 ---
 
 {% include e4s-page-actions.html %}
