@@ -8,8 +8,6 @@ sidebar:
 toc: false
 ---
 
-> **Warning:** This page is under construction.
-
 ## Contributing Overview
 
 E4S Learning is community-driven, and contributions are welcome.

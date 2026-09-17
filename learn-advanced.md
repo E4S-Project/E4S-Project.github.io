@@ -8,18 +8,31 @@ sidebar:
 toc: false
 ---
 
-> **Warning:** This page is under construction.
+{% include e4s-page-actions.html %}
 
-## Advanced Topics Overview
+Advanced Topics cover running E4S beyond a single local install: at facility scale, as a testbed for your own software, and across deeper product-family integrations.
 
-Advanced Topics focus on deeper technical practices and ecosystem integration.
+## Facility-Scale Deployment
 
-Planned areas include:
+- [Frontier E4S Container Demo](/frontier-container-demo/) — walks through running E4S on OLCF's Frontier system.
+- [Frank Cluster Instructions](/frank-cluster-instructions/) — cluster-specific deployment guidance.
 
-- Performance portability strategies
-- Scaling workflows for HPC and AI environments
-- Advanced packaging and deployment approaches
-- Integrating tools across product families
+## Using E4S as a Testbed
+
+- [Test with E4S](/test-with-e4s/) — if you produce compilers or tools for HPC-AI users, E4S can serve as a reasonable proxy for the broader HPC-AI user community for upstream or downstream testing. This is a step up from a basic install-and-verify check — it's aimed at tool and compiler developers validating against a real ecosystem.
+
+## Product-Family Deep Dives
+
+For performance portability and AI/ML integration topics specifically, the product-family guides currently carry the deepest available material:
+
+- [Performance Tools](/e4s-perftools/) and its [Guide](/guide-perftools/)
+- [AI & Machine Learning](/e4s-aiml/) and its [Guide](/guide-aiml/)
+
+See [E4S Product Families](/about-product-families/) for the full set.
+
+## Still Coming
+
+This tier is the newest and thinnest part of E4S Learning. Planned additions include mixed-precision computing patterns, cross-family integration case studies, and scaling guidance drawn from real deployments. If you have material that belongs here, see [Contributing](/learn-contributing/).
 
 ## Prerequisites
 

@@ -30,7 +30,6 @@ Before starting, review:
 
 1. [E4S Learning](/learn/)
 2. [Orientation](/learn-orientation/)
-3. [First-Time Users](/about-first-time-users/)
 
 ## Next Step
 

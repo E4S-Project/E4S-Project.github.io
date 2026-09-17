@@ -71,26 +71,17 @@ consuming content exhaustively.
 
 ## Current Status
 
-E4S Learning is under active development.
-
-Initial materials focus on:
-- Ecosystem orientation
-- Foundational workflows
-- Early onboarding experiences
-
-Content will expand iteratively and align with future E4S releases.
+E4S Learning now has real content across all six tiers. Orientation, Quick Starts, Core Competencies, and Learning Paths are fully populated. Advanced Topics currently covers facility-scale deployment, using E4S as a testbed for your own tools, and select product-family deep dives, with more planned as the collection grows.
 
 ---
 
 ## What You Can Do Now
 
-While the collection grows, you can:
-
-- Explore introductory material on the E4S ecosystem  
-- Follow an initial Quick Start when available  
-- Review learning topics as they are published  
-
-Links will appear here as content is added.
+- Get oriented on what E4S is and how the ecosystem fits together — [Orientation](/learn-orientation/)
+- Follow a Quick Start for your specific tool — [Quick Starts](/learn-quick-starts/)
+- Build core skills across installation, packages, and validation — [Core Competencies](/learn-core/)
+- Follow a path suited to your role — [Learning Paths](/learn-paths/)
+- Explore facility-scale deployment and product-family integration — [Advanced Topics](/learn-advanced/)
 
 ---
 

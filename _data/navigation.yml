@@ -91,8 +91,6 @@ aboutmenu:
         url: /about/
       - title: "E4S Introduction"
         url: /about-e4s-intro/
-      - title: "First-Time Users"
-        url: /about-first-time-users/
       - title: "E4S Product Families"
         url: /about-product-families/
       - title: "E4S Containers"
