@@ -22,8 +22,7 @@ sidebar:
 
 | Date | Event | Location |
 |------|--------|-----------|
-| March 16, 2026 11:55am - 12:10pm CDT | [E4S: A Platform for CI/CD for HPC and AI](https://hpsf2026.sched.com/event/2HAMo/e4s-a-platform-for-cicd-for-hpc-and-ai-sameer-shende-university-of-oregon) | HPSFCon, Chicago |
-| March 17, 2026 10:45am - 11:00am CDT | [AI as a First-Class Component of Scientific Software Infrastructure](https://hpsf2026.sched.com/event/2Ei88/ai-as-a-first-class-component-of-scientific-software-infrastructure-michael-heroux-paratools-inc) | HPSFCon, Chicago |
+| November 15, 2026, 8:30 am - 5:00 pm CST | [Using Containers to Accelerate HPC](https://sc26.conference-program.com/presentation/?id=tut164&sess=sess181) | SC26, Chicago, IL |
 
 
 ### Past Events
@@ -31,6 +30,8 @@ sidebar:
 | Date | Event | Location |
 |------|--------|-----------|
 | June 22, 2026, 2:00 pm–6:00 pm CEST | [Using Containers to Accelerate HPC](https://isc.app.swapcard.com/widget/event/isc-high-performance-2026/planning/UGxhbm5pbmdfNDM5MDIxNw%3D%3D)⁠￼ [(tutorial materials⁠)](https://sc-tutorial.supercontainers.org/) | ISC26, Hamburg, Germany |
+| March 16, 2026 11:55am - 12:10pm CDT | [E4S: A Platform for CI/CD for HPC and AI](https://hpsf2026.sched.com/event/2HAMo/e4s-a-platform-for-cicd-for-hpc-and-ai-sameer-shende-university-of-oregon) | HPSFCon, Chicago |
+| March 17, 2026 10:45am - 11:00am CDT | [AI as a First-Class Component of Scientific Software Infrastructure](https://hpsf2026.sched.com/event/2Ei88/ai-as-a-first-class-component-of-scientific-software-infrastructure-michael-heroux-paratools-inc) | HPSFCon, Chicago |
 | February 11, 2026 - 3:00 pm - 4:30 pm ET | [Quickstarting Your Way to Robust, Portable HPC-AI Computing](https://cass.community/events/2026-02-e4s) | CASS BOF Days - Online |
 | November 20, 2025 - 1:30 am - 3:00 pm | [Research Software Engineering in the Age of AI](https://sc25.conference-program.com/presentation/?id=pan109&sess=sess351) | SC25 |
 | November 19, 2025 — 2:00 pm – 3:00 pm | [E4S and TAU (talk, LinkOregon booth #6313)](https://www.linkoregon.org) | Exhibit Hall, SC25 |
