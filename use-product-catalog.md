@@ -13,6 +13,8 @@ sidebar:
 
 The E4S Product Catalog provides a convenient searchable and sortable table that provides per-product information for all primary E4S products.
 
+[Download as JSON](/product-catalog.json)
+
 
 <div id="product-catalog-app" class="mm-product-catalog">
   <div class="controls">

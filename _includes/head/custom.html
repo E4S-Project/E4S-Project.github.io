@@ -16,3 +16,7 @@ tr.shown td.details-control {
   background: url('/Resources/details_close.png') no-repeat center center;
 }
 </style>
+
+{% if page.permalink == "/product-catalog/" %}
+<link rel="alternate" type="application/json" href="{{ '/product-catalog.json' | relative_url }}" title="E4S Product Catalog (JSON)">
+{% endif %}

@@ -1,0 +1,14 @@
+---
+layout: none
+permalink: /product-catalog.json
+---
+[
+{% for product in site.data.product-catalog.data %}
+  {
+    "name": {{ product.name | jsonify }},
+    "area": {{ product.area | jsonify }},
+    "description": {{ product.description | jsonify }},
+    "last_updated": {{ product.last_updated | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]
