@@ -13,15 +13,6 @@ header:
     - label: "News & Events"
       url: "/news/"
       class: "btn--oval-blue"
-    - label: "Get E4S"
-      url: "/get/"
-      class: "btn--oval-blue"
-    - label: "Quick Start"
-      url: "/quick-start/"
-      class: "btn--oval-blue"
-    - label: "Learn"
-      url: "/learn/"
-      class: "btn--oval-blue"
 permalink: "/"
 ---
 
