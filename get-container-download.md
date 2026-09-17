@@ -66,7 +66,7 @@ Each entry in the Docker column (e.g. `ecpe4s/e4s-cuda:26.06-cuda80`) is a compl
 
 ### Cache-backed Images (CBIs)
 
-These images provide a minimal Spack Core v1.1.1 environment (with GNU and/or CUDA/ROCm/OneAPI compilers) that's already pointed at the E4S binary cache. Any E4S product can be installed and loaded directly from the cache — no separate cache setup needed. See [Use the E4S Spack Build Cache](/e4s-buildcache/) for more on the cache itself.
+These images provide a minimal Spack Core v1.1.1 environment (with GNU and/or CUDA/ROCm/OneAPI compilers) that's already pointed at the E4S binary cache. Any E4S product can be installed and loaded directly from the cache — no separate cache setup needed. See [Cache-Backed Images (CBIs)](/cache-backed-images/) for what a CBI is and why it matters, and [Use the E4S Spack Build Cache](/e4s-buildcache/) for more on the cache itself.
 
 | Compilers | Architecture | Docker | Download Size | Singularity | Size | Description |
 |---|---|---|---|---|---|---|

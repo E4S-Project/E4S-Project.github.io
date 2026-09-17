@@ -57,6 +57,8 @@ getmenu:
         url: /spack-e4s-installation/
       - title: "E4S Container Download"
         url: /container-download/
+      - title: "Cache-Backed Images (CBIs)"
+        url: /cache-backed-images/
       - title: "E4S Container Installation"
         url: /container-installation/
       - title: "E4S Container Launch"
