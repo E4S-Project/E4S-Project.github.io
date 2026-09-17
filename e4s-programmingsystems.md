@@ -9,6 +9,8 @@ sidebar:
 
 {% include e4s-page-actions.html %}
 
+> **Ask the E4S Guide Bot about Programming Systems:** see the [Programming Systems Guide](/guide-programmingsystems/) for prompts tailored to this product family.
+
 The **Ecosystem for Scientific Software (E4S)** provides a curated collection of interoperable, performance-portable software packages that enable scalable, high-performance applications across diverse computing architectures. Within the E4S ecosystem, **portable parallel programming systems** play a critical role in achieving both productivity and performance on heterogeneous systems — including multicore CPUs, GPUs, and emerging accelerators — from vendors such as NVIDIA, AMD, and Intel.
 
 E4S includes a set of portable programming models, frameworks, and runtime systems that allow application developers to write code once and execute efficiently across multiple platforms. These systems cover both **intra-node (shared-memory and accelerator)** parallelism and **inter-node (distributed-memory)** parallelism, while also leveraging modern **language-supported features** available in Fortran, C++, and LLVM-based compilers.

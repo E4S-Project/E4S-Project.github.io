@@ -4,7 +4,7 @@ title: "E4S Data & Visualization Libraries and Tools Guide"
 permalink: /guide-dav/
 classes: wide
 sidebar:
-  nav: "botmenu"
+  nav: "productfamiliesmenu"
 ---
 
 {% include e4s-page-actions.html %}

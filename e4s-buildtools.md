@@ -9,6 +9,8 @@ sidebar:
 
 {% include e4s-page-actions.html %}
 
+> **Ask the E4S Guide Bot about Build Tools:** see the [Build Tools Guide](/guide-buildtools/) for prompts tailored to this product family.
+
 ## Introduction
 
 E4S provides a curated collection of high-performance software tools, libraries, and frameworks that enable reproducible and portable scientific computing across diverse architectures. To support its extensive ecosystem of interoperable software, E4S relies on a set of sophisticated build tools that automate, manage, and verify software installation and integration across systems ranging from laptops to leadership-class supercomputers.

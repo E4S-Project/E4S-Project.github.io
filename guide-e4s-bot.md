@@ -4,7 +4,7 @@ title: "E4S Guide Bot"
 permalink: /guide-e4s-bot/
 classes: wide
 sidebar:
-  nav: "botmenu"
+  nav: "usemenu"
 ---
 
 {% include e4s-page-actions.html %}

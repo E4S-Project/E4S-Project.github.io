@@ -9,6 +9,8 @@ sidebar:
 
 {% include e4s-page-actions.html %}
 
+> **Ask the E4S Guide Bot about Data & Visualization:** see the [Data & Visualization Guide](/guide-dav/) for prompts tailored to this product family.
+
 The **Ecosystem for Scientific Software (E4S)** provides a comprehensive collection of open-source libraries and tools for scientific computing, including those focused on data management, input/output (I/O), and visualization. These components are essential for efficiently handling, storing, transferring, and visualizing large-scale simulation and experimental datasets on modern high-performance computing (HPC) platforms.
 
 E4S includes an extensive set of interoperable, performance-portable tools that help applications manage data efficiently and visualize results at scale. These tools support parallel I/O, adaptive data formats, in situ visualization, and interoperability across programming environments and hardware architectures.

@@ -4,7 +4,7 @@ title: "E4S AI & Machine Learning Guide"
 permalink: /guide-aiml/
 classes: wide
 sidebar:
-  nav: "botmenu"
+  nav: "productfamiliesmenu"
 ---
 
 

@@ -4,7 +4,7 @@ title: "Library Composition: Kokkos+HYPRE"
 permalink: /kokkos-hypre/
 classes: wide
 sidebar:
-  nav: "usemenu"
+  nav: "learnmenu"
 ---
 
 {% include e4s-page-actions.html %}

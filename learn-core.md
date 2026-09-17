@@ -21,6 +21,10 @@ This section will cover:
 - Reproducible workflows for teams and facilities
 - Basic performance and correctness validation practices
 
+## Example: Composing Libraries
+
+- [Library Composition: Kokkos+HYPRE](/kokkos-hypre/) — a worked example of linking an application against two E4S libraries, Kokkos and HYPRE, together.
+
 ## Recommended Sequence
 
 1. [Orientation](/learn-orientation/)

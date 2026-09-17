@@ -4,7 +4,7 @@ title: "E4S Programming Systems Guide"
 permalink: /guide-programmingsystems/
 classes: wide
 sidebar:
-  nav: "botmenu"
+  nav: "productfamiliesmenu"
 ---
 
 {% include e4s-page-actions.html %}

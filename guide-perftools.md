@@ -4,7 +4,7 @@ title: "E4S Performance Tools Guide"
 permalink: /guide-perftools/
 classes: wide
 sidebar:
-  nav: "botmenu"
+  nav: "productfamiliesmenu"
 ---
 
 {% include e4s-page-actions.html %}

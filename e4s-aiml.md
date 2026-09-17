@@ -9,6 +9,8 @@ sidebar:
 
 {% include e4s-page-actions.html %}
 
+> **Ask the E4S Guide Bot about AI & Machine Learning:** see the [AI & Machine Learning Guide](/guide-aiml/) for prompts tailored to this product family.
+
 The **E4S (Ecosystem for Scientific Software)** distribution integrates a growing set of AI and machine learning (AI/ML) libraries and tools that complement traditional scientific computing workflows. These capabilities help users harness the power of machine learning for data analysis, surrogate modeling, uncertainty quantification, and hybrid AI–HPC workflows that accelerate discovery.
 
 AI/ML tools in E4S are designed to interoperate with established programming models (such as MPI, Kokkos, and OpenMP) and numerical libraries (such as PETSc and Trilinos), enabling scientific applications to adopt AI methods without compromising portability, performance, or maintainability across diverse architectures.

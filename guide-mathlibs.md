@@ -4,7 +4,7 @@ title: "Math Libraries Guide"
 permalink: /guide-mathlibs/
 classes: wide
 sidebar:
-  nav: "botmenu"
+  nav: "productfamiliesmenu"
 ---
 
 {% include e4s-page-actions.html %}

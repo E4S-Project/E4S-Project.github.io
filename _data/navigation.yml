@@ -1,14 +1,23 @@
 # db: Home is present by default and shouldn't be listed here.
-main: 
+main:
+ - title: Learn
+   url: /learn/
+ - title: Get E4S
+   url: /get/
  - title: Use E4S
    url: /use/
  - title: Join E4S
    url: /join/
  - title: About E4S
    url: /about/
- - title: Contact Us
-   url: /contact/
-  
+
+# -------------------------
+# Sidebar: Footer links
+# -------------------------
+footer:
+  - title: "Contact Us"
+    url: /contact/
+
 # -------------------------
 # Sidebar: Use E4S Section
 # -------------------------
@@ -19,26 +28,6 @@ usemenu:
         url: /use/
       - title: "E4S Guide Bot"
         url: /guide-e4s-bot/
-      - title: "E4S Quick Start"
-        url: /quick-start/
-      - title: "Library Composition: Kokkos+HYPRE"
-        url: /kokkos-hypre/
-      - title: "PyTorch Quick Start"
-        url: /quick-start-pytorch/
-      - title: "TensorFlow Quick Start"
-        url: /quick-start-tensorflow/
-      - title: "NeMo Quick Start"
-        url: /quick-start-nemo/
-      - title: "BioNeMo Quick Start"
-        url: /quick-start-bionemo/
-      - title: "vLLM Quick Start"
-        url: /quick-start-vllm/
-      - title: "HYPRE Quick Start"
-        url: /quick-start-hypre/
-      - title: "LAMMPS Quick Start"
-        url: /quick-start-lammps/
-      - title: "ParaView Quick Start"
-        url: /quick-start-paraview/
       - title: "E4S Documentation"
         url: /documentation/
       - title: "E4S Product Catalog"
@@ -47,8 +36,6 @@ usemenu:
         url: /spack-installation/
       - title: "E4S-Specific Spack Installation"
         url: /spack-e4s-installation/
-      - title: "E4S Container Download"
-        url: /container-download/
       - title: "E4S Container Installation"
         url: /container-installation/
       - title: "E4S Container Launch"
@@ -57,8 +44,6 @@ usemenu:
         url: /frontier-container-demo/
       - title: "Test with E4S"
         url: /test-with-e4s/
-      - title: "ParaTools Pro for E4S™"
-        url: https://www.paratoolspro.com
       - title: "Frank Cluster Instructions"
         url: /frank-cluster-instructions/
 
@@ -106,8 +91,6 @@ aboutmenu:
         url: /about/
       - title: "E4S Introduction"
         url: /about-e4s-intro/
-      - title: "E4S Learning"
-        url: /learn/
       - title: "First-Time Users"
         url: /about-first-time-users/
       - title: "E4S Product Families"
@@ -141,27 +124,6 @@ productfamiliesmenu:
         url: /e4s-dav/
       - title: "AI & Machine Learning"
         url: /e4s-aiml/
-
-# -------------------------
-# Sidebar: Bot / Guides Section
-# -------------------------
-botmenu:
-  - title: "E4S Guides"
-    children:
-      - title: "E4S Guide Bot"
-        url: /guide-e4s-bot/
-      - title: "Build Tools Guide"
-        url: /guide-buildtools/
-      - title: "Programming Systems Guide"
-        url: /guide-programmingsystems/
-      - title: "Performance Tools Guide"
-        url: /guide-perftools/
-      - title: "Math Libraries Guide"
-        url: /guide-mathlibs/
-      - title: "Data & Visualization Guide"
-        url: /guide-dav/
-      - title: "AI & Machine Learning Guide"
-        url: /guide-aiml/
 
 # -------------------------
 # Sidebar: Learn Section

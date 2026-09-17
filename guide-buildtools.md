@@ -4,7 +4,7 @@ title: "E4S Build Tools Guide"
 permalink: /guide-buildtools/
 classes: wide
 sidebar:
-  nav: "botmenu"
+  nav: "productfamiliesmenu"
 ---
 
 {% include e4s-page-actions.html %}
