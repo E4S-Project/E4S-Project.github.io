@@ -2690,8 +2690,8 @@
     {
       "name": "version.txt",
       "url": "https://github.com/Kitware/ParaView/blob/HEAD/version.txt",
-      "timestamp": "2026-09-17 04:01:13",
-      "content": "6.2.20260917\n"
+      "timestamp": "2026-09-18 04:01:22",
+      "content": "6.2.20260918\n"
     }
   ],
   "deployment": [
@@ -2723,7 +2723,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-17 04:01:13"
+  "last_updated": "2026-09-18 04:01:22"
 },
 {
   "name": "VISIT",
@@ -6544,8 +6544,8 @@
     {
       "name": "CHANGES.md",
       "url": "https://github.com/chapel-lang/chapel/blob/HEAD/CHANGES.md",
-      "timestamp": "2026-08-24 04:21:01",
-      "content": "<h1>Release Changes List</h1>\n<h1>version 2.9</h1>\n<p>released June 18, 2026</p>\n<h2>Highlights (see the sections that follow for details)</h2>\n<ul>\n<li>significant improvements in the support of <code>union</code> types</li>\n<li>initial support for dynamically loading parallel/distributed Chapel libraries</li>\n<li>parallel scans for array-like expressions</li>\n<li>significant improvements to the Mason package manager</li>\n</ul>"
+      "timestamp": "2026-09-18 18:29:41",
+      "content": "<h1>Release Changes List</h1>\n<h1>version 2.10</h1>\n<p>released September 24, 2026</p>\n<h2>Highlights (see the sections that follow for details)</h2>\n<ul>\n<li>significantly improved support for <code>union</code> types</li>\n<li>added support for stack traces on caught and uncaught thrown errors</li>\n<li>vastly improved the use of CI/GitHub actions to support community developers</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -6600,7 +6600,7 @@
       ]
     }
   ],
-  "last_updated": "2026-08-24 04:21:01"
+  "last_updated": "2026-09-18 18:29:41"
 },
 {
   "name": "DARSHAN",
@@ -26373,7 +26373,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/Parallel-NetCDF/PnetCDF/blob/HEAD/README.md",
-      "timestamp": "2026-07-02 05:07:40",
+      "timestamp": "2026-09-18 20:42:08",
       "content": "<h2>PnetCDF source code development repository</h2>\n<p>PnetCDF is a parallel I/O library for accessing\n<a href=\"http://www.unidata.ucar.edu/software/netcdf\">Unidata&#x27;s NetCDF</a> files in\nclassic formats. The software development is a collaborative work of\nNorthwestern University and Argonne National Laboratory.</p>\n<ul>\n<li>The original repository: https://svn.mcs.anl.gov/repos/parallel-netcdf</li>\n<li>Since June 1, 2018, the PnetCDF repository has been migrated to</li>\n</ul>"
     },
     {
@@ -27140,7 +27140,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-16 20:12:19"
+  "last_updated": "2026-09-18 20:42:08"
 },
 {
   "name": "VARIORUM",
@@ -57054,7 +57054,7 @@
     {
       "name": "RELEASE.md",
       "url": "https://github.com/pytorch/pytorch/blob/HEAD/RELEASE.md",
-      "timestamp": "2026-09-14 18:01:44",
+      "timestamp": "2026-09-18 16:48:19",
       "content": "<h1>Releasing PyTorch</h1>\n<ul>\n<li><a href=\"#release-compatibility-matrix\">Release Compatibility Matrix</a><ul>\n<li><a href=\"#pytorch-cuda-support-matrix\">PyTorch CUDA Support Matrix</a></li>\n</ul>\n</li>\n<li><a href=\"#release-cadence\">Release Cadence</a></li>\n<li><a href=\"#general-overview\">General Overview</a><ul>\n<li><a href=\"#frequently-asked-questions\">Frequently Asked Questions</a></li>\n</ul>\n</li>\n<li><a href=\"#cutting-a-release-branch-preparations\">Cutting a release branch preparations</a></li>\n<li><a href=\"#cutting-release-branches\">Cutting release branches</a></li>\n</ul>"
     },
     {
@@ -57065,7 +57065,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-09-14 18:01:44"
+  "last_updated": "2026-09-18 16:48:19"
 },
 {
   "name": "JAX",
@@ -57095,12 +57095,12 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/google/jax/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-09-18 00:06:31",
+      "timestamp": "2026-09-18 17:13:58",
       "content": "<h1>Change log</h1>\n<p>Best viewed <a href=\"https://docs.jax.dev/en/latest/changelog.html\">here</a>.\nFor the changes specific to the experimental Pallas APIs,\nsee {ref}<code>pallas-changelog</code>.</p>\n<p>JAX follows Effort-based versioning; for a discussion of this and JAX&#x27;s API\ncompatibility policy, refer to {ref}<code>api-compatibility</code>. For the Python and\nNumPy version support policy, refer to {ref}<code>version-support-policy</code>.</p>\n<h2>Unreleased</h2>"
     }
   ],
   "deployment": [],
-  "last_updated": "2026-09-18 00:06:31"
+  "last_updated": "2026-09-18 17:13:58"
 },
 {
   "name": "PANDAS",
@@ -57326,8 +57326,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-09-18 00:47:43",
-      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.14.1...v3.15.0\">3.15.0</a> (2026-09-18)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> add agent session model settings (<a href=\"https://github.com/openai/openai-python/issues/3882\">#3882</a>) (<a href=\"https://github.com/openai/openai-python/commit/4b1581771ea97c870187f6ddfc3dbc87ff4fa443\">4b15817</a>)</li>\n<li><strong>api:</strong> add audio-mini model choices (<a href=\"https://github.com/openai/openai-python/issues/3886\">#3886</a>) (<a href=\"https://github.com/openai/openai-python/commit/a6eeb3f5a468ec576d2c911c19ce59c56ac46e43\">a6eeb3f</a>)</li>\n</ul>"
+      "timestamp": "2026-09-18 21:22:01",
+      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.16.1...v3.16.2\">3.16.2</a> (2026-09-18)</h2>\n<h3>Bug Fixes</h3>\n<ul>\n<li><strong>parsing:</strong> drop TextFormatT parameterization in parse_response to fix memory leak (<a href=\"https://github.com/openai/openai-python/issues/3084\">#3084</a>) (<a href=\"https://github.com/openai/openai-python/issues/3088\">#3088</a>) (<a href=\"https://github.com/openai/openai-python/commit/009b7f6ae6493e1abfa7583449595f144c8beb5a\">009b7f6</a>)</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -57337,7 +57337,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-09-18 00:47:43"
+  "last_updated": "2026-09-18 21:22:01"
 },
 {
   "name": "DEEPHYPER",
@@ -57957,7 +57957,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/CEED/libCEED/blob/HEAD/README.md",
-      "timestamp": "2026-08-10 06:07:18",
+      "timestamp": "2026-09-18 15:51:10",
       "content": "<h1>libCEED: Efficient Extensible Discretization</h1>\n<h2>Summary and Purpose</h2>\n<p>libCEED provides fast algebra for element-based discretizations, designed for performance portability, run-time flexibility, and clean embedding in higher level libraries and applications.\nIt offers a C99 interface as well as bindings for Fortran, Python, Julia, and Rust.\nWhile our focus is on high-order finite elements, the approach is mostly algebraic and thus applicable to other discretizations in factored form, as explained in the <a href=\"https://libceed.org/en/latest/\">user manual</a> and API implementation portion of the <a href=\"https://libceed.org/en/latest/api/\">documentation</a>.</p>"
     },
     {
@@ -57974,7 +57974,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-08-10 06:07:18"
+  "last_updated": "2026-09-18 15:51:10"
 },
 {
   "name": "BIONEMO-FRAMEWORK",
