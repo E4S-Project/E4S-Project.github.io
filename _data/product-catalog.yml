@@ -2690,8 +2690,8 @@
     {
       "name": "version.txt",
       "url": "https://github.com/Kitware/ParaView/blob/HEAD/version.txt",
-      "timestamp": "2026-09-17 04:01:13",
-      "content": "6.2.20260917\n"
+      "timestamp": "2026-09-23 04:01:43",
+      "content": "6.2.20260923\n"
     }
   ],
   "deployment": [
@@ -2723,7 +2723,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-17 04:01:13"
+  "last_updated": "2026-09-23 04:01:43"
 },
 {
   "name": "VISIT",
@@ -2782,13 +2782,13 @@
     {
       "name": "README.md",
       "url": "https://github.com/AMReX-Codes/amrex/blob/HEAD/README.md",
-      "timestamp": "2026-03-30 19:28:26",
+      "timestamp": "2026-09-21 23:48:54",
       "content": "<p>&lt;div align=&quot;center&quot;&gt;</p>\n<p>&lt;p align=&quot;center&quot;&gt;\n  &lt;a href=&quot;https://doi.org/10.21105/joss.01370&quot;&gt;</p>\n<p>&lt;/a&gt;\n  &lt;a href=&quot;https://doi.org/10.5281/zenodo.2555438&quot;&gt;</p>\n<p>&lt;/a&gt;\n  &lt;a href=&quot;https://scan.coverity.com/projects/amrex-codes-amrex&quot;&gt;</p>\n<p>&lt;/a&gt;\n  &lt;a href=&quot;https://www.bestpractices.dev/projects/11299&quot;&gt;</p>"
     },
     {
       "name": "LICENSE",
       "url": "https://github.com/AMReX-Codes/amrex/blob/HEAD/LICENSE",
-      "timestamp": "2024-03-20 23:30:12",
+      "timestamp": "2026-09-20 01:29:58",
       "content": "AMReX Copyright (c) 2024, The Regents of the University of California,\nthrough Lawrence Berkeley National Laboratory (subject to receipt of any\nrequired approvals from the U.S. Dept. of Energy).  All rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n(1) Redistributions of source code must retain the above copyright notice,"
     },
     {
@@ -2796,12 +2796,6 @@
       "url": "https://github.com/AMReX-Codes/amrex/blob/HEAD/CHANGES.md",
       "timestamp": "2026-09-01 18:21:56",
       "content": "<h1>26.09</h1>\n<p>## Highlights:</p>\n<ul>\n<li>\n<p>Fix <code>Random()</code> returning 1.0f &amp; add <code>RandomPositive</code> (#5643)\n    <code>amrex::Random()</code> is documented as <code>[0,1)</code> but previously it could\n    return exactly <code>1.0</code> on CUDA/HIP.</p>\n</li>\n<li>\n<p>EB state redistribution: Fix Itracker abort with vfrac fallback (#5630)\n    This PR adds a volume-fraction-based fallback pathway in the <code>itracker</code>\n    construction for EB state redistribution when the original normal-based</p>\n</li>\n</ul>"
-    },
-    {
-      "name": "CITATION",
-      "url": "https://github.com/AMReX-Codes/amrex/blob/HEAD/CITATION",
-      "timestamp": "2025-12-16 00:05:08",
-      "content": "If you use AMReX, we ask you to cite the JOSS paper and the first IJHPCA paper:\n\n    @ARTICLE{AMReX_JOSS,\n       author = {Weiqun Zhang and Ann Almgren and Vince Beckner and John Bell and Johannes Blaschke and Cy Chan and Marcus Day and Brian Friesen and Kevin Gott and Daniel Graves and Max Katz and Andrew Myers and Tan Nguyen and Andrew Nonaka and Michele Rosso and Samuel Williams and Michael Zingale},"
     }
   ],
   "deployment": [
@@ -4135,7 +4129,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-01 18:21:56"
+  "last_updated": "2026-09-21 23:48:54"
 },
 {
   "name": "ARBORX",
@@ -6544,8 +6538,8 @@
     {
       "name": "CHANGES.md",
       "url": "https://github.com/chapel-lang/chapel/blob/HEAD/CHANGES.md",
-      "timestamp": "2026-08-24 04:21:01",
-      "content": "<h1>Release Changes List</h1>\n<h1>version 2.9</h1>\n<p>released June 18, 2026</p>\n<h2>Highlights (see the sections that follow for details)</h2>\n<ul>\n<li>significant improvements in the support of <code>union</code> types</li>\n<li>initial support for dynamically loading parallel/distributed Chapel libraries</li>\n<li>parallel scans for array-like expressions</li>\n<li>significant improvements to the Mason package manager</li>\n</ul>"
+      "timestamp": "2026-09-18 18:29:41",
+      "content": "<h1>Release Changes List</h1>\n<h1>version 2.10</h1>\n<p>released September 24, 2026</p>\n<h2>Highlights (see the sections that follow for details)</h2>\n<ul>\n<li>significantly improved support for <code>union</code> types</li>\n<li>added support for stack traces on caught and uncaught thrown errors</li>\n<li>vastly improved the use of CI/GitHub actions to support community developers</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -6600,7 +6594,7 @@
       ]
     }
   ],
-  "last_updated": "2026-08-24 04:21:01"
+  "last_updated": "2026-09-18 18:29:41"
 },
 {
   "name": "DARSHAN",
@@ -11409,8 +11403,8 @@
     {
       "name": "README.md",
       "url": "https://github.com/ginkgo-project/ginkgo/blob/HEAD/README.md",
-      "timestamp": "2026-06-01 19:47:07",
-      "content": "<p>&lt;p align=&quot;center&quot;&gt;&lt;/p&gt;</p>\n<p>&lt;div align=&quot;center&quot;&gt;</p>\n<p>||||</p>\n<p>|||||</p>\n<p>&lt;/div&gt;</p>\n<p>Ginkgo is a high-performance numerical linear algebra library for many-core systems, with a\nfocus on solution of sparse linear systems. It is implemented using modern C++\n(you will need an at least C++17 compliant compiler to build it), with GPU kernels\nimplemented for NVIDIA, AMD and Intel GPUs.</p>"
+      "timestamp": "2026-09-20 17:59:22",
+      "content": "<p>&lt;p align=&quot;center&quot;&gt;&lt;/p&gt;</p>\n<p>&lt;div align=&quot;center&quot;&gt;</p>\n<p>|||||</p>\n<p>|||||</p>\n<p>&lt;/div&gt;</p>\n<p>Ginkgo is a high-performance numerical linear algebra library for many-core systems, with a\nfocus on solution of sparse linear systems. It is implemented using modern C++\n(you will need an at least C++17 compliant compiler to build it), with GPU kernels\nimplemented for NVIDIA, AMD and Intel GPUs.</p>"
     },
     {
       "name": "CHANGELOG.md",
@@ -12254,7 +12248,7 @@
       ]
     }
   ],
-  "last_updated": "2026-06-01 19:47:07"
+  "last_updated": "2026-09-20 17:59:22"
 },
 {
   "name": "HDF5",
@@ -26373,14 +26367,14 @@
     {
       "name": "README.md",
       "url": "https://github.com/Parallel-NetCDF/PnetCDF/blob/HEAD/README.md",
-      "timestamp": "2026-07-02 05:07:40",
+      "timestamp": "2026-09-18 20:42:08",
       "content": "<h2>PnetCDF source code development repository</h2>\n<p>PnetCDF is a parallel I/O library for accessing\n<a href=\"http://www.unidata.ucar.edu/software/netcdf\">Unidata&#x27;s NetCDF</a> files in\nclassic formats. The software development is a collaborative work of\nNorthwestern University and Argonne National Laboratory.</p>\n<ul>\n<li>The original repository: https://svn.mcs.anl.gov/repos/parallel-netcdf</li>\n<li>Since June 1, 2018, the PnetCDF repository has been migrated to</li>\n</ul>"
     },
     {
       "name": "RELEASE_NOTES",
       "url": "https://github.com/Parallel-NetCDF/PnetCDF/blob/HEAD/RELEASE_NOTES",
-      "timestamp": "2026-09-12 23:27:35",
-      "content": "=====================================\nPnetCDF Release Notes\n=====================================\n\n-------------------------------------\nVersion _PNETCDF_VERSION_ (_PNETCDF_RELEASE_DATE_)\n-------------------------------------\n\n* Bug fixes\n  + Fix a divide-by-zero error when opening a file that is striped using the\n    Lustre Progressive File Layout (PFL). The bug was reported in\n    [Issue #234](https://github.com/Parallel-NetCDF/PnetCDF/issues/234)."
+      "timestamp": "2026-09-16 20:12:19",
+      "content": "=====================================\nPnetCDF Release Notes\n=====================================\n\n-------------------------------------\nVersion _PNETCDF_VERSION_ (_PNETCDF_RELEASE_DATE_)\n-------------------------------------\n\n* Bug fixes\n  + Fix a bug causing programs to hang when calling a blocking collective put\n    API and one of the process has a zero-length request. The bug was reported\n    in [Issue #238](https://github.com/Parallel-NetCDF/PnetCDF/issues/238)."
     },
     {
       "name": "COPYRIGHT",
@@ -27140,7 +27134,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-12 23:27:35"
+  "last_updated": "2026-09-18 20:42:08"
 },
 {
   "name": "VARIORUM",
@@ -41628,7 +41622,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/LLNL/zfp/blob/HEAD/README.md",
-      "timestamp": "2026-05-04 22:03:14",
+      "timestamp": "2026-09-22 22:13:10",
       "content": "<h1>ZFP</h1>\n<p>zfp is a compressed format for representing multidimensional floating-point\nand integer arrays.  zfp provides compressed-array classes that support high\nthroughput read and write random access to individual array elements.  zfp\nalso supports serial and parallel (OpenMP and CUDA) compression of whole\narrays, e.g., for applications that read and write large data sets to and\nfrom disk.</p>\n<p>zfp uses lossy but optionally error-bounded compression to achieve high</p>"
     },
     {
@@ -42404,7 +42398,7 @@
       ]
     }
   ],
-  "last_updated": "2026-05-04 22:03:14"
+  "last_updated": "2026-09-22 22:13:10"
 },
 {
   "name": "CONDUIT",
@@ -42428,8 +42422,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/LLNL/conduit/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-09-01 17:00:47",
-      "content": "<h1>Conduit Changelog</h1>\n<p>Notable changes to Conduit are documented in this file.</p>\n<p>The format is based on <a href=\"https://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>,\nand this project aspires to adhere to <a href=\"https://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>Unreleased</h2>\n<h3>Added</h3>\n<h3>Changed</h3>\n<h3>Fixed</h3>\n<h2>[0.9.8] - Released 2026-09-01</h2>\n<h3>Added</h3>\n<h4>Relay</h4>\n<ul>\n<li>Added optional support for reading and writing HDF5 attributes.</li>\n</ul>"
+      "timestamp": "2026-09-22 20:15:51",
+      "content": "<h1>Conduit Changelog</h1>\n<p>Notable changes to Conduit are documented in this file.</p>\n<p>The format is based on <a href=\"https://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>,\nand this project aspires to adhere to <a href=\"https://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>Unreleased</h2>\n<h3>Added</h3>\n<h3>Changed</h3>\n<h4>General</h4>\n<ul>\n<li>Changed CMake version check in ConduitConfig.cmake to check for a minimum version, instead of setting the minimum version which impacts policy choices.</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -43236,7 +43230,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-01 17:00:47"
+  "last_updated": "2026-09-22 20:15:51"
 },
 {
   "name": "QUO",
@@ -52277,8 +52271,8 @@
     {
       "name": "RELEASE-NOTES.md",
       "url": "https://github.com/LLNL/axom/blob/HEAD/RELEASE-NOTES.md",
-      "timestamp": "2026-09-03 18:28:40",
-      "content": "<h1>Axom Software Release Notes</h1>\n<p>Notes describing significant changes in each Axom release are documented in this file.</p>\n<p>The format of this file is based on <a href=\"http://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>.</p>\n<p>The Axom project release numbers follow <a href=\"http://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>[Unreleased] - Release date yyyy-mm-dd</h2>\n<ul>\n<li>Axom&#x27;s host execution-space default allocator is now a configure-time policy. The default policy is malloc, regardless</li>\n</ul>"
+      "timestamp": "2026-09-22 21:41:50",
+      "content": "<h1>Axom Software Release Notes</h1>\n<p>Notes describing significant changes in each Axom release are documented in this file.</p>\n<p>The format of this file is based on <a href=\"http://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>.</p>\n<p>The Axom project release numbers follow <a href=\"http://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>[Unreleased] - Release date yyyy-mm-dd</h2>\n<h3>Added</h3>\n<ul>\n<li>Axom&#x27;s host execution-space default allocator is now a configure-time policy. The default policy is malloc, regardless</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -52579,7 +52573,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-03 18:28:40"
+  "last_updated": "2026-09-22 21:41:50"
 },
 {
   "name": "BRICKS",
@@ -54311,7 +54305,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/libunwind/libunwind/blob/HEAD/README.md",
-      "timestamp": "2026-08-31 14:48:12",
+      "timestamp": "2026-09-22 12:48:24",
       "content": "<h1>libunwind</h1>\n<p><strong>libunwind</strong> is a portable and efficient C API for determining the current call\nchain of ELF program threads of execution and for resuming execution at any point\nin that call chain. The API supports both local (same process) and remote (other\nprocess) operation.</p>\n<p>The API is useful in a number of applications, including but not limited to the\nfollowing.\n- <strong>program introspection</strong>\n    Either for error messages showing a back trace of the call chain leading to</p>"
     },
     {
@@ -55018,7 +55012,7 @@
       ]
     }
   ],
-  "last_updated": "2026-08-31 14:48:12"
+  "last_updated": "2026-09-22 12:48:24"
 },
 {
   "name": "NCCMP",
@@ -56602,14 +56596,14 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/wannier-developers/wannier90/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-09-16 03:21:33",
-      "content": "<h1>CHANGELOG of Wannier90</h1>\n<h2>Unreleased</h2>\n<h3>New <code>write_ndegen_applied</code> keyword: self-contained real-space output files</h3>\n<ul>\n<li><code>write_ndegen_applied</code> (default <code>.false.</code>) writes <code>seedname_hr.dat</code>, <code>seedname_r.dat</code> and\n  <code>seedname_tb.dat</code> on the fully expanded list of <code>R+T</code> vectors of the <code>use_ws_distance</code>\n  mapping, with the degeneracy weights already divided out, so they interpolate with a plain\n  <code>sum_R exp(i k.R) O(R)</code>. The file formats are unchanged; <code>seedname_wsvec.dat</code> becomes</li>\n</ul>"
+      "timestamp": "2026-09-22 10:16:28",
+      "content": "<h1>CHANGELOG of Wannier90</h1>\n<h2>v4.0.3 (22 September 2026)</h2>\n<h3>New features</h3>\n<ul>\n<li>\n<p>The library is now named <code>libwannier90</code> for both serial and MPI builds (the prior <code>_mpi</code> suffix has been removed) <a href=\"https://github.com/wannier-developers/wannier90/pull/680\">[#680]</a></p>\n</li>\n<li>\n<p><code>w90_free()</code> deallocates a library-mode data object; <code>w90_print_timings()</code> prints the timing report <a href=\"https://github.com/wannier-developers/wannier90/pull/712\">[#712]</a> <a href=\"https://github.com/wannier-developers/wannier90/pull/707\">[#707]</a></p>\n</li>\n</ul>"
     },
     {
       "name": "CONTRIBUTING.md",
       "url": "https://github.com/wannier-developers/wannier90/blob/HEAD/CONTRIBUTING.md",
-      "timestamp": "2026-09-10 06:25:54",
-      "content": "<h1>Wannier90: A Guide for Contributors</h1>\n<p>As the community of developers grows, it is important to maintain a degree of consistency in the distribution in terms of coding style, documentation, tutorial examples and tests cases for all aspects of the functionality of the code.</p>\n<h2>Coding style</h2>\n<ul>\n<li>Code should conform to the Fortran 2003 standard, but avoid using new object-oriented programming (OOP) aspects, because some compilers do not yet support them fully</li>\n</ul>"
+      "timestamp": "2026-09-22 10:16:28",
+      "content": "<h1>Wannier90: A Guide for Contributors</h1>\n<p>As the community of developers grows, it is important to maintain a degree of consistency in the distribution in terms of coding style, documentation, tutorial examples and tests cases for all aspects of the functionality of the code.</p>\n<h2>Coding style</h2>\n<ul>\n<li>Code should conform to the Fortran 2008 standard, but avoid using new object-oriented programming (OOP) aspects, because some compilers do not yet support them fully</li>\n</ul>"
     }
   ],
   "deployment": [
@@ -56674,7 +56668,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-16 03:21:33"
+  "last_updated": "2026-09-22 10:16:28"
 },
 {
   "name": "LIBPRESSIO",
@@ -57054,7 +57048,7 @@
     {
       "name": "RELEASE.md",
       "url": "https://github.com/pytorch/pytorch/blob/HEAD/RELEASE.md",
-      "timestamp": "2026-09-14 18:01:44",
+      "timestamp": "2026-09-18 16:48:19",
       "content": "<h1>Releasing PyTorch</h1>\n<ul>\n<li><a href=\"#release-compatibility-matrix\">Release Compatibility Matrix</a><ul>\n<li><a href=\"#pytorch-cuda-support-matrix\">PyTorch CUDA Support Matrix</a></li>\n</ul>\n</li>\n<li><a href=\"#release-cadence\">Release Cadence</a></li>\n<li><a href=\"#general-overview\">General Overview</a><ul>\n<li><a href=\"#frequently-asked-questions\">Frequently Asked Questions</a></li>\n</ul>\n</li>\n<li><a href=\"#cutting-a-release-branch-preparations\">Cutting a release branch preparations</a></li>\n<li><a href=\"#cutting-release-branches\">Cutting release branches</a></li>\n</ul>"
     },
     {
@@ -57065,7 +57059,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-09-14 18:01:44"
+  "last_updated": "2026-09-18 16:48:19"
 },
 {
   "name": "JAX",
@@ -57095,12 +57089,12 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/google/jax/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-09-16 15:30:44",
+      "timestamp": "2026-09-23 19:09:45",
       "content": "<h1>Change log</h1>\n<p>Best viewed <a href=\"https://docs.jax.dev/en/latest/changelog.html\">here</a>.\nFor the changes specific to the experimental Pallas APIs,\nsee {ref}<code>pallas-changelog</code>.</p>\n<p>JAX follows Effort-based versioning; for a discussion of this and JAX&#x27;s API\ncompatibility policy, refer to {ref}<code>api-compatibility</code>. For the Python and\nNumPy version support policy, refer to {ref}<code>version-support-policy</code>.</p>\n<h2>Unreleased</h2>"
     }
   ],
   "deployment": [],
-  "last_updated": "2026-09-16 15:30:44"
+  "last_updated": "2026-09-23 19:09:45"
 },
 {
   "name": "PANDAS",
@@ -57226,7 +57220,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/opencv/opencv/blob/HEAD/README.md",
-      "timestamp": "2026-08-26 08:53:38",
+      "timestamp": "2026-09-21 10:54:51",
       "content": "<h2>OpenCV: Open Source Computer Vision Library</h2>\n<h3>Resources</h3>\n<ul>\n<li>Homepage: &lt;https://opencv.org&gt;</li>\n<li>Courses: &lt;https://opencv.org/courses&gt;</li>\n<li>Docs: &lt;https://docs.opencv.org/5.x/&gt;</li>\n<li>Q&amp;A forum: &lt;https://forum.opencv.org&gt;</li>\n<li>previous forum (read only): &lt;http://answers.opencv.org&gt;</li>\n<li>Issue tracking: &lt;https://github.com/opencv/opencv/issues&gt;</li>\n<li>Additional OpenCV functionality: &lt;https://github.com/opencv/opencv_contrib&gt;</li>\n</ul>"
     },
     {
@@ -57243,7 +57237,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-08-26 08:53:38"
+  "last_updated": "2026-09-21 10:54:51"
 },
 {
   "name": "HOROVOD",
@@ -57320,14 +57314,14 @@
     {
       "name": "README.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/README.md",
-      "timestamp": "2026-09-15 22:32:06",
+      "timestamp": "2026-09-23 16:46:15",
       "content": "<h1>OpenAI Python API library</h1>\n<p><a href=\"https://pypi.org/project/openai/\">)</a></p>\n<p>The OpenAI Python library provides convenient access to the OpenAI REST API from any Python 3.10+\napplication. The library includes type definitions for all request params and response fields,\nand offers both synchronous and asynchronous clients powered by <a href=\"https://httpx2.pydantic.dev/\">HTTPX2</a>.</p>\n<p>It is generated from our <a href=\"https://github.com/openai/openai-openapi\">OpenAPI specification</a>.</p>"
     },
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-09-15 23:08:38",
-      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.14.0...v3.14.1\">3.14.1</a> (2026-09-15)</h2>\n<h3>Bug Fixes</h3>\n<ul>\n<li><strong>client:</strong> validate retry limits and preserve application errors (<a href=\"https://github.com/openai/openai-python/issues/3867\">#3867</a>) (<a href=\"https://github.com/openai/openai-python/commit/f86c7214093038faa512bd4883558b093bdb8c9a\">f86c721</a>)</li>\n<li>correct typo &quot;th&quot; to &quot;the&quot; in StreamAlreadyConsumed error message (<a href=\"https://github.com/openai/openai-python/issues/3022\">#3022</a>) (<a href=\"https://github.com/openai/openai-python/commit/718620397c38a546d2cbbc964983c286db7abf97\">7186203</a>)</li>\n</ul>"
+      "timestamp": "2026-09-23 00:03:12",
+      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.18.0...v3.19.0\">3.19.0</a> (2026-09-22)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> add GCP external storage support (<a href=\"https://github.com/openai/openai-python/issues/3943\">#3943</a>) (<a href=\"https://github.com/openai/openai-python/commit/d12d60fff9f5624f2dc50ade3d832028f4fecaa7\">d12d60f</a>)</li>\n<li><strong>api:</strong> add GPT-Rosalind research model (<a href=\"https://github.com/openai/openai-python/issues/3940\">#3940</a>) (<a href=\"https://github.com/openai/openai-python/commit/d041d736f75f03f6c87aa77f932823011691bac5\">d041d73</a>)</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -57337,7 +57331,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-09-15 23:08:38"
+  "last_updated": "2026-09-23 16:46:15"
 },
 {
   "name": "DEEPHYPER",
@@ -57957,7 +57951,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/CEED/libCEED/blob/HEAD/README.md",
-      "timestamp": "2026-08-10 06:07:18",
+      "timestamp": "2026-09-18 15:51:10",
       "content": "<h1>libCEED: Efficient Extensible Discretization</h1>\n<h2>Summary and Purpose</h2>\n<p>libCEED provides fast algebra for element-based discretizations, designed for performance portability, run-time flexibility, and clean embedding in higher level libraries and applications.\nIt offers a C99 interface as well as bindings for Fortran, Python, Julia, and Rust.\nWhile our focus is on high-order finite elements, the approach is mostly algebraic and thus applicable to other discretizations in factored form, as explained in the <a href=\"https://libceed.org/en/latest/\">user manual</a> and API implementation portion of the <a href=\"https://libceed.org/en/latest/api/\">documentation</a>.</p>"
     },
     {
@@ -57974,7 +57968,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-08-10 06:07:18"
+  "last_updated": "2026-09-18 15:51:10"
 },
 {
   "name": "BIONEMO-FRAMEWORK",
