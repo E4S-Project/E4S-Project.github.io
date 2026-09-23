@@ -83,6 +83,9 @@ dialog#detailsModal header { padding: .85rem 1rem; border-bottom: 1px solid #eee
 dialog#detailsModal .modal-body { padding: 1rem; max-height: 70vh; overflow:auto; }
 dialog#detailsModal #closeModal { background: transparent; border: none; font-size: 1.1rem; cursor: pointer; }
 .mm-product-catalog .badge { display:inline-block; padding:.2rem .45rem; border-radius: .35rem; background:#f3f4f6; font-size:.75rem; margin-right:.25rem; }
+.mm-product-catalog .docsum { white-space: pre-wrap; word-wrap: break-word; overflow-wrap: break-word; max-width: 100%; }
+.mm-product-catalog .deployment-tree ul { margin: .25rem 0 .5rem 1.25rem; padding: 0; }
+.mm-product-catalog .deployment-tree > ul { margin-left: 0; }
 </style>
 
 <script>
@@ -102,7 +105,9 @@ const DATA = RAW_DATA.map(x => ({
   description: x.description || '',
   last_updated_raw: x.last_updated || '',
   last_updated: parseDate(x.last_updated),
-  html_blob: x.html_blob || ''
+  spack_info: x.spack_info || {},
+  docs: x.docs || [],
+  deployment: x.deployment || []
 }));
 
 // 3) Populate Area filter
@@ -247,7 +252,7 @@ function syncUrl(){
   window.history.replaceState({}, '', newUrl);
 }
 
-// 7) Details modal (decode base64 html_blob and inject)
+// 7) Details modal (built from structured fields; only doc bodies are pre-rendered HTML)
 const modal = document.getElementById('detailsModal');
 const modalTitle = document.getElementById('modalTitle');
 const modalBody = document.getElementById('modalBody');
@@ -255,23 +260,64 @@ const closeModal = document.getElementById('closeModal');
 closeModal.addEventListener('click', () => modal.close());
 modal.addEventListener('click', (e) => { if(e.target === modal) modal.close(); });
 
+function escapeHtml(s){
+  return String(s == null ? '' : s)
+    .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+}
+
+function buildDetailsHtml(row){
+  let out = '';
+
+  const spackEntries = Object.entries(row.spack_info || {});
+  if (spackEntries.length){
+    out += '<table>';
+    for (const [k, v] of spackEntries){
+      const display = (k === 'Homepage')
+        ? `<a href="${escapeHtml(v)}">${escapeHtml(v)}</a>`
+        : escapeHtml(v);
+      out += `<tr><td><b>${escapeHtml(k)}:</b></td><td>${display}</td></tr>`;
+    }
+    out += '</table><hr>';
+  }
+
+  if ((row.docs || []).length){
+    out += '<h3>Document Summaries</h3>';
+    for (const doc of row.docs){
+      out += `<b>${escapeHtml(doc.name)}</b><br>`;
+      // doc.content is pre-rendered/escaped HTML produced by the generator, not raw user input.
+      if (doc.content) out += `<div class="docsum">${doc.content}</div>`;
+      out += `<a href="${escapeHtml(doc.url)}">More...</a><br>`
+        + `Last Updated: ${escapeHtml(doc.timestamp)}<hr><br>`;
+    }
+  }
+
+  if ((row.deployment || []).length){
+    out += '<details><summary><h3 style="display:inline">Product Deployment</h3></summary><br>';
+    out += '<div class="deployment-tree"><ul>';
+    for (const site of row.deployment){
+      out += `<li>${escapeHtml(site.institution)}<ul>`;
+      for (const sys of (site.systems || [])){
+        out += `<li>${escapeHtml(sys.system)}<ul>`;
+        for (const entry of (sys.entries || [])){
+          out += `<li><b>Version: </b>${escapeHtml(entry.version)} `
+            + `<b>Compiler: </b>${escapeHtml(entry.compiler)} `
+            + `<b>Variants: </b>${escapeHtml(entry.variants)} `
+            + `<b>Architecture: </b>${escapeHtml(entry.architecture)}</li>`;
+        }
+        out += '</ul></li>';
+      }
+      out += '</ul></li>';
+    }
+    out += '</ul></div></details>';
+  }
+
+  return out || '<p><em>No additional details available.</em></p>';
+}
+
 function openDetails(row){
   modalTitle.textContent = row.name || 'Details';
-  modalBody.innerHTML = '';
-
-  if (row.html_blob){
-    try {
-      // Some YAML dumps can include newlines/spaces; atob expects clean base64
-      const b64 = String(row.html_blob).replace(/\s+/g,'').trim();
-      const decoded = atob(b64);
-      // Trust the provided HTML snippet from your data source
-      modalBody.innerHTML = decoded;
-    } catch (e){
-      modalBody.innerHTML = `<p><em>Could not decode details payload.</em></p>`;
-    }
-  } else {
-    modalBody.innerHTML = `<p><em>No additional details available.</em></p>`;
-  }
+  modalBody.innerHTML = buildDetailsHtml(row);
   if (typeof modal.showModal === 'function') {
     modal.showModal();
   } else {
