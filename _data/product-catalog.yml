@@ -2788,7 +2788,7 @@
     {
       "name": "LICENSE",
       "url": "https://github.com/AMReX-Codes/amrex/blob/HEAD/LICENSE",
-      "timestamp": "2026-09-20 01:29:58",
+      "timestamp": "2026-09-24 00:36:49",
       "content": "AMReX Copyright (c) 2024, The Regents of the University of California,\nthrough Lawrence Berkeley National Laboratory (subject to receipt of any\nrequired approvals from the U.S. Dept. of Energy).  All rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n(1) Redistributions of source code must retain the above copyright notice,"
     },
     {
@@ -2796,6 +2796,12 @@
       "url": "https://github.com/AMReX-Codes/amrex/blob/HEAD/CHANGES.md",
       "timestamp": "2026-09-01 18:21:56",
       "content": "<h1>26.09</h1>\n<p>## Highlights:</p>\n<ul>\n<li>\n<p>Fix <code>Random()</code> returning 1.0f &amp; add <code>RandomPositive</code> (#5643)\n    <code>amrex::Random()</code> is documented as <code>[0,1)</code> but previously it could\n    return exactly <code>1.0</code> on CUDA/HIP.</p>\n</li>\n<li>\n<p>EB state redistribution: Fix Itracker abort with vfrac fallback (#5630)\n    This PR adds a volume-fraction-based fallback pathway in the <code>itracker</code>\n    construction for EB state redistribution when the original normal-based</p>\n</li>\n</ul>"
+    },
+    {
+      "name": "CITATION.cff",
+      "url": "https://github.com/AMReX-Codes/amrex/blob/HEAD/CITATION.cff",
+      "timestamp": "2026-09-20 01:12:41",
+      "content": "cff-version: 1.2.0\ntitle: AMReX\nabstract: &gt;-\n  A software framework for massively parallel block-structured adaptive mesh\n  refinement applications.\nmessage: &gt;-\n  If you use AMReX, we ask you to cite the JOSS paper (the preferred citation\n  below) and the first IJHPCA paper.  If you have also used pyAMReX and/or you\n  use more modern features of AMReX, please also cite the second IJHPCA paper."
     }
   ],
   "deployment": [
@@ -4129,7 +4135,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-21 23:48:54"
+  "last_updated": "2026-09-24 00:36:49"
 },
 {
   "name": "ARBORX",
@@ -32491,7 +32497,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/xiaoyeli/superlu_dist/blob/HEAD/README.md",
-      "timestamp": "2026-09-07 17:21:28",
+      "timestamp": "2026-09-24 01:12:58",
       "content": "<h1>SuperLU_DIST (version 9.2.0)</h1>\n<p><a href=\"http://my.cdash.org/index.php?project=superlu_dist\">Nightly tests</a></p>\n<p>SuperLU_DIST contains a set of subroutines to solve a sparse linear system\nA*X=B. It uses Gaussian elimination with static pivoting (GESP).\nStatic pivoting is a technique that combines the numerical stability of\npartial pivoting with the scalability of Cholesky (no pivoting),\nto run accurately and efficiently on large numbers of processors.</p>"
     },
     {
@@ -33139,7 +33145,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-07 17:21:28"
+  "last_updated": "2026-09-24 01:12:58"
 },
 {
   "name": "SWIG",
@@ -51944,6 +51950,18 @@
       "url": "https://github.com/ECP-WarpX/WarpX/blob/HEAD/LICENSE.txt",
       "timestamp": "2024-11-18 19:05:59",
       "content": "WarpX Copyright (c) 2018, The Regents of the University of California,\nthrough Lawrence Berkeley National Laboratory, and Lawrence Livermore National\nSecurity, LLC, for the operation of Lawrence Livermore National Laboratory\n(subject to receipt of any required approvals from the U.S. Dept. of Energy).\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:"
+    },
+    {
+      "name": "CONTRIBUTING.md",
+      "url": "https://github.com/ECP-WarpX/WarpX/blob/HEAD/CONTRIBUTING.md",
+      "timestamp": "2026-08-28 20:21:28",
+      "content": "<p>(developers-contributing)=</p>\n<h1>Contribute to WarpX</h1>\n<p>We welcome new contributors!\nHere is how to participate to the WarpX development.</p>\n<h2>Git workflow</h2>\n<p>The WarpX project uses <a href=\"https://git-scm.com\">Git</a> for version control.\nIf you are new to Git, you can follow <a href=\"https://swcarpentry.github.io/git-novice/\">this tutorial</a>.</p>\n<h3>What to do when</h3>\n<h4>Issues</h4>\n<p><a href=\"https://github.com/BLAST-WarpX/warpx/issues\">Issues</a> are used to track tasks that the contributors and/or maintainers can work on.</p>"
+    },
+    {
+      "name": "CODE_OF_CONDUCT.md",
+      "url": "https://github.com/ECP-WarpX/WarpX/blob/HEAD/CODE_OF_CONDUCT.md",
+      "timestamp": "2026-08-28 20:21:28",
+      "content": "<p>(coc)=</p>\n<h1>Code of Conduct</h1>\n<h2>Our Pledge</h2>\n<p>In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, religion, or sexual identity and orientation.</p>"
     }
   ],
   "deployment": [
@@ -52114,7 +52132,7 @@
       ]
     }
   ],
-  "last_updated": "2026-08-27 17:32:06"
+  "last_updated": "2026-08-28 20:21:28"
 },
 {
   "name": "GPTUNE",
@@ -56588,6 +56606,12 @@
   },
   "docs": [
     {
+      "name": "README.md",
+      "url": "https://github.com/wannier-developers/wannier90/blob/HEAD/README.md",
+      "timestamp": "2026-09-10 16:00:13",
+      "content": "<p>&lt;p align=&quot;center&quot;&gt;</p>\n<p>&lt;/p&gt;</p>\n<h1>Wannier90</h1>\n<p><strong>Wannier90 is an open-source code for generating maximally-localised generalised\nWannier functions and using them to compute advanced electronic properties of\nmaterials with high efficiency and accuracy.</strong></p>\n<p>| I want to…                | Go to |\n| Learn what Wannier90 does | <a href=\"https://www.wannier.org\">wannier.org</a> · <a href=\"https://wannier.org/features/\">Features</a> |</p>"
+    },
+    {
       "name": "LICENSE",
       "url": "https://github.com/wannier-developers/wannier90/blob/HEAD/LICENSE",
       "timestamp": "2026-03-19 18:49:36",
@@ -57089,12 +57113,12 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/google/jax/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-09-23 19:09:45",
+      "timestamp": "2026-09-23 19:42:39",
       "content": "<h1>Change log</h1>\n<p>Best viewed <a href=\"https://docs.jax.dev/en/latest/changelog.html\">here</a>.\nFor the changes specific to the experimental Pallas APIs,\nsee {ref}<code>pallas-changelog</code>.</p>\n<p>JAX follows Effort-based versioning; for a discussion of this and JAX&#x27;s API\ncompatibility policy, refer to {ref}<code>api-compatibility</code>. For the Python and\nNumPy version support policy, refer to {ref}<code>version-support-policy</code>.</p>\n<h2>Unreleased</h2>"
     }
   ],
   "deployment": [],
-  "last_updated": "2026-09-23 19:09:45"
+  "last_updated": "2026-09-23 19:42:39"
 },
 {
   "name": "PANDAS",
@@ -57320,8 +57344,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-09-23 00:03:12",
-      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.18.0...v3.19.0\">3.19.0</a> (2026-09-22)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> add GCP external storage support (<a href=\"https://github.com/openai/openai-python/issues/3943\">#3943</a>) (<a href=\"https://github.com/openai/openai-python/commit/d12d60fff9f5624f2dc50ade3d832028f4fecaa7\">d12d60f</a>)</li>\n<li><strong>api:</strong> add GPT-Rosalind research model (<a href=\"https://github.com/openai/openai-python/issues/3940\">#3940</a>) (<a href=\"https://github.com/openai/openai-python/commit/d041d736f75f03f6c87aa77f932823011691bac5\">d041d73</a>)</li>\n</ul>"
+      "timestamp": "2026-09-24 00:00:28",
+      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.19.1...v3.19.2\">3.19.2</a> (2026-09-23)</h2>\n<h3>Bug Fixes</h3>\n<ul>\n<li>preserve single files for fallback extraction paths (<a href=\"https://github.com/openai/openai-python/issues/3875\">#3875</a>) (<a href=\"https://github.com/openai/openai-python/commit/bfd3680c8d3b715bb3175b82cd0fa1c1fb53162f\">bfd3680</a>)</li>\n</ul>\n<h3>Chores</h3>\n<ul>\n<li><strong>api:</strong> clarify approximate web search location defaults (<a href=\"https://github.com/openai/openai-python/issues/3953\">#3953</a>) (<a href=\"https://github.com/openai/openai-python/commit/a95c95ed372476168e9893723ff694ead5db8586\">a95c95e</a>)</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -57331,7 +57355,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-09-23 16:46:15"
+  "last_updated": "2026-09-24 00:00:28"
 },
 {
   "name": "DEEPHYPER",
