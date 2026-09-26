@@ -2294,7 +2294,7 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/Alpine-DAV/ascent/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-09-13 20:09:26",
+      "timestamp": "2026-09-25 16:56:18",
       "content": "<h1>Ascent Changelog</h1>\n<p>Notable changes to Ascent are documented in this file. This changelog started on 8/12/19 and does not document prior changes.</p>\n<p>The format is based on <a href=\"https://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>,\nand this project aspires to adhere to <a href=\"https://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>Unreleased</h2>\n<h3>Preferred dependency versions for ascent@develop</h3>\n<ul>\n<li>cmake@3.23 or newer</li>\n</ul>"
     },
     {
@@ -2654,7 +2654,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-13 20:09:26"
+  "last_updated": "2026-09-25 16:56:18"
 },
 {
   "name": "PARAVIEW",
@@ -2690,8 +2690,8 @@
     {
       "name": "version.txt",
       "url": "https://github.com/Kitware/ParaView/blob/HEAD/version.txt",
-      "timestamp": "2026-09-24 04:01:36",
-      "content": "6.2.20260924\n"
+      "timestamp": "2026-09-25 04:01:06",
+      "content": "6.2.20260925\n"
     }
   ],
   "deployment": [
@@ -2723,7 +2723,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-24 04:01:36"
+  "last_updated": "2026-09-25 04:01:06"
 },
 {
   "name": "VISIT",
@@ -12284,7 +12284,7 @@
     {
       "name": "release_docs/CHANGELOG.md",
       "url": "https://github.com/HDFGroup/hdf5/blob/HEAD/release_docs/CHANGELOG.md",
-      "timestamp": "2026-09-24 16:41:22",
+      "timestamp": "2026-09-25 22:15:06",
       "content": "<p>v2.3.0 --- July X , 2026</p>\n<h1>🔺 HDF5 Changelog</h1>\n<p>All notable changes to this project will be documented in this file. This document describes the differences between this release and the previous\nHDF5 release, platforms tested, and known problems in this release.</p>\n<p>For releases prior to version 2.0.0, please see the release.txt file and for more details check the HISTORY*.txt files in the HDF5 source.</p>"
     }
   ],
@@ -14360,7 +14360,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-24 16:41:22"
+  "last_updated": "2026-09-25 22:15:06"
 },
 {
   "name": "HPCTOOLKIT",
@@ -42428,8 +42428,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/LLNL/conduit/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-09-22 20:15:51",
-      "content": "<h1>Conduit Changelog</h1>\n<p>Notable changes to Conduit are documented in this file.</p>\n<p>The format is based on <a href=\"https://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>,\nand this project aspires to adhere to <a href=\"https://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>Unreleased</h2>\n<h3>Added</h3>\n<h3>Changed</h3>\n<h4>General</h4>\n<ul>\n<li>Changed CMake version check in ConduitConfig.cmake to check for a minimum version, instead of setting the minimum version which impacts policy choices.</li>\n</ul>"
+      "timestamp": "2026-09-25 22:17:20",
+      "content": "<h1>Conduit Changelog</h1>\n<p>Notable changes to Conduit are documented in this file.</p>\n<p>The format is based on <a href=\"https://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>,\nand this project aspires to adhere to <a href=\"https://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>Unreleased</h2>\n<h3>Added</h3>\n<h3>Changed</h3>\n<ul>\n<li>Removed large silo data used for testing that made our release tarball too large.</li>\n<li><code>conduit::blueprint::mesh::matset::renumber_material_ids()</code> was adjusted to take an additional argument, a starting index, so that material ids can be renumbered to run between <code>start</code> and <code>N-(start+1)</code> where <code>N</code> is the number of materials.</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -43236,7 +43236,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-22 20:15:51"
+  "last_updated": "2026-09-25 22:17:20"
 },
 {
   "name": "QUO",
@@ -57037,8 +57037,8 @@
     {
       "name": "RELEASE.md",
       "url": "https://github.com/tensorflow/tensorflow/blob/HEAD/RELEASE.md",
-      "timestamp": "2026-09-16 04:53:59",
-      "content": "<h1>Release 2.23.0</h1>\n<h2>TensorFlow</h2>\n<p>&lt;INSERT SMALL BLURB ABOUT RELEASE FOCUS AREA AND POTENTIAL TOOLCHAIN CHANGES&gt;</p>\n<h3>Breaking Changes</h3>\n<ul>\n<li>&lt;BREAKING CHANGES GO HERE&gt;</li>\n</ul>\n<h3>Known Caveats</h3>\n<ul>\n<li>&lt;CAVEATS REGARDING THE RELEASE (BUT NOT BREAKING CHANGES).&gt;</li>\n</ul>\n<h3>Major Features and Improvements</h3>\n<ul>\n<li>&lt;MAJOR FEATURES GO HERE&gt;</li>\n</ul>\n<h3>Bug Fixes and Other Changes</h3>\n<ul>\n<li>&lt;BUG FIXES GO HERE&gt;</li>\n</ul>"
+      "timestamp": "2026-09-25 20:28:57",
+      "content": "<h1>Release 2.23.0</h1>\n<h2>TensorFlow</h2>\n<p>&lt;INSERT SMALL BLURB ABOUT RELEASE FOCUS AREA AND POTENTIAL TOOLCHAIN CHANGES&gt;</p>\n<h3>Breaking Changes</h3>\n<ul>\n<li>&lt;BREAKING CHANGES GO HERE&gt;</li>\n</ul>\n<h3>Known Caveats</h3>\n<ul>\n<li>&lt;CAVEATS REGARDING THE RELEASE (BUT NOT BREAKING CHANGES).&gt;</li>\n</ul>\n<h3>Major Features and Improvements</h3>\n<ul>\n<li><code>tf.lite</code><ul>\n<li>Adds blockwise quantization support in the converter and <code>quant_spec</code> metadata in <code>FullyConnectedOptions</code>.</li>\n</ul>\n</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -57048,7 +57048,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-09-16 04:53:59"
+  "last_updated": "2026-09-25 20:28:57"
 },
 {
   "name": "PYTORCH",
@@ -57113,12 +57113,12 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/google/jax/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-09-23 19:42:39",
+      "timestamp": "2026-09-25 18:22:12",
       "content": "<h1>Change log</h1>\n<p>Best viewed <a href=\"https://docs.jax.dev/en/latest/changelog.html\">here</a>.\nFor the changes specific to the experimental Pallas APIs,\nsee {ref}<code>pallas-changelog</code>.</p>\n<p>JAX follows Effort-based versioning; for a discussion of this and JAX&#x27;s API\ncompatibility policy, refer to {ref}<code>api-compatibility</code>. For the Python and\nNumPy version support policy, refer to {ref}<code>version-support-policy</code>.</p>\n<h2>Unreleased</h2>"
     }
   ],
   "deployment": [],
-  "last_updated": "2026-09-23 19:42:39"
+  "last_updated": "2026-09-25 18:22:12"
 },
 {
   "name": "PANDAS",
