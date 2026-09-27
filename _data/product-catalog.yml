@@ -2690,8 +2690,8 @@
     {
       "name": "version.txt",
       "url": "https://github.com/Kitware/ParaView/blob/HEAD/version.txt",
-      "timestamp": "2026-09-25 04:01:06",
-      "content": "6.2.20260925\n"
+      "timestamp": "2026-09-26 04:01:05",
+      "content": "6.2.20260926\n"
     }
   ],
   "deployment": [
@@ -2723,7 +2723,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-25 04:01:06"
+  "last_updated": "2026-09-26 04:01:05"
 },
 {
   "name": "VISIT",
