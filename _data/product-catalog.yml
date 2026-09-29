@@ -2288,8 +2288,8 @@
     {
       "name": "README.md",
       "url": "https://github.com/Alpine-DAV/ascent/blob/HEAD/README.md",
-      "timestamp": "2022-02-12 00:18:58",
-      "content": "<h1>Ascent</h1>\n<p>Ascent is an open source many-core capable lightweight in situ visualization and analysis infrastructure for multi-physics HPC simulations.</p>\n<h1>Learn how to use Ascent with Docker + Jupyter</h1>\n<p>If you have Docker, an easy way to learn about Ascent is to run our prebuilt Docker container:</p>\n<pre><code>docker run -p 8888:8888 -t -i alpinedav/ascent-jupyter\n</code></pre>"
+      "timestamp": "2026-09-28 20:50:38",
+      "content": "<h1>Ascent</h1>\n<p>Ascent is an open source many-core capable lightweight in situ visualization and analysis infrastructure for multi-physics HPC simulations.</p>\n<h1>Learn how to use Ascent with Docker + Jupyter</h1>\n<p>If you have Docker, an easy way to learn about Ascent is to run our prebuilt Docker container:</p>\n<pre><code>docker run -p 8888:8888 -t -i alpinedav/ascent-jupyter:latest\n</code></pre>"
     },
     {
       "name": "CHANGELOG.md",
@@ -2654,7 +2654,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-25 16:56:18"
+  "last_updated": "2026-09-28 20:50:38"
 },
 {
   "name": "PARAVIEW",
@@ -2690,8 +2690,8 @@
     {
       "name": "version.txt",
       "url": "https://github.com/Kitware/ParaView/blob/HEAD/version.txt",
-      "timestamp": "2026-09-27 04:01:19",
-      "content": "6.2.20260927\n"
+      "timestamp": "2026-09-28 04:01:05",
+      "content": "6.2.20260928\n"
     }
   ],
   "deployment": [
@@ -2723,7 +2723,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-27 04:01:19"
+  "last_updated": "2026-09-28 04:01:05"
 },
 {
   "name": "VISIT",
@@ -24750,7 +24750,7 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/ICLDisco/parsec/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2024-11-14 19:47:28",
+      "timestamp": "2026-09-28 06:39:52",
       "content": "<p>This file contains the main features as well as overviews of specific\nchanges to this project (since v1.1.0).</p>\n<p>The format is based on <a href=\"https://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>,\nand this project adheres to <a href=\"https://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>v4.0.2411</h2>\n<h3>Added</h3>\n<ul>\n<li>PaRSEC API 4.0.</li>\n<li>Add DTD CUDA support including NEW tiles in DTD.</li>\n<li>Add RoCM/HIP device support.</li>\n</ul>"
     },
     {
@@ -25133,7 +25133,7 @@
       ]
     }
   ],
-  "last_updated": "2024-11-14 19:47:28"
+  "last_updated": "2026-09-28 06:39:52"
 },
 {
   "name": "PETSC",
@@ -42428,8 +42428,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/LLNL/conduit/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-09-25 22:17:20",
-      "content": "<h1>Conduit Changelog</h1>\n<p>Notable changes to Conduit are documented in this file.</p>\n<p>The format is based on <a href=\"https://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>,\nand this project aspires to adhere to <a href=\"https://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>Unreleased</h2>\n<h3>Added</h3>\n<h3>Changed</h3>\n<ul>\n<li>Removed large silo data used for testing that made our release tarball too large.</li>\n<li><code>conduit::blueprint::mesh::matset::renumber_material_ids()</code> was adjusted to take an additional argument, a starting index, so that material ids can be renumbered to run between <code>start</code> and <code>N-(start+1)</code> where <code>N</code> is the number of materials.</li>\n</ul>"
+      "timestamp": "2026-09-28 18:44:36",
+      "content": "<h1>Conduit Changelog</h1>\n<p>Notable changes to Conduit are documented in this file.</p>\n<p>The format is based on <a href=\"https://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>,\nand this project aspires to adhere to <a href=\"https://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>Unreleased</h2>\n<h3>Added</h3>\n<h4>Blueprint</h4>\n<ul>\n<li>Added relay hdf5 options to override the desired leaf types used when writing and reading hdf5 files. This enables on the fly conversion of say, all float64 data values to float32 data values, as well as many other combinations. This only supports bitwidth conversion, within signed, unsigned, and floating point values. See the test <code>t_relay_io_hdf5_prec.cpp</code> for examples of using these options.</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -43236,7 +43236,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-25 22:17:20"
+  "last_updated": "2026-09-28 18:44:36"
 },
 {
   "name": "QUO",
@@ -57037,7 +57037,7 @@
     {
       "name": "RELEASE.md",
       "url": "https://github.com/tensorflow/tensorflow/blob/HEAD/RELEASE.md",
-      "timestamp": "2026-09-25 20:28:57",
+      "timestamp": "2026-09-28 08:16:11",
       "content": "<h1>Release 2.23.0</h1>\n<h2>TensorFlow</h2>\n<p>&lt;INSERT SMALL BLURB ABOUT RELEASE FOCUS AREA AND POTENTIAL TOOLCHAIN CHANGES&gt;</p>\n<h3>Breaking Changes</h3>\n<ul>\n<li>&lt;BREAKING CHANGES GO HERE&gt;</li>\n</ul>\n<h3>Known Caveats</h3>\n<ul>\n<li>&lt;CAVEATS REGARDING THE RELEASE (BUT NOT BREAKING CHANGES).&gt;</li>\n</ul>\n<h3>Major Features and Improvements</h3>\n<ul>\n<li><code>tf.lite</code><ul>\n<li>Adds blockwise quantization support in the converter and <code>quant_spec</code> metadata in <code>FullyConnectedOptions</code>.</li>\n</ul>\n</li>\n</ul>"
     },
     {
@@ -57048,7 +57048,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-09-25 20:28:57"
+  "last_updated": "2026-09-28 08:16:11"
 },
 {
   "name": "PYTORCH",
@@ -57113,12 +57113,12 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/google/jax/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-09-25 18:22:12",
+      "timestamp": "2026-09-28 19:40:50",
       "content": "<h1>Change log</h1>\n<p>Best viewed <a href=\"https://docs.jax.dev/en/latest/changelog.html\">here</a>.\nFor the changes specific to the experimental Pallas APIs,\nsee {ref}<code>pallas-changelog</code>.</p>\n<p>JAX follows Effort-based versioning; for a discussion of this and JAX&#x27;s API\ncompatibility policy, refer to {ref}<code>api-compatibility</code>. For the Python and\nNumPy version support policy, refer to {ref}<code>version-support-policy</code>.</p>\n<h2>Unreleased</h2>"
     }
   ],
   "deployment": [],
-  "last_updated": "2026-09-25 18:22:12"
+  "last_updated": "2026-09-28 19:40:50"
 },
 {
   "name": "PANDAS",
@@ -57344,8 +57344,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-09-24 00:00:28",
-      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.19.1...v3.19.2\">3.19.2</a> (2026-09-23)</h2>\n<h3>Bug Fixes</h3>\n<ul>\n<li>preserve single files for fallback extraction paths (<a href=\"https://github.com/openai/openai-python/issues/3875\">#3875</a>) (<a href=\"https://github.com/openai/openai-python/commit/bfd3680c8d3b715bb3175b82cd0fa1c1fb53162f\">bfd3680</a>)</li>\n</ul>\n<h3>Chores</h3>\n<ul>\n<li><strong>api:</strong> clarify approximate web search location defaults (<a href=\"https://github.com/openai/openai-python/issues/3953\">#3953</a>) (<a href=\"https://github.com/openai/openai-python/commit/a95c95ed372476168e9893723ff694ead5db8586\">a95c95e</a>)</li>\n</ul>"
+      "timestamp": "2026-09-28 15:59:00",
+      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.19.2...v3.20.0\">3.20.0</a> (2026-09-28)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> add Agents credential and session options (<a href=\"https://github.com/openai/openai-python/issues/3967\">#3967</a>) (<a href=\"https://github.com/openai/openai-python/commit/bb68198a4bb4a161cbb32a28c3888a51540eaf0f\">bb68198</a>)</li>\n<li><strong>api:</strong> add Cyber access programs to Responses (<a href=\"https://github.com/openai/openai-python/issues/3956\">#3956</a>) (<a href=\"https://github.com/openai/openai-python/commit/09c5b6f13f716ad4e417fd7ba9209a8a057e0383\">09c5b6f</a>)</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -57355,7 +57355,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-09-24 00:00:28"
+  "last_updated": "2026-09-28 15:59:00"
 },
 {
   "name": "DEEPHYPER",
