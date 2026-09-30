@@ -2690,8 +2690,8 @@
     {
       "name": "version.txt",
       "url": "https://github.com/Kitware/ParaView/blob/HEAD/version.txt",
-      "timestamp": "2026-09-28 04:01:05",
-      "content": "6.2.20260928\n"
+      "timestamp": "2026-09-29 04:01:37",
+      "content": "6.2.20260929\n"
     }
   ],
   "deployment": [
@@ -2723,7 +2723,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-28 04:01:05"
+  "last_updated": "2026-09-29 04:01:37"
 },
 {
   "name": "VISIT",
@@ -27407,8 +27407,8 @@
     {
       "name": "RELEASE_NOTES.md",
       "url": "https://github.com/LLNL/RAJA/blob/HEAD/RELEASE_NOTES.md",
-      "timestamp": "2026-08-04 14:54:45",
-      "content": "<h1>Version YYYY.MM.PP -- Release date 20yy-mm-dd</h1>\n<p>This release contains ...</p>\n<p>Notable changes include:</p>\n<ul>\n<li>\n<p>New features / API changes:</p>\n</li>\n<li>\n<p>Build changes/improvements:</p>\n</li>\n<li>\n<p>Bug fixes/improvements:</p>\n</li>\n</ul>\n<h1>Version 2026.07.0 -- Release date 2026-08-04</h1>\n<p>This release contains new code features, bug fixes, and user documentation improvements. It also contains a lot of internal code restructuring that was enabled by moving to C++20, such as replacing SFINAE with Concepts. </p>"
+      "timestamp": "2026-09-25 19:26:52",
+      "content": "<h1>Version YYYY.MM.PP -- Release date 20yy-mm-dd</h1>\n<p>This release contains ...</p>\n<p>Notable changes include:</p>\n<ul>\n<li>\n<p>New features / API changes:</p>\n</li>\n<li>\n<p>Build changes/improvements:</p>\n</li>\n<li>\n<p>Bug fixes/improvements:</p>\n</li>\n</ul>\n<h1>Version 2026.07.1 -- Release date 2026-09-29</h1>\n<p>This release contains some bug fixes and feature updates.</p>\n<p>Notable changes include:</p>"
     },
     {
       "name": "LICENSE",
@@ -28551,7 +28551,7 @@
       ]
     }
   ],
-  "last_updated": "2026-08-04 14:54:45"
+  "last_updated": "2026-09-25 19:26:52"
 },
 {
   "name": "SCALAPACK",
@@ -50900,8 +50900,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://gitlab.com/slepc/slepc/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-09-14 18:37:36",
-      "content": "<h1>Changelog of SLEPc versions</h1>\n<h2>[unreleased]</h2>\n<h3>Added</h3>\n<ul>\n<li>Support for Kokkos vector types in <code>BVMAT</code>. Now eigensolves with <code>-mat_type aijkokkos</code>\n  work instead of aborting.</li>\n<li>New function <code>SlepcGetConfiguration()</code>.</li>\n</ul>\n<h3>Changed</h3>\n<ul>\n<li>In the threshold stopping test, in both <code>EPS</code> and <code>SVD</code>, change the policy to\n  stop earlier. Now it will stop when the first non-converged value (plus the\n  error estimate) is below the threshold, rather than waiting for the first value</li>\n</ul>"
+      "timestamp": "2026-09-28 23:00:26",
+      "content": "<h1>Changelog of SLEPc versions</h1>\n<h2>[3.26] - 2026-09-29</h2>\n<h3>Added</h3>\n<ul>\n<li>New strategy to solve linear systems associated with integration points in contour\n  integral solvers, see <code>EPSCISSSetStrategy()</code>. Now it is possible to use a linear solver\n  such as <code>KSPEKSM</code> that handles all integration points simultaneously in a single solve.</li>\n<li>Support for Kokkos vector types in <code>BVMAT</code>. Now eigensolves with <code>-mat_type aijkokkos</code></li>\n</ul>"
     },
     {
       "name": "CONTRIBUTING.md",
@@ -51582,7 +51582,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-14 18:37:36"
+  "last_updated": "2026-09-28 23:00:26"
 },
 {
   "name": "SWIFT-T",
@@ -52289,7 +52289,7 @@
     {
       "name": "RELEASE-NOTES.md",
       "url": "https://github.com/LLNL/axom/blob/HEAD/RELEASE-NOTES.md",
-      "timestamp": "2026-09-23 19:05:10",
+      "timestamp": "2026-09-29 16:46:00",
       "content": "<h1>Axom Software Release Notes</h1>\n<p>Notes describing significant changes in each Axom release are documented in this file.</p>\n<p>The format of this file is based on <a href=\"http://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>.</p>\n<p>The Axom project release numbers follow <a href=\"http://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>[Unreleased] - Release date yyyy-mm-dd</h2>\n<h3>Added</h3>\n<ul>\n<li>Axom&#x27;s host execution-space default allocator is now a configure-time policy. The default policy is malloc, regardless</li>\n</ul>"
     },
     {
@@ -52591,7 +52591,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-23 19:05:10"
+  "last_updated": "2026-09-29 16:46:00"
 },
 {
   "name": "BRICKS",
@@ -57113,12 +57113,12 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/google/jax/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-09-28 19:40:50",
+      "timestamp": "2026-09-29 21:49:14",
       "content": "<h1>Change log</h1>\n<p>Best viewed <a href=\"https://docs.jax.dev/en/latest/changelog.html\">here</a>.\nFor the changes specific to the experimental Pallas APIs,\nsee {ref}<code>pallas-changelog</code>.</p>\n<p>JAX follows Effort-based versioning; for a discussion of this and JAX&#x27;s API\ncompatibility policy, refer to {ref}<code>api-compatibility</code>. For the Python and\nNumPy version support policy, refer to {ref}<code>version-support-policy</code>.</p>\n<h2>Unreleased</h2>"
     }
   ],
   "deployment": [],
-  "last_updated": "2026-09-28 19:40:50"
+  "last_updated": "2026-09-29 21:49:14"
 },
 {
   "name": "PANDAS",
@@ -57344,8 +57344,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-09-28 15:59:00",
-      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.19.2...v3.20.0\">3.20.0</a> (2026-09-28)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> add Agents credential and session options (<a href=\"https://github.com/openai/openai-python/issues/3967\">#3967</a>) (<a href=\"https://github.com/openai/openai-python/commit/bb68198a4bb4a161cbb32a28c3888a51540eaf0f\">bb68198</a>)</li>\n<li><strong>api:</strong> add Cyber access programs to Responses (<a href=\"https://github.com/openai/openai-python/issues/3956\">#3956</a>) (<a href=\"https://github.com/openai/openai-python/commit/09c5b6f13f716ad4e417fd7ba9209a8a057e0383\">09c5b6f</a>)</li>\n</ul>"
+      "timestamp": "2026-09-30 00:19:39",
+      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.22.0...v3.22.1\">3.22.1</a> (2026-09-30)</h2>\n<h3>Bug Fixes</h3>\n<ul>\n<li><strong>api:</strong> correct the missing authentication error message (<a href=\"https://github.com/openai/openai-python/issues/3993\">#3993</a>) (<a href=\"https://github.com/openai/openai-python/commit/51692ed3f9d2b87084801295f824c2202dac3785\">51692ed</a>), closes <a href=\"https://github.com/openai/openai-python/issues/3962\">#3962</a></li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -57355,7 +57355,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-09-28 15:59:00"
+  "last_updated": "2026-09-30 00:19:39"
 },
 {
   "name": "DEEPHYPER",
