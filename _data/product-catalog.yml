@@ -2690,8 +2690,8 @@
     {
       "name": "version.txt",
       "url": "https://github.com/Kitware/ParaView/blob/HEAD/version.txt",
-      "timestamp": "2026-09-29 04:01:37",
-      "content": "6.2.20260929\n"
+      "timestamp": "2026-09-30 04:01:04",
+      "content": "6.2.20260930\n"
     }
   ],
   "deployment": [
@@ -2723,7 +2723,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-29 04:01:37"
+  "last_updated": "2026-09-30 04:01:04"
 },
 {
   "name": "VISIT",
@@ -20322,8 +20322,8 @@
     {
       "name": "CHANGES.txt",
       "url": "https://github.com/StanfordLegion/legion/blob/HEAD/CHANGES.txt",
-      "timestamp": "2026-07-01 03:26:35",
-      "content": "This file lists the major changes as they appear in the stable branch.  No\nattempt is made to keep this list accurate for the master branch.\n\nVersion 26.06.0 (June 30, 2026)\n  * Legion\n    - The emphasis on this release was fixing stability bugs. Legion\n       has been aggressively fuzzed all quarter to identify and fix\n       correctness bugs.\n    - After doing detailed profiling of Legion&#x27;s critical path logging"
+      "timestamp": "2026-09-29 17:39:49",
+      "content": "This file lists the major changes as they appear in the stable branch.  No\nattempt is made to keep this list accurate for the master branch.\n\nVersion 26.09.0 (September 30, 2026)\n * Legion\n    - Work was done this quarter to formalize several important\n      internal distributed systems protocols in Legion with TLA+\n      and then model check their execution using TLC. This work\n      uncovered a number of bugs which are now fixed in these"
     },
     {
       "name": "LICENSE.txt",
@@ -20939,7 +20939,7 @@
       ]
     }
   ],
-  "last_updated": "2026-07-01 03:26:35"
+  "last_updated": "2026-09-29 17:39:49"
 },
 {
   "name": "LIBENSEMBLE",
@@ -33193,8 +33193,8 @@
     {
       "name": "CHANGES.current",
       "url": "https://github.com/swig/swig/blob/HEAD/CHANGES.current",
-      "timestamp": "2026-09-16 22:38:05",
-      "content": "Below are the changes for the current release.\nSee the CHANGES file for changes in older releases.\nSee the RELEASENOTES file for a summary of changes in each release.\nIssue # numbers mentioned below can be found on Github. For more details, add\nthe issue number to the end of the URL: https://github.com/swig/swig/issues/\n\nVersion 4.6.0 (in progress)\n===========================\n\n2026-09-11: wsfulton"
+      "timestamp": "2026-10-01 02:39:20",
+      "content": "Below are the changes for the current release.\nSee the CHANGES file for changes in older releases.\nSee the RELEASENOTES file for a summary of changes in each release.\nIssue # numbers mentioned below can be found on Github. For more details, add\nthe issue number to the end of the URL: https://github.com/swig/swig/issues/\n\nVersion 4.6.0 (in progress)\n===========================\n\n2026-10-01: olly\n\t    [Guile] Typemaps handling std::string no longer truncate strings at"
     },
     {
       "name": "LICENSE",
@@ -34146,7 +34146,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-16 22:38:05"
+  "last_updated": "2026-10-01 02:39:20"
 },
 {
   "name": "SYCLPARALLELSTL",
@@ -42428,8 +42428,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/LLNL/conduit/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-09-28 18:44:36",
-      "content": "<h1>Conduit Changelog</h1>\n<p>Notable changes to Conduit are documented in this file.</p>\n<p>The format is based on <a href=\"https://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>,\nand this project aspires to adhere to <a href=\"https://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>Unreleased</h2>\n<h3>Added</h3>\n<h4>Blueprint</h4>\n<ul>\n<li>Added relay hdf5 options to override the desired leaf types used when writing and reading hdf5 files. This enables on the fly conversion of say, all float64 data values to float32 data values, as well as many other combinations. This only supports bitwidth conversion, within signed, unsigned, and floating point values. See the test <code>t_relay_io_hdf5_prec.cpp</code> for examples of using these options.</li>\n</ul>"
+      "timestamp": "2026-09-30 19:48:36",
+      "content": "<h1>Conduit Changelog</h1>\n<p>Notable changes to Conduit are documented in this file.</p>\n<p>The format is based on <a href=\"https://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>,\nand this project aspires to adhere to <a href=\"https://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>Unreleased</h2>\n<h3>Added</h3>\n<h3>Changed</h3>\n<h3>Fixed</h3>\n<h2>[0.9.9] - Released 2026-09-30</h2>\n<h3>Added</h3>\n<h4>Blueprint</h4>\n<ul>\n<li>Added relay hdf5 options to override the desired leaf types used when writing and reading hdf5 files. This enables on the fly conversion of say, all float64 data values to float32 data values, as well as many other combinations. This only supports bitwidth conversion, within signed, unsigned, and floating point values. See the test <code>t_relay_io_hdf5_prec.cpp</code> for examples of using these options.</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -43236,7 +43236,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-28 18:44:36"
+  "last_updated": "2026-09-30 19:48:36"
 },
 {
   "name": "QUO",
@@ -56815,14 +56815,14 @@
     {
       "name": "README.md",
       "url": "https://github.com/szcompressor/cusz/blob/HEAD/README.md",
-      "timestamp": "2026-09-13 04:26:39",
-      "content": "<p>&lt;h3 align=&quot;center&quot;&gt;\npSZ/cuSZ: A GPU-Based Error-Bounded Lossy Compressor for Scientific Data\n&lt;/h3&gt;</p>\n<p>&lt;p align=&quot;center&quot;&gt;\n&lt;a href=&quot;./LICENSE&quot;&gt;&lt;/a&gt;\n&lt;/p&gt;</p>\n<p>pSZ/cuSZ is a GPU implementation of the seminal <a href=\"https://github.com/szcompressor/SZ\">SZ algorithm</a>. It is the <em>first</em> GPU-practical framework of error-bounded lossy compression on GPU for scientific data (c. 2020), aiming to improve SZ&#x27;s throughput on heterogeneous HPC systems. pSZ/cuSZ primarily focuses on CUDA backend support, with other GPU-parallel backends in development. pSZ/cuSZ is formerly known as cuSZ, which is also the short form of its current name. </p>"
+      "timestamp": "2026-09-30 19:23:23",
+      "content": "<p>&lt;h3 align=&quot;center&quot;&gt;\npSZ/cuSZ: A GPU-Based Error-Bounded Lossy Compressor for Scientific Data\n&lt;/h3&gt;</p>\n<p>&lt;p align=&quot;center&quot;&gt;\n&lt;a href=&quot;./LICENSE&quot;&gt;&lt;/a&gt;\n&lt;/p&gt;</p>\n<p>pSZ/cuSZ is a GPU implementation of the seminal <a href=\"https://github.com/szcompressor/SZ\">SZ algorithm</a>. It is the <em>first</em> GPU-practical framework of error-bounded lossy compression on GPU for scientific data (c. 2020), aiming to improve SZ&#x27;s throughput on heterogeneous HPC systems. pSZ/cuSZ primarily focuses on CUDA backend support, with other GPU-parallel backends in development. pSZ/cuSZ was formerly known as cuSZ, which is also the short form of its current name. </p>"
     },
     {
       "name": "changelog",
       "url": "https://github.com/szcompressor/cusz/blob/HEAD/changelog",
-      "timestamp": "2021-07-14 03:32:12",
-      "content": "June, 2021\n\nfeature\t\tspline3d kernel for seismic RTM data\n\nMay, 2021\n\nfeature\t\talternative compression path: RLE and sparsity-gather\n\nApril, 2021\n\noptimize\tLorenzo construction and reconstruction; scale to A100\noptmize\t\tfast mode, using all `float32`\n\nMarch, 2021\n\noptmize\t\tcoarsen thread-block use\n\nFebruary, 2021\n\nfeature\t\tpartial-sum based Lorenzo decompression\noptmize\t\tHuffman encoding output inverse-proportional to compression ratio"
+      "timestamp": "2026-09-30 19:23:23",
+      "content": "v0.19, 260924\n\nfeature     update C API `cusz.h`: (de)compress init, extrema, process, archive, reset\nfeature     1/2/3-stage pipeline specification\nfeature     py-`psz`: pip-installable pybinding (nanobind)\nrefactor    regroup `phf` with histogram and book making\nrefactor    decrease overall memory footprint\nfix         corner-case zero-bit in HF with extremely large eb&#x27;s\nfix         `CMAKE_CUDA_ARCHITECTURES` default to `sm_75`"
     },
     {
       "name": "LICENSE",
@@ -56849,7 +56849,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-13 04:26:39"
+  "last_updated": "2026-09-30 19:23:23"
 },
 {
   "name": "HDF5-VOL-LOG",
@@ -57031,7 +57031,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/tensorflow/tensorflow/blob/HEAD/README.md",
-      "timestamp": "2026-06-12 17:48:38",
+      "timestamp": "2026-09-30 13:55:30",
       "content": "<p>&lt;div align=&quot;center&quot;&gt;</p>\n<p>&lt;/div&gt;</p>\n<p><strong><code>Documentation</code></strong> |\n |</p>\n<p><a href=\"https://www.tensorflow.org/\">TensorFlow</a> is an end-to-end open source platform\nfor machine learning. It has a comprehensive, flexible ecosystem of\n<a href=\"https://www.tensorflow.org/resources/tools\">tools</a>,\n<a href=\"https://www.tensorflow.org/resources/libraries-extensions\">libraries</a>, and\n<a href=\"https://www.tensorflow.org/community\">community</a> resources that lets</p>"
     },
     {
@@ -57048,7 +57048,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-09-28 08:16:11"
+  "last_updated": "2026-09-30 13:55:30"
 },
 {
   "name": "PYTORCH",
@@ -57113,12 +57113,12 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/google/jax/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-09-29 21:49:14",
+      "timestamp": "2026-09-30 23:32:08",
       "content": "<h1>Change log</h1>\n<p>Best viewed <a href=\"https://docs.jax.dev/en/latest/changelog.html\">here</a>.\nFor the changes specific to the experimental Pallas APIs,\nsee {ref}<code>pallas-changelog</code>.</p>\n<p>JAX follows Effort-based versioning; for a discussion of this and JAX&#x27;s API\ncompatibility policy, refer to {ref}<code>api-compatibility</code>. For the Python and\nNumPy version support policy, refer to {ref}<code>version-support-policy</code>.</p>\n<h2>Unreleased</h2>"
     }
   ],
   "deployment": [],
-  "last_updated": "2026-09-29 21:49:14"
+  "last_updated": "2026-09-30 23:32:08"
 },
 {
   "name": "PANDAS",
