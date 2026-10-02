@@ -2294,7 +2294,7 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/Alpine-DAV/ascent/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-09-25 16:56:18",
+      "timestamp": "2026-10-02 22:00:20",
       "content": "<h1>Ascent Changelog</h1>\n<p>Notable changes to Ascent are documented in this file. This changelog started on 8/12/19 and does not document prior changes.</p>\n<p>The format is based on <a href=\"https://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>,\nand this project aspires to adhere to <a href=\"https://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>Unreleased</h2>\n<h3>Preferred dependency versions for ascent@develop</h3>\n<ul>\n<li>cmake@3.23 or newer</li>\n</ul>"
     },
     {
@@ -2654,76 +2654,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-28 20:50:38"
-},
-{
-  "name": "PARAVIEW",
-  "area": "Data & Viz",
-  "description": "Visualization and data analysis system with in situ library within the Paraview product suite.",
-  "spack_info": {
-    "Description": "ParaView is an open-source, multi-platform data analysis and\n    visualization application. This package includes the Catalyst in-situ\n    library for versions 5.7 and greater, otherwise use the catalyst\n    package.",
-    "Homepage": "https://www.paraview.org",
-    "Accelerator Variants": "CUDA ROCM   ",
-    "Spack Smoke Test": "Present",
-    "E4S Testsuite Test": "Absent",
-    "Accelerator Support": "Product provides spack variants to enable accelerator support"
-  },
-  "docs": [
-    {
-      "name": "CONTRIBUTING.md",
-      "url": "https://github.com/Kitware/ParaView/blob/HEAD/CONTRIBUTING.md",
-      "timestamp": "2025-04-07 16:59:02",
-      "content": "<h1>Contributing to ParaView</h1>\n<p>This page documents at a very high level how to contribute to ParaView.\nPlease check our [developer instructions][] for a more detailed guide to\ndeveloping and contributing to the project, and our [ParaView Git README][]\nfor additional information.</p>\n<p>The ParaView development cycle is built upon the following components:</p>\n<ol>\n<li>[Issues][] identify any issues including bugs and feature requests. In</li>\n</ol>"
-    },
-    {
-      "name": "Copyright.txt",
-      "url": "https://github.com/Kitware/ParaView/blob/HEAD/Copyright.txt",
-      "timestamp": "2024-02-14 13:59:08",
-      "content": "Copyright (c) 2000 Kitware Inc.\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n* Redistributions of source code must retain the above copyright notice, this list\n  of conditions and the following disclaimer.\n\n* Redistributions in binary form must reproduce the above copyright notice, this\n  list of conditions and the following disclaimer in the documentation and/or"
-    },
-    {
-      "name": "README.md",
-      "url": "https://github.com/Kitware/ParaView/blob/HEAD/README.md",
-      "timestamp": "2026-08-30 21:32:20",
-      "content": "<h1>Introduction</h1>\n<p>[ParaView][] is an open-source, multi-platform data analysis and\nvisualization application based on\n[Visualization Toolkit (VTK)][VTK].</p>\n<p>The first public release was announced in October 2002. Since then, the project\nhas grown through collaborative efforts between [Kitware Inc.][Kitware],\n[Sandia National Laboratories][Sandia],\n[Los Alamos National Laboratory][LANL],\n[Army Research Laboratory][ARL], and various other</p>"
-    },
-    {
-      "name": "version.txt",
-      "url": "https://github.com/Kitware/ParaView/blob/HEAD/version.txt",
-      "timestamp": "2026-10-01 04:01:35",
-      "content": "6.2.20261001\n"
-    }
-  ],
-  "deployment": [
-    {
-      "institution": "JLSE",
-      "systems": [
-        {
-          "system": "arcticus-21.08",
-          "entries": [
-            {
-              "version": "5.9.1",
-              "compiler": "gcc@9.3.0",
-              "variants": "~advanced_debug~cuda~examples~hdf5~ipo+kits+mpi+opengl2~osmesa+plugins~python~python3~qt+shared build_type=RelWithDebInfo cuda_arch=none",
-              "architecture": "linux-opensuse_leap15-x86_64"
-            }
-          ]
-        },
-        {
-          "system": "arcticus-21.11",
-          "entries": [
-            {
-              "version": "5.9.1",
-              "compiler": "gcc@9.3.0",
-              "variants": "~adios2~advanced_debug~cuda+development_files~examples~hdf5~ipo+kits+mpi+opengl2~osmesa~python~python3~qt+shared build_edition=canonical build_type=RelWithDebInfo cuda_arch=none",
-              "architecture": "linux-opensuse_leap15-x86_64"
-            }
-          ]
-        }
-      ]
-    }
-  ],
-  "last_updated": "2026-10-01 04:01:35"
+  "last_updated": "2026-10-02 22:00:20"
 },
 {
   "name": "VISIT",
@@ -33193,8 +33124,8 @@
     {
       "name": "CHANGES.current",
       "url": "https://github.com/swig/swig/blob/HEAD/CHANGES.current",
-      "timestamp": "2026-10-01 18:59:00",
-      "content": "Below are the changes for the current release.\nSee the CHANGES file for changes in older releases.\nSee the RELEASENOTES file for a summary of changes in each release.\nIssue # numbers mentioned below can be found on Github. For more details, add\nthe issue number to the end of the URL: https://github.com/swig/swig/issues/\n\nVersion 4.6.0 (in progress)\n===========================\n\n2026-10-01: arunisaac"
+      "timestamp": "2026-10-02 22:40:12",
+      "content": "Below are the changes for the current release.\nSee the CHANGES file for changes in older releases.\nSee the RELEASENOTES file for a summary of changes in each release.\nIssue # numbers mentioned below can be found on Github. For more details, add\nthe issue number to the end of the URL: https://github.com/swig/swig/issues/\n\nVersion 4.6.0 (in progress)\n===========================\n\n2026-10-03: olly\n\t    [Guile] Guile &gt;= 2.0 is now required, since we haven&#x27;t been testing"
     },
     {
       "name": "LICENSE",
@@ -34146,7 +34077,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-01 18:59:00"
+  "last_updated": "2026-10-02 22:40:12"
 },
 {
   "name": "SYCLPARALLELSTL",
@@ -56815,7 +56746,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/szcompressor/cusz/blob/HEAD/README.md",
-      "timestamp": "2026-09-30 19:23:23",
+      "timestamp": "2026-10-02 16:24:46",
       "content": "<p>&lt;h3 align=&quot;center&quot;&gt;\npSZ/cuSZ: A GPU-Based Error-Bounded Lossy Compressor for Scientific Data\n&lt;/h3&gt;</p>\n<p>&lt;p align=&quot;center&quot;&gt;\n&lt;a href=&quot;./LICENSE&quot;&gt;&lt;/a&gt;\n&lt;/p&gt;</p>\n<p>pSZ/cuSZ is a GPU implementation of the seminal <a href=\"https://github.com/szcompressor/SZ\">SZ algorithm</a>. It is the <em>first</em> GPU-practical framework of error-bounded lossy compression on GPU for scientific data (c. 2020), aiming to improve SZ&#x27;s throughput on heterogeneous HPC systems. pSZ/cuSZ primarily focuses on CUDA backend support, with other GPU-parallel backends in development. pSZ/cuSZ was formerly known as cuSZ, which is also the short form of its current name. </p>"
     },
     {
@@ -56849,7 +56780,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-30 19:23:23"
+  "last_updated": "2026-10-02 16:24:46"
 },
 {
   "name": "HDF5-VOL-LOG",
@@ -56914,47 +56845,6 @@
   ],
   "deployment": [],
   "last_updated": "2024-11-21 21:16:30"
-},
-{
-  "name": "HDF5-VOL-DAOS",
-  "area": "Data & Viz",
-  "description": "A Virtual Object Layer (VOL) connector for HDF5 that allows for direct interfacing with the Distributed Asynchronous Object Storage (DAOS) system",
-  "spack_info": {
-    "Description": "The HDF5 DAOS VOL connector is an external VOL connector that interfaces\n    with the DAOS API",
-    "Homepage": "https://github.com/HDFGroup/vol-daos",
-    "Accelerator Variants": "    ",
-    "Spack Smoke Test": "Absent",
-    "E4S Testsuite Test": "Absent",
-    "Accelerator Support": "Undetermined"
-  },
-  "docs": [
-    {
-      "name": "README.md",
-      "url": "https://github.com/HDFGroup/vol-daos/blob/HEAD/README.md",
-      "timestamp": "2023-03-04 00:07:23",
-      "content": "<h1>HDF5 DAOS VOL connector</h1>\n<h2>Table of Contents</h2>\n<ol>\n<li><a href=\"#1-Description\">Description</a></li>\n<li><a href=\"#2-Installation\">Installation</a><ul>\n<li><a href=\"#Prerequisites\">Prerequisites</a></li>\n<li><a href=\"#Build-instructions\">Build instructions</a></li>\n<li><a href=\"#CMake-options\">CMake options</a></li>\n<li><a href=\"#Connector-options\">Connector options</a></li>\n</ul>\n</li>\n<li><a href=\"#3-Testing-And-Usage\">Testing and Usage</a></li>\n<li><a href=\"#4-More-Information\">More information</a><ul>\n<li><a href=\"#DAOS-VOL\">DAOS VOL</a></li>\n</ul>\n</li>\n</ol>"
-    },
-    {
-      "name": "COPYING",
-      "url": "https://github.com/HDFGroup/vol-daos/blob/HEAD/COPYING",
-      "timestamp": "2022-05-09 17:15:59",
-      "content": "Copyright (c) 2018-2022, The HDF Group.\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,"
-    },
-    {
-      "name": "AUTHORS",
-      "url": "https://github.com/HDFGroup/vol-daos/blob/HEAD/AUTHORS",
-      "timestamp": "2019-11-01 06:09:20",
-      "content": "Neil Fortner &lt;nfortne2@hdfgroup.org&gt;\nJordan Henderson &lt;jhenderson@hdfgroup.org&gt;\nJerome Soumagne &lt;jsoumagne@hdfgroup.org&gt;\nRay Lu &lt;songyulu@hdfgroup.org&gt;\n"
-    },
-    {
-      "name": "ACKNOWLEDGMENTS",
-      "url": "https://github.com/HDFGroup/vol-daos/blob/HEAD/ACKNOWLEDGMENTS",
-      "timestamp": "2022-05-09 17:15:59",
-      "content": "This software was developed with support from the Department of Energy under\nPrime Contract No. DE-AC02-06CH11357.\n"
-    }
-  ],
-  "deployment": [],
-  "last_updated": "2023-03-04 00:07:23"
 },
 {
   "name": "TORCHBRAID",
@@ -57066,13 +56956,13 @@
     {
       "name": "README.md",
       "url": "https://github.com/pytorch/pytorch/blob/HEAD/README.md",
-      "timestamp": "2026-08-19 14:07:02",
+      "timestamp": "2026-10-02 15:28:10",
       "content": "<p>&lt;picture&gt;\n  &lt;source media=&quot;(prefers-color-scheme: dark)&quot; srcset=&quot;https://github.com/pytorch/pytorch/raw/main/docs/source/_static/img/pytorch-logo-light.png&quot; /&gt;\n  &lt;source media=&quot;(prefers-color-scheme: light)&quot; srcset=&quot;https://github.com/pytorch/pytorch/raw/main/docs/source/_static/img/pytorch-logo-dark.png&quot; /&gt;</p>\n<p>&lt;/picture&gt;</p>\n<hr />"
     },
     {
       "name": "RELEASE.md",
       "url": "https://github.com/pytorch/pytorch/blob/HEAD/RELEASE.md",
-      "timestamp": "2026-09-18 16:48:19",
+      "timestamp": "2026-10-02 16:17:21",
       "content": "<h1>Releasing PyTorch</h1>\n<ul>\n<li><a href=\"#release-compatibility-matrix\">Release Compatibility Matrix</a><ul>\n<li><a href=\"#pytorch-cuda-support-matrix\">PyTorch CUDA Support Matrix</a></li>\n</ul>\n</li>\n<li><a href=\"#release-cadence\">Release Cadence</a></li>\n<li><a href=\"#general-overview\">General Overview</a><ul>\n<li><a href=\"#frequently-asked-questions\">Frequently Asked Questions</a></li>\n</ul>\n</li>\n<li><a href=\"#cutting-a-release-branch-preparations\">Cutting a release branch preparations</a></li>\n<li><a href=\"#cutting-release-branches\">Cutting release branches</a></li>\n</ul>"
     },
     {
@@ -57083,7 +56973,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-09-18 16:48:19"
+  "last_updated": "2026-10-02 16:17:21"
 },
 {
   "name": "JAX",
@@ -57101,7 +56991,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/google/jax/blob/HEAD/README.md",
-      "timestamp": "2026-06-23 20:53:57",
+      "timestamp": "2026-09-29 04:22:02",
       "content": "<p>&lt;div align=&quot;center&quot;&gt;\n&lt;/img&gt;\n&lt;/div&gt;</p>\n<h1>Transformable numerical computing at scale</h1>\n<p><a href=\"#transformations\"><strong>Transformations</strong></a>\n| <a href=\"#scaling\"><strong>Scaling</strong></a>\n| <a href=\"#installation\"><strong>Install guide</strong></a>\n| <a href=\"https://docs.jax.dev/en/latest/changelog.html\"><strong>Change logs</strong></a>\n| <a href=\"https://docs.jax.dev/en/latest/\"><strong>Reference docs</strong></a></p>\n<h2>What is JAX?</h2>\n<p>JAX is a Python library for accelerator-oriented array computation and program transformation,</p>"
     },
     {
@@ -57113,12 +57003,12 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/google/jax/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-10-01 18:38:15",
+      "timestamp": "2026-10-02 16:06:32",
       "content": "<h1>Change log</h1>\n<p>Best viewed <a href=\"https://docs.jax.dev/en/latest/changelog.html\">here</a>.\nFor the changes specific to the experimental Pallas APIs,\nsee {ref}<code>pallas-changelog</code>.</p>\n<p>JAX follows Effort-based versioning; for a discussion of this and JAX&#x27;s API\ncompatibility policy, refer to {ref}<code>api-compatibility</code>. For the Python and\nNumPy version support policy, refer to {ref}<code>version-support-policy</code>.</p>\n<h2>Unreleased</h2>"
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-01 18:38:15"
+  "last_updated": "2026-10-02 16:06:32"
 },
 {
   "name": "PANDAS",
@@ -57344,8 +57234,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-10-01 22:57:50",
-      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.22.1...v3.23.0\">3.23.0</a> (2026-10-01)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>agents:</strong> [1/n] return typed answers from session streams (<a href=\"https://github.com/openai/openai-python/issues/4007\">#4007</a>) (<a href=\"https://github.com/openai/openai-python/commit/10f88169b0f3929b4e2528aad7a825df31163156\">10f8816</a>)</li>\n<li><strong>agents:</strong> stage files and download turn artifacts (<a href=\"https://github.com/openai/openai-python/issues/4009\">#4009</a>) (<a href=\"https://github.com/openai/openai-python/commit/4fc2438ea73f8c1a4802b0cd5ab7607fc3cc1d16\">4fc2438</a>)</li>\n</ul>"
+      "timestamp": "2026-10-02 15:48:50",
+      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.23.0...v3.24.0\">3.24.0</a> (2026-10-02)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> add custom voice creation and agent session events (<a href=\"https://github.com/openai/openai-python/issues/4013\">#4013</a>) (<a href=\"https://github.com/openai/openai-python/commit/e5de2e5656fb3d4fa70f050195382e6a4d59f806\">e5de2e5</a>)</li>\n</ul>\n<h3>Bug Fixes</h3>\n<ul>\n<li><strong>api:</strong> prioritize Python request routing fields (<a href=\"https://github.com/openai/openai-python/issues/4014\">#4014</a>) (<a href=\"https://github.com/openai/openai-python/commit/ffcc4c47279debd9daff6103da57dcde2efd38bd\">ffcc4c4</a>)</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -57355,7 +57245,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-01 22:57:50"
+  "last_updated": "2026-10-02 15:48:50"
 },
 {
   "name": "DEEPHYPER",
