@@ -12085,7 +12085,7 @@
     {
       "name": "release_docs/CHANGELOG.md",
       "url": "https://github.com/HDFGroup/hdf5/blob/HEAD/release_docs/CHANGELOG.md",
-      "timestamp": "2026-10-01 19:20:56",
+      "timestamp": "2026-10-03 16:19:02",
       "content": "<p>v2.3.0 --- July X , 2026</p>\n<h1>🔺 HDF5 Changelog</h1>\n<p>All notable changes to this project will be documented in this file. This document describes the differences between this release and the previous\nHDF5 release, platforms tested, and known problems in this release.</p>\n<p>For releases prior to version 2.0.0, please see the release.txt file and for more details check the HISTORY*.txt files in the HDF5 source.</p>"
     }
   ],
@@ -14161,7 +14161,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-01 19:20:56"
+  "last_updated": "2026-10-03 16:19:02"
 },
 {
   "name": "HPCTOOLKIT",
@@ -20088,8 +20088,8 @@
     {
       "name": "CHANGES.txt",
       "url": "https://github.com/StanfordLegion/legion/blob/HEAD/CHANGES.txt",
-      "timestamp": "2026-09-29 17:39:49",
-      "content": "This file lists the major changes as they appear in the stable branch.  No\nattempt is made to keep this list accurate for the master branch.\n\nVersion 26.09.0 (September 30, 2026)\n * Legion\n    - Work was done this quarter to formalize several important\n      internal distributed systems protocols in Legion with TLA+\n      and then model check their execution using TLC. This work\n      uncovered a number of bugs which are now fixed in these"
+      "timestamp": "2026-10-03 15:57:42",
+      "content": "This file lists the major changes as they appear in the stable branch.  No\nattempt is made to keep this list accurate for the master branch.\n\nVersion 26.09.1 (October 4, 2026)\n * Legion\n    - Fixes a regression from the previous release\n    - Fixes building Realm with MPI when `Legion_NETWORKS=mpi` is enabled\n\nVersion 26.09.0 (September 30, 2026)\n * Legion\n    - Work was done this quarter to formalize several important"
     },
     {
       "name": "LICENSE.txt",
@@ -20705,7 +20705,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-29 17:39:49"
+  "last_updated": "2026-10-03 15:57:42"
 },
 {
   "name": "LIBENSEMBLE",
