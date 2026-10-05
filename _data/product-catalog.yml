@@ -11215,7 +11215,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/ginkgo-project/ginkgo/blob/HEAD/README.md",
-      "timestamp": "2026-09-20 17:59:22",
+      "timestamp": "2026-10-02 13:22:49",
       "content": "<p>&lt;p align=&quot;center&quot;&gt;&lt;/p&gt;</p>\n<p>&lt;div align=&quot;center&quot;&gt;</p>\n<p>|||||</p>\n<p>|||||</p>\n<p>&lt;/div&gt;</p>\n<p>Ginkgo is a high-performance numerical linear algebra library for many-core systems, with a\nfocus on solution of sparse linear systems. It is implemented using modern C++\n(you will need an at least C++17 compliant compiler to build it), with GPU kernels\nimplemented for NVIDIA, AMD and Intel GPUs.</p>"
     },
     {
@@ -12060,7 +12060,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-20 17:59:22"
+  "last_updated": "2026-10-02 13:22:49"
 },
 {
   "name": "HDF5",
@@ -56423,12 +56423,12 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/google/jax/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-10-02 16:06:32",
+      "timestamp": "2026-10-04 17:31:30",
       "content": "<h1>Change log</h1>\n<p>Best viewed <a href=\"https://docs.jax.dev/en/latest/changelog.html\">here</a>.\nFor the changes specific to the experimental Pallas APIs,\nsee {ref}<code>pallas-changelog</code>.</p>\n<p>JAX follows Effort-based versioning; for a discussion of this and JAX&#x27;s API\ncompatibility policy, refer to {ref}<code>api-compatibility</code>. For the Python and\nNumPy version support policy, refer to {ref}<code>version-support-policy</code>.</p>\n<h2>Unreleased</h2>"
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-02 16:06:32"
+  "last_updated": "2026-10-04 17:31:30"
 },
 {
   "name": "PANDAS",
