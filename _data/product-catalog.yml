@@ -12085,7 +12085,7 @@
     {
       "name": "release_docs/CHANGELOG.md",
       "url": "https://github.com/HDFGroup/hdf5/blob/HEAD/release_docs/CHANGELOG.md",
-      "timestamp": "2026-10-03 16:19:02",
+      "timestamp": "2026-10-05 23:30:39",
       "content": "<p>v2.3.0 --- July X , 2026</p>\n<h1>🔺 HDF5 Changelog</h1>\n<p>All notable changes to this project will be documented in this file. This document describes the differences between this release and the previous\nHDF5 release, platforms tested, and known problems in this release.</p>\n<p>For releases prior to version 2.0.0, please see the release.txt file and for more details check the HISTORY*.txt files in the HDF5 source.</p>"
     }
   ],
@@ -14161,7 +14161,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-03 16:19:02"
+  "last_updated": "2026-10-05 23:30:39"
 },
 {
   "name": "HPCTOOLKIT",
@@ -30178,14 +30178,14 @@
     {
       "name": "README.md",
       "url": "https://github.com/pghysels/STRUMPACK/blob/HEAD/README.md",
-      "timestamp": "2025-06-13 14:41:00",
+      "timestamp": "2026-10-05 22:48:31",
       "content": "<h1>STRUMPACK</h1>\n<p>STRUMPACK -- STRUctured Matrix PACKage, Copyright (c) 2014-2021, The\nRegents of the University of California, through Lawrence Berkeley\nNational Laboratory (subject to receipt of any required approvals from\nthe U.S. Dept. of Energy).  All rights reserved.</p>\n<h2>Documentation &amp; Installation instructions</h2>\n<p><a href=\"http://portal.nersc.gov/project/sparse/strumpack/master/\">http://portal.nersc.gov/project/sparse/strumpack/master/</a></p>"
     },
     {
       "name": "CHANGELOG",
       "url": "https://github.com/pghysels/STRUMPACK/blob/HEAD/CHANGELOG",
-      "timestamp": "2023-10-26 22:22:20",
-      "content": "Version 7.2.0 Released Oct 2023\n===============================\n- Fix for sparse solve with MAGMA with 1 MPI rank\n- suppress several warnings\n- small bugfix in BLR partitioning in sparse solver\n- SYCL CMake compilation fix\n- In StructuredMatrix interface, construct_from_elements now takes\n  point geometry for faster HSS compression\n- In StructuredMatrix interface, BLR compress_and_factor is now\n  supported"
+      "timestamp": "2026-10-05 22:46:18",
+      "content": "Version 8.1.0 Released Oct 2026\n===============================\nMostly bug fixes.\nAdded tree node amalgamation, which can speed up the solve phase when the tree has a lot of small nodes.\n\nVersion 8.0.0 Released Nov 2024\n===============================\n\nVersion 7.2.0 Released Oct 2023\n===============================\n- Fix for sparse solve with MAGMA with 1 MPI rank\n- suppress several warnings\n- small bugfix in BLR partitioning in sparse solver"
     },
     {
       "name": "LICENSE",
@@ -30755,7 +30755,7 @@
       ]
     }
   ],
-  "last_updated": "2025-06-13 14:41:00"
+  "last_updated": "2026-10-05 22:48:31"
 },
 {
   "name": "SUNDIALS",
@@ -32839,8 +32839,8 @@
     {
       "name": "CHANGES.current",
       "url": "https://github.com/swig/swig/blob/HEAD/CHANGES.current",
-      "timestamp": "2026-10-02 22:40:12",
-      "content": "Below are the changes for the current release.\nSee the CHANGES file for changes in older releases.\nSee the RELEASENOTES file for a summary of changes in each release.\nIssue # numbers mentioned below can be found on Github. For more details, add\nthe issue number to the end of the URL: https://github.com/swig/swig/issues/\n\nVersion 4.6.0 (in progress)\n===========================\n\n2026-10-03: olly\n\t    [Guile] Guile &gt;= 2.0 is now required, since we haven&#x27;t been testing"
+      "timestamp": "2026-10-04 19:46:33",
+      "content": "Below are the changes for the current release.\nSee the CHANGES file for changes in older releases.\nSee the RELEASENOTES file for a summary of changes in each release.\nIssue # numbers mentioned below can be found on Github. For more details, add\nthe issue number to the end of the URL: https://github.com/swig/swig/issues/\n\nVersion 4.6.0 (in progress)\n===========================\n\n2026-10-04: wsfulton"
     },
     {
       "name": "LICENSE",
@@ -33792,7 +33792,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-02 22:40:12"
+  "last_updated": "2026-10-04 19:46:33"
 },
 {
   "name": "SYCLPARALLELSTL",
@@ -51760,7 +51760,7 @@
     {
       "name": "RELEASE-NOTES.md",
       "url": "https://github.com/LLNL/axom/blob/HEAD/RELEASE-NOTES.md",
-      "timestamp": "2026-10-01 08:16:56",
+      "timestamp": "2026-10-02 23:29:03",
       "content": "<h1>Axom Software Release Notes</h1>\n<p>Notes describing significant changes in each Axom release are documented in this file.</p>\n<p>The format of this file is based on <a href=\"http://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>.</p>\n<p>The Axom project release numbers follow <a href=\"http://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>[Unreleased] - Release date yyyy-mm-dd</h2>\n<h3>Added</h3>\n<ul>\n<li>Axom&#x27;s host execution-space default allocator is now a configure-time policy. The default policy is malloc, regardless</li>\n</ul>"
     },
     {
@@ -52062,7 +52062,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-01 08:16:56"
+  "last_updated": "2026-10-02 23:29:03"
 },
 {
   "name": "BRICKS",
@@ -56009,7 +56009,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/wannier-developers/wannier90/blob/HEAD/README.md",
-      "timestamp": "2026-09-10 16:00:13",
+      "timestamp": "2026-10-05 11:25:27",
       "content": "<p>&lt;p align=&quot;center&quot;&gt;</p>\n<p>&lt;/p&gt;</p>\n<h1>Wannier90</h1>\n<p><strong>Wannier90 is an open-source code for generating maximally-localised generalised\nWannier functions and using them to compute advanced electronic properties of\nmaterials with high efficiency and accuracy.</strong></p>\n<p>| I want to…                | Go to |\n| Learn what Wannier90 does | <a href=\"https://www.wannier.org\">wannier.org</a> · <a href=\"https://wannier.org/features/\">Features</a> |</p>"
     },
     {
@@ -56021,8 +56021,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/wannier-developers/wannier90/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-09-22 10:16:28",
-      "content": "<h1>CHANGELOG of Wannier90</h1>\n<h2>v4.0.3 (22 September 2026)</h2>\n<h3>New features</h3>\n<ul>\n<li>\n<p>The library is now named <code>libwannier90</code> for both serial and MPI builds (the prior <code>_mpi</code> suffix has been removed) <a href=\"https://github.com/wannier-developers/wannier90/pull/680\">[#680]</a></p>\n</li>\n<li>\n<p><code>w90_free()</code> deallocates a library-mode data object; <code>w90_print_timings()</code> prints the timing report <a href=\"https://github.com/wannier-developers/wannier90/pull/712\">[#712]</a> <a href=\"https://github.com/wannier-developers/wannier90/pull/707\">[#707]</a></p>\n</li>\n</ul>"
+      "timestamp": "2026-10-05 11:38:48",
+      "content": "<h1>CHANGELOG of Wannier90</h1>\n<h2>v4.0.3 (5 October 2026)</h2>\n<h3>New features</h3>\n<ul>\n<li>\n<p>The library is now named <code>libwannier90</code> for both serial and MPI builds (the prior <code>_mpi</code> suffix has been removed) <a href=\"https://github.com/wannier-developers/wannier90/pull/680\">[#680]</a></p>\n</li>\n<li>\n<p><code>w90_free()</code> deallocates a library-mode data object; <code>w90_print_timings()</code> prints the timing report <a href=\"https://github.com/wannier-developers/wannier90/pull/712\">[#712]</a> <a href=\"https://github.com/wannier-developers/wannier90/pull/707\">[#707]</a></p>\n</li>\n</ul>"
     },
     {
       "name": "CONTRIBUTING.md",
@@ -56093,7 +56093,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-22 10:16:28"
+  "last_updated": "2026-10-05 11:38:48"
 },
 {
   "name": "LIBPRESSIO",
@@ -56381,7 +56381,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/pytorch/pytorch/blob/HEAD/README.md",
-      "timestamp": "2026-10-02 15:28:10",
+      "timestamp": "2026-10-05 22:01:16",
       "content": "<p>&lt;picture&gt;\n  &lt;source media=&quot;(prefers-color-scheme: dark)&quot; srcset=&quot;https://github.com/pytorch/pytorch/raw/main/docs/source/_static/img/pytorch-logo-light.png&quot; /&gt;\n  &lt;source media=&quot;(prefers-color-scheme: light)&quot; srcset=&quot;https://github.com/pytorch/pytorch/raw/main/docs/source/_static/img/pytorch-logo-dark.png&quot; /&gt;</p>\n<p>&lt;/picture&gt;</p>\n<hr />"
     },
     {
@@ -56398,7 +56398,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-02 16:17:21"
+  "last_updated": "2026-10-05 22:01:16"
 },
 {
   "name": "JAX",
@@ -57220,7 +57220,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/CEED/libCEED/blob/HEAD/README.md",
-      "timestamp": "2026-09-18 15:51:10",
+      "timestamp": "2026-10-05 09:17:36",
       "content": "<h1>libCEED: Efficient Extensible Discretization</h1>\n<h2>Summary and Purpose</h2>\n<p>libCEED provides fast algebra for element-based discretizations, designed for performance portability, run-time flexibility, and clean embedding in higher level libraries and applications.\nIt offers a C99 interface as well as bindings for Fortran, Python, Julia, and Rust.\nWhile our focus is on high-order finite elements, the approach is mostly algebraic and thus applicable to other discretizations in factored form, as explained in the <a href=\"https://libceed.org/en/latest/\">user manual</a> and API implementation portion of the <a href=\"https://libceed.org/en/latest/api/\">documentation</a>.</p>"
     },
     {
@@ -57237,7 +57237,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-09-18 15:51:10"
+  "last_updated": "2026-10-05 09:17:36"
 },
 {
   "name": "BIONEMO-FRAMEWORK",
