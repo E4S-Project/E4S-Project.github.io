@@ -7379,8 +7379,8 @@
     {
       "name": "README.md",
       "url": "https://github.com/dyninst/dyninst/blob/HEAD/README.md",
-      "timestamp": "2026-08-10 15:58:55",
-      "content": "<h1>Dyninst</h1>\n<h2>Notes</h2>\n<ul>\n<li>Known issues should have open issues associated with them.</li>\n<li>ARMv8 (64 bit) support for dynamic instrumentation is experimental and incomplete.\n  For more details about current supported functionality refer to <a href=\"https://github.com/dyninst/dyninst/wiki/DyninstAPI-ARMv8-status\">Dyninst Support for the ARMv8 (64 bit)</a>.</li>\n</ul>\n<h2>Build DyninstAPI and its subcomponents</h2>\n<h3>Docker Containers</h3>"
+      "timestamp": "2026-10-06 05:06:14",
+      "content": "<h1>Dyninst</h1>\n<h2>Notes</h2>\n<ul>\n<li>Known issues should have open issues associated with them.</li>\n<li>ARMv8 (64 bit) support for dynamic instrumentation is experimental and incomplete.\n  For more details about current supported functionality refer to <a href=\"https://github.com/dyninst/dyninst/wiki/DyninstAPI-ARMv8-status\">Dyninst Support for the ARMv8 (64 bit)</a>.</li>\n</ul>\n<h2>Documentation</h2>\n<p>Each component has a manual, written in LaTeX and built to PDF by the CMake</p>"
     },
     {
       "name": "CHANGELOG.md",
@@ -8111,7 +8111,7 @@
       ]
     }
   ],
-  "last_updated": "2026-08-10 15:58:55"
+  "last_updated": "2026-10-06 05:06:14"
 },
 {
   "name": "HEFFTE",
@@ -12085,7 +12085,7 @@
     {
       "name": "release_docs/CHANGELOG.md",
       "url": "https://github.com/HDFGroup/hdf5/blob/HEAD/release_docs/CHANGELOG.md",
-      "timestamp": "2026-10-05 23:30:39",
+      "timestamp": "2026-10-06 16:28:57",
       "content": "<p>v2.3.0 --- July X , 2026</p>\n<h1>🔺 HDF5 Changelog</h1>\n<p>All notable changes to this project will be documented in this file. This document describes the differences between this release and the previous\nHDF5 release, platforms tested, and known problems in this release.</p>\n<p>For releases prior to version 2.0.0, please see the release.txt file and for more details check the HISTORY*.txt files in the HDF5 source.</p>"
     }
   ],
@@ -14161,7 +14161,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-05 23:30:39"
+  "last_updated": "2026-10-06 16:28:57"
 },
 {
   "name": "HPCTOOLKIT",
@@ -32839,8 +32839,8 @@
     {
       "name": "CHANGES.current",
       "url": "https://github.com/swig/swig/blob/HEAD/CHANGES.current",
-      "timestamp": "2026-10-04 19:46:33",
-      "content": "Below are the changes for the current release.\nSee the CHANGES file for changes in older releases.\nSee the RELEASENOTES file for a summary of changes in each release.\nIssue # numbers mentioned below can be found on Github. For more details, add\nthe issue number to the end of the URL: https://github.com/swig/swig/issues/\n\nVersion 4.6.0 (in progress)\n===========================\n\n2026-10-04: wsfulton"
+      "timestamp": "2026-10-07 01:52:58",
+      "content": "Below are the changes for the current release.\nSee the CHANGES file for changes in older releases.\nSee the RELEASENOTES file for a summary of changes in each release.\nIssue # numbers mentioned below can be found on Github. For more details, add\nthe issue number to the end of the URL: https://github.com/swig/swig/issues/\n\nVersion 4.6.0 (in progress)\n===========================\n\n2026-10-07: olly\n\t    [Guile] #3194 The default &quot;procdoc&quot; format is now &quot;plain&quot; (which"
     },
     {
       "name": "LICENSE",
@@ -33792,7 +33792,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-04 19:46:33"
+  "last_updated": "2026-10-07 01:52:58"
 },
 {
   "name": "SYCLPARALLELSTL",
@@ -56357,7 +56357,7 @@
     {
       "name": "RELEASE.md",
       "url": "https://github.com/tensorflow/tensorflow/blob/HEAD/RELEASE.md",
-      "timestamp": "2026-09-28 08:16:11",
+      "timestamp": "2026-10-06 23:51:04",
       "content": "<h1>Release 2.23.0</h1>\n<h2>TensorFlow</h2>\n<p>&lt;INSERT SMALL BLURB ABOUT RELEASE FOCUS AREA AND POTENTIAL TOOLCHAIN CHANGES&gt;</p>\n<h3>Breaking Changes</h3>\n<ul>\n<li>&lt;BREAKING CHANGES GO HERE&gt;</li>\n</ul>\n<h3>Known Caveats</h3>\n<ul>\n<li>&lt;CAVEATS REGARDING THE RELEASE (BUT NOT BREAKING CHANGES).&gt;</li>\n</ul>\n<h3>Major Features and Improvements</h3>\n<ul>\n<li><code>tf.lite</code><ul>\n<li>Adds blockwise quantization support in the converter and <code>quant_spec</code> metadata in <code>FullyConnectedOptions</code>.</li>\n</ul>\n</li>\n</ul>"
     },
     {
@@ -56368,7 +56368,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-09-30 13:55:30"
+  "last_updated": "2026-10-06 23:51:04"
 },
 {
   "name": "PYTORCH",
@@ -56629,8 +56629,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-10-02 15:48:50",
-      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.23.0...v3.24.0\">3.24.0</a> (2026-10-02)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> add custom voice creation and agent session events (<a href=\"https://github.com/openai/openai-python/issues/4013\">#4013</a>) (<a href=\"https://github.com/openai/openai-python/commit/e5de2e5656fb3d4fa70f050195382e6a4d59f806\">e5de2e5</a>)</li>\n</ul>\n<h3>Bug Fixes</h3>\n<ul>\n<li><strong>api:</strong> prioritize Python request routing fields (<a href=\"https://github.com/openai/openai-python/issues/4014\">#4014</a>) (<a href=\"https://github.com/openai/openai-python/commit/ffcc4c47279debd9daff6103da57dcde2efd38bd\">ffcc4c4</a>)</li>\n</ul>"
+      "timestamp": "2026-10-06 21:24:01",
+      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.25.0...v3.26.0\">3.26.0</a> (2026-10-06)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> add standalone Decisions support (<a href=\"https://github.com/openai/openai-python/issues/4033\">#4033</a>) (<a href=\"https://github.com/openai/openai-python/commit/b99e3e4eee03e99eebc2c762eee9d73fdd4b0eff\">b99e3e4</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.24.0...v3.25.0\">3.25.0</a> (2026-10-06)</h2>"
     },
     {
       "name": "LICENSE",
@@ -56640,7 +56640,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-02 15:48:50"
+  "last_updated": "2026-10-06 21:24:01"
 },
 {
   "name": "DEEPHYPER",
@@ -57250,7 +57250,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/NVIDIA/bionemo-framework/blob/HEAD/README.md",
-      "timestamp": "2026-08-25 19:43:27",
+      "timestamp": "2026-10-06 18:51:57",
       "content": "<h1>BioNeMo Recipes</h1>\n<p>BioNeMo Recipes provides an easy path for the biological foundation model training community to scale up transformer-based models efficiently. Rather than offering a batteries-included training framework, BioNeMo Recipes provide <strong>model checkpoints</strong> with TransformerEngine (TE) layers and <strong>training recipes</strong> that demonstrate how to achieve maximum throughput with popular open-source frameworks and fully sharded data parallel (FSDP) scale-out.</p>"
     },
     {
@@ -57261,7 +57261,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-08-25 19:43:27"
+  "last_updated": "2026-10-06 18:51:57"
 },
 {
   "name": "NEMO",
