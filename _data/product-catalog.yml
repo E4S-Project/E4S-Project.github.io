@@ -2254,14 +2254,14 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/Alpine-DAV/ascent/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-10-02 22:00:20",
-      "content": "<h1>Ascent Changelog</h1>\n<p>Notable changes to Ascent are documented in this file. This changelog started on 8/12/19 and does not document prior changes.</p>\n<p>The format is based on <a href=\"https://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>,\nand this project aspires to adhere to <a href=\"https://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>Unreleased</h2>\n<h3>Preferred dependency versions for ascent@develop</h3>\n<ul>\n<li>cmake@3.23 or newer</li>\n</ul>"
+      "timestamp": "2026-10-07 22:36:30",
+      "content": "<h1>Ascent Changelog</h1>\n<p>Notable changes to Ascent are documented in this file. This changelog started on 8/12/19 and does not document prior changes.</p>\n<p>The format is based on <a href=\"https://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>,\nand this project aspires to adhere to <a href=\"https://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>[0.9.6] - Released 2026-10-07</h2>\n<h3>Preferred dependency versions for ascent@0.9.6</h3>"
     },
     {
       "name": "LICENSE",
       "url": "https://github.com/Alpine-DAV/ascent/blob/HEAD/LICENSE",
-      "timestamp": "2025-07-09 15:38:44",
-      "content": "BSD 3-Clause License\n\nCopyright (c) 2015-2025, Lawrence Livermore National Security, LLC.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,"
+      "timestamp": "2026-10-07 22:36:30",
+      "content": "BSD 3-Clause License\n\nCopyright (c) 2015-2026, Lawrence Livermore National Security, LLC.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.\n\n2. Redistributions in binary form must reproduce the above copyright notice,"
     },
     {
       "name": "COPYRIGHT",
@@ -2614,7 +2614,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-02 22:00:20"
+  "last_updated": "2026-10-07 22:36:30"
 },
 {
   "name": "VISIT",
@@ -9504,8 +9504,8 @@
     {
       "name": "NEWS.md",
       "url": "https://github.com/flux-framework/flux-core/blob/HEAD/NEWS.md",
-      "timestamp": "2026-09-01 23:31:35",
-      "content": "<h2>flux-core version 0.89.0 - 2026-09-02</h2>\n<h2>New Features</h2>\n<ul>\n<li>kvs: enable nightly garbage collection on system instance (#7792)</li>\n<li>support <code>sdexec.allowed-devices</code> to extend allowed devices for all jobs\n   when <code>sdexec-constrain-resources</code> is set (#7793)</li>\n<li>job-manager: add effective queue policy to the queue-list RPC (#7784)</li>\n<li>return effective queue config in <code>job-manager.queue-list</code> and use it in</li>\n</ul>"
+      "timestamp": "2026-10-07 13:46:44",
+      "content": "<h2>flux-core version 0.90.0 - 2026-10-06</h2>\n<h2>New Features</h2>\n<ul>\n<li>rewrite <code>flux-run-{prolog,epilog,housekeeping}</code> in Python and restrict\n   environment (#7832)</li>\n<li>flux-sproc: add more information to ps output (#7826)</li>\n<li>allow signal sent at job expiration to be overridden with <code>--signal=SIG@0</code>\n   (#7827)</li>\n<li>sdexec: derive unique unit name from subprocess label (#7823)</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -10114,7 +10114,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-01 23:31:35"
+  "last_updated": "2026-10-07 13:46:44"
 },
 {
   "name": "FORTRILINOS",
@@ -11215,7 +11215,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/ginkgo-project/ginkgo/blob/HEAD/README.md",
-      "timestamp": "2026-10-02 13:22:49",
+      "timestamp": "2026-10-06 12:50:23",
       "content": "<p>&lt;p align=&quot;center&quot;&gt;&lt;/p&gt;</p>\n<p>&lt;div align=&quot;center&quot;&gt;</p>\n<p>|||||</p>\n<p>|||||</p>\n<p>&lt;/div&gt;</p>\n<p>Ginkgo is a high-performance numerical linear algebra library for many-core systems, with a\nfocus on solution of sparse linear systems. It is implemented using modern C++\n(you will need an at least C++17 compliant compiler to build it), with GPU kernels\nimplemented for NVIDIA, AMD and Intel GPUs.</p>"
     },
     {
@@ -12060,7 +12060,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-02 13:22:49"
+  "last_updated": "2026-10-06 12:50:23"
 },
 {
   "name": "HDF5",
@@ -12085,7 +12085,7 @@
     {
       "name": "release_docs/CHANGELOG.md",
       "url": "https://github.com/HDFGroup/hdf5/blob/HEAD/release_docs/CHANGELOG.md",
-      "timestamp": "2026-10-06 16:28:57",
+      "timestamp": "2026-10-07 16:03:55",
       "content": "<p>v2.3.0 --- July X , 2026</p>\n<h1>🔺 HDF5 Changelog</h1>\n<p>All notable changes to this project will be documented in this file. This document describes the differences between this release and the previous\nHDF5 release, platforms tested, and known problems in this release.</p>\n<p>For releases prior to version 2.0.0, please see the release.txt file and for more details check the HISTORY*.txt files in the HDF5 source.</p>"
     }
   ],
@@ -14161,7 +14161,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-06 16:28:57"
+  "last_updated": "2026-10-07 16:03:55"
 },
 {
   "name": "HPCTOOLKIT",
@@ -16685,8 +16685,8 @@
     {
       "name": "LICENSE",
       "url": "https://github.com/kokkos/kokkos/blob/HEAD/LICENSE",
-      "timestamp": "2025-11-12 21:26:55",
-      "content": " ==============================================================================\n Kokkos is under the Apache License v2.0 with LLVM Exceptions:\n ==============================================================================\n\n                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION"
+      "timestamp": "2026-10-07 17:59:07",
+      "content": "==============================================================================\nThe Kokkos Project is under the Apache License v2.0 with LLVM Exceptions:\n==============================================================================\n\n                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION"
     }
   ],
   "deployment": [
@@ -18682,7 +18682,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-01 11:58:14"
+  "last_updated": "2026-10-07 17:59:07"
 },
 {
   "name": "KOKKOS-KERNELS",
@@ -18707,8 +18707,8 @@
     {
       "name": "LICENSE",
       "url": "https://github.com/kokkos/kokkos-kernels/blob/HEAD/LICENSE",
-      "timestamp": "2026-03-09 22:11:36",
-      "content": " ==============================================================================\n Kokkos Kernels is under the Apache License v2.0 with LLVM Exceptions:\n ==============================================================================\n\n                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION"
+      "timestamp": "2026-10-08 00:07:07",
+      "content": "==============================================================================\nThe Kokkos Project is under the Apache License v2.0 with LLVM Exceptions:\n==============================================================================\n\n                                 Apache License\n                           Version 2.0, January 2004\n                        http://www.apache.org/licenses/\n\n    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION"
     }
   ],
   "deployment": [
@@ -19683,7 +19683,7 @@
       ]
     }
   ],
-  "last_updated": "2026-08-14 22:23:32"
+  "last_updated": "2026-10-08 00:07:07"
 },
 {
   "name": "MAGMA",
@@ -51760,7 +51760,7 @@
     {
       "name": "RELEASE-NOTES.md",
       "url": "https://github.com/LLNL/axom/blob/HEAD/RELEASE-NOTES.md",
-      "timestamp": "2026-10-02 23:29:03",
+      "timestamp": "2026-10-07 05:24:38",
       "content": "<h1>Axom Software Release Notes</h1>\n<p>Notes describing significant changes in each Axom release are documented in this file.</p>\n<p>The format of this file is based on <a href=\"http://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>.</p>\n<p>The Axom project release numbers follow <a href=\"http://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>[Unreleased] - Release date yyyy-mm-dd</h2>\n<h3>Added</h3>\n<ul>\n<li>Axom&#x27;s host execution-space default allocator is now a configure-time policy. The default policy is malloc, regardless</li>\n</ul>"
     },
     {
@@ -52062,7 +52062,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-02 23:29:03"
+  "last_updated": "2026-10-07 05:24:38"
 },
 {
   "name": "BRICKS",
@@ -57220,7 +57220,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/CEED/libCEED/blob/HEAD/README.md",
-      "timestamp": "2026-10-05 09:17:36",
+      "timestamp": "2026-10-07 17:49:19",
       "content": "<h1>libCEED: Efficient Extensible Discretization</h1>\n<h2>Summary and Purpose</h2>\n<p>libCEED provides fast algebra for element-based discretizations, designed for performance portability, run-time flexibility, and clean embedding in higher level libraries and applications.\nIt offers a C99 interface as well as bindings for Fortran, Python, Julia, and Rust.\nWhile our focus is on high-order finite elements, the approach is mostly algebraic and thus applicable to other discretizations in factored form, as explained in the <a href=\"https://libceed.org/en/latest/\">user manual</a> and API implementation portion of the <a href=\"https://libceed.org/en/latest/api/\">documentation</a>.</p>"
     },
     {
@@ -57237,7 +57237,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-05 09:17:36"
+  "last_updated": "2026-10-07 17:49:19"
 },
 {
   "name": "BIONEMO-FRAMEWORK",
