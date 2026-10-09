@@ -12085,7 +12085,7 @@
     {
       "name": "release_docs/CHANGELOG.md",
       "url": "https://github.com/HDFGroup/hdf5/blob/HEAD/release_docs/CHANGELOG.md",
-      "timestamp": "2026-10-07 16:03:55",
+      "timestamp": "2026-10-08 18:52:55",
       "content": "<p>v2.3.0 --- July X , 2026</p>\n<h1>🔺 HDF5 Changelog</h1>\n<p>All notable changes to this project will be documented in this file. This document describes the differences between this release and the previous\nHDF5 release, platforms tested, and known problems in this release.</p>\n<p>For releases prior to version 2.0.0, please see the release.txt file and for more details check the HISTORY*.txt files in the HDF5 source.</p>"
     }
   ],
@@ -14161,7 +14161,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-07 16:03:55"
+  "last_updated": "2026-10-08 18:52:55"
 },
 {
   "name": "HPCTOOLKIT",
@@ -56387,7 +56387,7 @@
     {
       "name": "RELEASE.md",
       "url": "https://github.com/pytorch/pytorch/blob/HEAD/RELEASE.md",
-      "timestamp": "2026-10-02 16:17:21",
+      "timestamp": "2026-10-08 04:19:08",
       "content": "<h1>Releasing PyTorch</h1>\n<ul>\n<li><a href=\"#release-compatibility-matrix\">Release Compatibility Matrix</a><ul>\n<li><a href=\"#pytorch-cuda-support-matrix\">PyTorch CUDA Support Matrix</a></li>\n</ul>\n</li>\n<li><a href=\"#release-cadence\">Release Cadence</a></li>\n<li><a href=\"#general-overview\">General Overview</a><ul>\n<li><a href=\"#frequently-asked-questions\">Frequently Asked Questions</a></li>\n</ul>\n</li>\n<li><a href=\"#cutting-a-release-branch-preparations\">Cutting a release branch preparations</a></li>\n<li><a href=\"#cutting-release-branches\">Cutting release branches</a></li>\n</ul>"
     },
     {
@@ -56398,7 +56398,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-05 22:01:16"
+  "last_updated": "2026-10-08 04:19:08"
 },
 {
   "name": "JAX",
@@ -56629,8 +56629,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-10-06 21:24:01",
-      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.25.0...v3.26.0\">3.26.0</a> (2026-10-06)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> add standalone Decisions support (<a href=\"https://github.com/openai/openai-python/issues/4033\">#4033</a>) (<a href=\"https://github.com/openai/openai-python/commit/b99e3e4eee03e99eebc2c762eee9d73fdd4b0eff\">b99e3e4</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.24.0...v3.25.0\">3.25.0</a> (2026-10-06)</h2>"
+      "timestamp": "2026-10-08 08:47:54",
+      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.26.0...v3.26.1\">3.26.1</a> (2026-10-08)</h2>\n<h3>Bug Fixes</h3>\n<ul>\n<li><strong>api:</strong> correct custom voice creation parameters (<a href=\"https://github.com/openai/openai-python/issues/4038\">#4038</a>) (<a href=\"https://github.com/openai/openai-python/commit/b9bc5c141d395165939eccfcfe42d1ed8219ec6a\">b9bc5c1</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.25.0...v3.26.0\">3.26.0</a> (2026-10-06)</h2>"
     },
     {
       "name": "LICENSE",
@@ -56640,7 +56640,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-06 21:24:01"
+  "last_updated": "2026-10-08 08:47:54"
 },
 {
   "name": "DEEPHYPER",
@@ -57220,7 +57220,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/CEED/libCEED/blob/HEAD/README.md",
-      "timestamp": "2026-10-07 17:49:19",
+      "timestamp": "2026-10-07 23:08:09",
       "content": "<h1>libCEED: Efficient Extensible Discretization</h1>\n<h2>Summary and Purpose</h2>\n<p>libCEED provides fast algebra for element-based discretizations, designed for performance portability, run-time flexibility, and clean embedding in higher level libraries and applications.\nIt offers a C99 interface as well as bindings for Fortran, Python, Julia, and Rust.\nWhile our focus is on high-order finite elements, the approach is mostly algebraic and thus applicable to other discretizations in factored form, as explained in the <a href=\"https://libceed.org/en/latest/\">user manual</a> and API implementation portion of the <a href=\"https://libceed.org/en/latest/api/\">documentation</a>.</p>"
     },
     {
@@ -57237,7 +57237,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-07 17:49:19"
+  "last_updated": "2026-10-07 23:08:09"
 },
 {
   "name": "BIONEMO-FRAMEWORK",
