@@ -14174,25 +14174,25 @@
     {
       "name": "README.md",
       "url": "https://gitlab.com/hpctoolkit/hpctoolkit/blob/HEAD/README.md",
-      "timestamp": "2025-08-29 17:23:36",
+      "timestamp": "Unknown",
       "content": "<h1>HPCToolkit</h1>\n<p>HPCToolkit is an integrated suite of tools for measurement and\nanalysis of program performance on computers ranging from multicore\ndesktop systems to GPU-accelerated supercomputers. HPCToolkit\nprovides accurate measurements of a program&#x27;s work, resource\nconsumption, and inefficiency, correlates these metrics with the\nprogram&#x27;s source code, works with multilingual, fully optimized</p>"
     },
     {
       "name": "CHANGELOG.md",
       "url": "https://gitlab.com/hpctoolkit/hpctoolkit/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-05-11 15:21:25",
+      "timestamp": "Unknown",
       "content": "<h1>Changelog</h1>\n<p>All notable changes and releases to this project will be documented in this file.</p>\n<p>Recent releases are formatted loosely based on <a href=\"https://common-changelog.org/\">Common Changelog</a>, a more restrictive subset of <a href=\"https://keepachangelog.com/en/1.1.0/\">Keep a Changelog</a>.</p>\n<h2>[2026.0.1]</h2>\n<h3>Changed</h3>\n<ul>\n<li>Adjust reporting of GPU topdown stall reasons for memory accesses on AMD GPUs. (<a href=\"hpctoolkit/hpctoolkit!1498\">!1498</a>) (John Mellor-Crummey)</li>\n</ul>"
     },
     {
       "name": "LICENSE",
       "url": "https://gitlab.com/hpctoolkit/hpctoolkit/blob/HEAD/LICENSE",
-      "timestamp": "2025-07-18 08:38:27",
+      "timestamp": "Unknown",
       "content": "LICENSES/Apache-2.0.txt"
     },
     {
       "name": "GOVERNANCE.md",
       "url": "https://gitlab.com/hpctoolkit/hpctoolkit/blob/HEAD/GOVERNANCE.md",
-      "timestamp": "2025-02-18 10:31:21",
+      "timestamp": "Unknown",
       "content": "<h1>Governance</h1>\n<p>This repository is part of the HPCToolkit Project, a series of LF Projects, LLC. Information on the governance of the HPCToolkit Project is available at https://gitlab.com/hpctoolkit/governance.</p>\n<p>The project leads for this repository are listed below:</p>\n<ul>\n<li>John Mellor-Crummey (<a href=\"https://gitlab.com/jmellorcrummey\">@jmellorcrummey</a>)</li>\n</ul>"
     }
   ],
@@ -14677,7 +14677,7 @@
       ]
     }
   ],
-  "last_updated": "2026-05-11 15:21:25"
+  "last_updated": "Unknown"
 },
 {
   "name": "HPX",
@@ -24867,13 +24867,13 @@
     {
       "name": "README.md",
       "url": "https://gitlab.com/petsc/petsc/blob/HEAD/README.md",
-      "timestamp": "2021-11-11 08:42:06",
+      "timestamp": "Unknown",
       "content": "<h1>README</h1>\n<h3>What is this repository for?</h3>\n<p>Host the PETSc numerical library package: https://petsc.org</p>\n<h3>How do I get set up?</h3>\n<ul>\n<li>Download: https://petsc.org/release/download</li>\n<li>Install: https://petsc.org/release/install</li>\n</ul>\n<h3>Contribution guidelines</h3>\n<ul>\n<li>See the file <a href=\"./CONTRIBUTING\">CONTRIBUTING</a></li>\n</ul>\n<h3>Who do I talk to?</h3>\n<ul>\n<li>https://gitlab.com/petsc/petsc/-/issues</li>\n<li>petsc-maint@mcs.anl.gov</li>\n</ul>"
     },
     {
       "name": "LICENSE",
       "url": "https://gitlab.com/petsc/petsc/blob/HEAD/LICENSE",
-      "timestamp": "2025-01-15 15:56:17",
+      "timestamp": "Unknown",
       "content": "Copyright (c) 1991-2025, UChicago Argonne, LLC and the PETSc Developers and Contributors\nAll rights reserved.\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n* Redistributions of source code must retain the above copyright notice, this\n  list of conditions and the following disclaimer.\n* Redistributions in binary form must reproduce the above copyright notice, this"
     }
   ],
@@ -26071,7 +26071,7 @@
       ]
     }
   ],
-  "last_updated": "2025-01-15 15:56:17"
+  "last_updated": "Unknown"
 },
 {
   "name": "PARALLEL-NETCDF",
@@ -50395,25 +50395,25 @@
     {
       "name": "README.md",
       "url": "https://gitlab.com/slepc/slepc/blob/HEAD/README.md",
-      "timestamp": "2025-09-29 18:18:57",
+      "timestamp": "Unknown",
       "content": "<h1>SLEPc: Scalable Library for Eigenvalue Problem Computations</h1>\n<ul>\n<li>Authors: Jose E. Roman, Carmen Campos, Lisandro Dalcin, Eloy Romero, Andres Tomas</li>\n<li>Organization: Universitat Politecnica de Valencia, Spain</li>\n<li>Website: https://slepc.upv.es</li>\n<li>Contact: slepc-maint@upv.es</li>\n</ul>\n<h2>Overview</h2>\n<p>SLEPc, the Scalable Library for Eigenvalue Problem Computations, is a software package for the solution of <em>large sparse eigenvalue problems</em> on parallel computers. It can be used for the solution of problems formulated in either standard or generalized form, as well as other related problems such as the singular value decomposition and the nonlinear eigenproblem.</p>"
     },
     {
       "name": "CHANGELOG.md",
       "url": "https://gitlab.com/slepc/slepc/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-09-28 23:00:26",
+      "timestamp": "Unknown",
       "content": "<h1>Changelog of SLEPc versions</h1>\n<h2>[3.26] - 2026-09-29</h2>\n<h3>Added</h3>\n<ul>\n<li>New strategy to solve linear systems associated with integration points in contour\n  integral solvers, see <code>EPSCISSSetStrategy()</code>. Now it is possible to use a linear solver\n  such as <code>KSPEKSM</code> that handles all integration points simultaneously in a single solve.</li>\n<li>Support for Kokkos vector types in <code>BVMAT</code>. Now eigensolves with <code>-mat_type aijkokkos</code></li>\n</ul>"
     },
     {
       "name": "CONTRIBUTING.md",
       "url": "https://gitlab.com/slepc/slepc/blob/HEAD/CONTRIBUTING.md",
-      "timestamp": "2020-04-22 15:40:26",
+      "timestamp": "Unknown",
       "content": "<p>Contributions are preferred via GitLab merge request to</p>\n<p>https://gitlab.com/slepc/slepc</p>\n<p>or via patches (<code>git send-email</code> or <code>git format-patch</code>) sent to\nslepc-maint@upv.es.  If you are planning a large contribution, we\nencourage you to discuss the concept with us and interact frequently\nto ensure that your effort is well-directed.</p>\n<p>SLEPc is distributed under a 2-clause BSD license (see LICENSE.md). The</p>"
     },
     {
       "name": "LICENSE.md",
       "url": "https://gitlab.com/slepc/slepc/blob/HEAD/LICENSE.md",
-      "timestamp": "2025-03-28 19:06:32",
+      "timestamp": "Unknown",
       "content": "<p>Copyright (c) 2002-2025, Universitat Politecnica de Valencia, Spain\nAll rights reserved.</p>\n<p>Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:</p>\n<ol>\n<li>Redistributions of source code must retain the above copyright notice, this\n   list of conditions and the following disclaimer.</li>\n<li>Redistributions in binary form must reproduce the above copyright notice,</li>\n</ol>"
     }
   ],
@@ -51083,7 +51083,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-28 23:00:26"
+  "last_updated": "Unknown"
 },
 {
   "name": "SWIFT-T",
@@ -54469,31 +54469,31 @@
     {
       "name": "README.md",
       "url": "https://gitlab.com/remikz/nccmp/blob/HEAD/README.md",
-      "timestamp": "2026-05-31 14:40:59",
+      "timestamp": "Unknown",
       "content": "<h1>nccmp - NetCDF Compare</h1>\n<h2>Overview</h2>\n<p><a href=\"https://sourceforge.net/projects/nccmp\">nccmp</a> compares two NetCDF files bitwise, semantically or with a user defined tolerance (absolute or relative percentage).  Parallel comparisons are done in local memory without requiring temporary files.  Highly recommended for regression testing scientific models or datasets in a test-driven development environment.</p>"
     },
     {
       "name": "NEWS",
       "url": "https://gitlab.com/remikz/nccmp/blob/HEAD/NEWS",
-      "timestamp": "2018-06-03 14:44:12",
+      "timestamp": "Unknown",
       "content": "See README.md\n"
     },
     {
       "name": "ChangeLog",
       "url": "https://gitlab.com/remikz/nccmp/blob/HEAD/ChangeLog",
-      "timestamp": "2018-06-03 14:44:12",
+      "timestamp": "Unknown",
       "content": "see Readme.md\n"
     },
     {
       "name": "AUTHORS",
       "url": "https://gitlab.com/remikz/nccmp/blob/HEAD/AUTHORS",
-      "timestamp": "2014-12-01 00:20:02",
+      "timestamp": "Unknown",
       "content": "Remik Ziemlinski\n"
     },
     {
       "name": "COPYING",
       "url": "https://gitlab.com/remikz/nccmp/blob/HEAD/COPYING",
-      "timestamp": "2014-12-01 00:20:02",
+      "timestamp": "Unknown",
       "content": "\t\t    GNU GENERAL PUBLIC LICENSE\n\t\t       Version 2, June 1991\n\n Copyright (C) 1989, 1991 Free Software Foundation, Inc.\n                          675 Mass Ave, Cambridge, MA 02139, USA\n Everyone is permitted to copy and distribute verbatim copies\n of this license document, but changing it is not allowed.\n\n\t\t\t    Preamble\n\n  The licenses for most software are designed to take away your\nfreedom to share and change it.  By contrast, the GNU General Public"
     }
   ],
@@ -54813,7 +54813,7 @@
       ]
     }
   ],
-  "last_updated": "2026-05-31 14:40:59"
+  "last_updated": "Unknown"
 },
 {
   "name": "NCO",
