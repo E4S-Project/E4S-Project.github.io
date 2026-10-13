@@ -21532,8 +21532,8 @@
     {
       "name": "CHANGES",
       "url": "https://github.com/pmodels/mpich/blob/HEAD/CHANGES",
-      "timestamp": "2026-10-03 01:56:27",
-      "content": "===============================================================================\n                               Changes in 5.1\n===============================================================================\n\n# Support building both MPICH-native and MPI Standard ABI libraries simultaneously\n  with --enable-mpi-abi=dual. This builds both libmpi.so and libmpi_abi.so.\n\n# Fortran 77/90/08 bindings now supported for MPI ABI builds."
+      "timestamp": "2026-10-12 20:39:50",
+      "content": "===============================================================================\n                               Changes in 5.1\n===============================================================================\n# Removed MPID collective interfaces. Device layer algorithms will be re-enabled\n  later with a flat CSEL selection. Binding layer call MPIR_Xxx_impl instead of\n  MPIR_Xxx.\n\n# Support building both MPICH-native and MPI Standard ABI libraries simultaneously"
     },
     {
       "name": "COPYRIGHT",
@@ -21660,7 +21660,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-03 01:56:27"
+  "last_updated": "2026-10-12 20:39:50"
 },
 {
   "name": "OPENMPI",
@@ -56423,12 +56423,12 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/google/jax/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-10-09 18:03:11",
+      "timestamp": "2026-10-12 16:57:14",
       "content": "<h1>Change log</h1>\n<p>Best viewed <a href=\"https://docs.jax.dev/en/latest/changelog.html\">here</a>.\nFor the changes specific to the experimental Pallas APIs,\nsee {ref}<code>pallas-changelog</code>.</p>\n<p>JAX follows Effort-based versioning; for a discussion of this and JAX&#x27;s API\ncompatibility policy, refer to {ref}<code>api-compatibility</code>. For the Python and\nNumPy version support policy, refer to {ref}<code>version-support-policy</code>.</p>\n<h2>Unreleased</h2>"
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-09 18:03:11"
+  "last_updated": "2026-10-12 16:57:14"
 },
 {
   "name": "PANDAS",
