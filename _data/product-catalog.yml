@@ -27001,12 +27001,12 @@
     {
       "name": "LICENSE-BSD-3-Clause",
       "url": "https://github.com/geopm/geopm/blob/HEAD/LICENSE-BSD-3-Clause",
-      "timestamp": "2025-03-08 01:12:50",
-      "content": "Copyright (c) 2015 - 2025 Intel Corporation\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n    1. Redistributions of source code must retain the above copyright\n       notice, this list of conditions and the following disclaimer.\n\n    2. Redistributions in binary form must reproduce the above\n       copyright notice, this list of conditions and the following"
+      "timestamp": "2026-10-17 00:05:30",
+      "content": "Copyright (c) 2015 - 2026 Intel Corporation\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are\nmet:\n\n    1. Redistributions of source code must retain the above copyright\n       notice, this list of conditions and the following disclaimer.\n\n    2. Redistributions in binary form must reproduce the above\n       copyright notice, this list of conditions and the following"
     }
   ],
   "deployment": [],
-  "last_updated": "2025-12-19 00:04:28"
+  "last_updated": "2026-10-17 00:05:30"
 },
 {
   "name": "GEOPM-SLURM",
@@ -32839,8 +32839,8 @@
     {
       "name": "CHANGES.current",
       "url": "https://github.com/swig/swig/blob/HEAD/CHANGES.current",
-      "timestamp": "2026-10-14 21:16:07",
-      "content": "Below are the changes for the current release.\nSee the CHANGES file for changes in older releases.\nSee the RELEASENOTES file for a summary of changes in each release.\nIssue # numbers mentioned below can be found on Github. For more details, add\nthe issue number to the end of the URL: https://github.com/swig/swig/issues/\n\nVersion 4.6.0 (in progress)\n===========================\n\n2026-10-14: wsfulton"
+      "timestamp": "2026-10-16 14:51:09",
+      "content": "Below are the changes for the current release.\nSee the CHANGES file for changes in older releases.\nSee the RELEASENOTES file for a summary of changes in each release.\nIssue # numbers mentioned below can be found on Github. For more details, add\nthe issue number to the end of the URL: https://github.com/swig/swig/issues/\n\nVersion 4.6.0 (in progress)\n===========================\n\n2026-10-16: vadz\n            [Python] Fix &quot;metaclass conflict&quot; TypeError when importing a module with a class using"
     },
     {
       "name": "LICENSE",
@@ -33792,7 +33792,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-14 21:16:07"
+  "last_updated": "2026-10-16 14:51:09"
 },
 {
   "name": "SYCLPARALLELSTL",
@@ -51760,7 +51760,7 @@
     {
       "name": "RELEASE-NOTES.md",
       "url": "https://github.com/LLNL/axom/blob/HEAD/RELEASE-NOTES.md",
-      "timestamp": "2026-10-15 03:53:09",
+      "timestamp": "2026-10-16 04:16:49",
       "content": "<h1>Axom Software Release Notes</h1>\n<p>Notes describing significant changes in each Axom release are documented in this file.</p>\n<p>The format of this file is based on <a href=\"http://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>.</p>\n<p>The Axom project release numbers follow <a href=\"http://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>[Unreleased] - Release date yyyy-mm-dd</h2>\n<h3>Added</h3>\n<ul>\n<li>Axom&#x27;s host execution-space default allocator is now a configure-time policy. The default policy is malloc, regardless</li>\n</ul>"
     },
     {
@@ -52062,7 +52062,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-15 03:53:09"
+  "last_updated": "2026-10-16 04:16:49"
 },
 {
   "name": "BRICKS",
@@ -56423,12 +56423,12 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/google/jax/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-10-14 21:12:57",
+      "timestamp": "2026-10-16 23:00:54",
       "content": "<h1>Change log</h1>\n<p>Best viewed <a href=\"https://docs.jax.dev/en/latest/changelog.html\">here</a>.\nFor the changes specific to the experimental Pallas APIs,\nsee {ref}<code>pallas-changelog</code>.</p>\n<p>JAX follows Effort-based versioning; for a discussion of this and JAX&#x27;s API\ncompatibility policy, refer to {ref}<code>api-compatibility</code>. For the Python and\nNumPy version support policy, refer to {ref}<code>version-support-policy</code>.</p>\n<h2>Unreleased</h2>"
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-14 21:12:57"
+  "last_updated": "2026-10-16 23:00:54"
 },
 {
   "name": "PANDAS",
@@ -56629,8 +56629,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-10-14 05:32:50",
-      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.30.0...v3.31.0\">3.31.0</a> (2026-10-14)</h2>\n<h3>Features</h3>\n<ul>\n<li>add browser and computer toolsets (1/4) (<a href=\"https://github.com/openai/openai-python/issues/4073\">#4073</a>) (<a href=\"https://github.com/openai/openai-python/commit/47b9e4e95e44b1e825dc4e0753967c65d0733445\">47b9e4e</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.29.0...v3.30.0\">3.30.0</a> (2026-10-14)</h2>"
+      "timestamp": "2026-10-17 00:23:10",
+      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.32.0...v3.33.0\">3.33.0</a> (2026-10-16)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> add safety identifiers to image requests and responses (<a href=\"https://github.com/openai/openai-python/issues/4093\">#4093</a>) (<a href=\"https://github.com/openai/openai-python/commit/c969e32ebb325b5910aff4543187fedc5527e172\">c969e32</a>)</li>\n<li><strong>api:</strong> share Decisions cache breakpoint parameter type (<a href=\"https://github.com/openai/openai-python/issues/4092\">#4092</a>) (<a href=\"https://github.com/openai/openai-python/commit/f7cefdaf059a3e6856d49b4bc2e2e5fbdef8193b\">f7cefda</a>)</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -56640,7 +56640,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-14 05:32:50"
+  "last_updated": "2026-10-17 00:23:10"
 },
 {
   "name": "DEEPHYPER",
