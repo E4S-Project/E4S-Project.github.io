@@ -56411,7 +56411,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/google/jax/blob/HEAD/README.md",
-      "timestamp": "2026-09-29 04:22:02",
+      "timestamp": "2026-10-07 19:25:41",
       "content": "<p>&lt;div align=&quot;center&quot;&gt;\n&lt;/img&gt;\n&lt;/div&gt;</p>\n<h1>Transformable numerical computing at scale</h1>\n<p><a href=\"#transformations\"><strong>Transformations</strong></a>\n| <a href=\"#scaling\"><strong>Scaling</strong></a>\n| <a href=\"#installation\"><strong>Install guide</strong></a>\n| <a href=\"https://docs.jax.dev/en/latest/changelog.html\"><strong>Change logs</strong></a>\n| <a href=\"https://docs.jax.dev/en/latest/\"><strong>Reference docs</strong></a></p>\n<h2>What is JAX?</h2>\n<p>JAX is a Python library for accelerator-oriented array computation and program transformation,</p>"
     },
     {
@@ -56623,14 +56623,14 @@
     {
       "name": "README.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/README.md",
-      "timestamp": "2026-09-23 16:46:15",
+      "timestamp": "2026-10-17 08:13:42",
       "content": "<h1>OpenAI Python API library</h1>\n<p><a href=\"https://pypi.org/project/openai/\">)</a></p>\n<p>The OpenAI Python library provides convenient access to the OpenAI REST API from any Python 3.10+\napplication. The library includes type definitions for all request params and response fields,\nand offers both synchronous and asynchronous clients powered by <a href=\"https://httpx2.pydantic.dev/\">HTTPX2</a>.</p>\n<p>It is generated from our <a href=\"https://github.com/openai/openai-openapi\">OpenAPI specification</a>.</p>"
     },
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-10-17 00:23:10",
-      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.32.0...v3.33.0\">3.33.0</a> (2026-10-16)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> add safety identifiers to image requests and responses (<a href=\"https://github.com/openai/openai-python/issues/4093\">#4093</a>) (<a href=\"https://github.com/openai/openai-python/commit/c969e32ebb325b5910aff4543187fedc5527e172\">c969e32</a>)</li>\n<li><strong>api:</strong> share Decisions cache breakpoint parameter type (<a href=\"https://github.com/openai/openai-python/issues/4092\">#4092</a>) (<a href=\"https://github.com/openai/openai-python/commit/f7cefdaf059a3e6856d49b4bc2e2e5fbdef8193b\">f7cefda</a>)</li>\n</ul>"
+      "timestamp": "2026-10-18 00:59:54",
+      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.35.0...v3.35.1\">3.35.1</a> (2026-10-18)</h2>\n<h3>Bug Fixes</h3>\n<ul>\n<li>preserve beta Realtime byte reads on websockets 13 (<a href=\"https://github.com/openai/openai-python/issues/4102\">#4102</a>) (<a href=\"https://github.com/openai/openai-python/commit/5766349b2eda3ef63389fe8a30b6a9a1082b33e9\">5766349</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.34.0...v3.35.0\">3.35.0</a> (2026-10-17)</h2>"
     },
     {
       "name": "LICENSE",
@@ -56640,7 +56640,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-17 00:23:10"
+  "last_updated": "2026-10-18 00:59:54"
 },
 {
   "name": "DEEPHYPER",
