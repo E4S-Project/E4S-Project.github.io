@@ -16679,8 +16679,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/kokkos/kokkos/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-08-18 12:24:53",
-      "content": "<h1>CHANGELOG</h1>\n<h2>5.2.1</h2>\n<p><a href=\"https://github.com/kokkos/kokkos/compare/5.2.0...5.2.1\">Full Changelog</a></p>\n<h3>Bug Fixes</h3>\n<ul>\n<li>Fix inverted <code>NDEBUG</code>logic in mdspan precondition checking <a href=\"https://github.com/kokkos/kokkos/pull/9405\">#9405</a></li>\n<li>HIP: Synchronize before freeing device memory when using async allocations <a href=\"https://github.com/kokkos/kokkos/pull/9433\">#9433</a></li>\n</ul>\n<h2>5.2.0</h2>\n<p><a href=\"https://github.com/kokkos/kokkos/compare/5.1.1...5.2.0\">Full Changelog</a></p>"
+      "timestamp": "2026-10-15 21:32:31",
+      "content": "<h1>CHANGELOG</h1>\n<h2>5.2.2</h2>\n<p><a href=\"https://github.com/kokkos/kokkos/compare/5.2.1...5.2.2\">Full Changelog</a></p>\n<h3>Bug Fixes</h3>\n<ul>\n<li>Workaround warnings with std::pair as subview slice specifiers in relaxed constexpr mode <a href=\"https://github.com/kokkos/kokkos/pull/9467\">#9467</a></li>\n</ul>\n<h2>5.2.1</h2>\n<p><a href=\"https://github.com/kokkos/kokkos/compare/5.2.0...5.2.1\">Full Changelog</a></p>\n<h3>Bug Fixes</h3>\n<ul>\n<li>Fix inverted <code>NDEBUG</code>logic in mdspan precondition checking <a href=\"https://github.com/kokkos/kokkos/pull/9405\">#9405</a></li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -18682,7 +18682,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-07 17:59:07"
+  "last_updated": "2026-10-15 21:32:31"
 },
 {
   "name": "KOKKOS-KERNELS",
@@ -20888,7 +20888,7 @@
     {
       "name": "CHANGELOG",
       "url": "https://github.com/mfem/mfem/blob/HEAD/CHANGELOG",
-      "timestamp": "2026-10-09 20:00:18",
+      "timestamp": "2026-10-13 21:43:32",
       "content": "                    Finite Element Discretization Library\n                                   __\n                       _ __ ___   / _|  ___  _ __ ___\n                      | &#x27;_ ` _ \\ | |_  / _ \\| &#x27;_ ` _ \\\n                      | | | | | ||  _||  __/| | | | | |\n\n                               https://mfem.org\n\nVersion 4.10.1 (development)\n============================\n\nDiscretization improvements"
     },
     {
@@ -21513,7 +21513,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-09 20:00:18"
+  "last_updated": "2026-10-13 21:43:32"
 },
 {
   "name": "MPICH",
@@ -56423,12 +56423,12 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/google/jax/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-10-16 23:00:54",
+      "timestamp": "2026-10-19 12:56:35",
       "content": "<h1>Change log</h1>\n<p>Best viewed <a href=\"https://docs.jax.dev/en/latest/changelog.html\">here</a>.\nFor the changes specific to the experimental Pallas APIs,\nsee {ref}<code>pallas-changelog</code>.</p>\n<p>JAX follows Effort-based versioning; for a discussion of this and JAX&#x27;s API\ncompatibility policy, refer to {ref}<code>api-compatibility</code>. For the Python and\nNumPy version support policy, refer to {ref}<code>version-support-policy</code>.</p>\n<h2>Unreleased</h2>"
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-16 23:00:54"
+  "last_updated": "2026-10-19 12:56:35"
 },
 {
   "name": "PANDAS",
