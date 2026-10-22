@@ -12085,7 +12085,7 @@
     {
       "name": "release_docs/CHANGELOG.md",
       "url": "https://github.com/HDFGroup/hdf5/blob/HEAD/release_docs/CHANGELOG.md",
-      "timestamp": "2026-10-20 20:59:04",
+      "timestamp": "2026-10-21 18:52:39",
       "content": "<p>v2.3.0 --- July X , 2026</p>\n<h1>🔺 HDF5 Changelog</h1>\n<p>All notable changes to this project will be documented in this file. This document describes the differences between this release and the previous\nHDF5 release, platforms tested, and known problems in this release.</p>\n<p>For releases prior to version 2.0.0, please see the release.txt file and for more details check the HISTORY*.txt files in the HDF5 source.</p>"
     }
   ],
@@ -14161,7 +14161,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-20 20:59:04"
+  "last_updated": "2026-10-21 18:52:39"
 },
 {
   "name": "HPCTOOLKIT",
@@ -20888,7 +20888,7 @@
     {
       "name": "CHANGELOG",
       "url": "https://github.com/mfem/mfem/blob/HEAD/CHANGELOG",
-      "timestamp": "2026-10-20 03:11:06",
+      "timestamp": "2026-10-20 19:27:17",
       "content": "                    Finite Element Discretization Library\n                                   __\n                       _ __ ___   / _|  ___  _ __ ___\n                      | &#x27;_ ` _ \\ | |_  / _ \\| &#x27;_ ` _ \\\n                      | | | | | ||  _||  __/| | | | | |\n\n                               https://mfem.org\n\nVersion 4.10.1 (development)\n============================\n\nDiscretization improvements"
     },
     {
@@ -21513,7 +21513,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-20 03:11:06"
+  "last_updated": "2026-10-20 19:27:17"
 },
 {
   "name": "MPICH",
@@ -21781,7 +21781,7 @@
     {
       "name": "COPYING",
       "url": "https://github.com/Qthreads/qthreads/blob/HEAD/COPYING",
-      "timestamp": "2012-08-30 14:23:10",
+      "timestamp": "2026-10-21 22:19:02",
       "content": "Copyright 2007 Sandia Corporation. Under the terms of Contract\nDE-AC04-94AL85000 with Sandia Corporation, the U.S. Government retains\ncertain rights in this software.\n\n* Copyright (c) 2007, Sandia Corporation\n* All rights reserved.\n*\n* Redistribution and use in source and binary forms, with or without\n* modification, are permitted provided that the following conditions are met:\n*     * Redistributions of source code must retain the above copyright notice,"
     }
   ],
@@ -22432,7 +22432,7 @@
       ]
     }
   ],
-  "last_updated": "2026-01-28 22:37:43"
+  "last_updated": "2026-10-21 22:19:02"
 },
 {
   "name": "BOLT",
@@ -56423,12 +56423,12 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/google/jax/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-10-20 15:15:15",
+      "timestamp": "2026-10-20 18:20:39",
       "content": "<h1>Change log</h1>\n<p>Best viewed <a href=\"https://docs.jax.dev/en/latest/changelog.html\">here</a>.\nFor the changes specific to the experimental Pallas APIs,\nsee {ref}<code>pallas-changelog</code>.</p>\n<p>JAX follows Effort-based versioning; for a discussion of this and JAX&#x27;s API\ncompatibility policy, refer to {ref}<code>api-compatibility</code>. For the Python and\nNumPy version support policy, refer to {ref}<code>version-support-policy</code>.</p>\n<h2>Unreleased</h2>"
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-20 15:15:15"
+  "last_updated": "2026-10-20 18:20:39"
 },
 {
   "name": "PANDAS",
@@ -56629,8 +56629,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-10-18 00:59:54",
-      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.35.0...v3.35.1\">3.35.1</a> (2026-10-18)</h2>\n<h3>Bug Fixes</h3>\n<ul>\n<li>preserve beta Realtime byte reads on websockets 13 (<a href=\"https://github.com/openai/openai-python/issues/4102\">#4102</a>) (<a href=\"https://github.com/openai/openai-python/commit/5766349b2eda3ef63389fe8a30b6a9a1082b33e9\">5766349</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.34.0...v3.35.0\">3.35.0</a> (2026-10-17)</h2>"
+      "timestamp": "2026-10-21 15:46:27",
+      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.35.1...v3.36.0\">3.36.0</a> (2026-10-21)</h2>\n<h3>Features</h3>\n<ul>\n<li>add Vertex AI support for the Responses API (<a href=\"https://github.com/openai/openai-python/issues/4139\">#4139</a>) (<a href=\"https://github.com/openai/openai-python/commit/3e63d33f6258f47285007aaee30df251d5127820\">3e63d33</a>)</li>\n<li><strong>api:</strong> add 30-minute cache-write usage counts (<a href=\"https://github.com/openai/openai-python/issues/4111\">#4111</a>) (<a href=\"https://github.com/openai/openai-python/commit/5589146d738e0c38758e117b8383a02c2e4e2ee7\">5589146</a>)</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -56640,7 +56640,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-18 00:59:54"
+  "last_updated": "2026-10-21 15:46:27"
 },
 {
   "name": "DEEPHYPER",
