@@ -12085,7 +12085,7 @@
     {
       "name": "release_docs/CHANGELOG.md",
       "url": "https://github.com/HDFGroup/hdf5/blob/HEAD/release_docs/CHANGELOG.md",
-      "timestamp": "2026-10-21 18:52:39",
+      "timestamp": "2026-10-22 23:37:02",
       "content": "<p>v2.3.0 --- July X , 2026</p>\n<h1>🔺 HDF5 Changelog</h1>\n<p>All notable changes to this project will be documented in this file. This document describes the differences between this release and the previous\nHDF5 release, platforms tested, and known problems in this release.</p>\n<p>For releases prior to version 2.0.0, please see the release.txt file and for more details check the HISTORY*.txt files in the HDF5 source.</p>"
     }
   ],
@@ -14161,7 +14161,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-21 18:52:39"
+  "last_updated": "2026-10-22 23:37:02"
 },
 {
   "name": "HPCTOOLKIT",
@@ -55241,7 +55241,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/plumed/plumed2/blob/HEAD/README.md",
-      "timestamp": "2025-09-22 07:23:38",
+      "timestamp": "2026-10-22 17:41:08",
       "content": "<h2>Branches and releases</h2>\n<p>Several branches and tags are stored on the git repository.</p>\n<p>Branches named <code>v2.X</code> correspond to release branches.</p>\n<p>Master branch may contain non tested features and is not expected to be used by non-developers.\nIt typically contains features that will be available on the next release.</p>\n<p>Tags named <code>v2.XbY</code> correspond to beta releases, use it with care.\nTags named <code>v2.X.Y</code> correspond to official releases, use the latest available.</p>"
     },
     {
@@ -55507,7 +55507,7 @@
       ]
     }
   ],
-  "last_updated": "2025-09-22 07:23:38"
+  "last_updated": "2026-10-22 17:41:08"
 },
 {
   "name": "METALL",
@@ -56599,7 +56599,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/keras-team/keras/blob/HEAD/README.md",
-      "timestamp": "2026-07-30 16:38:46",
+      "timestamp": "2026-10-22 22:10:54",
       "content": "<h1>Keras 3: Deep Learning for Humans</h1>\n<p>Keras 3 is a multi-backend deep learning framework, with support for JAX, TensorFlow, PyTorch, and OpenVINO (for inference-only).\nEffortlessly build and train models for computer vision, natural language processing, audio processing,\ntimeseries forecasting, recommender systems, etc.</p>\n<ul>\n<li><strong>Accelerated model development</strong>: Ship deep learning solutions faster thanks to the high-level UX of Keras</li>\n</ul>"
     },
     {
@@ -56610,7 +56610,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-07-30 16:38:46"
+  "last_updated": "2026-10-22 22:10:54"
 },
 {
   "name": "OPENAI-PYTHON",
@@ -56623,14 +56623,14 @@
     {
       "name": "README.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/README.md",
-      "timestamp": "2026-10-17 08:13:42",
+      "timestamp": "2026-10-22 05:11:38",
       "content": "<h1>OpenAI Python API library</h1>\n<p><a href=\"https://pypi.org/project/openai/\">)</a></p>\n<p>The OpenAI Python library provides convenient access to the OpenAI REST API from any Python 3.10+\napplication. The library includes type definitions for all request params and response fields,\nand offers both synchronous and asynchronous clients powered by <a href=\"https://httpx2.pydantic.dev/\">HTTPX2</a>.</p>\n<p>It is generated from our <a href=\"https://github.com/openai/openai-openapi\">OpenAPI specification</a>.</p>"
     },
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-10-21 15:46:27",
-      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.35.1...v3.36.0\">3.36.0</a> (2026-10-21)</h2>\n<h3>Features</h3>\n<ul>\n<li>add Vertex AI support for the Responses API (<a href=\"https://github.com/openai/openai-python/issues/4139\">#4139</a>) (<a href=\"https://github.com/openai/openai-python/commit/3e63d33f6258f47285007aaee30df251d5127820\">3e63d33</a>)</li>\n<li><strong>api:</strong> add 30-minute cache-write usage counts (<a href=\"https://github.com/openai/openai-python/issues/4111\">#4111</a>) (<a href=\"https://github.com/openai/openai-python/commit/5589146d738e0c38758e117b8383a02c2e4e2ee7\">5589146</a>)</li>\n</ul>"
+      "timestamp": "2026-10-22 19:57:17",
+      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.36.1...v3.37.0\">3.37.0</a> (2026-10-22)</h2>\n<h3>⚠ BREAKING CHANGES</h3>\n<ul>\n<li><strong>api:</strong> This minor release includes a breaking change to Decisions types. In Live response models, question <code>instructions</code> can now be a string or a list of structured text, image, or JSON parts; check <code>isinstance(question.instructions, str)</code> before using string operations and handle the structured form. Decisions request input types also include additional message roles and tool-history items, so update exhaustive type checks accordingly. Existing string instructions and <code>DecisionInputMessageParam</code> user-message inputs remain supported.</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -56640,7 +56640,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-21 15:46:27"
+  "last_updated": "2026-10-22 19:57:17"
 },
 {
   "name": "DEEPHYPER",
@@ -57220,7 +57220,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/CEED/libCEED/blob/HEAD/README.md",
-      "timestamp": "2026-10-11 08:50:15",
+      "timestamp": "2026-10-21 19:17:51",
       "content": "<h1>libCEED: Efficient Extensible Discretization</h1>\n<h2>Summary and Purpose</h2>\n<p>libCEED provides fast algebra for element-based discretizations, designed for performance portability, run-time flexibility, and clean embedding in higher level libraries and applications.\nIt offers a C99 interface as well as bindings for Fortran, Python, Julia, and Rust.\nWhile our focus is on high-order finite elements, the approach is mostly algebraic and thus applicable to other discretizations in factored form, as explained in the <a href=\"https://libceed.org/en/latest/\">user manual</a> and API implementation portion of the <a href=\"https://libceed.org/en/latest/api/\">documentation</a>.</p>"
     },
     {
@@ -57237,7 +57237,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-11 08:50:15"
+  "last_updated": "2026-10-21 19:17:51"
 },
 {
   "name": "BIONEMO-FRAMEWORK",
