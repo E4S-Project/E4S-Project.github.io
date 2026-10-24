@@ -20888,7 +20888,7 @@
     {
       "name": "CHANGELOG",
       "url": "https://github.com/mfem/mfem/blob/HEAD/CHANGELOG",
-      "timestamp": "2026-10-20 19:27:17",
+      "timestamp": "2026-10-23 19:51:07",
       "content": "                    Finite Element Discretization Library\n                                   __\n                       _ __ ___   / _|  ___  _ __ ___\n                      | &#x27;_ ` _ \\ | |_  / _ \\| &#x27;_ ` _ \\\n                      | | | | | ||  _||  __/| | | | | |\n\n                               https://mfem.org\n\nVersion 4.10.1 (development)\n============================\n\nDiscretization improvements"
     },
     {
@@ -21513,7 +21513,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-20 19:27:17"
+  "last_updated": "2026-10-23 19:51:07"
 },
 {
   "name": "MPICH",
@@ -56357,7 +56357,7 @@
     {
       "name": "RELEASE.md",
       "url": "https://github.com/tensorflow/tensorflow/blob/HEAD/RELEASE.md",
-      "timestamp": "2026-10-14 22:26:18",
+      "timestamp": "2026-10-17 13:12:24",
       "content": "<h1>Release 2.23.0</h1>\n<h2>TensorFlow</h2>\n<p>&lt;INSERT SMALL BLURB ABOUT RELEASE FOCUS AREA AND POTENTIAL TOOLCHAIN CHANGES&gt;</p>\n<h3>Breaking Changes</h3>\n<ul>\n<li>&lt;BREAKING CHANGES GO HERE&gt;</li>\n</ul>\n<h3>Known Caveats</h3>\n<ul>\n<li>&lt;CAVEATS REGARDING THE RELEASE (BUT NOT BREAKING CHANGES).&gt;</li>\n</ul>\n<h3>Major Features and Improvements</h3>\n<ul>\n<li><code>tf.lite</code><ul>\n<li>Adds blockwise quantization support in the converter and <code>quant_spec</code> metadata in <code>FullyConnectedOptions</code>.</li>\n</ul>\n</li>\n</ul>"
     },
     {
@@ -56368,7 +56368,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-14 22:26:18"
+  "last_updated": "2026-10-17 13:12:24"
 },
 {
   "name": "PYTORCH",
@@ -56423,12 +56423,12 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/google/jax/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-10-20 18:20:39",
+      "timestamp": "2026-10-23 15:53:49",
       "content": "<h1>Change log</h1>\n<p>Best viewed <a href=\"https://docs.jax.dev/en/latest/changelog.html\">here</a>.\nFor the changes specific to the experimental Pallas APIs,\nsee {ref}<code>pallas-changelog</code>.</p>\n<p>JAX follows Effort-based versioning; for a discussion of this and JAX&#x27;s API\ncompatibility policy, refer to {ref}<code>api-compatibility</code>. For the Python and\nNumPy version support policy, refer to {ref}<code>version-support-policy</code>.</p>\n<h2>Unreleased</h2>"
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-20 18:20:39"
+  "last_updated": "2026-10-23 15:53:49"
 },
 {
   "name": "PANDAS",
@@ -56599,7 +56599,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/keras-team/keras/blob/HEAD/README.md",
-      "timestamp": "2026-10-22 22:10:54",
+      "timestamp": "2026-10-23 19:56:37",
       "content": "<h1>Keras 3: Deep Learning for Humans</h1>\n<p>Keras 3 is a multi-backend deep learning framework, with support for JAX, TensorFlow, PyTorch, and OpenVINO (for inference-only).\nEffortlessly build and train models for computer vision, natural language processing, audio processing,\ntimeseries forecasting, recommender systems, etc.</p>\n<ul>\n<li><strong>Accelerated model development</strong>: Ship deep learning solutions faster thanks to the high-level UX of Keras</li>\n</ul>"
     },
     {
@@ -56610,7 +56610,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-22 22:10:54"
+  "last_updated": "2026-10-23 19:56:37"
 },
 {
   "name": "OPENAI-PYTHON",
@@ -57220,7 +57220,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/CEED/libCEED/blob/HEAD/README.md",
-      "timestamp": "2026-10-21 19:17:51",
+      "timestamp": "2026-10-23 15:53:36",
       "content": "<h1>libCEED: Efficient Extensible Discretization</h1>\n<h2>Summary and Purpose</h2>\n<p>libCEED provides fast algebra for element-based discretizations, designed for performance portability, run-time flexibility, and clean embedding in higher level libraries and applications.\nIt offers a C99 interface as well as bindings for Fortran, Python, Julia, and Rust.\nWhile our focus is on high-order finite elements, the approach is mostly algebraic and thus applicable to other discretizations in factored form, as explained in the <a href=\"https://libceed.org/en/latest/\">user manual</a> and API implementation portion of the <a href=\"https://libceed.org/en/latest/api/\">documentation</a>.</p>"
     },
     {
@@ -57237,7 +57237,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-21 19:17:51"
+  "last_updated": "2026-10-23 15:53:36"
 },
 {
   "name": "BIONEMO-FRAMEWORK",
