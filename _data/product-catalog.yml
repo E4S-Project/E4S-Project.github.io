@@ -12085,7 +12085,7 @@
     {
       "name": "release_docs/CHANGELOG.md",
       "url": "https://github.com/HDFGroup/hdf5/blob/HEAD/release_docs/CHANGELOG.md",
-      "timestamp": "2026-10-22 23:37:02",
+      "timestamp": "2026-10-24 12:08:51",
       "content": "<p>v2.3.0 --- July X , 2026</p>\n<h1>🔺 HDF5 Changelog</h1>\n<p>All notable changes to this project will be documented in this file. This document describes the differences between this release and the previous\nHDF5 release, platforms tested, and known problems in this release.</p>\n<p>For releases prior to version 2.0.0, please see the release.txt file and for more details check the HISTORY*.txt files in the HDF5 source.</p>"
     }
   ],
@@ -14161,7 +14161,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-22 23:37:02"
+  "last_updated": "2026-10-24 12:08:51"
 },
 {
   "name": "HPCTOOLKIT",
@@ -32839,8 +32839,8 @@
     {
       "name": "CHANGES.current",
       "url": "https://github.com/swig/swig/blob/HEAD/CHANGES.current",
-      "timestamp": "2026-10-16 14:51:09",
-      "content": "Below are the changes for the current release.\nSee the CHANGES file for changes in older releases.\nSee the RELEASENOTES file for a summary of changes in each release.\nIssue # numbers mentioned below can be found on Github. For more details, add\nthe issue number to the end of the URL: https://github.com/swig/swig/issues/\n\nVersion 4.6.0 (in progress)\n===========================\n\n2026-10-16: vadz\n            [Python] Fix &quot;metaclass conflict&quot; TypeError when importing a module with a class using"
+      "timestamp": "2026-10-24 18:22:12",
+      "content": "Below are the changes for the current release.\nSee the CHANGES file for changes in older releases.\nSee the RELEASENOTES file for a summary of changes in each release.\nIssue # numbers mentioned below can be found on Github. For more details, add\nthe issue number to the end of the URL: https://github.com/swig/swig/issues/\n\nVersion 4.6.0 (in progress)\n===========================\n\n2026-10-24: wsfulton"
     },
     {
       "name": "LICENSE",
@@ -33792,7 +33792,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-16 14:51:09"
+  "last_updated": "2026-10-24 18:22:12"
 },
 {
   "name": "SYCLPARALLELSTL",
@@ -50401,8 +50401,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://gitlab.com/slepc/slepc/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-09-28 23:00:26",
-      "content": "<h1>Changelog of SLEPc versions</h1>\n<h2>[3.26] - 2026-09-29</h2>\n<h3>Added</h3>\n<ul>\n<li>New strategy to solve linear systems associated with integration points in contour\n  integral solvers, see <code>EPSCISSSetStrategy()</code>. Now it is possible to use a linear solver\n  such as <code>KSPEKSM</code> that handles all integration points simultaneously in a single solve.</li>\n<li>Support for Kokkos vector types in <code>BVMAT</code>. Now eigensolves with <code>-mat_type aijkokkos</code></li>\n</ul>"
+      "timestamp": "2026-10-24 13:16:30",
+      "content": "<h1>Changelog of SLEPc versions</h1>\n<h2>[unreleased]</h2>\n<h3>Deprecated</h3>\n<ul>\n<li><code>RGCanUseConjugates()</code> is deprecated, use <code>RGCheckSymmetricContour()</code> instead.</li>\n</ul>\n<h2>[3.26] - 2026-09-29</h2>\n<h3>Added</h3>\n<ul>\n<li>New strategy to solve linear systems associated with integration points in contour\n  integral solvers, see <code>EPSCISSSetStrategy()</code>. Now it is possible to use a linear solver\n  such as <code>KSPEKSM</code> that handles all integration points simultaneously in a single solve.</li>\n</ul>"
     },
     {
       "name": "CONTRIBUTING.md",
@@ -51083,7 +51083,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-28 23:00:26"
+  "last_updated": "2026-10-24 13:16:30"
 },
 {
   "name": "SWIFT-T",
