@@ -11,7 +11,7 @@
     {
       "name": "ReadMe.md",
       "url": "https://github.com/ornladios/ADIOS2/blob/HEAD/ReadMe.md",
-      "timestamp": "2026-09-08 23:57:06",
+      "timestamp": "2026-10-27 20:51:03",
       "content": "<h1>ADIOS2 : The Adaptable Input Output System version 2</h1>\n<p>ADIOS2 is an adaptable, scalable, and unified framework for scientific data I/O.\nIt transports self-describing variables and attributes across files, networks, and memory using a single API, and is used in production on the world&#x27;s largest supercomputers.</p>\n<h3>Features</h3>\n<ul>\n<li><strong>Unified I/O API</strong>: same interface for files, wide-area networks, and in-memory staging; switch transport without changing application code</li>\n</ul>"
     },
     {
@@ -655,7 +655,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-08 23:57:06"
+  "last_updated": "2026-10-27 20:51:03"
 },
 {
   "name": "STAT",
@@ -14690,7 +14690,7 @@
     {
       "name": "README.rst",
       "url": "https://github.com/STEllAR-GROUP/hpx/blob/HEAD/README.rst",
-      "timestamp": "2026-08-17 14:48:49",
+      "timestamp": "2026-10-27 13:14:39",
       "content": "..\n    Copyright (c) 2007-2026 Louisiana State University\n\n    SPDX-License-Identifier: BSL-1.0\n    Distributed under the Boost Software License, Version 1.0. (See accompanying\n    file LICENSE_1_0.txt or copy at http://www.boost.org/LICENSE_1_0.txt)\n\n|github_status| |codacy_quality| |OpenSSF| |CFF| |JOSS| |zenodo_doi|\n\nDocumentation: `latest &lt;https://docs.hpx.dev/latest/html/index.html&gt;`_,\n`development (master) &lt;https://docs.hpx.dev/branches/master/html/index.html&gt;`_, also |deepwiki|"
     },
     {
@@ -15355,7 +15355,7 @@
       ]
     }
   ],
-  "last_updated": "2026-08-17 14:48:49"
+  "last_updated": "2026-10-27 13:14:39"
 },
 {
   "name": "HYPRE",
@@ -51760,7 +51760,7 @@
     {
       "name": "RELEASE-NOTES.md",
       "url": "https://github.com/LLNL/axom/blob/HEAD/RELEASE-NOTES.md",
-      "timestamp": "2026-10-19 23:31:49",
+      "timestamp": "2026-10-27 19:14:29",
       "content": "<h1>Axom Software Release Notes</h1>\n<p>Notes describing significant changes in each Axom release are documented in this file.</p>\n<p>The format of this file is based on <a href=\"http://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>.</p>\n<p>The Axom project release numbers follow <a href=\"http://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>[Unreleased] - Release date yyyy-mm-dd</h2>\n<h3>Added</h3>\n<ul>\n<li>Axom&#x27;s host execution-space default allocator is now a configure-time policy. The default policy is malloc, regardless</li>\n</ul>"
     },
     {
@@ -52062,7 +52062,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-19 23:31:49"
+  "last_updated": "2026-10-27 19:14:29"
 },
 {
   "name": "BRICKS",
@@ -53749,7 +53749,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/libunwind/libunwind/blob/HEAD/README.md",
-      "timestamp": "2026-10-25 20:31:30",
+      "timestamp": "2026-10-27 09:03:29",
       "content": "<h1>libunwind</h1>\n<p><strong>libunwind</strong> is a portable and efficient C API for determining the current call\nchain of ELF program threads of execution and for resuming execution at any point\nin that call chain. The API supports both local (same process) and remote (other\nprocess) operation.</p>\n<p>The API is useful in a number of applications, including but not limited to the\nfollowing.\n- <strong>program introspection</strong>\n    Either for error messages showing a back trace of the call chain leading to</p>"
     },
     {
@@ -54456,7 +54456,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-25 20:31:30"
+  "last_updated": "2026-10-27 09:03:29"
 },
 {
   "name": "NCCMP",
@@ -56381,7 +56381,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/pytorch/pytorch/blob/HEAD/README.md",
-      "timestamp": "2026-10-05 22:01:16",
+      "timestamp": "2026-10-27 22:44:18",
       "content": "<p>&lt;picture&gt;\n  &lt;source media=&quot;(prefers-color-scheme: dark)&quot; srcset=&quot;https://github.com/pytorch/pytorch/raw/main/docs/source/_static/img/pytorch-logo-light.png&quot; /&gt;\n  &lt;source media=&quot;(prefers-color-scheme: light)&quot; srcset=&quot;https://github.com/pytorch/pytorch/raw/main/docs/source/_static/img/pytorch-logo-dark.png&quot; /&gt;</p>\n<p>&lt;/picture&gt;</p>\n<hr />"
     },
     {
@@ -56398,7 +56398,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-08 04:19:08"
+  "last_updated": "2026-10-27 22:44:18"
 },
 {
   "name": "JAX",
@@ -56423,12 +56423,12 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/google/jax/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-10-26 18:07:15",
+      "timestamp": "2026-10-27 15:07:15",
       "content": "<h1>Change log</h1>\n<p>Best viewed <a href=\"https://docs.jax.dev/en/latest/changelog.html\">here</a>.\nFor the changes specific to the experimental Pallas APIs,\nsee {ref}<code>pallas-changelog</code>.</p>\n<p>JAX follows Effort-based versioning; for a discussion of this and JAX&#x27;s API\ncompatibility policy, refer to {ref}<code>api-compatibility</code>. For the Python and\nNumPy version support policy, refer to {ref}<code>version-support-policy</code>.</p>\n<h2>Unreleased</h2>"
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-26 18:07:15"
+  "last_updated": "2026-10-27 15:07:15"
 },
 {
   "name": "PANDAS",
@@ -56629,8 +56629,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-10-26 19:07:14",
-      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.38.0...v3.39.0\">3.39.0</a> (2026-10-26)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> add gpt-6.1-terra model identifier (<a href=\"https://github.com/openai/openai-python/issues/4180\">#4180</a>) (<a href=\"https://github.com/openai/openai-python/commit/e8beb1abdf6de71ea10195c942f6566ca2696c28\">e8beb1a</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.37.0...v3.38.0\">3.38.0</a> (2026-10-25)</h2>"
+      "timestamp": "2026-10-27 15:31:55",
+      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.39.0...v3.40.0\">3.40.0</a> (2026-10-27)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> add prompt cache breakpoint TTL options (<a href=\"https://github.com/openai/openai-python/issues/4188\">#4188</a>) (<a href=\"https://github.com/openai/openai-python/commit/3596d18f05b63081fd64c6da82b515293afb98c6\">3596d18</a>)</li>\n</ul>\n<h3>Bug Fixes</h3>\n<ul>\n<li><strong>ci:</strong> use an explicit browser demo dependency (<a href=\"https://github.com/openai/openai-python/issues/4185\">#4185</a>) (<a href=\"https://github.com/openai/openai-python/commit/a3f430241c4a2e3e25bf79cc7d0148e51795a292\">a3f4302</a>)</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -56640,7 +56640,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-26 19:07:14"
+  "last_updated": "2026-10-27 15:31:55"
 },
 {
   "name": "DEEPHYPER",
