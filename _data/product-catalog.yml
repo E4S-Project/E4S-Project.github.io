@@ -12085,7 +12085,7 @@
     {
       "name": "release_docs/CHANGELOG.md",
       "url": "https://github.com/HDFGroup/hdf5/blob/HEAD/release_docs/CHANGELOG.md",
-      "timestamp": "2026-10-27 02:05:58",
+      "timestamp": "2026-10-28 21:31:04",
       "content": "<p>v2.3.0 --- July X , 2026</p>\n<h1>🔺 HDF5 Changelog</h1>\n<p>All notable changes to this project will be documented in this file. This document describes the differences between this release and the previous\nHDF5 release, platforms tested, and known problems in this release.</p>\n<p>For releases prior to version 2.0.0, please see the release.txt file and for more details check the HISTORY*.txt files in the HDF5 source.</p>"
     }
   ],
@@ -14161,7 +14161,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-27 02:05:58"
+  "last_updated": "2026-10-28 21:31:04"
 },
 {
   "name": "HPCTOOLKIT",
@@ -32809,7 +32809,7 @@
     {
       "name": "README",
       "url": "https://github.com/swig/swig/blob/HEAD/README",
-      "timestamp": "2025-04-01 01:05:28",
+      "timestamp": "2026-10-28 08:00:25",
       "content": "SWIG (Simplified Wrapper and Interface Generator)\n\nTagline: SWIG is a compiler that integrates C and C++ with languages\n         including Perl, Python, Tcl, Ruby, PHP, Java, C#, D, Go, Lua,\n         Octave, R, Scheme (Guile), Scilab, Ocaml.\n         SWIG can also export its parse tree into XML.\n\nSWIG reads annotated C/C++ header files and creates wrapper code (glue\ncode) in order to make the corresponding C/C++ libraries available to"
     },
     {
@@ -33792,7 +33792,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-24 23:38:56"
+  "last_updated": "2026-10-28 08:00:25"
 },
 {
   "name": "SYCLPARALLELSTL",
@@ -53412,7 +53412,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/cp2k/cp2k/blob/HEAD/README.md",
-      "timestamp": "2026-08-31 13:52:24",
+      "timestamp": "2026-10-28 06:42:51",
       "content": "<h1>CP2K</h1>\n<p>CP2K is a quantum chemistry and solid state physics software package that can perform atomistic\nsimulations of solid state, liquid, molecular, periodic, material, crystal, and biological systems.\nCP2K provides a general framework for different modeling methods such as DFT using the mixed\nGaussian and plane waves approaches GPW and GAPW. Supported theory levels include DFT, MP2, RPA, GW,</p>"
     },
     {
@@ -53423,7 +53423,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-08-31 13:52:24"
+  "last_updated": "2026-10-28 06:42:51"
 },
 {
   "name": "VOL-ASYNC",
@@ -56423,12 +56423,12 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/google/jax/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-10-27 15:07:15",
+      "timestamp": "2026-10-28 13:17:08",
       "content": "<h1>Change log</h1>\n<p>Best viewed <a href=\"https://docs.jax.dev/en/latest/changelog.html\">here</a>.\nFor the changes specific to the experimental Pallas APIs,\nsee {ref}<code>pallas-changelog</code>.</p>\n<p>JAX follows Effort-based versioning; for a discussion of this and JAX&#x27;s API\ncompatibility policy, refer to {ref}<code>api-compatibility</code>. For the Python and\nNumPy version support policy, refer to {ref}<code>version-support-policy</code>.</p>\n<h2>Unreleased</h2>"
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-27 15:07:15"
+  "last_updated": "2026-10-28 13:17:08"
 },
 {
   "name": "PANDAS",
@@ -56623,14 +56623,14 @@
     {
       "name": "README.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/README.md",
-      "timestamp": "2026-10-22 05:11:38",
+      "timestamp": "2026-10-28 05:52:42",
       "content": "<h1>OpenAI Python API library</h1>\n<p><a href=\"https://pypi.org/project/openai/\">)</a></p>\n<p>The OpenAI Python library provides convenient access to the OpenAI REST API from any Python 3.10+\napplication. The library includes type definitions for all request params and response fields,\nand offers both synchronous and asynchronous clients powered by <a href=\"https://httpx2.pydantic.dev/\">HTTPX2</a>.</p>\n<p>It is generated from our <a href=\"https://github.com/openai/openai-openapi\">OpenAPI specification</a>.</p>"
     },
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-10-27 15:31:55",
-      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.39.0...v3.40.0\">3.40.0</a> (2026-10-27)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> add prompt cache breakpoint TTL options (<a href=\"https://github.com/openai/openai-python/issues/4188\">#4188</a>) (<a href=\"https://github.com/openai/openai-python/commit/3596d18f05b63081fd64c6da82b515293afb98c6\">3596d18</a>)</li>\n</ul>\n<h3>Bug Fixes</h3>\n<ul>\n<li><strong>ci:</strong> use an explicit browser demo dependency (<a href=\"https://github.com/openai/openai-python/issues/4185\">#4185</a>) (<a href=\"https://github.com/openai/openai-python/commit/a3f430241c4a2e3e25bf79cc7d0148e51795a292\">a3f4302</a>)</li>\n</ul>"
+      "timestamp": "2026-10-28 22:21:03",
+      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.40.0...v3.41.0\">3.41.0</a> (2026-10-28)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> accept typed references in Realtime response inputs (<a href=\"https://github.com/openai/openai-python/issues/4189\">#4189</a>) (<a href=\"https://github.com/openai/openai-python/commit/8ecb487ceb746f3af492c2d94083eb4e5d82a14f\">8ecb487</a>)</li>\n<li><strong>api:</strong> add response tool usage models (<a href=\"https://github.com/openai/openai-python/issues/4201\">#4201</a>) (<a href=\"https://github.com/openai/openai-python/commit/55fc5008533deef3ad99ab6ffe48021e95aa22c2\">55fc500</a>)</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -56640,7 +56640,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-27 15:31:55"
+  "last_updated": "2026-10-28 22:21:03"
 },
 {
   "name": "DEEPHYPER",
