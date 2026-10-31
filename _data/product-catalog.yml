@@ -4029,8 +4029,8 @@
     {
       "name": "README.md",
       "url": "https://github.com/arborx/ArborX/blob/HEAD/README.md",
-      "timestamp": "2026-07-30 14:48:52",
-      "content": "<h1>ArborX</h1>\n<p>ArborX is an open-source library designed to provide performance portable\nalgorithms for geometric search, similarly to nanoflann and Boost Geometry.</p>\n<h2>Installation</h2>\n<p>The installation instructions can be found <a href=\"https://github.com/arborx/ArborX/wiki/Build\">here</a>.</p>\n<h2>Using ArborX</h2>\n<p>The interface is described <a href=\"https://github.com/arborx/ArborX/wiki/ArborX%3A%3ABoundingVolumeHierarchy\">here</a>.</p>"
+      "timestamp": "2026-10-30 21:27:29",
+      "content": "<h1>ArborX</h1>\n<p>ArborX is an open-source library designed to provide performance portable\nalgorithms for geometric search, similarly to nanoflann and Boost Geometry.</p>\n<h2>Installation</h2>\n<p>The installation instructions can be found <a href=\"https://kokkos.org/ArborX/docs/Build.html\">here</a>.</p>\n<h2>Using ArborX</h2>\n<p>The interface is described <a href=\"https://kokkos.org/ArborX/docs/\">here</a>.</p>\n<h2>Examples</h2>\n<p>Examples can be found in the <a href=\"https://github.com/arborx/ArborX/tree/master/examples\">examples directory</a>.</p>"
     },
     {
       "name": "LICENSE",
@@ -4657,7 +4657,7 @@
       ]
     }
   ],
-  "last_updated": "2026-07-30 14:48:52"
+  "last_updated": "2026-10-30 21:27:29"
 },
 {
   "name": "BEE",
@@ -12085,7 +12085,7 @@
     {
       "name": "release_docs/CHANGELOG.md",
       "url": "https://github.com/HDFGroup/hdf5/blob/HEAD/release_docs/CHANGELOG.md",
-      "timestamp": "2026-10-29 22:15:04",
+      "timestamp": "2026-10-30 15:56:54",
       "content": "<p>v2.3.0 --- July X , 2026</p>\n<h1>🔺 HDF5 Changelog</h1>\n<p>All notable changes to this project will be documented in this file. This document describes the differences between this release and the previous\nHDF5 release, platforms tested, and known problems in this release.</p>\n<p>For releases prior to version 2.0.0, please see the release.txt file and for more details check the HISTORY*.txt files in the HDF5 source.</p>"
     }
   ],
@@ -14161,7 +14161,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-29 22:15:04"
+  "last_updated": "2026-10-30 15:56:54"
 },
 {
   "name": "HPCTOOLKIT",
@@ -26989,7 +26989,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/geopm/geopm/blob/HEAD/README.md",
-      "timestamp": "2025-12-19 00:04:28",
+      "timestamp": "2026-10-30 19:03:17",
       "content": "<h1>GEOPM - Global Extensible Open Power Manager</h1>\n<p><a href=\"https://geopm.github.io\">Home Page</a>\n| <a href=\"https://geopm.github.io/service.html\">GEOPM Access Service</a>\n| <a href=\"https://geopm.github.io/runtime.html\">GEOPM Runtime Service</a>\n| <a href=\"https://geopm.github.io/reference.html\">Reference Manual</a>\n| <a href=\"https://geopm.slack.com\">Slack Workspace</a></p>\n<p>Fine-grained low-latency batch access to power metrics and control knobs on Linux</p>"
     },
     {
@@ -27006,7 +27006,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-17 00:05:30"
+  "last_updated": "2026-10-30 19:03:17"
 },
 {
   "name": "GEOPM-SLURM",
@@ -42014,8 +42014,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/LLNL/conduit/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-09-30 19:48:36",
-      "content": "<h1>Conduit Changelog</h1>\n<p>Notable changes to Conduit are documented in this file.</p>\n<p>The format is based on <a href=\"https://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>,\nand this project aspires to adhere to <a href=\"https://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>Unreleased</h2>\n<h3>Added</h3>\n<h3>Changed</h3>\n<h3>Fixed</h3>\n<h2>[0.9.9] - Released 2026-09-30</h2>\n<h3>Added</h3>\n<h4>Blueprint</h4>\n<ul>\n<li>Added relay hdf5 options to override the desired leaf types used when writing and reading hdf5 files. This enables on the fly conversion of say, all float64 data values to float32 data values, as well as many other combinations. This only supports bitwidth conversion, within signed, unsigned, and floating point values. See the test <code>t_relay_io_hdf5_prec.cpp</code> for examples of using these options.</li>\n</ul>"
+      "timestamp": "2026-10-30 22:30:23",
+      "content": "<h1>Conduit Changelog</h1>\n<p>Notable changes to Conduit are documented in this file.</p>\n<p>The format is based on <a href=\"https://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>,\nand this project aspires to adhere to <a href=\"https://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>Unreleased</h2>\n<h3>Added</h3>\n<h3>Changed</h3>\n<h3>Fixed</h3>\n<h4>Blueprint</h4>\n<ul>\n<li>Fixed a bug with Blueprint index generation for multi-domain datasets containing multi-buffer material sets missing material maps. The index could previously generate an incorrect material map in this case if not all materials were present on every domain.</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -42822,7 +42822,7 @@
       ]
     }
   ],
-  "last_updated": "2026-09-30 19:48:36"
+  "last_updated": "2026-10-30 22:30:23"
 },
 {
   "name": "QUO",
@@ -55241,7 +55241,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/plumed/plumed2/blob/HEAD/README.md",
-      "timestamp": "2026-10-22 17:41:08",
+      "timestamp": "2026-10-31 00:57:50",
       "content": "<h2>Branches and releases</h2>\n<p>Several branches and tags are stored on the git repository.</p>\n<p>Branches named <code>v2.X</code> correspond to release branches.</p>\n<p>Master branch may contain non tested features and is not expected to be used by non-developers.\nIt typically contains features that will be available on the next release.</p>\n<p>Tags named <code>v2.XbY</code> correspond to beta releases, use it with care.\nTags named <code>v2.X.Y</code> correspond to official releases, use the latest available.</p>"
     },
     {
@@ -55507,7 +55507,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-22 17:41:08"
+  "last_updated": "2026-10-31 00:57:50"
 },
 {
   "name": "METALL",
@@ -56629,8 +56629,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-10-28 22:21:03",
-      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.40.0...v3.41.0\">3.41.0</a> (2026-10-28)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> accept typed references in Realtime response inputs (<a href=\"https://github.com/openai/openai-python/issues/4189\">#4189</a>) (<a href=\"https://github.com/openai/openai-python/commit/8ecb487ceb746f3af492c2d94083eb4e5d82a14f\">8ecb487</a>)</li>\n<li><strong>api:</strong> add response tool usage models (<a href=\"https://github.com/openai/openai-python/issues/4201\">#4201</a>) (<a href=\"https://github.com/openai/openai-python/commit/55fc5008533deef3ad99ab6ffe48021e95aa22c2\">55fc500</a>)</li>\n</ul>"
+      "timestamp": "2026-10-31 00:20:22",
+      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.41.0...v3.42.0\">3.42.0</a> (2026-10-31)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> add agent context compaction settings (<a href=\"https://github.com/openai/openai-python/issues/4209\">#4209</a>) (<a href=\"https://github.com/openai/openai-python/commit/f552fcffcf774520e946121704b5fbbf7ba986e8\">f552fcf</a>)</li>\n<li><strong>api:</strong> add agent session review and tool settings (<a href=\"https://github.com/openai/openai-python/issues/4217\">#4217</a>) (<a href=\"https://github.com/openai/openai-python/commit/a63c4cdb1c758af3a2ca8edace3b5291f8b0318a\">a63c4cd</a>)</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -56640,7 +56640,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-28 22:21:03"
+  "last_updated": "2026-10-31 00:20:22"
 },
 {
   "name": "DEEPHYPER",
@@ -57220,7 +57220,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/CEED/libCEED/blob/HEAD/README.md",
-      "timestamp": "2026-10-23 15:53:36",
+      "timestamp": "2026-10-30 14:59:59",
       "content": "<h1>libCEED: Efficient Extensible Discretization</h1>\n<h2>Summary and Purpose</h2>\n<p>libCEED provides fast algebra for element-based discretizations, designed for performance portability, run-time flexibility, and clean embedding in higher level libraries and applications.\nIt offers a C99 interface as well as bindings for Fortran, Python, Julia, and Rust.\nWhile our focus is on high-order finite elements, the approach is mostly algebraic and thus applicable to other discretizations in factored form, as explained in the <a href=\"https://libceed.org/en/latest/\">user manual</a> and API implementation portion of the <a href=\"https://libceed.org/en/latest/api/\">documentation</a>.</p>"
     },
     {
@@ -57237,7 +57237,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-23 15:53:36"
+  "last_updated": "2026-10-30 14:59:59"
 },
 {
   "name": "BIONEMO-FRAMEWORK",
