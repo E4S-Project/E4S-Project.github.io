@@ -35573,7 +35573,7 @@
     {
       "name": "Changes",
       "url": "https://github.com/UO-OACISS/tau2/blob/HEAD/Changes",
-      "timestamp": "2026-06-01 16:52:26",
+      "timestamp": "2026-10-31 01:23:20",
       "content": "\n\nChange log:\n------------\nVersion 2.35 changes (from 2.34):\n1. Updates for Grace-Blackwell and Blackwell+x86_64 with CUDA 13. \n2. Fixes for overflows with Level Zero. \n3. Added support for OpenSHMEM with OTF. \n4. Updates for PAPI multiplexing of hardware performance counters. \n5. Added tau_diff.py utility to compare individual or directories of profiles. \n6. Updates for Cray ftn compiler for compiler-based instrumentation. "
     },
     {
@@ -36156,7 +36156,7 @@
       ]
     }
   ],
-  "last_updated": "2026-06-01 16:52:26"
+  "last_updated": "2026-10-31 01:23:20"
 },
 {
   "name": "TRILINOS",
