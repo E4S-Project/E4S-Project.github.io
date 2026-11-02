@@ -48,7 +48,7 @@ git clone -b e4s-26.06 https://github.com/spack/spack-packages.git
 ### 1.4 Set builtin Spack repo destination
 
 ```bash
-spack repo set --destination "$(dirname "$SPACK_ROOT")/spack-packages" builtin
+spack repo set --destination $(pwd)/spack-packages builtin
 ```
 
 To isolate this Spack instance from user- and system- level configuration directories, set `SPACK_DISABLE_LOCAL_CONFIG=1`.

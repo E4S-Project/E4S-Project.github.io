@@ -23,7 +23,7 @@ $> git checkout v1.1.1
 $> cd ..
 $> git clone -b e4s-26.06 https://github.com/spack/spack-packages.git
 $> . spack/share/spack/setup-env.sh
-$> spack repo set --destination "$(dirname "$SPACK_ROOT")/spack-packages" builtin
+$> spack repo set --destination $(pwd)/spack-packages builtin
 $> export SPACK_DISABLE_LOCAL_CONFIG=1
 ```
 
