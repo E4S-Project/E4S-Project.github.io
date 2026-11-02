@@ -28,28 +28,32 @@ Some quickstart instructions are below.
 
 ### 1.1 Clone Spack Core V.1.1.1
 ```bash
-git clone -b releases/v1.1 https://github.com/spack/spack.git
+git clone https://github.com/spack/spack.git
+cd spack
+git checkout v1.1.1
+cd ..
 ```
 
 ### 1.2 Clone the E4S 26.06 branch of Spack Packages
 ```bash
 git clone -b e4s-26.06 https://github.com/spack/spack-packages.git
 ```
-### 1.3 Set builtin Spack repo destination
+
+### 1.3 Add Spack to your shell
+
+```bash
+. spack/share/spack/setup-env.sh
+```
+
+### 1.4 Set builtin Spack repo destination
 
 ```bash
 spack repo set --destination "$(dirname "$SPACK_ROOT")/spack-packages" builtin
 ```
-### 1.4 Add Spack to your shell
-
-From the Spack core directory:
-```bash
-. share/spack/setup-env.sh
-```
 
 To isolate this Spack instance from user- and system- level configuration directories, set `SPACK_DISABLE_LOCAL_CONFIG=1`.
 
-To load Spack automatically on startup, add the above line to your shell profile (e.g., `~/.bashrc`, `~/.zshrc`).
+To load Spack automatically on startup, add `. share/spack/setup-env.sh` to your shell profile (e.g., `~/.bashrc`, `~/.zshrc`).
 
 ---
 

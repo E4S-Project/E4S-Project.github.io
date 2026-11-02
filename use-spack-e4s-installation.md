@@ -17,11 +17,14 @@ The instructions on this page provide specific guidance for using Spack to insta
 
 Clone Spack, checkout the appropriate release branch, if desired, and source the Spack `setup-env.sh` script.
 ```
-$> git clone -b releases/v1.1 https://github.com/spack/spack.git
+$> git clone https://github.com/spack/spack.git
+$> cd spack
+$> git checkout v1.1.1
+$> cd ..
 $> git clone -b e4s-26.06 https://github.com/spack/spack-packages.git
+$> . spack/share/spack/setup-env.sh
 $> spack repo set --destination "$(dirname "$SPACK_ROOT")/spack-packages" builtin
 $> export SPACK_DISABLE_LOCAL_CONFIG=1
-$> . spack/share/spack/setup-env.sh
 ```
 
 Configure Spack to know where the E4S Build Cache is located. You can use either a release specific build cache, or the mixed build cache. The release specific build cache contains only binaries from the particular release, whereas the mixed build cache contains binaries from all releases and from in between releases.
