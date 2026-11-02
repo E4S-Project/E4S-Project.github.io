@@ -26,60 +26,57 @@ Some quickstart instructions are below.
 
 ## 1. Set Up Spack
 
-### 1.1 Clone Spack
+### 1.1 Clone Spack Core V.1.1.1
 ```bash
-git clone https://github.com/spack/spack.git
-cd spack
+git clone -b releases/v1.1 https://github.com/spack/spack.git
 ```
 
-### 1.2 Add Spack to your shell
+### 1.2 Clone the E4S 26.06 branch of Spack Packages
+```bash
+git clone -b e4s-26.06 https://github.com/spack/spack-packages.git
+```
+### 1.3 Set builtin Spack repo destination
+
+```bash
+spack repo set --destination "$(dirname "$SPACK_ROOT")/spack-packages" builtin
+```
+### 1.4 Add Spack to your shell
+
+From the Spack core directory:
 ```bash
 . share/spack/setup-env.sh
 ```
+
+To isolate this Spack instance from user- and system- level configuration directories, set `SPACK_DISABLE_LOCAL_CONFIG=1`.
 
 To load Spack automatically on startup, add the above line to your shell profile (e.g., `~/.bashrc`, `~/.zshrc`).
 
 ---
 
-## 2. Update Spack (Recommended)
+## 2. Finding Libraries and Tools
 
-Keeping Spack up to date ensures access to the latest package recipes:
+### 2.1 Basic search
 ```bash
-spack update
-spack install --refresh
-```
-
----
-
-## 3. Finding Libraries and Tools
-
-### 3.1 Basic search
-```bash
-spack search <name_or_keyword>
+spack list <name_of_package>
 ```
 Example:
 ```bash
-spack search mpi
+spack list tau
 ```
 
-### 3.2 Fuzzy search
-```bash
-spack search kokkos
-```
-
-### 3.3 List all packages 
+### 2.2 List all available packages 
 ```bash
 spack list
 ```
-### 3.3 List all packages in E4S
+### 2.3 List all packages in E4S
 
 ```bash
 spack list --tag e4s
 ```
 
-## 4. Inspecting Package Details
+## 3. Inspecting Package Details
 
-### 4.1 Show detailed information
+### 3.1 Show detailed information
 ```bash
 spack info <package>
 ```
@@ -88,16 +85,35 @@ This displays:
 - Available versions
 - Variants (options)
 - Dependencies
-- Maintainers
+- Licenses
 
 Example:
 ```bash
 spack info hdf5
 ```
 
-### 4.2 View available versions
+### 3.2 View available versions
 ```bash
 spack versions <package>
+```
+
+---
+
+## 4. Installing Packages
+
+### 4.1 Basic installation
+```bash
+spack install <package>
+```
+
+### 4.2 Install a specific version
+```bash
+spack install <package>@<version>
+```
+
+Example:
+```bash
+spack install fftw@3.3.10
 ```
 
 ---
@@ -132,9 +148,13 @@ spack compiler find
 
 ### 6.3 Install with a specific compiler
 ```bash
-spack install kokkos %gcc@12.2.0
+spack install kokkos %gcc@13.3.1
 ```
 
+### 6.4 Install with variants and compiler
+```bash
+spack install petsc +mpi +debug %gcc@11.4.0
+```
 ---
 
 ## 7. Managing Dependencies
@@ -145,80 +165,60 @@ spack spec <package>
 ```
 Example:
 ```bash
-spack spec kokkos +cuda
+spack spec kokkos +cuda cuda_arch=90
 ```
-
 ---
 
-## 8. Installing Packages
+## 8. Using Installed Packages
 
-### 8.1 Basic installation
-```bash
-spack install <package>
-```
-
-#E# 8.2 Install a specific version
-```bash
-spack install fftw@3.3.10
-```
-
-### 8.3 Install with variants and compiler
-```bash
-spack install petsc +mpi +debug %gcc@11.3.0
-```
-
----
-
-## 9. Using Installed Packages
-
-### 9.1 View installed packages
+### 8.1 View installed packages
 ```bash
 spack find
 spack find -d   # include dependencies
 ```
 
-### 9.2 Load a package into your environment
+### 8.2 Load a package into your environment
 ```bash
 spack load <package>
 ```
 
-### 9.3 Unload a package
+### 8.3 Unload a package
 ```bash
 spack unload <package>
 ```
-
 ---
 
-## 10. Using Environments (Recommended)
+## 9. Using Environments (Recommended)
 
 Spack environments let you manage sets of packages together.
 
-### 10.1 Create an environment
+### 9.1 Create an environment
 ```bash
 spack env create myenv
 spack env activate myenv
 ```
 
-### 10.2 Add and install packages
+### 9.2 Add and install packages
 ```bash
 spack add trilinos +mpi
-spack add kokkos +cuda
+spack add kokkos +cuda +wrapper cuda_arch=90
 spack install
 ```
 
-### 10.3 View environment packages
+Note that some packages, like Kokkos, default to `cuda_arch=None` (check with `spack info kokkos`). This variable must be specified according to the CUDA compute capability with which the package is being built.
+
+### 9.3 View environment packages
 ```bash
 spack find
 ```
 
-### 10.4 Deactivate environment
+### 9.4 Deactivate environment
 ```bash
 spack env deactivate
 ```
-
 ---
 
-## 11. Using Binary Caches (Faster Installs)
+## 10. Using Binary Caches (Faster Installs)
 
 To see available prebuilt binaries:
 ```bash
@@ -229,7 +229,7 @@ Spack will use binaries automatically if available.
 
 ---
 
-## 12. Troubleshooting
+## 11. Troubleshooting
 
 | Issue | Solution |
 |------|-----------|
@@ -240,11 +240,11 @@ Spack will use binaries automatically if available.
 
 ---
 
-## 13. Advanced Tips
+## 12. Advanced Tips
 
 - **Search by tags**:
   ```bash
-  spack list --tags=math
+  spack list --tag <tag>
   ```
 
 - **Find reverse dependencies**:
@@ -260,11 +260,11 @@ Spack will use binaries automatically if available.
 
 ---
 
-## 14. Summary Workflow
+## 13. Summary Workflow
 
 ```bash
 # Find a package
-spack search <name>
+spack list <name>
 
 # Inspect it
 spack info <name>

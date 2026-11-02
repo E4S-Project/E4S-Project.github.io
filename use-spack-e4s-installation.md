@@ -17,8 +17,10 @@ The instructions on this page provide specific guidance for using Spack to insta
 
 Clone Spack, checkout the appropriate release branch, if desired, and source the Spack `setup-env.sh` script.
 ```
-$> git clone https://github.com/spack/spack
-$> (cd spack && git checkout e4s-25.06)
+$> git clone -b releases/v1.1 https://github.com/spack/spack.git
+$> git clone -b e4s-26.06 https://github.com/spack/spack-packages.git
+$> spack repo set --destination "$(dirname "$SPACK_ROOT")/spack-packages" builtin
+$> export SPACK_DISABLE_LOCAL_CONFIG=1
 $> . spack/share/spack/setup-env.sh
 ```
 
@@ -26,13 +28,28 @@ Configure Spack to know where the E4S Build Cache is located. You can use either
 
 Release-specific:
 ```
-$> spack mirror add E4S https://cache.e4s.io/25.06
+$> spack mirror add E4S https://cache.e4s.io/26.06
 $> spack buildcache keys -it
 ```
 
-Obtain a copy of the E4S Model Environment for the E4S release you are interested in, and rename it to `spack.yaml`, if needed. These are found in the [E4S Environment Repository](https://github.com/E4S-Project/e4s/tree/master/environments). For this example, we will use the [E4S 25.06 Model Environment for X86_64 Systems with NVIDIA GPUs](https://github.com/E4S-Project/e4s/tree/master/environments/25.06/amd64-gcc-cuda-ubuntu22.04).
+Obtain a copy of the E4S Model Environment for the E4S release you are interested in, and rename it to `spack.yaml`, if needed. These are found in the [E4S Environment Repository](https://github.com/E4S-Project/e4s/tree/master/environments). For this example, we will use the [E4S 26.06 Model Environment for X86_64 Systems with NVIDIA GPUs](https://github.com/E4S-Project/e4s/tree/master/environments/x86_64/gnu/cuda/90).
 
-Tweak the model environment so that it suits your needs: remove packages you aren't interested in, select the correct GPU variants, specify the microarchitecture target and compiler selections, as needed. Once modified, you can concretize the environment, which you should do from the same directory that contains your environment.
+The environment will also need the `package.yaml` file under the `_config` directory, [for this example, found here](https://github.com/E4S-Project/e4s/blob/master/environments/x86_64/gnu/_config/packages.yaml) . For CUDA and ROCm builds, another GPU-specific `packages.yaml` [is also needed](https://github.com/E4S-Project/e4s/blob/master/environments/x86_64/gnu/cuda/_config/packages.yaml). Create the relevant directories following this guideline:
+
+```text
+E4S-build/
+├── _config/
+│   └── packages.yaml
+└── cuda/                         # Or cpu, rocm
+    ├── _config/                  # For GPU builds only
+    │   └── packages.yaml         # For GPU builds only
+    └── 90/                       # Example GPU architecture/compute capability, for GPU builds only
+        └── spack.yaml            # Environment definition file
+
+```
+Obtain `spack.yaml` and both `packages.yaml` as they appear in this structure of the environment repository above.
+
+Tweak the model environment so that it suits your needs: remove packages you aren't interested in, select the correct GPU variants, specify the microarchitecture target and compiler selections, as needed. Once modified, you can concretize the environment, which you should do from the same directory that contains your environment (`spack.yaml`).
 ```
 $> time spack -e . concretize -f | tee concretize.log
 ```
