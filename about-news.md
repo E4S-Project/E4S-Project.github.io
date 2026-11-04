@@ -13,10 +13,11 @@ sidebar:
 
 | Announcement | Description | 
 |--------------|-------------|
+| E4S 26.11 Release | To Be Announced at SC26. |
+| E4S Quick Starts | A growing collection of short, practical walkthroughs for getting started with E4S, covering PyTorch, TensorFlow, NeMo, BioNeMo, vLLM, HYPRE, LAMMPS, ParaView, and more. See the [E4S Learning Quick Starts](/learn-quick-starts/) page. |
 | Zero to LAMMPS in Two Minutes with Cache-Backed Images | A Cache-Backed Image (CBI) pulls and installs any E4S product straight from the build cache — no source build required. See [Cache-Backed Images (CBIs)](/cache-backed-images/) for the benchmark and why it matters for AI-for-science workflows. |
 | E4S 26.06 Release | [Release Notes](/news/NEWS_RELEASE_E4S_26.06.pdf), [Release Presentation](/talks/E4S_26.06.pdf)|
 | New E4S website | The new E4S website aims to provide significant enhancements for all community members. See the [New Site Features page](/new-features) |
-| E4S 25.11 Release | [Release Notes](/news/NEWS_RELEASE_E4S_25.11.pdf), [Release Presentation](/talks/E4S_25.11.pdf)|
 
 ### Events
 
