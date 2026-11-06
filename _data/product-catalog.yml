@@ -5,6 +5,7 @@
   "area": "Data & Viz",
   "description": "I/O and data management library for storage I/O, in-memory code coupling and online data analysis and visualization workflows.",
   "spack_info": {
+    "Spack Package": "adios2",
     "Description": "The Adaptable Input Output System version 2, developed in the Exascale\n    Computing Program",
     "Homepage": "https://adios2.readthedocs.io",
     "Accelerator Variants": "CUDA ROCM  SYCL ",
@@ -667,6 +668,7 @@
   "area": "Development Tools",
   "description": "Stack Trace Analysis Tool - lightweight debugging at extreme scale",
   "spack_info": {
+    "Spack Package": "stat",
     "Description": "Library to create, manipulate, and export graphs Graphlib.",
     "Homepage": "https://paradyn.org/STAT/STAT.html",
     "Accelerator Variants": "    ",
@@ -741,6 +743,7 @@
   "area": "Development Tools",
   "description": "Data race detection tool for OpenMP applications",
   "spack_info": {
+    "Spack Package": "archer",
     "Description": "ARCHER, a data race detection tool for large OpenMP applications.",
     "Homepage": "https://github.com/PRUNERS/ARCHER",
     "Accelerator Variants": "    ",
@@ -803,6 +806,7 @@
   "area": "Development Tools",
   "description": "Quickly detect discrepancies in floating point computation across hardware, compilers, libraries and software",
   "spack_info": {
+    "Spack Package": "flit",
     "Description": "Floating-point Litmus Tests (FLiT) is a C++ test infrastructure for\n    detecting variability in floating-point code caused by variations in\n    compiler code generation, hardware and execution environments.",
     "Homepage": "https://pruners.github.io/flit",
     "Accelerator Variants": "    ",
@@ -1360,6 +1364,7 @@
   "area": "Development Tools",
   "description": "A lightweight record-and-replay tool for MPI+OpenMP applications",
   "spack_info": {
+    "Spack Package": "rempi",
     "Description": "ReMPI is a record-and-replay tool for MPI applications.",
     "Homepage": "https://github.com/PRUNERS/ReMPI",
     "Accelerator Variants": "    ",
@@ -1668,6 +1673,7 @@
   "area": "Development Tools",
   "description": "Floating point exception trapping for NVIDIA GPUs",
   "spack_info": {
+    "Spack Package": "fpchecker",
     "Description": "FPChecker (Floating-Point Checker) is a dynamic analysis tool to detect\n    floating-point errors in HPC applications.",
     "Homepage": "https://fpchecker.org",
     "Accelerator Variants": "    ",
@@ -1726,6 +1732,7 @@
   "area": "PMR",
   "description": "Hierarchical memory management library from Argo.",
   "spack_info": {
+    "Spack Package": "aml",
     "Description": "AML is a memory management library designed to ease the use of complex\n    memory topologies and complex data layout optimizations for high-\n    performance computing applications.",
     "Homepage": "https://argo-aml.readthedocs.io",
     "Accelerator Variants": "CUDA  HIP  Level Zero",
@@ -2277,6 +2284,7 @@
   "area": "Data & Viz",
   "description": "Flyweight in situ visualization and analysis runtime for multi-physics HPC simulations",
   "spack_info": {
+    "Spack Package": "ascent",
     "Description": "Ascent is an open source many-core capable lightweight in situ\n    visualization and analysis infrastructure for multi-physics HPC\n    simulations.",
     "Homepage": "https://github.com/Alpine-DAV/ascent",
     "Accelerator Variants": "CUDA ROCM   ",
@@ -2661,6 +2669,7 @@
   "area": "Data & Viz",
   "description": "Interactive, scalable, visualization, animation and analysis tool.",
   "spack_info": {
+    "Spack Package": "visit",
     "Description": "VisIt is an Open Source, interactive, scalable, visualization, animation\n    and analysis tool.",
     "Homepage": "https://wci.llnl.gov/simulation/computer-codes/visit",
     "Accelerator Variants": "    ",
@@ -2702,6 +2711,7 @@
   "area": "Math Libraries",
   "description": "A framework designed for building massively parallel block- structured adaptive mesh refinement applications.",
   "spack_info": {
+    "Spack Package": "amrex",
     "Description": "AMReX is a publicly available software framework designed for building\n    massively parallel block- structured adaptive mesh refinement (AMR)\n    applications.",
     "Homepage": "https://amrex-codes.github.io/amrex",
     "Accelerator Variants": "CUDA ROCM  SYCL ",
@@ -4073,6 +4083,7 @@
   "area": "Math Libraries",
   "description": "Performance-portable geometric search library",
   "spack_info": {
+    "Spack Package": "arborx",
     "Description": "ArborX is a performance-portable library for geometric search",
     "Homepage": "https://github.com/arborx/arborx",
     "Accelerator Variants": "CUDA ROCM  SYCL ",
@@ -4719,6 +4730,7 @@
   "area": "Software Ecosystem",
   "description": "Container-based solution for portable build and execution across HPC systems and cloud resources",
   "spack_info": {
+    "Spack Package": "hpc-beeflow",
     "Description": "BEE is a workflow orchestration system designed to build containerized\n    HPC applications and orchestrate workflows across HPC and cloud systems.\n    BEE has adopted the Common Workflow Language (CWL) for specifying\n    workflows. Complex scientific workflows specified by CWL are managed and\n    visualized through a graph database, giving the user the ability to\n    monitor the state of each task in the workflow. BEE runs jobs using the\n    workload scheduler (i.e. Slurm or Flux) on the HPC system that tasks are\n    specified to run on.",
     "Homepage": "https://github.com/lanl/bee",
     "Accelerator Variants": "    ",
@@ -4748,6 +4760,7 @@
   "area": "Development Tools",
   "description": "Performance analysis library.",
   "spack_info": {
+    "Spack Package": "caliper",
     "Description": "Caliper is a program instrumentation and performance measurement\n    framework. It is designed as a performance analysis toolbox in a\n    library, allowing one to bake performance analysis capabilities directly\n    into applications and activate them at runtime.",
     "Homepage": "https://github.com/LLNL/Caliper",
     "Accelerator Variants": "CUDA ROCM   ",
@@ -5426,6 +5439,7 @@
   "area": "PMR",
   "description": "A library that handles automatic data migration to different memory spaces behind an array-style interface.",
   "spack_info": {
+    "Spack Package": "chai",
     "Description": "Copy-hiding array interface for data migration between memory spaces",
     "Homepage": "https://github.com/LLNL/CHAI",
     "Accelerator Variants": "CUDA ROCM   ",
@@ -6378,6 +6392,7 @@
   "area": "Data & Viz",
   "description": "Data analysis and visualization tool suite.",
   "spack_info": {
+    "Spack Package": "py-cinemasci",
     "Description": "A set of python tools for reading, writing and viewing Cinema databases",
     "Homepage": "https://github.com/cinemascience",
     "Accelerator Variants": "    ",
@@ -6458,6 +6473,7 @@
   "area": "PMR",
   "description": "A programming language designed for productive parallel computing at scale.",
   "spack_info": {
+    "Spack Package": "chapel",
     "Description": "Chapel is a modern programming language that is parallel, productive,\n    portable, scalable and open-source. The Chapel package comes with many\n    options in the form of variants, most of which can be left unset to\n    allow Chapel's built-in scripts to determine the proper values based on\n    the environment.",
     "Homepage": "https://chapel-lang.org",
     "Accelerator Variants": "CUDA ROCM   ",
@@ -6538,6 +6554,7 @@
   "area": "Development Tools",
   "description": "I/O characterization tool.",
   "spack_info": {
+    "Spack Package": "darshan-runtime",
     "Description": "Darshan (runtime) is a scalable HPC I/O characterization tool designed\n    to capture an accurate picture of application I/O behavior, including\n    properties such as patterns of access within files, with minimum\n    overhead. DarshanRuntime package should be installed on systems where\n    you intend to instrument MPI applications.",
     "Homepage": "https://www.mcs.anl.gov/research/projects/darshan",
     "Accelerator Variants": "    ",
@@ -6910,6 +6927,7 @@
   "area": "Math Libraries",
   "description": "In-memory code coupling library.",
   "spack_info": {
+    "Spack Package": "datatransferkit",
     "Description": "DataTransferKit is an open-source software library of parallel solution\n    transfer services for multiphysics simulations",
     "Homepage": "https://datatransferkit.readthedoc.io",
     "Accelerator Variants": "    ",
@@ -7463,6 +7481,7 @@
   "area": "Development Tools",
   "description": "Binary analysis and instrumentation framework.",
   "spack_info": {
+    "Spack Package": "dyninst",
     "Description": "API for dynamic binary instrumentation. Modify programs while they are\n    executing without recompiling, re-linking, or re-executing.",
     "Homepage": "https://paradyn.org",
     "Accelerator Variants": "    ",
@@ -8213,6 +8232,7 @@
   "area": "Math Libraries",
   "description": "Parallel FFTs built on vendor and community sequential FFTs.",
   "spack_info": {
+    "Spack Package": "heffte",
     "Description": "Highly Efficient FFT for Exascale",
     "Homepage": "https://github.com/icl-utk-edu/heffte",
     "Accelerator Variants": "CUDA ROCM  SYCL ",
@@ -9050,6 +9070,7 @@
   "area": "PMR",
   "description": "A configurable framework designed to support multi-physics application development.",
   "spack_info": {
+    "Spack Package": "flecsi",
     "Description": "FleCSI is a compile-time configurable framework designed to support\n    multi-physics application development. As such, FleCSI attempts to\n    provide a very general set of infrastructure design patterns that can be\n    specialized and extended to suit the needs of a broad variety of solver\n    and data requirements. Current support includes multi-dimensional mesh\n    topology, mesh geometry, and mesh adjacency information.",
     "Homepage": "https://www.flecsi.org",
     "Accelerator Variants": "CUDA ROCM   ",
@@ -9597,6 +9618,7 @@
   "area": "System Software",
   "description": "Configurable resource management tools and libraries for HPC platforms",
   "spack_info": {
+    "Spack Package": "flux-core",
     "Description": "A next-generation resource manager (pre-alpha)",
     "Homepage": "https://github.com/flux-framework/flux-core",
     "Accelerator Variants": "CUDA    ",
@@ -10231,6 +10253,7 @@
   "area": "Math Libraries",
   "description": "Fortran interface to Trilinos C++ libraries.",
   "spack_info": {
+    "Spack Package": "fortrilinos",
     "Description": "ForTrilinos provides a set of Fortran-2003 wrappers to the Trilinos\n    solver library. Note that most properties are *transitive* from the\n    underlying Trilinos configuration. For example, MPI is enabled if and\n    only if the linked Trilinos version has it, so this package does not\n    provide an indepdent variant. Instead, use ``fortrilinos ^trilinos~mpi``\n    to disable MPI support.",
     "Homepage": "https://trilinos.github.io/ForTrilinos",
     "Accelerator Variants": "    ",
@@ -10690,6 +10713,7 @@
   "area": "PMR",
   "description": "A networking middleware layer that provides portable communication primitives.",
   "spack_info": {
+    "Spack Package": "gasnet",
     "Description": "GASNet is a language-independent, networking middleware layer that\n    provides network-independent, high-performance communication primitives\n    including Remote Memory Access (RMA) and Active Messages (AM). It has\n    been used to implement parallel programming models and libraries\n    including UPC, UPC++, multi-image Fortran, Legion, Chapel, and many\n    others. The interface is primarily intended as a compilation target and\n    for use by runtime library writers (as opposed to end users), and the\n    primary goals are high performance, interface portability, and\n    expressiveness. ***NOTICE***: The Spack built version of GASNet is\n    generally considered UNSUITABLE FOR PRODUCTION USE by its authors. The\n    RECOMMENDED way to build GASNet is as an embedded library as configured\n    by the higher-level client runtime package (UPC++, Chapel, etc),\n    including system-specific configuration. Despite this recommendation,\n    this Spack package is a best effort to allow supporting a range of\n    platforms. For optimal performance and more fine-grained control on a\n    particular target platform, HPC admins can provide an external build.\n    Note on variant defaults: Many variants default to \"auto\" to respect\n    GASNet's carefully tuned configure-time auto-detection. The configure\n    script's defaults were chosen over time to balance the needs of multiple\n    clients and target systems. Explicit variant settings override this\n    auto-detection.",
     "Homepage": "https://gasnet.lbl.gov",
     "Accelerator Variants": "CUDA ROCM   Level Zero",
@@ -11329,6 +11353,7 @@
   "area": "Math Libraries",
   "description": "A parallel sparse linear algebra library for manycore and accelerator processors.",
   "spack_info": {
+    "Spack Package": "ginkgo",
     "Description": "High-performance linear algebra library for manycore systems, with a\n    focus on sparse solution of linear systems.",
     "Homepage": "https://ginkgo-project.github.io",
     "Accelerator Variants": "CUDA ROCM  SYCL ",
@@ -12192,6 +12217,7 @@
   "area": "Data & Viz",
   "description": "A parallel I/O library.",
   "spack_info": {
+    "Spack Package": "hdf5",
     "Description": "HDF5 is a data model, library, and file format for storing and managing\n    data. It supports an unlimited variety of datatypes, and is designed for\n    flexible and efficient I/O and for high volume and complex data.",
     "Homepage": "https://support.hdfgroup.org",
     "Accelerator Variants": "    ",
@@ -14298,6 +14324,7 @@
   "area": "Development Tools",
   "description": "Performance analysis tools.",
   "spack_info": {
+    "Spack Package": "hpctoolkit",
     "Description": "HPCToolkit is an integrated suite of tools for measurement and analysis\n    of program performance on computers ranging from multicore desktop\n    systems to the nation's largest supercomputers. By using statistical\n    sampling of timers and hardware performance counters, HPCToolkit\n    collects accurate measurements of a program's work, resource\n    consumption, and inefficiency and attributes them to the full calling\n    context in which they occur.",
     "Homepage": "https://hpctoolkit.org",
     "Accelerator Variants": "CUDA ROCM   Level Zero",
@@ -14819,6 +14846,7 @@
   "area": "PMR",
   "description": "The C++ Standard Library for Parallelism and Concurrency.",
   "spack_info": {
+    "Spack Package": "hpx",
     "Description": "C++ runtime system for parallel and distributed applications.",
     "Homepage": "https://hpx.stellar-group.org",
     "Accelerator Variants": "CUDA ROCM   ",
@@ -15502,6 +15530,7 @@
   "area": "Math Libraries",
   "description": "Scalable sparse iterative preconditioners and solvers.",
   "spack_info": {
+    "Spack Package": "hypre",
     "Description": "Hypre is a library of high performance preconditioners that features\n    parallel multigrid methods for both structured and unstructured grid\n    problems.",
     "Homepage": "https://llnl.gov/casc/hypre",
     "Accelerator Variants": "CUDA ROCM  SYCL ",
@@ -16812,6 +16841,7 @@
   "area": "PMR",
   "description": "Portable parallel programming library and supporting tools.",
   "spack_info": {
+    "Spack Package": "kokkos",
     "Description": "Kokkos implements a programming model in C++ for writing performance\n    portable applications targeting all major HPC platforms.",
     "Homepage": "https://github.com/kokkos/kokkos",
     "Accelerator Variants": "CUDA ROCM HIP SYCL ",
@@ -18839,6 +18869,7 @@
   "area": "Math Libraries",
   "description": "Parallel linear algebra and graph algorithms build on Kokkos.",
   "spack_info": {
+    "Spack Package": "kokkos-kernels",
     "Description": "Kokkos Kernels provides math kernels, often BLAS or LAPACK for small\n    matrices, that can be used in larger Kokkos parallel routines",
     "Homepage": "https://github.com/kokkos/kokkos-kernels",
     "Accelerator Variants": "CUDA    ",
@@ -19845,6 +19876,7 @@
   "area": "Math Libraries",
   "description": "LAPACK for heterogeneous/hybrid architectures.",
   "spack_info": {
+    "Spack Package": "magma",
     "Description": "The MAGMA project aims to develop a dense linear algebra library similar\n    to LAPACK but for heterogeneous/hybrid architectures, starting with\n    current \"Multicore+GPU\" systems.",
     "Homepage": "https://icl.utk.edu/magma",
     "Accelerator Variants": "CUDA ROCM   ",
@@ -20236,6 +20268,7 @@
   "area": "PMR",
   "description": "A task-based parallel programming and runtime environment.",
   "spack_info": {
+    "Spack Package": "legion",
     "Description": "Legion is a data-centric parallel programming system for writing\n    portable high performance programs targeted at distributed heterogeneous\n    architectures. Legion presents abstractions which allow programmers to\n    describe properties of program data (e.g. independence, locality). By\n    making the Legion programming system aware of the structure of program\n    data, it can automate many of the tedious tasks programmers currently\n    face, including correctly extracting task- and data-level parallelism\n    and moving data around complex memory hierarchies. A novel mapping\n    interface provides explicit programmer controlled placement of data in\n    the memory hierarchy and assignment of tasks to processors in a way that\n    is orthogonal to correctness, thereby enabling easy porting and tuning\n    of Legion applications to new architectures.",
     "Homepage": "https://legion.stanford.edu",
     "Accelerator Variants": "CUDA ROCM HIP  ",
@@ -20877,6 +20910,7 @@
   "area": "Math Libraries",
   "description": "A library to support ensemble-based solution algorithms.",
   "spack_info": {
+    "Spack Package": "py-libensemble",
     "Description": "Library for managing ensemble-like collections of computations.",
     "Homepage": "https://libensemble.readthedocs.io",
     "Accelerator Variants": "    ",
@@ -21022,6 +21056,7 @@
   "area": "Data & Viz",
   "description": "Parallel file system.",
   "spack_info": {
+    "Spack Package": "marfs",
     "Accelerator Support": "Undetermined"
   },
   "docs": [
@@ -21046,6 +21081,7 @@
   "area": "Math Libraries",
   "description": "A parallel finite element math library.",
   "spack_info": {
+    "Spack Package": "mfem",
     "Description": "Free, lightweight, scalable C++ library for finite element methods.",
     "Homepage": "http://www.mfem.org",
     "Accelerator Variants": "CUDA ROCM   ",
@@ -21695,6 +21731,7 @@
   "area": "PMR",
   "description": "Open source MPI implementation for research. Used as the foundation for most vendor MPI libraries",
   "spack_info": {
+    "Spack Package": "mpich",
     "Description": "MPICH is a high performance and widely portable implementation of the\n    Message Passing Interface (MPI) standard.",
     "Homepage": "https://www.mpich.org",
     "Accelerator Variants": "CUDA ROCM   Level Zero",
@@ -21847,6 +21884,7 @@
   "area": "PMR",
   "description": "Open source MPI implementation used by some vendors and for exploration of new ideas.",
   "spack_info": {
+    "Spack Package": "openmpi",
     "Description": "An open source Message Passing Interface implementation. The Open MPI\n    Project is an open source Message Passing Interface implementation that\n    is developed and maintained by a consortium of academic, research, and\n    industry partners. Open MPI is therefore able to combine the expertise,\n    technologies, and resources from all across the High Performance\n    Computing community in order to build the best MPI library available.\n    Open MPI offers advantages for system and software vendors, application\n    developers and computer science researchers.",
     "Homepage": "https://www.open-mpi.org",
     "Accelerator Variants": "CUDA ROCM   ",
@@ -21864,7 +21902,7 @@
     {
       "name": "LICENSE",
       "url": "https://github.com/open-mpi/ompi/blob/HEAD/LICENSE",
-      "timestamp": "2026-09-01 16:48:47",
+      "timestamp": "2026-11-05 06:50:33",
       "content": "Most files in this release are marked with the copyrights of the\norganizations who have edited them.  The copyrights below are in no\nparticular order and generally reflect members of the Open MPI core\nteam who have contributed code to this release.  The copyrights for\ncode used under license from other parties are included in the\ncorresponding files.\n\nCopyright (c) 2004-2012 The Trustees of Indiana University and Indiana"
     }
   ],
@@ -21941,13 +21979,14 @@
       ]
     }
   ],
-  "last_updated": "2026-09-01 16:48:47"
+  "last_updated": "2026-11-05 06:50:33"
 },
 {
   "name": "QTHREADS",
   "area": "PMR",
   "description": "Lightweight user threading library, part of OpenMPI software suite",
   "spack_info": {
+    "Spack Package": "qthreads",
     "Description": "The qthreads API is designed to make using large numbers of threads\n    convenient and easy, and to allow portable access to threading\n    constructs used in massively parallel shared memory environments. The\n    API maps well to both MTA-style threading and PIM-style threading, and\n    we provide an implementation of this interface in both a standard SMP\n    context as well as the SST context. The qthreads API provides access to\n    full/empty-bit (FEB) semantics, where every word of memory can be marked\n    either full or empty, and a thread can wait for any word to attain\n    either state.",
     "Homepage": "http://www.cs.sandia.gov/qthreads",
     "Accelerator Variants": "    ",
@@ -22629,6 +22668,7 @@
   "area": "Development Tools",
   "description": "OpenMP over lightweight threads.",
   "spack_info": {
+    "Spack Package": "bolt",
     "Description": "BOLT targets a high-performing OpenMP implementation, especially\n    specialized for fine-grain parallelism. Unlike other OpenMP\n    implementations, BOLT utilizes a lightweight threading model for its\n    underlying threading mechanism. It currently adopts Argobots, a new\n    holistic, low-level threading and tasking runtime, in order to overcome\n    shortcomings of conventional OS-level threads. The current BOLT\n    implementation is based on the OpenMP runtime in LLVM, and thus it can\n    be used with LLVM/Clang, Intel OpenMP compiler, and GCC.",
     "Homepage": "https://www.bolt-omp.org",
     "Accelerator Variants": "    ",
@@ -23228,6 +23268,7 @@
   "area": "Development Tools",
   "description": "Effort to provide testing capabilities for new OpenMP features.",
   "spack_info": {
+    "Spack Package": "sollve",
     "Accelerator Support": "Undetermined"
   },
   "docs": [
@@ -23252,6 +23293,7 @@
   "area": "Development Tools",
   "description": "Performance API to provide portable access to vendor performance information for CPUs, GPUs, networks, I/O systems, including power.",
   "spack_info": {
+    "Spack Package": "papi",
     "Description": "PAPI provides the tool designer and application engineer with a\n    consistent interface and methodology for use of the performance counter\n    hardware found in most major microprocessors. PAPI enables software\n    engineers to see, in near real time, the relation between software\n    performance and processor events. In addition Component PAPI provides\n    access to a collection of components that expose performance measurement\n    opportunities across the hardware and software stack.",
     "Homepage": "https://icl.utk.edu/papi",
     "Accelerator Variants": "CUDA ROCM   ",
@@ -24048,6 +24090,7 @@
   "area": "PMR",
   "description": "Programming system for persistent memory.",
   "spack_info": {
+    "Spack Package": "papyrus",
     "Description": "Parallel Aggregate Persistent Storage",
     "Homepage": "https://code.ornl.gov/eck/papyrus",
     "Accelerator Variants": "    ",
@@ -24664,6 +24707,7 @@
   "area": "PMR",
   "description": "PaRSEC: the Parallel Runtime Scheduler and Execution Controller for micro-tasks on distributed heterogeneous systems.",
   "spack_info": {
+    "Spack Package": "parsec",
     "Description": "PaRSEC: the Parallel Runtime Scheduler and Execution Controller PaRSEC\n    is a runtime and a programming toolbox that support the design and\n    parallel execution of micro-tasks on distributed, heterogeneous systems.",
     "Homepage": "https://github.com/icldisco/parsec",
     "Accelerator Variants": "CUDA    ",
@@ -25071,6 +25115,7 @@
   "area": "Math Libraries",
   "description": "Library of parallel and sparse linear, nonlinear, optimization and transient solvers.",
   "spack_info": {
+    "Spack Package": "petsc",
     "Description": "PETSc is a suite of data structures and routines for the scalable\n    (parallel) solution of scientific applications modeled by partial\n    differential equations.",
     "Homepage": "https://petsc.org",
     "Accelerator Variants": "CUDA ROCM  SYCL ",
@@ -26293,6 +26338,7 @@
   "area": "Data & Viz",
   "description": "Parallel I/O library.",
   "spack_info": {
+    "Spack Package": "parallel-netcdf",
     "Description": "PnetCDF (Parallel netCDF) is a high-performance parallel I/O library for\n    accessing files in format compatibility with Unidata's NetCDF,\n    specifically the formats of CDF-1, 2, and 5.",
     "Homepage": "https://parallel-netcdf.github.io",
     "Accelerator Variants": "    ",
@@ -27078,6 +27124,7 @@
   "area": "System Software",
   "description": "Power management software.",
   "spack_info": {
+    "Spack Package": "variorum",
     "Description": "Variorum is a library providing vendor-neutral interfaces for monitoring\n    and controlling underlying hardware features.",
     "Homepage": "https://variorum.readthedocs.io",
     "Accelerator Variants": "    ",
@@ -27142,6 +27189,7 @@
   "area": "System Software",
   "description": "Power management software.",
   "spack_info": {
+    "Spack Package": "msr-safe",
     "Description": "msr_safe provides controlled userspace access to model-specific\n    registers (MSRs). It allows system administrators to give register-level\n    read access and bit-level write access to trusted users in production\n    environments. This access is useful where kernel drivers have not caught\n    up with new processor features, or performance constraints requires\n    batch access across dozens or hundreds of registers.",
     "Homepage": "https://github.com/LLNL/msr-safe",
     "Accelerator Variants": "    ",
@@ -27171,6 +27219,7 @@
   "area": "System Software",
   "description": "Power management software.",
   "spack_info": {
+    "Spack Package": "libmsr",
     "Accelerator Support": "Undetermined"
   },
   "docs": [
@@ -27213,6 +27262,7 @@
   "area": "System Software",
   "description": "Power management software.",
   "spack_info": {
+    "Spack Package": "geopm-service",
     "Accelerator Support": "Undetermined"
   },
   "docs": [
@@ -27243,6 +27293,7 @@
   "area": "System Software",
   "description": "Power management software.",
   "spack_info": {
+    "Spack Package": "geopm-slurm",
     "Accelerator Support": "Undetermined"
   },
   "docs": [
@@ -27273,6 +27324,7 @@
   "area": "System Software",
   "description": "Power management software.",
   "spack_info": {
+    "Spack Package": "power-slurm",
     "Accelerator Support": "Undetermined"
   },
   "docs": [
@@ -27321,6 +27373,7 @@
   "area": "PMR",
   "description": "Portable parallel programming library.",
   "spack_info": {
+    "Spack Package": "raja",
     "Description": "RAJA Parallel Framework.",
     "Homepage": "https://github.com/LLNL/RAJA",
     "Accelerator Variants": "CUDA ROCM  SYCL ",
@@ -28489,6 +28542,7 @@
   "area": "Math Libraries",
   "description": "Scalable parallel dense linear algebra library",
   "spack_info": {
+    "Spack Package": "netlib-scalapack",
     "Description": "ScaLAPACK is a library of high-performance linear algebra routines for\n    parallel distributed memory machines",
     "Homepage": "https://www.netlib.org/scalapack",
     "Accelerator Variants": "    ",
@@ -29276,6 +29330,7 @@
   "area": "Data & Viz",
   "description": "Scalable Checkpoint-Restart system.",
   "spack_info": {
+    "Spack Package": "scr",
     "Description": "SCR caches checkpoint data in storage on the compute nodes of a Linux\n    cluster to provide a fast, scalable checkpoint/restart capability for\n    MPI codes",
     "Homepage": "https://computing.llnl.gov/projects/scalable-checkpoint-restart-for-mpi",
     "Accelerator Variants": "    ",
@@ -29394,6 +29449,7 @@
   "area": "PMR",
   "description": "Hierarchical memory interface management software.",
   "spack_info": {
+    "Spack Package": "sicm",
     "Description": "SICM: Simplified Interface to Complex Memory.",
     "Homepage": "https://github.com/lanl/SICM",
     "Accelerator Variants": "    ",
@@ -29429,6 +29485,7 @@
   "area": "Math Libraries",
   "description": "SLATE is the next generation of ScaLAPACK.",
   "spack_info": {
+    "Spack Package": "slate",
     "Description": "The Software for Linear Algebra Targeting Exascale (SLATE) project\n    provides fundamental dense linear algebra capabilities to the US\n    Department of Energy and to the high-performance computing (HPC)\n    community at large. To this end, SLATE provides basic dense matrix\n    operations (e.g., matrix multiplication, rank-k update, triangular\n    solve), linear systems solvers, least square solvers, singular value and\n    eigenvalue solvers.",
     "Homepage": "https://icl.utk.edu/slate",
     "Accelerator Variants": "CUDA ROCM  SYCL ",
@@ -30041,6 +30098,7 @@
   "area": "Software Ecosystem",
   "description": "Software product meta-build tool and manager.",
   "spack_info": {
+    "Spack Package": "spack",
     "Description": "Spack is a multi-platform package manager that builds and installs\n    multiple versions and configurations of software. It works on Linux,\n    macOS, and many supercomputers. Spack is non-destructive: installing a\n    new version of a package does not break existing installations, so many\n    configurations of the same package can coexist.",
     "Homepage": "https://spack.io",
     "Accelerator Variants": "    ",
@@ -30094,6 +30152,7 @@
   "area": "Math Libraries",
   "description": "Parallel rank-structured dense direct solver package.",
   "spack_info": {
+    "Spack Package": "butterflypack",
     "Description": "ButterflyPACK is a mathematical software for rapidly solving large-scale\n    dense linear systems that exhibit off-diagonal rank-deficiency. These\n    systems arise frequently from boundary element methods, or factorization\n    phases in finite-difference/finite-element methods. ButterflyPACK relies\n    on low-rank or butterfly formats under Hierarchical matrix, HODLR or\n    other hierarchically nested frameworks to compress, factor and solve the\n    linear system in quasi-linear time. The computationally most intensive\n    phase, factorization, is accelerated via randomized linear algebras. The\n    butterfly format, originally inspired by the butterfly data flow in fast\n    Fourier Transform, is a linear algebra tool well-suited for compressing\n    matrices arising from high-frequency wave equations or highly\n    oscillatory integral operators.",
     "Homepage": "https://github.com/liuyangzhuan/ButterflyPACK",
     "Accelerator Variants": "    ",
@@ -30437,6 +30496,7 @@
   "area": "Math Libraries",
   "description": "Next generation parallel sparse direct solver package.",
   "spack_info": {
+    "Spack Package": "strumpack",
     "Description": "STRUMPACK -- STRUctured Matrix PACKage - provides linear solvers for\n    sparse matrices and for dense rank-structured matrices, i.e., matrices\n    that exhibit some kind of low-rank property. It provides a distributed\n    memory fully algebraic sparse solver and preconditioner. The\n    preconditioner is mostly aimed at large sparse linear systems which\n    result from the discretization of a partial differential equation, but\n    is not limited to any particular type of problem. STRUMPACK also\n    provides preconditioned GMRES and BiCGStab iterative solvers.",
     "Homepage": "http://portal.nersc.gov/project/sparse/strumpack",
     "Accelerator Variants": "CUDA ROCM   ",
@@ -31032,6 +31092,7 @@
   "area": "Math Libraries",
   "description": "Parallel time integrators and solvers for ODES, DAEs, and nonlinear systems.",
   "spack_info": {
+    "Spack Package": "sundials",
     "Description": "SUNDIALS (SUite of Nonlinear and DIfferential/ALgebraic equation\n    Solvers)",
     "Homepage": "https://computing.llnl.gov/projects/sundials",
     "Accelerator Variants": "CUDA ROCM  SYCL ",
@@ -32417,6 +32478,7 @@
   "area": "Math Libraries",
   "description": "Parallel sparse direct solver package.",
   "spack_info": {
+    "Spack Package": "superlu",
     "Description": "SuperLU is a general purpose library for the direct solution of large,\n    sparse, nonsymmetric systems of linear equations on high performance\n    machines. SuperLU is designed for sequential machines.",
     "Homepage": "https://portal.nersc.gov/project/sparse/superlu",
     "Accelerator Variants": "    ",
@@ -33083,6 +33145,7 @@
   "area": "Development Tools",
   "description": "Simple wrapper interface generator to support interlanguage library use.",
   "spack_info": {
+    "Spack Package": "swig",
     "Description": "SWIG is an interface compiler that connects programs written in C and\n    C++ with scripting languages such as Perl, Python, Ruby, and Tcl. It\n    works by taking the declarations found in C/C++ header files and using\n    them to generate the wrapper code that scripting languages need to\n    access the underlying C/C++ code. In addition, SWIG provides a variety\n    of customization features that let you tailor the wrapping process to\n    suit your application.",
     "Homepage": "https://www.swig.org",
     "Accelerator Variants": "    ",
@@ -34084,6 +34147,7 @@
   "area": "PMR",
   "description": "Intel-sponsored parallel programming environment for accelerator devices.",
   "spack_info": {
+    "Spack Package": "syclparallelstl",
     "Accelerator Support": "Undetermined"
   },
   "docs": [
@@ -34114,6 +34178,7 @@
   "area": "Data & Viz",
   "description": "Data compression library.",
   "spack_info": {
+    "Spack Package": "sz",
     "Description": "Error-bounded Lossy Compressor for HPC Data",
     "Homepage": "https://szcompressor.org",
     "Accelerator Variants": "    ",
@@ -34887,6 +34952,7 @@
   "area": "Math Libraries",
   "description": "A collection of libraries for high dimensional integration and interpolation and parameter calibration.",
   "spack_info": {
+    "Spack Package": "tasmanian",
     "Description": "The Toolkit for Adaptive Stochastic Modeling and Non-Intrusive\n    ApproximatioN is a robust library for high dimensional integration and\n    interpolation as well as parameter calibration.",
     "Homepage": "https://ornl.github.io/TASMANIAN/stable",
     "Accelerator Variants": "CUDA ROCM   ",
@@ -35856,6 +35922,7 @@
   "area": "Development Tools",
   "description": "A performance analysis and tuning library.",
   "spack_info": {
+    "Spack Package": "tau",
     "Description": "A portable profiling and tracing toolkit for performance analysis of\n    parallel programs written in Fortran, C, C++, UPC, Java, Python.",
     "Homepage": "https://www.cs.uoregon.edu/research/tau",
     "Accelerator Variants": "CUDA ROCM   Level Zero",
@@ -36463,6 +36530,7 @@
   "area": "Math Libraries",
   "description": "A collection of libraries for building, managing and solving large sparse linear, nonlinear, transient and optimization problems.",
   "spack_info": {
+    "Spack Package": "trilinos",
     "Description": "The Trilinos Project is an effort to develop algorithms and enabling\n    technologies within an object-oriented software framework for the\n    solution of large-scale, complex multi-physics engineering and\n    scientific problems. A unique design feature of Trilinos is its focus on\n    packages.",
     "Homepage": "https://trilinos.github.io",
     "Accelerator Variants": "CUDA ROCM   ",
@@ -37653,6 +37721,7 @@
   "area": "Math Libraries",
   "description": "",
   "spack_info": {
+    "Spack Package": "trilinos-adelus",
     "Accelerator Support": "Undetermined"
   },
   "docs": [
@@ -37683,6 +37752,7 @@
   "area": "PMR",
   "description": "A user space memory management tool.",
   "spack_info": {
+    "Spack Package": "umap",
     "Description": "Umap is a library that provides an mmap()-like interface to a simple,\n    user-space page fault handler based on the userfaultfd Linux feature\n    (starting with 4.3 linux kernel).",
     "Homepage": "https://github.com/LLNL/umap",
     "Accelerator Variants": "    ",
@@ -38269,6 +38339,7 @@
   "area": "PMR",
   "description": "A resource management library that allows the discovery, provision, and management of memory on machines with multiple memory devices.",
   "spack_info": {
+    "Spack Package": "umpire",
     "Description": "An application-focused API for memory management on NUMA & GPU\n    architectures",
     "Homepage": "https://github.com/LLNL/Umpire",
     "Accelerator Variants": "CUDA ROCM   ",
@@ -39480,6 +39551,7 @@
   "area": "Data & Viz",
   "description": "A distributed burst buffer file system.",
   "spack_info": {
+    "Spack Package": "unifyfs",
     "Description": "User level file system that enables applications to use node-local\n    storage as burst buffers for shared files. Supports scalable and\n    efficient aggregation of I/O bandwidth from burst buffers while having\n    the same life cycle as a batch-submitted job. UnifyFS is designed to\n    support common I/O workloads, including checkpoint/restart. While\n    primarily designed for N-N write/read, UnifyFS compliments its\n    functionality with the support for N-1 write/read.",
     "Homepage": "https://github.com/LLNL/UnifyFS",
     "Accelerator Variants": "    ",
@@ -39774,6 +39846,7 @@
   "area": "PMR",
   "description": "A C++ template library supporting asynchronous RMA/RPC communication in a PGAS model.",
   "spack_info": {
+    "Spack Package": "upcxx",
     "Description": "UPC++ is a C++ library that supports Partitioned Global Address Space\n    (PGAS) programming, and is designed to interoperate smoothly and\n    efficiently with MPI, OpenMP, CUDA, ROCm/HIP and AMTs. It leverages\n    GASNet-EX to deliver low-overhead, fine-grained communication, including\n    Remote Memory Access (RMA) and Remote Procedure Call (RPC).",
     "Homepage": "https://upcxx.lbl.gov",
     "Accelerator Variants": "CUDA ROCM   Level Zero",
@@ -40428,6 +40501,7 @@
   "area": "Data & Viz",
   "description": "Scalable checkpoint-restart library.",
   "spack_info": {
+    "Spack Package": "veloc",
     "Description": "Very-Low Overhead Checkpointing System. VELOC is a multi-level\n    checkpoint-restart runtime for HPC supercomputing infrastructures",
     "Homepage": "https://github.com/ECP-VeloC/VELOC",
     "Accelerator Variants": "    ",
@@ -40750,6 +40824,7 @@
   "area": "Data & Viz",
   "description": "Parallel on-node visualization toolkit.",
   "spack_info": {
+    "Spack Package": "vtk-m",
     "Description": "VTK-m is a toolkit of scientific visualization algorithms for emerging\n    processor architectures. VTK-m supports the fine-grained concurrency for\n    data analysis and visualization algorithms required to drive extreme\n    scale computing by providing abstract models for data and execution that\n    can be applied to a variety of algorithms across many different\n    processor architectures.",
     "Homepage": "https://m.vtk.org",
     "Accelerator Variants": "CUDA ROCM  SYCL ",
@@ -41548,6 +41623,7 @@
   "area": "Data & Viz",
   "description": "In-memory data compression library.",
   "spack_info": {
+    "Spack Package": "zfp",
     "Description": "zfp is a compressed number format for multidimensional floating-point\n    and integer arrays. zfp provides compressed-array classes that support\n    high throughput read and write random access to individual array\n    elements. zfp also supports serial and parallel (OpenMP and CUDA)\n    compression of whole arrays.",
     "Homepage": "https://zfp.llnl.gov",
     "Accelerator Variants": "CUDA    ",
@@ -42342,6 +42418,7 @@
   "area": "Data & Viz",
   "description": "Simplified Data Exchange for HPC Simulations",
   "spack_info": {
+    "Spack Package": "conduit",
     "Description": "Conduit is an open source project from Lawrence Livermore National\n    Laboratory that provides an intuitive model for describing hierarchical\n    scientific data in C++, C, Fortran, and Python. It is used for data\n    coupling between packages in-core, serialization, and I/O tasks.",
     "Homepage": "https://software.llnl.gov/conduit",
     "Accelerator Variants": "    ",
@@ -43174,6 +43251,7 @@
   "area": "PMR",
   "description": "QUO (as in status quo) is a runtime library that aids in accommodating thread-level heterogeneity in dynamic, phased MPI+X applications comprising single- and multi-threaded libraries.",
   "spack_info": {
+    "Spack Package": "libquo",
     "Description": "QUO (as in \"status quo\") is a runtime library that aids in accommodating\n    thread-level heterogeneity in dynamic, phased MPI+X applications\n    comprising single- and multi-threaded libraries.",
     "Homepage": "https://github.com/lanl/libquo",
     "Accelerator Variants": "    ",
@@ -43742,6 +43820,7 @@
   "area": "Development Tools",
   "description": "Gotcha is a library that wraps functions.",
   "spack_info": {
+    "Spack Package": "gotcha",
     "Description": "C software library for shared library function wrapping, enables tools\n    to intercept calls into shared libraries",
     "Homepage": "https://github.com/LLNL/gotcha",
     "Accelerator Variants": "    ",
@@ -44335,6 +44414,7 @@
   "area": "Data & Viz",
   "description": "FAODEL (Flexible, Asynchronous, Object Data-Exchange Libraries) is a collection of software libraries that are used to implement different data management services on high-performance computing (HPC) platforms",
   "spack_info": {
+    "Spack Package": "faodel",
     "Description": "Flexible, Asynchronous, Object Data-Exchange Libraries",
     "Homepage": "https://github.com/sandialabs/faodel",
     "Accelerator Variants": "    ",
@@ -44875,6 +44955,7 @@
   "area": "Development Tools",
   "description": "Mercury is a C library for implementing Remote Procedure Call, optimized for High-Performance Computing Systems.",
   "spack_info": {
+    "Spack Package": "mercury",
     "Description": "Mercury is a C library for implementing RPC, optimized for HPC",
     "Homepage": "https://mercury-hpc.github.io",
     "Accelerator Variants": "    ",
@@ -45768,6 +45849,7 @@
   "area": "Development Tools",
   "description": "With JupyterHub you can create a multi-user Hub which spawns, manages, and proxies multiple instances of the single-user Jupyter notebook server.",
   "spack_info": {
+    "Spack Package": "py-jupyterhub",
     "Description": "Multi-user server for Jupyter notebooks.",
     "Homepage": "https://pypi.org/project/jupyterhub",
     "Accelerator Variants": "    ",
@@ -45891,6 +45973,7 @@
   "area": "Development Tools",
   "description": "mpiFileUtils provides both a library called libmfu and a suite of MPI-based tools to manage large datasets",
   "spack_info": {
+    "Spack Package": "mpifileutils",
     "Description": "mpiFileUtils is a suite of MPI-based tools to manage large datasets,\n    which may vary from large directory trees to large files. High-\n    performance computing users often generate large datasets with parallel\n    applications that run with many processes (millions in some cases).\n    However those users are then stuck with single-process tools like cp and\n    rm to manage their datasets. This suite provides MPI-based tools to\n    handle typical jobs like copy, remove, and compare for such datasets,\n    providing speedups of up to 20-30x.",
     "Homepage": "https://github.com/hpc/mpifileutils",
     "Accelerator Variants": "    ",
@@ -46596,6 +46679,7 @@
   "area": "PMR",
   "description": "Global Arrays (GA) is a Partitioned Global Address Space (PGAS) programming model",
   "spack_info": {
+    "Spack Package": "globalarrays",
     "Description": "Global Arrays (GA) is a Partitioned Global Address Space (PGAS)\n    programming model. It provides primitives for one-sided communication\n    (Get, Put, Accumulate) and Atomic Operations (read increment). It\n    supports blocking and non-blocking primtives, and supports location\n    consistency.",
     "Homepage": "https://hpc.pnl.gov/globalarrays",
     "Accelerator Variants": "    ",
@@ -47195,6 +47279,7 @@
   "area": "Development Tools",
   "description": "MPark.Variant is an implementation of C++17 std::variant for C++11/14/17.",
   "spack_info": {
+    "Spack Package": "mpark-variant",
     "Description": "C++17 `std::variant` for C++11/14/17",
     "Homepage": "https://github.com/mpark/variant",
     "Accelerator Variants": "    ",
@@ -47763,6 +47848,7 @@
   "area": "Development Tools",
   "description": "Ninja (Noise INJection Agent) is a tool for reproducing subtle and unintended message races",
   "spack_info": {
+    "Spack Package": "pruners-ninja",
     "Description": "NINJA: Noise Inject agent tool to expose subtle and unintended message\n    races.",
     "Homepage": "https://github.com/PRUNERS/NINJA",
     "Accelerator Variants": "    ",
@@ -47816,6 +47902,7 @@
   "area": "System Software",
   "description": "This Message Passing Interface (MPI) library allows application of runtime policies for energy efficiency through the MPI standard profiling interface (PMPI).",
   "spack_info": {
+    "Spack Package": "libnrm",
     "Description": "Libnrm, the application instrumentation library for the Node Resource\n    Manager(NRM).",
     "Homepage": "https://xgitlab.cels.anl.gov/argo/libnrm",
     "Accelerator Variants": "    ",
@@ -47956,6 +48043,7 @@
   "area": "Math Libraries",
   "description": "Omega_h is a C++14 library that implements tetrahedron and triangle mesh adaptativity, with a focus on scalable HPC performance",
   "spack_info": {
+    "Spack Package": "omega-h",
     "Description": "Omega_h is a C++11 library providing data structures and algorithms for\n    adaptive discretizations. Its specialty is anisotropic triangle and\n    tetrahedral mesh adaptation. It runs efficiently on most modern HPC\n    hardware including GPUs.",
     "Homepage": "https://github.com/sandialabs/omega_h",
     "Accelerator Variants": "CUDA    ",
@@ -48413,6 +48501,7 @@
   "area": "Data & Viz",
   "description": "openPMD is an open meta-data schema that provides meaning and self-description for data sets in science and engineering",
   "spack_info": {
+    "Spack Package": "openpmd-api",
     "Description": "C++ & Python API for Scientific I/O",
     "Homepage": "https://www.openPMD.org",
     "Accelerator Variants": "    ",
@@ -49164,6 +49253,7 @@
   "area": "Math Libraries",
   "description": "PHIST provides implementations of and interfaces to block iterative solvers for sparse linear and eigenvalue problems.",
   "spack_info": {
+    "Spack Package": "phist",
     "Description": "The Pipelined, Hybrid-parallel Iterative Solver Toolkit provides\n    implementations of and interfaces to block iterative solvers for sparse\n    linear and eigenvalue problems. In contrast to other libraries we\n    support multiple backends (e.g. Trilinos, PETSc and our own optimized\n    kernels), and interfaces in multiple languages such as C, C++, Fortran\n    2003 and Python. PHIST has a clear focus on portability and hardware\n    performance: in particular support row-major storage of block vectors\n    and using GPUs (via the ghost library or Trilinos/Tpetra).",
     "Homepage": "https://bitbucket.org/essex/phist",
     "Accelerator Variants": "    ",
@@ -49227,6 +49317,7 @@
   "area": "Math Libraries",
   "description": "PLASMA is a software package for solving problems in dense linear algebra using OpenMP.",
   "spack_info": {
+    "Spack Package": "plasma",
     "Description": "Parallel Linear Algebra Software for Multicore Architectures, PLASMA is\n    a software package for solving problems in dense linear algebra using\n    multicore processors and Xeon Phi coprocessors. PLASMA provides\n    implementations of state-of-the-art algorithms using cutting-edge task\n    scheduling techniques. PLASMA currently offers a collection of routines\n    for solving linear systems of equations, least squares problems,\n    eigenvalue problems, and singular value problems.",
     "Homepage": "https://github.com/icl-utk-edu/plasma",
     "Accelerator Variants": "    ",
@@ -49476,6 +49567,7 @@
   "area": "Simulation",
   "description": "preCICE stands for Precise Code Interaction Coupling Environment. Its main component is a library that can be used by simulation programs to be coupled together in a partitioned way, enabling multi-physics simulations, such as fluid-structure interaction.",
   "spack_info": {
+    "Spack Package": "precice",
     "Description": "preCICE (Precise Code Interaction Coupling Environment) is a coupling\n    library for partitioned multi-physics simulations. Partitioned means\n    that preCICE couples existing programs (solvers) capable of simulating a\n    subpart of the complete physics involved in a simulation.",
     "Homepage": "https://precice.org",
     "Accelerator Variants": "    ",
@@ -50155,6 +50247,7 @@
   "area": "Math Libraries",
   "description": "The SCOREC Core is a set of C/C++ libraries for unstructured mesh simulations on supercomputers.",
   "spack_info": {
+    "Spack Package": "pumi",
     "Description": "SCOREC RPI's Parallel Unstructured Mesh Infrastructure (PUMI). An\n    efficient distributed mesh data structure and methods to support\n    parallel adaptive analysis including general mesh-based operations, such\n    as mesh entity creation/deletion, adjacency and geometric\n    classification, iterators, arbitrary (field) data attachable to mesh\n    entities, efficient communication involving entities duplicated across\n    multiple tasks, migration of mesh entities between tasks, and dynamic\n    load balancing.",
     "Homepage": "https://www.scorec.rpi.edu/pumi",
     "Accelerator Variants": "    ",
@@ -50814,6 +50907,7 @@
   "area": "Math Libraries",
   "description": "SLEPc, the Scalable Library for Eigenvalue Problem Computations, is a software package for the solution of large sparse eigenvalue problems on parallel computers.",
   "spack_info": {
+    "Spack Package": "slepc",
     "Description": "Scalable Library for Eigenvalue Problem Computations.",
     "Homepage": "https://slepc.upv.es",
     "Accelerator Variants": "CUDA ROCM   ",
@@ -51520,6 +51614,7 @@
   "area": "PMR",
   "description": "Swift/T is an implicitly parallel programming language for composing external functions and command-line executables into massively parallel applications",
   "spack_info": {
+    "Spack Package": "stc",
     "Description": "STC: The Swift-Turbine Compiler",
     "Homepage": "http://swift-lang.org/Swift-T",
     "Accelerator Variants": "    ",
@@ -51856,6 +51951,7 @@
   "area": "Simulation",
   "description": "WarpX is an advanced electromagnetic Particle-In-Cell code",
   "spack_info": {
+    "Spack Package": "warpx",
     "Description": "WarpX is an advanced electromagnetic Particle-In-Cell code. It supports\n    many features including Perfectly-Matched Layers (PML) and mesh\n    refinement. In addition, WarpX is a highly-parallel and highly-optimized\n    code and features hybrid GPU/OpenMP/MPI parallelization and load\n    balancing capabilities.",
     "Homepage": "https://ecp-warpx.github.io",
     "Accelerator Variants": "CUDA  HIP SYCL ",
@@ -52070,6 +52166,7 @@
   "area": "Development Tools",
   "description": "GPTune is an autotuning framework that relies on multitask and transfer learnings to help solve the underlying black-box optimization problem using Bayesian optimization methodologies.",
   "spack_info": {
+    "Spack Package": "gptune",
     "Description": "GPTune is an autotuning framework that relies on multitask and transfer\n    learnings to help solve the underlying black-box optimization problem\n    using Bayesian optimization methodologies.",
     "Homepage": "https://gptune.lbl.gov",
     "Accelerator Variants": "    ",
@@ -52116,6 +52213,7 @@
   "area": "Math Libraries",
   "description": "deal.II is a C++ program library targeted at the computational solution of partial differential equations using adaptive finite elements.",
   "spack_info": {
+    "Spack Package": "dealii",
     "Description": "C++ software library providing well-documented tools to build finite\n    element codes for a broad variety of PDEs.",
     "Homepage": "https://www.dealii.org",
     "Accelerator Variants": "CUDA    ",
@@ -52151,6 +52249,7 @@
   "area": "Development Tools",
   "description": "H5bench is a suite of parallel I/O benchmarks or kernels representing I/O patterns that are commonly used in HDF5 applications on high performance computing systems.",
   "spack_info": {
+    "Spack Package": "h5bench",
     "Description": "A benchmark suite for measuring HDF5 performance.",
     "Homepage": "https://github.com/hpc-io/h5bench",
     "Accelerator Variants": "    ",
@@ -52203,6 +52302,7 @@
   "area": "Math Libraries",
   "description": "Axom provides robust, flexible software infrastructure for the development of multi-physics applications and computational tools.",
   "spack_info": {
+    "Spack Package": "axom",
     "Description": "Axom provides a robust, flexible software infrastructure for the\n    development of multi-physics applications and computational tools.",
     "Homepage": "https://github.com/LLNL/axom",
     "Accelerator Variants": "CUDA ROCM   ",
@@ -52529,6 +52629,7 @@
   "area": "PMR",
   "description": "Distributed Performance-portable Stencil Compuitation",
   "spack_info": {
+    "Spack Package": "bricks",
     "Description": "Bricks is a data layout and code generation framework, enabling\n    performance-portable stencil computations across a multitude of\n    architectures.",
     "Homepage": "https://bricks.run",
     "Accelerator Variants": "CUDA    ",
@@ -52558,6 +52659,7 @@
   "area": "Simulation",
   "description": "Alquimia provides a generic interface between flow and transport simulators (drivers) and biogeochemical reaction capabilities (engines).",
   "spack_info": {
+    "Spack Package": "alquimia",
     "Description": "Alquimia is an interface that exposes the capabilities of mature\n    geochemistry codes such as CrunchFlow and PFLOTRAN",
     "Homepage": "https://github.com/LBL-EESA/alquimia-dev",
     "Accelerator Variants": "    ",
@@ -52693,6 +52795,7 @@
   "area": "PMR",
   "description": "Argobots is a lightweight, low-level threading and tasking framework.",
   "spack_info": {
+    "Spack Package": "argobots",
     "Description": "Argobots, which was developed as a part of the Argo project, is a\n    lightweight runtime system that supports integrated computation and data\n    movement with massive concurrency. It will directly leverage the lowest-\n    level constructs in the hardware and OS: lightweight notification\n    mechanisms, data movement engines, memory mapping, and data placement\n    strategies. It consists of an execution model and a memory model.",
     "Homepage": "https://www.argobots.org",
     "Accelerator Variants": "    ",
@@ -53262,6 +53365,7 @@
   "area": "PMR",
   "description": "Cabana is a performance portable library for particle-based simulations.",
   "spack_info": {
+    "Spack Package": "cabana",
     "Description": "The Exascale Co-Design Center for Particle Applications Toolkit",
     "Homepage": "https://github.com/ECP-copa/Cabana",
     "Accelerator Variants": "CUDA ROCM  SYCL ",
@@ -53795,6 +53899,7 @@
   "area": "Software Ecosystem",
   "description": "Charliecloud provides user-defined software stacks (UDSS) for high-performance computing (HPC) centers.",
   "spack_info": {
+    "Spack Package": "charliecloud",
     "Description": "Lightweight user-defined software stacks for HPC.",
     "Homepage": "https://charliecloud.io",
     "Accelerator Variants": "    ",
@@ -53891,6 +53996,7 @@
   "area": "Simulation",
   "description": "CP2K is a quantum chemistry and solid state physics software package that can perform atomistic simulations of solid state, liquid, molecular, periodic, material, crystal, and biological systems.",
   "spack_info": {
+    "Spack Package": "cp2k",
     "Description": "CP2K is a quantum chemistry and solid state physics software package\n    that can perform atomistic simulations of solid state, liquid,\n    molecular, periodic, material, crystal, and biological systems",
     "Homepage": "https://www.cp2k.org",
     "Accelerator Variants": "CUDA ROCM HIP  ",
@@ -53920,6 +54026,7 @@
   "area": "Data & Viz",
   "description": "HDF5 Asynchronous I/O VOL Connector",
   "spack_info": {
+    "Spack Package": "hdf5-vol-async",
     "Description": "This package enables asynchronous IO in HDF5. Usage: Set the\n    HDF5_VOL_CONNECTOR environment variable to enable this adaptor, i.e.\n    $export HDF5_VOL_CONNECTOR=\"async under_vol=0;under_info={}\" ref.\n    https://hdf5-vol-async.readthedocs.io/en/latest/gettingstarted.html#set-\n    environmental-variables",
     "Homepage": "https://hdf5-vol-async.readthedocs.io",
     "Accelerator Variants": "    ",
@@ -53988,6 +54095,7 @@
   "area": "Simulation",
   "description": "LAMMPS stands for Large-scale Atomic/Molecular Massively Parallel",
   "spack_info": {
+    "Spack Package": "lammps",
     "Description": "LAMMPS stands for Large-scale Atomic/Molecular Massively Parallel\n    Simulator.",
     "Homepage": "https://www.lammps.org",
     "Accelerator Variants": "CUDA ROCM HIP  ",
@@ -54243,6 +54351,7 @@
   "area": "Development Tools",
   "description": "A portable and efficient C programming interface (API) to determine the call chain of a program.",
   "spack_info": {
+    "Spack Package": "libunwind",
     "Description": "A portable and efficient C programming interface (API) to determine the\n    call-chain of a program.",
     "Homepage": "https://www.nongnu.org/libunwind",
     "Accelerator Variants": "    ",
@@ -54968,6 +55077,7 @@
   "area": "Data & Viz",
   "description": "nccmp compares two NetCDF files bitwise, semantically or with a user defined tolerance",
   "spack_info": {
+    "Spack Package": "nccmp",
     "Description": "Compare NetCDF Files",
     "Homepage": "https://nccmp.sourceforge.net",
     "Accelerator Variants": "    ",
@@ -55330,6 +55440,7 @@
   "area": "Data & Viz",
   "description": "The NCO toolkit manipulates and analyzes data stored in netCDF-accessible formats",
   "spack_info": {
+    "Spack Package": "nco",
     "Description": "The NCO toolkit manipulates and analyzes data stored in netCDF-\n    accessible formats",
     "Homepage": "https://nco.sourceforge.net",
     "Accelerator Variants": "    ",
@@ -55750,6 +55861,7 @@
   "area": "Simulation",
   "description": "PLUMED is an open source library for free energy calculations in molecular systems",
   "spack_info": {
+    "Spack Package": "plumed",
     "Description": "PLUMED is an open source library for free energy calculations in\n    molecular systems which works together with some of the most popular\n    molecular dynamics engines. Free energy calculations can be performed as\n    a function of many order parameters with a particular focus on\n    biological problems, using state of the art methods such as\n    metadynamics, umbrella sampling and Jarzynski-equation based steered MD.\n    The software, written in C++, can be easily interfaced with both fortran\n    and C/C++ codes.",
     "Homepage": "https://www.plumed.org",
     "Accelerator Variants": "CUDA    ",
@@ -56034,6 +56146,7 @@
   "area": "PMR",
   "description": "A Persistent Memory Allocator for Data-Centric Analytics",
   "spack_info": {
+    "Spack Package": "metall",
     "Description": "A Persistent Memory Allocator For Data-Centric Analytics",
     "Homepage": "https://github.com/LLNL/metall",
     "Accelerator Variants": "    ",
@@ -56528,6 +56641,7 @@
   "area": "Simulation",
   "description": "The Maximally-Localised Generalised Wannier Functions Code",
   "spack_info": {
+    "Spack Package": "wannier90",
     "Description": "Wannier90 calculates maximally-localised Wannier functions (MLWFs).\n    Wannier90 is released under the GNU General Public License.",
     "Homepage": "https://wannier.org",
     "Accelerator Variants": "    ",
@@ -56630,6 +56744,7 @@
   "area": "Data & Viz",
   "description": "A generic abstraction for the compression of dense tensors",
   "spack_info": {
+    "Spack Package": "libpressio",
     "Description": "A generic abstraction for the compression of dense tensors",
     "Homepage": "https://github.com/codarcode/libpressio",
     "Accelerator Variants": "CUDA    ",
@@ -56665,6 +56780,7 @@
   "area": "Simulation",
   "description": "An open source, SPICE-compatible, high-performance analog circuit simulator",
   "spack_info": {
+    "Spack Package": "xyce",
     "Description": "Xyce (rhymes with 'spice') is an open source, SPICE-compatible, high-\n    performance analog circuit simulator, Xyce supports the standard\n    analysis capabilities found in other SPICE-like codes, such as DC,\n    transient, AC, and small-signal noise analyses; it also has less common\n    capabilities, such as harmonic balance, sensitivity analysis, and\n    uncertainty propagation techniques. Xyce supplies industry-standard\n    compact models and can support custom models via its Verilog-A model\n    compiler. Foundry process-development kits (PDKs) in other SPICE syntax\n    can be used via the XDM netlist translator, which is included as part of\n    the Xyce package. In addition to supporting use on all common desktop\n    platforms (Mac, Windows, Linux), Xyce can also be compiled to run in a\n    large-scale parallel mode to provide scalable, numerically accurate\n    analog simulation of circuits containing millions of devices, or more.",
     "Homepage": "https://xyce.sandia.gov",
     "Accelerator Variants": "    ",
@@ -56700,6 +56816,7 @@
   "area": "Data & Viz",
   "description": "MGARD error bounded lossy compressor",
   "spack_info": {
+    "Spack Package": "mgard",
     "Description": "MGARD error bounded lossy compressor For versions up to 2023-12-09, uses\n    a fork from https://github.com/robertu94/MGARD with patches to support\n    Spack. For versions after 2023-12-09, uses the upstream repository at\n    https://github.com/CODARcode/MGARD directly from the master branch.",
     "Homepage": "https://github.com/CODARcode/MGARD",
     "Accelerator Variants": "CUDA ROCM   ",
@@ -56735,6 +56852,7 @@
   "area": "Data & Viz",
   "description": "A GPU accelerated error-bounded lossy compression for scientific data",
   "spack_info": {
+    "Spack Package": "cusz",
     "Description": "A GPU accelerated error-bounded lossy compression for scientific data",
     "Homepage": "https://szcompressor.org",
     "Accelerator Variants": "CUDA    ",
@@ -56787,6 +56905,7 @@
   "area": "Data & Viz",
   "description": "HDF5 Log-based VOL Connector is an HDF5 VOL Plugin that stores HDF5 datasets in a log-based storage layout.",
   "spack_info": {
+    "Spack Package": "hdf5-vol-log",
     "Description": "Log-based VOL - an HDF5 VOL Plugin that stores HDF5 datasets in a log-\n    based storage layout.",
     "Homepage": "https://github.com/DataLib-ECP/vol-log-based",
     "Accelerator Variants": "    ",
@@ -56822,6 +56941,7 @@
   "area": "Data & Viz",
   "description": "HDF5 Cache VOL connector is for caching data on fast storage layers and moving data asynchronously to the parallel file system to hide I/O overhead.",
   "spack_info": {
+    "Spack Package": "hdf5-vol-cache",
     "Description": "Package for HDF5 cache VOL.",
     "Homepage": "https://vol-cache.readthedocs.io",
     "Accelerator Variants": "    ",
@@ -56851,6 +56971,7 @@
   "area": "AI",
   "description": "XBraid interface to PyTorch",
   "spack_info": {
+    "Spack Package": "torchbraid",
     "Accelerator Support": "Undetermined"
   },
   "docs": [
@@ -56881,6 +57002,7 @@
   "area": "AI",
   "description": "an open-source, HPC-centric, deep learning training framework",
   "spack_info": {
+    "Spack Package": "lbann",
     "Description": "LBANN: Livermore Big Artificial Neural Network Toolkit. A distributed\n    memory, HPC-optimized, model and data parallel training toolkit for deep\n    neural networks.",
     "Homepage": "https://software.llnl.gov/lbann",
     "Accelerator Variants": "CUDA ROCM   ",
@@ -56910,6 +57032,7 @@
   "area": "AI",
   "description": "An end-to-end open source platform for machine learning",
   "spack_info": {
+    "Spack Package": "py-tensorflow",
     "Description": "TensorFlow is an open source machine learning framework for everyone.",
     "Homepage": "https://www.tensorflow.org",
     "Accelerator Variants": "CUDA ROCM   ",
@@ -56945,6 +57068,7 @@
   "area": "AI",
   "description": "Provides accelerated tensor computation and deep neural networks",
   "spack_info": {
+    "Spack Package": "py-torch",
     "Description": "Tensors and Dynamic neural networks in Python with strong GPU\n    acceleration.",
     "Homepage": "https://pytorch.org",
     "Accelerator Variants": "CUDA ROCM   ",
@@ -56980,6 +57104,7 @@
   "area": "AI",
   "description": "Autograd and XLA, brought together for high-performance numerical computing",
   "spack_info": {
+    "Spack Package": "py-jax",
     "Description": "Differentiate, compile, and transform Numpy code. JAX is a Python\n    library for accelerator-oriented array computation and program\n    transformation, designed for high-performance numerical computing and\n    large-scale machine learning.",
     "Homepage": "https://github.com/jax-ml/jax",
     "Accelerator Variants": "    ",
@@ -57003,18 +57128,19 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/google/jax/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-11-05 01:46:42",
+      "timestamp": "2026-11-05 23:36:20",
       "content": "<h1>Change log</h1>\n<p>Best viewed <a href=\"https://docs.jax.dev/en/latest/changelog.html\">here</a>.\nFor the changes specific to the experimental Pallas APIs,\nsee {ref}<code>pallas-changelog</code>.</p>\n<p>JAX follows Effort-based versioning; for a discussion of this and JAX&#x27;s API\ncompatibility policy, refer to {ref}<code>api-compatibility</code>. For the Python and\nNumPy version support policy, refer to {ref}<code>version-support-policy</code>.</p>\n<h2>Unreleased</h2>"
     }
   ],
   "deployment": [],
-  "last_updated": "2026-11-05 01:46:42"
+  "last_updated": "2026-11-05 23:36:20"
 },
 {
   "name": "PANDAS",
   "area": "AI",
   "description": "powerful Python data analysis toolkit",
   "spack_info": {
+    "Spack Package": "py-pandas",
     "Description": "pandas is a fast, powerful, flexible and easy to use open source data\n    analysis and manipulation tool, built on top of the Python programming\n    language.",
     "Homepage": "https://pandas.pydata.org",
     "Accelerator Variants": "    ",
@@ -57094,6 +57220,7 @@
   "area": "AI",
   "description": "a Python module for machine learning",
   "spack_info": {
+    "Spack Package": "py-scikit-learn",
     "Description": "A set of python modules for machine learning and data mining.",
     "Homepage": "https://scikit-learn.org",
     "Accelerator Variants": "    ",
@@ -57123,6 +57250,7 @@
   "area": "AI",
   "description": "Open Source Computer Vision Library",
   "spack_info": {
+    "Spack Package": "opencv",
     "Description": "OpenCV (Open Source Computer Vision Library) is an open source computer\n    vision and machine learning software library.",
     "Homepage": "https://opencv.org",
     "Accelerator Variants": "CUDA    ",
@@ -57158,6 +57286,7 @@
   "area": "AI",
   "description": "a distributed deep learning training framework",
   "spack_info": {
+    "Spack Package": "py-horovod",
     "Description": "Horovod is a distributed deep learning training framework for\n    TensorFlow, Keras, PyTorch, and Apache MXNet.",
     "Homepage": "https://github.com/horovod",
     "Accelerator Variants": "CUDA ROCM   ",
@@ -57193,6 +57322,7 @@
   "area": "AI",
   "description": "a multi-backend deep learning framework",
   "spack_info": {
+    "Spack Package": "py-keras",
     "Description": "Multi-backend Keras. Keras 3 is a multi-backend deep learning framework,\n    with support for JAX, TensorFlow, PyTorch, and OpenVINO (for inference-\n    only).",
     "Homepage": "https://keras.io",
     "Accelerator Variants": "    ",
@@ -57204,7 +57334,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/keras-team/keras/blob/HEAD/README.md",
-      "timestamp": "2026-10-23 19:56:37",
+      "timestamp": "2026-11-06 01:40:52",
       "content": "<h1>Keras 3: Deep Learning for Humans</h1>\n<p>Keras 3 is a multi-backend deep learning framework, with support for JAX, TensorFlow, PyTorch, and OpenVINO (for inference-only).\nEffortlessly build and train models for computer vision, natural language processing, audio processing,\ntimeseries forecasting, recommender systems, etc.</p>\n<ul>\n<li><strong>Accelerated model development</strong>: Ship deep learning solutions faster thanks to the high-level UX of Keras</li>\n</ul>"
     },
     {
@@ -57215,13 +57345,14 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-23 19:56:37"
+  "last_updated": "2026-11-06 01:40:52"
 },
 {
   "name": "OPENAI-PYTHON",
   "area": "AI",
   "description": "The OpenAI Python library provides convenient access to the OpenAI REST API",
   "spack_info": {
+    "Spack Package": "openai-python",
     "Accelerator Support": "Undetermined"
   },
   "docs": [
@@ -57234,8 +57365,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-11-05 00:49:16",
-      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.45.0...v3.46.0\">3.46.0</a> (2026-11-05)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> add Australia, India, and Japan residency options (<a href=\"https://github.com/openai/openai-python/issues/4246\">#4246</a>) (<a href=\"https://github.com/openai/openai-python/commit/2634b87c2f3d31960936cb0653e662356cd138a2\">2634b87</a>)</li>\n<li><strong>api:</strong> add GPT-6 Rosalind to the model catalog (<a href=\"https://github.com/openai/openai-python/issues/4243\">#4243</a>) (<a href=\"https://github.com/openai/openai-python/commit/0f8e5f382861120809b1d149a18c744f725746a0\">0f8e5f3</a>)</li>\n</ul>"
+      "timestamp": "2026-11-05 17:58:18",
+      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.46.0...v3.47.0\">3.47.0</a> (2026-11-05)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> add a model option for Responses (<a href=\"https://github.com/openai/openai-python/issues/4249\">#4249</a>) (<a href=\"https://github.com/openai/openai-python/commit/090098fd3f00fd46c529c4fd19edc2c762ce7a34\">090098f</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.45.0...v3.46.0\">3.46.0</a> (2026-11-05)</h2>"
     },
     {
       "name": "LICENSE",
@@ -57245,13 +57376,14 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-11-05 00:49:16"
+  "last_updated": "2026-11-05 17:58:18"
 },
 {
   "name": "DEEPHYPER",
   "area": "AI",
   "description": "DeepHyper is a powerful Python package for automating machine learning tasks",
   "spack_info": {
+    "Spack Package": "py-deephyper",
     "Description": "Scalable asynchronous hyperparameter optimization, neural architecture\n    search, and parallel ensemble of predictive models.",
     "Homepage": "https://deephyper.readthedocs.io",
     "Accelerator Variants": "    ",
@@ -57281,6 +57413,7 @@
   "area": "Simulation",
   "description": "Nek5000 is a fast and scalable open source CFD solver.",
   "spack_info": {
+    "Spack Package": "nek5000",
     "Description": "A fast and scalable high-order solver for computational fluid dynamics",
     "Homepage": "https://nek5000.mcs.anl.gov",
     "Accelerator Variants": "    ",
@@ -57316,6 +57449,7 @@
   "area": "Simulation",
   "description": "Nekbone solves a standard Poisson equation",
   "spack_info": {
+    "Spack Package": "nekbone",
     "Description": "NEK5000 emulation software called NEKbone. Nekbone captures the basic\n    structure and user interface of the extensive Nek5000 software. Nek5000\n    is a high order, incompressible Navier-Stokes solver based on the\n    spectral element method.",
     "Homepage": "https://github.com/Nek5000/Nekbone",
     "Accelerator Variants": "    ",
@@ -57351,6 +57485,7 @@
   "area": "Simulation",
   "description": "Laghos (LAGrangian High-Order Solver) is a miniapp that solves the time-dependent Euler equations of compressible gas dynamics",
   "spack_info": {
+    "Spack Package": "laghos",
     "Description": "Laghos (LAGrangian High-Order Solver) is a CEED miniapp that solves the\n    time-dependent Euler equations of compressible gas dynamics in a moving\n    Lagrangian frame using unstructured high-order finite element spatial\n    discretization and explicit high-order time-stepping.",
     "Homepage": "https://computing.llnl.gov/projects/co-design/laghos",
     "Accelerator Variants": "    ",
@@ -57368,8 +57503,8 @@
     {
       "name": "CHANGELOG",
       "url": "https://github.com/CEED/Laghos/blob/HEAD/CHANGELOG",
-      "timestamp": "2026-11-04 16:21:41",
-      "content": "               __                __\n              / /   ____  ____  / /_  ____  _____\n             / /   / __ `/ __ `/ __ \\/ __ \\/ ___/\n            / /___/ /_/ / /_/ / / / / /_/ (__  )\n                       /____/\n\n        High-order Lagrangian Hydrodynamics Miniapp\n\nVersion 3.2, released on November x, 2026\n=============================\n\n- Added CMake build support for CPU, CUDA and HIP configurations, with optional"
+      "timestamp": "2026-11-06 00:08:20",
+      "content": "               __                __\n              / /   ____  ____  / /_  ____  _____\n             / /   / __ `/ __ `/ __ \\/ __ \\/ ___/\n            / /___/ /_/ / /_/ / / / / /_/ (__  )\n                       /____/\n\n        High-order Lagrangian Hydrodynamics Miniapp\n\nVersion 3.2, released on November 5, 2026\n=============================\n\n- Added CMake build support for CPU, CUDA and HIP configurations, with optional"
     },
     {
       "name": "LICENSE",
@@ -57385,13 +57520,14 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-11-04 16:21:41"
+  "last_updated": "2026-11-06 00:08:20"
 },
 {
   "name": "GLVIS",
   "area": "Data & Viz",
   "description": "GLVis is an OpenGL tool for visualization of finite element meshes and functions.",
   "spack_info": {
+    "Spack Package": "glvis",
     "Description": "GLVis: an OpenGL tool for visualization of FEM meshes and functions",
     "Homepage": "https://glvis.org",
     "Accelerator Variants": "    ",
@@ -57433,6 +57569,7 @@
   "area": "Data & Viz",
   "description": "The Unidata network Common Data Form (netCDF) is an interface for scientific data access",
   "spack_info": {
+    "Spack Package": "netcdf-fortran",
     "Description": "NetCDF (network Common Data Form) is a set of software libraries and\n    machine-independent data formats that support the creation, access, and\n    sharing of array-oriented scientific data. This is the Fortran\n    distribution.",
     "Homepage": "https://www.unidata.ucar.edu/software/netcdf",
     "Accelerator Variants": "    ",
@@ -57808,6 +57945,7 @@
   "area": "Simulation",
   "description": "Scalable computational chemistry tools",
   "spack_info": {
+    "Spack Package": "nwchem",
     "Description": "High-performance computational chemistry software",
     "Homepage": "https://nwchemgit.github.io",
     "Accelerator Variants": "CUDA    ",
@@ -57854,6 +57992,7 @@
   "area": "Math Libraries",
   "description": "libCEED provides fast algebra for element-based discretizations",
   "spack_info": {
+    "Spack Package": "libceed",
     "Description": "The CEED API Library: Code for Efficient Extensible Discretizations.",
     "Homepage": "https://github.com/CEED/libCEED",
     "Accelerator Variants": "CUDA ROCM   ",
@@ -57865,7 +58004,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/CEED/libCEED/blob/HEAD/README.md",
-      "timestamp": "2026-10-30 14:59:59",
+      "timestamp": "2026-11-05 06:04:54",
       "content": "<h1>libCEED: Efficient Extensible Discretization</h1>\n<h2>Summary and Purpose</h2>\n<p>libCEED provides fast algebra for element-based discretizations, designed for performance portability, run-time flexibility, and clean embedding in higher level libraries and applications.\nIt offers a C99 interface as well as bindings for Fortran, Python, Julia, and Rust.\nWhile our focus is on high-order finite elements, the approach is mostly algebraic and thus applicable to other discretizations in factored form, as explained in the <a href=\"https://libceed.org/en/latest/\">user manual</a> and API implementation portion of the <a href=\"https://libceed.org/en/latest/api/\">documentation</a>.</p>"
     },
     {
@@ -57882,13 +58021,14 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-10-30 14:59:59"
+  "last_updated": "2026-11-05 06:04:54"
 },
 {
   "name": "BIONEMO-FRAMEWORK",
   "area": "AI",
   "description": "NVIDIA BioNeMo Framework is a is a comprehensive suite of programming tools, libraries, and models designed for computational drug discovery",
   "spack_info": {
+    "Spack Package": "bionemo-framework",
     "Accelerator Support": "Undetermined"
   },
   "docs": [
@@ -57913,13 +58053,14 @@
   "area": "AI",
   "description": "NVIDIA NeMo Framework is a scalable and cloud-native generative AI framework",
   "spack_info": {
+    "Spack Package": "nemo",
     "Accelerator Support": "Undetermined"
   },
   "docs": [
     {
       "name": "README.md",
       "url": "https://github.com/NVIDIA/NeMo/blob/HEAD/README.md",
-      "timestamp": "2026-08-13 16:28:11",
+      "timestamp": "2026-11-05 18:58:47",
       "content": "<h1><strong>NVIDIA NeMo Speech</strong></h1>\n<p>Checkout our <a href=\"https://huggingface.co/collections/nvidia/nemotron-speech\">HuggingFace🤗 collection</a> for the latest open\nweight checkpoints and demos!</p>\n<h2>Updates</h2>\n<p>&gt; NeMo Speech 3.0 is now available as <a href=\"https://github.com/NVIDIA-NeMo/Speech/releases/tag/v3.0.0\">release v3.0.0</a>\n&gt; and in the <a href=\"https://catalog.ngc.nvidia.com/orgs/nvidia/containers/nemo-speech?version=26.07.00\">26.07.00 NeMo Speech NGC container</a>.</p>"
     },
     {
@@ -57930,13 +58071,14 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-09-03 16:16:09"
+  "last_updated": "2026-11-05 18:58:47"
 },
 {
   "name": "LLVM-PROJECT",
   "area": "Development Tools",
   "description": "a toolkit for the construction of highly optimized compilers, optimizers, and run-time environments",
   "spack_info": {
+    "Spack Package": "llvm",
     "Description": "The LLVM Project is a collection of modular and reusable compiler and\n    toolchain technologies. Despite its name, LLVM has little to do with\n    traditional virtual machines, though it does provide helpful libraries\n    that can be used to build them. The name \"LLVM\" itself is not an\n    acronym; it is the full name of the project.",
     "Homepage": "https://llvm.org",
     "Accelerator Variants": "CUDA    ",
@@ -58070,6 +58212,7 @@
   "area": "Simulation",
   "description": "a high-throughput and highly parallel open source molecular simulation toolkit",
   "spack_info": {
+    "Spack Package": "gromacs",
     "Description": "GROMACS is a molecular dynamics package primarily designed for\n    simulations of proteins, lipids and nucleic acids. It was originally\n    developed in the Biophysical Chemistry department of University of\n    Groningen, and is now maintained by contributors in universities and\n    research centers across the world. GROMACS is one of the fastest and\n    most popular software packages available and can run on CPUs as well as\n    GPUs. It is free, open source released under the GNU Lesser General\n    Public License. Before the version 4.6, GROMACS was released under the\n    GNU General Public License.",
     "Homepage": "https://www.gromacs.org",
     "Accelerator Variants": "CUDA   SYCL ",
@@ -58366,5 +58509,125 @@
     }
   ],
   "last_updated": "2023-08-15 09:27:29"
+},
+{
+  "name": "DIY",
+  "area": "PMR",
+  "description": "DIY is a block-parallel library for implementing scalable algorithms that can execute both in-core and out-of-core.",
+  "spack_info": {
+    "Spack Package": "diy",
+    "Description": "Data-parallel out-of-core library",
+    "Homepage": "https://github.com/diatomic/diy",
+    "Accelerator Variants": "    ",
+    "Spack Smoke Test": "Present",
+    "E4S Testsuite Test": "Absent",
+    "Accelerator Support": "Undetermined"
+  },
+  "docs": [
+    {
+      "name": "README.md",
+      "url": "https://github.com/diatomic/diy/blob/master/README.md",
+      "timestamp": "2024-08-14 20:44:34",
+      "content": "<h2>DIY is a block-parallel library</h2>\n<p>DIY is a block-parallel library for implementing scalable algorithms that can execute both\nin-core and out-of-core. The same program can be executed with one or more threads per MPI\nprocess, seamlessly combining distributed-memory message passing with shared-memory thread\nparallelism.  The abstraction enabling these capabilities is block parallelism; blocks\nand their message queues are mapped onto processing elements (MPI processes or threads) and are</p>"
+    },
+    {
+      "name": "CHANGELOG.md",
+      "url": "https://github.com/diatomic/diy/blob/master/CHANGELOG.md",
+      "timestamp": "2019-05-01 18:10:49",
+      "content": "<h1>Version 3.5.dev1</h1>\n<ul>\n<li>Add <code>DynamicPoint</code> class (dimension specified at runtime, uses <code>small_vector</code> for\n  storage). Switch Bounds to use this class, deprecating old uses.</li>\n<li>Make geometry functions in <code>include/diy/pick.hpp</code> generic with respect to the\n  floating point type.</li>\n<li>Change <code>LinkFactory</code> mechanism to make link serialization generic.</li>\n<li>Add <code>AMRLink</code> in <code>include/diy/link.hpp</code></li>\n<li>Add <code>min_queue_size</code> and <code>max_hold_time</code> to control <code>Master::iexchange()</code> behavior</li>\n</ul>"
+    },
+    {
+      "name": "LICENSE.txt",
+      "url": "https://github.com/diatomic/diy/blob/master/LICENSE.txt",
+      "timestamp": "2015-05-21 22:55:59",
+      "content": "License Agreement\n\n&quot;DIY2, Copyright (c) 2015, The Regents of the University of California, through\nLawrence Berkeley National Laboratory (subject to receipt of any required\napprovals from the U.S. Dept. of Energy).  All rights reserved.&quot;\n\nRedistribution and use in source and binary forms, with or without modification,\nare permitted provided that the following conditions are met:\n\n(1) Redistributions of source code must retain the above copyright notice, this"
+    }
+  ],
+  "deployment": [],
+  "last_updated": "2024-08-14 20:44:34"
+},
+{
+  "name": "EXARL",
+  "area": "AI",
+  "description": "A scalable software framework for reinforcement learning environments and agents/policies used for the Design and Control applications",
+  "spack_info": {
+    "Spack Package": "py-exarl",
+    "Description": "A scalable software framework for reinforcement learning environments\n    and agents/policies used for the Design and Control applications",
+    "Homepage": "https://github.com/exalearn/EXARL",
+    "Accelerator Variants": "    ",
+    "Spack Smoke Test": "Absent",
+    "E4S Testsuite Test": "Absent",
+    "Accelerator Support": "Undetermined"
+  },
+  "docs": [
+    {
+      "name": "README.md",
+      "url": "https://github.com/exalearn/EXARL/blob/master/README.md",
+      "timestamp": "2023-12-12 20:20:08",
+      "content": "<h1>Easily eXtendable Architecture for Reinforcement Learning</h1>\n<p>A scalable software framework for reinforcement learning environments and agents/policies used for the Design and Control applications</p>\n<p><a href=\"https://exarl.readthedocs.io/en/latest/index.html\">Complete documentation</a> is available.</p>\n<h2>Software Requirement</h2>\n<ul>\n<li>Python 3.7</li>\n<li>The EXARL framework is built on <a href=\"https://gym.openai.com\">OpenAI Gym</a></li>\n<li>Additional python packages are defined in the setup.py</li>\n</ul>"
+    },
+    {
+      "name": "LICENSE.txt",
+      "url": "https://github.com/exalearn/EXARL/blob/master/LICENSE.txt",
+      "timestamp": "2021-12-08 13:45:58",
+      "content": "You may distribute the code using the OSS License.\n\nPlease use the following copyright notice:\nCopyright © 2021, Battelle Memorial Institute\nCopyright © 2020. Triad National Security, LLC.\nCopyright © 2021, Brookhaven Science Associates, LLC, All rights reserved.\n\nThis program was produced under U.S. Government contract 89233218CNA000001 for Los Alamos\nNational Laboratory (LANL), which is operated by Triad National Security, LLC for the U.S."
+    }
+  ],
+  "deployment": [],
+  "last_updated": "2023-12-12 20:20:08"
+},
+{
+  "name": "PYTUQ",
+  "area": "Math Libraries",
+  "description": "The Python Toolkit for Uncertainty Quantification (PyTUQ) is a Python-only collection of libraries and tools designed for quantifying uncertainty in computational models.",
+  "spack_info": {
+    "Spack Package": "py-pytuq",
+    "Description": "The Python Toolkit for Uncertainty Quantification (PyTUQ) is a Python-\n    only collection of libraries and tools designed for quantifying\n    uncertainty in computational models. PyTUQ offers a range of UQ\n    functionalities, including Bayesian inference and linear regression\n    methods, polynomial chaos expansions, and global sensitivity analysis\n    methods. PyTUQ features advanced techniques for dimensionality\n    reduction, such as SVD and Karhunen-Loeve expansions, along with various\n    MCMC methods for calibration and inference. The toolkit also includes\n    robust classes for multivariate random variables and integration\n    techniques, making it a versatile resource for researchers and\n    practitioners seeking to quantify uncertainty in their numerical\n    predictions.",
+    "Homepage": "https://sandialabs.github.io/pytuq",
+    "Accelerator Variants": "    ",
+    "Spack Smoke Test": "Absent",
+    "E4S Testsuite Test": "Absent",
+    "Accelerator Support": "Undetermined"
+  },
+  "docs": [
+    {
+      "name": "README.md",
+      "url": "https://github.com/sandialabs/pytuq/blob/main/README.md",
+      "timestamp": "2026-08-20 18:55:49",
+      "content": "<h1>Python Toolkit for Uncertainty Quantification (PyTUQ)</h1>\n<h4>Khachik Sargsyan, Bert Debusschere, Emilie Grace Baillo</h4>\n<h2>Overview</h2>\n<p>The Python Toolkit for Uncertainty Quantification (PyTUQ) is a Python-only collection of libraries and tools designed for quantifying uncertainty in computational models. PyTUQ offers a range of UQ functionalities, including Bayesian inference and linear regression methods, polynomial chaos expansions, and global sensitivity analysis methods. PyTUQ features advanced techniques for dimensionality reduction, such as SVD and Karhunen-Loeve expansions, along with various MCMC methods for calibration and inference. The toolkit also includes robust classes for multivariate random variables and integration techniques, making it a versatile resource for researchers and practitioners seeking to quantify uncertainty in their numerical predictions. To explore the PyTUQ documentation and learn more, visit our website <a href=\"https://sandialabs.github.io/pytuq/\">here</a>.</p>"
+    },
+    {
+      "name": "LICENSE.txt",
+      "url": "https://github.com/sandialabs/pytuq/blob/main/LICENSE.txt",
+      "timestamp": "2025-09-08 21:37:53",
+      "content": "BSD 3-Clause License\n\nCopyright 2025 National Technology &amp; Engineering Solutions of Sandia, LLC (NTESS).\nUnder the terms of Contract DE-NA0003525 with NTESS, the U.S. Government retains\ncertain rights in this software.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n1. Redistributions of source code must retain the above copyright notice, this"
+    }
+  ],
+  "deployment": [],
+  "last_updated": "2026-08-20 18:55:49"
+},
+{
+  "name": "SURF",
+  "area": "Development Tools",
+  "description": "",
+  "spack_info": {
+    "Spack Package": "py-ytopt",
+    "Description": "Ytopt package implements search using Random Forest (SuRF), an\n    autotuning search method developed within Y-Tune ECP project.",
+    "Homepage": "https://github.com/ytopt-team/ytopt",
+    "Accelerator Variants": "    ",
+    "Spack Smoke Test": "Absent",
+    "E4S Testsuite Test": "Absent",
+    "Accelerator Support": "Undetermined"
+  },
+  "docs": [
+    {
+      "name": "README.md",
+      "url": "https://github.com/ytopt-team/ytopt/blob/main/README.md",
+      "timestamp": "2026-10-22 21:59:37",
+      "content": "<p>&lt;p align=&quot;center&quot;&gt;</p>\n<p>&lt;/p&gt;</p>\n<h1>What is ytopt?</h1>\n<p><code>ytopt</code> is a machine learning-based autotuning and hyperparameter optimization software package in python that uses Bayesian Optimization to find the best input parameter/hyperparameter configurations for a given kernel, miniapp, or application with the best system configurations for a given HPC system. ytopt is included in <a href=\"https://cass.community/software/ytopt.html\">Consortium for the Advancement of Scientific Software (CASS)</a>.</p>"
+    }
+  ],
+  "deployment": [],
+  "last_updated": "2026-10-22 21:59:37"
 }  ]
 }
