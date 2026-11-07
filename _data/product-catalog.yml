@@ -14340,12 +14340,6 @@
       "content": "<h1>HPCToolkit</h1>\n<p>HPCToolkit is an integrated suite of tools for measurement and\nanalysis of program performance on computers ranging from multicore\ndesktop systems to GPU-accelerated supercomputers. HPCToolkit\nprovides accurate measurements of a program&#x27;s work, resource\nconsumption, and inefficiency, correlates these metrics with the\nprogram&#x27;s source code, works with multilingual, fully optimized</p>"
     },
     {
-      "name": "CHANGELOG.md",
-      "url": "https://gitlab.com/hpctoolkit/hpctoolkit/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-05-11 15:21:25",
-      "content": "<h1>Changelog</h1>\n<p>All notable changes and releases to this project will be documented in this file.</p>\n<p>Recent releases are formatted loosely based on <a href=\"https://common-changelog.org/\">Common Changelog</a>, a more restrictive subset of <a href=\"https://keepachangelog.com/en/1.1.0/\">Keep a Changelog</a>.</p>\n<h2>[2026.0.1]</h2>\n<h3>Changed</h3>\n<ul>\n<li>Adjust reporting of GPU topdown stall reasons for memory accesses on AMD GPUs. (<a href=\"hpctoolkit/hpctoolkit!1498\">!1498</a>) (John Mellor-Crummey)</li>\n</ul>"
-    },
-    {
       "name": "LICENSE",
       "url": "https://gitlab.com/hpctoolkit/hpctoolkit/blob/HEAD/LICENSE",
       "timestamp": "2025-07-18 08:38:27",
@@ -14839,7 +14833,7 @@
       ]
     }
   ],
-  "last_updated": "2026-05-11 15:21:25"
+  "last_updated": "2025-08-29 17:23:36"
 },
 {
   "name": "HPX",
@@ -21099,7 +21093,7 @@
     {
       "name": "CHANGELOG",
       "url": "https://github.com/mfem/mfem/blob/HEAD/CHANGELOG",
-      "timestamp": "2026-11-04 15:59:29",
+      "timestamp": "2026-11-06 17:21:54",
       "content": "                    Finite Element Discretization Library\n                                   __\n                       _ __ ___   / _|  ___  _ __ ___\n                      | &#x27;_ ` _ \\ | |_  / _ \\| &#x27;_ ` _ \\\n                      | | | | | ||  _||  __/| | | | | |\n\n                               https://mfem.org\n\nVersion 4.10.1 (development)\n============================\n\nGPU computing\n-------------"
     },
     {
@@ -21724,7 +21718,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-04 15:59:29"
+  "last_updated": "2026-11-06 17:21:54"
 },
 {
   "name": "MPICH",
@@ -52320,7 +52314,7 @@
     {
       "name": "RELEASE-NOTES.md",
       "url": "https://github.com/LLNL/axom/blob/HEAD/RELEASE-NOTES.md",
-      "timestamp": "2026-10-27 19:14:29",
+      "timestamp": "2026-11-03 22:04:26",
       "content": "<h1>Axom Software Release Notes</h1>\n<p>Notes describing significant changes in each Axom release are documented in this file.</p>\n<p>The format of this file is based on <a href=\"http://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>.</p>\n<p>The Axom project release numbers follow <a href=\"http://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>[Unreleased] - Release date yyyy-mm-dd</h2>\n<h3>Added</h3>\n<ul>\n<li>Axom&#x27;s host execution-space default allocator is now a configure-time policy. The default policy is malloc, regardless</li>\n</ul>"
     },
     {
@@ -52622,7 +52616,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-27 19:14:29"
+  "last_updated": "2026-11-03 22:04:26"
 },
 {
   "name": "BRICKS",
@@ -57050,7 +57044,7 @@
     {
       "name": "RELEASE.md",
       "url": "https://github.com/tensorflow/tensorflow/blob/HEAD/RELEASE.md",
-      "timestamp": "2026-11-04 23:39:23",
+      "timestamp": "2026-11-06 23:44:13",
       "content": "<h1>Release 2.23.0</h1>\n<h2>TensorFlow</h2>\n<p>&lt;INSERT SMALL BLURB ABOUT RELEASE FOCUS AREA AND POTENTIAL TOOLCHAIN CHANGES&gt;</p>\n<h3>Breaking Changes</h3>\n<ul>\n<li>&lt;BREAKING CHANGES GO HERE&gt;</li>\n</ul>\n<h3>Known Caveats</h3>\n<ul>\n<li>&lt;CAVEATS REGARDING THE RELEASE (BUT NOT BREAKING CHANGES).&gt;</li>\n</ul>\n<h3>Major Features and Improvements</h3>\n<ul>\n<li><code>tf.lite</code><ul>\n<li>Adds blockwise quantization support in the converter and <code>quant_spec</code> metadata in <code>FullyConnectedOptions</code>.</li>\n</ul>\n</li>\n</ul>"
     },
     {
@@ -57061,7 +57055,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-11-04 23:39:23"
+  "last_updated": "2026-11-06 23:44:13"
 },
 {
   "name": "PYTORCH",
@@ -57128,12 +57122,12 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/google/jax/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-11-05 23:36:20",
+      "timestamp": "2026-11-06 16:22:32",
       "content": "<h1>Change log</h1>\n<p>Best viewed <a href=\"https://docs.jax.dev/en/latest/changelog.html\">here</a>.\nFor the changes specific to the experimental Pallas APIs,\nsee {ref}<code>pallas-changelog</code>.</p>\n<p>JAX follows Effort-based versioning; for a discussion of this and JAX&#x27;s API\ncompatibility policy, refer to {ref}<code>api-compatibility</code>. For the Python and\nNumPy version support policy, refer to {ref}<code>version-support-policy</code>.</p>\n<h2>Unreleased</h2>"
     }
   ],
   "deployment": [],
-  "last_updated": "2026-11-05 23:36:20"
+  "last_updated": "2026-11-06 16:22:32"
 },
 {
   "name": "PANDAS",
