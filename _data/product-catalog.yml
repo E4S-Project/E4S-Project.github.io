@@ -6572,8 +6572,8 @@
     {
       "name": "ChangeLog",
       "url": "https://github.com/darshan-hpc/darshan/blob/HEAD/ChangeLog",
-      "timestamp": "2025-10-16 21:39:08",
-      "content": "--------------------------\nDarshan Release Change Log\n--------------------------\n\nDarshan-3.5.0\n=============\n\n## Highlights of some significant changes from the previous release.\n+ Darshan&#x27;s documentation has moved to [readthedocs.io](https://darshan.readthedocs.io/en/stable/)\n+ Support large-count MPI-IO APIs introduced in MPI 4.0.\n+ Change the default mode of mmap I/O data to log file to enable."
+      "timestamp": "2026-11-07 21:47:02",
+      "content": "--------------------------\nDarshan Release Change Log\n--------------------------\n\nDarshan-3.6.0\n=============\n\n## Highlights of some significant changes from the previous release.\n* New feature: Darshan now collects Pthread IDs into DXT records.\n* Migrate APMPI module into Darshan soure tree.\n* Remove APXC sub-module, as Cray XC systems are now legacy.\n* New feature: set an environment variable to enable log file path name hierarchy"
     },
     {
       "name": "COPYRIGHT",
@@ -6920,7 +6920,7 @@
       ]
     }
   ],
-  "last_updated": "2025-10-16 21:39:08"
+  "last_updated": "2026-11-07 21:47:02"
 },
 {
   "name": "DATATRANSFERKIT",
@@ -33181,8 +33181,8 @@
     {
       "name": "CHANGES.current",
       "url": "https://github.com/swig/swig/blob/HEAD/CHANGES.current",
-      "timestamp": "2026-10-24 23:38:56",
-      "content": "Below are the changes for the current release.\nSee the CHANGES file for changes in older releases.\nSee the RELEASENOTES file for a summary of changes in each release.\nIssue # numbers mentioned below can be found on Github. For more details, add\nthe issue number to the end of the URL: https://github.com/swig/swig/issues/\n\nVersion 4.6.0 (in progress)\n===========================\n\n2026-10-25: wsfulton"
+      "timestamp": "2026-11-07 09:11:18",
+      "content": "Below are the changes for the current release.\nSee the CHANGES file for changes in older releases.\nSee the RELEASENOTES file for a summary of changes in each release.\nIssue # numbers mentioned below can be found on Github. For more details, add\nthe issue number to the end of the URL: https://github.com/swig/swig/issues/\n\nVersion 4.6.0 (in progress)\n===========================\n\n2026-11-06: wsfulton"
     },
     {
       "name": "LICENSE",
@@ -34134,7 +34134,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-28 08:00:25"
+  "last_updated": "2026-11-07 09:11:18"
 },
 {
   "name": "SYCLPARALLELSTL",
