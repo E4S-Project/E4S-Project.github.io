@@ -55867,7 +55867,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/plumed/plumed2/blob/HEAD/README.md",
-      "timestamp": "2026-10-31 00:57:50",
+      "timestamp": "2026-11-07 01:09:48",
       "content": "<h2>Branches and releases</h2>\n<p>Several branches and tags are stored on the git repository.</p>\n<p>Branches named <code>v2.X</code> correspond to release branches.</p>\n<p>Master branch may contain non tested features and is not expected to be used by non-developers.\nIt typically contains features that will be available on the next release.</p>\n<p>Tags named <code>v2.XbY</code> correspond to beta releases, use it with care.\nTags named <code>v2.X.Y</code> correspond to official releases, use the latest available.</p>"
     },
     {
@@ -56133,7 +56133,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-31 00:57:50"
+  "last_updated": "2026-11-07 01:09:48"
 },
 {
   "name": "METALL",
