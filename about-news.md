@@ -16,7 +16,6 @@ sidebar:
 | E4S 26.11 Release | To Be Announced at SC26. |
 | E4S Quick Starts | A growing collection of short, practical walkthroughs for getting started with E4S, covering PyTorch, TensorFlow, NeMo, BioNeMo, vLLM, HYPRE, LAMMPS, ParaView, and more. See the [E4S Learning Quick Starts](/learn-quick-starts/) page. |
 | Zero to LAMMPS in Two Minutes with Cache-Backed Images | A Cache-Backed Image (CBI) pulls and installs any E4S product straight from the build cache — no source build required. See [Cache-Backed Images (CBIs)](/cache-backed-images/) for the benchmark and why it matters for AI-for-science workflows. |
-| E4S 26.06 Release | [Release Notes](/news/NEWS_RELEASE_E4S_26.06.pdf), [Release Presentation](/talks/E4S_26.06.pdf)|
 | New E4S website | The new E4S website aims to provide significant enhancements for all community members. See the [New Site Features page](/new-features) |
 
 ### Events
@@ -24,6 +23,10 @@ sidebar:
 | Date | Event | Location |
 |------|--------|-----------|
 | November 15, 2026, 8:30 am - 5:00 pm CST | [Using Containers to Accelerate HPC](https://sc26.conference-program.com/presentation/?id=tut164&sess=sess181) | SC26, Chicago, IL |
+| November 16, 2026, 8:30 am - 5:00 pm CST | [Understanding Communication Performance in Large-Scale Codes: A Practical Guide](https://sc26.conference-program.com/presentation/?id=tut138&sess=sess176) (tutorial) | SC26, Chicago, IL (Room W183c) |
+| November 16, 2026, 9:00 am - 9:20 am CST | [E4S: An HPC-AI Software Ecosystem for Science](https://sc26.conference-program.com/presentation/?id=ws_scc102&sess=sess138) (workshop talk) | SC26, Chicago, IL (Room W178a) |
+| November 16, 2026, 3:30 pm - 4:00 pm CST | [CI for E4S: Build and Test Automation for a Containerized HPC-AI Software Stack](https://sc26.conference-program.com/presentation/?id=ws_canopie105&sess=sess128) (CANOPIE-HPC workshop talk) | SC26, Chicago, IL (Room W181c) |
+| November 17, 2026, 10:00 am - 5:00 pm CST | [Union of Containers: Layered Software Stacks with Cross-Container Dependency Reuse for HPC](https://sc26.conference-program.com/presentation/?id=rpost284&sess=sess313) (poster) | SC26, Chicago, IL (Skyline Ballroom North Pre-Function) |
 
 
 ### Past Events
