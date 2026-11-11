@@ -6572,8 +6572,8 @@
     {
       "name": "ChangeLog",
       "url": "https://github.com/darshan-hpc/darshan/blob/HEAD/ChangeLog",
-      "timestamp": "2026-11-07 21:47:02",
-      "content": "--------------------------\nDarshan Release Change Log\n--------------------------\n\nDarshan-3.6.0\n=============\n\n## Highlights of some significant changes from the previous release.\n* New feature: Darshan now collects Pthread IDs into DXT records.\n* Migrate APMPI module into Darshan soure tree.\n* Remove APXC sub-module, as Cray XC systems are now legacy.\n* New feature: set an environment variable to enable log file path name hierarchy"
+      "timestamp": "2026-11-10 22:35:29",
+      "content": "--------------------------\nDarshan Release Change Log\n--------------------------\n\nDarshan-3.6.0\n=============\n\n## Highlights of some significant changes from the previous release.\n* New feature: Darshan now collects Pthread IDs into DXT records. See example\n  outputs in https://github.com/darshan-hpc/darshan/pull/1102 and Darshan user\n  guide.\n* New feature: set an environment variable to enable log file path name"
     },
     {
       "name": "COPYRIGHT",
@@ -6920,7 +6920,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-07 21:47:02"
+  "last_updated": "2026-11-10 22:35:29"
 },
 {
   "name": "DATATRANSFERKIT",
@@ -12241,7 +12241,7 @@
     {
       "name": "release_docs/CHANGELOG.md",
       "url": "https://github.com/HDFGroup/hdf5/blob/HEAD/release_docs/CHANGELOG.md",
-      "timestamp": "2026-11-04 15:13:25",
+      "timestamp": "2026-11-10 22:01:17",
       "content": "<p>v2.3.0 --- July X , 2026</p>\n<h1>🔺 HDF5 Changelog</h1>\n<p>All notable changes to this project will be documented in this file. This document describes the differences between this release and the previous\nHDF5 release, platforms tested, and known problems in this release.</p>\n<p>For releases prior to version 2.0.0, please see the release.txt file and for more details check the HISTORY*.txt files in the HDF5 source.</p>"
     }
   ],
@@ -14317,7 +14317,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-04 15:13:25"
+  "last_updated": "2026-11-10 22:01:17"
 },
 {
   "name": "HPCTOOLKIT",
@@ -16847,7 +16847,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/kokkos/kokkos/blob/HEAD/README.md",
-      "timestamp": "2026-09-01 11:58:14",
+      "timestamp": "2026-11-10 16:02:57",
       "content": "<p>&lt;div align=&quot;center&quot;&gt;</p>\n<p><a href=\"https://kokkos.org\"></a></p>\n<p>&lt;/div&gt;</p>\n<p>&lt;div align=&quot;center&quot;&gt;</p>\n<p><a href=\"https://hpsf.io\"></a>&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;\n<a href=\"https://hpsf.io/projects/#tab-established\"></a>&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;&amp;emsp;\n<a href=\"https://linuxfoundation.org\"></a></p>\n<p>&lt;/div&gt;</p>\n<h1>Kokkos: Core Libraries</h1>\n<p>Kokkos Core implements a programming model in C++ for writing performance portable</p>"
     },
     {
@@ -18856,7 +18856,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-15 21:32:31"
+  "last_updated": "2026-11-10 16:02:57"
 },
 {
   "name": "KOKKOS-KERNELS",
@@ -52314,7 +52314,7 @@
     {
       "name": "RELEASE-NOTES.md",
       "url": "https://github.com/LLNL/axom/blob/HEAD/RELEASE-NOTES.md",
-      "timestamp": "2026-11-03 22:04:26",
+      "timestamp": "2026-11-09 18:23:21",
       "content": "<h1>Axom Software Release Notes</h1>\n<p>Notes describing significant changes in each Axom release are documented in this file.</p>\n<p>The format of this file is based on <a href=\"http://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>.</p>\n<p>The Axom project release numbers follow <a href=\"http://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>[Unreleased] - Release date yyyy-mm-dd</h2>\n<h3>Added</h3>\n<ul>\n<li>Axom&#x27;s host execution-space default allocator is now a configure-time policy. The default policy is malloc, regardless</li>\n</ul>"
     },
     {
@@ -52616,7 +52616,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-03 22:04:26"
+  "last_updated": "2026-11-09 18:23:21"
 },
 {
   "name": "BRICKS",
@@ -57122,12 +57122,12 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/google/jax/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-11-06 16:22:32",
+      "timestamp": "2026-11-10 22:34:14",
       "content": "<h1>Change log</h1>\n<p>Best viewed <a href=\"https://docs.jax.dev/en/latest/changelog.html\">here</a>.\nFor the changes specific to the experimental Pallas APIs,\nsee {ref}<code>pallas-changelog</code>.</p>\n<p>JAX follows Effort-based versioning; for a discussion of this and JAX&#x27;s API\ncompatibility policy, refer to {ref}<code>api-compatibility</code>. For the Python and\nNumPy version support policy, refer to {ref}<code>version-support-policy</code>.</p>\n<h2>Unreleased</h2>"
     }
   ],
   "deployment": [],
-  "last_updated": "2026-11-06 16:22:32"
+  "last_updated": "2026-11-10 22:34:14"
 },
 {
   "name": "PANDAS",
@@ -57146,7 +57146,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/pandas-dev/pandas/blob/HEAD/README.md",
-      "timestamp": "2026-11-01 15:58:21",
+      "timestamp": "2026-11-10 23:21:08",
       "content": "<p>&lt;picture align=&quot;center&quot;&gt;\n  &lt;source media=&quot;(prefers-color-scheme: dark)&quot; srcset=&quot;https://pandas.pydata.org/static/img/pandas_white.svg&quot;&gt;</p>\n<p>&lt;/picture&gt;</p>\n<hr />\n<h1>pandas: A Powerful Python Data Analysis Toolkit</h1>\n<p>| | |\n| --- | --- |\n| Testing |   |\n| Package |     |\n| Meta |       |</p>\n<h2>What is it?</h2>\n<p><strong>pandas</strong> is a Python package that provides fast, flexible, and expressive data</p>"
     },
     {
@@ -57207,7 +57207,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-01 15:58:21"
+  "last_updated": "2026-11-10 23:21:08"
 },
 {
   "name": "SCIKIT-LEARN",
@@ -57359,8 +57359,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-11-09 16:12:39",
-      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.47.0...v3.48.0\">3.48.0</a> (2026-11-09)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> add stream options for agent sessions (<a href=\"https://github.com/openai/openai-python/issues/4251\">#4251</a>) (<a href=\"https://github.com/openai/openai-python/commit/c6fc264689d384d5caec150fafa1a9567c4a3f56\">c6fc264</a>)</li>\n<li><strong>api:</strong> recognize gpt-6-rosalind in beta Responses (<a href=\"https://github.com/openai/openai-python/issues/4257\">#4257</a>) (<a href=\"https://github.com/openai/openai-python/commit/3774b7ed775b4bff99b45ef961c5d1f6c82b8e99\">3774b7e</a>)</li>\n</ul>"
+      "timestamp": "2026-11-10 06:41:12",
+      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.48.0...v3.49.0\">3.49.0</a> (2026-11-10)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> add typed async function tools (<a href=\"https://github.com/openai/openai-python/issues/4264\">#4264</a>) (<a href=\"https://github.com/openai/openai-python/commit/ea07983f796144835ab3f2cad38fdca04c997a0e\">ea07983</a>)</li>\n</ul>\n<h3>Bug Fixes</h3>\n<ul>\n<li>encode microphone recordings as valid PCM WAV (<a href=\"https://github.com/openai/openai-python/issues/3900\">#3900</a>) (<a href=\"https://github.com/openai/openai-python/commit/13c000d1f32c1e3e3c4b3e16bc6b956dfd4f5216\">13c000d</a>)</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -57370,7 +57370,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-11-09 16:12:39"
+  "last_updated": "2026-11-10 06:41:12"
 },
 {
   "name": "DEEPHYPER",
