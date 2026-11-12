@@ -13,7 +13,7 @@ sidebar:
 
 | Announcement | Description | 
 |--------------|-------------|
-| E4S 26.11 Release | Adds an Apache Guacamole remote desktop, expanded agentic-AI tools, the NCCL, NIXL, and NVSHMEM GPU communication runtimes, and new HPC tools, with more than 125 HPC and AI packages built on Spack 1.2.2. [Release Notes](/news/NEWS_RELEASE_E4S_26.11.pdf) |
+| E4S 26.11 Release | Adds an Apache Guacamole remote desktop, expanded agentic-AI tools, the NCCL, NIXL, and NVSHMEM GPU communication runtimes, and new HPC tools, with more than 125 HPC and AI packages built on Spack 1.3. [Release Notes](/news/NEWS_RELEASE_E4S_26.11.pdf) |
 | E4S Quick Starts | A growing collection of short, practical walkthroughs for getting started with E4S, covering PyTorch, TensorFlow, NeMo, BioNeMo, vLLM, HYPRE, LAMMPS, ParaView, and more. See the [E4S Learning Quick Starts](/learn-quick-starts/) page. |
 | Zero to LAMMPS in Two Minutes with Cache-Backed Images | A Cache-Backed Image (CBI) pulls and installs any E4S product straight from the build cache — no source build required. See [Cache-Backed Images (CBIs)](/cache-backed-images/) for the benchmark and why it matters for AI-for-science workflows. |
 | New E4S website | The new E4S website aims to provide significant enhancements for all community members. See the [New Site Features page](/new-features) |
