@@ -16853,8 +16853,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/kokkos/kokkos/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-10-15 21:32:31",
-      "content": "<h1>CHANGELOG</h1>\n<h2>5.2.2</h2>\n<p><a href=\"https://github.com/kokkos/kokkos/compare/5.2.1...5.2.2\">Full Changelog</a></p>\n<h3>Bug Fixes</h3>\n<ul>\n<li>Workaround warnings with std::pair as subview slice specifiers in relaxed constexpr mode <a href=\"https://github.com/kokkos/kokkos/pull/9467\">#9467</a></li>\n</ul>\n<h2>5.2.1</h2>\n<p><a href=\"https://github.com/kokkos/kokkos/compare/5.2.0...5.2.1\">Full Changelog</a></p>\n<h3>Bug Fixes</h3>\n<ul>\n<li>Fix inverted <code>NDEBUG</code>logic in mdspan precondition checking <a href=\"https://github.com/kokkos/kokkos/pull/9405\">#9405</a></li>\n</ul>"
+      "timestamp": "2026-11-11 13:36:55",
+      "content": "<h1>CHANGELOG</h1>\n<h2>5.3.0</h2>\n<p><a href=\"https://github.com/kokkos/kokkos/compare/5.2.2...5.3.0\">Full Changelog</a></p>\n<h3>Features:</h3>\n<ul>\n<li>NextSilicon backend (close to feature complete)</li>\n<li>Introduce <code>DefaultMemorySpace</code> and <code>DefaultHostMemorySpace</code> type aliases <a href=\"https://github.com/kokkos/kokkos/pull/9560\">#9560</a>.</li>\n<li>Introduce a new top level parallel construct: <code>single</code>. It allow users to execute non-parallel code on device, potentially returning a value <a href=\"https://github.com/kokkos/kokkos/pull/8123\">#8123</a></li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -18856,7 +18856,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-10 16:02:57"
+  "last_updated": "2026-11-11 13:36:55"
 },
 {
   "name": "KOKKOS-KERNELS",
@@ -21743,8 +21743,8 @@
     {
       "name": "CHANGES",
       "url": "https://github.com/pmodels/mpich/blob/HEAD/CHANGES",
-      "timestamp": "2026-10-14 20:53:30",
-      "content": "===============================================================================\n                               Changes in 5.1\n===============================================================================\n&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD\n# Removed MPID collective interfaces. Binding layer call MPIR_Xxx_impl instead of\n  MPIR_Xxx. Use a single json config file. Generate json parsing from\n  coll_algorithms.txt. MPIR_Xxx_impl functions call MPIR_Coll_auto for CSEL"
+      "timestamp": "2026-11-11 03:44:22",
+      "content": "===============================================================================\n                               Changes in 5.1\n===============================================================================\n# Removed MPID collective interfaces. Binding layer call MPIR_Xxx_impl instead of\n  MPIR_Xxx. Use a single json config file. Generate json parsing from\n  coll_algorithms.txt. MPIR_Xxx_impl functions call MPIR_Coll_auto for CSEL"
     },
     {
       "name": "COPYRIGHT",
@@ -21871,7 +21871,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-14 20:53:30"
+  "last_updated": "2026-11-11 03:44:22"
 },
 {
   "name": "OPENMPI",
@@ -33181,8 +33181,8 @@
     {
       "name": "CHANGES.current",
       "url": "https://github.com/swig/swig/blob/HEAD/CHANGES.current",
-      "timestamp": "2026-11-09 20:15:39",
-      "content": "Below are the changes for the current release.\nSee the CHANGES file for changes in older releases.\nSee the RELEASENOTES file for a summary of changes in each release.\nIssue # numbers mentioned below can be found on Github. For more details, add\nthe issue number to the end of the URL: https://github.com/swig/swig/issues/\n\nVersion 4.6.0 (in progress)\n===========================\n\n2026-11-08: wsfulton"
+      "timestamp": "2026-11-11 21:51:07",
+      "content": "Below are the changes for the current release.\nSee the CHANGES file for changes in older releases.\nSee the RELEASENOTES file for a summary of changes in each release.\nIssue # numbers mentioned below can be found on Github. For more details, add\nthe issue number to the end of the URL: https://github.com/swig/swig/issues/\n\nVersion 4.6.0 (in progress)\n===========================\n\n2026-11-11: wsfulton"
     },
     {
       "name": "LICENSE",
@@ -34134,7 +34134,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-09 20:15:39"
+  "last_updated": "2026-11-11 21:51:07"
 },
 {
   "name": "SYCLPARALLELSTL",
@@ -49579,8 +49579,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/precice/precice/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-04-17 08:28:08",
-      "content": "<h1>preCICE Change Log</h1>\n<p>All notable changes to this project will be documented in this file. For future plans, see our <a href=\"https://www.precice.org/fundamentals-roadmap.html\">Roadmap</a>.</p>\n<h2>3.4.1</h2>\n<ul>\n<li>Fixed <code>std::optional</code> usage in Kokkos kernel implementations. (https://github.com/precice/precice/pull/2551)</li>\n<li>Fixed include bug where compiling with Kokkos-Kernels depends on Ginkgo. (https://github.com/precice/precice/pull/2549)</li>\n</ul>"
+      "timestamp": "2026-11-09 13:56:41",
+      "content": "<h1>preCICE Change Log</h1>\n<p>All notable changes to this project will be documented in this file. For future plans, see our <a href=\"https://www.precice.org/fundamentals-roadmap.html\">Roadmap</a>.</p>\n<h2>3.5.0</h2>\n<ul>\n<li>Added guidelines for contributing with GenAI agents in <code>CONTRIBUTING.md</code>. (https://github.com/precice/precice/pull/2589)</li>\n<li>Added option to export only a single mesh using <code>&amp;lt;export:X mesh=&amp;quot;Name&amp;quot; /&amp;gt;</code>. Not specifying a mesh will export all meshes known to the participant. (https://github.com/precice/precice/pull/2462)</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -50234,7 +50234,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-01 07:55:49"
+  "last_updated": "2026-11-09 13:56:41"
 },
 {
   "name": "CORE",
@@ -52314,7 +52314,7 @@
     {
       "name": "RELEASE-NOTES.md",
       "url": "https://github.com/LLNL/axom/blob/HEAD/RELEASE-NOTES.md",
-      "timestamp": "2026-11-09 18:23:21",
+      "timestamp": "2026-11-11 16:08:05",
       "content": "<h1>Axom Software Release Notes</h1>\n<p>Notes describing significant changes in each Axom release are documented in this file.</p>\n<p>The format of this file is based on <a href=\"http://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>.</p>\n<p>The Axom project release numbers follow <a href=\"http://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>[Unreleased] - Release date yyyy-mm-dd</h2>\n<h3>Added</h3>\n<ul>\n<li>Axom&#x27;s host execution-space default allocator is now a configure-time policy. The default policy is malloc, regardless</li>\n</ul>"
     },
     {
@@ -52616,7 +52616,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-09 18:23:21"
+  "last_updated": "2026-11-11 16:08:05"
 },
 {
   "name": "BRICKS",
@@ -55867,7 +55867,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/plumed/plumed2/blob/HEAD/README.md",
-      "timestamp": "2026-11-09 11:20:43",
+      "timestamp": "2026-11-11 19:28:02",
       "content": "<h2>Branches and releases</h2>\n<p>Several branches and tags are stored on the git repository.</p>\n<p>Branches named <code>v2.X</code> correspond to release branches.</p>\n<p>Master branch may contain non tested features and is not expected to be used by non-developers.\nIt typically contains features that will be available on the next release.</p>\n<p>Tags named <code>v2.XbY</code> correspond to beta releases, use it with care.\nTags named <code>v2.X.Y</code> correspond to official releases, use the latest available.</p>"
     },
     {
@@ -56133,7 +56133,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-09 11:20:43"
+  "last_updated": "2026-11-11 19:28:02"
 },
 {
   "name": "METALL",
@@ -57080,7 +57080,7 @@
     {
       "name": "RELEASE.md",
       "url": "https://github.com/pytorch/pytorch/blob/HEAD/RELEASE.md",
-      "timestamp": "2026-11-03 19:39:19",
+      "timestamp": "2026-11-11 09:06:39",
       "content": "<h1>Releasing PyTorch</h1>\n<ul>\n<li><a href=\"#release-compatibility-matrix\">Release Compatibility Matrix</a><ul>\n<li><a href=\"#pytorch-cuda-support-matrix\">PyTorch CUDA Support Matrix</a></li>\n</ul>\n</li>\n<li><a href=\"#release-cadence\">Release Cadence</a></li>\n<li><a href=\"#general-overview\">General Overview</a><ul>\n<li><a href=\"#frequently-asked-questions\">Frequently Asked Questions</a></li>\n</ul>\n</li>\n<li><a href=\"#cutting-a-release-branch-preparations\">Cutting a release branch preparations</a></li>\n<li><a href=\"#cutting-release-branches\">Cutting release branches</a></li>\n</ul>"
     },
     {
@@ -57091,7 +57091,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-11-09 15:59:25"
+  "last_updated": "2026-11-11 09:06:39"
 },
 {
   "name": "JAX",
