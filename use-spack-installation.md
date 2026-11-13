@@ -34,9 +34,9 @@ git checkout v1.1.1
 cd ..
 ```
 
-### 1.2 Clone the E4S 26.06 branch of Spack Packages
+### 1.2 Clone the E4S 26.11 branch of Spack Packages
 ```bash
-git clone -b e4s-26.06 https://github.com/spack/spack-packages.git
+git clone -b e4s-26.11 https://github.com/spack/spack-packages.git
 ```
 
 ### 1.3 Add Spack to your shell

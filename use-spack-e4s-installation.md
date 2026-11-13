@@ -1,4 +1,4 @@
----
+--
 layout: single
 title: "E4S-specific Installation Using Spack"
 permalink: /spack-e4s-installation/
@@ -21,7 +21,7 @@ $> git clone https://github.com/spack/spack.git
 $> cd spack
 $> git checkout v1.1.1
 $> cd ..
-$> git clone -b e4s-26.06 https://github.com/spack/spack-packages.git
+$> git clone -b e4s-26.11 https://github.com/spack/spack-packages.git
 $> . spack/share/spack/setup-env.sh
 $> spack repo set --destination $(pwd)/spack-packages builtin
 $> export SPACK_DISABLE_LOCAL_CONFIG=1
@@ -31,11 +31,11 @@ Configure Spack to know where the E4S Build Cache is located. You can use either
 
 Release-specific:
 ```
-$> spack mirror add E4S https://cache.e4s.io/26.06
+$> spack mirror add E4S https://cache.e4s.io/26.11
 $> spack buildcache keys -it
 ```
 
-Obtain a copy of the E4S Model Environment for the E4S release you are interested in, and rename it to `spack.yaml`, if needed. These are found in the [E4S Environment Repository](https://github.com/E4S-Project/e4s/tree/master/environments). For this example, we will use the [E4S 26.06 Model Environment for X86_64 Systems with NVIDIA GPUs](https://github.com/E4S-Project/e4s/tree/master/environments/x86_64/gnu/cuda/90).
+Obtain a copy of the E4S Model Environment for the E4S release you are interested in, and rename it to `spack.yaml`, if needed. These are found in the [E4S Environment Repository](https://github.com/E4S-Project/e4s/tree/master/environments). For this example, we will use the [E4S 26.11 Model Environment for X86_64 Systems with NVIDIA GPUs](https://github.com/E4S-Project/e4s/tree/master/environments/x86_64/gnu/cuda/90).
 
 The environment will also need the `package.yaml` file under the `_config` directory, [for this example, found here](https://github.com/E4S-Project/e4s/blob/master/environments/x86_64/gnu/_config/packages.yaml) . For CUDA and ROCm builds, another GPU-specific `packages.yaml` [is also needed](https://github.com/E4S-Project/e4s/blob/master/environments/x86_64/gnu/cuda/_config/packages.yaml). Create the relevant directories following this guideline:
 
