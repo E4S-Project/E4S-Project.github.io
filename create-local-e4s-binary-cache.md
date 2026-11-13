@@ -49,6 +49,7 @@ Create a dedicated environment and list the products you want to provide from yo
 ```bash
 mkdir e4s-local-cache-env && cd e4s-local-cache-env
 
+cat > spack.yaml <<'YAML'
 spack:
   specs:
   - hypre +mpi
