@@ -44,13 +44,13 @@ Below is a succinct, **copy-paste friendly** guide. You can follow it in a clean
 
 ## Step 1 — Pick the E4S release and mirror URL
 
-Decide which **E4S release** you intend to use (e.g., `25.11`). Your site or facility docs usually provide the exact mirror URL for that release and platform.
+Decide which **E4S release** you intend to use (e.g., `26.11`). Your site or facility docs usually provide the exact mirror URL for that release and platform.
 
 Set a variable for convenience (update as needed):
 
 ```bash
-export E4S_REL=25.11
-export E4S_MIRROR_URL="https://cache.e4s.io/${E4S_REL}"   # example; use your site’s URL if different
+export E4S_REL=26.11
+export E4S_MIRROR_URL="s3://cache.e4s.io/e4s-${E4S_REL}"   # example; use your site’s URL if different
 ```
 
 > If your center provides a *local* mirror, prefer that URL for faster downloads.
@@ -62,7 +62,7 @@ export E4S_MIRROR_URL="https://cache.e4s.io/${E4S_REL}"   # example; use your si
 Add the mirror at a useful scope (user/site). You can add multiple mirrors; Spack will search them in order.
 
 ```bash
-spack mirror add --scope=user e4s-${E4S_REL} "${E4S_MIRROR_URL}"
+spack mirror add --scope=user e4s-${E4S_REL} --s3-endpoint-url https://uo-spack-mirror.e4s.io:9002 "${E4S_MIRROR_URL}"
 spack mirror list
 ```
 

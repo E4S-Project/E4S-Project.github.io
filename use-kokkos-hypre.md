@@ -9,13 +9,13 @@ sidebar:
 
 {% include e4s-page-actions.html %}
 
-This demo uses two libraries that are already built into the `ecpe4s/e4s-cuda:26.06` images -- **Kokkos** and **Hypre** -- and links a small application against both of them:
+This demo uses two libraries that are already built into the `ecpe4s/e4s-cuda:26.11` images -- **Kokkos** and **Hypre** -- and links a small application against both of them:
 
 - **Kokkos** builds a right-hand-side vector on the GPU
 - **Hypre** solves the resulting linear system with PCG
 - **Kokkos** reduces the solution back on the GPU
 
-> **Other platforms:** `ecpe4s/e4s-cuda:26.06` specifies the CUDA/NVIDIA-GPU x86_64 image used below, defaulting to cuda90 build targets. ecpe4s/e4s-cuda:26.06-cuda80 and ecpe4s/e4s-cuda:26.06-cuda120 are available for different GPU hardware.  E4S also publishes CPU-only, Intel oneAPI, and ROCm images (see the [Container Download page](/container-download/)). Packages from the CPU image missing on a GPU image can be pulled in as a prebuilt, signed binaries from the [E4S Spack build cache](/e4s-buildcache/) instead of compiled from source.
+> **Other platforms:** `ecpe4s/e4s-cuda:26.11` specifies the CUDA/NVIDIA-GPU x86_64 image used below, defaulting to cuda90 build targets. ecpe4s/e4s-cuda:26.11-cuda80 and ecpe4s/e4s-cuda:26.11-cuda120 are available for different GPU hardware.  E4S also publishes CPU-only, Intel oneAPI, and ROCm images (see the [Container Download page](/container-download/)). Packages from the CPU image missing on a GPU image can be pulled in as a prebuilt, signed binaries from the [E4S Spack build cache](/e4s-buildcache/) instead of compiled from source.
 
 ---
 
@@ -27,7 +27,7 @@ Start the container in interactive mode with GPU access (Consider mounting a wri
 ```bash
 docker run --gpus all -it --rm \
   -w /tmp/work \
-  ecpe4s/e4s-cuda:26.06
+  ecpe4s/e4s-cuda:26.11
 ```
 
 Verify the GPU is visible from inside the container:

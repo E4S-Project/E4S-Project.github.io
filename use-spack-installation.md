@@ -17,7 +17,7 @@ Spack is a flexible package manager designed for scientific software. It support
 
 [Visit the Spack Project](https://spack.readthedocs.io/en/latest/)
 
-Spack contains packages for all of the products listed in the E4S 25.06 Full Release category. General instructions for building software with Spack can be found at the Spack website. Questions concerning building those packages are deferred to the associated package development team.
+Spack contains packages for all of the products listed in the E4S 26.11 Full Release category. General instructions for building software with Spack can be found at the Spack website. Questions concerning building those packages are deferred to the associated package development team.
 
 Some quickstart instructions are below.
 
@@ -26,17 +26,17 @@ Some quickstart instructions are below.
 
 ## 1. Set Up Spack
 
-### 1.1 Clone Spack Core V.1.1.1
+### 1.1 Clone Spack Core
 ```bash
 git clone https://github.com/spack/spack.git
 cd spack
-git checkout v1.1.1
+git checkout 8d1b485913f4eb227042f7c47d2f04421ece7308
 cd ..
 ```
 
-### 1.2 Clone the E4S 26.06 branch of Spack Packages
+### 1.2 Clone the E4S 26.11 branch of Spack Packages
 ```bash
-git clone -b e4s-26.06 https://github.com/spack/spack-packages.git
+git clone -b e4s-26.11 https://github.com/spack/spack-packages.git
 ```
 
 ### 1.3 Add Spack to your shell

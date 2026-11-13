@@ -9,14 +9,14 @@ sidebar:
 
 {% include e4s-page-actions.html %}
 
-This page shows a minimal vLLM workflow in the E4S 26.06 CUDA container. The examples here are intended to be run inside the Docker image shown below.
+This page shows a minimal vLLM workflow in the E4S 26.11 CUDA container. The examples here are intended to be run inside the Docker image shown below.
 
 ```bash
 docker run --gpus all -it --rm \
   --entrypoint bash \
   -v "$PWD:/work" \
   -w /work \
-  ecpe4s/e4s-cuda:26.06
+  ecpe4s/e4s-cuda:26.11
 ```
 
 ## 1. Verify the vLLM install
