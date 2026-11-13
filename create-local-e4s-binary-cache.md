@@ -48,7 +48,6 @@ Create a dedicated environment and list the products you want to provide from yo
 
 ```bash
 mkdir e4s-local-cache-env && cd e4s-local-cache-env
-spack env activate -d .
 
 cat > spack.yaml <<'YAML'
 spack:
@@ -60,6 +59,8 @@ spack:
     unify: true
   view: false
 YAML
+
+spack env activate -d .
 ```
 
 > Replace specs/variants/compilers with the exact E4S product selection needed at your site.
@@ -110,18 +111,29 @@ If you want to push a subset, provide selected hashes or specs instead of all in
 
 ## Step 5 — Consume your local cache from another environment
 
-On another system or user environment, configure your mirror and trust signing keys:
+```bash
+spack env deactivate
+cd ..
+mkdir spack-local-cache-env-2 && cd e4s-local-cache-env-2
+spack env create -d .
+spack env activate .
+```
+
+In the new environment, configure your mirror and trust signing keys:
 
 ```bash
-spack mirror add --scope=user e4s-local "${LOCAL_E4S_MIRROR}"
+spack mirror add --scope=user e4s-local-2 "${LOCAL_E4S_MIRROR}"
 spack buildcache keys --install --trust
 ```
 
 Then install with cache preference:
 
 ```bash
-spack install -b auto hypre +mpi
-spack install -b only petsc +mpi
+spack add hypre +mpi
+spack add petsc +mpi
+spack concretize -f
+spack install -b auto hypre +mpi # Or spack install --use-buildcache auto hypre +mpi
+spack install -b only petsc +mpi # Or spack install --use-buildcache auto petsc +mpi
 ```
 
 - `-b auto` prefers binaries and falls back to source.

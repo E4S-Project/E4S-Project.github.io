@@ -84,18 +84,11 @@ spack gpg list  # confirm keys are present and trusted
 List cache contents for a quick sanity check:
 
 ```bash
-spack buildcache list -L | head -n 30
+spack buildcache list --allarch -L | head -n 30
 # or filter:
-spack buildcache list -L | grep -i kokkos
-spack buildcache list -L | grep -i cuda
+spack buildcache list --allarch -L | grep -i kokkos
+spack buildcache list --allarch -L | grep -i cuda
 ```
-
-To inspect a particular spec’s binary metadata:
-
-```bash
-spack buildcache info kokkos@4.3.1 ^cmake
-```
-
 ---
 
 ## Step 5 — Install from the cache (single package)
@@ -113,12 +106,14 @@ Examples:
 spack install -b auto kokkos +openmp %gcc@12.3.0 target=x86_64_v3
 
 # Require a binary (good for strict reproducibility):
-spack install -b only petsc@3.20.3 +mpi %gcc@12.3.0
+spack install -b only petsc@3.20.3 +mpi %gcc@13.3.1
 ```
 
 **If you’re on an older Spack** that lacks `-b`, use:
 ```bash
-spack install --use-buildcache kokkos +openmp %gcc@12.3.0
+spack install --use-buildcache auto kokkos +openmp %gcc@13.3.1
+# Or
+spack install --use-buildcache only kokkos +openmp %gcc@13.3.1
 ```
 
 ---
@@ -129,7 +124,6 @@ Environments capture your stack in `spack.yaml`.
 
 ```bash
 mkdir e4s-env && cd e4s-env
-spack env activate -d .
 
 # Create a simple environment file:
 cat > spack.yaml <<'YAML'
@@ -143,9 +137,13 @@ spack:
   view: false
 YAML
 
+# Activate environment
+
+spack env activate -d .
+
 # Concretize and install, preferring binaries:
 spack concretize -f
-spack install -b auto
+spack install -b auto # or spack install --use-buildcache auto
 ```
 
 Optional quality-of-life:
@@ -154,38 +152,28 @@ Optional quality-of-life:
 # Generate Lmod/Tcl modules for the new installs
 spack module lmod refresh -y   # or: spack module tcl refresh -y
 
-# What got installed and from where:
-spack find -vb      # shows versions and whether installed from binary
 ```
 
 ---
 
-## Step 7 — Verify and (optionally) fetch without installing
-
-- **Verify signatures and checksums** of cached packages you’ve installed:
-  ```bash
-  spack buildcache verify --rebuild-index=false $(spack find --format '{hash}' <spec>)
-  ```
-- **Download a cached tarball** to inspect (without installing):
-  ```bash
-  spack buildcache get kokkos@4.3.1 %gcc@12.3.0
-  ls -lh ./build_cache
-  ```
-
----
-
-## Step 8 — GPU/SDK-aware installs (CUDA/ROCm/oneAPI)
+## Step 7 — GPU/SDK-aware installs (CUDA/ROCm/oneAPI)
 
 Match your device SDK to the cache:
 
 ```bash
 # NVIDIA CUDA example
-spack install -b auto kokkos +cuda cuda_arch=80 %gcc@12.3.0
+spack add kokkos +cuda cuda_arch=90 %gcc@13.3.1
+spack concretize -f
+spack install --add kokkos +cuda cuda_arch=90 %gcc@13.3.1
 
 # AMD ROCm example
-spack install -b auto kokkos +rocm amdgpu_target=gfx90a %gcc@12.3.0
+spack add kokkos +rocm amdgpu_target=gfx90a %gcc@13.3.1
+spack concretize -f
+spack install -b auto kokkos +rocm amdgpu_target=gfx90a %gcc@13.3.1
 
 # Intel oneAPI example
+spack add oneapi-mkl
+spack concretize -f
 spack install -b auto oneapi-mkl %oneapi
 ```
 
@@ -229,15 +217,14 @@ spack list kokkos
 spack info kokkos
 
 # Inspect binary metadata and availability
-spack buildcache list -L | grep -i petsc
-spack buildcache info petsc@3.20.3
+spack buildcache list --allarch -L | grep -i petsc
 
 # Install policies
 spack install -b only <spec>    # require binary
 spack install -b auto <spec>    # prefer binary, build if needed
 
 # After install
-spack find -vb
+spack find -v
 spack module lmod refresh -y
 ```
 
