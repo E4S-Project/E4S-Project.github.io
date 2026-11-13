@@ -55867,7 +55867,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/plumed/plumed2/blob/HEAD/README.md",
-      "timestamp": "2026-11-11 19:28:02",
+      "timestamp": "2026-11-12 11:34:57",
       "content": "<h2>Branches and releases</h2>\n<p>Several branches and tags are stored on the git repository.</p>\n<p>Branches named <code>v2.X</code> correspond to release branches.</p>\n<p>Master branch may contain non tested features and is not expected to be used by non-developers.\nIt typically contains features that will be available on the next release.</p>\n<p>Tags named <code>v2.XbY</code> correspond to beta releases, use it with care.\nTags named <code>v2.X.Y</code> correspond to official releases, use the latest available.</p>"
     },
     {
@@ -56133,7 +56133,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-11 19:28:02"
+  "last_updated": "2026-11-12 11:34:57"
 },
 {
   "name": "METALL",
@@ -57044,7 +57044,7 @@
     {
       "name": "RELEASE.md",
       "url": "https://github.com/tensorflow/tensorflow/blob/HEAD/RELEASE.md",
-      "timestamp": "2026-11-09 22:56:19",
+      "timestamp": "2026-11-13 02:43:24",
       "content": "<h1>Release 2.23.0</h1>\n<h2>TensorFlow</h2>\n<p>&lt;INSERT SMALL BLURB ABOUT RELEASE FOCUS AREA AND POTENTIAL TOOLCHAIN CHANGES&gt;</p>\n<h3>Breaking Changes</h3>\n<ul>\n<li>&lt;BREAKING CHANGES GO HERE&gt;</li>\n</ul>\n<h3>Known Caveats</h3>\n<ul>\n<li>&lt;CAVEATS REGARDING THE RELEASE (BUT NOT BREAKING CHANGES).&gt;</li>\n</ul>\n<h3>Major Features and Improvements</h3>\n<ul>\n<li><code>tf.lite</code><ul>\n<li>Adds blockwise quantization support in the converter and <code>quant_spec</code> metadata in <code>FullyConnectedOptions</code>.</li>\n</ul>\n</li>\n</ul>"
     },
     {
@@ -57055,7 +57055,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-11-09 22:56:19"
+  "last_updated": "2026-11-13 02:43:24"
 },
 {
   "name": "PYTORCH",
@@ -57122,12 +57122,12 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/google/jax/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-11-10 22:34:14",
+      "timestamp": "2026-11-12 13:58:01",
       "content": "<h1>Change log</h1>\n<p>Best viewed <a href=\"https://docs.jax.dev/en/latest/changelog.html\">here</a>.\nFor the changes specific to the experimental Pallas APIs,\nsee {ref}<code>pallas-changelog</code>.</p>\n<p>JAX follows Effort-based versioning; for a discussion of this and JAX&#x27;s API\ncompatibility policy, refer to {ref}<code>api-compatibility</code>. For the Python and\nNumPy version support policy, refer to {ref}<code>version-support-policy</code>.</p>\n<h2>Unreleased</h2>"
     }
   ],
   "deployment": [],
-  "last_updated": "2026-11-10 22:34:14"
+  "last_updated": "2026-11-12 13:58:01"
 },
 {
   "name": "PANDAS",
@@ -57359,8 +57359,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-11-10 06:41:12",
-      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.48.0...v3.49.0\">3.49.0</a> (2026-11-10)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> add typed async function tools (<a href=\"https://github.com/openai/openai-python/issues/4264\">#4264</a>) (<a href=\"https://github.com/openai/openai-python/commit/ea07983f796144835ab3f2cad38fdca04c997a0e\">ea07983</a>)</li>\n</ul>\n<h3>Bug Fixes</h3>\n<ul>\n<li>encode microphone recordings as valid PCM WAV (<a href=\"https://github.com/openai/openai-python/issues/3900\">#3900</a>) (<a href=\"https://github.com/openai/openai-python/commit/13c000d1f32c1e3e3c4b3e16bc6b956dfd4f5216\">13c000d</a>)</li>\n</ul>"
+      "timestamp": "2026-11-12 19:20:14",
+      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.49.0...v3.50.0\">3.50.0</a> (2026-11-12)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> expose reasoning input transformations on responses (<a href=\"https://github.com/openai/openai-python/issues/4268\">#4268</a>) (<a href=\"https://github.com/openai/openai-python/commit/734f75b5219da0fd74b24afefae81c71af81fcf6\">734f75b</a>)</li>\n</ul>\n<h3>Chores</h3>\n<ul>\n<li><strong>deps:</strong> bump astral-sh/setup-uv from 10.3.0 to 10.3.3 (<a href=\"https://github.com/openai/openai-python/issues/4261\">#4261</a>) (<a href=\"https://github.com/openai/openai-python/commit/0ebd00647f6088fb100b03440c6c4554bbab549d\">0ebd006</a>)</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -57370,7 +57370,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-11-10 06:41:12"
+  "last_updated": "2026-11-12 19:20:14"
 },
 {
   "name": "DEEPHYPER",
