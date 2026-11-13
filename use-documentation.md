@@ -18,9 +18,9 @@ The E4S Product Catalog provides a navigable, interactive portal to product docu
 
 {% include e4s-product-catalog-button.html %}
 
-### E4S Version 25.06 Resources
+### E4S Version 26.11 Resources
 
-[E4S v25.06](https://github.com/E4S-Project/e4s/tree/master/environments/25.06), includes more than 120 HPC-AI products that are commonly used by scientific applications.
+[E4S v26.11](https://github.com/E4S-Project/e4s/tree/master/environments/26.11), includes more than 120 HPC-AI products that are commonly used by scientific applications.
 
 **[E4S ReadTheDocs: Full Documentation](https://e4s.readthedocs.io/en/latest/)**
 
@@ -28,9 +28,9 @@ The E4S Product Catalog provides a navigable, interactive portal to product docu
 
 [E4S Deployment Dashboard](https://dashboard.e4s.io/)
 
-[E4S v25.06 Release Notes PDF](https://oaciss.uoregon.edu/e4s/talks/E4S_25.06.pdf)
+[E4S v26.11 Release Notes PDF](https://oaciss.uoregon.edu/e4s/talks/E4S_26.11.pdf)
 
-[E4S v25.06 Spack Environment Notes](https://github.com/E4S-Project/e4s/tree/master/environments/25.06)
+[E4S v26.11 Spack Environment Notes](https://github.com/E4S-Project/e4s)
 
 [E4S Manual Installation Instructions](https://e4s-project.github.io/manual-installation.html)
 
