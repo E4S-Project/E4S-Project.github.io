@@ -21743,8 +21743,8 @@
     {
       "name": "CHANGES",
       "url": "https://github.com/pmodels/mpich/blob/HEAD/CHANGES",
-      "timestamp": "2026-11-14 01:21:07",
-      "content": "===============================================================================\n                               Changes in 5.1\n===============================================================================\n# MPICH relicenses to Apache 2.0 user license.\n\n# Removed MPID collective interfaces. Binding layer call MPIR_Xxx_impl instead of\n  MPIR_Xxx. Use a single json config file. Generate json parsing from"
+      "timestamp": "2026-11-14 20:24:46",
+      "content": "===============================================================================\n                               Changes in 5.1\n===============================================================================\n# MPICH is relicensed under the Apache License 2.0. Source files carry SPDX\n  license identifiers.\n\n## MPI ABI and Fortran\n\n# Support building both MPICH-native and MPI Standard ABI libraries simultaneously"
     },
     {
       "name": "COPYRIGHT",
@@ -21871,7 +21871,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-14 01:21:07"
+  "last_updated": "2026-11-14 20:24:46"
 },
 {
   "name": "OPENMPI",
@@ -57044,7 +57044,7 @@
     {
       "name": "RELEASE.md",
       "url": "https://github.com/tensorflow/tensorflow/blob/HEAD/RELEASE.md",
-      "timestamp": "2026-11-13 02:43:24",
+      "timestamp": "2026-11-14 06:36:00",
       "content": "<h1>Release 2.23.0</h1>\n<h2>TensorFlow</h2>\n<p>&lt;INSERT SMALL BLURB ABOUT RELEASE FOCUS AREA AND POTENTIAL TOOLCHAIN CHANGES&gt;</p>\n<h3>Breaking Changes</h3>\n<ul>\n<li>&lt;BREAKING CHANGES GO HERE&gt;</li>\n</ul>\n<h3>Known Caveats</h3>\n<ul>\n<li>&lt;CAVEATS REGARDING THE RELEASE (BUT NOT BREAKING CHANGES).&gt;</li>\n</ul>\n<h3>Major Features and Improvements</h3>\n<ul>\n<li><code>tf.lite</code><ul>\n<li>Adds blockwise quantization support in the converter and <code>quant_spec</code> metadata in <code>FullyConnectedOptions</code>.</li>\n</ul>\n</li>\n</ul>"
     },
     {
@@ -57055,7 +57055,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-11-13 02:43:24"
+  "last_updated": "2026-11-14 06:36:00"
 },
 {
   "name": "PYTORCH",
