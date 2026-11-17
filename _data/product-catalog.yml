@@ -12241,8 +12241,8 @@
     {
       "name": "release_docs/CHANGELOG.md",
       "url": "https://github.com/HDFGroup/hdf5/blob/HEAD/release_docs/CHANGELOG.md",
-      "timestamp": "2026-11-10 22:01:17",
-      "content": "<p>v2.3.0 --- July X , 2026</p>\n<h1>🔺 HDF5 Changelog</h1>\n<p>All notable changes to this project will be documented in this file. This document describes the differences between this release and the previous\nHDF5 release, platforms tested, and known problems in this release.</p>\n<p>For releases prior to version 2.0.0, please see the release.txt file and for more details check the HISTORY*.txt files in the HDF5 source.</p>"
+      "timestamp": "2026-11-17 01:50:56",
+      "content": "<p>v2.4.0 --- November X , 2026</p>\n<h1>🔺 HDF5 Changelog</h1>\n<p>All notable changes to this project will be documented in this file. This document describes the differences between this release and the previous\nHDF5 release, platforms tested, and known problems in this release.</p>\n<p>For releases prior to version 2.0.0, please see the release.txt file and for more details check the HISTORY*.txt files in the HDF5 source.</p>"
     }
   ],
   "deployment": [
@@ -14317,7 +14317,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-10 22:01:17"
+  "last_updated": "2026-11-17 01:50:56"
 },
 {
   "name": "HPCTOOLKIT",
@@ -33181,8 +33181,8 @@
     {
       "name": "CHANGES.current",
       "url": "https://github.com/swig/swig/blob/HEAD/CHANGES.current",
-      "timestamp": "2026-11-11 21:51:07",
-      "content": "Below are the changes for the current release.\nSee the CHANGES file for changes in older releases.\nSee the RELEASENOTES file for a summary of changes in each release.\nIssue # numbers mentioned below can be found on Github. For more details, add\nthe issue number to the end of the URL: https://github.com/swig/swig/issues/\n\nVersion 4.6.0 (in progress)\n===========================\n\n2026-11-11: wsfulton"
+      "timestamp": "2026-11-16 19:35:40",
+      "content": "Below are the changes for the current release.\nSee the CHANGES file for changes in older releases.\nSee the RELEASENOTES file for a summary of changes in each release.\nIssue # numbers mentioned below can be found on Github. For more details, add\nthe issue number to the end of the URL: https://github.com/swig/swig/issues/\n\nVersion 4.6.0 (in progress)\n===========================\n\n2026-11-16: wsfulton"
     },
     {
       "name": "LICENSE",
@@ -34134,7 +34134,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-11 21:51:07"
+  "last_updated": "2026-11-16 19:35:40"
 },
 {
   "name": "SYCLPARALLELSTL",
@@ -57044,8 +57044,8 @@
     {
       "name": "RELEASE.md",
       "url": "https://github.com/tensorflow/tensorflow/blob/HEAD/RELEASE.md",
-      "timestamp": "2026-11-14 06:36:00",
-      "content": "<h1>Release 2.23.0</h1>\n<h2>TensorFlow</h2>\n<p>&lt;INSERT SMALL BLURB ABOUT RELEASE FOCUS AREA AND POTENTIAL TOOLCHAIN CHANGES&gt;</p>\n<h3>Breaking Changes</h3>\n<ul>\n<li>&lt;BREAKING CHANGES GO HERE&gt;</li>\n</ul>\n<h3>Known Caveats</h3>\n<ul>\n<li>&lt;CAVEATS REGARDING THE RELEASE (BUT NOT BREAKING CHANGES).&gt;</li>\n</ul>\n<h3>Major Features and Improvements</h3>\n<ul>\n<li><code>tf.lite</code><ul>\n<li>Adds blockwise quantization support in the converter and <code>quant_spec</code> metadata in <code>FullyConnectedOptions</code>.</li>\n</ul>\n</li>\n</ul>"
+      "timestamp": "2026-11-16 22:37:19",
+      "content": "<h1>Release 2.23.0</h1>\n<h2>TensorFlow</h2>\n<p>&lt;INSERT SMALL BLURB ABOUT RELEASE FOCUS AREA AND POTENTIAL TOOLCHAIN CHANGES&gt;</p>\n<h3>Breaking Changes</h3>\n<ul>\n<li><strong>Build System</strong>:<ul>\n<li>TensorFlow now requires Bazel <strong>8.8.2</strong> and builds with <strong>Bzlmod</strong>\n    (<code>MODULE.bazel</code>) enabled by default (<code>--enable_bzlmod\n    --noenable_workspace</code>). Legacy <code>--config=workspace</code> builds remain\n    temporarily available on Linux and macOS during the transition while</li>\n</ul>\n</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -57055,7 +57055,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-11-14 06:36:00"
+  "last_updated": "2026-11-16 22:37:19"
 },
 {
   "name": "PYTORCH",
@@ -57359,8 +57359,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-11-13 21:06:56",
-      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.50.0...v3.51.0\">3.51.0</a> (2026-11-12)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> expand agent, image, Live, and external key support (<a href=\"https://github.com/openai/openai-python/issues/4269\">#4269</a>) (<a href=\"https://github.com/openai/openai-python/commit/59738a289ee82c7b86bf1e10230cceb6daa9716d\">59738a2</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.49.0...v3.50.0\">3.50.0</a> (2026-11-12)</h2>"
+      "timestamp": "2026-11-16 22:34:48",
+      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.51.0...v3.52.0\">3.52.0</a> (2026-11-16)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> add schedule pause reasons (<a href=\"https://github.com/openai/openai-python/issues/4278\">#4278</a>) (<a href=\"https://github.com/openai/openai-python/commit/a996ce2df402c241d042f6d0164361536a99e31a\">a996ce2</a>)</li>\n<li><strong>api:</strong> deliver beta Agents session errors as stream events (<a href=\"https://github.com/openai/openai-python/issues/4281\">#4281</a>) (<a href=\"https://github.com/openai/openai-python/commit/690fba90a013d7ece4eff2c3b33937564e3bdde9\">690fba9</a>)</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -57370,7 +57370,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-11-13 21:06:56"
+  "last_updated": "2026-11-16 22:34:48"
 },
 {
   "name": "DEEPHYPER",
