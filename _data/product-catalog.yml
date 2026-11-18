@@ -57359,8 +57359,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-11-16 22:34:48",
-      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.51.0...v3.52.0\">3.52.0</a> (2026-11-16)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> add schedule pause reasons (<a href=\"https://github.com/openai/openai-python/issues/4278\">#4278</a>) (<a href=\"https://github.com/openai/openai-python/commit/a996ce2df402c241d042f6d0164361536a99e31a\">a996ce2</a>)</li>\n<li><strong>api:</strong> deliver beta Agents session errors as stream events (<a href=\"https://github.com/openai/openai-python/issues/4281\">#4281</a>) (<a href=\"https://github.com/openai/openai-python/commit/690fba90a013d7ece4eff2c3b33937564e3bdde9\">690fba9</a>)</li>\n</ul>"
+      "timestamp": "2026-11-17 22:36:35",
+      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.53.0...v3.54.0\">3.54.0</a> (2026-11-17)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> type Managed Agents budget events (<a href=\"https://github.com/openai/openai-python/issues/4284\">#4284</a>) (<a href=\"https://github.com/openai/openai-python/commit/c5da68ac74ad2a4bf89c1248f6403b3123e568db\">c5da68a</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.52.0...v3.53.0\">3.53.0</a> (2026-11-17)</h2>"
     },
     {
       "name": "LICENSE",
@@ -57370,7 +57370,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-11-16 22:34:48"
+  "last_updated": "2026-11-17 22:36:35"
 },
 {
   "name": "DEEPHYPER",
@@ -57998,8 +57998,8 @@
     {
       "name": "README.md",
       "url": "https://github.com/CEED/libCEED/blob/HEAD/README.md",
-      "timestamp": "2026-11-13 07:12:37",
-      "content": "<h1>libCEED: Efficient Extensible Discretization</h1>\n<h2>Summary and Purpose</h2>\n<p>libCEED provides fast algebra for element-based discretizations, designed for performance portability, run-time flexibility, and clean embedding in higher level libraries and applications.\nIt offers a C99 interface as well as bindings for Fortran, Python, Julia, and Rust.\nWhile our focus is on high-order finite elements, the approach is mostly algebraic and thus applicable to other discretizations in factored form, as explained in the <a href=\"https://libceed.org/en/latest/\">user manual</a> and API implementation portion of the <a href=\"https://libceed.org/en/latest/api/\">documentation</a>.</p>"
+      "timestamp": "2026-11-17 07:58:16",
+      "content": "<h1>libCEED: Efficient Extensible Discretization</h1>\n<h2>Summary and Purpose</h2>\n<p>libCEED provides fast algebra for element-based discretizations, designed for performance portability, run-time flexibility, and clean embedding in higher level libraries and applications.\nIt offers a C99 interface as well as bindings for Fortran, Python, Julia, and Rust.\nWhile our focus is on high-order finite elements, the approach is mostly algebraic and thus applicable to other discretizations in factored form, as explained inAPI implementation portion of the <a href=\"https://libceed.org/en/latest/api\">documentation</a> and the <a href=\"https://libceed.org/_/downloads/en/latest/pdf/\">user manual</a>.</p>"
     },
     {
       "name": "LICENSE",
@@ -58015,7 +58015,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-11-13 07:12:37"
+  "last_updated": "2026-11-17 07:58:16"
 },
 {
   "name": "BIONEMO-FRAMEWORK",
