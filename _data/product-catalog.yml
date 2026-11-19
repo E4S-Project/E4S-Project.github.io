@@ -21093,7 +21093,7 @@
     {
       "name": "CHANGELOG",
       "url": "https://github.com/mfem/mfem/blob/HEAD/CHANGELOG",
-      "timestamp": "2026-11-15 18:18:00",
+      "timestamp": "2026-11-19 00:18:59",
       "content": "                    Finite Element Discretization Library\n                                   __\n                       _ __ ___   / _|  ___  _ __ ___\n                      | &#x27;_ ` _ \\ | |_  / _ \\| &#x27;_ ` _ \\\n                      | | | | | ||  _||  __/| | | | | |\n\n                               https://mfem.org\n\nVersion 4.10.1 (development)\n============================\n\nGPU computing\n-------------"
     },
     {
@@ -21718,7 +21718,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-15 18:18:00"
+  "last_updated": "2026-11-19 00:18:59"
 },
 {
   "name": "MPICH",
@@ -52314,7 +52314,7 @@
     {
       "name": "RELEASE-NOTES.md",
       "url": "https://github.com/LLNL/axom/blob/HEAD/RELEASE-NOTES.md",
-      "timestamp": "2026-11-11 16:08:05",
+      "timestamp": "2026-11-17 20:39:50",
       "content": "<h1>Axom Software Release Notes</h1>\n<p>Notes describing significant changes in each Axom release are documented in this file.</p>\n<p>The format of this file is based on <a href=\"http://keepachangelog.com/en/1.0.0/\">Keep a Changelog</a>.</p>\n<p>The Axom project release numbers follow <a href=\"http://semver.org/spec/v2.0.0.html\">Semantic Versioning</a>.</p>\n<h2>[Unreleased] - Release date yyyy-mm-dd</h2>\n<h3>Added</h3>\n<ul>\n<li>Axom&#x27;s host execution-space default allocator is now a configure-time policy. The default policy is malloc, regardless</li>\n</ul>"
     },
     {
@@ -52616,7 +52616,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-11 16:08:05"
+  "last_updated": "2026-11-17 20:39:50"
 },
 {
   "name": "BRICKS",
@@ -55083,7 +55083,7 @@
     {
       "name": "README.md",
       "url": "https://gitlab.com/remikz/nccmp/blob/HEAD/README.md",
-      "timestamp": "2026-05-31 14:40:59",
+      "timestamp": "2026-11-17 23:24:21",
       "content": "<h1>nccmp - NetCDF Compare</h1>\n<h2>Overview</h2>\n<p><a href=\"https://sourceforge.net/projects/nccmp\">nccmp</a> compares two NetCDF files bitwise, semantically or with a user defined tolerance (absolute or relative percentage).  Parallel comparisons are done in local memory without requiring temporary files.  Highly recommended for regression testing scientific models or datasets in a test-driven development environment.</p>"
     },
     {
@@ -55427,7 +55427,7 @@
       ]
     }
   ],
-  "last_updated": "2026-05-31 14:40:59"
+  "last_updated": "2026-11-17 23:24:21"
 },
 {
   "name": "NCO",
@@ -56659,8 +56659,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/wannier-developers/wannier90/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-10-05 11:38:48",
-      "content": "<h1>CHANGELOG of Wannier90</h1>\n<h2>v4.0.3 (5 October 2026)</h2>\n<h3>New features</h3>\n<ul>\n<li>\n<p>The library is now named <code>libwannier90</code> for both serial and MPI builds (the prior <code>_mpi</code> suffix has been removed) <a href=\"https://github.com/wannier-developers/wannier90/pull/680\">[#680]</a></p>\n</li>\n<li>\n<p><code>w90_free()</code> deallocates a library-mode data object; <code>w90_print_timings()</code> prints the timing report <a href=\"https://github.com/wannier-developers/wannier90/pull/712\">[#712]</a> <a href=\"https://github.com/wannier-developers/wannier90/pull/707\">[#707]</a></p>\n</li>\n</ul>"
+      "timestamp": "2026-11-18 19:38:29",
+      "content": "<h1>CHANGELOG of Wannier90</h1>\n<h2>Unreleased</h2>\n<h3>Various improvements and bugfixes</h3>\n<ul>\n<li><code>w90_get_proj</code> no longer returns an undefined spin for non-spinor runs, sets them to 0 instead <a href=\"https://github.com/wannier-developers/wannier90/issues/748\">[#748]</a></li>\n</ul>\n<h2>v4.0.3 (5 October 2026)</h2>\n<h3>New features</h3>\n<ul>\n<li>The library is now named <code>libwannier90</code> for both serial and MPI builds (the prior <code>_mpi</code> suffix has been removed) <a href=\"https://github.com/wannier-developers/wannier90/pull/680\">[#680]</a></li>\n</ul>"
     },
     {
       "name": "CONTRIBUTING.md",
@@ -56731,7 +56731,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-05 11:38:48"
+  "last_updated": "2026-11-18 19:38:29"
 },
 {
   "name": "LIBPRESSIO",
@@ -57122,12 +57122,12 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/google/jax/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-11-12 13:58:01",
+      "timestamp": "2026-11-18 18:07:46",
       "content": "<h1>Change log</h1>\n<p>Best viewed <a href=\"https://docs.jax.dev/en/latest/changelog.html\">here</a>.\nFor the changes specific to the experimental Pallas APIs,\nsee {ref}<code>pallas-changelog</code>.</p>\n<p>JAX follows Effort-based versioning; for a discussion of this and JAX&#x27;s API\ncompatibility policy, refer to {ref}<code>api-compatibility</code>. For the Python and\nNumPy version support policy, refer to {ref}<code>version-support-policy</code>.</p>\n<h2>Unreleased</h2>"
     }
   ],
   "deployment": [],
-  "last_updated": "2026-11-12 13:58:01"
+  "last_updated": "2026-11-18 18:07:46"
 },
 {
   "name": "PANDAS",
@@ -57359,8 +57359,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-11-17 22:36:35",
-      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.53.0...v3.54.0\">3.54.0</a> (2026-11-17)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> type Managed Agents budget events (<a href=\"https://github.com/openai/openai-python/issues/4284\">#4284</a>) (<a href=\"https://github.com/openai/openai-python/commit/c5da68ac74ad2a4bf89c1248f6403b3123e568db\">c5da68a</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.52.0...v3.53.0\">3.53.0</a> (2026-11-17)</h2>"
+      "timestamp": "2026-11-18 15:59:18",
+      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.55.0...v3.55.1\">3.55.1</a> (2026-11-18)</h2>\n<h3>Chores</h3>\n<ul>\n<li><strong>api:</strong> document CSAM moderation response fields (<a href=\"https://github.com/openai/openai-python/issues/4290\">#4290</a>) (<a href=\"https://github.com/openai/openai-python/commit/d6b93f36b6ad5a71ef81ebbe08cab72c3d12d7a8\">d6b93f3</a>)</li>\n<li><strong>deps-dev:</strong> bump pytest-asyncio from 1.4.1 to 1.4.1.post1 (<a href=\"https://github.com/openai/openai-python/issues/4274\">#4274</a>) (<a href=\"https://github.com/openai/openai-python/commit/231a92aa2193cd7525abcca0e46631dad2bbad75\">231a92a</a>)</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -57370,7 +57370,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-11-17 22:36:35"
+  "last_updated": "2026-11-18 15:59:18"
 },
 {
   "name": "DEEPHYPER",
