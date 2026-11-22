@@ -21087,7 +21087,7 @@
     {
       "name": "CHANGELOG",
       "url": "https://github.com/mfem/mfem/blob/HEAD/CHANGELOG",
-      "timestamp": "2026-11-19 16:46:24",
+      "timestamp": "2026-11-22 03:27:05",
       "content": "                    Finite Element Discretization Library\n                                   __\n                       _ __ ___   / _|  ___  _ __ ___\n                      | &#x27;_ ` _ \\ | |_  / _ \\| &#x27;_ ` _ \\\n                      | | | | | ||  _||  __/| | | | | |\n\n                               https://mfem.org\n\nVersion 4.10.1 (development)\n============================\n\nGPU computing\n-------------"
     },
     {
@@ -21712,7 +21712,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-19 16:46:24"
+  "last_updated": "2026-11-22 03:27:05"
 },
 {
   "name": "MPICH",
@@ -33175,8 +33175,8 @@
     {
       "name": "CHANGES.current",
       "url": "https://github.com/swig/swig/blob/HEAD/CHANGES.current",
-      "timestamp": "2026-11-16 19:35:40",
-      "content": "Below are the changes for the current release.\nSee the CHANGES file for changes in older releases.\nSee the RELEASENOTES file for a summary of changes in each release.\nIssue # numbers mentioned below can be found on Github. For more details, add\nthe issue number to the end of the URL: https://github.com/swig/swig/issues/\n\nVersion 4.6.0 (in progress)\n===========================\n\n2026-11-16: wsfulton"
+      "timestamp": "2026-11-21 22:34:04",
+      "content": "Below are the changes for the current release.\nSee the CHANGES file for changes in older releases.\nSee the RELEASENOTES file for a summary of changes in each release.\nIssue # numbers mentioned below can be found on Github. For more details, add\nthe issue number to the end of the URL: https://github.com/swig/swig/issues/\n\nVersion 4.6.0 (in progress)\n===========================\n\n2026-11-21: wsfulton"
     },
     {
       "name": "LICENSE",
@@ -34128,7 +34128,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-16 19:35:40"
+  "last_updated": "2026-11-21 22:34:04"
 },
 {
   "name": "SYCLPARALLELSTL",
@@ -41623,7 +41623,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/LLNL/zfp/blob/HEAD/README.md",
-      "timestamp": "2026-09-22 22:13:10",
+      "timestamp": "2026-11-21 19:20:10",
       "content": "<h1>ZFP</h1>\n<p>zfp is a compressed format for representing multidimensional floating-point\nand integer arrays.  zfp provides compressed-array classes that support high\nthroughput read and write random access to individual array elements.  zfp\nalso supports serial and parallel (OpenMP and CUDA) compression of whole\narrays, e.g., for applications that read and write large data sets to and\nfrom disk.</p>\n<p>zfp uses lossy but optionally error-bounded compression to achieve high</p>"
     },
     {
@@ -42399,7 +42399,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-19 18:34:19"
+  "last_updated": "2026-11-21 19:20:10"
 },
 {
   "name": "CONDUIT",
@@ -57992,7 +57992,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/CEED/libCEED/blob/HEAD/README.md",
-      "timestamp": "2026-11-19 17:02:37",
+      "timestamp": "2026-11-21 10:20:45",
       "content": "<h1>libCEED: Efficient Extensible Discretization</h1>\n<h2>Summary and Purpose</h2>\n<p>libCEED provides fast algebra for element-based discretizations, designed for performance portability, run-time flexibility, and clean embedding in higher level libraries and applications.\nIt offers a C99 interface as well as bindings for Fortran, Python, Julia, and Rust.\nWhile our focus is on high-order finite elements, the approach is mostly algebraic and thus applicable to other discretizations in factored form, as explained inAPI implementation portion of the <a href=\"https://libceed.org/en/latest/api\">documentation</a> and the <a href=\"https://libceed.org/_/downloads/en/latest/pdf/\">user manual</a>.</p>"
     },
     {
@@ -58009,7 +58009,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-11-19 17:02:37"
+  "last_updated": "2026-11-21 10:20:45"
 },
 {
   "name": "BIONEMO-FRAMEWORK",
