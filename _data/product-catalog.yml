@@ -41629,8 +41629,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/LLNL/zfp/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-11-19 18:34:19",
-      "content": "<h1>Change Log</h1>\n<hr />\n<h2>Unreleased</h2>\n<h3>Added</h3>\n<ul>\n<li>A new code example, <code>chunk</code>, shows how to perform (de)compression in chunks.</li>\n<li>A new utility function <code>zfp_block_maximum_size()</code> returns maximum block size\n  for given scalar type, dimensionality, and compression mode.</li>\n<li><code>zfpy.__version__</code> for straightfoward access to the zfp version string in Python.</li>\n<li>CMake installs now include a pkg-config file, <code>zfp.pc</code>.</li>\n</ul>"
+      "timestamp": "2026-11-22 21:42:19",
+      "content": "<h1>Change Log</h1>\n<hr />\n<h2>Unreleased</h2>\n<h3>Added</h3>\n<ul>\n<li>A new code example, <code>chunk</code>, shows how to perform (de)compression in chunks.</li>\n<li>A new utility function <code>zfp_block_maximum_size()</code> returns maximum block size\n  for given scalar type, dimensionality, and compression mode.</li>\n<li><code>zfpy.__version__</code> for straightfoward access to the zfp version string in\n  Python.</li>\n<li>CMake installs now include a pkg-config file, <code>zfp.pc</code>.</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -42399,7 +42399,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-21 19:20:10"
+  "last_updated": "2026-11-22 21:42:19"
 },
 {
   "name": "CONDUIT",
