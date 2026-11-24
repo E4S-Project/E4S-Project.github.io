@@ -21087,7 +21087,7 @@
     {
       "name": "CHANGELOG",
       "url": "https://github.com/mfem/mfem/blob/HEAD/CHANGELOG",
-      "timestamp": "2026-11-22 03:27:05",
+      "timestamp": "2026-11-23 22:20:27",
       "content": "                    Finite Element Discretization Library\n                                   __\n                       _ __ ___   / _|  ___  _ __ ___\n                      | &#x27;_ ` _ \\ | |_  / _ \\| &#x27;_ ` _ \\\n                      | | | | | ||  _||  __/| | | | | |\n\n                               https://mfem.org\n\nVersion 4.10.1 (development)\n============================\n\nGPU computing\n-------------"
     },
     {
@@ -21712,7 +21712,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-22 03:27:05"
+  "last_updated": "2026-11-23 22:20:27"
 },
 {
   "name": "MPICH",
@@ -41629,7 +41629,7 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/LLNL/zfp/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-11-22 21:42:19",
+      "timestamp": "2026-11-23 18:34:01",
       "content": "<h1>Change Log</h1>\n<hr />\n<h2>Unreleased</h2>\n<h3>Added</h3>\n<ul>\n<li>A new code example, <code>chunk</code>, shows how to perform (de)compression in chunks.</li>\n<li>A new utility function <code>zfp_block_maximum_size()</code> returns maximum block size\n  for given scalar type, dimensionality, and compression mode.</li>\n<li><code>zfpy.__version__</code> for straightfoward access to the zfp version string in\n  Python.</li>\n<li>CMake installs now include a pkg-config file, <code>zfp.pc</code>.</li>\n</ul>"
     },
     {
@@ -42399,7 +42399,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-22 21:42:19"
+  "last_updated": "2026-11-23 18:34:01"
 },
 {
   "name": "CONDUIT",
@@ -54351,7 +54351,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/libunwind/libunwind/blob/HEAD/README.md",
-      "timestamp": "2026-10-27 09:03:29",
+      "timestamp": "2026-11-23 17:24:32",
       "content": "<h1>libunwind</h1>\n<p><strong>libunwind</strong> is a portable and efficient C API for determining the current call\nchain of ELF program threads of execution and for resuming execution at any point\nin that call chain. The API supports both local (same process) and remote (other\nprocess) operation.</p>\n<p>The API is useful in a number of applications, including but not limited to the\nfollowing.\n- <strong>program introspection</strong>\n    Either for error messages showing a back trace of the call chain leading to</p>"
     },
     {
@@ -55058,7 +55058,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-27 09:03:29"
+  "last_updated": "2026-11-23 17:24:32"
 },
 {
   "name": "NCCMP",
@@ -55861,7 +55861,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/plumed/plumed2/blob/HEAD/README.md",
-      "timestamp": "2026-11-12 11:34:57",
+      "timestamp": "2026-11-19 22:32:00",
       "content": "<h2>Branches and releases</h2>\n<p>Several branches and tags are stored on the git repository.</p>\n<p>Branches named <code>v2.X</code> correspond to release branches.</p>\n<p>Master branch may contain non tested features and is not expected to be used by non-developers.\nIt typically contains features that will be available on the next release.</p>\n<p>Tags named <code>v2.XbY</code> correspond to beta releases, use it with care.\nTags named <code>v2.X.Y</code> correspond to official releases, use the latest available.</p>"
     },
     {
@@ -56127,7 +56127,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-12 11:34:57"
+  "last_updated": "2026-11-19 22:32:00"
 },
 {
   "name": "METALL",
@@ -57116,12 +57116,12 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/google/jax/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-11-18 18:07:46",
+      "timestamp": "2026-11-24 01:24:15",
       "content": "<h1>Change log</h1>\n<p>Best viewed <a href=\"https://docs.jax.dev/en/latest/changelog.html\">here</a>.\nFor the changes specific to the experimental Pallas APIs,\nsee {ref}<code>pallas-changelog</code>.</p>\n<p>JAX follows Effort-based versioning; for a discussion of this and JAX&#x27;s API\ncompatibility policy, refer to {ref}<code>api-compatibility</code>. For the Python and\nNumPy version support policy, refer to {ref}<code>version-support-policy</code>.</p>\n<h2>Unreleased</h2>"
     }
   ],
   "deployment": [],
-  "last_updated": "2026-11-18 18:07:46"
+  "last_updated": "2026-11-24 01:24:15"
 },
 {
   "name": "PANDAS",
@@ -57347,14 +57347,14 @@
     {
       "name": "README.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/README.md",
-      "timestamp": "2026-11-01 19:20:27",
+      "timestamp": "2026-11-24 00:37:10",
       "content": "<h1>OpenAI Python API library</h1>\n<p><a href=\"https://pypi.org/project/openai/\">)</a></p>\n<p>The OpenAI Python library provides convenient access to the OpenAI REST API from any Python 3.10+\napplication. The library includes type definitions for all request params and response fields,\nand offers both synchronous and asynchronous clients powered by <a href=\"https://httpx2.pydantic.dev/\">HTTPX2</a>.</p>\n<p>It is generated from our <a href=\"https://github.com/openai/openai-openapi\">OpenAPI specification</a>.</p>"
     },
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-11-20 01:22:13",
-      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.56.0...v3.57.0\">3.57.0</a> (2026-11-19)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> support Live WebRTC standby (<a href=\"https://github.com/openai/openai-python/issues/4296\">#4296</a>) (<a href=\"https://github.com/openai/openai-python/commit/18d10c381cac674c56620acc3c1b547fb691f5ea\">18d10c3</a>)</li>\n</ul>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.55.1...v3.56.0\">3.56.0</a> (2026-11-19)</h2>"
+      "timestamp": "2026-11-23 18:54:30",
+      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.57.0...v3.58.0\">3.58.0</a> (2026-11-23)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> set and read agent session spending limits (<a href=\"https://github.com/openai/openai-python/issues/4315\">#4315</a>) (<a href=\"https://github.com/openai/openai-python/commit/fc36aefb8f7809d0b91c65a9c3e424a6e7b8bc77\">fc36aef</a>)</li>\n</ul>\n<h3>Bug Fixes</h3>\n<ul>\n<li><strong>api:</strong> clarify when to omit completion choice count (<a href=\"https://github.com/openai/openai-python/issues/4298\">#4298</a>) (<a href=\"https://github.com/openai/openai-python/commit/f63f14b34754fa77fc839ac2cf95da3ef42e1f6a\">f63f14b</a>)</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -57364,7 +57364,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-11-20 01:22:13"
+  "last_updated": "2026-11-24 00:37:10"
 },
 {
   "name": "DEEPHYPER",
