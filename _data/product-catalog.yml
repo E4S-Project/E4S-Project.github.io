@@ -33175,8 +33175,8 @@
     {
       "name": "CHANGES.current",
       "url": "https://github.com/swig/swig/blob/HEAD/CHANGES.current",
-      "timestamp": "2026-11-24 17:38:24",
-      "content": "Below are the changes for the current release.\nSee the CHANGES file for changes in older releases.\nSee the RELEASENOTES file for a summary of changes in each release.\nIssue # numbers mentioned below can be found on Github. For more details, add\nthe issue number to the end of the URL: https://github.com/swig/swig/issues/\n\nVersion 4.6.0 (in progress)\n===========================\n\n2026-11-21: wsfulton"
+      "timestamp": "2026-11-25 19:32:25",
+      "content": "Below are the changes for the current release.\nSee the CHANGES file for changes in older releases.\nSee the RELEASENOTES file for a summary of changes in each release.\nIssue # numbers mentioned below can be found on Github. For more details, add\nthe issue number to the end of the URL: https://github.com/swig/swig/issues/\n\nVersion 4.6.0 (in progress)\n===========================\n\n2026-11-25: wsfulton"
     },
     {
       "name": "LICENSE",
@@ -34128,7 +34128,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-24 17:38:24"
+  "last_updated": "2026-11-25 19:32:25"
 },
 {
   "name": "SYCLPARALLELSTL",
@@ -51951,7 +51951,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/ECP-WarpX/WarpX/blob/HEAD/README.md",
-      "timestamp": "2026-11-13 20:19:09",
+      "timestamp": "2026-11-25 16:59:39",
       "content": "<h1>WarpX</h1>\n<p><a href=\"https://doi.org/10.5281/zenodo.4571577\">-10.5281/zenodo.4571577-blue.svg)</a>\n<a href=\"https://doi.org/10.1109/SC41404.2022.00008\">-10.1109/SC41404.2022.00008-blue.svg)</a></p>\n<h2>Overview</h2>\n<p>WarpX is an advanced <strong>electromagnetic &amp; electrostatic Particle-In-Cell</strong> code.\nIt supports many features including Perfectly-Matched Layers (PML), mesh refinement, and the boosted-frame technique.</p>\n<p>WarpX is a <em>highly-parallel and highly-optimized code</em>, which can run on GPUs and multi-core CPUs, and includes load balancing capabilities.</p>"
     },
     {
@@ -51969,7 +51969,7 @@
     {
       "name": "CONTRIBUTING.md",
       "url": "https://github.com/ECP-WarpX/WarpX/blob/HEAD/CONTRIBUTING.md",
-      "timestamp": "2026-08-28 20:21:28",
+      "timestamp": "2026-11-25 16:59:39",
       "content": "<p>(developers-contributing)=</p>\n<h1>Contribute to WarpX</h1>\n<p>We welcome new contributors!\nHere is how to participate to the WarpX development.</p>\n<h2>Git workflow</h2>\n<p>The WarpX project uses <a href=\"https://git-scm.com\">Git</a> for version control.\nIf you are new to Git, you can follow <a href=\"https://swcarpentry.github.io/git-novice/\">this tutorial</a>.</p>\n<h3>What to do when</h3>\n<h4>Issues</h4>\n<p><a href=\"https://github.com/BLAST-WarpX/warpx/issues\">Issues</a> are used to track tasks that the contributors and/or maintainers can work on.</p>"
     },
     {
@@ -52147,7 +52147,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-13 20:19:09"
+  "last_updated": "2026-11-25 16:59:39"
 },
 {
   "name": "GPTUNE",
@@ -55861,7 +55861,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/plumed/plumed2/blob/HEAD/README.md",
-      "timestamp": "2026-11-24 06:37:00",
+      "timestamp": "2026-11-24 22:11:52",
       "content": "<h2>Branches and releases</h2>\n<p>Several branches and tags are stored on the git repository.</p>\n<p>Branches named <code>v2.X</code> correspond to release branches.</p>\n<p>Master branch may contain non tested features and is not expected to be used by non-developers.\nIt typically contains features that will be available on the next release.</p>\n<p>Tags named <code>v2.XbY</code> correspond to beta releases, use it with care.\nTags named <code>v2.X.Y</code> correspond to official releases, use the latest available.</p>"
     },
     {
@@ -56127,7 +56127,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-24 06:37:00"
+  "last_updated": "2026-11-24 22:11:52"
 },
 {
   "name": "METALL",
@@ -57038,7 +57038,7 @@
     {
       "name": "RELEASE.md",
       "url": "https://github.com/tensorflow/tensorflow/blob/HEAD/RELEASE.md",
-      "timestamp": "2026-11-16 22:37:19",
+      "timestamp": "2026-11-25 19:55:35",
       "content": "<h1>Release 2.23.0</h1>\n<h2>TensorFlow</h2>\n<p>&lt;INSERT SMALL BLURB ABOUT RELEASE FOCUS AREA AND POTENTIAL TOOLCHAIN CHANGES&gt;</p>\n<h3>Breaking Changes</h3>\n<ul>\n<li><strong>Build System</strong>:<ul>\n<li>TensorFlow now requires Bazel <strong>8.8.2</strong> and builds with <strong>Bzlmod</strong>\n    (<code>MODULE.bazel</code>) enabled by default (<code>--enable_bzlmod\n    --noenable_workspace</code>). Legacy <code>--config=workspace</code> builds remain\n    temporarily available on Linux and macOS during the transition while</li>\n</ul>\n</li>\n</ul>"
     },
     {
@@ -57049,7 +57049,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-11-16 22:37:19"
+  "last_updated": "2026-11-25 19:55:35"
 },
 {
   "name": "PYTORCH",
