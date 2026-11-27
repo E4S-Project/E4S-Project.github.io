@@ -33175,8 +33175,8 @@
     {
       "name": "CHANGES.current",
       "url": "https://github.com/swig/swig/blob/HEAD/CHANGES.current",
-      "timestamp": "2026-11-25 19:32:25",
-      "content": "Below are the changes for the current release.\nSee the CHANGES file for changes in older releases.\nSee the RELEASENOTES file for a summary of changes in each release.\nIssue # numbers mentioned below can be found on Github. For more details, add\nthe issue number to the end of the URL: https://github.com/swig/swig/issues/\n\nVersion 4.6.0 (in progress)\n===========================\n\n2026-11-25: wsfulton"
+      "timestamp": "2026-11-26 17:08:22",
+      "content": "Below are the changes for the current release.\nSee the CHANGES file for changes in older releases.\nSee the RELEASENOTES file for a summary of changes in each release.\nIssue # numbers mentioned below can be found on Github. For more details, add\nthe issue number to the end of the URL: https://github.com/swig/swig/issues/\n\nVersion 4.6.0 (in progress)\n===========================\n\n2026-11-26: wsfulton"
     },
     {
       "name": "LICENSE",
@@ -34128,7 +34128,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-25 19:32:25"
+  "last_updated": "2026-11-26 17:08:22"
 },
 {
   "name": "SYCLPARALLELSTL",
@@ -50913,8 +50913,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://gitlab.com/slepc/slepc/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-10-24 13:16:30",
-      "content": "<h1>Changelog of SLEPc versions</h1>\n<h2>[unreleased]</h2>\n<h3>Deprecated</h3>\n<ul>\n<li><code>RGCanUseConjugates()</code> is deprecated, use <code>RGCheckSymmetricContour()</code> instead.</li>\n</ul>\n<h2>[3.26] - 2026-09-29</h2>\n<h3>Added</h3>\n<ul>\n<li>New strategy to solve linear systems associated with integration points in contour\n  integral solvers, see <code>EPSCISSSetStrategy()</code>. Now it is possible to use a linear solver\n  such as <code>KSPEKSM</code> that handles all integration points simultaneously in a single solve.</li>\n</ul>"
+      "timestamp": "2026-11-26 20:15:37",
+      "content": "<h1>Changelog of SLEPc versions</h1>\n<h2>[unreleased]</h2>\n<h3>Added</h3>\n<ul>\n<li><code>MFN</code>: new solver <code>MFNCRAM</code> that implements the Chebyshev Rational Approximation\n  Method for the matrix exponential, intended for matrices whose spectrum lies on\n  or near the negative real axis. Currently requires complex scalars.</li>\n</ul>\n<h3>Deprecated</h3>\n<ul>\n<li><code>RGCanUseConjugates()</code> is deprecated, use <code>RGCheckSymmetricContour()</code> instead.</li>\n</ul>\n<h2>[3.26] - 2026-09-29</h2>"
     },
     {
       "name": "CONTRIBUTING.md",
@@ -51595,7 +51595,7 @@
       ]
     }
   ],
-  "last_updated": "2026-10-24 13:16:30"
+  "last_updated": "2026-11-26 20:15:37"
 },
 {
   "name": "SWIFT-T",
@@ -57353,8 +57353,8 @@
     {
       "name": "CHANGELOG.md",
       "url": "https://github.com/openai/openai-python/blob/HEAD/CHANGELOG.md",
-      "timestamp": "2026-11-24 19:13:07",
-      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.58.0...v3.59.0\">3.59.0</a> (2026-11-24)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> add healthcare model IDs for Responses (<a href=\"https://github.com/openai/openai-python/issues/4327\">#4327</a>) (<a href=\"https://github.com/openai/openai-python/commit/804a9af5a5199f36d28dfdf84c7981f0253a3a3f\">804a9af</a>)</li>\n</ul>\n<h3>Bug Fixes</h3>\n<ul>\n<li>check the agent upload directory after path resolution (<a href=\"https://github.com/openai/openai-python/issues/4323\">#4323</a>) (<a href=\"https://github.com/openai/openai-python/commit/bc02da46f35fb2a85108dd41d4c49987cc5cb0fc\">bc02da4</a>)</li>\n</ul>"
+      "timestamp": "2026-11-26 07:03:20",
+      "content": "<h1>Changelog</h1>\n<h2><a href=\"https://github.com/openai/openai-python/compare/v3.59.0...v3.60.0\">3.60.0</a> (2026-11-26)</h2>\n<h3>Features</h3>\n<ul>\n<li><strong>api:</strong> add spend alerts and response compaction fields (<a href=\"https://github.com/openai/openai-python/issues/4335\">#4335</a>) (<a href=\"https://github.com/openai/openai-python/commit/4713afd081c42aa5f335d488393c6b404564d383\">4713afd</a>)</li>\n<li><strong>api:</strong> support updating session vaults (<a href=\"https://github.com/openai/openai-python/issues/4334\">#4334</a>) (<a href=\"https://github.com/openai/openai-python/commit/c386f19a90b3bf5651df34b8901f356c12d4088b\">c386f19</a>)</li>\n</ul>"
     },
     {
       "name": "LICENSE",
@@ -57364,7 +57364,7 @@
     }
   ],
   "deployment": [],
-  "last_updated": "2026-11-24 19:13:07"
+  "last_updated": "2026-11-26 07:03:20"
 },
 {
   "name": "DEEPHYPER",
