@@ -48501,7 +48501,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/openPMD/openPMD-api/blob/HEAD/README.md",
-      "timestamp": "2026-06-03 09:40:59",
+      "timestamp": "2026-11-27 21:33:03",
       "content": "<h1>C++ &amp; Python API for Scientific I/O with openPMD</h1>\n<p>openPMD is an open meta-data schema that provides meaning and self-description for data sets in science and engineering.\nSee <a href=\"https://github.com/openPMD/openPMD-standard\">the openPMD standard</a> for details of this schema.</p>\n<p>This library provides a reference API for openPMD data handling.\nSince openPMD is a schema (or markup) on top of portable, hierarchical file formats, this library implements various backends such as HDF5, ADIOS2 and JSON.</p>"
     },
     {
@@ -48525,8 +48525,8 @@
     {
       "name": "NEWS.rst",
       "url": "https://github.com/openPMD/openPMD-api/blob/HEAD/NEWS.rst",
-      "timestamp": "2026-01-17 19:15:30",
-      "content": ".. _install-upgrade:\n\nUpgrade Guide\n=============\n\n0.17.0\n------\n\nADIOS 2.9.0 is now the minimally supported version for ADIOS2; support for ADIOS 2.11.0 has been added.\nHDF5 1.8.13 is now the minimally supported version for HDF5, support for HDF5 2.0 has been added.\n\nA new unified API for accessing Iterations/Snapshots has been introduced in ``series.snapshots()``.\nThis replaces access via ``series.iterations``, ``series.writeIterations()`` and ``series.readIterations()`` which are now deprecated."
+      "timestamp": "2026-11-27 21:33:03",
+      "content": ".. _install-upgrade:\n\nUpgrade Guide\n=============\n\n0.18.0\n------\n\nPython 3.10 support is EOL and removed.\nPython 3.15 is now supported.\nKnown limitation: free-threaded Python 3.15 (``3.15t``) on 32-bit platforms is not yet supported, because pybind11 3.1.0 and older break the NumPy 2.5.2+ interoperability there (`pybind11 #6200 &lt;https://github.com/pybind/pybind11/pull/6200&gt;`__).\n\n0.17.0\n------"
     }
   ],
   "deployment": [
@@ -49234,7 +49234,7 @@
       ]
     }
   ],
-  "last_updated": "2026-06-03 09:40:59"
+  "last_updated": "2026-11-27 21:33:03"
 },
 {
   "name": "PHIST",
@@ -55861,7 +55861,7 @@
     {
       "name": "README.md",
       "url": "https://github.com/plumed/plumed2/blob/HEAD/README.md",
-      "timestamp": "2026-11-24 22:11:52",
+      "timestamp": "2026-11-27 12:17:27",
       "content": "<h2>Branches and releases</h2>\n<p>Several branches and tags are stored on the git repository.</p>\n<p>Branches named <code>v2.X</code> correspond to release branches.</p>\n<p>Master branch may contain non tested features and is not expected to be used by non-developers.\nIt typically contains features that will be available on the next release.</p>\n<p>Tags named <code>v2.XbY</code> correspond to beta releases, use it with care.\nTags named <code>v2.X.Y</code> correspond to official releases, use the latest available.</p>"
     },
     {
@@ -56127,7 +56127,7 @@
       ]
     }
   ],
-  "last_updated": "2026-11-24 22:11:52"
+  "last_updated": "2026-11-27 12:17:27"
 },
 {
   "name": "METALL",
